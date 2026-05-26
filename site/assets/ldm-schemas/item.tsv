@@ -1,0 +1,294 @@
+field_name	pk	field_description	physical_table	physical_table_column
+abin_yn_ind		abin_yn_ind field	SLNG_LSTG_SUPER_FACT	abin_yn_ind
+aedl_ind		Admin ended day lister y/n indicatorLogic:case when COALESCE(LIST_1ST_DT, DATE '2099-01-01') > y	SLNG_LSTG_SUPER_FACT	aedl_ind
+app_id		The APP_ID of the tool used to list this listing	DW_LSTG_ITEM	app_id
+app_party_type_cd		the application party type codeSame as APP_PARTY_TYPE_CD in DW_APPLICATIONS	SLNG_LSTG_SUPER_FACT	app_party_type_cd
+application_id		The Application which listed the item	DW_LSTG_ITEM	application_id
+at_prdct_ref_id		Auto-tagged (passive) Product Reference ID	DW_LSTG_ITEM_PROD_REF	at_prdct_ref_id
+at_prod_ref_id		Please note: this column is not available in ACCESS_VIEWS	DW_LSTG_ITEM	at_prod_ref_id
+auct_durtn_days		Actual auction duration days, If fixed price listing ended early, the actual will be shorter compared to the planned	SLNG_LSTG_SUPER_FACT	auct_durtn_days
+auct_end_date		Auction end time	DW_LSTG_ITEM	auct_end_date
+auct_end_dt		Auction end date	DW_LSTG_ITEM	auct_end_dt
+auct_end_exchng_rate		Exchange Rate on auction end date	DW_LSTG_ITEM	auct_end_exchng_rate
+auct_start_date		Auction start time	DW_LSTG_ITEM	auct_start_date
+auct_start_dt		Auction start dt	DW_LSTG_ITEM	auct_start_dt
+auct_start_exchng_rate		Exchange Rate on auction start date	DW_LSTG_ITEM	auct_start_exchng_rate
+auct_titl		The item title (shows up in Search and at the top of ViewItem)	DW_LSTG_ITEM	auct_titl
+auct_title_txt		The item title (shows up in Search and at the top of ViewItem)	DW_LSTG_ITEM	auct_title_txt
+auct_type_cd		auction type codeLogic: DW_GEM2_CMN_LSTG_I	SLNG_LSTG_SUPER_FACT	auct_type_cd
+auct_type_code		The format of the listing	DW_LSTG_ITEM	auct_type_code
+auction_end_reason_code		The reason for the item ending	DW_LSTG_ITEM	auction_end_reason_code
+avail_qty		The number of this item that are initially available for sale	DW_LSTG_ITEM	avail_qty
+b2b_up_flag		b2b_up_flag field	DW_LSTG_ITEM	b2b_up_flag
+b2c_c2c		Indicate that the seler is b2c or c2c,view only, derived from slr_cntry_id	DIM_ITEM	b2c_c2c
+best_offer_ind		Listing with best offer y/n indicatorLogic:CASE WHEN td_sysfnlib	SLNG_LSTG_SUPER_FACT	best_offer_ind
+bidcount		Count of bids that the listing has received	DW_LSTG_ITEM	bidcount
+bin_price_lstg_curncy		The BIN price for the listing in the listing currency	DW_LSTG_ITEM	bin_price_lstg_curncy
+bin_price_lstg_curncy_amt		The BIN price for the listing in the listing currency	DW_LSTG_ITEM	bin_price_lstg_curncy_amt
+bin_price_usd		The BIN price for the listing in US dollars	DW_LSTG_ITEM	bin_price_usd
+bin_sold_ind		It is meant to indicate whether a listing was sold via a Buy It Now flow	SLNG_LSTG_SUPER_FACT	bin_sold_ind
+bin_sold_up_flag		It is meant to indicate whether a listing was sold via a Buy It Now flow	DW_LSTG_ITEM	bin_sold_up_flag
+bold_title		bold_title field	DW_LSTG_ITEM	bold_title
+bold_title_txt		Bold title text	DW_LSTG_ITEM	bold_title_txt
+brand_txt		Brand value deduped from multi sources in this order - st_df_brand_txt, cls_df_brand_txt, pi_df_brand_txt, st_nf_brand_txt, cls_nf_brand_txt, pi_nf_brand_txt, trnsltd_df_brand_txt	CTLG_ITEM_FACT	brand_txt
+broken		else if (betterRefurbConditionTypes	LSTG_ITEM_CNDTN	broken
+bsns_vrtcl_name		Same as GLBL_RPRT_BSNS_CTGRY_DESC as above,glkp	SLNG_LSTG_SUPER_FACT	bsns_vrtcl_name
+catalog		at_cnfdnc_cd,Auto-tag ePID confidence code	CTLG_ITEM_FACT	catalog
+categ_key		Joins to DW_CATEGORY_HIERARCHY	DW_LSTG_ITEM	categ_key
+categ_key2		Joins to DW_CATEGORY_HIERARCHY	DW_LSTG_ITEM	categ_key2
+categ_lvl2_id		Level 2 category id	SLNG_LSTG_SUPER_FACT	categ_lvl2_id
+categ_lvl3_id		Level 3 category id	SLNG_LSTG_SUPER_FACT	categ_lvl3_id
+categ_slng_guide_used_up_flag		categ_slng_guide_used_up_flag field	DW_LSTG_ITEM	categ_slng_guide_used_up_flag
+charity_giving_tool_up_flag		CHARITY_GIVING_TOOL_UP_FLAG=1 means YES and CHARITY_GIVING_TOOL_UP_FLAG=0 means NO	DW_LSTG_ITEM	charity_giving_tool_up_flag
+ck_fetr_up_flag		ck_fetr_up_flag field	DW_LSTG_ITEM	ck_fetr_up_flag
+cndtn_rollup_id		ID of the user who created the record	LSTG_ITEM_CNDTN	cndtn_rollup_id
+content_modified		content_modified field	DW_LSTG_ITEM	content_modified
+core_yn_ind		case when lstg	SLNG_LSTG_SUPER_FACT	core_yn_ind
+css_sgmnt_type_desc		Customer selleer segmentation desc at auct start date	DIM_ITEM	css_sgmnt_type_desc
+curnt_price_lstg_curncy		The current price of the listing, in listing currency	DW_LSTG_ITEM	curnt_price_lstg_curncy
+curnt_price_lstg_curncy_amt		The current price of the listing in listing currency	DW_LSTG_ITEM	curnt_price_lstg_curncy_amt
+curnt_price_usd		The current price of the listing, in US dollars	DW_LSTG_ITEM	curnt_price_usd
+cust_ref_code		From the site DM: This field is populated from the UUID tag in AddItem API	DW_LSTG_ITEM	cust_ref_code
+cust_sgmntn_desc		SelLKP	SLNG_LSTG_SUPER_FACT	cust_sgmntn_desc
+cw_policy		cw_policy field	DW_LSTG_ITEM	cw_policy
+cy_lstd_ind		Indicate if a seller listed something from current calendar year to date	SLNG_LSTG_SUPER_FACT	cy_lstd_ind
+dates		site_create_date,Site create time	DW_LSTG_ITEM	dates
+de_trp_ind		Indicate whether this item is eligible for 'Top Rated Plus' badge for DE program,View only	DIM_ITEM	de_trp_ind
+dw_lstg_item		dw_lstg_item field	DW_LSTG_ITEM	dw_lstg_item
+dw_pes_elgblt_hist		dw_pes_elgblt_hist field	DIM_ITEM	dw_pes_elgblt_hist
+ebx_cs_frc_out_item_yn_id		Indicates whether CS forced this item out of eBay Express	DW_LSTG_ITEM	ebx_cs_frc_out_item_yn_id
+ebx_elgbl_item_yn_id		This is the overall flag indicating whether this item is eligible for eBay Express (assuming it's live)	DW_LSTG_ITEM	ebx_elgbl_item_yn_id
+ebx_opt_in_item_yn_id		Indicates whether this item is opted-in to eBay Express	DW_LSTG_ITEM	ebx_opt_in_item_yn_id
+ebx_qlfd_item_yn_id		Indicates whether this item was qualified via the batch job	DW_LSTG_ITEM	ebx_qlfd_item_yn_id
+ebx_sticky_item_yn_id		Indicates whether this item was EVER eligible for eBay Express over the lifetime of the item	DW_LSTG_ITEM	ebx_sticky_item_yn_id
+featured		Indicates whether an item is a Featured Plus item (also called Category Featured, or just Featured)	DW_LSTG_ITEM	featured
+featured_plus_flag		Indicates whether an item is a Featured Plus item (also called Category Featured, or just Featured)	DW_LSTG_ITEM	featured_plus_flag
+flags		flags field	DW_LSTG_ITEM	flags
+flags10		flags10 field	DW_LSTG_ITEM	flags10
+flags10_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags10_cd
+flags11		flags11 field	DW_LSTG_ITEM	flags11
+flags11_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags11_cd
+flags12		flags12 field	DW_LSTG_ITEM	flags12
+flags12_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags12_cd
+flags2		flags2 field	DW_LSTG_ITEM	flags2
+flags2_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags2_cd
+flags3		flags3 field	DW_LSTG_ITEM	flags3
+flags4		flags4 field	DW_LSTG_ITEM	flags4
+flags4_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags4_cd
+flags5		flags5 field	DW_LSTG_ITEM	flags5
+flags5_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags5_cd
+flags6		flags6 field	DW_LSTG_ITEM	flags6
+flags6_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags6_cd
+flags7		flags7 field	DW_LSTG_ITEM	flags7
+flags7_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags7_cd
+flags8		flags8 field	DW_LSTG_ITEM	flags8
+flags8_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags8_cd
+flags9		flags9 field	DW_LSTG_ITEM	flags9
+flags9_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags9_cd
+flags_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags	DW_LSTG_ITEM	flags_cd
+fnl_type		Fresh new listing type	SLNG_LSTG_SUPER_FACT	fnl_type
+fnl_type_cd		Fresh new listings type code	SLNG_LSTG_SUPER_FACT	fnl_type_cd
+free_shpng_yn_ind		Indicates if given listing is free shipping or not	SLNG_LSTG_SUPER_FACT	free_shpng_yn_ind
+gallery_url		The gallery image is the image that is shown on the SRP page A single URL of the gallery image for this listing which is usually the first image from the picture URL	DW_LSTG_ITEM	gallery_url
+glbl_rprt_bsns_ctgry_cd		-99 --Unknown2 ----Electronics3 ----Fashion4 ----Home & Garden5 ----Collectibles6 ----Parts & Accessories7 ----Media8 ----Other9 --Vehicles10 --Real Estate11 ----Business & Industrial12 ----Lifestyle,Global business category codeLookup table: GLBL_RPRT_BSNS_CTGRY_LKP	SLNG_LSTG_SUPER_FACT	glbl_rprt_bsns_ctgry_cd
+glbl_rprt_bsns_ctgry_grp_cd		-99 Unknown1 Core2 Vehicles3 Real Estate,global business category group code	SLNG_LSTG_SUPER_FACT	glbl_rprt_bsns_ctgry_grp_cd
+global_trp_ind		Indicate whether this item is eligible for 'Top Rated Plus' badge for global program,View only	DIM_ITEM	global_trp_ind
+glry_state		State of a Gallery image upload	DW_LSTG_ITEM	glry_state
+glry_type_cd		Indicates the type of Gallery image GALLERY_URL	DW_LSTG_ITEM	glry_type_cd
+glry_type_id		Indicates the type of Gallery image GALLERY_URL	DW_LSTG_ITEM	glry_type_id
+glry_url_txt		A single URL of the gallery image for this listing which is usually the first image from the picture URL	DW_LSTG_ITEM	glry_url_txt
+gms_dutch_lstg_curncy		gms_dutch_lstg_curncy field	DW_LSTG_ITEM	gms_dutch_lstg_curncy
+gms_lstg_curncy		For GTC and longer duration listings, the GMS will show up as zero until the listing ends, even if items have been sold	DW_LSTG_ITEM	gms_lstg_curncy
+gms_lstg_curncy_est		gms_lstg_curncy_est field	DW_LSTG_ITEM	gms_lstg_curncy_est
+gms_usd		This is a calculated field in the DW	DW_LSTG_ITEM	gms_usd
+gms_usd_est		gms_usd_est field	DW_LSTG_ITEM	gms_usd_est
+gtc_ind		Indicates whether the listing is a GTC (Good Til Cancelled) listing	SLNG_LSTG_SUPER_FACT	gtc_ind
+gtc_up_flag		Indicates whether the listing is a GTC (Good Til Cancelled) listing	DW_LSTG_ITEM	gtc_up_flag
+high_bdr_cntry_id		High Bidder's Country of residence	DW_LSTG_ITEM	high_bdr_cntry_id
+high_bdr_id		A value of -998 indicates a multi-quantity listing (excluding Dutch) where a single bidder cannot be determined; a value of -999 indicates the bidder is unknown	DW_LSTG_ITEM	high_bdr_id
+high_bdr_site_id		High Bidder's registration site	DW_LSTG_ITEM	high_bdr_site_id
+host_ip_addr		Populated from site column 'HOST' The ip address from which this item is listed	DW_LSTG_ITEM	host_ip_addr
+host_ip_addr_txt		The ip address from which this item is listed	DW_LSTG_ITEM	host_ip_addr_txt
+icon_flags		This field is an enumeration of potential paid-for icon values associated with the listing	DW_LSTG_ITEM	icon_flags
+images		images field	DIM_ITEM	images
+in this listing table		in this listing table field	DIM_ITEM	in this listing table
+in this listing table:for us items		Items after 2020-10-04 and item condition id = 2000 are eligible for certified refurbished	DIM_ITEM	in this listing table:for us items
+insurance_fee_lstg_curncy		The shipping insurance fee associated with the listing	DW_LSTG_ITEM	insurance_fee_lstg_curncy
+item_cndtn_id		Holds the item condition	LSTG_ITEM_CNDTN	item_cndtn_id
+item_cntry_id		The country that the seller says the item is located in	DW_LSTG_ITEM	item_cntry_id
+item_desc		Item description encoded by base64	LSTG_ITEM_DESC_DIM	item_desc
+item_desc_lgth_num		Length of the item description	LSTG_ITEM_DESC_DIM	item_desc_lgth_num
+item_flags		Source: EBAY_ITEMS	DW_LSTG_ITEM	item_flags
+item_id	Y	Unique identifier of a listed item for auction	DW_LSTG_ITEM	item_id
+item_loc		Gives the seller's item location	DW_LSTG_ITEM	item_loc
+item_loc_txt		Gives the seller's item location	DW_LSTG_ITEM	item_loc_txt
+item_prpty_key_txt		Contains keys used for lookups into DW_LSTG_ITEM_PROP_LKP and DW_LSTG_ITEM_PROP_CONTENT_VAL which stores item properties specified by seller and available to a seller's items during VI and elsewhere	DW_LSTG_ITEM	item_prpty_key_txt
+item_site_id		Contains the site ID that the listing was listed on	DW_LSTG_ITEM	item_site_id
+item_vrsn_id		Indicates the version ID of this listing	DW_LSTG_ITEM	item_vrsn_id
+item_zip		Item Zip code	DW_LSTG_ITEM	item_zip
+item_zip_cd		Item Zip code	DW_LSTG_ITEM	item_zip_cd
+last_mdfd_date		The date with timestamp when the item was updated last time	LSTG_ITEM_DESC_DIM	last_mdfd_date
+last_modfd_date		Date that this item is last modified	DW_LSTG_ITEM	last_modfd_date
+last_modfd_dt		last_modfd_dt field	DW_LSTG_ITEM	last_modfd_dt
+last_transaction_date		Last purchase Date	DW_LSTG_ITEM	last_transaction_date
+layout_flag		layout_flag field	DW_LSTG_ITEM	layout_flag
+leaf_categ_id		Contains the leaf category ID that the seller chose for the listing	DW_LSTG_ITEM	leaf_categ_id
+leaf_categ_id2		The category ID of the second category chosen by the seller when the seller chooses to list in two categories	DW_LSTG_ITEM	leaf_categ_id2
+leaf_ctgry_id		Leaf Category idLogic: DW_GEM2_CMN_LSTG_I	SLNG_LSTG_SUPER_FACT	leaf_ctgry_id
+listed_with_autopay_ind		Indicates whether the listing is an Immediate Pay (/AutoPay) listingSame as LISTED_WITH_AUTOPAY_UP_FLAG	SLNG_LSTG_SUPER_FACT	listed_with_autopay_ind
+listed_with_autopay_up_flag		Indicates whether the listing is an Immediate Pay (/AutoPay) listing	DW_LSTG_ITEM	listed_with_autopay_up_flag
+lister_type_cd		lister_type_cd field	DIM_ITEM	lister_type_cd
+live_auctn_ind		Y' - Live Auction Listing 'N' - Non-Live Auction Listing	DW_LSTG_ITEM	live_auctn_ind
+lmo_ind		Indicate that the seller is large-merchance-onboarding seller at auct start date	DIM_ITEM	lmo_ind
+lot_size		THEME_ID - Listing Designer Theme ID - this is an old feature which adds a visual frame / border around your listing description	DW_LSTG_ITEM	lot_size
+lower_relist_option		Indicates the option the user chose to indicate the listing price when relisting the item	DW_LSTG_ITEM	lower_relist_option
+lstg_chnl_cd		selCASE WHEN lstg	SLNG_LSTG_SUPER_FACT	lstg_chnl_cd
+lstg_curncy_id		The ID of the currency that the listing was listed in NOTE: You cannot assume a 1-1 mapping between ITEM_SITE_ID and LSTG_CURNCY_ID	DW_LSTG_ITEM	lstg_curncy_id
+lstg_mthd_id		This is a field that delimits some of the on-site listing methods	DW_LSTG_ITEM	lstg_mthd_id
+lstg_site_id		Listing site idLogic: DW_GEM2_CMN_LSTG_I	SLNG_LSTG_SUPER_FACT	lstg_site_id
+lstg_status_id		Indicates an item’s activity status such as live, ended, deleted or archived etc	DW_LSTG_ITEM	lstg_status_id
+maxbid		maxbid field	DW_LSTG_ITEM	maxbid
+meta_categ_id		Same as META_CTGRY_ID as above,lstg	SLNG_LSTG_SUPER_FACT	meta_categ_id
+meta_ctgry_id		Meta Category IdLogic: DW_CATEGORY_GROUPINGS	SLNG_LSTG_SUPER_FACT	meta_ctgry_id
+mobile_lstg_flag		Same as MOBILE_LSTG_IND as above,lstg	SLNG_LSTG_SUPER_FACT	mobile_lstg_flag
+mobile_lstg_ind		Listed by mobile y/n indicatorLogic: CASE WHEN apps	SLNG_LSTG_SUPER_FACT	mobile_lstg_ind
+mq_yn_ind		CASE WHEN lstg	SLNG_LSTG_SUPER_FACT	mq_yn_ind
+mr_lister_flag		mr_lister_flag field	DW_LSTG_ITEM	mr_lister_flag
+mrch_tool_up_flag		mrch_tool_up_flag field	DW_LSTG_ITEM	mrch_tool_up_flag
+msku_flag		Indicates if it's multiple SKU or not	DW_LSTG_ITEM	msku_flag
+msku_ind		Item listed with multi SKU or notLogic:CASE WHEN TD_SYSFNLIB	SLNG_LSTG_SUPER_FACT	msku_ind
+new		else if (betterUsedConditionTypes	LSTG_ITEM_CNDTN	new
+norl_type_cd		New and Reactivated Lister flag, values are:New Listers defined as the first item listed	SLNG_LSTG_SUPER_FACT	norl_type_cd
+note this is different from the ftl_ind		note this is different from the ftl_ind field	DIM_ITEM	note this is different from the ftl_ind
+notice_date		Time that EOA is sent out	DW_LSTG_ITEM	notice_date
+ofrd_slng_chnl_id		This represents on what selling channel the item is offered i	DW_LSTG_ITEM	ofrd_slng_chnl_id
+orgnl_price_amt		This Column will maintain the Orginal BIN Price before the Sale so that the BIN_Price column can be updated with its Orginal Value after the Sale has ended	DW_LSTG_ITEM	orgnl_price_amt
+out_of_stock_sts		Out of stock status	SLNG_LSTG_SUPER_FACT	out_of_stock_sts
+overall		such as buyer country	DIM_ITEM	overall
+package_size		Enums which indicate different packages	DW_LSTG_ITEM	package_size
+passwordex		passwordex field	DW_LSTG_ITEM	passwordex
+passwordex_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of passwordex	DW_LSTG_ITEM	passwordex_cd
+payment_cash		This corresponds to the 'Payment on Pickup' option in listing flows, it is known by various local names by site as well When this option is set, the buyer can check out with this selected, and must contact seller to meet them, there is no online payment and the transaction does not qualify for buyer protection	DW_LSTG_ITEM	payment_cash
+payment_cc		Credit Card payment type is accepted by seller	DW_LSTG_ITEM	payment_cc
+payment_moneyxfer		Money transfer payment type is accepted by seller	DW_LSTG_ITEM	payment_moneyxfer
+paypal_accepted_up_flag		Important - this value is not true for all PI listings -> If you need PI metrics, you need to use 0x00040000 (262144) EbayIntermediatedPaymentMethod: Identifies the eBay intermediated payment method from DW_LSTG_ITEM_COLD	DW_LSTG_ITEM	paypal_accepted_up_flag
+paypal_acptd_ind		paypal accepted	SLNG_LSTG_SUPER_FACT	paypal_acptd_ind
+paypal_icon_type		paypal_icon_type field	DW_LSTG_ITEM	paypal_icon_type
+paypal_seller_email		The seller's PayPal email address associated with the listing	DW_LSTG_ITEM	paypal_seller_email
+paypal_slr_email_txt		The seller's PayPal email address associated with the listing	DW_LSTG_ITEM	paypal_slr_email_txt
+pbp_eligibility		Paypal Buyer Protection eligible Y/N Source of record: /v3dal/DALItem/src/com/ebay/integ/item/common/PbpSaleEligibilityEnum	DW_LSTG_ITEM	pbp_eligibility
+photo_cnt		The number of images for the listing	DW_LSTG_ITEM	photo_cnt
+photo_count		The number of images for the listing	DW_LSTG_ITEM	photo_count
+photo_disp_type_cd		Indicates the type of displayed photo-99999999 = Invalid0 = None1 = Gallery (Will also be set if Picture Pack, Motors Propack, or Valuepak used)2 = Featured (Will also be set if ProPack Plus is used) (Featured First)3 = Ungallery4 = Unfeatured5 = HomePage Featured6 = Stock Photo7 = Gallery Plus8 = UnGallery Plus	DW_LSTG_ITEM	photo_disp_type_cd
+photo_display_type		Direct pull from site table	DW_LSTG_ITEM	photo_display_type
+photo_yn		This field indicates whether the PICTURE_URL field in the site table is blank or not	DW_LSTG_ITEM	photo_yn
+pic_url_txt		A semi-colon delimited list of image URLs for this listing	DW_LSTG_ITEM	pic_url_txt
+picture_url		A semi-colon delimited list of image URLs for this listing	DW_LSTG_ITEM	picture_url
+plan_durtn_days		Planned auction duration days,	SLNG_LSTG_SUPER_FACT	plan_durtn_days
+pp_fin_offr_id		PayPal Buyer Credit offer ID	DW_LSTG_ITEM	pp_fin_offr_id
+prdct_id		This column is to get mapping of listing and Product ID	DW_LSTG_ITEM	prdct_id
+pricing		lstg_curncy_id,The ID of the currency that the listing was listed in	DW_LSTG_ITEM	pricing
+private_yn		private_yn field	DW_LSTG_ITEM	private_yn
+prmtn_sale_end_dt		Ending date of the Promotion Sale	DW_LSTG_ITEM	prmtn_sale_end_dt
+prmtn_sale_end_tm		Ending time of the Promotion Sale	DW_LSTG_ITEM	prmtn_sale_end_tm
+prmtn_sale_start_dt		Starting date of the Promotion Sale	DW_LSTG_ITEM	prmtn_sale_start_dt
+prmtn_sale_start_tm		Starting time of the Promotion Sale	DW_LSTG_ITEM	prmtn_sale_start_tm
+prod_id		sel A	SLNG_LSTG_SUPER_FACT	prod_id
+product_id		This column is to get mapping of listing and Product ID,	DW_LSTG_ITEM	product_id
+professional/business or casual/consumer at auct start date		1	DIM_ITEM	professional/business or casual/consumer at auct start date
+psa_ind		psa_ind field	DIM_ITEM	psa_ind
+qty_avail		The number of this item that are initially available for sale	DW_LSTG_ITEM	qty_avail
+qty_sold		The quantity sold from this listing	DW_LSTG_ITEM	qty_sold
+refurbished		else	LSTG_ITEM_CNDTN	refurbished
+relist_crd_up_flag		relist_crd_up_flag field	DW_LSTG_ITEM	relist_crd_up_flag
+relist_item_id		Relist item ID	DW_LSTG_ITEM	relist_item_id
+relist_parent_item_id		The item ID of the parent item if the listing go through relist flow	DW_LSTG_ITEM	relist_parent_item_id
+relist_up_flag		This flag indicates whether the item was created using relist functionality on site or set by 3rd party tool when listed via API	DW_LSTG_ITEM	relist_up_flag
+relistid		The item ID of the item got relisted from this item	DW_LSTG_ITEM	relistid
+return_policy_yn		This field is simply checking whether or not the Return Policy field in the EBAY_ITEMS table is NULL/blank or not	DW_LSTG_ITEM	return_policy_yn
+rev_rollup		coun	SLNG_LSTG_SUPER_FACT	rev_rollup
+rlst_ind		This flag indicates whether the item was created using relist functionality on site or set by 3rd party tool when listed via APISame as RELIST_UP_FLAG in	SLNG_LSTG_SUPER_FACT	rlst_ind
+rsrv_price_list_crncy		The reserve price of the listing, in listing currency	DW_LSTG_ITEM	rsrv_price_list_crncy
+rsrv_price_list_curncy_amt		The reserve price of the listing in listing currency	DW_LSTG_ITEM	rsrv_price_list_curncy_amt
+rsrv_price_lstg_curncy_amt		The reserve price of the listing, in listing currencySame as RSRV_PRICE_LSTG_CURNCY	SLNG_LSTG_SUPER_FACT	rsrv_price_lstg_curncy_amt
+rsrv_price_usd		The reserve price of the listing, in US dollars	DW_LSTG_ITEM	rsrv_price_usd
+rtn_lstr_ind		Indicate if a seller listed something in last 12 months	SLNG_LSTG_SUPER_FACT	rtn_lstr_ind
+sale_sched_end_date		Sale scheduled end time	DW_LSTG_ITEM	sale_sched_end_date
+sale_sched_end_dt		Date the listing is scheduled to end	DW_LSTG_ITEM	sale_sched_end_dt
+sale_status		sale_status field	DW_LSTG_ITEM	sale_status
+sale_status_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of sale_status_cd	DW_LSTG_ITEM	sale_status_cd
+sale_tax_amt		The SalesTaxPercent seller providered	DW_LSTG_ITEM	sale_tax_amt
+sample query select d.item_id		d	DIM_ITEM	sample query select d.item_id
+sap_category_id		Same as SAP_CTGRY_ID as above,lstg	SLNG_LSTG_SUPER_FACT	sap_category_id
+sap_ctgry_id		SAP category idLogic: DW_CATEGORY_GROUPINGS	SLNG_LSTG_SUPER_FACT	sap_ctgry_id
+sccss_ind		This is a value calculated by the DW to indicate whether an item has been successfully sold or not	SLNG_LSTG_SUPER_FACT	sccss_ind
+scnd_leaf_categ_id		The category ID of the second category chosen by the seller when the seller chooses to list in two categories	DW_LSTG_ITEM	scnd_leaf_categ_id
+seller_group_cd		Seller segment group code,	SLNG_LSTG_SUPER_FACT	seller_group_cd
+sgnfcnt_rvsn_cnt		The number of significant revisions for this listing	DW_LSTG_ITEM	sgnfcnt_rvsn_cnt
+ship_option_code		Indicates the shipping options offered by the SellerPotential values: (-99 = Unknown, -88 = Invalid, 0 = SiteOnly, 1 = SitePlusRegions, 2 = Worldwide, 3 = Will Not Ship, 4 = Terms And Conditions Only)Lookup table for potential values: DW_SHPMT_OPTN	DW_LSTG_ITEM	ship_option_code
+ship_regn_flags		0x00000001 NorthAmerica 0x00000002 Europe 0x00000004 Australasia 0x00000008 Asia 0x00000010 SouthAmerica 0x00000020 Africa 0x00000040 LatinAmerica 0x00000080 MiddleEast 0x00000100 Caribbean	DW_LSTG_ITEM	ship_regn_flags
+shipping_fee		Shipping fee as shown on the listing	DW_LSTG_ITEM	shipping_fee
+shipping_fee_amt		Shipping Cost of first domestic shipping service	DW_LSTG_ITEM	shipping_fee_amt
+shipping_type		Indicates the type of shipping that was specified on the listing	DW_LSTG_ITEM	shipping_type
+shipping_xfee		Shipping fee as shown on the listing for "Each Additional Item	DW_LSTG_ITEM	shipping_xfee
+shpng_fee_lc_amt		Shipping fee listing currency amount for the given item	SLNG_LSTG_SUPER_FACT	shpng_fee_lc_amt
+shpng_type		Indicates the type of shipping that was specified on the listing	SLNG_LSTG_SUPER_FACT	shpng_type
+site_cre_dt		Site created date	SLNG_LSTG_SUPER_FACT	site_cre_dt
+site_cre_hr		Site created hour	SLNG_LSTG_SUPER_FACT	site_cre_hr
+site_create_date		site_create_date field	DW_LSTG_ITEM	site_create_date
+sku_num		sku_num field	DW_LSTG_ITEM	sku_num
+slng_mgr_pro_sbscrbr_flag		slng_mgr_pro_sbscrbr_flag field	DW_LSTG_ITEM	slng_mgr_pro_sbscrbr_flag
+slng_mgr_pro_used_up_flag		slng_mgr_pro_used_up_flag field	DW_LSTG_ITEM	slng_mgr_pro_used_up_flag
+slng_mgr_sbscrbr_flag		slng_mgr_sbscrbr_flag field	DW_LSTG_ITEM	slng_mgr_sbscrbr_flag
+slr_cntry_id		slr_cntry_id field	DW_LSTG_ITEM	slr_cntry_id
+slr_hub_cub_flag		Indicates if seller is in seller hub cub list	SLNG_LSTG_SUPER_FACT	slr_hub_cub_flag
+slr_hub_post_wait_list_flag		Indicates if seller is in seller hub post-launch waitlist	SLNG_LSTG_SUPER_FACT	slr_hub_post_wait_list_flag
+slr_hub_pre_wait_list_flag		Indicates if seller is in seller hub pre-launch waitlist	SLNG_LSTG_SUPER_FACT	slr_hub_pre_wait_list_flag
+slr_hub_whtlst_flag		Indicates if seller is in seller hub waitlist select	SLNG_LSTG_SUPER_FACT	slr_hub_whtlst_flag
+slr_id		Unique identifier of a user who has registered on any of the eBay sites	DW_LSTG_ITEM	slr_id
+slr_paypal_prefd_up_flag		slr_paypal_prefd_up_flag field	DW_LSTG_ITEM	slr_paypal_prefd_up_flag
+slr_prdct_id_txt		Captures the "custom label" or "custom SKU" that sellers can set for an item, often to indicate their internal SKU identifier (not necessarily the eBay SKU	DW_LSTG_ITEM	slr_prdct_id_txt
+slr_site_id		Site Id on which seller was registered FK to dw_sites	DW_LSTG_ITEM	slr_site_id
+slr_type_cd		SELECT, CASE WHEN fingeo	SLNG_LSTG_SUPER_FACT	slr_type_cd
+sm_smp_flag		Indicates if seller uses SM(Selling Manager) or SMP(Selling Manager Pro)select	SLNG_LSTG_SUPER_FACT	sm_smp_flag
+sm_smp_flag_desc		Possible values -Selling ManagerSeller Manager ProNA ,Indicates if seller uses SM(Selling Manager) or SMP(Selling Manager Pro)CASE WHEN SM_SMP_FLAG = 1 then 'Selling Manager'	SLNG_LSTG_SUPER_FACT	sm_smp_flag_desc
+sme		sme field	DW_LSTG_ITEM	sme
+sold_qty		Number of items sold in payment period	DW_LSTG_ITEM	sold_qty
+sps_slr_level_cd		Note: For eTRS3	SLNG_LSTG_SUPER_FACT	sps_slr_level_cd
+st_prdct_ref_id		PROD_REF_ID in CTLG_PROD_ITEM_FACT	CTLG_ITEM_FACT	st_prdct_ref_id
+start_price_lstg_curncy		The start price of the listing, in listing currency	DW_LSTG_ITEM	start_price_lstg_curncy
+start_price_lstg_curncy_amt		The start price of the listing in listing currency	DW_LSTG_ITEM	start_price_lstg_curncy_amt
+start_price_usd		The start price of the listing, in US dollars	DW_LSTG_ITEM	start_price_usd
+stock_photo_used_yn		This field indicates whether the GALLERY_IMAGE_SOURCE column in the site table is = 768 or not	DW_LSTG_ITEM	stock_photo_used_yn
+stor_categ2_id		Indicates the secondary Store category ID for the seller's Store	DW_LSTG_ITEM	stor_categ2_id
+stor_categ_id		Indicates the primary Store category ID for the seller's Store	DW_LSTG_ITEM	stor_categ_id
+stor_lstg_yn_flag_id		stor_lstg_yn_flag_id field	DW_LSTG_ITEM	stor_lstg_yn_flag_id
+store_owner_flag		Indicates if seller is a store ownerselect	SLNG_LSTG_SUPER_FACT	store_owner_flag
+storefront_flags		storefront_flags field	DW_LSTG_ITEM	storefront_flags
+subtitle		Contains the full text of the subtitle for the listing (can be null if not supplied by the seller)	DW_LSTG_ITEM	subtitle
+subtitle_txt		Contains the full text of the subtitle for the listing (can be null if not supplied by the seller)	DW_LSTG_ITEM	subtitle_txt
+success_yn		This is a value calculated by the DW to indicate whether an item has been successful or not	DW_LSTG_ITEM	success_yn
+super_featured		super_featured field	DW_LSTG_ITEM	super_featured
+syi_2_up_flag		syi_2_up_flag field	DW_LSTG_ITEM	syi_2_up_flag
+tax_new		the SalesTaxPercent seller providered	DW_LSTG_ITEM	tax_new
+tax_new_state		tax_new_state field	DW_LSTG_ITEM	tax_new_state
+trust_tier2_segment		Seller Trust Segmentation Identifier (Level 2)	DIM_ITEM	trust_tier2_segment
+uk_trp_ind		Indicate whether this item is eligible for 'Top Rated Plus' badge for UK program,View only	DIM_ITEM	uk_trp_ind
+unq_rtn_lstr_flag		unq_rtn_lstr_flag field	SLNG_LSTG_SUPER_FACT	unq_rtn_lstr_flag
+unq_rtn_lstr_ind		unq_rtn_lstr_ind field	SLNG_LSTG_SUPER_FACT	unq_rtn_lstr_ind
+us_trp_ind		Indicate whether this item is eligible for 'Top Rated Plus' badge for US program,View only	DIM_ITEM	us_trp_ind
+used		else if (betterBrokenConditionTypes	LSTG_ITEM_CNDTN	used
+user_dsgntn_id		Indicates whether user is a Business or Individual registered user	DW_LSTG_ITEM	user_dsgntn_id
+utd_ebay_plus_ind		Indicate that the seller is ebay Plus subscriber at Batch Run Date ( Auct end date if the item is end)	DIM_ITEM	utd_ebay_plus_ind
+utf8_status		utf8_status field	DW_LSTG_ITEM	utf8_status
+va_mapped_meta		A version of meta categ id that the NA team uses	DIM_ITEM	va_mapped_meta
+values: low trust		Declining Trust,Moderate Trust,High Trust,Already Suspended	DIM_ITEM	values: low trust
+vice_categ_name		A list of the emerging verticals that we got as input from the BU	DIM_ITEM	vice_categ_name
+video_list		video_list field	DIM_ITEM	video_list
+visitcount		visitcount field	DW_LSTG_ITEM	visitcount
+vlt_ag_ind		vlt_ag_ind field	DIM_ITEM	vlt_ag_ind
+wacko_yn		Flag that indicates whether the listing is considered a "wacko" listing	DW_LSTG_ITEM	wacko_yn
+watch_cnt		Number of ebay users watching this item	DW_LSTG_ITEM	watch_cnt
+weight		weight field	DW_LSTG_ITEM	weight
+weight_unit_type		Indicates the unit of weight used for the item	DW_LSTG_ITEM	weight_unit_type
+embeddings		Item embeddings	ITEM360_SRCH_EMBEDDING	embeddings

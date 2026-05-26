@@ -1,0 +1,31 @@
+/* Increase overall container width */
+.md-grid {
+    max-width: 1600px;  /* Default is ~1220px, increased by ~30% */
+}
+
+/* Adjust left sidebar (navigation) width */
+.md-sidebar--primary {
+    width: 220px;  /* Default is 242px */
+}
+
+/* Adjust right sidebar (table of contents) width */
+.md-sidebar--secondary {
+    width: 220px;  /* Default is 242px */
+}
+
+/* Ensure main content area uses the extra space */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        width: 220px;
+    }
+    .md-sidebar--secondary {
+        width: 220px;
+    }
+}
+
+/* Optional: Adjust for even larger screens */
+@media screen and (min-width: 100em) {
+    .md-grid {
+        max-width: 1800px;  /* Even wider on very large screens */
+    }
+}

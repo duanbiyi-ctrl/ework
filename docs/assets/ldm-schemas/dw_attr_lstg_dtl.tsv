@@ -1,0 +1,9 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	ITEM_ID field	DW_ATTR_LSTG_DTL	item_id
+auct_end_dt		AUCT_END_DT field	DW_ATTR_LSTG_DTL	auct_end_dt
+gcs_id	Y	GCS_ID field	DW_ATTR_LSTG_DTL	gcs_id
+vcs_id	Y	VCS_ID field	DW_ATTR_LSTG_DTL	vcs_id
+lstg_attr_id	Y	LSTG_ATTR_ID field	DW_ATTR_LSTG_DTL	lstg_attr_id
+value_id	Y	VALUE_ID field	DW_ATTR_LSTG_DTL	value_id
+value_desc	Y	VALUE_DESC field	DW_ATTR_LSTG_DTL	value_desc
+data_src_cd		DATA_SRC_CD field	DW_ATTR_LSTG_DTL	data_src_cd

@@ -1,0 +1,8 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	Unique identifier of a listed item for auction	DW_ATTR_LSTG_TAG_DTL	item_id
+gcs_id	Y	Global Classification Scheme ID	DW_ATTR_LSTG_TAG_DTL	gcs_id
+vcs_id	Y	Vertical Classification Scheme ID	DW_ATTR_LSTG_TAG_DTL	vcs_id
+lstg_attr_id	Y	Listing attribute ID: 3982=Seller Tagging Active Tags, 4069=Seller Tagging Catalog Tags	DW_ATTR_LSTG_TAG_DTL	lstg_attr_id
+tag_name	Y	Tag name (aspect name provided by seller)	DW_ATTR_LSTG_TAG_DTL	tag_name
+tag_value_txt	Y	Tag value text (aspect value)	DW_ATTR_LSTG_TAG_DTL	tag_value_txt
+auct_end_dt		Auction end date - PPI for partitioning	DW_ATTR_LSTG_TAG_DTL	auct_end_dt

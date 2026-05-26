@@ -1,0 +1,4880 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive guide to Item Domain Logical Data Model in GDS">
+      
+      
+      
+        <link rel="canonical" href="https://yeqli.github.io/gds-item-docs/reference/ldm-design/">
+      
+      
+        <link rel="prev" href="../../relationships/dw_attr_detail_values/">
+      
+      
+        <link rel="next" href="../ldm-modeling-principle/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>LDM Design - Item Domain LDM Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ldm-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Item Domain LDM Documentation" class="md-header__button md-logo" aria-label="Item Domain LDM Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Item Domain LDM Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              LDM Design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yeqli/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    gds-item-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Item Domain LDM Documentation" class="md-nav__button md-logo" aria-label="Item Domain LDM Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Item Domain LDM Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yeqli/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    gds-item-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/migration-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/query-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Query Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Catalog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LDM Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entity
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Entity
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/variation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/transaction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transaction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relationship
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Relationship
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relationships/dw_attr_detail_values/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item Attribute Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Design
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ldm-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LDM Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LDM Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entity-ldms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity LDMs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-ldms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping LDMs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ldm-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LDM Schemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ldm-modeling-principle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Design Principle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ldm-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LDM Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LDM Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entity-ldms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity LDMs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-ldms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping LDMs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ldm-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LDM Schemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ldm-design">LDM Design</h1>
+<p>This page provides detailed schema information for each LDM (Logical Data Model) in the Item Domain.</p>
+<hr />
+<h2 id="ldm-overview">LDM Overview</h2>
+<p>In current phase, following the <a href="../ldm-modeling-principle/">LDM Design Principles</a> strategy of modeling entities as LDMs and relationship data as separate LDMs, the Item Domain LDM design is structured as follows:</p>
+<h3 id="entity-ldms">Entity LDMs</h3>
+<table>
+<thead>
+<tr>
+<th>LDM Name</th>
+<th>Primary Keys</th>
+<th>Description</th>
+<th>Physical Sources</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item</strong></td>
+<td><code>item_id</code></td>
+<td>Core listing entity</td>
+<td>11 sources:<br>- DIM_ITEM(P1)<br>- SLNG_LSTG_SUPER_FACT(P1)<br>- DW_LSTG_ITEM(P1)<br>- LSTG_ITEM_CNDTN(P1)<br>- CTLG_ITEM_FACT(P2)<br>- LSTG_ITEM_DESC_DIM(P2)<br>- CTLG_PROD_ITEM_FACT(P2)<br>- LSTG_ITEM_VIEW_CNTR(P2)<br>- DW_LSTG_ITEM_PROD_REF(P2)<br>- DW_ITEM_REVISIONS(P2)<br>- ITEM360_SRCH_EMBEDDING(P2)<br><em>field-level mapping, one latency per field</em><br><strong>Note:</strong> DW_ITEM_REVISIONS → Maps to <code>item_raw</code> view for revision history tracking</td>
+<td>P1</td>
+</tr>
+<tr>
+<td><strong>variation</strong></td>
+<td><code>item_vrtn_id</code></td>
+<td>Multi-SKU variations of a listing</td>
+<td>2 sources:<br>- LSTG_ITEM_VRTN(P1)<br>- ITEM360_SRCH_EMBEDDING_VRTN(P2)</td>
+<td>P1</td>
+</tr>
+<tr>
+<td><strong>product</strong></td>
+<td><code>prod_ref_id</code></td>
+<td>Product catalog reference (ePID)</td>
+<td>CTLG_PROD_FACT</td>
+<td>P2</td>
+</tr>
+<tr>
+<td><strong>transaction</strong></td>
+<td><code>item_id</code>, <code>transaction_id</code></td>
+<td>Purchase transactions</td>
+<td>ITEM360_DEALS_TRANS_FACT</td>
+<td>P2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mapping-ldms">Mapping LDMs</h3>
+<table>
+<thead>
+<tr>
+<th>LDM Name</th>
+<th>Primary Keys</th>
+<th>Description</th>
+<th>Physical Sources</th>
+<th>Priority</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>dw_attr_detail_values</strong></td>
+<td><code>item_id</code>, <code>attr_id</code>, <code>value_id</code></td>
+<td>Item ↔ Attribute Value (Common Attributes)</td>
+<td>DW_ATTR_DETAIL_VALUES</td>
+<td>P1</td>
+<td>Structure may change significantly after caty migration</td>
+</tr>
+<tr>
+<td><strong>dw_attr_lstg_dtl</strong></td>
+<td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>lstg_attr_id</code>, <code>value_id</code>, <code>value_desc</code></td>
+<td>Item ↔ Attribute Value (Listing)</td>
+<td>DW_ATTR_LSTG_DTL</td>
+<td>P1</td>
+<td>Structure may change significantly after caty migration</td>
+</tr>
+<tr>
+<td><strong>dw_attr_shpmt_dtl</strong></td>
+<td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>shpmt_attr_id</code>, <code>value_id</code>, <code>value_desc</code></td>
+<td>Item ↔ Attribute Value (Shipment)</td>
+<td>DW_ATTR_SHPMT_DTL </br> DW_ATTR_SHPMT_DTL_COLD</td>
+<td>P1</td>
+<td>Structure may change significantly after caty migration</td>
+</tr>
+<tr>
+<td><strong>lstg_item_pic</strong></td>
+<td><code>item_id</code>, <code>trait_name</code></td>
+<td>Item ↔ Picture</td>
+<td>LSTG_ITEM_PIC</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>item_aspct_clssfctn_sap</strong></td>
+<td><code>item_id</code>, <code>aspect_name</code></td>
+<td>Item ↔ Aspect</td>
+<td>ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>lstg_item_vrtn_trait</strong></td>
+<td><code>variation_id</code>, <code>trait_name</code></td>
+<td>Variation ↔ Trait</td>
+<td>LSTG_ITEM_VRTN_TRAIT</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>dw_lstg_item_ftmnt</strong></td>
+<td><code>item_id</code>, <code>auct_end_dt</code>, <code>ftmnt_grp_id</code>, <code>ftmnt_name</code>, <code>ftmnt_value_text</code>, <code>src_ind</code>, <code>cmbntn_grp_id</code></td>
+<td>Item ↔ Attribute Value (Fitment)</td>
+<td>DW_LSTG_ITEM_FTMNT</td>
+<td>P2</td>
+<td>Structure may change significantly after caty migration</td>
+</tr>
+<tr>
+<td><strong>dw_attr_lstg_tag_dtl</strong></td>
+<td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>lstg_attr_id</code>, <code>tag_name</code>, <code>tag_value_txt</code></td>
+<td>Item ↔ Attribute Value (Tags)</td>
+<td>DW_ATTR_LSTG_TAG_DTL</td>
+<td>P2</td>
+<td>Structure may change significantly after caty migration</td>
+</tr>
+<tr>
+<td><strong>lstg_sale_tax</strong></td>
+<td><code>item_id</code>, <code>sale_tax_rate</code>, <code>jrsdctn_cntry_id</code>, <code>jrsdctn_tx</code></td>
+<td>Item ↔ Attribute Value (Tax)</td>
+<td>LSTG_SALE_TAX</td>
+<td>P2</td>
+<td>Structure may change significantly after caty migration</td>
+</tr>
+<tr>
+<td><strong>vrtn_aspct_clssfctn_sap</strong></td>
+<td><code>variation_id</code>, <code>aspect_name</code></td>
+<td>Variation ↔ Aspect</td>
+<td>VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td>P2</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>item_business_program_eligibility</strong></td>
+<td><code>item_id</code>, <code>biz_prgrm_id</code></td>
+<td>Item ↔ Business Program (current state)</td>
+<td>DW_PES_ELGBLT_HIST</td>
+<td>P2</td>
+<td>SCD2 table - requires pre-processing to create current state view (filter: vrtn_id = -999)</td>
+</tr>
+<tr>
+<td><strong>variation_business_program_eligibility</strong></td>
+<td><code>item_vrtn_id</code>, <code>biz_prgrm_id</code></td>
+<td>Variation ↔ Business Program (current state)</td>
+<td>DW_PES_ELGBLT_HIST</td>
+<td>P2</td>
+<td>SCD2 table - requires pre-processing to create current state view (filter: vrtn_id != -999)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ldm-schemas">LDM Schemas</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:16"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><input id="__tabbed_1_8" name="__tabbed_1" type="radio" /><input id="__tabbed_1_9" name="__tabbed_1" type="radio" /><input id="__tabbed_1_10" name="__tabbed_1" type="radio" /><input id="__tabbed_1_11" name="__tabbed_1" type="radio" /><input id="__tabbed_1_12" name="__tabbed_1" type="radio" /><input id="__tabbed_1_13" name="__tabbed_1" type="radio" /><input id="__tabbed_1_14" name="__tabbed_1" type="radio" /><input id="__tabbed_1_15" name="__tabbed_1" type="radio" /><input id="__tabbed_1_16" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">item</label><label for="__tabbed_1_2">variation</label><label for="__tabbed_1_3">product</label><label for="__tabbed_1_4">transaction</label><label for="__tabbed_1_5">dw_attr_detail_values</label><label for="__tabbed_1_6">dw_attr_lstg_dtl</label><label for="__tabbed_1_7">dw_attr_shpmt_dtl</label><label for="__tabbed_1_8">lstg_item_pic</label><label for="__tabbed_1_9">item_aspct_clssfctn_sap</label><label for="__tabbed_1_10">lstg_item_vrtn_trait</label><label for="__tabbed_1_11">dw_lstg_item_ftmnt</label><label for="__tabbed_1_12">dw_attr_lstg_tag_dtl</label><label for="__tabbed_1_13">lstg_sale_tax</label><label for="__tabbed_1_14">vrtn_aspct_clssfctn_sap</label><label for="__tabbed_1_15">item_business_program_eligibility</label><label for="__tabbed_1_16">variation_business_program_eligibility</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Pre-processing:</strong></p>
+<ul>
+<li><strong>ITEM360_SRCH_EMBEDDING</strong> → <code>embeddings</code> field: Aggregation by <code>item_id</code> required to consolidate embedding vectors</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">abin_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">abin_yn_ind field</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">abin_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">aedl_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Admin ended day lister y/n indicatorLogic:case when COALESCE(LIST_1ST_DT, DATE '2099-01-01') &gt; y</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">aedl_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">app_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The APP_ID of the tool used to list this listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">app_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">app_party_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">the application party type codeSame as APP_PARTY_TYPE_CD in DW_APPLICATIONS</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">app_party_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">application_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The Application which listed the item</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">application_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">at_prdct_ref_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auto-tagged (passive) Product Reference ID</td>
+<td style="text-align: left;">DW_LSTG_ITEM_PROD_REF</td>
+<td style="text-align: left;">at_prdct_ref_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">at_prod_ref_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Please note: this column is not available in ACCESS_VIEWS</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">at_prod_ref_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_durtn_days</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Actual auction duration days, If fixed price listing ended early, the actual will be shorter compared to the planned</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">auct_durtn_days</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end time</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_end_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_exchng_rate</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Exchange Rate on auction end date</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_end_exchng_rate</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_start_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction start time</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_start_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_start_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction start dt</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_start_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_start_exchng_rate</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Exchange Rate on auction start date</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_start_exchng_rate</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_titl</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The item title (shows up in Search and at the top of ViewItem)</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_titl</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_title_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The item title (shows up in Search and at the top of ViewItem)</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_title_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">auction type codeLogic: DW_GEM2_CMN_LSTG_I</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">auct_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_type_code</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The format of the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auct_type_code</td>
+</tr>
+<tr>
+<td style="text-align: left;">auction_end_reason_code</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The reason for the item ending</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">auction_end_reason_code</td>
+</tr>
+<tr>
+<td style="text-align: left;">avail_qty</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The number of this item that are initially available for sale</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">avail_qty</td>
+</tr>
+<tr>
+<td style="text-align: left;">b2b_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">b2b_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">b2b_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">b2c_c2c</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate that the seler is b2c or c2c,view only, derived from slr_cntry_id</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">b2c_c2c</td>
+</tr>
+<tr>
+<td style="text-align: left;">best_offer_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Listing with best offer y/n indicatorLogic:CASE WHEN td_sysfnlib</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">best_offer_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">bidcount</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Count of bids that the listing has received</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">bidcount</td>
+</tr>
+<tr>
+<td style="text-align: left;">bin_price_lstg_curncy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The BIN price for the listing in the listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">bin_price_lstg_curncy</td>
+</tr>
+<tr>
+<td style="text-align: left;">bin_price_lstg_curncy_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The BIN price for the listing in the listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">bin_price_lstg_curncy_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">bin_price_usd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The BIN price for the listing in US dollars</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">bin_price_usd</td>
+</tr>
+<tr>
+<td style="text-align: left;">bin_sold_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">It is meant to indicate whether a listing was sold via a Buy It Now flow</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">bin_sold_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">bin_sold_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">It is meant to indicate whether a listing was sold via a Buy It Now flow</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">bin_sold_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">bold_title</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bold_title field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">bold_title</td>
+</tr>
+<tr>
+<td style="text-align: left;">bold_title_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Bold title text</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">bold_title_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">brand_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Brand value deduped from multi sources in this order - st_df_brand_txt, cls_df_brand_txt, pi_df_brand_txt, st_nf_brand_txt, cls_nf_brand_txt, pi_nf_brand_txt, trnsltd_df_brand_txt</td>
+<td style="text-align: left;">CTLG_ITEM_FACT</td>
+<td style="text-align: left;">brand_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">broken</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">else if (betterRefurbConditionTypes</td>
+<td style="text-align: left;">LSTG_ITEM_CNDTN</td>
+<td style="text-align: left;">broken</td>
+</tr>
+<tr>
+<td style="text-align: left;">bsns_vrtcl_name</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Same as GLBL_RPRT_BSNS_CTGRY_DESC as above,glkp</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">bsns_vrtcl_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">catalog</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">at_cnfdnc_cd,Auto-tag ePID confidence code</td>
+<td style="text-align: left;">CTLG_ITEM_FACT</td>
+<td style="text-align: left;">catalog</td>
+</tr>
+<tr>
+<td style="text-align: left;">categ_key</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Joins to DW_CATEGORY_HIERARCHY</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">categ_key</td>
+</tr>
+<tr>
+<td style="text-align: left;">categ_key2</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Joins to DW_CATEGORY_HIERARCHY</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">categ_key2</td>
+</tr>
+<tr>
+<td style="text-align: left;">categ_lvl2_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Level 2 category id</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">categ_lvl2_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">categ_lvl3_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Level 3 category id</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">categ_lvl3_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">categ_slng_guide_used_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">categ_slng_guide_used_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">categ_slng_guide_used_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">charity_giving_tool_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">CHARITY_GIVING_TOOL_UP_FLAG=1 means YES and CHARITY_GIVING_TOOL_UP_FLAG=0 means NO</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">charity_giving_tool_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">ck_fetr_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">ck_fetr_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ck_fetr_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">cndtn_rollup_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">ID of the user who created the record</td>
+<td style="text-align: left;">LSTG_ITEM_CNDTN</td>
+<td style="text-align: left;">cndtn_rollup_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">content_modified</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">content_modified field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">content_modified</td>
+</tr>
+<tr>
+<td style="text-align: left;">core_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">case when lstg</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">core_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">css_sgmnt_type_desc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Customer selleer segmentation desc at auct start date</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">css_sgmnt_type_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">curnt_price_lstg_curncy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The current price of the listing, in listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">curnt_price_lstg_curncy</td>
+</tr>
+<tr>
+<td style="text-align: left;">curnt_price_lstg_curncy_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The current price of the listing in listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">curnt_price_lstg_curncy_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">curnt_price_usd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The current price of the listing, in US dollars</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">curnt_price_usd</td>
+</tr>
+<tr>
+<td style="text-align: left;">cust_ref_code</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">From the site DM: This field is populated from the UUID tag in AddItem API</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">cust_ref_code</td>
+</tr>
+<tr>
+<td style="text-align: left;">cust_sgmntn_desc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">SelLKP</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">cust_sgmntn_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">cw_policy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">cw_policy field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">cw_policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">cy_lstd_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate if a seller listed something from current calendar year to date</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">cy_lstd_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">dates</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">site_create_date,Site create time</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">dates</td>
+</tr>
+<tr>
+<td style="text-align: left;">de_trp_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate whether this item is eligible for 'Top Rated Plus' badge for DE program,View only</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">de_trp_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">dw_lstg_item</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">dw_lstg_item field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">dw_lstg_item</td>
+</tr>
+<tr>
+<td style="text-align: left;">dw_pes_elgblt_hist</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">dw_pes_elgblt_hist field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">dw_pes_elgblt_hist</td>
+</tr>
+<tr>
+<td style="text-align: left;">ebx_cs_frc_out_item_yn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether CS forced this item out of eBay Express</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ebx_cs_frc_out_item_yn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">ebx_elgbl_item_yn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This is the overall flag indicating whether this item is eligible for eBay Express (assuming it's live)</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ebx_elgbl_item_yn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">ebx_opt_in_item_yn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether this item is opted-in to eBay Express</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ebx_opt_in_item_yn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">ebx_qlfd_item_yn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether this item was qualified via the batch job</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ebx_qlfd_item_yn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">ebx_sticky_item_yn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether this item was EVER eligible for eBay Express over the lifetime of the item</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ebx_sticky_item_yn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">featured</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether an item is a Featured Plus item (also called Category Featured, or just Featured)</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">featured</td>
+</tr>
+<tr>
+<td style="text-align: left;">featured_plus_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether an item is a Featured Plus item (also called Category Featured, or just Featured)</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">featured_plus_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags10</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags10 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags10</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags10_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags10_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags11</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags11 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags11</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags11_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags11_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags12</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags12 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags12</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags12_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags12_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags2</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags2 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags2</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags2_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags2_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags3</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags3 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags3</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags4</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags4 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags4</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags4_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags4_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags5</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags5 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags5</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags5_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags5_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags6</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags6 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags6</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags6_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags6_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags7</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags7 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags7</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags7_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags7_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags8</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags8 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags8</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags8_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags8_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags9</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">flags9 field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags9</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags9_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags9_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">flags_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of flags</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">flags_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">fnl_type</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Fresh new listing type</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">fnl_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">fnl_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Fresh new listings type code</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">fnl_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">free_shpng_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if given listing is free shipping or not</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">free_shpng_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">gallery_url</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The gallery image is the image that is shown on the SRP page A single URL of the gallery image for this listing which is usually the first image from the picture URL</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">gallery_url</td>
+</tr>
+<tr>
+<td style="text-align: left;">glbl_rprt_bsns_ctgry_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">-99 --Unknown2 ----Electronics3 ----Fashion4 ----Home &amp; Garden5 ----Collectibles6 ----Parts &amp; Accessories7 ----Media8 ----Other9 --Vehicles10 --Real Estate11 ----Business &amp; Industrial12 ----Lifestyle,Global business category codeLookup table: GLBL_RPRT_BSNS_CTGRY_LKP</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">glbl_rprt_bsns_ctgry_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">glbl_rprt_bsns_ctgry_grp_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">-99 Unknown1 Core2 Vehicles3 Real Estate,global business category group code</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">glbl_rprt_bsns_ctgry_grp_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">global_trp_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate whether this item is eligible for 'Top Rated Plus' badge for global program,View only</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">global_trp_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_state</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">State of a Gallery image upload</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">glry_state</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the type of Gallery image GALLERY_URL</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">glry_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_type_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the type of Gallery image GALLERY_URL</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">glry_type_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_url_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">A single URL of the gallery image for this listing which is usually the first image from the picture URL</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">glry_url_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">gms_dutch_lstg_curncy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">gms_dutch_lstg_curncy field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">gms_dutch_lstg_curncy</td>
+</tr>
+<tr>
+<td style="text-align: left;">gms_lstg_curncy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">For GTC and longer duration listings, the GMS will show up as zero until the listing ends, even if items have been sold</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">gms_lstg_curncy</td>
+</tr>
+<tr>
+<td style="text-align: left;">gms_lstg_curncy_est</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">gms_lstg_curncy_est field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">gms_lstg_curncy_est</td>
+</tr>
+<tr>
+<td style="text-align: left;">gms_usd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This is a calculated field in the DW</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">gms_usd</td>
+</tr>
+<tr>
+<td style="text-align: left;">gms_usd_est</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">gms_usd_est field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">gms_usd_est</td>
+</tr>
+<tr>
+<td style="text-align: left;">gtc_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether the listing is a GTC (Good Til Cancelled) listing</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">gtc_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">gtc_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether the listing is a GTC (Good Til Cancelled) listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">gtc_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">high_bdr_cntry_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">High Bidder's Country of residence</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">high_bdr_cntry_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">high_bdr_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">A value of -998 indicates a multi-quantity listing (excluding Dutch) where a single bidder cannot be determined; a value of -999 indicates the bidder is unknown</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">high_bdr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">high_bdr_site_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">High Bidder's registration site</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">high_bdr_site_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_ip_addr</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Populated from site column 'HOST' The ip address from which this item is listed</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">host_ip_addr</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_ip_addr_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The ip address from which this item is listed</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">host_ip_addr_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">icon_flags</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This field is an enumeration of potential paid-for icon values associated with the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">icon_flags</td>
+</tr>
+<tr>
+<td style="text-align: left;">images</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">images field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">images</td>
+</tr>
+<tr>
+<td style="text-align: left;">in this listing table</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">in this listing table field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">in this listing table</td>
+</tr>
+<tr>
+<td style="text-align: left;">in this listing table:for us items</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Items after 2020-10-04 and item condition id = 2000 are eligible for certified refurbished</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">in this listing table:for us items</td>
+</tr>
+<tr>
+<td style="text-align: left;">insurance_fee_lstg_curncy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The shipping insurance fee associated with the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">insurance_fee_lstg_curncy</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_cndtn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Holds the item condition</td>
+<td style="text-align: left;">LSTG_ITEM_CNDTN</td>
+<td style="text-align: left;">item_cndtn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_cntry_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The country that the seller says the item is located in</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_cntry_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_desc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item description encoded by base64</td>
+<td style="text-align: left;">LSTG_ITEM_DESC_DIM</td>
+<td style="text-align: left;">item_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_desc_lgth_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Length of the item description</td>
+<td style="text-align: left;">LSTG_ITEM_DESC_DIM</td>
+<td style="text-align: left;">item_desc_lgth_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_flags</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Source: EBAY_ITEMS</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_flags</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Unique identifier of a listed item for auction</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_loc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Gives the seller's item location</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_loc</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_loc_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Gives the seller's item location</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_loc_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_prpty_key_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Contains keys used for lookups into DW_LSTG_ITEM_PROP_LKP and DW_LSTG_ITEM_PROP_CONTENT_VAL which stores item properties specified by seller and available to a seller's items during VI and elsewhere</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_prpty_key_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_site_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Contains the site ID that the listing was listed on</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_site_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_vrsn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the version ID of this listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_vrsn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_zip</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item Zip code</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_zip</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_zip_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item Zip code</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">item_zip_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_mdfd_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The date with timestamp when the item was updated last time</td>
+<td style="text-align: left;">LSTG_ITEM_DESC_DIM</td>
+<td style="text-align: left;">last_mdfd_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_modfd_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Date that this item is last modified</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">last_modfd_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_modfd_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">last_modfd_dt field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">last_modfd_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_transaction_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Last purchase Date</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">last_transaction_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">layout_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">layout_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">layout_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Contains the leaf category ID that the seller chose for the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">leaf_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_categ_id2</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The category ID of the second category chosen by the seller when the seller chooses to list in two categories</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">leaf_categ_id2</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_ctgry_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Leaf Category idLogic: DW_GEM2_CMN_LSTG_I</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">leaf_ctgry_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">listed_with_autopay_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether the listing is an Immediate Pay (/AutoPay) listingSame as LISTED_WITH_AUTOPAY_UP_FLAG</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">listed_with_autopay_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">listed_with_autopay_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether the listing is an Immediate Pay (/AutoPay) listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">listed_with_autopay_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">lister_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">lister_type_cd field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">lister_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">live_auctn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Y' - Live Auction Listing 'N' - Non-Live Auction Listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">live_auctn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">lmo_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate that the seller is large-merchance-onboarding seller at auct start date</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">lmo_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">lot_size</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">THEME_ID - Listing Designer Theme ID - this is an old feature which adds a visual frame / border around your listing description</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">lot_size</td>
+</tr>
+<tr>
+<td style="text-align: left;">lower_relist_option</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the option the user chose to indicate the listing price when relisting the item</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">lower_relist_option</td>
+</tr>
+<tr>
+<td style="text-align: left;">lstg_chnl_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">selCASE WHEN lstg</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">lstg_chnl_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">lstg_curncy_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The ID of the currency that the listing was listed in NOTE: You cannot assume a 1-1 mapping between ITEM_SITE_ID and LSTG_CURNCY_ID</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">lstg_curncy_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">lstg_mthd_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This is a field that delimits some of the on-site listing methods</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">lstg_mthd_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">lstg_site_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Listing site idLogic: DW_GEM2_CMN_LSTG_I</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">lstg_site_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">lstg_status_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates an item’s activity status such as live, ended, deleted or archived etc</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">lstg_status_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">maxbid</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">maxbid field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">maxbid</td>
+</tr>
+<tr>
+<td style="text-align: left;">meta_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Same as META_CTGRY_ID as above,lstg</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">meta_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">meta_ctgry_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Meta Category IdLogic: DW_CATEGORY_GROUPINGS</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">meta_ctgry_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">mobile_lstg_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Same as MOBILE_LSTG_IND as above,lstg</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">mobile_lstg_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">mobile_lstg_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Listed by mobile y/n indicatorLogic: CASE WHEN apps</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">mobile_lstg_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">mq_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">CASE WHEN lstg</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">mq_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">mr_lister_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">mr_lister_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">mr_lister_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">mrch_tool_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">mrch_tool_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">mrch_tool_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">msku_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if it's multiple SKU or not</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">msku_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">msku_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item listed with multi SKU or notLogic:CASE WHEN TD_SYSFNLIB</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">msku_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">new</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">else if (betterUsedConditionTypes</td>
+<td style="text-align: left;">LSTG_ITEM_CNDTN</td>
+<td style="text-align: left;">new</td>
+</tr>
+<tr>
+<td style="text-align: left;">norl_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">New and Reactivated Lister flag, values are:New Listers defined as the first item listed</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">norl_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">note this is different from the ftl_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">note this is different from the ftl_ind field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">note this is different from the ftl_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">notice_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Time that EOA is sent out</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">notice_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">ofrd_slng_chnl_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This represents on what selling channel the item is offered i</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ofrd_slng_chnl_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">orgnl_price_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This Column will maintain the Orginal BIN Price before the Sale so that the BIN_Price column can be updated with its Orginal Value after the Sale has ended</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">orgnl_price_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">out_of_stock_sts</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Out of stock status</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">out_of_stock_sts</td>
+</tr>
+<tr>
+<td style="text-align: left;">overall</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">such as buyer country</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">overall</td>
+</tr>
+<tr>
+<td style="text-align: left;">package_size</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Enums which indicate different packages</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">package_size</td>
+</tr>
+<tr>
+<td style="text-align: left;">passwordex</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">passwordex field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">passwordex</td>
+</tr>
+<tr>
+<td style="text-align: left;">passwordex_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of passwordex</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">passwordex_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">payment_cash</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This corresponds to the 'Payment on Pickup' option in listing flows, it is known by various local names by site as well When this option is set, the buyer can check out with this selected, and must contact seller to meet them, there is no online payment and the transaction does not qualify for buyer protection</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">payment_cash</td>
+</tr>
+<tr>
+<td style="text-align: left;">payment_cc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Credit Card payment type is accepted by seller</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">payment_cc</td>
+</tr>
+<tr>
+<td style="text-align: left;">payment_moneyxfer</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Money transfer payment type is accepted by seller</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">payment_moneyxfer</td>
+</tr>
+<tr>
+<td style="text-align: left;">paypal_accepted_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Important - this value is not true for all PI listings -&gt; If you need PI metrics, you need to use 0x00040000 (262144) EbayIntermediatedPaymentMethod: Identifies the eBay intermediated payment method from DW_LSTG_ITEM_COLD</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">paypal_accepted_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">paypal_acptd_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">paypal accepted</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">paypal_acptd_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">paypal_icon_type</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">paypal_icon_type field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">paypal_icon_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">paypal_seller_email</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The seller's PayPal email address associated with the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">paypal_seller_email</td>
+</tr>
+<tr>
+<td style="text-align: left;">paypal_slr_email_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The seller's PayPal email address associated with the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">paypal_slr_email_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">pbp_eligibility</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Paypal Buyer Protection eligible Y/N Source of record: /v3dal/DALItem/src/com/ebay/integ/item/common/PbpSaleEligibilityEnum</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">pbp_eligibility</td>
+</tr>
+<tr>
+<td style="text-align: left;">photo_cnt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The number of images for the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">photo_cnt</td>
+</tr>
+<tr>
+<td style="text-align: left;">photo_count</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The number of images for the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">photo_count</td>
+</tr>
+<tr>
+<td style="text-align: left;">photo_disp_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the type of displayed photo-99999999 = Invalid0 = None1 = Gallery (Will also be set if Picture Pack, Motors Propack, or Valuepak used)2 = Featured (Will also be set if ProPack Plus is used) (Featured First)3 = Ungallery4 = Unfeatured5 = HomePage Featured6 = Stock Photo7 = Gallery Plus8 = UnGallery Plus</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">photo_disp_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">photo_display_type</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Direct pull from site table</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">photo_display_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">photo_yn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This field indicates whether the PICTURE_URL field in the site table is blank or not</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">photo_yn</td>
+</tr>
+<tr>
+<td style="text-align: left;">pic_url_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">A semi-colon delimited list of image URLs for this listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">pic_url_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">picture_url</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">A semi-colon delimited list of image URLs for this listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">picture_url</td>
+</tr>
+<tr>
+<td style="text-align: left;">plan_durtn_days</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Planned auction duration days,</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">plan_durtn_days</td>
+</tr>
+<tr>
+<td style="text-align: left;">pp_fin_offr_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">PayPal Buyer Credit offer ID</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">pp_fin_offr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">prdct_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This column is to get mapping of listing and Product ID</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">prdct_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">pricing</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">lstg_curncy_id,The ID of the currency that the listing was listed in</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">pricing</td>
+</tr>
+<tr>
+<td style="text-align: left;">private_yn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">private_yn field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">private_yn</td>
+</tr>
+<tr>
+<td style="text-align: left;">prmtn_sale_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Ending date of the Promotion Sale</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">prmtn_sale_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">prmtn_sale_end_tm</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Ending time of the Promotion Sale</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">prmtn_sale_end_tm</td>
+</tr>
+<tr>
+<td style="text-align: left;">prmtn_sale_start_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Starting date of the Promotion Sale</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">prmtn_sale_start_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">prmtn_sale_start_tm</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Starting time of the Promotion Sale</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">prmtn_sale_start_tm</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">sel A</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">prod_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">product_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This column is to get mapping of listing and Product ID,</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">product_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">professional/business or casual/consumer at auct start date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">professional/business or casual/consumer at auct start date</td>
+</tr>
+<tr>
+<td style="text-align: left;">psa_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">psa_ind field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">psa_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">qty_avail</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The number of this item that are initially available for sale</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">qty_avail</td>
+</tr>
+<tr>
+<td style="text-align: left;">qty_sold</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The quantity sold from this listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">qty_sold</td>
+</tr>
+<tr>
+<td style="text-align: left;">refurbished</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">else</td>
+<td style="text-align: left;">LSTG_ITEM_CNDTN</td>
+<td style="text-align: left;">refurbished</td>
+</tr>
+<tr>
+<td style="text-align: left;">relist_crd_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">relist_crd_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">relist_crd_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">relist_item_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Relist item ID</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">relist_item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">relist_parent_item_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The item ID of the parent item if the listing go through relist flow</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">relist_parent_item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">relist_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This flag indicates whether the item was created using relist functionality on site or set by 3rd party tool when listed via API</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">relist_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">relistid</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The item ID of the item got relisted from this item</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">relistid</td>
+</tr>
+<tr>
+<td style="text-align: left;">return_policy_yn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This field is simply checking whether or not the Return Policy field in the EBAY_ITEMS table is NULL/blank or not</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">return_policy_yn</td>
+</tr>
+<tr>
+<td style="text-align: left;">rev_rollup</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">coun</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">rev_rollup</td>
+</tr>
+<tr>
+<td style="text-align: left;">rlst_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This flag indicates whether the item was created using relist functionality on site or set by 3rd party tool when listed via APISame as RELIST_UP_FLAG in</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">rlst_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">rsrv_price_list_crncy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The reserve price of the listing, in listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">rsrv_price_list_crncy</td>
+</tr>
+<tr>
+<td style="text-align: left;">rsrv_price_list_curncy_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The reserve price of the listing in listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">rsrv_price_list_curncy_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">rsrv_price_lstg_curncy_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The reserve price of the listing, in listing currencySame as RSRV_PRICE_LSTG_CURNCY</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">rsrv_price_lstg_curncy_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">rsrv_price_usd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The reserve price of the listing, in US dollars</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">rsrv_price_usd</td>
+</tr>
+<tr>
+<td style="text-align: left;">rtn_lstr_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate if a seller listed something in last 12 months</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">rtn_lstr_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">sale_sched_end_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Sale scheduled end time</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sale_sched_end_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">sale_sched_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Date the listing is scheduled to end</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sale_sched_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">sale_status</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">sale_status field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sale_status</td>
+</tr>
+<tr>
+<td style="text-align: left;">sale_status_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of sale_status_cd</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sale_status_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">sale_tax_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The SalesTaxPercent seller providered</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sale_tax_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">sample query select d.item_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">sample query select d.item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">sap_category_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Same as SAP_CTGRY_ID as above,lstg</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">sap_category_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">sap_ctgry_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">SAP category idLogic: DW_CATEGORY_GROUPINGS</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">sap_ctgry_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">sccss_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This is a value calculated by the DW to indicate whether an item has been successfully sold or not</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">sccss_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">scnd_leaf_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The category ID of the second category chosen by the seller when the seller chooses to list in two categories</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">scnd_leaf_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">seller_group_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Seller segment group code,</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">seller_group_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">sgnfcnt_rvsn_cnt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The number of significant revisions for this listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sgnfcnt_rvsn_cnt</td>
+</tr>
+<tr>
+<td style="text-align: left;">ship_option_code</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the shipping options offered by the SellerPotential values: (-99 = Unknown, -88 = Invalid, 0 = SiteOnly, 1 = SitePlusRegions, 2 = Worldwide, 3 = Will Not Ship, 4 = Terms And Conditions Only)Lookup table for potential values: DW_SHPMT_OPTN</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ship_option_code</td>
+</tr>
+<tr>
+<td style="text-align: left;">ship_regn_flags</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">0x00000001 NorthAmerica 0x00000002 Europe 0x00000004 Australasia 0x00000008 Asia 0x00000010 SouthAmerica 0x00000020 Africa 0x00000040 LatinAmerica 0x00000080 MiddleEast 0x00000100 Caribbean</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">ship_regn_flags</td>
+</tr>
+<tr>
+<td style="text-align: left;">shipping_fee</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Shipping fee as shown on the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">shipping_fee</td>
+</tr>
+<tr>
+<td style="text-align: left;">shipping_fee_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Shipping Cost of first domestic shipping service</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">shipping_fee_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">shipping_type</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the type of shipping that was specified on the listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">shipping_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">shipping_xfee</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Shipping fee as shown on the listing for "Each Additional Item</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">shipping_xfee</td>
+</tr>
+<tr>
+<td style="text-align: left;">shpng_fee_lc_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Shipping fee listing currency amount for the given item</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">shpng_fee_lc_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">shpng_type</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the type of shipping that was specified on the listing</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">shpng_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">site_cre_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Site created date</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">site_cre_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">site_cre_hr</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Site created hour</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">site_cre_hr</td>
+</tr>
+<tr>
+<td style="text-align: left;">site_create_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">site_create_date field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">site_create_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">sku_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">sku_num field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sku_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">slng_mgr_pro_sbscrbr_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">slng_mgr_pro_sbscrbr_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slng_mgr_pro_sbscrbr_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slng_mgr_pro_used_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">slng_mgr_pro_used_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slng_mgr_pro_used_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slng_mgr_sbscrbr_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">slng_mgr_sbscrbr_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slng_mgr_sbscrbr_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_cntry_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">slr_cntry_id field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slr_cntry_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_hub_cub_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if seller is in seller hub cub list</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">slr_hub_cub_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_hub_post_wait_list_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if seller is in seller hub post-launch waitlist</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">slr_hub_post_wait_list_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_hub_pre_wait_list_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if seller is in seller hub pre-launch waitlist</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">slr_hub_pre_wait_list_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_hub_whtlst_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if seller is in seller hub waitlist select</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">slr_hub_whtlst_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Unique identifier of a user who has registered on any of the eBay sites</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_paypal_prefd_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">slr_paypal_prefd_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slr_paypal_prefd_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_prdct_id_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Captures the "custom label" or "custom SKU" that sellers can set for an item, often to indicate their internal SKU identifier (not necessarily the eBay SKU</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slr_prdct_id_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_site_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Site Id on which seller was registered FK to dw_sites</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">slr_site_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">SELECT, CASE WHEN fingeo</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">slr_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">sm_smp_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if seller uses SM(Selling Manager) or SMP(Selling Manager Pro)select</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">sm_smp_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">sm_smp_flag_desc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Possible values -Selling ManagerSeller Manager ProNA ,Indicates if seller uses SM(Selling Manager) or SMP(Selling Manager Pro)CASE WHEN SM_SMP_FLAG = 1 then 'Selling Manager'</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">sm_smp_flag_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">sme</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">sme field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sme</td>
+</tr>
+<tr>
+<td style="text-align: left;">sold_qty</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Number of items sold in payment period</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">sold_qty</td>
+</tr>
+<tr>
+<td style="text-align: left;">sps_slr_level_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Note: For eTRS3</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">sps_slr_level_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">st_prdct_ref_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">PROD_REF_ID in CTLG_PROD_ITEM_FACT</td>
+<td style="text-align: left;">CTLG_ITEM_FACT</td>
+<td style="text-align: left;">st_prdct_ref_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">start_price_lstg_curncy</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The start price of the listing, in listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">start_price_lstg_curncy</td>
+</tr>
+<tr>
+<td style="text-align: left;">start_price_lstg_curncy_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The start price of the listing in listing currency</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">start_price_lstg_curncy_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">start_price_usd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The start price of the listing, in US dollars</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">start_price_usd</td>
+</tr>
+<tr>
+<td style="text-align: left;">stock_photo_used_yn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This field indicates whether the GALLERY_IMAGE_SOURCE column in the site table is = 768 or not</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">stock_photo_used_yn</td>
+</tr>
+<tr>
+<td style="text-align: left;">stor_categ2_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the secondary Store category ID for the seller's Store</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">stor_categ2_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">stor_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the primary Store category ID for the seller's Store</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">stor_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">stor_lstg_yn_flag_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">stor_lstg_yn_flag_id field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">stor_lstg_yn_flag_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">store_owner_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if seller is a store ownerselect</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">store_owner_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">storefront_flags</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">storefront_flags field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">storefront_flags</td>
+</tr>
+<tr>
+<td style="text-align: left;">subtitle</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Contains the full text of the subtitle for the listing (can be null if not supplied by the seller)</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">subtitle</td>
+</tr>
+<tr>
+<td style="text-align: left;">subtitle_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Contains the full text of the subtitle for the listing (can be null if not supplied by the seller)</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">subtitle_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">success_yn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This is a value calculated by the DW to indicate whether an item has been successful or not</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">success_yn</td>
+</tr>
+<tr>
+<td style="text-align: left;">super_featured</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">super_featured field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">super_featured</td>
+</tr>
+<tr>
+<td style="text-align: left;">syi_2_up_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">syi_2_up_flag field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">syi_2_up_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">tax_new</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">the SalesTaxPercent seller providered</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">tax_new</td>
+</tr>
+<tr>
+<td style="text-align: left;">tax_new_state</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">tax_new_state field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">tax_new_state</td>
+</tr>
+<tr>
+<td style="text-align: left;">trust_tier2_segment</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Seller Trust Segmentation Identifier (Level 2)</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">trust_tier2_segment</td>
+</tr>
+<tr>
+<td style="text-align: left;">uk_trp_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate whether this item is eligible for 'Top Rated Plus' badge for UK program,View only</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">uk_trp_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">unq_rtn_lstr_flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">unq_rtn_lstr_flag field</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">unq_rtn_lstr_flag</td>
+</tr>
+<tr>
+<td style="text-align: left;">unq_rtn_lstr_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">unq_rtn_lstr_ind field</td>
+<td style="text-align: left;">SLNG_LSTG_SUPER_FACT</td>
+<td style="text-align: left;">unq_rtn_lstr_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">us_trp_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate whether this item is eligible for 'Top Rated Plus' badge for US program,View only</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">us_trp_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">used</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">else if (betterBrokenConditionTypes</td>
+<td style="text-align: left;">LSTG_ITEM_CNDTN</td>
+<td style="text-align: left;">used</td>
+</tr>
+<tr>
+<td style="text-align: left;">user_dsgntn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether user is a Business or Individual registered user</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">user_dsgntn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">utd_ebay_plus_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicate that the seller is ebay Plus subscriber at Batch Run Date ( Auct end date if the item is end)</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">utd_ebay_plus_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">utf8_status</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">utf8_status field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">utf8_status</td>
+</tr>
+<tr>
+<td style="text-align: left;">va_mapped_meta</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">A version of meta categ id that the NA team uses</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">va_mapped_meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">values: low trust</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Declining Trust,Moderate Trust,High Trust,Already Suspended</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">values: low trust</td>
+</tr>
+<tr>
+<td style="text-align: left;">vice_categ_name</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">A list of the emerging verticals that we got as input from the BU</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">vice_categ_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">video_list</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">video_list field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">video_list</td>
+</tr>
+<tr>
+<td style="text-align: left;">visitcount</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">visitcount field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">visitcount</td>
+</tr>
+<tr>
+<td style="text-align: left;">vlt_ag_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">vlt_ag_ind field</td>
+<td style="text-align: left;">DIM_ITEM</td>
+<td style="text-align: left;">vlt_ag_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">wacko_yn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Flag that indicates whether the listing is considered a "wacko" listing</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">wacko_yn</td>
+</tr>
+<tr>
+<td style="text-align: left;">watch_cnt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Number of ebay users watching this item</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">watch_cnt</td>
+</tr>
+<tr>
+<td style="text-align: left;">weight</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">weight field</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">weight</td>
+</tr>
+<tr>
+<td style="text-align: left;">weight_unit_type</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates the unit of weight used for the item</td>
+<td style="text-align: left;">DW_LSTG_ITEM</td>
+<td style="text-align: left;">weight_unit_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">embeddings</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item embeddings</td>
+<td style="text-align: left;">ITEM360_SRCH_EMBEDDING</td>
+<td style="text-align: left;">embeddings</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Pre-processing:</strong></p>
+<ul>
+<li><strong>ITEM360_SRCH_EMBEDDING_VRTN</strong> → <code>embeddings</code> field: Aggregation by <code>item_id</code> + <code>item_vrtn_id</code> required to consolidate embedding vectors</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_vrtn_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Unique SKU identifier</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">item_vrtn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Listing identifier</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_vrsn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item version identifier</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">item_vrsn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">slr_prdct_id_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The SKU (stock-keeping unit) data defined by a seller</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">slr_prdct_id_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">price_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item price for a given SKU (in listing currency)</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">price_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">orgnl_price_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Original price for Markdown Manager when a sale happens</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">orgnl_price_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">qty</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Number of quantity available for the SKU</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">qty</td>
+</tr>
+<tr>
+<td style="text-align: left;">sold_qty</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The quantity sold for this SKU</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">sold_qty</td>
+</tr>
+<tr>
+<td style="text-align: left;">rsrvd_qty</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The quantity in reserved state</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">rsrvd_qty</td>
+</tr>
+<tr>
+<td style="text-align: left;">vrtn_order_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The order of this SKU within the SKU list</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">vrtn_order_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">dlt_sts_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Flag indicating whether this SKU has been deleted (use 'N' for current SKUs)</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">dlt_sts_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">flgs01_bmap</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Flags column to store SKU level flag data</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">flgs01_bmap</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_vrsn_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Revision number of the Gallery image</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">glry_vrsn_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_state_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Enum specifying the state of Gallery</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">glry_state_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_url_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">URL to produce the gallery image</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">glry_url_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_image_src_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The source of the Gallery Image</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">glry_image_src_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">vrtn_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">End date for a SKU</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">vrtn_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">vrtn_end_rsn_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The reason code as to why the SKU has been ended</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">vrtn_end_rsn_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_rstck_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Date when the SKU was restocked (quantity changed) by the seller</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">last_rstck_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">src_crtn_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Date row was created</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">src_crtn_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_mdfd_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Date row was last updated</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">last_mdfd_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">watch_cnt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Number of eBay users watching this item</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">watch_cnt</td>
+</tr>
+<tr>
+<td style="text-align: left;">glry_ofst_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Identifies the gallery url that will be used to generate the gallery image</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">glry_ofst_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">vrtn_end_tm</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">End timestamp for a SKU</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">vrtn_end_tm</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_rstck_tm</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Timestamp when the SKU was restocked (quantity changed) by the seller</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">last_rstck_tm</td>
+</tr>
+<tr>
+<td style="text-align: left;">src_crtn_tm</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Time row was created</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">src_crtn_tm</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_mdfd_tm</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Time row was last updated</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">last_mdfd_tm</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date (PPI for fast joins to listing tables)</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">mfo_price_lc_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The discount price for "made for outlet" items</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">mfo_price_lc_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">map_price_lc_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The discount price for "minimum advised price" items</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">map_price_lc_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">stp_price_lc_amt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The discount price for "strike thru price" items</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">stp_price_lc_amt</td>
+</tr>
+<tr>
+<td style="text-align: left;">price_trtmnt_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The discount price treatment type (1-STP, 2-MAP, 3-MFO, 0-None)</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">price_trtmnt_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">upc_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">UPC number of the item</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">upc_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">isbn_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">ISBN number of the item</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">isbn_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">ean_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">EAN number of the item</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">ean_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">gtin_num</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">GTIN number of the item</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN</td>
+<td style="text-align: left;">gtin_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">embeddings</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item variation embeddings (aggregated from ITEM360_SRCH_EMBEDDING_VRTN)</td>
+<td style="text-align: left;">ITEM360_SRCH_EMBEDDING_VRTN</td>
+<td style="text-align: left;">value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">prod_ref_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Product Reference ID (ePID)</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_ref_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_vrsn_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Product Version ID</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_vrsn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The primary leaf category ID of the product</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">leaf_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_title</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Product Title</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_title</td>
+</tr>
+<tr>
+<td style="text-align: left;">site_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The product's site id</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">site_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">site_name</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Site Name</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">site_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">sgstd_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Suggested Leaf Category ID</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">sgstd_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">dmnt_site_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Dominate Site ID - the site that a given product has most # of items associated with</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">dmnt_site_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">dmnt_vrtcl_name</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Dominate Vertical Name</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">dmnt_vrtcl_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">dmnt_leaf_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Dominate Leaf Category ID</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">dmnt_leaf_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">stk_photo_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether the Product has stock photo</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">stk_photo_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_image_url_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The URL for the 1st image of the product from PGS</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_image_url_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_image_cnt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Number of images for the product from PGS</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_image_cnt</td>
+</tr>
+<tr>
+<td style="text-align: left;">image_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if the product has image</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">image_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">cpid</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Core Product ID</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">cpid</td>
+</tr>
+<tr>
+<td style="text-align: left;">latest_prod_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The most updated version of this Product</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">latest_prod_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">grnlrty_lvl_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Product Granularity Level Code</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">grnlrty_lvl_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftmnt_cnt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The number of fitment groups for the product</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">ftmnt_cnt</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_type_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Product type code</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">pe_agg_type_desc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">PE product aggregation type (GTIN, BMPN, etc.)</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">pe_agg_type_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_merge_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether the Product has been merged to another Product</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_merge_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">prod_dlt_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates whether the Product has been deleted</td>
+<td style="text-align: left;">CTLG_PROD_FACT</td>
+<td style="text-align: left;">prod_dlt_ind</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: right;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">Item identifier</td>
+<td style="text-align: left;">ITEM360_DEALS_TRANS_FACT</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">transaction_id</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">Transaction identifier</td>
+<td style="text-align: left;">ITEM360_DEALS_TRANS_FACT</td>
+<td style="text-align: left;">transaction_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">deal_site_id</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">Deal site identifier</td>
+<td style="text-align: left;">ITEM360_DEALS_TRANS_FACT</td>
+<td style="text-align: left;">deal_site_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">deal_type</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">Deal type</td>
+<td style="text-align: left;">ITEM360_DEALS_TRANS_FACT</td>
+<td style="text-align: left;">deal_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">deal_start_dt</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">Deal start date</td>
+<td style="text-align: left;">ITEM360_DEALS_TRANS_FACT</td>
+<td style="text-align: left;">deal_start_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">deal_end_dt</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">Deal end date</td>
+<td style="text-align: left;">ITEM360_DEALS_TRANS_FACT</td>
+<td style="text-align: left;">deal_end_dt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">ITEM_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">AUCT_END_DT field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">period_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">PERIOD_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">period_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_categ_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">LEAF_CATEG_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">leaf_categ_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">leaf_categ2_yn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">LEAF_CATEG2_YN field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">leaf_categ2_yn</td>
+</tr>
+<tr>
+<td style="text-align: left;">attr_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">ATTR_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">attr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">attr_desc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">ATTR_DESC field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">attr_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">value_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">VALUE_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">value_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">value_desc</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">VALUE_DESC field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">value_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">uom_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">UOM_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">uom_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">gcs_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">GCS_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">gcs_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">gcs_type_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">GCS_TYPE_ID field</td>
+<td style="text-align: left;">DW_ATTR_DETAIL_VALUES</td>
+<td style="text-align: left;">gcs_type_id</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">ITEM_ID field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">AUCT_END_DT field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">gcs_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">GCS_ID field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">gcs_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">vcs_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">VCS_ID field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">vcs_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">lstg_attr_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">LSTG_ATTR_ID field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">lstg_attr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">value_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">VALUE_ID field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">value_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">value_desc</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">VALUE_DESC field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">value_desc</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_src_cd</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">DATA_SRC_CD field</td>
+<td style="text-align: left;">DW_ATTR_LSTG_DTL</td>
+<td style="text-align: left;">data_src_cd</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Pre-processing:</strong></p>
+<ul>
+<li>Merge with <strong>dw_attr_shpmt_dtl_cold</strong> table [to be confirmed]</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">ITEM_ID field</td>
+<td style="text-align: left;">DW_ATTR_SHPMT_DTL</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">AUCT_END_DT field</td>
+<td style="text-align: left;">DW_ATTR_SHPMT_DTL</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">gcs_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">GCS_ID field</td>
+<td style="text-align: left;">DW_ATTR_SHPMT_DTL</td>
+<td style="text-align: left;">gcs_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">vcs_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">VCS_ID field</td>
+<td style="text-align: left;">DW_ATTR_SHPMT_DTL</td>
+<td style="text-align: left;">vcs_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">shpmt_attr_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Potential values are:      - 203 = Package Handling Fee      - 206 = Service-level Ship to Locations      - 221 = Item-level Ship to Locations      - 228 = Ships Within Time / Handling Time      -...</td>
+<td style="text-align: left;">DW_ATTR_SHPMT_DTL</td>
+<td style="text-align: left;">shpmt_attr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">value_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Potential values are: (-3 = Look at the text for values)    - 4079 can have additional values, not sure what they all mean yet</td>
+<td style="text-align: left;">DW_ATTR_SHPMT_DTL</td>
+<td style="text-align: left;">value_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">value_desc</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">The x is the enumerator to identify the offered shipping method. So     7 in the example above.     - The y is the seller inputed handling fee (assume in site currency).     So \$3 in the example...</td>
+<td style="text-align: left;">DW_ATTR_SHPMT_DTL</td>
+<td style="text-align: left;">value_desc</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Unique identifier of a listed item for auction</td>
+<td style="text-align: left;">LSTG_ITEM_PIC</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">trait_name</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Trait name</td>
+<td style="text-align: left;">LSTG_ITEM_PIC</td>
+<td style="text-align: left;">trait_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">pctr_url_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Picture URL text</td>
+<td style="text-align: left;">LSTG_ITEM_PIC</td>
+<td style="text-align: left;">pctr_url_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date - PPI for partitioning</td>
+<td style="text-align: left;">LSTG_ITEM_PIC</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">The listing identifier.    - Joins     to <a href="https://wiki.corp.ebay.com/display/edw/DW_LSTG_ITEM">DW_LSTG_ITEM</a>.ITEM_ID</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">prdct_aspct_nm</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">The aspect name.    - When querying specific metadata painted by Structured Data team on     item, such as Product Type, Mis-category Score, Deal Type, etc., we     can use the following aspect names...</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">prdct_aspct_nm</td>
+</tr>
+<tr>
+<td style="text-align: left;">aspct_vlu_nm</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">The aspect value.    - Please note some numbers in SAP are kept in original format(float),     while in NGC they were transformed into integer.    ...</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">aspct_vlu_nm</td>
+</tr>
+<tr>
+<td style="text-align: left;">ns_type_cd</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">The indicator of the namespace.    - <a href="https://wiki.corp.ebay.com/display/CLASSIFICATION/Namespaces">Namespaces</a> (READ)    - Potential values:      - NULL = Record was created prior to namespaces...</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">ns_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">aspct_src</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Indicates which classifier the aspect name was generated from on     site.    - Notes:      - <em>Originally indicated which column the aspect was pulled from on       site.</em>      - *Do NOT indicate...</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">aspct_src</td>
+</tr>
+<tr>
+<td style="text-align: left;">key_type</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Key type indicator: 1=SAP_INTERNAL (sync), 2=SAP_ASYNC_PASS_INTERNAL (async)</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">key_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The listing end date.    - This is the PPI on this table, and should be used in all queries to     filter for date ranges that you\'re interested in. It should also be     used as a join condition...</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">load_ts</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">The last modified time stamp of the listing.</td>
+<td style="text-align: left;">ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">load_ts</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Listing identifier.</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN_TRAIT</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_vrtn_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">SKU identifier.</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN_TRAIT</td>
+<td style="text-align: left;">item_vrtn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">trait_name</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Trait name.     - Sample trait names might include: Color, Size, MPN</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN_TRAIT</td>
+<td style="text-align: left;">trait_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">trait_value</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Trait value.     - Sample trait values might include: Red, Large.</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN_TRAIT</td>
+<td style="text-align: left;">trait_value</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">This is the PPI. Use it when joining with the variation table or the     listings table.  <strong>Sample SQL</strong>  <strong>Sample Query</strong>  SELECT  hot.item_site_id  , h_categ.meta_categ_id  , hot.auct_end_dt  ,...</td>
+<td style="text-align: left;">LSTG_ITEM_VRTN_TRAIT</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Unique identifier of a listed item for auction</td>
+<td style="text-align: left;">DW_LSTG_ITEM_FTMNT</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Auction end date - PPI for partitioning</td>
+<td style="text-align: left;">DW_LSTG_ITEM_FTMNT</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftmnt_grp_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Fitment group ID - Unique group of Year Make and Model</td>
+<td style="text-align: left;">DW_LSTG_ITEM_FTMNT</td>
+<td style="text-align: left;">ftmnt_grp_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftmnt_name</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Fitment name (Year, Make, Model, Trim, Engine)</td>
+<td style="text-align: left;">DW_LSTG_ITEM_FTMNT</td>
+<td style="text-align: left;">ftmnt_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftmnt_value_text</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Fitment value text</td>
+<td style="text-align: left;">DW_LSTG_ITEM_FTMNT</td>
+<td style="text-align: left;">ftmnt_value_text</td>
+</tr>
+<tr>
+<td style="text-align: left;">src_ind</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Source indicator: 0=missing Trim/Engine, 1=complete seller entry, 3=DW matched</td>
+<td style="text-align: left;">DW_LSTG_ITEM_FTMNT</td>
+<td style="text-align: left;">src_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">cmbntn_grp_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Combination group ID - Sub group of Trim and Engine under fitment group</td>
+<td style="text-align: left;">DW_LSTG_ITEM_FTMNT</td>
+<td style="text-align: left;">cmbntn_grp_id</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Unique identifier of a listed item for auction</td>
+<td style="text-align: left;">DW_ATTR_LSTG_TAG_DTL</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">gcs_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Global Classification Scheme ID</td>
+<td style="text-align: left;">DW_ATTR_LSTG_TAG_DTL</td>
+<td style="text-align: left;">gcs_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">vcs_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Vertical Classification Scheme ID</td>
+<td style="text-align: left;">DW_ATTR_LSTG_TAG_DTL</td>
+<td style="text-align: left;">vcs_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">lstg_attr_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Listing attribute ID: 3982=Seller Tagging Active Tags, 4069=Seller Tagging Catalog Tags</td>
+<td style="text-align: left;">DW_ATTR_LSTG_TAG_DTL</td>
+<td style="text-align: left;">lstg_attr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">tag_name</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Tag name (aspect name provided by seller)</td>
+<td style="text-align: left;">DW_ATTR_LSTG_TAG_DTL</td>
+<td style="text-align: left;">tag_name</td>
+</tr>
+<tr>
+<td style="text-align: left;">tag_value_txt</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Tag value text (aspect value)</td>
+<td style="text-align: left;">DW_ATTR_LSTG_TAG_DTL</td>
+<td style="text-align: left;">tag_value_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date - PPI for partitioning</td>
+<td style="text-align: left;">DW_ATTR_LSTG_TAG_DTL</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Unique identifier of a listed item for auction</td>
+<td style="text-align: left;">LSTG_SALE_TAX</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">sale_tax_rate</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Sales tax rate percentage</td>
+<td style="text-align: left;">LSTG_SALE_TAX</td>
+<td style="text-align: left;">sale_tax_rate</td>
+</tr>
+<tr>
+<td style="text-align: left;">jrsdctn_cntry_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Jurisdiction country ID (currently only 1 or 2)</td>
+<td style="text-align: left;">LSTG_SALE_TAX</td>
+<td style="text-align: left;">jrsdctn_cntry_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">jrsdctn_txt</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Jurisdiction code (e.g., FL, OH)</td>
+<td style="text-align: left;">LSTG_SALE_TAX</td>
+<td style="text-align: left;">jrsdctn_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">incld_shpng_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicates if shipping fee is included in tax calculation</td>
+<td style="text-align: left;">LSTG_SALE_TAX</td>
+<td style="text-align: left;">incld_shpng_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date - PPI for partitioning</td>
+<td style="text-align: left;">LSTG_SALE_TAX</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Listing identifier</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_vrtn_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Unique SKU identifier</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">item_vrtn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">prdct_aspct_nm</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Product aspect name</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">prdct_aspct_nm</td>
+</tr>
+<tr>
+<td style="text-align: left;">aspct_vlu_nm</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Aspect value name</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">aspct_vlu_nm</td>
+</tr>
+<tr>
+<td style="text-align: left;">ns_type_cd</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Namespace type code (nf, vnf, df, vdf, etc.)</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">ns_type_cd</td>
+</tr>
+<tr>
+<td style="text-align: left;">aspct_src</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Aspect source - indicates which classifier generated the aspect</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">aspct_src</td>
+</tr>
+<tr>
+<td style="text-align: left;">key_type</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Key type: 1=SAP_INTERNAL (sync), 2=SAP_ASYNC_PASS_INTERNAL (async)</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">key_type</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_dt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date - PPI for partitioning</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">auct_end_dt</td>
+</tr>
+<tr>
+<td style="text-align: left;">load_ts</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Last modified timestamp</td>
+<td style="text-align: left;">VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td style="text-align: left;">load_ts</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Pre-processing:</strong></p>
+<ul>
+<li><strong>DW_PES_ELGBLT_HIST</strong> is a SCD2 (Slowly Changing Dimension Type 2) table that tracks historical changes in business program eligibility</li>
+<li><strong>Required</strong>: Create a current state view for item-level eligibility:<ul>
+<li>Filter: <code>evltn_end_ts = '2099-12-31 00:00:00'</code> (current active record)</li>
+<li>Filter: <code>vrtn_id = -999</code> (item-level records, Single SKU)</li>
+<li>This view represents the current eligibility state for each item and business program</li>
+</ul>
+</li>
+<li>The LDM exposes only the current state, not the full history</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Item identifier</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">biz_prgrm_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Business program ID (e.g., bp-10782362663)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">biz_prgrm_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">evltn_ts</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Current evaluation timestamp when eligibility was checked (MST)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">evltn_ts</td>
+</tr>
+<tr>
+<td style="text-align: left;">evltn_end_ts</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Evaluation expiry timestamp (always 2099-12-31 for current state)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">evltn_end_ts</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date for the item</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">auct_end_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">trigger_by_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Trigger reason for evaluation (e.g., BID.NEW, ITEM.NEW, ITEM.REVISED)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">trigger_by_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">elgbl_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Y/N indicator if item/variation is eligible for business program</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">elgbl_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">elgbl_type_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Eligibility type change: NEW_ELIGIBLE, INELIGIBLE_TO_ELIGIBLE, ELIGIBLE_TO_INELIGIBLE, etc.</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">elgbl_type_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">elgblt_rule_vrsn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Version number of evaluation rule</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">elgblt_rule_vrsn</td>
+</tr>
+<tr>
+<td style="text-align: left;">prgrm_attr_map</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Key-value pairs with optional attributes for business program</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">prgrm_attr_map</td>
+</tr>
+<tr>
+<td style="text-align: left;">sprtd_cntry_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Supported countries (view-only, from prgrm_attr_map.supported_country)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">sprtd_cntry_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">vas_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">VAS (Value Add Service) ID (view-only, from prgrm_attr_map.vas_id)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">vas_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">ship_from_cntry_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Ship from country (view-only, from prgrm_attr_map.ship_from_country)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">ship_from_cntry_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">vas_option_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">VAS option ID (view-only, from prgrm_attr_map.vas_option_id)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">vas_option_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">prvdr_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Provider ID (view-only, from prgrm_attr_map.provider_id)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">prvdr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">excld_states_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Excluded states (view-only, from prgrm_attr_map.excluded_state)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">excld_states_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">ship_to_cntry_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Ship to countries (view-only, from prgrm_attr_map.ship_to)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">ship_to_cntry_txt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Pre-processing:</strong></p>
+<ul>
+<li><strong>DW_PES_ELGBLT_HIST</strong> is a SCD2 (Slowly Changing Dimension Type 2) table that tracks historical changes in business program eligibility</li>
+<li><strong>Required</strong>: Create a current state view for variation-level eligibility:<ul>
+<li>Filter: <code>evltn_end_ts = '2099-12-31 00:00:00'</code> (current active record)</li>
+<li>Filter: <code>vrtn_id != -999</code> (variation-level records)</li>
+<li>This view represents the current eligibility state for each variation and business program</li>
+</ul>
+</li>
+<li>The LDM exposes only the current state, not the full history</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">field_name</th>
+<th style="text-align: left;">pk</th>
+<th style="text-align: left;">field_description</th>
+<th style="text-align: left;">physical_table</th>
+<th style="text-align: left;">physical_table_column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">item_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Item identifier (parent item)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">item_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">item_vrtn_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Variation ID (SKU identifier)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">vrtn_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">biz_prgrm_id</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">Business program ID (e.g., bp-10782362663)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">biz_prgrm_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">evltn_ts</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Current evaluation timestamp when eligibility was checked (MST)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">evltn_ts</td>
+</tr>
+<tr>
+<td style="text-align: left;">evltn_end_ts</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Evaluation expiry timestamp (always 2099-12-31 for current state)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">evltn_end_ts</td>
+</tr>
+<tr>
+<td style="text-align: left;">auct_end_date</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Auction end date for the item</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">auct_end_date</td>
+</tr>
+<tr>
+<td style="text-align: left;">trigger_by_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Trigger reason for evaluation (e.g., BID.NEW, ITEM.NEW, ITEM.REVISED)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">trigger_by_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">elgbl_yn_ind</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Y/N indicator if variation is eligible for business program</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">elgbl_yn_ind</td>
+</tr>
+<tr>
+<td style="text-align: left;">elgbl_type_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Eligibility type change: NEW_ELIGIBLE, INELIGIBLE_TO_ELIGIBLE, ELIGIBLE_TO_INELIGIBLE, etc.</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">elgbl_type_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">elgblt_rule_vrsn</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Version number of evaluation rule</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">elgblt_rule_vrsn</td>
+</tr>
+<tr>
+<td style="text-align: left;">prgrm_attr_map</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Key-value pairs with optional attributes for business program</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">prgrm_attr_map</td>
+</tr>
+<tr>
+<td style="text-align: left;">sprtd_cntry_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Supported countries (view-only, from prgrm_attr_map.supported_country)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">sprtd_cntry_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">vas_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">VAS (Value Add Service) ID (view-only, from prgrm_attr_map.vas_id)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">vas_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">ship_from_cntry_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Ship from country (view-only, from prgrm_attr_map.ship_from_country)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">ship_from_cntry_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">vas_option_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">VAS option ID (view-only, from prgrm_attr_map.vas_option_id)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">vas_option_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">prvdr_id</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Provider ID (view-only, from prgrm_attr_map.provider_id)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">prvdr_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">excld_states_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Excluded states (view-only, from prgrm_attr_map.excluded_state)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">excld_states_txt</td>
+</tr>
+<tr>
+<td style="text-align: left;">ship_to_cntry_txt</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Ship to countries (view-only, from prgrm_attr_map.ship_to)</td>
+<td style="text-align: left;">DW_PES_ELGBLT_HIST</td>
+<td style="text-align: left;">ship_to_cntry_txt</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../relationships/dw_attr_detail_values/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Item Attribute Mapping">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Item Attribute Mapping
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ldm-modeling-principle/" class="md-footer__link md-footer__link--next" aria-label="Next: LDM Design Principle">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                LDM Design Principle
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/yeqli/gds-item-docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
