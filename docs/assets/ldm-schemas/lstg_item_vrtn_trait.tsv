@@ -1,0 +1,6 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	Listing identifier.	LSTG_ITEM_VRTN_TRAIT	item_id
+item_vrtn_id	Y	SKU identifier.	LSTG_ITEM_VRTN_TRAIT	item_vrtn_id
+trait_name	Y	Trait name.     - Sample trait names might include: Color, Size, MPN	LSTG_ITEM_VRTN_TRAIT	trait_name
+trait_value		Trait value.     - Sample trait values might include: Red, Large.	LSTG_ITEM_VRTN_TRAIT	trait_value
+auct_end_dt		This is the PPI. Use it when joining with the variation table or the     listings table.  **Sample SQL**  **Sample Query**  SELECT  hot.item_site_id  , h_categ.meta_categ_id  , hot.auct_end_dt  ,...	LSTG_ITEM_VRTN_TRAIT	auct_end_dt

@@ -1,0 +1,8 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	ITEM_ID field	DW_ATTR_SHPMT_DTL	item_id
+auct_end_dt		AUCT_END_DT field	DW_ATTR_SHPMT_DTL	auct_end_dt
+gcs_id	Y	GCS_ID field	DW_ATTR_SHPMT_DTL	gcs_id
+vcs_id	Y	VCS_ID field	DW_ATTR_SHPMT_DTL	vcs_id
+shpmt_attr_id	Y	Potential values are:      - 203 = Package Handling Fee      - 206 = Service-level Ship to Locations      - 221 = Item-level Ship to Locations      - 228 = Ships Within Time / Handling Time      -...	DW_ATTR_SHPMT_DTL	shpmt_attr_id
+value_id	Y	Potential values are: (-3 = Look at the text for values)    - 4079 can have additional values, not sure what they all mean yet	DW_ATTR_SHPMT_DTL	value_id
+value_desc	Y	The x is the enumerator to identify the offered shipping method. So     7 in the example above.     - The y is the seller inputed handling fee (assume in site currency).     So \$3 in the example...	DW_ATTR_SHPMT_DTL	value_desc

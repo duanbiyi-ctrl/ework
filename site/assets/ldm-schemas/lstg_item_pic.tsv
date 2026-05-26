@@ -1,0 +1,5 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	Unique identifier of a listed item for auction	LSTG_ITEM_PIC	item_id
+trait_name	Y	Trait name	LSTG_ITEM_PIC	trait_name
+pctr_url_txt		Picture URL text	LSTG_ITEM_PIC	pctr_url_txt
+auct_end_dt		Auction end date - PPI for partitioning	LSTG_ITEM_PIC	auct_end_dt

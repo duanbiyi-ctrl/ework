@@ -1,0 +1,7 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id		Item identifier	ITEM360_DEALS_TRANS_FACT	item_id
+transaction_id		Transaction identifier	ITEM360_DEALS_TRANS_FACT	transaction_id
+deal_site_id		Deal site identifier	ITEM360_DEALS_TRANS_FACT	deal_site_id
+deal_type		Deal type	ITEM360_DEALS_TRANS_FACT	deal_type
+deal_start_dt		Deal start date	ITEM360_DEALS_TRANS_FACT	deal_start_dt
+deal_end_dt		Deal end date	ITEM360_DEALS_TRANS_FACT	deal_end_dt

@@ -1,0 +1,7 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	Unique identifier of a listed item for auction	LSTG_SALE_TAX	item_id
+sale_tax_rate	Y	Sales tax rate percentage	LSTG_SALE_TAX	sale_tax_rate
+jrsdctn_cntry_id	Y	Jurisdiction country ID (currently only 1 or 2)	LSTG_SALE_TAX	jrsdctn_cntry_id
+jrsdctn_txt	Y	Jurisdiction code (e.g., FL, OH)	LSTG_SALE_TAX	jrsdctn_txt
+incld_shpng_ind		Indicates if shipping fee is included in tax calculation	LSTG_SALE_TAX	incld_shpng_ind
+auct_end_dt		Auction end date - PPI for partitioning	LSTG_SALE_TAX	auct_end_dt

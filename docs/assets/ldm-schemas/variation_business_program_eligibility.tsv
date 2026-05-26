@@ -1,0 +1,19 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id		Item identifier (parent item)	DW_PES_ELGBLT_HIST	item_id
+item_vrtn_id	Y	Variation ID (SKU identifier)	DW_PES_ELGBLT_HIST	vrtn_id
+biz_prgrm_id	Y	Business program ID (e.g., bp-10782362663)	DW_PES_ELGBLT_HIST	biz_prgrm_id
+evltn_ts		Current evaluation timestamp when eligibility was checked (MST)	DW_PES_ELGBLT_HIST	evltn_ts
+evltn_end_ts		Evaluation expiry timestamp (always 2099-12-31 for current state)	DW_PES_ELGBLT_HIST	evltn_end_ts
+auct_end_date		Auction end date for the item	DW_PES_ELGBLT_HIST	auct_end_date
+trigger_by_txt		Trigger reason for evaluation (e.g., BID.NEW, ITEM.NEW, ITEM.REVISED)	DW_PES_ELGBLT_HIST	trigger_by_txt
+elgbl_yn_ind		Y/N indicator if variation is eligible for business program	DW_PES_ELGBLT_HIST	elgbl_yn_ind
+elgbl_type_txt		Eligibility type change: NEW_ELIGIBLE, INELIGIBLE_TO_ELIGIBLE, ELIGIBLE_TO_INELIGIBLE, etc.	DW_PES_ELGBLT_HIST	elgbl_type_txt
+elgblt_rule_vrsn		Version number of evaluation rule	DW_PES_ELGBLT_HIST	elgblt_rule_vrsn
+prgrm_attr_map		Key-value pairs with optional attributes for business program	DW_PES_ELGBLT_HIST	prgrm_attr_map
+sprtd_cntry_txt		Supported countries (view-only, from prgrm_attr_map.supported_country)	DW_PES_ELGBLT_HIST	sprtd_cntry_txt
+vas_id		VAS (Value Add Service) ID (view-only, from prgrm_attr_map.vas_id)	DW_PES_ELGBLT_HIST	vas_id
+ship_from_cntry_txt		Ship from country (view-only, from prgrm_attr_map.ship_from_country)	DW_PES_ELGBLT_HIST	ship_from_cntry_txt
+vas_option_id		VAS option ID (view-only, from prgrm_attr_map.vas_option_id)	DW_PES_ELGBLT_HIST	vas_option_id
+prvdr_id		Provider ID (view-only, from prgrm_attr_map.provider_id)	DW_PES_ELGBLT_HIST	prvdr_id
+excld_states_txt		Excluded states (view-only, from prgrm_attr_map.excluded_state)	DW_PES_ELGBLT_HIST	excld_states_txt
+ship_to_cntry_txt		Ship to countries (view-only, from prgrm_attr_map.ship_to)	DW_PES_ELGBLT_HIST	ship_to_cntry_txt

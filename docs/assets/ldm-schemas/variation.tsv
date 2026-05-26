@@ -1,0 +1,38 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_vrtn_id	Y	Unique SKU identifier	LSTG_ITEM_VRTN	item_vrtn_id
+item_id	Y	Listing identifier	LSTG_ITEM_VRTN	item_id
+item_vrsn_id		Item version identifier	LSTG_ITEM_VRTN	item_vrsn_id
+slr_prdct_id_txt		The SKU (stock-keeping unit) data defined by a seller	LSTG_ITEM_VRTN	slr_prdct_id_txt
+price_amt		Item price for a given SKU (in listing currency)	LSTG_ITEM_VRTN	price_amt
+orgnl_price_amt		Original price for Markdown Manager when a sale happens	LSTG_ITEM_VRTN	orgnl_price_amt
+qty		Number of quantity available for the SKU	LSTG_ITEM_VRTN	qty
+sold_qty		The quantity sold for this SKU	LSTG_ITEM_VRTN	sold_qty
+rsrvd_qty		The quantity in reserved state	LSTG_ITEM_VRTN	rsrvd_qty
+vrtn_order_num		The order of this SKU within the SKU list	LSTG_ITEM_VRTN	vrtn_order_num
+dlt_sts_yn_ind		Flag indicating whether this SKU has been deleted (use 'N' for current SKUs)	LSTG_ITEM_VRTN	dlt_sts_yn_ind
+flgs01_bmap		Flags column to store SKU level flag data	LSTG_ITEM_VRTN	flgs01_bmap
+glry_vrsn_num		Revision number of the Gallery image	LSTG_ITEM_VRTN	glry_vrsn_num
+glry_state_cd		Enum specifying the state of Gallery	LSTG_ITEM_VRTN	glry_state_cd
+glry_url_txt		URL to produce the gallery image	LSTG_ITEM_VRTN	glry_url_txt
+glry_image_src_txt		The source of the Gallery Image	LSTG_ITEM_VRTN	glry_image_src_txt
+vrtn_end_dt		End date for a SKU	LSTG_ITEM_VRTN	vrtn_end_dt
+vrtn_end_rsn_cd		The reason code as to why the SKU has been ended	LSTG_ITEM_VRTN	vrtn_end_rsn_cd
+last_rstck_dt		Date when the SKU was restocked (quantity changed) by the seller	LSTG_ITEM_VRTN	last_rstck_dt
+src_crtn_dt		Date row was created	LSTG_ITEM_VRTN	src_crtn_dt
+last_mdfd_dt		Date row was last updated	LSTG_ITEM_VRTN	last_mdfd_dt
+watch_cnt		Number of eBay users watching this item	LSTG_ITEM_VRTN	watch_cnt
+glry_ofst_txt		Identifies the gallery url that will be used to generate the gallery image	LSTG_ITEM_VRTN	glry_ofst_txt
+vrtn_end_tm		End timestamp for a SKU	LSTG_ITEM_VRTN	vrtn_end_tm
+last_rstck_tm		Timestamp when the SKU was restocked (quantity changed) by the seller	LSTG_ITEM_VRTN	last_rstck_tm
+src_crtn_tm		Time row was created	LSTG_ITEM_VRTN	src_crtn_tm
+last_mdfd_tm		Time row was last updated	LSTG_ITEM_VRTN	last_mdfd_tm
+auct_end_dt		Auction end date (PPI for fast joins to listing tables)	LSTG_ITEM_VRTN	auct_end_dt
+mfo_price_lc_amt		The discount price for "made for outlet" items	LSTG_ITEM_VRTN	mfo_price_lc_amt
+map_price_lc_amt		The discount price for "minimum advised price" items	LSTG_ITEM_VRTN	map_price_lc_amt
+stp_price_lc_amt		The discount price for "strike thru price" items	LSTG_ITEM_VRTN	stp_price_lc_amt
+price_trtmnt_cd		The discount price treatment type (1-STP, 2-MAP, 3-MFO, 0-None)	LSTG_ITEM_VRTN	price_trtmnt_cd
+upc_num		UPC number of the item	LSTG_ITEM_VRTN	upc_num
+isbn_num		ISBN number of the item	LSTG_ITEM_VRTN	isbn_num
+ean_num		EAN number of the item	LSTG_ITEM_VRTN	ean_num
+gtin_num		GTIN number of the item	LSTG_ITEM_VRTN	gtin_num
+embeddings		Item variation embeddings (aggregated from ITEM360_SRCH_EMBEDDING_VRTN)	ITEM360_SRCH_EMBEDDING_VRTN	value
