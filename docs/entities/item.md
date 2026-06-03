@@ -148,8 +148,8 @@ LIMIT 100;
 |---------------|------|-------------|---------------|
 | Variation | 1:N | Item has multiple variations | `variation` |
 | Product | N:1 | Item references a product catalog | Join on `prod_ref_id` |
-| Attribute | M:N | Item has multiple attributes | `item_attribute_mapping` |
-| Aspect | M:N | Item has SAP aspects | `item_aspect_mapping` |
+| Attribute | M:N | Item has multiple attributes | `item_common_attribute_value_mapping` |
+| Aspect | M:N | Item has SAP aspects | `item_aspect_value_mapping` |
 | Business Program | M:N | Item eligibility in programs | `item_business_program_mapping` |
 | Picture | M:N | Item pictures by trait | `item_picture_mapping` |
 | Transaction | 1:N | Item has transactions | `transaction` |

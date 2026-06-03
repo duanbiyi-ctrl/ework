@@ -4,7 +4,7 @@ Documentation for Item Domain Logical Data Model (LDM) in GDS, built with [MkDoc
 
 ## 🌐 Live Documentation
 
-Visit the documentation at: **https://pages.github.corp.ebay.com/yeqli/gds-item-docs/**
+Visit the documentation at: **https://pages.github.corp.ebay.com/GDS/gds-item-docs/**
 
 ## 📚 What's Inside
 
@@ -27,7 +27,7 @@ This documentation covers:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yeqli/gds-item-docs.git
+   git clone https://github.com/GDS/gds-item-docs.git
    cd gds-item-docs
    ```
 

@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://yeqli.github.io/gds-item-docs/reference/ldm-design/">
       
       
-        <link rel="prev" href="../../relationships/dw_attr_detail_values/">
+        <link rel="prev" href="../../relationships/item_common_attribute_value_mapping/">
       
       
         <link rel="next" href="../ldm-modeling-principle/">
@@ -198,7 +198,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/yeqli/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/GDS/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -244,7 +244,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/yeqli/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/GDS/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -689,14 +689,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationships/dw_attr_detail_values/" class="md-nav__link">
+      <a href="../../relationships/item_common_attribute_value_mapping/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Item Attribute Mapping
+    Item Common Attribute Value Mapping
   
 
     
@@ -1118,7 +1118,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>dw_attr_detail_values</strong></td>
+<td><strong>item_common_attribute_value_mapping</strong></td>
 <td><code>item_id</code>, <code>attr_id</code>, <code>value_id</code></td>
 <td>Item ↔ Attribute Value (Common Attributes)</td>
 <td>DW_ATTR_DETAIL_VALUES</td>
@@ -1126,7 +1126,7 @@
 <td>Structure may change significantly after caty migration</td>
 </tr>
 <tr>
-<td><strong>dw_attr_lstg_dtl</strong></td>
+<td><strong>item_listing_attribute_value_mapping</strong></td>
 <td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>lstg_attr_id</code>, <code>value_id</code>, <code>value_desc</code></td>
 <td>Item ↔ Attribute Value (Listing)</td>
 <td>DW_ATTR_LSTG_DTL</td>
@@ -1134,7 +1134,7 @@
 <td>Structure may change significantly after caty migration</td>
 </tr>
 <tr>
-<td><strong>dw_attr_shpmt_dtl</strong></td>
+<td><strong>item_shipment_attribute_value_mapping</strong></td>
 <td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>shpmt_attr_id</code>, <code>value_id</code>, <code>value_desc</code></td>
 <td>Item ↔ Attribute Value (Shipment)</td>
 <td>DW_ATTR_SHPMT_DTL </br> DW_ATTR_SHPMT_DTL_COLD</td>
@@ -1142,7 +1142,7 @@
 <td>Structure may change significantly after caty migration</td>
 </tr>
 <tr>
-<td><strong>lstg_item_pic</strong></td>
+<td><strong>item_picture_mapping</strong></td>
 <td><code>item_id</code>, <code>trait_name</code></td>
 <td>Item ↔ Picture</td>
 <td>LSTG_ITEM_PIC</td>
@@ -1150,7 +1150,7 @@
 <td></td>
 </tr>
 <tr>
-<td><strong>item_aspct_clssfctn_sap</strong></td>
+<td><strong>item_aspect_value_mapping</strong></td>
 <td><code>item_id</code>, <code>aspect_name</code></td>
 <td>Item ↔ Aspect</td>
 <td>ITEM_ASPCT_CLSSFCTN_SAP</td>
@@ -1158,7 +1158,7 @@
 <td></td>
 </tr>
 <tr>
-<td><strong>lstg_item_vrtn_trait</strong></td>
+<td><strong>variation_trait_mapping</strong></td>
 <td><code>variation_id</code>, <code>trait_name</code></td>
 <td>Variation ↔ Trait</td>
 <td>LSTG_ITEM_VRTN_TRAIT</td>
@@ -1166,7 +1166,7 @@
 <td></td>
 </tr>
 <tr>
-<td><strong>dw_lstg_item_ftmnt</strong></td>
+<td><strong>item_fitment_attribute_value_mapping</strong></td>
 <td><code>item_id</code>, <code>auct_end_dt</code>, <code>ftmnt_grp_id</code>, <code>ftmnt_name</code>, <code>ftmnt_value_text</code>, <code>src_ind</code>, <code>cmbntn_grp_id</code></td>
 <td>Item ↔ Attribute Value (Fitment)</td>
 <td>DW_LSTG_ITEM_FTMNT</td>
@@ -1174,7 +1174,7 @@
 <td>Structure may change significantly after caty migration</td>
 </tr>
 <tr>
-<td><strong>dw_attr_lstg_tag_dtl</strong></td>
+<td><strong>item_tag_attribute_value_mapping</strong></td>
 <td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>lstg_attr_id</code>, <code>tag_name</code>, <code>tag_value_txt</code></td>
 <td>Item ↔ Attribute Value (Tags)</td>
 <td>DW_ATTR_LSTG_TAG_DTL</td>
@@ -1182,7 +1182,7 @@
 <td>Structure may change significantly after caty migration</td>
 </tr>
 <tr>
-<td><strong>lstg_sale_tax</strong></td>
+<td><strong>item_tax_attribute_value_mapping</strong></td>
 <td><code>item_id</code>, <code>sale_tax_rate</code>, <code>jrsdctn_cntry_id</code>, <code>jrsdctn_tx</code></td>
 <td>Item ↔ Attribute Value (Tax)</td>
 <td>LSTG_SALE_TAX</td>
@@ -1190,7 +1190,7 @@
 <td>Structure may change significantly after caty migration</td>
 </tr>
 <tr>
-<td><strong>vrtn_aspct_clssfctn_sap</strong></td>
+<td><strong>variation_aspect_value_mapping</strong></td>
 <td><code>variation_id</code>, <code>aspect_name</code></td>
 <td>Variation ↔ Aspect</td>
 <td>VRTN_ASPCT_CLSSFCTN_SAP</td>
@@ -1198,7 +1198,7 @@
 <td></td>
 </tr>
 <tr>
-<td><strong>item_business_program_eligibility</strong></td>
+<td><strong>item_business_program_mapping</strong></td>
 <td><code>item_id</code>, <code>biz_prgrm_id</code></td>
 <td>Item ↔ Business Program (current state)</td>
 <td>DW_PES_ELGBLT_HIST</td>
@@ -1206,7 +1206,7 @@
 <td>SCD2 table - requires pre-processing to create current state view (filter: vrtn_id = -999)</td>
 </tr>
 <tr>
-<td><strong>variation_business_program_eligibility</strong></td>
+<td><strong>variation_business_program_mapping</strong></td>
 <td><code>item_vrtn_id</code>, <code>biz_prgrm_id</code></td>
 <td>Variation ↔ Business Program (current state)</td>
 <td>DW_PES_ELGBLT_HIST</td>
@@ -1217,7 +1217,7 @@
 </table>
 <hr />
 <h2 id="ldm-schemas">LDM Schemas</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:16"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><input id="__tabbed_1_8" name="__tabbed_1" type="radio" /><input id="__tabbed_1_9" name="__tabbed_1" type="radio" /><input id="__tabbed_1_10" name="__tabbed_1" type="radio" /><input id="__tabbed_1_11" name="__tabbed_1" type="radio" /><input id="__tabbed_1_12" name="__tabbed_1" type="radio" /><input id="__tabbed_1_13" name="__tabbed_1" type="radio" /><input id="__tabbed_1_14" name="__tabbed_1" type="radio" /><input id="__tabbed_1_15" name="__tabbed_1" type="radio" /><input id="__tabbed_1_16" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">item</label><label for="__tabbed_1_2">variation</label><label for="__tabbed_1_3">product</label><label for="__tabbed_1_4">transaction</label><label for="__tabbed_1_5">dw_attr_detail_values</label><label for="__tabbed_1_6">dw_attr_lstg_dtl</label><label for="__tabbed_1_7">dw_attr_shpmt_dtl</label><label for="__tabbed_1_8">lstg_item_pic</label><label for="__tabbed_1_9">item_aspct_clssfctn_sap</label><label for="__tabbed_1_10">lstg_item_vrtn_trait</label><label for="__tabbed_1_11">dw_lstg_item_ftmnt</label><label for="__tabbed_1_12">dw_attr_lstg_tag_dtl</label><label for="__tabbed_1_13">lstg_sale_tax</label><label for="__tabbed_1_14">vrtn_aspct_clssfctn_sap</label><label for="__tabbed_1_15">item_business_program_eligibility</label><label for="__tabbed_1_16">variation_business_program_eligibility</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:16"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><input id="__tabbed_1_8" name="__tabbed_1" type="radio" /><input id="__tabbed_1_9" name="__tabbed_1" type="radio" /><input id="__tabbed_1_10" name="__tabbed_1" type="radio" /><input id="__tabbed_1_11" name="__tabbed_1" type="radio" /><input id="__tabbed_1_12" name="__tabbed_1" type="radio" /><input id="__tabbed_1_13" name="__tabbed_1" type="radio" /><input id="__tabbed_1_14" name="__tabbed_1" type="radio" /><input id="__tabbed_1_15" name="__tabbed_1" type="radio" /><input id="__tabbed_1_16" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">item</label><label for="__tabbed_1_2">variation</label><label for="__tabbed_1_3">product</label><label for="__tabbed_1_4">transaction</label><label for="__tabbed_1_5">item_common_attribute_value_mapping</label><label for="__tabbed_1_6">item_listing_attribute_value_mapping</label><label for="__tabbed_1_7">item_shipment_attribute_value_mapping</label><label for="__tabbed_1_8">item_picture_mapping</label><label for="__tabbed_1_9">item_aspect_value_mapping</label><label for="__tabbed_1_10">variation_trait_mapping</label><label for="__tabbed_1_11">item_fitment_attribute_value_mapping</label><label for="__tabbed_1_12">item_tag_attribute_value_mapping</label><label for="__tabbed_1_13">item_tax_attribute_value_mapping</label><label for="__tabbed_1_14">variation_aspect_value_mapping</label><label for="__tabbed_1_15">item_business_program_mapping</label><label for="__tabbed_1_16">variation_business_program_mapping</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><strong>Pre-processing:</strong></p>
@@ -4794,7 +4794,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../relationships/dw_attr_detail_values/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Item Attribute Mapping">
+          <a href="../../relationships/item_common_attribute_value_mapping/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Item Common Attribute Value Mapping">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -4804,7 +4804,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Item Attribute Mapping
+                Item Common Attribute Value Mapping
               </div>
             </div>
           </a>

@@ -124,7 +124,7 @@ Physical tables with entity-level granularity map to entity LDMs.
 
 Mapping LDMs include not just foreign keys, but also denormalized entity attributes and relationship attributes.
 
-**Example**: `dw_attr_detail_values` (physical table) → `dw_attr_detail_values` (mapping LDM)
+**Example**: `dw_attr_detail_values` (physical table) → `item_common_attribute_value_mapping` (mapping LDM)
 ```sql
 -- Physical table structure
 item_id, attr_id, value_id, attr_name, value_desc

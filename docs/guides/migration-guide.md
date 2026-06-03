@@ -28,9 +28,9 @@ Find your current table in the mapping below:
 | `DW_LSTG_ITEM` | `gds.item` | Low - Direct mapping |
 | `LSTG_ITEM_VRTN` | `gds.variation` | Low - Direct mapping |
 | `DW_LSTG_ITEM_PROD_REF` | `gds.product` | Low - Join with item |
-| `DW_ATTR_DETAIL_VALUES` | `gds.dw_attr_detail_values` | Low - Direct mapping |
-| `DW_ATTR_LSTG_DTL` | `gds.dw_attr_lstg_dtl` | Low - Direct mapping |
-| `ITEM_ASPCT_CLSSFCTN_SAP` | `gds.item_aspct_clssfctn_sap` | Low - Direct mapping |
+| `DW_ATTR_DETAIL_VALUES` | `gds.item_common_attribute_value_mapping` | Low - Direct mapping |
+| `DW_ATTR_LSTG_DTL` | `gds.item_listing_attribute_value_mapping` | Low - Direct mapping |
+| `ITEM_ASPCT_CLSSFCTN_SAP` | `gds.item_aspect_value_mapping` | Low - Direct mapping |
 
 ### Step 2: Update Your Query
 
@@ -128,7 +128,7 @@ Migrate variation queries to `gds.variation`.
 
 ### Scenario 3: Item with Attributes
 
-Migrate attribute queries to `gds.dw_attr_detail_values`.
+Migrate attribute queries to `gds.item_common_attribute_value_mapping`.
 
 === "Before (Legacy)"
     ```sql
@@ -152,7 +152,7 @@ Migrate attribute queries to `gds.dw_attr_detail_values`.
         a.attr_id,
         a.value_desc
     FROM gds.item i
-    JOIN gds.dw_attr_detail_values a ON i.item_id = a.item_id
+    JOIN gds.item_common_attribute_value_mapping a ON i.item_id = a.item_id
     WHERE i.item_site_id = 0
       AND a.attr_id = 1000  -- Brand
     LIMIT 100;
@@ -160,7 +160,7 @@ Migrate attribute queries to `gds.dw_attr_detail_values`.
 
 **Changes:**
 - ✅ Replace `DW_LSTG_ITEM` → `gds.item`
-- ✅ Replace `DW_ATTR_DETAIL_VALUES` → `gds.dw_attr_detail_values`
+- ✅ Replace `DW_ATTR_DETAIL_VALUES` → `gds.item_common_attribute_value_mapping`
 - ✅ JOIN logic unchanged
 
 ---
@@ -211,12 +211,12 @@ Detailed mapping from legacy tables to LDM entities:
 | **DW_LSTG_ITEM** | `gds.item` | `item_id` | Core item entity |
 | **LSTG_ITEM_VRTN** | `gds.variation` | `variation_id`, `item_id` | Multi-SKU variations |
 | **DW_LSTG_ITEM_PROD_REF** | `gds.product` | `item_id`, `prod_ref_id` | Product catalog reference |
-| **DW_ATTR_DETAIL_VALUES** | `gds.dw_attr_detail_values` | `item_id`, `attr_id` | Common attributes |
-| **DW_ATTR_LSTG_DTL** | `gds.dw_attr_lstg_dtl` | `item_id`, `lstg_attr_id` | Listing attributes |
-| **DW_ATTR_SHPMT_DTL** | `gds.dw_attr_shpmt_dtl` | `item_id`, `shpmt_attr_id` | Shipment attributes |
-| **ITEM_ASPCT_CLSSFCTN_SAP** | `gds.item_aspct_clssfctn_sap` | `item_id`, `aspect_name` | SAP aspects |
-| **VRTN_ASPCT_CLSSFCTN_SAP** | `gds.vrtn_aspct_clssfctn_sap` | `variation_id`, `aspect_name` | Variation aspects |
-| **LSTG_ITEM_VRTN_TRAIT** | `gds.lstg_item_vrtn_trait` | `variation_id`, `trait_name` | Variation traits |
+| **DW_ATTR_DETAIL_VALUES** | `gds.item_common_attribute_value_mapping` | `item_id`, `attr_id` | Common attributes |
+| **DW_ATTR_LSTG_DTL** | `gds.item_listing_attribute_value_mapping` | `item_id`, `lstg_attr_id` | Listing attributes |
+| **DW_ATTR_SHPMT_DTL** | `gds.item_shipment_attribute_value_mapping` | `item_id`, `shpmt_attr_id` | Shipment attributes |
+| **ITEM_ASPCT_CLSSFCTN_SAP** | `gds.item_aspect_value_mapping` | `item_id`, `aspect_name` | SAP aspects |
+| **VRTN_ASPCT_CLSSFCTN_SAP** | `gds.variation_aspect_value_mapping` | `variation_id`, `aspect_name` | Variation aspects |
+| **LSTG_ITEM_VRTN_TRAIT** | `gds.variation_trait_mapping` | `variation_id`, `trait_name` | Variation traits |
 
 ---
 

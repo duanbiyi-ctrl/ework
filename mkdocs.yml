@@ -2,7 +2,7 @@ site_name: Item Domain LDM Documentation
 site_description: Comprehensive guide to Item Domain Logical Data Model in GDS
 site_url: https://yeqli.github.io/gds-item-docs/
 
-repo_url: https://github.com/yeqli/gds-item-docs
+repo_url: https://github.com/GDS/gds-item-docs
 repo_name: gds-item-docs
 
 theme:
@@ -64,7 +64,7 @@ nav:
           - Product: entities/product.md
           - Transaction: entities/transaction.md
       - Relationship:
-          - Item Attribute Mapping: relationships/dw_attr_detail_values.md
+          - Item Common Attribute Value Mapping: relationships/item_common_attribute_value_mapping.md
   - Reference:
       - LDM Design: reference/ldm-design.md
       - LDM Design Principle: reference/ldm-modeling-principle.md

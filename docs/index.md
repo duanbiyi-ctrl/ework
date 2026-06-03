@@ -106,7 +106,7 @@ All available LDM entities in the Item domain:
     ```sql
     SELECT i.item_id, i.item_title, m.attr_id, m.value_desc
     FROM gds.item i
-    JOIN gds.dw_attr_detail_values m ON i.item_id = m.item_id
+    JOIN gds.item_common_attribute_value_mapping m ON i.item_id = m.item_id
     WHERE m.attr_id = 1000;
     ```
 
@@ -204,18 +204,18 @@ WHERE v.item_id = 123456789;
 
 | Relationship | Mapping LDM Name                           | Primary Keys                                                                                           | Physical Sources         | Details                                                  |
 |--------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------|----------------------------------------------------------|
-| Item ↔ Attribute Value (Common Attributes) | **dw_attr_detail_values**                  | `item_id`, `attr_id`, `value_id`                                                                       | DW_ATTR_DETAIL_VALUES    | [View Details →](relationships/dw_attr_detail_values.md) |
-| Item ↔ Attribute Value (Listing) | **dw_attr_lstg_dtl**                       | `item_id`, `gcs_id`, `vcs_id`, `lstg_attr_id`, `value_id`, `value_desc`                                | DW_ATTR_LSTG_DTL         |                                                          |
-| Item ↔ Attribute Value (Shipment) | **dw_attr_shpmt_dtl**                 | `item_id`, `gcs_id`, `vcs_id`, `shpmt_attr_id`, `value_id`, `value_desc`                               | DW_ATTR_SHPMT_DTL </br> DW_ATTR_SHPMT_DTL_COLD |                                                          |
-| Item ↔ Attribute Value (Fitment) | **dw_lstg_item_ftmnt**                     | `item_id`, `auct_end_dt`, `ftmnt_grp_id`, `ftmnt_name`, `ftmnt_value_text`, `src_ind`, `cmbntn_grp_id` | DW_LSTG_ITEM_FTMNT       |                                                          |
-| Item ↔ Attribute Value (Tags) | **dw_attr_lstg_tag_dtl**                   | `item_id`, `gcs_id`, `vcs_id`, `lstg_attr_id`, `tag_name`, `tag_value_txt`                             | DW_ATTR_LSTG_TAG_DTL     |                                                          |
-| Item ↔ Attribute Value (Tax) | **lstg_sale_tax**                          | `item_id`, `sale_tax_rate`, `jrsdctn_cntry_id`, `jrsdctn_tx`                                           | LSTG_SALE_TAX            |                                                          |
-| Item ↔ Picture | **lstg_item_pic**                          | `item_id`, `trait_name`                                                                                | LSTG_ITEM_PIC            |                                                          |
-| Item ↔ Aspect Value | **item_aspct_clssfctn_sap**                | `item_id`, `aspect_name`, `aspect_value_name`                                                          | ITEM_ASPCT_CLSSFCTN_SAP  |                                                          |
-| Variation ↔ Aspect Value | **vrtn_aspct_clssfctn_sap**                | `variation_id`, `aspect_name`, `aspect_value_name`                                                     | VRTN_ASPCT_CLSSFCTN_SAP  |                                                          |
-| Variation ↔ Trait | **lstg_item_vrtn_trait**                   | `variation_id`, `trait_name`                                                                           | LSTG_ITEM_VRTN_TRAIT     |                                                          |
-| Item ↔ Business Program | **item_business_program_eligibility**      | `item_id`, `biz_prgrm_id`                                                                              | DW_PES_ELGBLT_HIST       |                                                          |
-| Variation ↔ Business Program | **variation_business_program_eligibility** | `item_vrtn_id`, `biz_prgrm_id`                                                                         | DW_PES_ELGBLT_HIST       |                                                          |
+| Item ↔ Attribute Value (Common Attributes) | **item_common_attribute_value_mapping**                  | `item_id`, `attr_id`, `value_id`                                                                       | DW_ATTR_DETAIL_VALUES    | [View Details →](relationships/item_common_attribute_value_mapping.md) |
+| Item ↔ Attribute Value (Listing) | **item_listing_attribute_value_mapping**                       | `item_id`, `gcs_id`, `vcs_id`, `lstg_attr_id`, `value_id`, `value_desc`                                | DW_ATTR_LSTG_DTL         |                                                          |
+| Item ↔ Attribute Value (Shipment) | **item_shipment_attribute_value_mapping**                 | `item_id`, `gcs_id`, `vcs_id`, `shpmt_attr_id`, `value_id`, `value_desc`                               | DW_ATTR_SHPMT_DTL </br> DW_ATTR_SHPMT_DTL_COLD |                                                          |
+| Item ↔ Attribute Value (Fitment) | **item_fitment_attribute_value_mapping**                     | `item_id`, `auct_end_dt`, `ftmnt_grp_id`, `ftmnt_name`, `ftmnt_value_text`, `src_ind`, `cmbntn_grp_id` | DW_LSTG_ITEM_FTMNT       |                                                          |
+| Item ↔ Attribute Value (Tags) | **item_tag_attribute_value_mapping**                   | `item_id`, `gcs_id`, `vcs_id`, `lstg_attr_id`, `tag_name`, `tag_value_txt`                             | DW_ATTR_LSTG_TAG_DTL     |                                                          |
+| Item ↔ Attribute Value (Tax) | **item_tax_attribute_value_mapping**                          | `item_id`, `sale_tax_rate`, `jrsdctn_cntry_id`, `jrsdctn_tx`                                           | LSTG_SALE_TAX            |                                                          |
+| Item ↔ Picture | **item_picture_mapping**                          | `item_id`, `trait_name`                                                                                | LSTG_ITEM_PIC            |                                                          |
+| Item ↔ Aspect Value | **item_aspect_value_mapping**                | `item_id`, `aspect_name`, `aspect_value_name`                                                          | ITEM_ASPCT_CLSSFCTN_SAP  |                                                          |
+| Variation ↔ Aspect Value | **variation_aspect_value_mapping**                | `variation_id`, `aspect_name`, `aspect_value_name`                                                     | VRTN_ASPCT_CLSSFCTN_SAP  |                                                          |
+| Variation ↔ Trait | **variation_trait_mapping**                   | `variation_id`, `trait_name`                                                                           | LSTG_ITEM_VRTN_TRAIT     |                                                          |
+| Item ↔ Business Program | **item_business_program_mapping**      | `item_id`, `biz_prgrm_id`                                                                              | DW_PES_ELGBLT_HIST       |                                                          |
+| Variation ↔ Business Program | **variation_business_program_mapping** | `item_vrtn_id`, `biz_prgrm_id`                                                                         | DW_PES_ELGBLT_HIST       |                                                          |
 
 ```sql
 -- Example: Get item attributes using mapping table
@@ -225,7 +225,7 @@ SELECT
     m.attr_id,
     m.value_desc
 FROM gds.item i
-JOIN gds.dw_attr_detail_values m ON i.item_id = m.item_id
+JOIN gds.item_common_attribute_value_mapping m ON i.item_id = m.item_id
 WHERE i.item_site_id = 0
   AND m.attr_id = 1000
 LIMIT 100;
