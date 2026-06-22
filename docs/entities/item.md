@@ -19,46 +19,42 @@
 !!! note ""
     Fields are grouped by functional area. Click a tab to explore. The **Feature Flags** tab contains boolean indicator fields derived from bitmap columns in the physical source.
 
-=== "Core Identity"
-
-    {{ read_table('docs/assets/ldm-schemas/item-fields/01-core.tsv', sep='\t') }}
-
-=== "Listing Details"
+=== "Listing (39)"
 
     !!! warning "Date field gotchas"
         - Use **`auct_start_dt`** as the listing go-live date — not `site_create_date`. Scheduled listings are inserted into the table before they go live.
         - **`auct_end_dt`** rolls forward every 30 days for GTC listings and reflects the end of the current period, not the original planned end date. Always use this field for partition-filtered queries.
         - **`lstg_status_id = 0`** (Live) does **not** mean the listing is visible — on-hold listings also have status 0. Always check the `onhold` flag in the Feature Flags tab.
 
-    {{ read_table('docs/assets/ldm-schemas/item-fields/02-listing.tsv', sep='\t') }}
+    {{ read_table('docs/assets/ldm-schemas/item-fields/01-listing.tsv', sep='\t') }}
 
-=== "Pricing"
+=== "Pricing (9)"
 
     {{ read_table('docs/assets/ldm-schemas/item-fields/03-pricing.tsv', sep='\t') }}
 
-=== "Category"
+=== "Category (6)"
 
     !!! tip ""
         To get the full category hierarchy (L1 → L2 → SAP → meta), join on `(item_site_id, leaf_categ_id)` against the `DW_CATEGORY_GROUPINGS` reference table.
 
     {{ read_table('docs/assets/ldm-schemas/item-fields/04-category.tsv', sep='\t') }}
 
-=== "Seller"
+=== "Seller (11)"
 
     !!! warning "PII"
         `paypal_seller_email` is a PII field. Use `hash_paypal_seller_email` for all analytical workloads.
 
     {{ read_table('docs/assets/ldm-schemas/item-fields/05-seller.tsv', sep='\t') }}
 
-=== "Shipping"
+=== "Shipping (9)"
 
     {{ read_table('docs/assets/ldm-schemas/item-fields/06-shipping.tsv', sep='\t') }}
 
-=== "Condition"
+=== "Condition (2)"
 
     {{ read_table('docs/assets/ldm-schemas/item-fields/07-condition.tsv', sep='\t') }}
 
-=== "Feature Flags"
+=== "Feature Flags (102)"
 
     All fields in this tab are **boolean** (`true` / `false`). They are derived from bitmap columns in the physical source tables (`flags`, `flags2`–`flags12`, `sale_status`, `visitcount`, `passwordex`).
 
