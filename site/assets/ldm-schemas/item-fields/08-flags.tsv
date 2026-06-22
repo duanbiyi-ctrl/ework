@@ -1,0 +1,103 @@
+Field Name	Description	Sample Value
+amex	American Express card accepted as payment method.	false
+aplcbltoshp	Tax applies to the item's shipping fee in addition to the item price.	false
+autaccptenbld	Best Offer Auto Accept is enabled — offers above a threshold are automatically accepted.	false
+autdclnenbld	Best Offer Auto Decline is enabled — offers below a threshold are automatically declined.	false
+autorlst	Item has auto-relist enabled — listing will automatically relist when it expires.	false
+bestofrenbld	Best Offer feature is enabled, allowing buyers to submit offers below the listed price.	true
+bidsfl	Bids for this listing have been finalized (auction concluded).	false
+cashinperson	Cash in person payment accepted (primarily eBay Motors).	false
+cod	COD (Cash on Delivery) payment method accepted.	false
+codprepaydelivery	China site COD pre-pay delivery payment accepted.	false
+dgtdlvlgsplsprt	Item is deliverable as a digital good (digital delivery supported).	false
+discover	Discover card accepted as payment method.	false
+domestic_international	Item is included in an international shipping promotion.	false
+dupauction	Duplicate pure auction item (flagged by DW processing).	false
+ebaymgdshpng	Item is eligible for eBay managed shipping.	false
+ebayvlt	Seller used PYI (Put Your Item) upgrade listing flow or eBay Vault.	false
+gsplgstcplnsprtd	Listing uses GSP (Global Shipping Program) intermediated shipping profile.	false
+gtc	Good Till Cancelled listing. GTC listings auto-renew every 30 days; auct_end_dt reflects the end of the current 30-day period, not the original end.	true
+immpay	Immediate payment is required — buyers must pay before the listing is marked sold.	false
+irregularpackage	Item has an irregular or odd-shaped shipping package.	false
+isbusinesspolicyitem	Listing was created using a selling business policy profile.	false
+isbuyerresponsibleforshipping	Buyer is responsible for arranging shipping (eBay Motors SYI 2.1).	false
+islistedwithnocontactviaemailsupport	Listing format does not support buyer-seller email contact.	false
+ispulgstcplsprt	Item is eligible for in-store pickup (BOPIS — Buy Online, Pick Up In Store).	false
+isrestrictedbidding	Listing requires pre-approved bidders only.	false
+isrestrictedtobusinessuser	Listing is restricted to registered business users only.	false
+isselleronvacation	Seller is on Store Vacation Hold — listing is hidden from search results.	false
+isvariation	Item is a multi-SKU (MSKU) listing with variations. See the variation LDM for SKU-level details.	false
+itmonsale	Item is currently on an active promotional sale (price is discounted).	false
+loancheck	Loan check payment accepted (eBay Motors).	false
+mfulfillmentsprt	Default MSKU price has been set and merchant fulfillment is supported.	false
+mgdshpngoptin	Seller has opted into managed shipping (pilot or subsidiary program).	false
+mktplcevsbl	Item is marketplace visible (associated with value pack plus upgrade).	true
+mngbyinv	Listing is managed by the SKUBI/inventory management system.	false
+mocc	Money Order or Cashier's Check accepted as payment method.	false
+onfreeshipprtopromo	Item had standard free shipping in place before a promotional sale was applied.	false
+onfreeshipsale	Item is currently on a free shipping promotional sale.	false
+onhold	Listing is on administrative hold. Note: lstg_status_id may still show 0 (Live) for on-hold items — always check this flag alongside lstg_status_id.	false
+other	Other payment method accepted (unspecified category).	false
+otheronlinepayments	Other online payment method accepted.	false
+paisapayaccepted	PaisaPay credit card accepted (eBay India).	false
+paisapayescrow	PaisaPay escrow payment enabled (eBay India).	false
+paisapayescrowemi	PaisaPay escrow EMI payment enabled (eBay India).	false
+paymentseedescription	Payment instructions are described in the listing description text.	false
+paypal	PayPal accepted as payment method.	true
+personalcheck	Personal check accepted as payment method.	false
+postaltransfer	Postal transfer payment accepted (China site).	false
+prcguarantee	Price guarantee flag. Note: always false per DW implementation — do not rely on this field.	false
+prepaydelivery	Pre-pay delivery payment accepted (China site).	false
+prgspprtd_ebayplus	eBay Plus program was requested/supported for this listing.	false
+promoshp_domestic	Item is included in a domestic shipping promotion.	false
+prtnrlstdautodlritm	Silverstone partner dealer vehicle listing (eBay Motors).	false
+relist	Item was created via the Relist flow from a previous listing.	false
+schdldlstng	Listing is scheduled (pending go-live). Complements lstg_status_id=4.	false
+sellerpoverridn	Seller overrode default selling profile values for this listing.	false
+sellsimilar	Item was created via the Sell Similar flow.	false
+visamc	Visa or Mastercard accepted as payment method.	false
+ItemInCompatibilityEnabledCategory	Item is listed in a fitment/compatibility-enabled category (e.g., auto parts).	false
+ItemCompatibilitySpecified	Seller has provided fitment/compatibility data for this listing.	false
+IntegratedMCCAccepted	Integrated MCC (Merchant Credit Card) accepted.	false
+ETRS2_US	Item is eligible for eBay Top Rated Seller status (US program).	false
+ETRS2_GL	Item is eligible for eBay Top Rated Seller status (Global program).	false
+ETRS2_UK	Item is eligible for eBay Top Rated Seller status (UK program).	false
+ETRS2_DE	Item is eligible for eBay Top Rated Seller status (DE program).	false
+PUDOEligibleItem	Item is eligible for PUDO (Pick Up Drop Off) shipping option.	false
+IsIntermediatedShippingListing	Listing uses an intermediated shipping arrangement.	false
+SkipSearchIndexing	Item is excluded from search indexing.	false
+eItemFlags2IsPayPalPreferred	PayPal is set as the preferred payment method for this listing.	false
+AvailableForPickupInStore	Item is available for in-store pickup by the buyer.	false
+IS_ARTISAN_LISTING	Item is an artisan or handmade listing.	false
+EBAYPLUS_ELIGIBLE_ITEM	Item is eligible for the eBay Plus program.	false
+eItemFlagsScheduledListing	Listing is scheduled (pending). Equivalent to schdldlstng.	false
+ManagedByInventory	Listing is managed by inventory system. Equivalent to mngbyinv.	false
+ItemAdminEndedForATO	Item was admin-ended due to ATO (Account Takeover) detection.	false
+DailyDealsPermanent	Item is part of a permanent Daily Deals promotion.	false
+eItemFlags2IsCharityListing	Listing is a charity/Giving Works listing.	false
+PicturePackPlus2Charged	Seller was charged for Picture Pack Plus 2 upgrade.	false
+ITEM_HAS_AUTO_RELIST	Item has auto-relist enabled. Equivalent to autorlst.	false
+ClosedAsBin	Listing was closed as a Buy It Now transaction.	false
+eItemFlagsSYIWizard	Item was listed using the Sell Your Item (SYI) wizard flow.	false
+eItemFlagsRYIWizard	Item was last revised using the Revise Your Item (RYI) wizard flow.	false
+eItemFlagsIsCIPEnabled	Contactless/cash-in-person payment is enabled for this listing.	false
+eItemFlags2SCOEligible	Item is eligible for Second Chance Offer (SCO) to non-winning bidders.	false
+eItemFlags2CreatedBySellSimilar	Item was created via Sell Similar. Equivalent to sellsimilar.	false
+eItemFlags2CreatedByRelist	Item was created via Relist. Equivalent to relist.	false
+eItemFlags2MultipleShippingServices	Listing offers multiple shipping service options.	false
+ItemListedOrRevisedByAPI	Item was listed or last significantly revised via the eBay API.	false
+IntegratedGivingWorksUsed	eBay for Charity (Integrated Giving Works) feature was used.	false
+LOCAL_ITEM	Item is available for local pickup only.	false
+IS_BUYER_BLOCK_ENABLED	Seller has enabled buyer blocking requirements for this listing.	false
+IsClassifiedItem	Listing is in classified ad format.	false
+SOLD_AS_BIN_BY_EBX	Listing was sold as Buy It Now via eBay Express.	false
+IsBINAvailable	Buy It Now option is currently available on this auction listing.	false
+IS_LOCAL_ITEM	Item is local pickup only. Equivalent to LOCAL_ITEM.	false
+RestrictedBidding	Pre-approved bidders are required. Equivalent to isrestrictedbidding.	false
+eItemGoodTillCancelled	Good Till Cancelled listing. Equivalent to gtc.	false
+RESERVE_PRICE_REMOVED	Seller removed the reserve price from this listing after initial creation.	false
+RESERVE_PRICE_LOWERED	Seller lowered the reserve price on this listing.	false
+HVS	High Value Seller flag for this listing.	false
+ITEM_UPDATED	Item has been revised/updated since its original creation.	true
+ZERO_INSERTION_FEE	Listing was created with zero insertion fee (zero-fee promotion).	false
+DefaultMSKUPriceSet	Default price has been set for this multi-SKU listing.	false

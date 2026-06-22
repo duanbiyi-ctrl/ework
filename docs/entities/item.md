@@ -10,21 +10,11 @@
 
 **Primary Key:** `item_id`
 
-**Relationship Type:** Base entity — can be queried independently or joined to other LDMs.
-
 ---
 
 ## Field Reference
 
-!!! note ""
-    Fields are grouped by functional area. Click a tab to explore. The **Feature Flags** tab contains boolean indicator fields derived from bitmap columns in the physical source.
-
 === "Listing (39)"
-
-    !!! warning "Date field gotchas"
-        - Use **`auct_start_dt`** as the listing go-live date — not `site_create_date`. Scheduled listings are inserted into the table before they go live.
-        - **`auct_end_dt`** rolls forward every 30 days for GTC listings and reflects the end of the current period, not the original planned end date. Always use this field for partition-filtered queries.
-        - **`lstg_status_id = 0`** (Live) does **not** mean the listing is visible — on-hold listings also have status 0. Always check the `onhold` flag in the Feature Flags tab.
 
     {{ read_table('docs/assets/ldm-schemas/item-fields/01-listing.tsv', sep='\t') }}
 
@@ -127,12 +117,6 @@ LIMIT 100;
 | `variation` | 1:N | `gds.variation.item_id = gds.item.item_id` |
 | `product` | N:1 | `gds.product.prod_ref_id = gds.item.PRODUCT_ID` |
 | `transaction` | 1:N | `gds.transaction.item_id = gds.item.item_id` |
-| `item_common_attribute_value_mapping` | M:N | `m.item_id = i.item_id` |
-| `item_aspect_value_mapping` | M:N | `m.item_id = i.item_id` |
-| `item_business_program_mapping` | M:N | `m.item_id = i.item_id` |
-| `item_picture_mapping` | M:N | `m.item_id = i.item_id` |
-| `item_listing_attribute_value_mapping` | M:N | `m.item_id = i.item_id` |
-| `item_shipment_attribute_value_mapping` | M:N | `m.item_id = i.item_id` |
 
 [View full entity relationship diagram →](../index.md#entity-relationships)
 

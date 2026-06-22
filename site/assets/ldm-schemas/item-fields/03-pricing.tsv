@@ -1,0 +1,10 @@
+Field Name	Description	Sample Value
+bin_price_lstg_curncy	Buy It Now price in listing currency. The fixed price at which a buyer can immediately purchase the item without bidding.	999.99
+start_price_lstg_curncy	Starting bid price in listing currency. For Fixed Price listings this equals the current price.	999.99
+orgnl_price_amt	Original BIN price before a promotional sale discount was applied. Useful for calculating discount depth.	1199.99
+rsrv_price_list_crncy	Reserve price in listing currency — the minimum price the seller will accept (hidden from buyers). 0 if no reserve set.	500.00
+lstg_curncy_id	Currency ID for the listing. Note: not a 1-to-1 mapping with item_site_id; some sites allow multiple currencies.	1
+auct_start_exchng_rate	Exchange rate from listing currency to USD on the listing start date.	1.0
+auct_end_exchng_rate	Exchange rate from listing currency to USD on the listing end date.	1.0
+tax_new	Sales tax percentage charged by the seller for this item.	8.5
+tax_new_state	State or jurisdiction for which the tax_new rate applies.	CA
