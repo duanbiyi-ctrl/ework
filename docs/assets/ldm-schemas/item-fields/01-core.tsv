@@ -1,0 +1,9 @@
+Field Name	Description	Sample Value
+item_id	**PK.** Unique identifier for a listing, also referred to as listing_id. You can view any live listing at https://ebay.com/itm/{item_id}.	227255267188
+item_site_id	Site where the item is listed. Common values: 0=US, 3=UK, 15=AU, 77=eBay Motors, 100=eBay.com (2nd channel). Always filter on this field — tables are partitioned by it.	0
+item_vrsn_id	Generated sequence tracking revisions made by the seller. Increments on each significant update.	3
+site_create_date	Timestamp when the listing record was first created. Note: use auct_start_dt as the listing go-live date, not this field.	2024-01-15 08:23:11
+last_modfd_dt	Timestamp of the last modification to this listing. Read-only.	2024-06-01 14:05:33
+cust_ref_code	UUID tag used by sellers or API clients to ensure idempotent listing creation (prevents duplicate listings).	a1b2c3d4-uuid-5678
+application_id	Identifier of the application used to create the listing (e.g., SYI tool, third-party API client).	3615
+HOST_IP_ADDR	Client IP address from which the listing was created.	192.168.1.100

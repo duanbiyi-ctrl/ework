@@ -1,233 +1,148 @@
 # Item LDM
 
-[← Back to Entity Catalog](../index.md)
+[← Back to LDM Catalog](../index.md)
 
 ## Overview
 
 **LDM Name:** `item`
 
-**Description:** The core listing entity representing an item/product listing on the platform. Contains comprehensive information about items including title, pricing, category, seller, and listing lifecycle.
+**Description:** The core listing entity in the Item Domain. Each record represents one eBay listing, containing comprehensive information about title, pricing, category, seller, listing lifecycle, and more.
 
 **Primary Key:** `item_id`
 
-**Relationship Type:** Base Entity (can be queried independently)
+**Relationship Type:** Base entity — can be queried independently or joined to other LDMs.
 
 ---
 
-## Key Fields
+## Field Reference
 
-### Identifiers
-- `item_id` - Unique item identifier (Primary Key)
-- `item_site_id` - Site ID (0=US, 3=UK, 15=Australia, etc.)
-- `seller_id` - Seller user ID
+!!! note ""
+    Fields are grouped by functional area. Click a tab to explore. The **Feature Flags** tab contains boolean indicator fields derived from bitmap columns in the physical source.
 
-### Item Information
-- `item_title` - Item title/name
-- `item_subtitle` - Item subtitle (optional)
-- `item_price` - Current item price
-- `item_quantity` - Available quantity
-- `item_cndtn_id` - Item condition ID
-  - 1000 = New
-  - 3000 = Used
-  - 1500 = New other
-  - 2000 = Manufacturer refurbished
+=== "Core Identity"
 
-### Category & Classification
-- `leaf_categ_id` - Leaf category ID
-- `meta_categ_id` - Meta category ID
-- `l1_categ_id` - Level 1 category ID
-- `l2_categ_id` - Level 2 category ID
+    {{ read_table('docs/assets/ldm-schemas/item-fields/01-core.tsv', sep='\t') }}
 
-### Listing Lifecycle
-- `item_start_dt` - Listing start date/time
-- `item_end_dt` - Listing end date/time
-- `listing_type` - Listing format (Auction, Fixed Price, etc.)
-- `listing_status` - Current status (Active, Ended, etc.)
+=== "Listing Details"
 
-### Product Reference
-- `prod_ref_id` - Product reference ID (ePID) - Links to Product catalog
+    !!! warning "Date field gotchas"
+        - Use **`auct_start_dt`** as the listing go-live date — not `site_create_date`. Scheduled listings are inserted into the table before they go live.
+        - **`auct_end_dt`** rolls forward every 30 days for GTC listings and reflects the end of the current period, not the original planned end date. Always use this field for partition-filtered queries.
+        - **`lstg_status_id = 0`** (Live) does **not** mean the listing is visible — on-hold listings also have status 0. Always check the `onhold` flag in the Feature Flags tab.
 
-### Metrics
-- `view_count` - Number of views
-- `watch_count` - Number of watchers
-- `sold_quantity` - Quantity sold
+    {{ read_table('docs/assets/ldm-schemas/item-fields/02-listing.tsv', sep='\t') }}
 
-### Additional Attributes
-- `shipping_type` - Shipping method
-- `returns_accepted` - Whether returns are accepted
-- `item_location` - Item location (city, state, country)
-- Plus 80+ additional fields...
+=== "Pricing"
 
-**Note:** The complete field list contains 100+ fields. Contact the GDS team for the full schema definition.
+    {{ read_table('docs/assets/ldm-schemas/item-fields/03-pricing.tsv', sep='\t') }}
+
+=== "Category"
+
+    !!! tip ""
+        To get the full category hierarchy (L1 → L2 → SAP → meta), join on `(item_site_id, leaf_categ_id)` against the `DW_CATEGORY_GROUPINGS` reference table.
+
+    {{ read_table('docs/assets/ldm-schemas/item-fields/04-category.tsv', sep='\t') }}
+
+=== "Seller"
+
+    !!! warning "PII"
+        `paypal_seller_email` is a PII field. Use `hash_paypal_seller_email` for all analytical workloads.
+
+    {{ read_table('docs/assets/ldm-schemas/item-fields/05-seller.tsv', sep='\t') }}
+
+=== "Shipping"
+
+    {{ read_table('docs/assets/ldm-schemas/item-fields/06-shipping.tsv', sep='\t') }}
+
+=== "Condition"
+
+    {{ read_table('docs/assets/ldm-schemas/item-fields/07-condition.tsv', sep='\t') }}
+
+=== "Feature Flags"
+
+    All fields in this tab are **boolean** (`true` / `false`). They are derived from bitmap columns in the physical source tables (`flags`, `flags2`–`flags12`, `sale_status`, `visitcount`, `passwordex`).
+
+    !!! note "Duplicates"
+        Some flags are exposed under multiple names for historical reasons (e.g., `gtc` and `eItemGoodTillCancelled` are equivalent). Prefer the shorter, more readable name where both exist.
+
+    {{ read_table('docs/assets/ldm-schemas/item-fields/08-flags.tsv', sep='\t') }}
 
 ---
 
 ## Sample Queries
 
-### Basic Item Query
+### Get Active Listings in a Category
 
 ```sql
--- Get items in a specific category
-SELECT 
+SELECT
     item_id,
-    item_title,
-    item_price,
-    item_quantity,
-    seller_id,
-    item_cndtn_id
-FROM item
-WHERE item_site_id = 0
-  AND leaf_categ_id = 58058  -- Cell Phones & Accessories
-  AND item_cndtn_id = 1000   -- New condition
+    auct_titl             AS title,
+    bin_price_lstg_curncy AS price,
+    qty_avail,
+    ITEM_CNDTN_ID         AS condition_id,
+    slr_id
+FROM gds.item
+WHERE item_site_id = 0          -- US site
+  AND leaf_categ_id = 9355      -- Cell Phones & Accessories
+  AND lstg_status_id = 0        -- Live listings
+  AND onhold = false            -- Exclude on-hold listings
 LIMIT 100;
 ```
 
-### Filter by Price Range
+### Filter by Condition and Price Range
 
 ```sql
--- Find items within price range
-SELECT 
-    item_id,
-    item_title,
-    item_price,
-    item_start_dt
-FROM item
+-- New items within a price range
+SELECT item_id, auct_titl, bin_price_lstg_curncy, ITEM_CNDTN_ID
+FROM gds.item
 WHERE item_site_id = 0
-  AND leaf_categ_id = 58058
-  AND item_price BETWEEN 100 AND 500
-  AND item_quantity > 0
-ORDER BY item_price ASC
+  AND ITEM_CNDTN_ID = 1000      -- 1000 = New
+  AND bin_price_lstg_curncy BETWEEN 100 AND 500
+  AND lstg_status_id = 0
+ORDER BY bin_price_lstg_curncy ASC
 LIMIT 100;
 ```
 
-### Recently Listed Items
+### Join with Attributes
 
 ```sql
--- Get recently listed items
-SELECT 
-    item_id,
-    item_title,
-    item_price,
-    item_start_dt,
-    seller_id
-FROM item
-WHERE item_site_id = 0
-  AND leaf_categ_id = 58058
-  AND item_start_dt >= CURRENT_DATE - INTERVAL '7' DAY
-ORDER BY item_start_dt DESC
-LIMIT 100;
-```
-
-### Join with Product Catalog
-
-```sql
--- Items with product catalog information
-SELECT 
+-- Get brand attribute (attr_id = 1000) for items in a category
+SELECT
     i.item_id,
-    i.item_title,
-    i.item_price,
-    p.prod_ref_id,
-    p.product_name,
-    p.product_brand
-FROM item i
-LEFT JOIN product p ON i.prod_ref_id = p.prod_ref_id
+    i.auct_titl,
+    m.attr_id,
+    m.value_desc AS brand
+FROM gds.item i
+JOIN gds.item_common_attribute_value_mapping m ON i.item_id = m.item_id
 WHERE i.item_site_id = 0
-  AND i.leaf_categ_id = 58058
+  AND i.leaf_categ_id = 9355
+  AND m.attr_id = 1000
 LIMIT 100;
 ```
 
-[More query examples →](../guides/query-examples.md#query-item-basics)
+[More query examples →](../guides/query-examples.md)
 
 ---
 
 ## Relationships
 
-### Outgoing Relationships (Item →)
+| Target LDM | Type | How to Join |
+|------------|------|-------------|
+| `variation` | 1:N | `gds.variation.item_id = gds.item.item_id` |
+| `product` | N:1 | `gds.product.prod_ref_id = gds.item.PRODUCT_ID` |
+| `transaction` | 1:N | `gds.transaction.item_id = gds.item.item_id` |
+| `item_common_attribute_value_mapping` | M:N | `m.item_id = i.item_id` |
+| `item_aspect_value_mapping` | M:N | `m.item_id = i.item_id` |
+| `item_business_program_mapping` | M:N | `m.item_id = i.item_id` |
+| `item_picture_mapping` | M:N | `m.item_id = i.item_id` |
+| `item_listing_attribute_value_mapping` | M:N | `m.item_id = i.item_id` |
+| `item_shipment_attribute_value_mapping` | M:N | `m.item_id = i.item_id` |
 
-| Target Entity | Type | Description | Mapping Table |
-|---------------|------|-------------|---------------|
-| Variation | 1:N | Item has multiple variations | `variation` |
-| Product | N:1 | Item references a product catalog | Join on `prod_ref_id` |
-| Attribute | M:N | Item has multiple attributes | `item_common_attribute_value_mapping` |
-| Aspect | M:N | Item has SAP aspects | `item_aspect_value_mapping` |
-| Business Program | M:N | Item eligibility in programs | `item_business_program_mapping` |
-| Picture | M:N | Item pictures by trait | `item_picture_mapping` |
-| Transaction | 1:N | Item has transactions | `transaction` |
-
-[View complete relationship diagram →](../index.md#entity-relationship-diagram)
-
----
-
-## Physical Sources
-
-The Item LDM integrates data from **11 physical Hive tables**:
-
-| Physical Table | Content | Update Frequency |
-|----------------|---------|------------------|
-| DIM_ITEM | Core item dimensions | Daily |
-| SLNG_LSTG_SUPER_FACT | Selling listing super fact | Daily |
-| DW_LSTG_ITEM | Listing item data warehouse | Daily |
-| DW_LSTG_ITEM_FREQ | High-frequency item updates | Hourly |
-| CTLG_ITEM_FACT | Catalog item fact | Daily |
-| LSTG_ITEM_DESC_DIM | Item description dimension | Daily |
-| LSTG_ITEM_CNDTN | Item condition | Daily |
-| LSTG_ITEM_VIEW_CNTR | Item view counter | Hourly |
-| DW_LSTG_ITEM_PROD_REF | Item product reference | Daily |
-| CTLG_PROD_ITEM_FACT | Product-item mapping | Daily |
-| DW_ITEM_REVISIONS | Item change log (raw) | Real-time |
-| ITEM360_SRCH_EMBEDDING | Item search embeddings | Daily |
-
-**Partitioning:** `item_site_id`, `snapshot_date` (varies by source table)
-
-**Key Principle:** For any given field, there is exactly one source table for a given update frequency.
-
-[View complete physical mappings →](../reference/table-mappings.md#item)
+[View full entity relationship diagram →](../index.md#entity-relationships)
 
 ---
 
-## Performance Considerations
-
-### Always Use Partition Filters
-
-Item tables are partitioned by `item_site_id`. Always include this in your WHERE clause:
-
-```sql
--- Good
-WHERE item_site_id = 0  -- Filters to single partition
-
--- Bad
-WHERE item_title LIKE '%iPhone%'  -- Scans all partitions
-```
-
-### Limit Result Sets
-
-Use `LIMIT` for exploratory queries:
-
-```sql
-SELECT * FROM item
-WHERE item_site_id = 0
-LIMIT 100;  -- Prevents scanning millions of rows
-```
-
-### Select Specific Columns
-
-Avoid `SELECT *` - only select columns you need:
-
-```sql
--- Good
-SELECT item_id, item_title, item_price
-FROM item;
-
--- Bad
-SELECT *  -- Returns 100+ columns
-FROM item;
-```
-
----
-
-## Related Documentation
-
-- [Entity Catalog](../index.md) - All LDM entities
-- [Query Examples](../guides/query-examples.md) - More item query examples
-- [Modeling Strategy](../reference/ldm-modeling-principle.md) - How entities are defined
-- [Physical Table Mappings](../reference/table-mappings.md#item) - Detailed source information
+!!! tip "Useful Links"
+    - :material-swap-horizontal: [Migrating from legacy tables (DW_LSTG_ITEM, etc.)?](../guides/migration-guide.md)
+    - :material-table: [Logical → Physical field mapping](../reference/ldm-design.md#ldm-schemas)
+    - :material-magnify: [More query examples](../guides/query-examples.md)

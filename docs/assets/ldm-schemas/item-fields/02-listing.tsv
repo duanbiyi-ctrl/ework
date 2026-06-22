@@ -1,0 +1,32 @@
+Field Name	Description	Sample Value
+auct_titl	Item title as it appears in search results and on the listing page.	Apple iPhone 15 Pro 256GB Unlocked
+subtitle	Full subtitle text. Null if not provided by seller.	Like New Condition Free Shipping
+bold_title	True if seller opted for boldface title display (paid listing upgrade).	false
+auct_type_code	Listing format code. Common values: 1=Chinese Auction (with or without BIN), 2=Dutch Auction, 7=Store Fixed Price, 9=Fixed Price, 13=Classified Ad. -999=Unknown.	9
+lstg_status_id	Activity status of the listing. Values: 0=Live (may still be on-hold; check onhold flag), 1=Ended, 2=Admin Ended (by CS), 3=Deleted, 4=Scheduled.	0
+auct_start_dt	Date the listing went live. Use this as the listing start date — scheduled listings exist in the table before going live, so site_create_date is not equivalent.	2024-01-15
+auct_end_dt	Date the listing ended or is scheduled to end. For GTC listings, this rolls forward every 30 days. Use this field for partition-filtered queries.	2024-02-14
+auct_start_date	Timestamp (with time) of listing start. See auct_start_dt for date-only queries.	2024-01-15 08:23:11
+auct_end_date	Timestamp (with time) of listing end. Daylight Saving Time may cause minor offsets vs site timestamps.	2024-02-14 08:23:11
+sale_sched_end_dt	Date the listing was originally scheduled to end (set at creation; not updated if listing ends early). Archived items show 1969-12-31; half listings show far-future dates.	2024-02-14
+auction_end_reason_code	Code identifying why the listing ended (e.g., sold, expired, admin-ended).	32
+lot_size	Number of items in a lot. A lot contains two or more similar items sold together as a single order line.	1
+private_yn	True if listing is private — buyer user IDs are hidden from the listing and bid history.	false
+sgnfcnt_rvsn_cnt	Number of significant revisions made to this listing by the seller.	2
+qty_avail	Current quantity available for sale (initial quantity minus quantity sold).	5
+qty_sold	Total quantity sold from this listing.	3
+return_policy_yn	True if the seller has specified a return policy for this listing.	true
+relist_parent_item_id	Item ID of the parent listing if this listing was created via Relist, Sell Similar, or Bulk Relist.	196543210987
+relistid	Item ID of the new listing if this item has been relisted. Greater than 0 means this listing ended and a successor was created.	227255267189
+PRODUCT_ID	Foreign key into EBAY_PRODUCT (ePID) to retrieve catalog-level product information.	285507661
+PRMTN_SALE_START_TM	Start timestamp of a promotional sale applied to this listing.	2024-05-01 00:00:00
+PRMTN_SALE_END_TM	End timestamp of a promotional sale applied to this listing.	2024-05-31 23:59:59
+photo_count	Number of images uploaded for this listing.	8
+photo_display_type	Photo display mode. Values: 0=None, 1=Gallery, 2=Featured, 7=Gallery Plus.	1
+picture_url	Semicolon-delimited list of all image URLs for this listing.	https://i.ebayimg.com/images/g/...
+gallery_url	URL of the thumbnail image shown in search results (usually the first image).	https://i.ebayimg.com/thumbs/images/g/...
+glry_type_id	Gallery image type indicator for the gallery_url image.	1
+item_loc	Seller-provided item location (city, state, country text).	San Jose, California, United States
+item_cntry_id	Country ID where the item is physically located (seller-declared).	0
+item_zip	Postal code of the seller's address.	95101
+super_featured	True if the listing used the Super Featured paid listing upgrade.	false

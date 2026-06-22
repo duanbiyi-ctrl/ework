@@ -45,6 +45,9 @@ In current phase, following the [LDM Design Principles](./ldm-modeling-principle
     
     - **ITEM360_SRCH_EMBEDDING** → `embeddings` field: Aggregation by `item_id` required to consolidate embedding vectors
 
+    !!! tip "Looking for field descriptions and usage guidance?"
+        See the [Item LDM entity page](../entities/item.md) for field-level descriptions, enum values, sample values, and query examples.
+
     {{ read_table('docs/assets/ldm-schemas/item.tsv', sep='\t') }}
 
 === "variation"

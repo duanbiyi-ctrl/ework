@@ -1,0 +1,10 @@
+Field Name	Description	Sample Value
+shipping_type	Shipping cost model offered by the seller. Values: Flat=fixed cost, Calculated=based on buyer location, Free=no charge, NotSpecified=unset.	Flat
+shipping_fee	Base shipping cost for the first item using the primary domestic shipping service.	0.00
+shipping_xfee	Shipping cost for each additional unit when the same buyer purchases multiple quantities of this listing.	0.00
+weight	Weight of the shipping package (numeric value; see weight_unit_type for unit).	1.5
+weight_unit_type	Unit for the weight field. Values: lbs, kgs.	lbs
+package_size	Type of shipping package. Values: Letter, LargeEnvelope, Package/ThickEnvelope, LargePackage, ExtraLargePackage.	Package/ThickEnvelope
+payment_cash	True if cash on delivery (payment on pickup) is accepted by the seller.	false
+payment_cc	True if credit card payment is accepted directly by the seller (non-PayPal).	false
+payment_moneyxfer	True if direct money transfer is accepted by the seller.	false
