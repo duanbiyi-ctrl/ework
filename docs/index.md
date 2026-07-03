@@ -56,17 +56,17 @@ All available LDM entities in the Item domain:
     Query via Spark SQL on DLS:
     
     ```sql
-    -- Example: Query active items in a specific category
+    -- Example: Query active US listings in a specific category
     SELECT 
         item_id,
-        item_title,
-        item_price,
+        auct_titl             AS title,
+        bin_price_lstg_curncy AS price,
         leaf_categ_id,
-        seller_id
+        slr_id
     FROM gds.item
     WHERE item_site_id = 0
-      AND leaf_categ_id = 58058
-      AND item_price > 100
+      AND leaf_categ_id = 9355
+      AND bin_price_lstg_curncy > 100
     LIMIT 100;
     ```
 
@@ -81,7 +81,7 @@ All available LDM entities in the Item domain:
     **Use case:** Query title, price, category, seller, etc.
     
     ```sql
-    SELECT item_id, item_title, item_price, leaf_categ_id
+    SELECT item_id, auct_titl AS title, bin_price_lstg_curncy AS price, leaf_categ_id
     FROM gds.item
     WHERE item_site_id = 0
     LIMIT 100;
@@ -104,32 +104,10 @@ All available LDM entities in the Item domain:
     **Use case:** Brand, material, color (EAV pattern)
     
     ```sql
-    SELECT i.item_id, i.item_title, m.attr_id, m.value_desc
+    SELECT i.item_id, i.auct_titl AS title, m.attr_id, m.value_desc
     FROM gds.item i
     JOIN gds.item_common_attribute_value_mapping m ON i.item_id = m.item_id
     WHERE m.attr_id = 1000;
-    ```
-
-=== "Transaction Data"
-    **Entity:** `transaction`
-    
-    **Use case:** Sales analytics, buyer behavior
-    
-    ```sql
-    SELECT item_id, transaction_id, transaction_date, transaction_amount
-    FROM gds.transaction
-    WHERE transaction_date >= '2024-01-01';
-    ```
-
-=== "Promotional Deals"
-    **Entity:** `deal`
-    
-    **Use case:** Items in promotions
-    
-    ```sql
-    SELECT deal_id, item_id, deal_type, discount_pct
-    FROM gds.deal
-    WHERE deal_status = 'active';
     ```
 
 [See comprehensive query examples →](guides/query-examples.md)
@@ -141,21 +119,22 @@ All available LDM entities in the Item domain:
 
 ## LDM Catalog
 
-| LDM Name | Description | Primary Key(s) | Details                              |
-|----------|-------------|----------------|--------------------------------------|
-| **item** | Core listing entity | `item_id` | [Details →](entities/item.md)        |
-| **variation** | Multi-SKU variations of a listing | `variation_id` | [Details →](entities/variation.md)   |
-| **product** | Product catalog reference (ePID) | `product_id` | [Details →](entities/product.md)     |
-| **transaction** | Purchase transactions | `item_id`, `transaction_id` | [Details →](entities/transaction.md) |
-| **attribute** | Item attributes (brand, model, color, etc.) | `attribute_id` |                                      |
-| **attribute_value** | Attribute values (Nike, Red, etc.) | `attribute_value_id` |                                      |
-| **trait** | Variation-level traits (Color, Size, Material) | `trait_name` |                                      |
-| **aspect** | SAP-generated classification aspects | `aspect_name`, `namespace_id`, `classifier_id` |                                      |
-| **aspect_value** | Aspect value definitions | `aspect_value_name` |                                      |
-| **deal** | Promotional deals and offers | `deal_id` |                                      |
-| **business_program** | Business programs (Authenticity, Vault, etc.) | `business_program_id` |                                      |
-| **msku** | Multi-SKU (Stock Keeping Unit) item | `msku_id` |                                      |
-| **ssku** | Single SKU (Stock Keeping Unit) item | `ssku_id` |                                      |
+| LDM Name | Type | Description | Primary Key(s) | Details |
+|----------|------|-------------|----------------|---------|
+| **item** | Core entity | Core listing entity | `item_id` | [Details →](entities/item.md) |
+| **variation** | Core entity | Multi-SKU variations of a listing | `variation_id` | [Details →](entities/variation.md) |
+| **product** | Core entity | Product catalog reference (ePID) | `prod_ref_id` | [Details →](entities/product.md) |
+| **site** | Lookup entity | eBay marketplace/site lookup for listing, seller, and bidder site IDs | `site_id` | [Details →](entities/site.md) |
+| **category** | Lookup entity | eBay category hierarchy lookup, including meta, intermediate, and leaf categories | `site_id`, `leaf_categ_id` | [Details →](entities/category.md) |
+| **dw_category_groups** | Lookup entity | Category grouping and rollup reference used by legacy DW/category reporting | TBD | |
+| **country** | Lookup entity | Country lookup for item location, seller registration, and bidder registration country IDs | `country_id` | [Details →](entities/country.md) |
+| **application** | Lookup entity | Listing application/tool lookup for `application_id` | `application_id` | [Details →](entities/application.md) |
+| **user** | Lookup entity | eBay user lookup for seller and buyer user IDs | `user_id` | [Details →](entities/user.md) |
+| **item_condition** | Lookup entity | Item condition and condition rollup lookup | `item_cndtn_id` | |
+| **listing_status** | Lookup entity | Listing lifecycle status lookup for `lstg_status_id` | `lstg_status_id` | |
+| **listing_format** | Lookup entity | Listing format / auction type lookup for `auct_type_code` | `auct_type_code` | |
+| **browse_node** | Lookup entity | Browse node lookup for browse/navigation taxonomy references | `brws_node_id` | |
+| **item_common_attribute_value_mapping** | Relationship entity | Item-to-common-attribute/value mapping | `item_id`, `attr_id`, `value_id` | [Details →](relationships/item_common_attribute_value_mapping.md) |
 
 ---
 
@@ -164,22 +143,15 @@ All available LDM entities in the Item domain:
 | Relationship | Type | Description |
 |--------------|------|-------------|
 | **Item → Variation** | 1:N | One item has multiple variations (e.g., different sizes/colors) |
-| **Item → Product** | N:1 | Multiple items reference the same product catalog |
-| **Item ↔ Attribute** | M:N | Items have multiple attributes (brand, model, color, etc.) |
-| **Item ↔ Attribute Value** | M:N | Items are associated with specific attribute values (EAV pattern) |
-| **Attribute ↔ Attribute Value** | M:N | One attribute can have multiple values |
-| **Item ↔ Aspect** | M:N | Items have SAP-generated classification aspects |
-| **Aspect ↔ Aspect Value** | M:N | One aspect can have multiple values (similar to Attribute-Value pattern) |
-| **Item ↔ Aspect Value** | M:N | Items are associated with specific aspect values |
-| **Variation ↔ Aspect** | M:N | Variations have SAP aspects at variation level |
-| **Variation ↔ Aspect Value** | M:N | Variations are associated with specific aspect values |
+| **Item → Product** | N:1 | Items can reference product catalog/ePID records |
+| **Item → Site** | N:1 | Site IDs resolve listing site, seller registration site, and bidder registration site |
+| **Item → Category** | N:1 | Category IDs resolve the 7-level eBay category hierarchy and category rollups |
+| **Item → Country** | N:1 | Country IDs resolve item location, seller registration country, and bidder country |
+| **Item → Application** | N:1 | `application_id` resolves the listing application/tool |
+| **Item → User** | N:1 | `slr_id` resolves the seller/user identity |
+| **Item ↔ Attribute Value** | M:N | Items are associated with specific attribute values through mapping entities |
+| **Item ↔ Aspect Value** | M:N | Items are associated with classifier-derived aspect values |
 | **Variation ↔ Trait** | M:N | Variations have traits like Color, Size, Material |
-| **Item ↔ Trait** | M:N | MSKU Items have traits like Color, Size, Material |
-| **Item ↔ Deal** | M:N | Items can participate in multiple deals |
-| **Item ↔ Business Program** | M:N | Items are eligible for business programs (Authenticity, Vault, etc.) |
-| **Variation ↔ Business Program** | M:N | Variations have program eligibility at variation level |
-| **Item → Transaction** | 1:N | One item has multiple purchase transactions |
-| **Deal → Transaction** | 1:N | One deal can have multiple transactions |
 
 ### How to Query Relationships
 
@@ -214,14 +186,12 @@ WHERE v.item_id = 123456789;
 | Item ↔ Aspect Value | **item_aspect_value_mapping**                | `item_id`, `aspect_name`, `aspect_value_name`                                                          | ITEM_ASPCT_CLSSFCTN_SAP  |                                                          |
 | Variation ↔ Aspect Value | **variation_aspect_value_mapping**                | `variation_id`, `aspect_name`, `aspect_value_name`                                                     | VRTN_ASPCT_CLSSFCTN_SAP  |                                                          |
 | Variation ↔ Trait | **variation_trait_mapping**                   | `variation_id`, `trait_name`                                                                           | LSTG_ITEM_VRTN_TRAIT     |                                                          |
-| Item ↔ Business Program | **item_business_program_mapping**      | `item_id`, `biz_prgrm_id`                                                                              | DW_PES_ELGBLT_HIST       |                                                          |
-| Variation ↔ Business Program | **variation_business_program_mapping** | `item_vrtn_id`, `biz_prgrm_id`                                                                         | DW_PES_ELGBLT_HIST       |                                                          |
 
 ```sql
 -- Example: Get item attributes using mapping table
 SELECT 
     i.item_id,
-    i.item_title,
+    i.auct_titl AS title,
     m.attr_id,
     m.value_desc
 FROM gds.item i

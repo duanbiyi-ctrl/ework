@@ -29,3 +29,32 @@
         max-width: 1800px;  /* Even wider on very large screens */
     }
 }
+
+.field-type {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.05rem 0.35rem;
+    border-radius: 0.25rem;
+    background: var(--md-default-fg-color--lightest);
+    color: var(--md-default-fg-color--light);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: 0.08rem;
+}
+
+.md-typeset p:has(> .field-type) {
+    margin-top: 1.35rem;
+    margin-bottom: 0.35rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h3[id^="item-basics"],
+.md-typeset h3[id^="item-aspects"],
+.md-typeset h3[id^="listing-basics"],
+.md-typeset h3[id^="payment-shipping"] {
+    margin-top: 2.4rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
