@@ -31,7 +31,7 @@
 
     **`subtitle`** <span class="field-type">STRING</span>
 
-    the listing’s full subtitle text; it can be null if the seller did not provide one
+    The listing’s full subtitle text; it can be null if the seller did not provide one
 
     **`item_desc`** <span class="field-type">STRING</span>
 
@@ -51,7 +51,7 @@
 
     **`item_site_id`** <span class="field-type">INTEGER</span>
 
-    eBay site ID where the item was listed. Please see [Site LDM](site.md) for more details.
+    The eBay site ID where the item was listed. Please see [Site LDM](site.md) for more details.
 
     Examples:
 
@@ -190,7 +190,7 @@
 
     **`sap_category_id`** <span class="field-type">INTEGER</span>
 
-    Search Annotation Platform (SAP) category ID assigned to the listing. Derived from category mapping.
+    Search Annotation Platform (SAP) category ID assigned to the listing.
 
     **`lcl_sap_categ_name`** <span class="field-type">STRING</span>
 
@@ -202,7 +202,7 @@
 
     **`bsns_vrtcl_name`** <span class="field-type">STRING</span>
 
-    Business Vertical Name (e.g. Electronics, Fashion, Motors). Derived from category mapping.
+    Business Vertical Name (e.g. Electronics, Fashion, Motors).
 
     **`item_cndtn_id`** <span class="field-type">INTEGER</span>
 
@@ -731,7 +731,7 @@
 
     **`slr_site_id`** <span class="field-type">INTEGER</span>
 
-    eBay site ID where the seller account is registered; this can differ from the site where the item is listed. Please see [Site LDM](site.md) for more details.
+    The eBay site ID where the seller account is registered; this can differ from the site where the item is listed. Please see [Site LDM](site.md) for more details.
 
     **`slr_cntry_id`** <span class="field-type">INTEGER</span>
 
@@ -739,19 +739,19 @@
 
     **`auct_start_exchng_rate`** <span class="field-type">DOUBLE</span>
 
-    the exchange rate on the listing start date
+    The exchange rate on the listing start date
 
     **`auct_end_exchng_rate`** <span class="field-type">DOUBLE</span>
 
-    the exchange rate on the listing end date
+    The exchange rate on the listing end date
 
     **`slng_mgr_sbscrbr_flag`** <span class="field-type">INTEGER</span>
 
-    flag showing the seller was a Selling Manager subscriber for that listing.
+    Flag showing the seller was a Selling Manager subscriber for that listing.
 
     **`slng_mgr_pro_sbscrbr_flag`** <span class="field-type">INTEGER</span>
 
-    flag showing the seller was a Selling Manager Pro subscriber for that listing
+    Flag showing the seller was a Selling Manager Pro subscriber for that listing
 
     **`high_bdr_cntry_id`** <span class="field-type">INTEGER</span>
 

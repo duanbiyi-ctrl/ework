@@ -1205,7 +1205,7 @@
 <p><strong><code>auct_titl</code></strong> <span class="field-type">STRING</span></p>
 <p>Listing title shown to buyers in search results and on the item page.</p>
 <p><strong><code>subtitle</code></strong> <span class="field-type">STRING</span></p>
-<p>the listing’s full subtitle text; it can be null if the seller did not provide one</p>
+<p>The listing’s full subtitle text; it can be null if the seller did not provide one</p>
 <p><strong><code>item_desc</code></strong> <span class="field-type">STRING</span></p>
 <p>Seller-provided item description content encoded in Base64. Decode before displaying or analyzing the description text.</p>
 <p><strong><code>item_desc_lgth_num</code></strong> <span class="field-type">INTEGER</span></p>
@@ -1215,7 +1215,7 @@
 <p><strong><code>sku_num</code></strong> <span class="field-type">STRING</span></p>
 <p>Seller&#x27;s custom, application-specific data associated with the item. Data specified here is stored by eBay with the item for seller but it is not used by eBay in any way.</p>
 <p><strong><code>item_site_id</code></strong> <span class="field-type">INTEGER</span></p>
-<p>eBay site ID where the item was listed. Please see <a href="../site/">Site LDM</a> for more details.</p>
+<p>The eBay site ID where the item was listed. Please see <a href="../site/">Site LDM</a> for more details.</p>
 <p>Examples:</p>
 <ul>
 <li><code>0</code> = US</li>
@@ -1316,13 +1316,13 @@
 <p><strong><code>categ_move_to_id</code></strong> <span class="field-type">INTEGER</span></p>
 <p>Replacement category ID when the original leaf category has been retired or moved to another category structure. Please see <a href="../category/">Category LDM</a> for more details.</p>
 <p><strong><code>sap_category_id</code></strong> <span class="field-type">INTEGER</span></p>
-<p>Search Annotation Platform (SAP) category ID assigned to the listing. Derived from category mapping.</p>
+<p>Search Annotation Platform (SAP) category ID assigned to the listing.</p>
 <p><strong><code>lcl_sap_categ_name</code></strong> <span class="field-type">STRING</span></p>
 <p>Local Search Annotation Platform (SAP) category name for the listing category.</p>
 <p><strong><code>glb_sap_categ_name</code></strong> <span class="field-type">STRING</span></p>
 <p>Global Search Annotation Platform (SAP) category name for the listing category.</p>
 <p><strong><code>bsns_vrtcl_name</code></strong> <span class="field-type">STRING</span></p>
-<p>Business Vertical Name (e.g. Electronics, Fashion, Motors). Derived from category mapping.</p>
+<p>Business Vertical Name (e.g. Electronics, Fashion, Motors).</p>
 <p><strong><code>item_cndtn_id</code></strong> <span class="field-type">INTEGER</span></p>
 <p>Seller-provided item condition code for the listing.</p>
 <p>Values:</p>
@@ -1637,17 +1637,17 @@
 <li><code>4</code> = Scheduled</li>
 </ul>
 <p><strong><code>slr_site_id</code></strong> <span class="field-type">INTEGER</span></p>
-<p>eBay site ID where the seller account is registered; this can differ from the site where the item is listed. Please see <a href="../site/">Site LDM</a> for more details.</p>
+<p>The eBay site ID where the seller account is registered; this can differ from the site where the item is listed. Please see <a href="../site/">Site LDM</a> for more details.</p>
 <p><strong><code>slr_cntry_id</code></strong> <span class="field-type">INTEGER</span></p>
 <p>Country ID where the seller account is registered; this can differ from the physical item location country. Please see <a href="../country/">Country LDM</a> for more details.</p>
 <p><strong><code>auct_start_exchng_rate</code></strong> <span class="field-type">DOUBLE</span></p>
-<p>the exchange rate on the listing start date</p>
+<p>The exchange rate on the listing start date</p>
 <p><strong><code>auct_end_exchng_rate</code></strong> <span class="field-type">DOUBLE</span></p>
-<p>the exchange rate on the listing end date</p>
+<p>The exchange rate on the listing end date</p>
 <p><strong><code>slng_mgr_sbscrbr_flag</code></strong> <span class="field-type">INTEGER</span></p>
-<p>flag showing the seller was a Selling Manager subscriber for that listing.</p>
+<p>Flag showing the seller was a Selling Manager subscriber for that listing.</p>
 <p><strong><code>slng_mgr_pro_sbscrbr_flag</code></strong> <span class="field-type">INTEGER</span></p>
-<p>flag showing the seller was a Selling Manager Pro subscriber for that listing</p>
+<p>Flag showing the seller was a Selling Manager Pro subscriber for that listing</p>
 <p><strong><code>high_bdr_cntry_id</code></strong> <span class="field-type">INTEGER</span></p>
 <p>Country ID of the highest bidder for the listing. Please see <a href="../country/">Country LDM</a> for more details.</p>
 <p>Values:</p>
