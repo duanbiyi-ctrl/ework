@@ -60,8 +60,8 @@ nav:
           - Site: entities/site.md
           - Category: entities/category.md
           - Country: entities/country.md
-          - Application: entities/application.md
-          - User: entities/user.md
+          - MSKU: entities/msku.md
+          - SSKU: entities/ssku.md
           - Variation: entities/variation.md
           - Product: entities/product.md
       - Relationship:
@@ -70,7 +70,6 @@ nav:
       - Migration Guide: guides/migration-guide.md
       - Query Examples: guides/query-examples.md
   - Reference:
-      - LDM Design: reference/ldm-design.md
       - LDM Design Principle: reference/ldm-modeling-principle.md
   - FAQ: faq.md
 

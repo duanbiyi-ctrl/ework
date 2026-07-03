@@ -574,7 +574,7 @@
 
     **`application_id`** <span class="field-type">LONG</span>
 
-    Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model. Please see [Application LDM](application.md) for more details.
+    Application identifier used by external consumers to identify the application or listing tool associated with listing creation.
 
     Examples:
 
@@ -699,7 +699,7 @@
 
     **`slr_id`** <span class="field-type">LONG</span>
 
-    Seller&#x27;s Oracle user ID associated with the listing. Please see [User LDM](user.md) for more details.
+    Seller&#x27;s Oracle user ID associated with the listing.
 
     **`sgnfcnt_rvsn_cnt`** <span class="field-type">INTEGER</span>
 
@@ -1178,7 +1178,7 @@
 
     **`eplus_elgbl_ind`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item is eligible for the eBay Plus business program.
+    Indicates whether the item is eligible for eBay Plus.
 
 <!-- END GENERATED ITEM FIELDS -->
 
@@ -1234,8 +1234,8 @@ LIMIT 100;
 | `site` | N:1 | `gds.site.site_id = gds.item.item_site_id` |
 | `category` | N:1 | `gds.category.site_id = gds.item.item_site_id` and `gds.category.leaf_categ_id = gds.item.leaf_categ_id` |
 | `country` | N:1 | `gds.country.country_id = gds.item.item_cntry_id` |
-| `application` | N:1 | `gds.application.application_id = gds.item.application_id` |
-| `user` | N:1 | `gds.user.user_id = gds.item.slr_id` |
+| `msku` | 1:1 | `gds.msku.item_id = gds.item.item_id` |
+| `ssku` | 1:1 | `gds.ssku.item_id = gds.item.item_id` |
 
 [View full entity relationship diagram →](../index.md#entity-relationships)
 
@@ -1243,5 +1243,4 @@ LIMIT 100;
 
 !!! tip "Useful Links"
     - :material-swap-horizontal: [Migrating from legacy tables (DW_LSTG_ITEM, etc.)?](../guides/migration-guide.md)
-    - :material-table: [Logical → Physical field mapping](../reference/ldm-design.md#ldm-schemas)
     - :material-magnify: [More query examples](../guides/query-examples.md)

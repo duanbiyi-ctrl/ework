@@ -130,7 +130,6 @@ item_zip_cd		Item Zip code	DW_LSTG_ITEM	item_zip_cd
 last_mdfd_date		The date with timestamp when the item was updated last time	LSTG_ITEM_DESC_DIM	last_mdfd_date
 last_modfd_date		Date that this item is last modified	DW_LSTG_ITEM	last_modfd_date
 last_modfd_dt		last_modfd_dt field	DW_LSTG_ITEM	last_modfd_dt
-last_transaction_date		Last purchase Date	DW_LSTG_ITEM	last_transaction_date
 layout_flag		layout_flag field	DW_LSTG_ITEM	layout_flag
 leaf_categ_id		Contains the leaf category ID that the seller chose for the listing	DW_LSTG_ITEM	leaf_categ_id
 leaf_categ_id2		The category ID of the second category chosen by the seller when the seller chooses to list in two categories	DW_LSTG_ITEM	leaf_categ_id2
@@ -168,7 +167,7 @@ overall		such as buyer country	DIM_ITEM	overall
 package_size		Enums which indicate different packages	DW_LSTG_ITEM	package_size
 passwordex		passwordex field	DW_LSTG_ITEM	passwordex
 passwordex_cd		bitmap,Refer to this wiki: DW_LSTG_ITEM to see the definition of passwordex	DW_LSTG_ITEM	passwordex_cd
-payment_cash		This corresponds to the 'Payment on Pickup' option in listing flows, it is known by various local names by site as well When this option is set, the buyer can check out with this selected, and must contact seller to meet them, there is no online payment and the transaction does not qualify for buyer protection	DW_LSTG_ITEM	payment_cash
+payment_cash		This corresponds to the 'Payment on Pickup' option in listing flows, it is known by various local names by site as well When this option is set, the buyer can check out with this selected, and must contact seller to meet them, there is no online payment and the order does not qualify for buyer protection	DW_LSTG_ITEM	payment_cash
 payment_cc		Credit Card payment type is accepted by seller	DW_LSTG_ITEM	payment_cc
 payment_moneyxfer		Money transfer payment type is accepted by seller	DW_LSTG_ITEM	payment_moneyxfer
 paypal_accepted_up_flag		Important - this value is not true for all PI listings -> If you need PI metrics, you need to use 0x00040000 (262144) EbayIntermediatedPaymentMethod: Identifies the eBay intermediated payment method from DW_LSTG_ITEM_COLD	DW_LSTG_ITEM	paypal_accepted_up_flag
