@@ -37,6 +37,8 @@ In current phase, following the [LDM Design Principles](./ldm-modeling-principle
 
 ---
 
+---
+
 ## LDM Schemas
 
 === "item"

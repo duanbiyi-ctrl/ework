@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://yeqli.github.io/gds-item-docs/reference/ldm-modeling-principle/">
       
       
-        <link rel="prev" href="../ldm-design/">
+        <link rel="prev" href="../../guides/query-examples/">
       
       
         <link rel="next" href="../../faq/">
@@ -524,14 +524,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../entities/application/" class="md-nav__link">
+      <a href="../../entities/msku/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Application
+    MSKU
   
 
     
@@ -552,14 +552,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../entities/user/" class="md-nav__link">
+      <a href="../../entities/ssku/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    User
+    SSKU
   
 
     
@@ -890,34 +890,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../ldm-design/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LDM Design
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1144,6 +1116,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-modeling-and-querying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship Modeling and Querying
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1484,6 +1467,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#relationship-modeling-and-querying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship Modeling and Querying
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#step-3-physical-source-mapping" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1616,7 +1610,7 @@
 <h4 id="principle-3-referenced-by-multiple-entities">Principle 3: Referenced by Multiple Entities</h4>
 <p>Participates in relationships with multiple entities.</p>
 <p><strong>Examples:</strong>
-- ✅ <strong>Item</strong> - has <code>item_id</code>, independent lifecycle, relates to Variation/Product/Deal
+- ✅ <strong>Item</strong> - has <code>item_id</code>, independent lifecycle, relates to Variation/Product
 - ✅ <strong>Product</strong> - has <code>product_id</code> (ePID), exists independently, referenced by multiple items
 - ✅ <strong>Trait</strong> - individual instance referenced by multiple entities</p>
 <hr />
@@ -1663,6 +1657,118 @@
 <li><strong>Long-term vision</strong>: Query entity LDMs directly, system auto-materializes joins</li>
 <li><strong>Short-term approach</strong>: Create mapping LDM (see Step 3 for details)</li>
 </ul>
+<h2 id="relationship-modeling-and-querying">Relationship Modeling and Querying</h2>
+<p><strong>1. For 1:N / N:1 Relationships</strong></p>
+<p>Query from the "many" side entity:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- Example: Get variations for an item (1:N)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">item_id</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">variation_id</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">variation_sku</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">variation_price</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">FROM</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">variation</span><span class="w"> </span><span class="n">v</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">item_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123456789</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>2. For M:N Relationships</strong></p>
+<p><strong>Current Approach</strong> - Pre-joined denormalized mapping tables are modeled as LDM entities for direct consumption:</p>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Mapping LDM Name</th>
+<th>Primary Keys</th>
+<th>Physical Sources</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item ↔ Attribute Value (Common Attributes)</td>
+<td><strong>item_common_attribute_value_mapping</strong></td>
+<td><code>item_id</code>, <code>attr_id</code>, <code>value_id</code></td>
+<td>DW_ATTR_DETAIL_VALUES</td>
+<td><a href="../../relationships/item_common_attribute_value_mapping/">View Details →</a></td>
+</tr>
+<tr>
+<td>Item ↔ Attribute Value (Listing)</td>
+<td><strong>item_listing_attribute_value_mapping</strong></td>
+<td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>lstg_attr_id</code>, <code>value_id</code>, <code>value_desc</code></td>
+<td>DW_ATTR_LSTG_DTL</td>
+<td></td>
+</tr>
+<tr>
+<td>Item ↔ Attribute Value (Shipment)</td>
+<td><strong>item_shipment_attribute_value_mapping</strong></td>
+<td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>shpmt_attr_id</code>, <code>value_id</code>, <code>value_desc</code></td>
+<td>DW_ATTR_SHPMT_DTL </br> DW_ATTR_SHPMT_DTL_COLD</td>
+<td></td>
+</tr>
+<tr>
+<td>Item ↔ Attribute Value (Fitment)</td>
+<td><strong>item_fitment_attribute_value_mapping</strong></td>
+<td><code>item_id</code>, <code>auct_end_dt</code>, <code>ftmnt_grp_id</code>, <code>ftmnt_name</code>, <code>ftmnt_value_text</code>, <code>src_ind</code>, <code>cmbntn_grp_id</code></td>
+<td>DW_LSTG_ITEM_FTMNT</td>
+<td></td>
+</tr>
+<tr>
+<td>Item ↔ Attribute Value (Tags)</td>
+<td><strong>item_tag_attribute_value_mapping</strong></td>
+<td><code>item_id</code>, <code>gcs_id</code>, <code>vcs_id</code>, <code>lstg_attr_id</code>, <code>tag_name</code>, <code>tag_value_txt</code></td>
+<td>DW_ATTR_LSTG_TAG_DTL</td>
+<td></td>
+</tr>
+<tr>
+<td>Item ↔ Attribute Value (Tax)</td>
+<td><strong>item_tax_attribute_value_mapping</strong></td>
+<td><code>item_id</code>, <code>sale_tax_rate</code>, <code>jrsdctn_cntry_id</code>, <code>jrsdctn_tx</code></td>
+<td>LSTG_SALE_TAX</td>
+<td></td>
+</tr>
+<tr>
+<td>Item ↔ Picture</td>
+<td><strong>item_picture_mapping</strong></td>
+<td><code>item_id</code>, <code>trait_name</code></td>
+<td>LSTG_ITEM_PIC</td>
+<td></td>
+</tr>
+<tr>
+<td>Item ↔ Aspect Value</td>
+<td><strong>item_aspect_value_mapping</strong></td>
+<td><code>item_id</code>, <code>aspect_name</code>, <code>aspect_value_name</code></td>
+<td>ITEM_ASPCT_CLSSFCTN_SAP</td>
+<td></td>
+</tr>
+<tr>
+<td>Variation ↔ Aspect Value</td>
+<td><strong>variation_aspect_value_mapping</strong></td>
+<td><code>variation_id</code>, <code>aspect_name</code>, <code>aspect_value_name</code></td>
+<td>VRTN_ASPCT_CLSSFCTN_SAP</td>
+<td></td>
+</tr>
+<tr>
+<td>Variation ↔ Trait</td>
+<td><strong>variation_trait_mapping</strong></td>
+<td><code>variation_id</code>, <code>trait_name</code></td>
+<td>LSTG_ITEM_VRTN_TRAIT</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Example: Get item attributes using mapping table</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">i</span><span class="p">.</span><span class="n">item_id</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="n">i</span><span class="p">.</span><span class="n">auct_titl</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">title</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">m</span><span class="p">.</span><span class="n">attr_id</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">m</span><span class="p">.</span><span class="n">value_desc</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">FROM</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">item</span><span class="w"> </span><span class="n">i</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">JOIN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">item_common_attribute_value_mapping</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">item_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">item_id</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">item_site_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">attr_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Future Vision</strong> - The long-term vision is to abstract M:N relationships into more intuitive entity-relationship models with dynamic materialization on DDF. This follows the modeling strategy described in this document.</p>
+<hr />
+<hr />
 <hr />
 <h2 id="step-3-physical-source-mapping">Step 3: Physical Source Mapping</h2>
 <p>Map physical Hive tables to LDMs based on table granularity and type.</p>
@@ -1687,12 +1793,12 @@
 <p><strong>Short-term Approach</strong>: Physical M:N tables map directly to mapping LDMs with pre-denormalized attributes.</p>
 <p>Mapping LDMs include not just foreign keys, but also denormalized entity attributes and relationship attributes.</p>
 <p><strong>Example</strong>: <code>dw_attr_detail_values</code> (physical table) → <code>item_common_attribute_value_mapping</code> (mapping LDM)
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- Physical table structure</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">item_id</span><span class="p">,</span><span class="w"> </span><span class="n">attr_id</span><span class="p">,</span><span class="w"> </span><span class="n">value_id</span><span class="p">,</span><span class="w"> </span><span class="n">attr_name</span><span class="p">,</span><span class="w"> </span><span class="n">value_desc</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">-- Maps to: Item (M) ↔ Attribute (N)</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">-- Denormalized: attr_name, value_desc</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">-- Relationship attributes: none in this case</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Physical table structure</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">item_id</span><span class="p">,</span><span class="w"> </span><span class="n">attr_id</span><span class="p">,</span><span class="w"> </span><span class="n">value_id</span><span class="p">,</span><span class="w"> </span><span class="n">attr_name</span><span class="p">,</span><span class="w"> </span><span class="n">value_desc</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">-- Maps to: Item (M) ↔ Attribute (N)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1">-- Denormalized: attr_name, value_desc</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1">-- Relationship attributes: none in this case</span>
 </code></pre></div></p>
 <p><strong>Benefits</strong>: Faster queries, simpler SQL (2-table join instead of 3-table join)</p>
 <h4 id="scd2-tables-entityrelationship-ldm-with-temporal-filtering">SCD2 Tables → Entity/Relationship LDM with Temporal Filtering</h4>
@@ -1700,12 +1806,12 @@
 <p><strong>Mapping approach</strong>:
 - Map to corresponding entity or relationship LDM
 - Add temporal filtering logic in queries</p>
-<p><strong>Example</strong>: <code>DW_PES_ELGBLT_HIST</code> → <code>dw_pes_elgblt_hist</code> (Item ↔ Business Program mapping)
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Current state query</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">eff_end_dt</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">-- Point-in-time query  </span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">snapshot_date</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="n">eff_start_dt</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">eff_end_dt</span>
+<p><strong>Example</strong>: an entity history table with effective start/end timestamps
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- Current state query</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">eff_end_dt</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">-- Point-in-time query  </span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">snapshot_date</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="n">eff_start_dt</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">eff_end_dt</span>
 </code></pre></div></p>
 <h4 id="summary-tables-typically-not-modeled">Summary Tables → Typically Not Modeled</h4>
 <p>Aggregated summary tables contain pre-computed metrics and typically are <strong>not</strong> modeled as LDMs.</p>
@@ -1759,7 +1865,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../ldm-design/" class="md-footer__link md-footer__link--prev" aria-label="Previous: LDM Design">
+          <a href="../../guides/query-examples/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Query Examples">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1769,7 +1875,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                LDM Design
+                Query Examples
               </div>
             </div>
           </a>

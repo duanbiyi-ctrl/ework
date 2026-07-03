@@ -13,10 +13,6 @@
          <lastmod>2026-07-03</lastmod>
     </url>
     <url>
-         <loc>https://yeqli.github.io/gds-item-docs/entities/application/</loc>
-         <lastmod>2026-07-03</lastmod>
-    </url>
-    <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/category/</loc>
          <lastmod>2026-07-03</lastmod>
     </url>
@@ -29,6 +25,10 @@
          <lastmod>2026-07-03</lastmod>
     </url>
     <url>
+         <loc>https://yeqli.github.io/gds-item-docs/entities/msku/</loc>
+         <lastmod>2026-07-03</lastmod>
+    </url>
+    <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/product/</loc>
          <lastmod>2026-07-03</lastmod>
     </url>
@@ -37,11 +37,7 @@
          <lastmod>2026-07-03</lastmod>
     </url>
     <url>
-         <loc>https://yeqli.github.io/gds-item-docs/entities/transaction/</loc>
-         <lastmod>2026-07-03</lastmod>
-    </url>
-    <url>
-         <loc>https://yeqli.github.io/gds-item-docs/entities/user/</loc>
+         <loc>https://yeqli.github.io/gds-item-docs/entities/ssku/</loc>
          <lastmod>2026-07-03</lastmod>
     </url>
     <url>

@@ -1,6 +1,6 @@
 field_name	pk	field_description	physical_table	physical_table_column
 item_id	Y	The listing identifier.    - Joins     to [DW_LSTG_ITEM](https://wiki.corp.ebay.com/display/edw/DW_LSTG_ITEM).ITEM_ID	ITEM_ASPCT_CLSSFCTN_SAP	item_id
-prdct_aspct_nm	Y	The aspect name.    - When querying specific metadata painted by Structured Data team on     item, such as Product Type, Mis-category Score, Deal Type, etc., we     can use the following aspect names...	ITEM_ASPCT_CLSSFCTN_SAP	prdct_aspct_nm
+prdct_aspct_nm	Y	The aspect name.    - When querying specific metadata painted by Structured Data team on     item, such as Product Type, Mis-category Score, etc., we     can use the following aspect names...	ITEM_ASPCT_CLSSFCTN_SAP	prdct_aspct_nm
 aspct_vlu_nm	Y	The aspect value.    - Please note some numbers in SAP are kept in original format(float),     while in NGC they were transformed into integer.    ...	ITEM_ASPCT_CLSSFCTN_SAP	aspct_vlu_nm
 ns_type_cd	Y	The indicator of the namespace.    - [Namespaces](https://wiki.corp.ebay.com/display/CLASSIFICATION/Namespaces) (READ)    - Potential values:      - NULL = Record was created prior to namespaces...	ITEM_ASPCT_CLSSFCTN_SAP	ns_type_cd
 aspct_src	Y	Indicates which classifier the aspect name was generated from on     site.    - Notes:      - *Originally indicated which column the aspect was pulled from on       site.*      - *Do NOT indicate...	ITEM_ASPCT_CLSSFCTN_SAP	aspct_src
