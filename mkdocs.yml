@@ -52,19 +52,23 @@ markdown_extensions:
   - md_in_html
 
 nav:
-  - Introduction: index.md
+  - Overview: index.md
   - Core Concepts: concepts/core-concepts.md
-  - User Guides:
-      - Migration Guide: guides/migration-guide.md
-      - Query Examples: guides/query-examples.md
   - LDM Catalog:
       - Entity:
           - Item: entities/item.md
+          - Site: entities/site.md
+          - Category: entities/category.md
+          - Country: entities/country.md
+          - Application: entities/application.md
+          - User: entities/user.md
           - Variation: entities/variation.md
           - Product: entities/product.md
-          - Transaction: entities/transaction.md
       - Relationship:
           - Item Common Attribute Value Mapping: relationships/item_common_attribute_value_mapping.md
+  - Guides:
+      - Migration Guide: guides/migration-guide.md
+      - Query Examples: guides/query-examples.md
   - Reference:
       - LDM Design: reference/ldm-design.md
       - LDM Design Principle: reference/ldm-modeling-principle.md
