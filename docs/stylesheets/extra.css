@@ -33,23 +33,23 @@
 .field-type {
     display: inline-block;
     margin-left: 0.35rem;
-    padding: 0.05rem 0.35rem;
+    padding: 0.03rem 0.28rem;
     border-radius: 0.25rem;
     background: var(--md-default-fg-color--lightest);
     color: var(--md-default-fg-color--light);
-    font-size: 0.68rem;
+    font-size: 0.56rem;
     font-weight: 700;
     letter-spacing: 0.02em;
     vertical-align: 0.08rem;
 }
 
 .md-typeset details:has(.field-type) {
-    font-size: 0.8rem;
+    font-size: 0.76rem;
     line-height: 1.6;
 }
 
 .md-typeset details:has(.field-type) > summary {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
 }
 
 .md-typeset p:has(> .field-type) {
@@ -57,6 +57,10 @@
     margin-bottom: 0.35rem;
     padding-top: 0.9rem;
     border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset p:has(> .field-type) + p {
+    margin-top: 0.35rem;
 }
 
 .md-typeset h3[id^="item-basics"],

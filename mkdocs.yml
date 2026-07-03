@@ -7,6 +7,9 @@ repo_name: gds-item-docs
 
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
     # Light mode
     - scheme: default
