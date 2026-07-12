@@ -60,7 +60,7 @@ Seller&#x27;s custom, application-specific data associated with the item. Data s
 
 **`application_id`** <span class="field-type">LONG</span>
 
-Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model; join to the [Application LDM](application.md) to get the application name. Common examples include 219527 = BOLT, 290356 = BOLT B2C, 384352 = HELIX, 2828 = File Exchange, 114100 = Auto Relist.
+Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model; join to the [Application LDM](#) to get the application name. Common examples include 219527 = BOLT, 290356 = BOLT B2C, 384352 = HELIX, 2828 = File Exchange, 114100 = Auto Relist.
 
 **`bin_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
 
@@ -90,7 +90,7 @@ Original price before a promotional/markdown sale discount. NULL if not a promot
 
 **`lstg_curncy_id`** <span class="field-type">INTEGER</span>
 
-Currency ID used for the listing prices. This ID is a foreign key to the [Currency LDM](currency.md).
+Currency ID used for the listing prices. This ID is a foreign key to the [Currency LDM](#).
 
 **`qty_avail`** <span class="field-type">INTEGER</span>
 
@@ -174,7 +174,7 @@ Registration site ID of the highest bidder for the listing; -999=no bidder.
 
 **`leaf_categ_id`** <span class="field-type">INTEGER</span>
 
-Primary leaf category ID chosen by the seller for the listing. Use with item_site_id to interpret category hierarchy, SAP category, and higher-level category attributes.
+Primary leaf category ID chosen by the seller for the listing. Use with item_site_id to interpret category hierarchy, SAP category, and higher-level category attributes. See [Category LDM](category.md).
 
 Example:
 

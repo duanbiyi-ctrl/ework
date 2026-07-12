@@ -647,62 +647,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../application/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Application
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../currency/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Currency
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../user/" class="md-nav__link">
         
   
@@ -1305,7 +1249,7 @@
 <p><strong><code>sku_num</code></strong> <span class="field-type">STRING</span></p>
 <p>Seller&#x27;s custom, application-specific data associated with the item. Data specified here is stored by eBay with the item for seller but it is not used by eBay in any way.</p>
 <p><strong><code>application_id</code></strong> <span class="field-type">LONG</span></p>
-<p>Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model; join to the <a href="../application/">Application LDM</a> to get the application name. Common examples include 219527 = BOLT, 290356 = BOLT B2C, 384352 = HELIX, 2828 = File Exchange, 114100 = Auto Relist.</p>
+<p>Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model; join to the <a href="#">Application LDM</a> to get the application name. Common examples include 219527 = BOLT, 290356 = BOLT B2C, 384352 = HELIX, 2828 = File Exchange, 114100 = Auto Relist.</p>
 <p><strong><code>bin_price_lstg_curncy</code></strong> <span class="field-type">DOUBLE</span></p>
 <p>Buy It Now price in listing currency.</p>
 <details class="field-context">
@@ -1322,7 +1266,7 @@
 <p><strong><code>orgnl_price_amt</code></strong> <span class="field-type">DOUBLE</span></p>
 <p>Original price before a promotional/markdown sale discount. NULL if not a promotional sale listing.</p>
 <p><strong><code>lstg_curncy_id</code></strong> <span class="field-type">INTEGER</span></p>
-<p>Currency ID used for the listing prices. This ID is a foreign key to the <a href="../currency/">Currency LDM</a>.</p>
+<p>Currency ID used for the listing prices. This ID is a foreign key to the <a href="#">Currency LDM</a>.</p>
 <p><strong><code>qty_avail</code></strong> <span class="field-type">INTEGER</span></p>
 <p>The number of this item that are initially available for sale.</p>
 <p><strong><code>qty_sold</code></strong> <span class="field-type">INTEGER</span></p>
@@ -1364,7 +1308,7 @@
 <p><strong><code>high_bdr_site_id</code></strong> <span class="field-type">INTEGER</span></p>
 <p>Registration site ID of the highest bidder for the listing; -999=no bidder.</p>
 <p><strong><code>leaf_categ_id</code></strong> <span class="field-type">INTEGER</span></p>
-<p>Primary leaf category ID chosen by the seller for the listing. Use with item_site_id to interpret category hierarchy, SAP category, and higher-level category attributes.</p>
+<p>Primary leaf category ID chosen by the seller for the listing. Use with item_site_id to interpret category hierarchy, SAP category, and higher-level category attributes. See <a href="../category/">Category LDM</a>.</p>
 <p>Example:</p>
 <ul>
 <li><code>41931</code> = Computers &amp; Networking:Software:Education &amp; Reference:Car Repair</li>
