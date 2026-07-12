@@ -63,6 +63,9 @@ nav:
           - Site: entities/site.md
           - Category: entities/category.md
           - Country: entities/country.md
+          - Application: entities/application.md
+          - Currency: entities/currency.md
+          - User: entities/user.md
           - MSKU: entities/msku.md
           - SSKU: entities/ssku.md
           - Variation: entities/variation.md

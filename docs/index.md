@@ -65,6 +65,9 @@ Here're the main LDM entities in the Item domain:
 | **site** | Lookup entity | eBay marketplace/site lookup for listing, seller, and bidder site IDs | `site_id` | |
 | **category** | Lookup entity | eBay category hierarchy lookup, including meta, intermediate, and leaf categories | `site_id`, `leaf_categ_id` | |
 | **country** | Lookup entity | Country lookup for item location, seller registration, and bidder registration country IDs | `country_id` | |
+| **application** | Lookup entity | Application/listing tool lookup for listing creation application IDs | `application_id` | |
+| **currency** | Lookup entity | Currency lookup for listing price currency IDs | `currency_id` | |
+| **user** | Lookup entity | User lookup for seller and user IDs associated with listings | `user_id` | |
 
 
 ---

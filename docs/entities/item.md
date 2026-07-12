@@ -16,1169 +16,1002 @@
 
 <!-- BEGIN GENERATED ITEM FIELDS -->
 
-???+ abstract "Item Basics (43)"
+**`item_id`** <span class="field-type">LONG</span>
 
-    Core attributes that describe what the listed item is, including its identity, title, category, condition, price, quantity, location, and other buyer-facing item facts.
+A unique identifier for the listing, generated upon successful creation.
 
+**`auct_titl`** <span class="field-type">STRING</span>
 
-    **`item_id`** <span class="field-type">LONG</span>
+Listing title shown to buyers in search results and on the item page.
 
-    A unique identifier for the listing, generated upon successful creation.
+**`subtitle`** <span class="field-type">STRING</span>
 
-    **`auct_titl`** <span class="field-type">STRING</span>
+The listing’s full subtitle text; it can be null if the seller did not provide one
 
-    Listing title shown to buyers in search results and on the item page.
+**`item_desc`** <span class="field-type">STRING</span>
 
-    **`subtitle`** <span class="field-type">STRING</span>
+Seller-provided item description content encoded in Base64. Decode before displaying or analyzing the description text.
 
-    The listing’s full subtitle text; it can be null if the seller did not provide one
+**`item_desc_lgth_num`** <span class="field-type">INTEGER</span>
 
-    **`item_desc`** <span class="field-type">STRING</span>
+Length of the encoded item description content.
 
-    Seller-provided item description content encoded in Base64. Decode before displaying or analyzing the description text.
+**`slr_id`** <span class="field-type">LONG</span>
 
-    **`item_desc_lgth_num`** <span class="field-type">INTEGER</span>
+Seller's Oracle user ID associated with the listing. Foreign key to [User LDM](user.md).
 
-    Length of the encoded item description content.
+??? field-context "More context"
 
-    **`slr_prdct_id_txt`** <span class="field-type">STRING</span>
+    **Where it comes from**
 
-    Stock Keeping Unit. It is an identifier defined by a seller
+    `slr_id` is captured by the listing process as the seller account associated with the listing. [Listing Service](https://github.corp.ebay.com/SellingDomain/crlstngsv) writes this value into NuDoc at `itemkeyspace.__ROOT__.sellerId`, and Item LDM exposes it as the seller identifier for the listing.
 
-    **`sku_num`** <span class="field-type">STRING</span>
+    **How teams usually use it**
 
-    Seller&#x27;s custom, application-specific data associated with the item. Data specified here is stored by eBay with the item for seller but it is not used by eBay in any way.
+    Teams commonly use `slr_id` to group listings by seller, join to seller/user reference data, and analyze seller-level listing behavior. It identifies the seller account for the listing, not the buyer or highest bidder.
 
-    **`item_site_id`** <span class="field-type">INTEGER</span>
+**`slr_prdct_id_txt`** <span class="field-type">STRING</span>
 
-    The eBay site ID where the item was listed. Please see [Site LDM](site.md) for more details.
+Seller-defined product identifier text (e.g. manufacturer part number/ISBN/UPC). Empty if not provided.
 
-    Examples:
+**`sku_num`** <span class="field-type">STRING</span>
 
-    - `0` = US
-    - `3` = UK
-    - `15` = AU
-    - `77` = DE
+Seller&#x27;s custom, application-specific data associated with the item. Data specified here is stored by eBay with the item for seller but it is not used by eBay in any way.
 
-    **`leaf_categ_id`** <span class="field-type">INTEGER</span>
+**`application_id`** <span class="field-type">LONG</span>
 
-    Primary leaf category ID chosen by the seller for the listing. Use with item_site_id to interpret category hierarchy, SAP category, and higher-level category attributes. Leaf category is the lowest level in eBay's category hierarchy.
+Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model; join to the [Application LDM](application.md) to get the application name. Common examples include 219527 = BOLT, 290356 = BOLT B2C, 384352 = HELIX, 2828 = File Exchange, 114100 = Auto Relist.
 
-    Example:
+**`bin_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
 
-    - `41931` = Computers & Networking:Software:Education & Reference:Car Repair
+Buy It Now price in listing currency.
 
-    **`leaf_categ_name`** <span class="field-type">STRING</span>
+??? field-context "More context"
 
-    Name of the leaf category where the item is listed. Leaf category is the lowest level in eBay's category hierarchy.
+    **Where it comes from**
 
-    Example:
+    `bin_price_lstg_curncy` comes from the listing price model populated during listing creation or revision when a seller sets a fixed price / Buy It Now price. [Listing Service](https://github.corp.ebay.com/SellingDomain/crlstngsv) writes the source value into NuDoc at `itemkeyspace.ItemQtyPrice.price.fixedPrice`, and Item LDM carries it as the listing-currency Buy It Now price.
 
-    - Computers & Networking:Software:Education & Reference:Car Repair
+    **How teams usually use it**
 
-    **`leaf_categ_id2`** <span class="field-type">INTEGER</span>
+    Teams usually use this field as the Buy It Now or fixed-price amount for pricing analysis, active listing analysis, and price-based filtering. For auction-style listings, consumers should interpret it together with `auct_type_code` and `start_price_lstg_curncy`.
 
-    Secondary leaf category ID chosen by the seller when the listing is posted in two categories; 0 means no secondary category. Please see [Category LDM](category.md) for more details.
+**`start_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
 
-    **`meta_categ_id`** <span class="field-type">INTEGER</span>
+Start price in listing currency. For SIF (Store Inventory Format)/FP (Fixed Price) items, this is the BIN (Buy It Now) price. For auctions/Dutch, it's the opening bid price.
 
-    Meta category ID. Meta category is the top level in eBay's category hierarchy.
+**`rsrv_price_list_crncy`** <span class="field-type">DOUBLE</span>
 
-    Example:
+The lowest price at which the seller is willing to sell the item. StartPrice must be lower than ReservePrice. 0 = no reserve set.
 
-    - `58058` = Computers/Tablets & Networking
+**`orgnl_price_amt`** <span class="field-type">DOUBLE</span>
 
-    **`meta_categ_name`** <span class="field-type">STRING</span>
+Original price before a promotional/markdown sale discount. NULL if not a promotional sale listing.
 
-    Meta category name (top level).
+**`lstg_curncy_id`** <span class="field-type">INTEGER</span>
 
-    Example:
+Currency ID used for the listing prices. This ID is a foreign key to the [Currency LDM](currency.md).
 
-    - Computers/Tablets & Networking
+**`qty_avail`** <span class="field-type">INTEGER</span>
 
-    **`categ_lvl2_id`** <span class="field-type">INTEGER</span>
+The number of this item that are initially available for sale.
 
-    Level 2 category ID. eBay category hierarchy has up to 7 levels.
+**`qty_sold`** <span class="field-type">INTEGER</span>
 
-    Example:
+The number of items sold in the listing.
 
-    - `18793` = Software
+**`lot_size`** <span class="field-type">INTEGER</span>
 
-    **`categ_lvl2_name`** <span class="field-type">STRING</span>
+Number of individual physical items per sale unit.
 
-    Level 2 category name.
+**`lstg_status_id`** <span class="field-type">INTEGER</span>
 
-    Example:
+Listing lifecycle status code. Values: 0 = Live, 1 = Ended, 2 = Admin ended, 3 = Schedule Deleted, 4 = Scheduled.
 
-    - Software
+**`auct_type_code`** <span class="field-type">INTEGER</span>
 
-    **`categ_lvl3_id`** <span class="field-type">INTEGER</span>
+Listing format code. Values: 0=Unknown Auction, 1=Chinese Auction/Auction-with-BIN, 2=Dutch Auction, 4=Auction Yankee never implemented, 5=Old Live Auctions deprecated, 6=AdFormat, 7=Store Fixed Price, 8=Second Chance Offer, 9=Fixed Price/GTC, 12=Half.com, 13=Classified Ads/Lead Gen, 14=eBay Express Only, 15=Shopping.com/SDC stopped 2008/8/15
 
-    Level 3 category ID.
+**`auct_start_dt`** <span class="field-type">DATE</span>
 
-    Example:
+Date the listing became (or is scheduled to become) live.
 
-    - `3783` = Education, Language, Reference
+**`auct_end_dt`** <span class="field-type">DATE</span>
 
-    **`categ_lvl3_name`** <span class="field-type">STRING</span>
+Date the listing ended or is scheduled to end.
 
-    Level 3 category name.
+**`sale_sched_end_dt`** <span class="field-type">DATE</span>
 
-    Example:
+Scheduled end date set at listing creation (start + duration). It is only updated when the seller changes listing duration or sale start date in RYI (Revise Your Item) and there has been no sale.
 
-    - Education, Language, Reference
+**`auct_start_date`** <span class="field-type">TIMESTAMP</span>
 
-    **`categ_lvl4_id`** <span class="field-type">INTEGER</span>
+The timestamp when the listing becomes live
 
-    Level 4 category ID.
+**`auct_end_date`** <span class="field-type">TIMESTAMP</span>
 
-    Example:
+Timestamp the listing ended or is scheduled to end.
 
-    - `3783` = Education, Language, Reference
+**`site_create_date`** <span class="field-type">TIMESTAMP</span>
 
-    **`categ_lvl4_name`** <span class="field-type">STRING</span>
+Date and time the listing was created. This value is read-only and cannot be updated.
 
-    Level 4 category name.
+**`last_modfd_dt`** <span class="field-type">DATE</span>
 
-    Example:
+Date the listing was last modified on the site.
 
-    - Education, Language, Reference
+**`auction_end_reason_code`** <span class="field-type">INTEGER</span>
 
-    **`categ_lvl5_id`** <span class="field-type">INTEGER</span>
+Reason code for why the listing ended. Values: 0=Natural end/not ended early, 1=Seller-ended: lost or broken, 2=Seller-ended: no longer available, 3=Seller-ended: error in bid/reserve, 4=Seller-ended: listing error, 5=Sold to highest bidder early, 6=EndReasonAVSTickets, 7=SIF Bulk End, 8=Ended by DBA script, 9=SoldOnProStores deprecated, 10=SoldVehicle variant, 11=Ended on zero quantity, 12=SoldVehicle Motors FSBO, 99=GTC renewal failure, -1=invalid, -88=invalid sentinel, -99=pre-2008 unknown.
 
-    Level 5 category ID.
+**`relist_parent_item_id`** <span class="field-type">LONG</span>
 
-    Example:
+Item ID of the parent listing this item was relisted from (via relist or sell-similar). -999=no parent (original listing).
 
-    - `3783` = Education, Language, Reference
+**`relistid`** <span class="field-type">LONG</span>
 
-    **`categ_lvl5_name`** <span class="field-type">STRING</span>
+Indicates if the listing is ended with a relisted one. If it&#x27;s &gt; 0, it means that the item has been ended and a new relisted one has been created. and the value of this relistId is the same as the value of itemId of the new relisted item
 
-    Level 5 category name.
+**`item_vrsn_id`** <span class="field-type">LONG</span>
 
-    Example:
+A generated sequence used to track versions for each revision made by the seller
 
-    - Education, Language, Reference
+**`sgnfcnt_rvsn_cnt`** <span class="field-type">INTEGER</span>
 
-    **`categ_lvl6_id`** <span class="field-type">INTEGER</span>
+An item specific count of the number of times it has been significantly revised.
 
-    Level 6 category ID.
+**`item_site_id`** <span class="field-type">INTEGER</span>
 
-    Example:
+eBay site ID where the item was listed. FK to Site LDM.
 
-    - `3783` = Education, Language, Reference
+**`slr_site_id`** <span class="field-type">INTEGER</span>
 
-    **`categ_lvl6_name`** <span class="field-type">STRING</span>
+eBay site ID where the seller account is registered; this can differ from the site where the item is listed.
 
-    Level 6 category name.
+**`high_bdr_site_id`** <span class="field-type">INTEGER</span>
 
-    Example:
+Registration site ID of the highest bidder for the listing; -999=no bidder.
 
-    - Education, Language, Reference
+**`leaf_categ_id`** <span class="field-type">INTEGER</span>
 
-    **`categ_key`** <span class="field-type">LONG</span>
+Primary leaf category ID chosen by the seller for the listing. Use with item_site_id to interpret category hierarchy, SAP category, and higher-level category attributes.
 
-    Surrogate category hierarchy key for the primary leaf category of the listing.
+Example:
 
-    **`categ_key2`** <span class="field-type">LONG</span>
+- `41931` = Computers & Networking:Software:Education & Reference:Car Repair
 
-    Surrogate category hierarchy key for the secondary leaf category of the listing, when a secondary category exists.
+**`leaf_categ_name`** <span class="field-type">STRING</span>
 
-    **`categ_move_to_id`** <span class="field-type">INTEGER</span>
+Name of the leaf category where the item is listed.
 
-    Replacement category ID when the original leaf category has been retired or moved to another category structure. Please see [Category LDM](category.md) for more details.
+Example:
 
-    **`sap_category_id`** <span class="field-type">INTEGER</span>
+- Computers & Networking:Software:Education & Reference:Car Repair
 
-    Search Annotation Platform (SAP) category ID assigned to the listing.
+**`leaf_categ_id2`** <span class="field-type">INTEGER</span>
 
-    **`lcl_sap_categ_name`** <span class="field-type">STRING</span>
+Secondary leaf category ID chosen by the seller when the listing is posted in two categories; 0 means no secondary category.
 
-    Local Search Annotation Platform (SAP) category name for the listing category.
+**`meta_categ_id`** <span class="field-type">INTEGER</span>
 
-    **`glb_sap_categ_name`** <span class="field-type">STRING</span>
+Meta category ID
 
-    Global Search Annotation Platform (SAP) category name for the listing category.
+Example:
 
-    **`bsns_vrtcl_name`** <span class="field-type">STRING</span>
+- `58058` = Computers/Tablets & Networking
 
-    Business Vertical Name (e.g. Electronics, Fashion, Motors).
+**`meta_categ_name`** <span class="field-type">STRING</span>
 
-    **`item_cndtn_id`** <span class="field-type">INTEGER</span>
+Meta category name (top level)
 
-    Seller-provided item condition code for the listing.
+Example:
 
-    Values:
+- Computers/Tablets & Networking
 
-    - `1000` = New
-    - `1500` = New other
-    - `1750` = New with defects
-    - `2000` = Certified Refurbished
-    - `2500` = Seller refurbished
-    - `2750` = Like new
-    - `3000` = Used / Pre-owned Good
-    - `4000` = Very good
-    - `5000` = Good
-    - `6000` = Acceptable
-    - `7000` = For parts or not working
+**`categ_lvl2_id`** <span class="field-type">INTEGER</span>
 
-    **`cndtn_rollup_id`** <span class="field-type">INTEGER</span>
+Level 2 category ID
 
-    Higher-level item condition rollup derived from the item condition. Unknown can later resolve when condition attributes are updated.
+Example:
 
-    Values:
+- `18793` = Software
 
-    - `1` = New
-    - `2` = Refurbished
-    - `3` = Used
-    - `4` = Unknown
+**`categ_lvl2_name`** <span class="field-type">STRING</span>
 
-    **`bin_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
+Level 2 category name
 
-    This is the constant price at which a buyer may purchase the item.
+Example:
 
-    **`start_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
+- Software
 
-    Competitive bidding starts at this value. Once at least one bid has been placed, startingBidPrice remains the same but CurrentPrice is incremented to the amount of each succeeding bid.
+**`categ_lvl3_id`** <span class="field-type">INTEGER</span>
 
-    **`rsrv_price_list_crncy`** <span class="field-type">DOUBLE</span>
+Level 3 category ID
 
-    The lowest price at which the seller is willing to sell the item. (StartPrice must be lower than ReservePrice
+Example:
 
-    **`orgnl_price_amt`** <span class="field-type">DOUBLE</span>
+- `3783` = Education, Language, Reference
 
-    It is the price of the item before it was put on SALE.
+**`categ_lvl3_name`** <span class="field-type">STRING</span>
 
-    **`lstg_curncy_id`** <span class="field-type">INTEGER</span>
+Level 3 category name
 
-    Currency ID used for the listing prices.
+Example:
 
-    **`qty_avail`** <span class="field-type">INTEGER</span>
+- Education, Language, Reference
 
-    The number of this item that are initially available for sale.
+**`categ_lvl4_id`** <span class="field-type">INTEGER</span>
 
-    **`qty_sold`** <span class="field-type">INTEGER</span>
+Level 4 category ID
 
-    The number of items sold in the listing.
+Example:
 
-    **`lot_size`** <span class="field-type">INTEGER</span>
+- `3783` = Education, Language, Reference
 
-    Indicated the number of items in the lot. A lot is a set of two or more similar items included in a single listing that must be purchased together in a single order line item
+**`categ_lvl4_name`** <span class="field-type">STRING</span>
 
-    **`item_cntry_id`** <span class="field-type">INTEGER</span>
+Level 4 category name
 
-    Unique identifier of the country where the item is physically located, as declared by the seller. Note: reflects item location, not seller registration country (see slr_cntry_id). Please see [Country LDM](country.md) for more details.
+Example:
 
-    **`item_loc`** <span class="field-type">STRING</span>
+- Education, Language, Reference
 
-    Seller-provided textual geographical location of the item.
+**`categ_lvl5_id`** <span class="field-type">INTEGER</span>
 
-    **`item_zip`** <span class="field-type">STRING</span>
+Level 5 category ID
 
-    Postal code of the item location.
+Example:
 
-???+ abstract "Item Aspects (67)"
+- `3783` = Education, Language, Reference
 
-    Structured product attributes and eBay-derived catalog/classifier signals, such as brand, MPN, GTIN, aspect values, ePID adoption, and product coverage.
+**`categ_lvl5_name`** <span class="field-type">STRING</span>
 
+Level 5 category name
 
-    **`attr_brand_txt`** <span class="field-type">STRING</span>
+Example:
 
-    Brand value tagged by the seller from seller-input item specifics, using attr_id 3982.
+- Education, Language, Reference
 
-    **`at_cnfdnc`** <span class="field-type">INTEGER</span>
+**`categ_lvl6_id`** <span class="field-type">INTEGER</span>
 
-    Auto-tag product reference/ePID adoption method for the item.
+Level 6 category ID
 
-    Examples:
+Example:
 
-    - `1001` = seller adopted
-    - `1003` = GTIN match
-    - `1004` = Brand + MPN match
-    - `5000-5200` = Hydra
-    - `9000` = manual adoption
-    - `11003` = GTIN match to BEP
-    - `11004` = Brand + MPN match to BEP
+- `3783` = Education, Language, Reference
 
-    **`msct_score_num`** <span class="field-type">STRING</span>
+**`categ_lvl6_name`** <span class="field-type">STRING</span>
 
-    Miscategorization score for the item; scores &gt;= 70 are treated as miscategorized cases.
+Level 6 category name
 
-    **`mpn_txt`** <span class="field-type">STRING</span>
+Example:
 
-    Manufacturer Part Number (MPN) for the item, deduplicated across classification, product information, and seller-provided sources.
+- Education, Language, Reference
 
-    **`upc_txt`** <span class="field-type">STRING</span>
+**`categ_key`** <span class="field-type">LONG</span>
 
-    Universal Product Code (UPC) for the item, deduplicated across classification, product information, and seller-provided sources.
+Surrogate category hierarchy key for the primary leaf category of the listing.
 
-    **`isbn_txt`** <span class="field-type">STRING</span>
+**`categ_key2`** <span class="field-type">LONG</span>
 
-    International Standard Book Number (ISBN) for the item, deduplicated across classification, product information, and seller-provided sources.
+Surrogate category hierarchy key for the secondary leaf category of the listing, when a secondary category exists.
 
-    **`ean_txt`** <span class="field-type">STRING</span>
+**`categ_move_to_id`** <span class="field-type">INTEGER</span>
 
-    European Article Number (EAN) for the item, deduplicated across classification, product information, and seller-provided sources.
+Replacement category ID when the original leaf category has been retired or moved to another category structure.
 
-    **`gtin_txt`** <span class="field-type">STRING</span>
+**`stor_categ_id`** <span class="field-type">LONG</span>
 
-    Global Trade Item Number (GTIN) for the item, deduplicated across classification, product information, and seller-provided sources.
+Primary store category ID under which this listing appears in the seller's eBay Store. 0 = no store category assigned.
 
-    **`st_brand_txt`** <span class="field-type">STRING</span>
+**`stor_categ2_id`** <span class="field-type">LONG</span>
 
-    Brand value from seller input, using the Dynamic Finding (df) namespace aspect value first and falling back to the Non-indexed Finding (nf) namespace aspect value when no df value is available.
+Secondary store category ID. 0 = no secondary store category.
 
-    **`st_mpn_txt`** <span class="field-type">STRING</span>
+**`sap_category_id`** <span class="field-type">INTEGER</span>
 
-    Manufacturer Part Number (MPN) from seller input or catalog inheritance, preferring seller-provided value when available.
+Search Annotation Platform (SAP) category ID assigned to the listing.
 
-    **`st_upc_txt`** <span class="field-type">STRING</span>
+**`lcl_sap_categ_name`** <span class="field-type">STRING</span>
 
-    Universal Product Code (UPC) from seller input or catalog inheritance, preferring seller-provided value when available.
+Local Search Annotation Platform (SAP) category name for the listing category.
 
-    **`st_ean_txt`** <span class="field-type">STRING</span>
+**`glb_sap_categ_name`** <span class="field-type">STRING</span>
 
-    European Article Number (EAN) from seller input or catalog inheritance, preferring seller-provided value when available.
+Global Search Annotation Platform (SAP) category name for the listing category.
 
-    **`st_isbn_txt`** <span class="field-type">STRING</span>
+**`bsns_vrtcl_name`** <span class="field-type">STRING</span>
 
-    International Standard Book Number (ISBN) from seller input or catalog inheritance, preferring seller-provided value when available.
+Business Vertical Name (e.g. Electronics, Fashion, Motors).
 
-    **`st_actv_brand_txt`** <span class="field-type">STRING</span>
+**`item_cntry_id`** <span class="field-type">INTEGER</span>
 
-    Active seller-provided brand value currently associated with the item.
+Unique identifier of the country where the item is physically located, as declared by the seller. Note: reflects item location, not seller registration country (see slr_cntry_id).
 
-    **`st_actv_mpn_txt`** <span class="field-type">STRING</span>
+**`slr_cntry_id`** <span class="field-type">INTEGER</span>
 
-    Active seller-provided Manufacturer Part Number (MPN) currently associated with the item.
+Country ID where the seller account is registered; this can differ from the physical item location country.
 
-    **`st_actv_upc_txt`** <span class="field-type">STRING</span>
+**`high_bdr_cntry_id`** <span class="field-type">INTEGER</span>
 
-    Active seller-provided Universal Product Code (UPC) currently associated with the item.
+Country ID of the highest bidder for the listing; -999=no bidder.
 
-    **`st_actv_ean_txt`** <span class="field-type">STRING</span>
+**`item_loc`** <span class="field-type">STRING</span>
 
-    Active seller-provided European Article Number (EAN) currently associated with the item.
+Seller-provided textual geographical location of the item.
 
-    **`st_actv_isbn_txt`** <span class="field-type">STRING</span>
+**`item_zip`** <span class="field-type">STRING</span>
 
-    Active seller-provided International Standard Book Number (ISBN) currently associated with the item.
+Zip/postal code of item location.
 
-    **`st_ctlg_brand_txt`** <span class="field-type">STRING</span>
 
-    Catalog-inherited brand value associated with the item.
+Structured product attributes and eBay-derived catalog/classifier signals, such as brand, MPN, GTIN, aspect values, ePID adoption, and product coverage.
 
-    **`st_ctlg_mpn_txt`** <span class="field-type">STRING</span>
+**`item_cndtn_id`** <span class="field-type">INTEGER</span>
 
-    Catalog-inherited Manufacturer Part Number (MPN) associated with the item.
+Seller-provided item condition code for the listing. Common values include 1000 = New, 1500 = New other, 1750 = New with defects, 2000 = Certified Refurbished, 2500 = Seller refurbished, 2750 = Like new, 3000 = Used / Pre-owned Good, 4000 = Very good, 5000 = Good, 6000 = Acceptable, 7000 = For parts or not working.
 
-    **`st_ctlg_upc_txt`** <span class="field-type">STRING</span>
+**`cndtn_rollup_id`** <span class="field-type">INTEGER</span>
 
-    Catalog-inherited Universal Product Code (UPC) associated with the item.
+Higher-level item condition rollup derived from the item condition. Values: 1 = New, 2 = Refurbished, 3 = Used, 4 = Unknown; unknown can later resolve when condition attributes are updated.
 
-    **`st_ctlg_ean_txt`** <span class="field-type">STRING</span>
+**`bold_title`** <span class="field-type">STRING</span>
 
-    Catalog-inherited European Article Number (EAN) associated with the item.
+If specified, the seller wants the title for the item's listing to be in boldface type. Applicable listing fees apply. Does not affect the item subtitle (Item.SubTitle), if any. Not applicable to eBay Motors. Values: "0"=not bold, "1"=bold, empty string=legacy historical records not tracked
 
-    **`st_ctlg_isbn_txt`** <span class="field-type">STRING</span>
+**`glry_type_id`** <span class="field-type">INTEGER</span>
 
-    Catalog-inherited International Standard Book Number (ISBN) associated with the item.
+Indicates the type of gallery image for the listing. Potential values: 0 = no gallery, 1 = standard gallery, 2 = featured gallery, 6 = gallery variant, 7 = super gallery/gallery plus,  NULL = not set.
 
-    **`pi_brand_txt`** <span class="field-type">STRING</span>
+**`gallery_url`** <span class="field-type">STRING</span>
 
-    Brand value from FCDE (First Class Data Element), using the Dynamic Finding (df) namespace aspect value first and falling back to the Non-indexed Finding (nf) namespace aspect value
+Single gallery image URL for the listing, usually the first picture URL and used in search or merchandising placements.
 
-    **`pi_mpn_txt`** <span class="field-type">STRING</span>
+**`photo_count`** <span class="field-type">INTEGER</span>
 
-    Manufacturer Part Number (MPN) from FCDE (First Class Data Element)
+Number of photos attached to the listing.
 
-    **`pi_upc_txt`** <span class="field-type">STRING</span>
+**`photo_display_type`** <span class="field-type">INTEGER</span>
 
-    Universal Product Code (UPC) from FCDE (First Class Data Element)
+Photo display mode code for the listing. Values: 0=Standard Show, 1=Slide Show, 2=Large Photo Show, 3=Picture Pack, 4=EPS Picture Show, 5=Self Hosted Picture Show, 6=SuperSize Picture Show.
 
-    **`pi_ean_txt`** <span class="field-type">STRING</span>
+**`picture_url`** <span class="field-type">STRING</span>
 
-    European Article Number (EAN) from FCDE (First Class Data Element)
+URL(s) of the listing's View Item pictures. Multiple URLs may appear semicolon-delimited.
 
-    **`pi_isbn_txt`** <span class="field-type">STRING</span>
+**`private_yn`** <span class="field-type">STRING</span>
 
-    International Standard Book Number (ISBN) from FCDE (First Class Data Element)
+Indicates a private listing where bidder identities are hidden. Values: "0" = not private, "1" = private.
 
-    **`cls_brand_txt`** <span class="field-type">STRING</span>
+**`super_featured`** <span class="field-type">STRING</span>
 
-    Brand value from NGC classification source, using the Dynamic Finding (df) namespace aspect value first and falling back to the Non-indexed Finding (nf) namespace aspect value
+Super-featured (top-of-category) listing upgrade. Values: "0"=not super-featured, "1"=super-featured, empty string=legacy records.
 
-    **`cls_mpn_txt`** <span class="field-type">STRING</span>
+**`shipping_fee`** <span class="field-type">DOUBLE</span>
 
-    Manufacturer Part Number (MPN) from NGC classification source
+First domestic shipping service cost in listing currency as shown on listing. 0 if seller used the shipping calculator. Does not necessarily reflect actual fees paid.
 
-    **`cls_upc_txt`** <span class="field-type">STRING</span>
+**`shipping_xfee`** <span class="field-type">DOUBLE</span>
 
-    Universal Product Code (UPC) from NGC classification source
+Per-additional-item shipping fee shown on listing. Does not necessarily reflect actual fees paid.
 
-    **`cls_ean_txt`** <span class="field-type">STRING</span>
+**`shipping_type`** <span class="field-type">INTEGER</span>
 
-    European Article Number (EAN) from NGC classification source
+Shipping cost model selected for the listing. Values include 0 = not specified, 1 = flat rate, 2 = calculated rate, 3 = freight, 5 = flat domestic/calculated international, 6 = calculated domestic/flat international, -999 = null.
 
-    **`cls_isbn_txt`** <span class="field-type">STRING</span>
+**`package_size`** <span class="field-type">INTEGER</span>
 
-    International Standard Book Number (ISBN) from NGC classification source
+Shipping package type code that identifies the package format used to ship the item(s). Values: 0=None/not specified, 4=Package/Thick Envelope, 1=Letter, 26=FedEx Envelope, 5=Large Package, 2=Large Envelope , 19=USPS Large Flat Rate Box, 29=DHL Flyer, 27=FedEx Pak, 21=USPS Flat Rate Envelope, 22=USPS Padded Flat Rate Envelope, 24=USPS Legal Flat Rate Envelope, 17=Irregularly Shaped, 30=DHL Box, 7=UPS Letter.
 
-    **`st_df_brand_txt`** <span class="field-type">STRING</span>
+**`weight`** <span class="field-type">LONG</span>
 
-    DF brand from seller input.
+Item weight in the unit specified by weight_unit_type. 0 = not specified.
 
-    **`cls_df_brand_txt`** <span class="field-type">STRING</span>
+**`weight_unit_type`** <span class="field-type">INTEGER</span>
 
-    DF brand from NGC classification source.
+Unit of weight for the item. Values: 1=Pounds, 2=KiloGrams
 
-    **`pi_df_brand_txt`** <span class="field-type">STRING</span>
+**`payment_cash`** <span class="field-type">STRING</span>
 
-    DF brand from FCDE (First Class Data Element).
+Indicates whether payment on pickup / cash on pickup is accepted. When used, buyer and seller arrange offline payment and pickup. Values: "0"=no, "1"=yes, empty string=legacy records.
 
-    **`st_nf_brand_txt`** <span class="field-type">STRING</span>
+**`payment_cc`** <span class="field-type">STRING</span>
 
-    NF brand from seller input.
+Indicates whether credit card payment is accepted as a payment method for the listing. Values: "0"=no, "1"=yes, empty string=legacy records
 
-    **`cls_nf_brand_txt`** <span class="field-type">STRING</span>
+**`payment_moneyxfer`** <span class="field-type">STRING</span>
 
-    NF brand from NGC classification source.
+Indicates whether direct money transfer is accepted as a payment method for the listing. Values: "0"=no, "1"=yes, empty string=legacy records.
 
-    **`pi_nf_brand_txt`** <span class="field-type">STRING</span>
+**`return_policy_yn`** <span class="field-type">STRING</span>
 
-    NF brand from FCDE (First Class Data Element).
+Y/N flag indicating whether the seller entered text in the Payment Instructions field. Values: "N", "Y", empty string(legacy records)
 
-    **`trnsltd_df_brand_txt`** <span class="field-type">STRING</span>
+**`tax_new`** <span class="field-type">DOUBLE</span>
 
-    DF brand from Translation Classifier.
+Sales tax percentage specified by the seller (e.g. 6.500 = 6.5%). 0 = no seller-specified tax.
 
-    **`fc_aspct_json`** <span class="field-type">STRING</span>
+**`tax_new_state`** <span class="field-type">STRING</span>
 
-    JSON containing aspect list for the item.
+State/region code to which the seller-specified sales tax rate (tax_new) applies. -999=null/not specified.
 
-    Examples:
+**`is_immediate_payment_required`** <span class="field-type">INTEGER</span>
 
-    - sport
-    - game
-    - language
-    - publisher
+Indicates whether immediate payment is required for the listing.
 
-    **`sport_value_flag`** <span class="field-type">INTEGER</span>
+**`is_buyer_responsible_for_shipping`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item has a sport aspect value.
+Indicates whether the buyer is responsible for shipping, primarily for Motors listings.
 
-    **`sport_value_list_txt`** <span class="field-type">STRING</span>
+**`is_tax_applied_to_shipping`** <span class="field-type">INTEGER</span>
 
-    Text list of sport aspect values associated with the item.
+Indicates whether sales tax applies to the shipping fee for the listing.
 
-    **`game_value_flag`** <span class="field-type">INTEGER</span>
+**`has_free_shipping_pre_promo`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item has a game aspect value.
+Indicates whether the listing had standard free shipping before a promotional sale.
 
-    **`game_value_list_txt`** <span class="field-type">STRING</span>
+**`is_free_shipping_sale`** <span class="field-type">INTEGER</span>
 
-    Text list of game aspect values associated with the item.
+Indicates whether the item is on a free-shipping sale promotion.
 
-    **`language_value_flag`** <span class="field-type">INTEGER</span>
+**`is_intl_shipping_promotion`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item has a language aspect value.
+Indicates whether the item participates in an international shipping promotion.
 
-    **`language_value_list_txt`** <span class="field-type">STRING</span>
+**`is_domestic_shipping_promotion`** <span class="field-type">INTEGER</span>
 
-    Text list of language aspect values associated with the item.
+Indicates whether the item participates in a domestic shipping promotion.
 
-    **`publisher_value_flag`** <span class="field-type">INTEGER</span>
+**`is_gsp_shipping_enabled`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item has a publisher aspect value.
+Indicates whether Global Shipping Program (GSP) intermediated shipping is enabled for the listing.
 
-    **`publisher_value_list_txt`** <span class="field-type">STRING</span>
+**`is_ebay_managed_shipping_eligible`** <span class="field-type">INTEGER</span>
 
-    Text list of publisher aspect values associated with the item.
+Indicates whether the item is eligible for eBay managed shipping.
 
-    **`brws_node_id`** <span class="field-type">LONG</span>
+**`is_irregular_package`** <span class="field-type">INTEGER</span>
 
-    ID of the browse node this item belongs to?
+Indicates whether the shipping package is irregular or odd-shaped.
 
-    **`adptn_visit_ts`** <span class="field-type">TIMESTAMP</span>
+**`is_managed_shipping_opted_in`** <span class="field-type">INTEGER</span>
 
-    Timestamp when the item last went through the ePID adoption process.
+Indicates whether the seller/listing opted in to managed shipping.
 
-    **`lstg_prod_id`** <span class="field-type">LONG</span>
+**`is_merchant_fulfillment_supported`** <span class="field-type">INTEGER</span>
 
-    Product ID provided by the seller on the listing; use st_prod_ref_id for seller-tagged ePID when available.
+Indicates whether merchant fulfillment support / default MSKU price-set fulfillment support is enabled for the listing.
 
-    **`adpt_cnfdnc_num`** <span class="field-type">INTEGER</span>
+**`is_amex_accepted`** <span class="field-type">INTEGER</span>
 
-    Confidence number of passive adoption.
+Indicates whether American Express is accepted as a payment method for the listing.
 
-    **`mdl_ref_id`** <span class="field-type">LONG</span>
+**`is_cash_in_person_accepted`** <span class="field-type">INTEGER</span>
 
-    Auto-tag model reference ID. 0 means no model reference but a product reference exists; null means non-cataloged.
+Indicates whether cash-in-person payment is accepted, primarily for Motors listings.
 
-    **`at_mdl_cnfdnc`** <span class="field-type">INTEGER</span>
+**`is_cod_accepted`** <span class="field-type">INTEGER</span>
 
-    Auto-tag model confidence
+Indicates whether cash on delivery (COD) is accepted as a payment method.
 
-    **`st_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_cod_prepay_delivery_accepted`** <span class="field-type">INTEGER</span>
 
-    Seller-tagged ePID (eBay Product ID) associated with the item.
+Indicates whether China-site COD prepay delivery is accepted for the listing.
 
-    **`self_tag_yn_ind`** <span class="field-type">INTEGER</span>
+**`is_digital_delivery_supported`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the listing was actively adopted/tagged by the seller.
+Indicates whether the item supports digital delivery.
 
-    **`prod_cvrg`** <span class="field-type">DOUBLE</span>
+**`is_discover_accepted`** <span class="field-type">INTEGER</span>
 
-    Product coverage ratio from variation level to item level. 0 means no product reference coverage, 1 means full coverage, and fractional values indicate partial variation coverage for MSKU items.
+Indicates whether Discover card is accepted as a payment method for the listing.
 
-    **`dmi_mlg_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_loan_check_accepted`** <span class="field-type">INTEGER</span>
 
-    DMI mileage product reference ID associated with the item.
+Indicates whether loan check payment is accepted, primarily for Motors listings.
 
-    **`dmi_epid_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_money_order_accepted`** <span class="field-type">INTEGER</span>
 
-    DMI ePID (eBay Product ID) product reference ID associated with the item.
+Indicates whether money order or cashier check is accepted as a payment method.
 
-    **`dmi_epid1_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_other_payment_accepted`** <span class="field-type">INTEGER</span>
 
-    DMI ePID1 product reference ID associated with the item.
+Indicates whether another offline/other payment method is accepted.
 
-    **`dmi_epid2_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_other_online_payment_accepted`** <span class="field-type">INTEGER</span>
 
-    DMI ePID2 product reference ID associated with the item.
+Indicates whether another online payment method is accepted.
 
-    **`dmi_epid3_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_paisapay_accepted`** <span class="field-type">INTEGER</span>
 
-    DMI ePID3 product reference ID associated with the item.
+Indicates whether PaisaPay credit card payment is accepted, primarily for eBay India.
 
-    **`dmi_epid4_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_paisapay_escrow_enabled`** <span class="field-type">INTEGER</span>
 
-    DMI ePID4 product reference ID associated with the item.
+Indicates whether PaisaPay escrow is enabled.
 
-    **`dmi_clstr1_prod_ref_id`** <span class="field-type">LONG</span>
+**`is_paisapay_escrow_emi_enabled`** <span class="field-type">INTEGER</span>
 
-    DMI cluster1 product reference ID associated with the item.
+Indicates whether PaisaPay escrow EMI is enabled.
 
-    **`dmi_pbr_prod_ref_id`** <span class="field-type">STRING</span>
+**`is_payment_in_description`** <span class="field-type">INTEGER</span>
 
-    DMI PBR product reference ID associated with the item.
+Indicates whether payment details are provided in the listing description.
 
-    **`dmi_epid_json`** <span class="field-type">STRING</span>
+**`is_paypal_accepted`** <span class="field-type">INTEGER</span>
 
-    JSON containing all DMI ePIDs associated with the item.
+Indicates whether PayPal is accepted as a payment method for the listing.
 
-???+ abstract "Listing Basics (73)"
+**`is_personal_check_accepted`** <span class="field-type">INTEGER</span>
 
-    Attributes that describe how the listing was created, presented, and managed, including listing status, format, lifecycle dates, seller context, listing tool/channel, media, and operational flags.
+Indicates whether personal check is accepted as a payment method.
 
+**`is_postal_transfer_accepted`** <span class="field-type">INTEGER</span>
 
-    **`application_id`** <span class="field-type">LONG</span>
+Indicates whether postal transfer is accepted as a payment method, primarily for China-site listings.
 
-    Application identifier used by external consumers to identify the application or listing tool associated with listing creation.
+**`is_prepay_delivery_accepted`** <span class="field-type">INTEGER</span>
 
-    Examples:
+Indicates whether pre-pay delivery is accepted as a payment method, primarily for China-site listings.
 
-    - `219527` = BOLT
-    - `290356` = BOLT B2C
-    - `384352` = HELIX
-    - `2828` = File Exchange
-    - `114100` = Auto Relist
+**`is_visa_mc_accepted`** <span class="field-type">INTEGER</span>
 
-    **`bold_title`** <span class="field-type">STRING</span>
+Indicates whether Visa or MasterCard is accepted as a payment method for the listing.
 
-    If specified, the seller wants the title for the item&#x27;s listing to be in boldface type. Applicable listing fees apply. Does not affect the item subtitle (Item.SubTitle), if any. Not applicable to eBay Motors.
+**`is_ebay_plus_supported`** <span class="field-type">INTEGER</span>
 
-    **`site_create_date`** <span class="field-type">TIMESTAMP</span>
+Indicates whether the item supports or requested the eBay Plus program.
 
-    Date and time the listing was created. This value is read-only and cannot be updated.
+**`eplus_elgbl_ind`** <span class="field-type">INTEGER</span>
 
-    **`cust_ref_code`** <span class="field-type">STRING</span>
+Indicates whether the item is eligible for the eBay Plus business program.
 
-    Universally unique constraint tag. Use UUID to ensure that you only list a particular item once, particularly if you are listing many items at once
+**`attr_brand_txt`** <span class="field-type">STRING</span>
 
-    **`auction_end_reason_code`** <span class="field-type">INTEGER</span>
+Brand value tagged by the seller from seller-input item specifics, using attr_id 3982.
 
-    Reason code for why the listing ended.
+**`at_cnfdnc`** <span class="field-type">INTEGER</span>
 
-    Values:
+Auto-tag product reference/ePID adoption method for the item. Examples: 1001 = seller adopted, 1003 = GTIN match, 1004 = Brand + MPN match, 5000-5200 = Hydra, 9000 = manual adoption, 11003 = GTIN match to BEP, 11004 = Brand + MPN match to BEP.
 
-    - `0` = not ended early/ended naturally
-    - `1` = item lost or broken
-    - `2` = no longer available
-    - `3` = bid/reserve error
-    - `4` = listing error
-    - `5` = ended early and sold to highest bidder
-    - `8` = ended by DBA script
-    - `11` = ended due to zero quantity
-    - `99` = GTC renewal issue
+**`msct_score_num`** <span class="field-type">STRING</span>
 
-    **`glry_type_id`** <span class="field-type">INTEGER</span>
+Miscategorization score for the item; scores &gt;= 70 are treated as miscategorized cases.
 
-    Indicates the type of gallery image for the listing.
+**`mpn_txt`** <span class="field-type">STRING</span>
 
-    Values:
+Manufacturer Part Number (MPN) for the item, deduplicated across classification, product information, and seller-provided sources.
 
-    - `0` = None
-    - `1` = Gallery
-    - `2` = Featured
-    - `7` = Gallery Plus
+**`upc_txt`** <span class="field-type">STRING</span>
 
-    **`gallery_url`** <span class="field-type">STRING</span>
+Universal Product Code (UPC) for the item, deduplicated across classification, product information, and seller-provided sources.
 
-    Single gallery image URL for the listing, usually the first picture URL and used in search or merchandising placements.
+**`isbn_txt`** <span class="field-type">STRING</span>
 
-    **`item_vrsn_id`** <span class="field-type">LONG</span>
+International Standard Book Number (ISBN) for the item, deduplicated across classification, product information, and seller-provided sources.
 
-    A generated sequence used to track versions for each revisions makd by seller
+**`ean_txt`** <span class="field-type">STRING</span>
 
-    **`last_modfd_dt`** <span class="field-type">DATE</span>
+European Article Number (EAN) for the item, deduplicated across classification, product information, and seller-provided sources.
 
-    Date and time the listing was last modified.
+**`gtin_txt`** <span class="field-type">STRING</span>
 
-    **`photo_count`** <span class="field-type">INTEGER</span>
+Global Trade Item Number (GTIN) for the item, deduplicated across classification, product information, and seller-provided sources.
 
-    Number of photos attached to the listing.
+**`st_brand_txt`** <span class="field-type">STRING</span>
 
-    **`photo_display_type`** <span class="field-type">INTEGER</span>
+Brand value from seller input, using the Dynamic Finding (df) namespace aspect value first and falling back to the Non-indexed Finding (nf) namespace aspect value when no df value is available.
 
-    Photo display mode code for the listing.
+**`st_mpn_txt`** <span class="field-type">STRING</span>
 
-    Values:
+Manufacturer Part Number (MPN) from seller input or catalog inheritance, preferring seller-provided value when available.
 
-    - `0` = Standard Show
-    - `1` = Slide Show
-    - `2` = Large Photo Show
-    - `3` = Picture Pack
-    - `4` = EPS Picture Show
-    - `5` = Self Hosted Picture Show
-    - `6` = SuperSize Picture Show
-    - `99999999` = Invalid
+**`st_upc_txt`** <span class="field-type">STRING</span>
 
-    **`picture_url`** <span class="field-type">STRING</span>
+Universal Product Code (UPC) from seller input or catalog inheritance, preferring seller-provided value when available.
 
-    The url of the photos
+**`st_ean_txt`** <span class="field-type">STRING</span>
 
-    **`private_yn`** <span class="field-type">STRING</span>
+European Article Number (EAN) from seller input or catalog inheritance, preferring seller-provided value when available.
 
-    If true, designates the listing as private. When you create a private listing, a buyer&#x27;s User ID will not appear in the listing or in the listing&#x27;s bid history
+**`st_isbn_txt`** <span class="field-type">STRING</span>
 
-    **`relist_parent_item_id`** <span class="field-type">LONG</span>
+International Standard Book Number (ISBN) from seller input or catalog inheritance, preferring seller-provided value when available.
 
-    Used by relist, sellSimilar, and bulkRelist to populate the parent item id, relistparentid is only used by DW
+**`st_actv_brand_txt`** <span class="field-type">STRING</span>
 
-    **`relistid`** <span class="field-type">LONG</span>
+Active seller-provided brand value currently associated with the item.
 
-    Indicates if the listing is ended with a relisted one. If it&#x27;s &gt; 0, it means that the item has been ended and a new relisted one has been created. and the value of this relistId is the same as the value of itemId of the new relisted item
+**`st_actv_mpn_txt`** <span class="field-type">STRING</span>
 
-    **`auct_end_dt`** <span class="field-type">DATE</span>
+Active seller-provided Manufacturer Part Number (MPN) currently associated with the item.
 
-    Date the listing actually ended on eBay.
+**`st_actv_upc_txt`** <span class="field-type">STRING</span>
 
-    **`sale_sched_end_dt`** <span class="field-type">DATE</span>
+Active seller-provided Universal Product Code (UPC) currently associated with the item.
 
-    Date the listing is scheduled to end.
+**`st_actv_ean_txt`** <span class="field-type">STRING</span>
 
-    **`auct_start_dt`** <span class="field-type">DATE</span>
+Active seller-provided European Article Number (EAN) currently associated with the item.
 
-    Date the listing becomes live.
+**`st_actv_isbn_txt`** <span class="field-type">STRING</span>
 
-    **`auct_type_code`** <span class="field-type">INTEGER</span>
+Active seller-provided International Standard Book Number (ISBN) currently associated with the item.
 
-    Listing format code.
+**`st_ctlg_brand_txt`** <span class="field-type">STRING</span>
 
-    Values:
+Catalog-inherited brand value associated with the item.
 
-    - `1` = auction
-    - `2` = Dutch auction
-    - `7` = store fixed price
-    - `9` = fixed price
-    - `10` = Want It Now
-    - `12` = Half.com
-    - `13` = classified / lead generation
-    - `15` = shopping.com
+**`st_ctlg_mpn_txt`** <span class="field-type">STRING</span>
 
-    **`slr_id`** <span class="field-type">LONG</span>
+Catalog-inherited Manufacturer Part Number (MPN) associated with the item.
 
-    Seller&#x27;s Oracle user ID associated with the listing.
+**`st_ctlg_upc_txt`** <span class="field-type">STRING</span>
 
-    **`sgnfcnt_rvsn_cnt`** <span class="field-type">INTEGER</span>
+Catalog-inherited Universal Product Code (UPC) associated with the item.
 
-    An item specific count of the number of times it has been significantly revised.
+**`st_ctlg_ean_txt`** <span class="field-type">STRING</span>
 
-    **`stor_categ2_id`** <span class="field-type">LONG</span>
+Catalog-inherited European Article Number (EAN) associated with the item.
 
-    Unique identifier for the secondary custom category in which to list the item. Set this field to a root-level custom category or a custom category that has no child categories (subcategories).
+**`st_ctlg_isbn_txt`** <span class="field-type">STRING</span>
 
-    **`stor_categ_id`** <span class="field-type">LONG</span>
+Catalog-inherited International Standard Book Number (ISBN) associated with the item.
 
-    Unique identifier of a primary custom category in which to list the item. A custom category is a category that the seller created in their eBay Store. eBay Store sellers can create up to three levels of custom categories for their stores, but the API only supports root-level categories.
+**`pi_brand_txt`** <span class="field-type">STRING</span>
 
-    **`super_featured`** <span class="field-type">STRING</span>
+Brand value from FCDE (First Class Data Element), using the Dynamic Finding (df) namespace aspect value first and falling back to the Non-indexed Finding (nf) namespace aspect value
 
-    Super-featured (top-of-category) listing upgrade. "1" = super featured, "0" = not.
+**`pi_mpn_txt`** <span class="field-type">STRING</span>
 
-    **`lstg_status_id`** <span class="field-type">INTEGER</span>
+Manufacturer Part Number (MPN) from FCDE (First Class Data Element)
 
-    Listing lifecycle status code.
+**`pi_upc_txt`** <span class="field-type">STRING</span>
 
-    Values:
+Universal Product Code (UPC) from FCDE (First Class Data Element)
 
-    - `0` = Live
-    - `1` = Ended
-    - `2` = Admin ended
-    - `3` = Schedule Deleted
-    - `4` = Scheduled
+**`pi_ean_txt`** <span class="field-type">STRING</span>
 
-    **`slr_site_id`** <span class="field-type">INTEGER</span>
+European Article Number (EAN) from FCDE (First Class Data Element)
 
-    The eBay site ID where the seller account is registered; this can differ from the site where the item is listed. Please see [Site LDM](site.md) for more details.
+**`pi_isbn_txt`** <span class="field-type">STRING</span>
 
-    **`slr_cntry_id`** <span class="field-type">INTEGER</span>
+International Standard Book Number (ISBN) from FCDE (First Class Data Element)
 
-    Country ID where the seller account is registered; this can differ from the physical item location country. Please see [Country LDM](country.md) for more details.
+**`cls_brand_txt`** <span class="field-type">STRING</span>
 
-    **`auct_start_exchng_rate`** <span class="field-type">DOUBLE</span>
+Brand value from NGC classification source, using the Dynamic Finding (df) namespace aspect value first and falling back to the Non-indexed Finding (nf) namespace aspect value
 
-    The exchange rate on the listing start date
+**`cls_mpn_txt`** <span class="field-type">STRING</span>
 
-    **`auct_end_exchng_rate`** <span class="field-type">DOUBLE</span>
+Manufacturer Part Number (MPN) from NGC classification source
 
-    The exchange rate on the listing end date
+**`cls_upc_txt`** <span class="field-type">STRING</span>
 
-    **`slng_mgr_sbscrbr_flag`** <span class="field-type">INTEGER</span>
+Universal Product Code (UPC) from NGC classification source
 
-    Flag showing the seller was a Selling Manager subscriber for that listing.
+**`cls_ean_txt`** <span class="field-type">STRING</span>
 
-    **`slng_mgr_pro_sbscrbr_flag`** <span class="field-type">INTEGER</span>
+European Article Number (EAN) from NGC classification source
 
-    Flag showing the seller was a Selling Manager Pro subscriber for that listing
+**`cls_isbn_txt`** <span class="field-type">STRING</span>
 
-    **`high_bdr_cntry_id`** <span class="field-type">INTEGER</span>
+International Standard Book Number (ISBN) from NGC classification source
 
-    Country ID of the highest bidder for the listing. Please see [Country LDM](country.md) for more details.
+**`st_df_brand_txt`** <span class="field-type">STRING</span>
 
-    Values:
+DF brand from seller input.
 
-    - `-999` = unknown or not applicable
+**`cls_df_brand_txt`** <span class="field-type">STRING</span>
 
-    **`high_bdr_site_id`** <span class="field-type">INTEGER</span>
+DF brand from NGC classification source.
 
-    Registration site ID of the highest bidder for the listing. Please see [Site LDM](site.md) for more details.
+**`pi_df_brand_txt`** <span class="field-type">STRING</span>
 
-    Values:
+DF brand from FCDE (First Class Data Element).
 
-    - `-999` = unknown or not applicable
+**`st_nf_brand_txt`** <span class="field-type">STRING</span>
 
-    **`auct_start_date`** <span class="field-type">TIMESTAMP</span>
+NF brand from seller input.
 
-    The timestamp when the listing becomes live
+**`cls_nf_brand_txt`** <span class="field-type">STRING</span>
 
-    **`auct_end_date`** <span class="field-type">TIMESTAMP</span>
+NF brand from NGC classification source.
 
-    Timestamp the listing actually ended on eBay.
+**`pi_nf_brand_txt`** <span class="field-type">STRING</span>
 
-    **`is_best_offer_auto_accept_enabled`** <span class="field-type">INTEGER</span>
+NF brand from FCDE (First Class Data Element).
 
-    Indicates whether Best Offer 3.0 auto-accept is enabled for the listing.
+**`trnsltd_df_brand_txt`** <span class="field-type">STRING</span>
 
-    **`is_best_offer_auto_decline_enabled`** <span class="field-type">INTEGER</span>
+DF brand from Translation Classifier.
 
-    Indicates whether Best Offer auto-decline is enabled for the listing.
+**`fc_aspct_json`** <span class="field-type">STRING</span>
 
-    **`is_auto_relist_enabled`** <span class="field-type">INTEGER</span>
+JSON containing aspect list for the item, such as sport, game, language, and publisher.
 
-    Indicates whether automatic relisting is enabled for the item.
+**`sport_value_flag`** <span class="field-type">INTEGER</span>
 
-    **`is_best_offer_enabled`** <span class="field-type">INTEGER</span>
+Indicates whether the item has a sport aspect value.
 
-    Indicates whether Best Offer is enabled for the item.
+**`sport_value_list_txt`** <span class="field-type">STRING</span>
 
-    **`is_bids_finalized`** <span class="field-type">INTEGER</span>
+Text list of sport aspect values associated with the item.
 
-    Indicates whether bidding has been finalized for the listing.
+**`game_value_flag`** <span class="field-type">INTEGER</span>
 
-    **`is_duplicate_auction`** <span class="field-type">INTEGER</span>
+Indicates whether the item has a game aspect value.
 
-    Indicates whether the item is identified as a duplicate pure-auction listing.
+**`game_value_list_txt`** <span class="field-type">STRING</span>
 
-    **`is_ebay_vault_listing`** <span class="field-type">INTEGER</span>
+Text list of game aspect values associated with the item.
 
-    Indicates whether the listing is an eBay Vault listing.
+**`language_value_flag`** <span class="field-type">INTEGER</span>
 
-    **`is_gtc`** <span class="field-type">INTEGER</span>
+Indicates whether the item has a language aspect value.
 
-    Indicates whether the listing is Good Till Cancelled (GTC).
+**`language_value_list_txt`** <span class="field-type">STRING</span>
 
-    **`is_business_policy_item`** <span class="field-type">INTEGER</span>
+Text list of language aspect values associated with the item.
 
-    Indicates whether the item was listed using a business/selling policy profile.
+**`publisher_value_flag`** <span class="field-type">INTEGER</span>
 
-    **`is_no_email_contact_supported`** <span class="field-type">INTEGER</span>
+Indicates whether the item has a publisher aspect value.
 
-    Indicates whether the listing format does not support email contact.
+**`publisher_value_list_txt`** <span class="field-type">STRING</span>
 
-    **`is_instore_pickup_eligible`** <span class="field-type">INTEGER</span>
+Text list of publisher aspect values associated with the item.
 
-    Indicates whether the item is eligible for in-store pickup.
+**`brws_node_id`** <span class="field-type">LONG</span>
 
-    **`is_restricted_bidding`** <span class="field-type">INTEGER</span>
+The best matched BrowseNode for each item; the "best" means the browse node has the highest number of aspects.
 
-    Indicates whether bidding is restricted to pre-approved bidders.
+**`adptn_visit_ts`** <span class="field-type">TIMESTAMP</span>
 
-    **`is_restricted_to_business_user`** <span class="field-type">INTEGER</span>
+Timestamp when the item last went through the ePID adoption process.
 
-    Indicates whether the item is restricted to business users.
+**`lstg_prod_id`** <span class="field-type">LONG</span>
 
-    **`is_seller_on_vacation`** <span class="field-type">INTEGER</span>
+Product ID provided by the seller on the listing; use st_prod_ref_id for seller-tagged ePID when available.
 
-    Indicates whether the store is on vacation and the listing may be hidden from search.
+**`adpt_cnfdnc_num`** <span class="field-type">INTEGER</span>
 
-    **`is_variation`** <span class="field-type">INTEGER</span>
+Confidence number of passive adoption.
 
-    Indicates whether the listing is a multi-SKU variation item.
+**`mdl_ref_id`** <span class="field-type">LONG</span>
 
-    **`is_on_promotional_sale`** <span class="field-type">INTEGER</span>
+Auto-tag model reference ID. 0 means no model reference but a product reference exists; null means non-cataloged.
 
-    Indicates whether the item is on an active promotional sale.
+**`at_mdl_cnfdnc`** <span class="field-type">INTEGER</span>
 
-    **`is_marketplace_visible`** <span class="field-type">INTEGER</span>
+Auto-tag model confidence
 
-    Indicates whether the item is visible in marketplace experiences.
+**`st_prod_ref_id`** <span class="field-type">LONG</span>
 
-    **`is_managed_by_inventory`** <span class="field-type">INTEGER</span>
+Seller-tagged ePID (eBay Product ID) associated with the item.
 
-    Indicates whether the listing is managed by an inventory/SKUBI system.
+**`self_tag_yn_ind`** <span class="field-type">INTEGER</span>
 
-    **`is_on_hold`** <span class="field-type">INTEGER</span>
+Indicates whether the listing was actively adopted/tagged by the seller.
 
-    Indicates whether the item is on hold and may not be visible or purchasable even if otherwise live.
+**`prod_cvrg`** <span class="field-type">DOUBLE</span>
 
-    **`is_price_guarantee`** <span class="field-type">INTEGER</span>
+Product coverage ratio from variation level to item level. 0 means no product reference coverage, 1 means full coverage, and fractional values indicate partial variation coverage for MSKU items.
 
-    Indicates whether price guarantee applies to the listing; this flag is generally expected to be false.
+**`dmi_mlg_prod_ref_id`** <span class="field-type">LONG</span>
 
-    **`is_partner_dealer_auto_listing`** <span class="field-type">INTEGER</span>
+DMI mileage product reference ID associated with the item.
 
-    Indicates whether the listing is a partner dealer auto listing.
+**`dmi_epid_prod_ref_id`** <span class="field-type">LONG</span>
 
-    **`is_relisted`** <span class="field-type">INTEGER</span>
+DMI ePID (eBay Product ID) product reference ID associated with the item.
 
-    Indicates whether the item was created via a relist flow.
+**`dmi_epid1_prod_ref_id`** <span class="field-type">LONG</span>
 
-    **`is_scheduled_listing`** <span class="field-type">INTEGER</span>
+DMI ePID1 product reference ID associated with the item.
 
-    Indicates whether the listing is scheduled and not live yet.
+**`dmi_epid2_prod_ref_id`** <span class="field-type">LONG</span>
 
-    **`is_seller_policy_overridden`** <span class="field-type">INTEGER</span>
+DMI ePID2 product reference ID associated with the item.
 
-    Indicates whether seller policy/profile values were overridden for the listing.
+**`dmi_epid3_prod_ref_id`** <span class="field-type">LONG</span>
 
-    **`is_sell_similar`** <span class="field-type">INTEGER</span>
+DMI ePID3 product reference ID associated with the item.
 
-    Indicates whether the item was created via a Sell Similar flow.
+**`dmi_epid4_prod_ref_id`** <span class="field-type">LONG</span>
 
-    **`device_type_level1`** <span class="field-type">STRING</span>
+DMI ePID4 product reference ID associated with the item.
 
-    High-level device type used to create the listing.
+**`dmi_clstr1_prod_ref_id`** <span class="field-type">LONG</span>
 
-    Values:
+DMI cluster1 product reference ID associated with the item.
 
-    - Mobile
-    - PC
-    - API
-    - Other
-    - null
+**`dmi_pbr_prod_ref_id`** <span class="field-type">STRING</span>
 
-    **`experience_level2`** <span class="field-type">STRING</span>
+DMI PBR product reference ID associated with the item.
 
-    More granular listing creation experience.
+**`dmi_epid_json`** <span class="field-type">STRING</span>
 
-    Examples:
+JSON containing all DMI ePIDs associated with the item.
 
-    - Apps: iPhone
-    - Apps: Android
-    - Apps: iPad
-    - Browser: mWeb
-    - Browser: Core site
-    - API
-    - null
 
-    **`norl_type_cd`** <span class="field-type">INTEGER</span>
+Attributes that describe how the listing was created, presented, and managed, including listing status, format, lifecycle dates, seller context, listing tool/channel, media, and operational flags.
 
-    Lister type code.
+**`device_type_level1`** <span class="field-type">STRING</span>
 
-    Values:
+High-level device type used to create the listing. Typical values include Mobile, PC, API, Other, or null.
 
-    - `1` = New Lister (seller&#x27;s first listed item; differs from ftl_ind, which excludes first listings that were admin-ended)
-    - `2` = Reactivated Lister (seller&#x27;s previous listing was at least 12 months earlier)
-    - `3` = Existing Lister
+**`experience_level2`** <span class="field-type">STRING</span>
 
-    **`ftl_ind`** <span class="field-type">INTEGER</span>
+More granular listing creation experience, such as Apps: iPhone, Apps: Android, Apps: iPad, Browser: mWeb, Browser: Core site, API, or null.
 
-    First Time Lister indicator. 1 means this listing is identified as the seller first listing, excluding first listings that were admin-ended.
+**`mobile_lstg_ind`** <span class="field-type">INTEGER</span>
 
-    **`aedl_ind`** <span class="field-type">INTEGER</span>
+Indicates whether the listing was created through a mobile listing flow. Values: 1 = mobile listing, 0 = not mobile listing.
 
-    Admin Ended Day Lister indicator. 1 means the listing occurred before the seller recorded first listing date, implying a prior admin-ended attempt.
+**`app_party_type_cd`** <span class="field-type">INTEGER</span>
 
-    **`unsccss_lstr_ind`** <span class="field-type">INTEGER</span>
+Application party type code used to identify third-party API listings versus eBay-owned listing flows. Values: 0 = third-party application/tool, 1 = eBay internal tool
 
-    Unsuccessful Lister indicator. 1 means the seller had listed but had not sold by the listing start date.
+**`norl_type_cd`** <span class="field-type">INTEGER</span>
 
-    **`mobile_lstg_ind`** <span class="field-type">INTEGER</span>
+Lister type code. Values: 1 = New Lister (seller's first listed item; differs from `ftl_ind`, which excludes first listings that were admin-ended), 2 = Reactivated Lister (seller's previous listing was at least 12 months earlier), 3 = Existing Lister.
 
-    Indicates whether the listing was created through a mobile listing flow.
+**`ftl_ind`** <span class="field-type">INTEGER</span>
 
-    Values:
+First Time Lister indicator. 1 means this listing is identified as the seller first listing, excluding first listings that were admin-ended.
 
-    - `1` = mobile listing
-    - `0` = not mobile listing
+**`aedl_ind`** <span class="field-type">INTEGER</span>
 
-    **`app_party_type_cd`** <span class="field-type">INTEGER</span>
+Admin Ended Day Lister indicator. 1 means the listing occurred before the seller recorded first listing date, implying a prior admin-ended attempt.
 
-    Application party type code used to identify third-party API listings versus eBay-owned listing flows.
+**`unsccss_lstr_ind`** <span class="field-type">INTEGER</span>
 
-    Values:
+Unsuccessful Lister indicator. 1 means the seller had listed but had not sold by the listing start date.
 
-    - `0` = third-party application/tool
-    - `1` = eBay internal tool
+**`slng_mgr_sbscrbr_flag`** <span class="field-type">INTEGER</span>
 
-    **`lstg_guid`** <span class="field-type">STRING</span>
+Indicates the seller was a Selling Manager subscriber at listing time. Values: 0 = no, 1 = yes.
 
-    Sojourner GUID of the event most closely matching the listing success event. NULL if no match found
+**`slng_mgr_pro_sbscrbr_flag`** <span class="field-type">INTEGER</span>
 
-    **`lstg_session_skey`** <span class="field-type">LONG</span>
+Indicates the seller was a Selling Manager Pro subscriber at listing time. Values: 0 = no, 1 = yes.
 
-    Sojourner session key of the listing success event
+**`cust_ref_code`** <span class="field-type">STRING</span>
 
-    **`lstg_session_start_dt`** <span class="field-type">DATE</span>
+Universally unique constraint tag. Use UUID to ensure that you only list a particular item once, particularly if you are listing many items at once
 
-    Session start date of the listing success event
+**`auct_start_exchng_rate`** <span class="field-type">DOUBLE</span>
 
-    **`lstg_event_timestamp`** <span class="field-type">TIMESTAMP</span>
+Exchange rate to USD at listing start time.
 
-    Sojourner event timestamp of the listing success event
+**`auct_end_exchng_rate`** <span class="field-type">DOUBLE</span>
 
-    **`lstg_seq_num`** <span class="field-type">INTEGER</span>
+Exchange rate to USD at listing end time.
 
-    Sojourner sequence number of the listing success event.
+**`lstg_guid`** <span class="field-type">STRING</span>
 
-???+ abstract "Payment & Shipping (45)"
+Sojourner GUID of the event most closely matching the listing success event. NULL if no match found
 
-    Attributes that describe how buyers can pay for and receive the item, including payment methods, shipping costs, package details, tax, shipping programs, and related policies.
+**`lstg_session_skey`** <span class="field-type">LONG</span>
 
+Sojourner session key of the listing success event
 
-    **`package_size`** <span class="field-type">INTEGER</span>
+**`lstg_session_start_dt`** <span class="field-type">DATE</span>
 
-    Shipping package type code that identifies the package format used to ship the item(s).
+Session start date of the listing success event
 
-    Values:
+**`lstg_event_timestamp`** <span class="field-type">TIMESTAMP</span>
 
-    - `0` = None
-    - `1` = Letter
-    - `2` = Large Envelope
-    - `3` = USPS Flat Rate Envelope
-    - `4` = Package / Thick Envelope
-    - `5` = Large Package
-    - `8` = Roll
-    - `18` = USPS Medium Flat Rate Box
-    - `31` = FedEx Letter
-    - `41` = FedEx Box
-    - `45` = Your Packaging
-    - `70` = UK Jiffybag
-    - `81` = AU Post 500g Satchel
-    - `-99999999` = Invalid
+Sojourner event timestamp of the listing success event
 
-    **`payment_cash`** <span class="field-type">STRING</span>
+**`lstg_seq_num`** <span class="field-type">INTEGER</span>
 
-    Indicates whether payment on pickup / cash on pickup is accepted. When used, buyer and seller arrange offline payment and pickup.
+Sojourner sequence number of the listing success event.
 
-    **`payment_cc`** <span class="field-type">STRING</span>
 
-    Indicates whether credit card payment is accepted as a payment method for the listing.
+Attributes that describe how buyers can pay for and receive the item, including payment methods, shipping costs, package details, tax, shipping programs, and related policies.
 
-    **`payment_moneyxfer`** <span class="field-type">STRING</span>
+**`is_best_offer_auto_accept_enabled`** <span class="field-type">INTEGER</span>
 
-    Indicates whether direct money transfer is accepted as a payment method for the listing.
+Indicates whether Best Offer 3.0 auto-accept is enabled for the listing.
 
-    **`return_policy_yn`** <span class="field-type">STRING</span>
+**`is_best_offer_auto_decline_enabled`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the listing has a return policy.
+Indicates whether Best Offer auto-decline is enabled for the listing.
 
-    **`shipping_fee`** <span class="field-type">DOUBLE</span>
+**`is_auto_relist_enabled`** <span class="field-type">INTEGER</span>
 
-    Base shipping cost shown for the item using the specified shipping service.
+Indicates whether automatic relisting is enabled for the item.
 
-    **`shipping_type`** <span class="field-type">INTEGER</span>
+**`is_best_offer_enabled`** <span class="field-type">INTEGER</span>
 
-    Shipping cost model selected for the listing.
+Indicates whether Best Offer is enabled for the item.
 
-    Values:
+**`is_bids_finalized`** <span class="field-type">INTEGER</span>
 
-    - `0` = not specified
-    - `1` = flat rate
-    - `2` = calculated rate
-    - `3` = freight
-    - `5` = flat domestic/calculated international
-    - `6` = calculated domestic/flat international
-    - `-999` = null
+Indicates whether bidding has been finalized for the listing.
 
-    **`shipping_xfee`** <span class="field-type">DOUBLE</span>
+**`is_duplicate_auction`** <span class="field-type">INTEGER</span>
 
-    Additional shipping cost for each extra unit when the same buyer purchases multiple quantities from the same listing.
+Indicates whether the item is identified as a duplicate pure-auction listing.
 
-    **`tax_new`** <span class="field-type">DOUBLE</span>
+**`is_ebay_vault_listing`** <span class="field-type">INTEGER</span>
 
-    Percent of an item&#x27;s price to be charged as the sales tax for the order.
+Indicates whether the listing is an eBay Vault listing.
 
-    **`tax_new_state`** <span class="field-type">STRING</span>
+**`is_gtc`** <span class="field-type">INTEGER</span>
 
-    State or jurisdiction for which the sales tax is being collected.
+Indicates whether the listing is Good Till Cancelled (GTC).
 
-    **`weight`** <span class="field-type">LONG</span>
+**`is_business_policy_item`** <span class="field-type">INTEGER</span>
 
-    Used to specify the weight of a shipping package.
+Indicates whether the item was listed using a business/selling policy profile.
 
-    **`weight_unit_type`** <span class="field-type">INTEGER</span>
+**`is_no_email_contact_supported`** <span class="field-type">INTEGER</span>
 
-    Unit code for package weight.
+Indicates whether the listing format does not support email contact.
 
-    Values:
+**`is_instore_pickup_eligible`** <span class="field-type">INTEGER</span>
 
-    - `1` = pounds
-    - `2` = kilograms
+Indicates whether the item is eligible for in-store pickup.
 
-    **`is_amex_accepted`** <span class="field-type">INTEGER</span>
+**`is_restricted_bidding`** <span class="field-type">INTEGER</span>
 
-    Indicates whether American Express is accepted as a payment method for the listing.
+Indicates whether bidding is restricted to pre-approved bidders.
 
-    **`is_tax_applied_to_shipping`** <span class="field-type">INTEGER</span>
+**`is_restricted_to_business_user`** <span class="field-type">INTEGER</span>
 
-    Indicates whether sales tax applies to the shipping fee for the listing.
+Indicates whether the item is restricted to business users.
 
-    **`is_cash_in_person_accepted`** <span class="field-type">INTEGER</span>
+**`is_seller_on_vacation`** <span class="field-type">INTEGER</span>
 
-    Indicates whether cash-in-person payment is accepted, primarily for Motors listings.
+Indicates whether the store is on vacation and the listing may be hidden from search.
 
-    **`is_cod_accepted`** <span class="field-type">INTEGER</span>
+**`is_variation`** <span class="field-type">INTEGER</span>
 
-    Indicates whether cash on delivery (COD) is accepted as a payment method.
+Indicates whether the listing is a multi-SKU variation item.
 
-    **`is_cod_prepay_delivery_accepted`** <span class="field-type">INTEGER</span>
+**`is_on_promotional_sale`** <span class="field-type">INTEGER</span>
 
-    Indicates whether China-site COD prepay delivery is accepted for the listing.
+Indicates whether the item is on an active promotional sale.
 
-    **`is_digital_delivery_supported`** <span class="field-type">INTEGER</span>
+**`is_marketplace_visible`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item supports digital delivery.
+Indicates whether the item is visible in marketplace experiences.
 
-    **`is_discover_accepted`** <span class="field-type">INTEGER</span>
+**`is_managed_by_inventory`** <span class="field-type">INTEGER</span>
 
-    Indicates whether Discover card is accepted as a payment method for the listing.
+Indicates whether the listing is managed by an inventory/SKUBI system.
 
-    **`is_intl_shipping_promotion`** <span class="field-type">INTEGER</span>
+**`is_on_hold`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item participates in an international shipping promotion.
+Indicates whether the item is on hold and may not be visible or purchasable even if otherwise live.
 
-    **`is_ebay_managed_shipping_eligible`** <span class="field-type">INTEGER</span>
+**`is_price_guarantee`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the item is eligible for eBay managed shipping.
+Indicates whether price guarantee applies to the listing; this flag is generally expected to be false.
 
-    **`is_gsp_shipping_enabled`** <span class="field-type">INTEGER</span>
+**`is_partner_dealer_auto_listing`** <span class="field-type">INTEGER</span>
 
-    Indicates whether Global Shipping Program (GSP) intermediated shipping is enabled for the listing.
+Indicates whether the listing is a partner dealer auto listing.
 
-    **`is_immediate_payment_required`** <span class="field-type">INTEGER</span>
+**`is_relisted`** <span class="field-type">INTEGER</span>
 
-    Indicates whether immediate payment is required for the listing.
+Indicates whether the item was created via a relist flow.
 
-    **`is_irregular_package`** <span class="field-type">INTEGER</span>
+**`is_scheduled_listing`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the shipping package is irregular or odd-shaped.
+Indicates whether the listing is scheduled and not live yet.
 
-    **`is_buyer_responsible_for_shipping`** <span class="field-type">INTEGER</span>
+**`is_seller_policy_overridden`** <span class="field-type">INTEGER</span>
 
-    Indicates whether the buyer is responsible for shipping, primarily for Motors listings.
+Indicates whether seller policy/profile values were overridden for the listing.
 
-    **`is_loan_check_accepted`** <span class="field-type">INTEGER</span>
+**`is_sell_similar`** <span class="field-type">INTEGER</span>
 
-    Indicates whether loan check payment is accepted, primarily for Motors listings.
-
-    **`is_merchant_fulfillment_supported`** <span class="field-type">INTEGER</span>
-
-    Indicates whether merchant fulfillment support / default MSKU price-set fulfillment support is enabled for the listing.
-
-    **`is_managed_shipping_opted_in`** <span class="field-type">INTEGER</span>
-
-    Indicates whether the seller/listing opted in to managed shipping.
-
-    **`is_money_order_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether money order or cashier check is accepted as a payment method.
-
-    **`has_free_shipping_pre_promo`** <span class="field-type">INTEGER</span>
-
-    Indicates whether the listing had standard free shipping before a promotional sale.
-
-    **`is_free_shipping_sale`** <span class="field-type">INTEGER</span>
-
-    Indicates whether the item is on a free-shipping sale promotion.
-
-    **`is_other_payment_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether another offline/other payment method is accepted.
-
-    **`is_other_online_payment_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether another online payment method is accepted.
-
-    **`is_paisapay_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether PaisaPay credit card payment is accepted, primarily for eBay India.
-
-    **`is_paisapay_escrow_enabled`** <span class="field-type">INTEGER</span>
-
-    Indicates whether PaisaPay escrow is enabled.
-
-    **`is_paisapay_escrow_emi_enabled`** <span class="field-type">INTEGER</span>
-
-    Indicates whether PaisaPay escrow EMI is enabled.
-
-    **`is_payment_in_description`** <span class="field-type">INTEGER</span>
-
-    Indicates whether payment details are provided in the listing description.
-
-    **`is_paypal_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether PayPal is accepted as a payment method for the listing.
-
-    **`is_personal_check_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether personal check is accepted as a payment method.
-
-    **`is_postal_transfer_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether postal transfer is accepted as a payment method, primarily for China-site listings.
-
-    **`is_prepay_delivery_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether pre-pay delivery is accepted as a payment method, primarily for China-site listings.
-
-    **`is_ebay_plus_supported`** <span class="field-type">INTEGER</span>
-
-    Indicates whether the item supports or requested the eBay Plus program.
-
-    **`is_domestic_shipping_promotion`** <span class="field-type">INTEGER</span>
-
-    Indicates whether the item participates in a domestic shipping promotion.
-
-    **`is_visa_mc_accepted`** <span class="field-type">INTEGER</span>
-
-    Indicates whether Visa or MasterCard is accepted as a payment method for the listing.
-
-    **`eplus_elgbl_ind`** <span class="field-type">INTEGER</span>
-
-    Indicates whether the item is eligible for eBay Plus.
+Indicates whether the item was created via a Sell Similar flow.
 
 <!-- END GENERATED ITEM FIELDS -->
 

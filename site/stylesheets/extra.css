@@ -63,6 +63,22 @@
     margin-top: 0.35rem;
 }
 
+.md-typeset .admonition.field-context {
+    border-color: var(--md-default-fg-color--lighter);
+    box-shadow: none;
+    font-size: 0.72rem;
+}
+
+.md-typeset .admonition.field-context > .admonition-title {
+    background-color: var(--md-default-fg-color--lightest);
+    color: var(--md-default-fg-color);
+    padding-left: 0.6rem;
+}
+
+.md-typeset .admonition.field-context > .admonition-title::before {
+    display: none;
+}
+
 .md-typeset h3[id^="item-basics"],
 .md-typeset h3[id^="item-aspects"],
 .md-typeset h3[id^="listing-basics"],
