@@ -76,9 +76,9 @@ Buy It Now price in listing currency in View Item page.
     - **Semantics** — Entity and field business definitions
         - Description: Buy It Now price in listing currency in View Item page.
     
-    - **Data Lineage** (from source to LDM process, including Transformation / Cleaning Knowledge) — How data moves across the end-to-end data flow, from source models to landed data, transformed data, and downstream consumption.
-        - Extract data from 5 keyspaces, merge, and transform to LDM fields. [ai-summary]
-        - ETL Code: [link]
+    - **Data Lineage** (Source → LDM) — How data from source systems is extracted, transformed, and mapped into Logical Data Model (LDM) fields, including key transformation and data-cleaning decisions that turn raw inputs into consumption-ready outputs.
+        - Data Flow Summary: Extract itemkeyspace.ItemQtyPrice.fixedPrice from two NuDoc keyspaces (ItemKeyspace and ItemGroupKeyspace) via ZeroETL, covering five docsets. Consolidate into SSKU and MSKU item price entities, then merge and transform into bin_price_lstg_curncy at the item level. [AI Summary]
+        - ETL Code: [Link to be provided]
         - Data Flow Diagram: https://lucid.app/lucidchart/73cbffe1-905b-415f-a5ca-39c1ecf8ad6b/edit?invitationId=inv_d08689cb-9ea6-43bc-96d8-ff416c09b61f&page=a1vXV8fI_cE.#
 
     - **Data Profiling** — Observed data characteristics such as null rate, cardinality, value distribution, sample values.
@@ -98,7 +98,7 @@ Buy It Now price in listing currency in View Item page.
         - GMV Calculation
         - Attribution (Ads, Marketing, Search, etc)
     
-    - **Adoption** — Usage and adoption, along with the business scenarios, decisions, and downstream products that depend on the data.
+    - **Adoption** — Field-level usage and what business decisions or downstream use cases rely on it.
         - 500 MAU (monthly active users querying this field)
         - Main downstream use cases:
             - Financial report on Quickstrike, value: [to be provided]
