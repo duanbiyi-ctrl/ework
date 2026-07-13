@@ -36,45 +36,72 @@ Seller-provided item description content encoded in Base64. Decode before displa
 
 Length of the encoded item description content.
 
-**`slr_id`** <span class="field-type">LONG</span>
-
-Seller's Oracle user ID associated with the listing. Foreign key to [User LDM](user.md).
-
-??? field-context "More context"
-
-    **Where it comes from**
-
-    `slr_id` is captured by the listing process as the seller account associated with the listing. [Listing Service](https://github.corp.ebay.com/SellingDomain/crlstngsv) writes this value into NuDoc at `itemkeyspace.__ROOT__.sellerId`, and Item LDM exposes it as the seller identifier for the listing.
-
-    **How teams usually use it**
-
-    Teams commonly use `slr_id` to group listings by seller, join to seller/user reference data, and analyze seller-level listing behavior. It identifies the seller account for the listing, not the buyer or highest bidder.
-
-**`slr_prdct_id_txt`** <span class="field-type">STRING</span>
-
-Seller-defined product identifier text (e.g. manufacturer part number/ISBN/UPC). Empty if not provided.
-
-**`sku_num`** <span class="field-type">STRING</span>
-
-Seller&#x27;s custom, application-specific data associated with the item. Data specified here is stored by eBay with the item for seller but it is not used by eBay in any way.
-
-**`application_id`** <span class="field-type">LONG</span>
-
-Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model; join to the [Application LDM](#) to get the application name. Common examples include 219527 = BOLT, 290356 = BOLT B2C, 384352 = HELIX, 2828 = File Exchange, 114100 = Auto Relist.
-
 **`bin_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
 
-Buy It Now price in listing currency.
+Buy It Now price in listing currency in View Item page.
 
 ??? field-context "More context"
+    
+    **Producer Knowledge**
 
-    **Where it comes from**
+    - **Producer Ownership** — The team and application that owns and maintains the source data
+        - Team Name: SX Inventory Mgmt - Listing Platform Core Services
+        - Notification Email: DL-eBay-ListingRedesign@ebay.com
+        - OnCall Service: https://ebay-cpt.pagerduty.com/service-directory/$PZMGJDA
+        - Service Link: https://cloud.ebay.com/app/detail/crlstngsv/overview
+    
+    - **Producer Process** — How producer applications write data to the source system.
+        - Service Name: Core Listing Service
+        - Source Code: https://github.corp.ebay.com/SellingDomain/crlstngsv
+        - Processes: 1. new listing 2. modify price [AI Summary]
 
-    `bin_price_lstg_curncy` comes from the listing price model populated during listing creation or revision when a seller sets a fixed price / Buy It Now price. [Listing Service](https://github.corp.ebay.com/SellingDomain/crlstngsv) writes the source value into NuDoc at `itemkeyspace.ItemQtyPrice.price.fixedPrice`, and Item LDM carries it as the listing-currency Buy It Now price.
+    - **Source Storage** — Physical storage information of source data, such as NuDoc keyspace, Oracle db.
+        - NuDoc Keyspace Name: ItemKeyspace, ItemGroupKeyspace
+        - NuDoc Link: https://qa.cloud.ebay.com/cloud-data/databases/nudocument/keyspaces/ItemKeyspace
+        - NuDoc Fields: itemkeyspace.ItemQtyPrice.price.fixedPrice
+    
+    - **Source Model Design** — The data structure written by producer applications, such as source classes.
+        - Class: Item.class, ItemGroup.class
+        - Field: fixedPrice
+    
+    - **Change Process** — How producer-side changes are released, such as PRs, release notes, schema changes, or standard CI/CD process.
+        - 8 releases: https://cloud.ebay.com/app/detail/crlstngsv/ecd?pipelineId=48317243&count=10&pageSize=10&current=1
+        - 10 PRs in last month: https://github.corp.ebay.com/SellingDomain/crlstngsv/pulls?q=is%3Apr+
+    
+    **Semantic Knowledge**
 
-    **How teams usually use it**
+    - **Schema** — Entities, fields, data types, primary keys
+        - Data Type: double
 
-    Teams usually use this field as the Buy It Now or fixed-price amount for pricing analysis, active listing analysis, and price-based filtering. For auction-style listings, consumers should interpret it together with `auct_type_code` and `start_price_lstg_curncy`.
+    - **Semantics** — Entity and field business definitions
+        - Description: Buy It Now price in listing currency in View Item page.
+    
+    - **Data Lineage** (from source to LDM process, including Transformation / Cleaning Knowledge) — How data moves across the end-to-end data flow, from source models to landed data, transformed data, and downstream consumption.
+        - Extract data from 5 keyspaces, merge, and transform to LDM fields. [ai-summary]
+        - ETL Code: [link]
+        - Data Flow Diagram: https://lucid.app/lucidchart/73cbffe1-905b-415f-a5ca-39c1ecf8ad6b/edit?invitationId=inv_d08689cb-9ea6-43bc-96d8-ff416c09b61f&page=a1vXV8fI_cE.#
+
+    - **Data Profiling** — Observed data characteristics such as null rate, cardinality, value distribution, sample values.
+        - min: 0, max: 100,000, avg: 300
+    
+    - **Data Quality** — Data quality rules the data must satisfy.
+        - not null
+        - not negative
+
+    - **Data Availability** — Data freshness and delivery SLA
+        - Freshness: daily
+        - SLA: P99 - 7:00 AM PST, P90 - 4:00 AM PST
+    
+    **Consumption Knowledge**
+
+    - **Consumption Patterns** — Common ways users consume and interpret the data.
+        - GMV Calculation
+        - Attribution (Ads, Marketing, Search, etc)
+    
+    - **Adoption** — Usage and adoption, along with the business scenarios, decisions, and downstream products that depend on the data.
+        - 500 MAU (monthly active users querying this field)
+        - Main downstream use cases:
+            - Financial report on Quickstrike, value: [to be provided]
 
 **`start_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
 
@@ -103,6 +130,22 @@ The number of items sold in the listing.
 **`lot_size`** <span class="field-type">INTEGER</span>
 
 Number of individual physical items per sale unit.
+
+**`slr_id`** <span class="field-type">LONG</span>
+
+Seller's Oracle user ID associated with the listing. Foreign key to [User LDM](user.md).
+
+**`slr_prdct_id_txt`** <span class="field-type">STRING</span>
+
+Seller-defined product identifier text (e.g. manufacturer part number/ISBN/UPC). Empty if not provided.
+
+**`sku_num`** <span class="field-type">STRING</span>
+
+Seller&#x27;s custom, application-specific data associated with the item. Data specified here is stored by eBay with the item for seller but it is not used by eBay in any way.
+
+**`application_id`** <span class="field-type">LONG</span>
+
+Application identifier used by external consumers to identify the application or listing tool associated with listing creation. This ID is a foreign key/code to the application logical data model; join to the [Application LDM](#) to get the application name. Common examples include 219527 = BOLT, 290356 = BOLT B2C, 384352 = HELIX, 2828 = File Exchange, 114100 = Auto Relist.
 
 **`lstg_status_id`** <span class="field-type">INTEGER</span>
 
@@ -777,7 +820,7 @@ Product ID provided by the seller on the listing; use st_prod_ref_id for seller-
 
 **`adpt_cnfdnc_num`** <span class="field-type">INTEGER</span>
 
-Confidence number of passive adoption.
+The confidence score of Auto-Tagged ePID. It's a number from 0 to 100. 100 means the most confidence.
 
 **`mdl_ref_id`** <span class="field-type">LONG</span>
 
