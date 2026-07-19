@@ -41,7 +41,7 @@ Length of the encoded item description content.
 Buy It Now price in listing currency in View Item page.
 
 ??? field-context "More context"
-    
+
     **Producer Knowledge**
 
     - **Producer Ownership** — The team and application that owns and maintains the source data
@@ -49,7 +49,7 @@ Buy It Now price in listing currency in View Item page.
         - Notification Email: DL-eBay-ListingRedesign@ebay.com
         - OnCall Service: https://ebay-cpt.pagerduty.com/service-directory/$PZMGJDA
         - Service Link: https://cloud.ebay.com/app/detail/crlstngsv/overview
-    
+
     - **Producer Process** — How producer applications write data to the source system.
         - Service Name: Core Listing Service
         - Source Code: https://github.corp.ebay.com/SellingDomain/crlstngsv
@@ -77,16 +77,26 @@ Buy It Now price in listing currency in View Item page.
         - Description: Buy It Now price in listing currency in View Item page.
     
     - **Data Lineage** (Source → LDM) — How data from source systems is extracted, transformed, and mapped into Logical Data Model (LDM) fields, including key transformation and data-cleaning decisions that turn raw inputs into consumption-ready outputs.
-        - Data Flow Summary: Extract itemkeyspace.ItemQtyPrice.fixedPrice from two NuDoc keyspaces (ItemKeyspace and ItemGroupKeyspace) via ZeroETL, covering five docsets. Consolidate into SSKU and MSKU item price entities, then merge and transform into bin_price_lstg_curncy at the item level. [AI Summary]
-        - ETL Code: [Link to be provided]
+        - Data Flow Summary: Extract itemkeyspace.ItemQtyPrice.fixedPrice from two NuDoc keyspaces (ItemKeyspace and ItemGroupKeyspace) via ZeroETL, covering five docsets. Consolidate into SSKU and MSKU entities, then merge and transform into bin_price_lstg_curncy at the item level. [AI Summary]
+        - ETL Code: https://github.corp.ebay.com/jiajsun/dw_lstg_item
         - Data Flow Diagram: https://lucid.app/lucidchart/73cbffe1-905b-415f-a5ca-39c1ecf8ad6b/edit?invitationId=inv_d08689cb-9ea6-43bc-96d8-ff416c09b61f&page=a1vXV8fI_cE.#
 
     - **Data Profiling** — Observed data characteristics such as null rate, cardinality, value distribution, sample values.
-        - min: 0, max: 100,000, avg: 300
+        - ~6.8B items have an amount greater than 0 (min: 0.01; max: 9,999,999,827,968); all remaining items have an amount of 0.
+        - Records with non-zero amounts are mainly distributed across Chinese Auction, Dutch Auction (disabled after 2010), and Auction Personal Offer/Second Chance Offer listings.
     
     - **Data Quality** — Data quality rules the data must satisfy.
         - not null
         - not negative
+        - Check new listing data for Chinese Auction listings sold through Buy It Now. The `bin_price_lstg_curncy` value must be greater than 0.
+            ```sql
+            SELECT *
+            FROM GDS.item
+            WHERE AUCT_TYPE_CODE = 1
+              AND BIN_SOLD_UP_FLAG = 1
+              AND BIN_PRICE_LSTG_CURNCY = 0
+              AND AUCT_END_DT > CURRENT_DATE;
+            ```
 
     - **Data Availability** — Data freshness and delivery SLA
         - Freshness: daily
@@ -95,13 +105,15 @@ Buy It Now price in listing currency in View Item page.
     **Consumption Knowledge**
 
     - **Consumption Patterns** — Common ways users consume and interpret the data.
-        - GMV Calculation
-        - Attribution (Ads, Marketing, Search, etc)
+        - Normally join with `gds.exchanging_rate` to convert the amount to USD: `gds.item.bin_price_lstg_curncy * gds.exchanging_rate.USD_value`.
+        - GMV calculation for paid items: Buy It Now amount in USD + shipping fee + tax fee.
     
     - **Adoption** — Field-level usage and what business decisions or downstream use cases rely on it.
-        - 500 MAU (monthly active users querying this field)
+        - 1,000+ MAU (monthly active users querying this field)
         - Main downstream use cases:
-            - Financial report on Quickstrike, value: [to be provided]
+            - CBT seller business and policy analysis — CBT
+            - Legal purposes — Legal
+            - Reporting changes in listing behavior with respect to price changes and promotions — Dhanesh, Lakshmi
 
 **`start_price_lstg_curncy`** <span class="field-type">DOUBLE</span>
 
@@ -150,6 +162,73 @@ Application identifier used by external consumers to identify the application or
 **`lstg_status_id`** <span class="field-type">INTEGER</span>
 
 Listing lifecycle status code. Values: 0 = Live, 1 = Ended, 2 = Admin ended, 3 = Schedule Deleted, 4 = Scheduled.
+
+??? field-context "More context"
+
+    **Producer Knowledge**
+
+    - **Producer Ownership** — The team and application that owns and maintains the source data
+        - Team Name: SX Inventory Mgmt - Listing Platform Core Services
+        - Notification Email: DL-eBay-ListingRedesign@ebay.com
+        - OnCall Service: https://ebay-cpt.pagerduty.com/service-directory/$PZMGJDA
+        - Service Link: https://cloud.ebay.com/app/detail/crlstngsv/overview
+
+    - **Producer Process** — How producer applications write data to the source system.
+        - Service Name: Core Listing Service
+        - Source Code: https://github.corp.ebay.com/SellingDomain/crlstngsv
+        - Processes: Core Listing Service updates the listing status as listings are created, scheduled, activated, ended, administratively ended, or deleted from the schedule. [AI Summary]
+
+    - **Source Storage** — Physical storage information of source data, such as NuDoc keyspace, Oracle db.
+        - NuDoc Keyspace Name: ItemKeyspace, ItemGroupKeyspace
+        - NuDoc Link: https://qa.cloud.ebay.com/cloud-data/databases/nudocument/keyspaces/ItemKeyspace
+        - Oracle Table: item_cancelling_pending
+
+    - **Source Model Design** — The data structure written by producer applications, such as source classes.
+        - Class: `Item.java` (extends `BaseItem.java`)
+        - Java Fields: `endReason`, `endDate`, `startDate`, `format`, `secondChanceItem`, `isBidsFinalized`, `duration`, `isScheduled`
+        - NuDoc Fields: `__ROOT__.endRsn`, `__ROOT__.lifecycle.endDt`, `__ROOT__.lifecycle.startDt`, `__ROOT__.format`, `__ROOT__.scndChncItm`, `__ROOT__.bidsFl`, `__ROOT__.lifecycle.duration`, `__ROOT__.lifecycle.schdldLstng`
+
+    - **Change Process** — How producer-side changes are released, such as PRs, release notes, schema changes, or standard CI/CD process.
+        - 8 releases: https://cloud.ebay.com/app/detail/crlstngsv/ecd?pipelineId=48317243&count=10&pageSize=10&current=1
+        - 10 PRs in last month: https://github.corp.ebay.com/SellingDomain/crlstngsv/pulls?q=is%3Apr+
+
+    **Semantic Knowledge**
+
+    - **Schema** — Entities, fields, data types, primary keys
+        - Data Type: integer
+
+    - **Semantics** — Entity and field business definitions
+        - Description: Listing lifecycle status code. Values: 0 = Live, 1 = Ended, 2 = Admin ended, 3 = Schedule Deleted, 4 = Scheduled.
+
+    - **Data Lineage** (Source → LDM) — How data from source systems is extracted, transformed, and mapped into Logical Data Model (LDM) fields, including key transformation and data-cleaning decisions that turn raw inputs into consumption-ready outputs.
+        - Data Flow Summary: Consolidate incremental and archived listing records, then derive the listing status from the source type, end indicators, sale status and dates, and scheduled-listing indicators. Pending cancellation records sourced from the Oracle `item_cancelling_pending` table are used to identify schedule-deleted listings. Assign archived or admin-ended records to `2`, pending cancellations to `3`, scheduled listings to `4`, ended listings to `1`, and remaining listings to `0`. The derived status is mapped to `lstg_status_id` in the Item LDM. [AI Summary]
+        - ETL Code: https://github.corp.ebay.com/jiajsun/dw_lstg_item
+        - Data Flow Diagram: https://lucid.app/lucidchart/73cbffe1-905b-415f-a5ca-39c1ecf8ad6b/edit?invitationId=inv_d08689cb-9ea6-43bc-96d8-ff416c09b61f&page=a1vXV8fI_cE.#
+
+    - **Data Profiling** — Observed data characteristics such as null rate, cardinality, value distribution, sample values.
+        - Potential values: `0 = Live`, `1 = Ended`, `2 = Admin ended`, `3 = Schedule Deleted`, and `4 = Scheduled`.
+        - Distribution in new listing data: `0: 90%`, `1: 5%`, `2: 1%`, `3: 1%`, `4: 3%`.
+
+    - **Data Quality** — Data quality rules the data must satisfy.
+        - not null
+        - Value must be one of `0`, `1`, `2`, `3`, or `4`.
+
+    **Consumption Knowledge**
+
+    - **Consumption Patterns** — Common ways users consume and interpret the data.
+        - 2000+ daily queries.
+        - **Top 1 (~70%): Live inventory scoping filter.** `lstg_status_id = 0` is almost always paired with `auct_end_dt >= CURRENT_DATE`.
+            - Fitment live-listing extract for sellers — defines "currently live."
+            - FOD seller experiments — use `lstg_status_id = 0` to count each experiment seller's active listings as a metric or feature.
+            - Draft-or-live seller segmentation (feeds an SMO marketing ticket) — uses `lstg_status_id = 0` to flag sellers with at least one live listing.
+            - Tax-category rule audit — uses `lstg_status_id = 0` to restrict the tax-category-matching audit to currently live listings only.
+        - **Top 2 (~10%): Exclusion of not-yet-started listings.** Uses `lstg_status_id <> 4`.
+            - Historical seller listing summary — excludes scheduled (not-yet-live) listings while keeping live, ended, and admin-ended listings for trend statistics.
+
+    - **Adoption** — Field-level usage and what business decisions or downstream use cases rely on it.
+        - 1,000+ MAU (monthly active users querying this field)
+        - Main downstream use cases:
+            - Marketing feeds supporting approximately $1B GMV
 
 **`auct_type_code`** <span class="field-type">INTEGER</span>
 
