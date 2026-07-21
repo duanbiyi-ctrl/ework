@@ -217,7 +217,7 @@ Listing lifecycle status code. Values: 0 = Live, 1 = Ended, 2 = Admin ended, 3 =
 
     - **Consumption Patterns** — Common ways users consume and interpret the data.
         - 2000+ daily queries.
-        - **Top 1 (~70%): Live inventory scoping filter.** `lstg_status_id = 0` is almost always paired with `auct_end_dt >= CURRENT_DATE`.
+        - **Top 1 (~70%): Live inventory scoping filter.** Use `lstg_status_id = 0`. (Use `auct_end_dt >= CURRENT_DATE` for performance optimization.)
             - Fitment live-listing extract for sellers — defines "currently live."
             - FOD seller experiments — use `lstg_status_id = 0` to count each experiment seller's active listings as a metric or feature.
             - Draft-or-live seller segmentation (feeds an SMO marketing ticket) — uses `lstg_status_id = 0` to flag sellers with at least one live listing.
