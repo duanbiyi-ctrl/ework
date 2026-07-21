@@ -1255,7 +1255,7 @@
 <ul>
 <li>Service Name: Core Listing Service</li>
 <li>Source Code: https://github.corp.ebay.com/SellingDomain/crlstngsv</li>
-<li>Processes: 1. new listing 2. modify price [AI Summary]</li>
+<li>Processes: Within Core Listing Service, seller listing-create and price-revision requests provide the Buy It Now price. CLS maps and persists that price with the listing currency, and exposes it to downstream consumers. CLS does not determine the full View Item display or checkout eligibility.</li>
 </ul>
 </li>
 <li>
@@ -1398,7 +1398,7 @@
 <ul>
 <li>Service Name: Core Listing Service</li>
 <li>Source Code: https://github.corp.ebay.com/SellingDomain/crlstngsv</li>
-<li>Processes: Core Listing Service updates the listing status as listings are created, scheduled, activated, ended, administratively ended, or deleted from the schedule. [AI Summary]</li>
+<li>Processes: Within Core Listing Service, lifecycle operations such as scheduling, ending, admin-ending, and cancelling a pending listing update lifecycle markers or delete a pending record. CLS publishes or exposes the resulting listing state to downstream consumers. The service does not own every upstream trigger or every buyer-facing rendering decision.</li>
 </ul>
 </li>
 <li>
@@ -1468,7 +1468,7 @@
 <p><strong>Consumption Patterns</strong> — Common ways users consume and interpret the data.</p>
 <ul>
 <li>2000+ daily queries.</li>
-<li><strong>Top 1 (~70%): Live inventory scoping filter.</strong> <code>lstg_status_id = 0</code> is almost always paired with <code>auct_end_dt &gt;= CURRENT_DATE</code>.<ul>
+<li><strong>Top 1 (~70%): Live inventory scoping filter.</strong> Use <code>lstg_status_id = 0</code>. (Use <code>auct_end_dt &gt;= CURRENT_DATE</code> for performance optimization.)<ul>
 <li>Fitment live-listing extract for sellers — defines "currently live."</li>
 <li>FOD seller experiments — use <code>lstg_status_id = 0</code> to count each experiment seller's active listings as a metric or feature.</li>
 <li>Draft-or-live seller segmentation (feeds an SMO marketing ticket) — uses <code>lstg_status_id = 0</code> to flag sellers with at least one live listing.</li>
