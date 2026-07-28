@@ -70,6 +70,8 @@ nav:
           - Product: entities/product.md
       - Relationship:
           - Item Common Attribute Value Mapping: relationships/item_common_attribute_value_mapping.md
+      - Business Process:
+          - Item: entities/item-business-process.md
   - Guides:
       - Migration Guide: guides/migration-guide.md
       - Query Examples: guides/query-examples.md
