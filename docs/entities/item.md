@@ -53,7 +53,7 @@ Buy It Now price in listing currency in View Item page.
     - **Producer Process** — How producer applications write data to the source system.
         - Service Name: Core Listing Service
         - Source Code: https://github.corp.ebay.com/SellingDomain/crlstngsv
-        - Processes: Core Listing Service (CLS) produces Item data when a seller or authorized eBay system creates, revises, or removes supported listing information. It records changes such as inventory updates, listing lifecycle transitions, ending or relisting a listing, administrative actions, and PII deletion. CLS validates each request, stores the accepted result, and provides the listing's latest recorded state to other eBay systems. This data explains how the listing is configured and where it is in its lifecycle.
+        - Processes: Core Listing Service produces the listing's Buy It Now price when a seller or authorized eBay workflow creates a fixed-price offer, and updates it when the listing price, promotion, offer configuration, or relist information changes. CLS accepts and stores the resulting listing-currency amount for downstream Item LDM publication. This process does not establish localized buyer pricing, tax, checkout total, or final paid amount.
 
     - **Source Storage** — Physical storage information of source data, such as NuDoc keyspace, Oracle db.
         - NuDoc Keyspace Name: ItemKeyspace, ItemGroupKeyspace
@@ -176,7 +176,7 @@ Listing lifecycle status code. Values: 0 = Live, 1 = Ended, 2 = Admin ended, 3 =
     - **Producer Process** — How producer applications write data to the source system.
         - Service Name: Core Listing Service
         - Source Code: https://github.corp.ebay.com/SellingDomain/crlstngsv
-        - Processes: Core Listing Service (CLS) produces Item data when a seller or authorized eBay system creates, revises, or removes supported listing information. It records changes such as inventory updates, listing lifecycle transitions, ending or relisting a listing, administrative actions, and PII deletion. CLS validates each request, stores the accepted result, and provides the listing's latest recorded state to other eBay systems. This data explains how the listing is configured and where it is in its lifecycle.
+        - Processes: Core Listing Service sets or updates this lifecycle code when a listing is created or scheduled, becomes live, ends, is administratively ended, is schedule-deleted, relisted, or corrected through reconciliation. CLS stores the accepted lifecycle state for downstream Item LDM publication. The code describes the listing lifecycle recorded by CLS, not buyer eligibility, search visibility, or checkout availability.
     - **Source Storage** — Physical storage information of source data, such as NuDoc keyspace, Oracle db.
         - NuDoc Keyspace Name: ItemKeyspace, ItemGroupKeyspace
         - NuDoc Link: https://qa.cloud.ebay.com/cloud-data/databases/nudocument/keyspaces/ItemKeyspace
