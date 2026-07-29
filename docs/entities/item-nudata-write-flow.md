@@ -74,6 +74,165 @@ item and group state with multi-docset gets, read drafts through draft
 queries/gets, read active drafts through `UserItemDraftMap`, and read revision
 history through ancestor queries.
 
+### 1.1. From request input to Java entity
+
+There are two main producer entry paths:
+
+1. **Direct V2 client input.** A caller sends a JSON request to a V2 resource.
+   The web framework binds the request body to the Java parameter declared by
+   the resource: `Item`, `ItemGroup`, `PriceAndQuantity`, `ListingDraft`, or
+   another operation-specific request type. The resource performs
+   authorization and passes that typed object to the corresponding processor.
+   For example, `CoreItemResource.createItem(Item)` passes an `Item` to
+   `CoreItemProcessor.insertItem(Item, ...)`, while
+   `CoreItemGroupResource.createItemGroup(ItemGroup)` passes an `ItemGroup` to
+   `CoreItemGroupProcessor.insertItemGroup(ItemGroup, ...)`.
+
+2. **Legacy V1 dual-write input.** A legacy listing request is first represented
+   by V1 Java entities such as `Listing`, `ListingDetails`, and `SaleBo`.
+   `DualWriteProcessor` invokes `ListingConverter`, which builds one or more
+   V2 `Item` objects and, only for an MSKU listing, an `ItemGroup`. The V1
+   listing ID, variation data, seller SKU, pricing, quantity, lifecycle,
+   policies, and other source values are normalized into the V2 model before
+   any NuData document is built. Runtime ramps can make this conversion/write
+   synchronous, asynchronous, parallel, or disabled.
+
+The important boundary is that NuData writers do not normally serialize the
+incoming HTTP JSON directly into storage. The request is first represented as
+a Java domain/request object, then passed through the processor and converter
+logic that applies the path's validation and normalization. The Java object is
+the source of truth for the document-building step described below.
+
+### 1.2. `Item` producer path
+
+For a direct V2 item create or replace, the flow is:
+
+```text
+JSON request body
+  -> Java Item
+  -> CoreItemProcessor.insertItem/upsertItem
+  -> DocumentConverter
+  -> six ItemKeyspace Documents
+  -> ancestor/child Keys
+  -> transactional MonStor InsertRequest
+```
+
+`CoreItemProcessor` derives stable child identifiers from `itemId`, such as
+`COMPAT_<itemId>`, `DESC_<itemId>`, `QTY_PRICE_<itemId>`,
+`ITEM_DETAILS_<itemId>`, and `BIZ_POL_<itemId>`. It then asks
+`DocumentConverter` to build:
+
+| Java source object | Converter method | NuData document |
+| --- | --- | --- |
+| `Item` | `getRoot(item)` | `ItemKeyspace/__ROOT__` |
+| `Item` | `getItemCompatibility(item, compatibilityId)` | `ItemKeyspace/ItemCompatibility` |
+| `Item` | `getDescription(item, descriptionId)` | `ItemKeyspace/ItemDescription` |
+| `Item` | `getQtyPrice(item, qtyPriceId)` | `ItemKeyspace/ItemQtyPrice` |
+| `Item` | `getItemDetails(item, itemDetailsId)` | `ItemKeyspace/ItemDetails` |
+| `Item.businessPolicies` | `getBusinessPolicies(..., bizPolId)` | `ItemKeyspace/BusinessPolicies` |
+
+Each converter creates a NuData schema object, copies or transforms Java
+properties, serializes that object through the configured Jackson
+`ObjectMapper` into an `ObjectNode`, and wraps it with
+`DocumentFactory.createDocument(...)`. Examples of transformations include
+category and lifecycle construction, image conversion, amount conversion,
+expanded-versus-compressed descriptions and compatibilities, and conversion
+of return/payment/shipping terms.
+
+The processor then builds the item ancestor key and child keys, adds the six
+documents to a transactional MonStor request, and executes it. A create path
+uses `addForInsert`; a replace/upsert path uses `addForUpsert` and can apply a
+core-listing-version filter to prevent an older update from overwriting newer
+state. A successful response means the accepted current item state has been
+written to the six logical docsets; it does not mean every possible auxiliary
+docset such as `UuidMap` or `ItemLock` was written.
+
+### 1.3. `ItemGroup` producer path
+
+For a direct V2 item-group create or the processor's upsert path, the flow is:
+
+```text
+JSON request body
+  -> Java ItemGroup
+  -> CoreItemGroupProcessor.insertItemGroup/upsertItemGroup
+  -> ItemGroupDocumentConverter + DocumentConverter
+  -> three ItemGroupKeyspace Documents
+  -> ancestor/child Keys
+  -> transactional MonStor InsertRequest
+```
+
+`CoreItemGroupProcessor` derives `GROUP_DESC_<groupId>` and
+`BIZ_POL_<groupId>`, then builds:
+
+| Java source object | Converter method | NuData document |
+| --- | --- | --- |
+| `ItemGroup` | `ItemGroupDocumentConverter.getRoot(group, lastModifiedDate)` | `ItemGroupKeyspace/__ROOT__` |
+| `ItemGroup` | `ItemGroupDocumentConverter.getDescription(group, descriptionId)` | `ItemGroupKeyspace/GroupDescription` |
+| `ItemGroup.businessPolicies` | `DocumentConverter.getBusinessPolicies(..., bizPolId)` | `ItemGroupKeyspace/GroupBusinessPolicies` |
+
+The group root contains group identity, member variation IDs, shared images,
+variation traits, group version, and group-level identifiers. The description
+and policy documents are separate child documents so they can be updated
+independently. The group processor adds all three documents to one
+transactional request; it does not write variation price or quantity into the
+group root.
+
+The current `CoreItemGroupResource` replace methods are stubs that return
+`null`; the processor upsert path is nevertheless used by the V1 dual-write
+flow and is the code-proven group replacement implementation described here.
+
+### 1.4. SSKU/MSKU conversion and write branching
+
+The legacy conversion path determines whether a group exists before the
+NuData write:
+
+```text
+V1 Listing + SaleBo
+  -> ListingConverter.getItemsFromListing(...)
+       -> one Item for SSKU
+       -> one Item per active variation for MSKU
+  -> ListingConverter.getItemGroupFromListing(...)
+       -> null for SSKU
+       -> one ItemGroup for MSKU
+  -> group write (MSKU only)
+  -> item write or batch item write
+```
+
+For an MSKU listing, `ListingConverter` creates the group ID from the parent
+listing ID, collects the active variation item IDs into `ItemGroup.itemIds`,
+and assigns that parent ID to each variation `Item.groupId`. Shared
+description, business policies, compatibilities, and some identifiers are
+stored on the group and cleared from the variation `Item` objects instead of
+being repeated. `CoreItemProcessor.insertItems(...)` then builds and inserts
+the complete six-document item family for each variation.
+
+For an SSKU listing, the converter returns one ordinary `Item` and no
+`ItemGroup`; the processor writes only the item family. An MSKU with one
+active variation still takes the MSKU branch and writes an `ItemGroup` whose
+`itemIds` contains one variation ID.
+
+### 1.5. Draft input follows the same boundary with a draft model
+
+For V2 listing drafts, the request body is bound to `ListingDraft`. The draft
+processor validates it and `DraftDocumentConverter` builds the draft root,
+item drafts, optional group draft, descriptions, and compatibility documents.
+The converter assigns or normalizes draft variation IDs, serializes each
+NuData schema object into a `Document`, and the processor writes the assembled
+documents transactionally. SSKU drafts have item content without a group
+draft; MSKU drafts have group content plus one item draft per variation.
+
+### 1.6. Partial updates do not rebuild the whole Java entity
+
+Operation-specific requests such as price/quantity, category, product
+reference, hold status, business-policy reference, description, or item lock
+updates can bypass the full create/replace conversion. The processor converts
+only the changed request data or builds an update operation directly against
+the affected root or child docset. For example, price/quantity changes target
+`ItemQtyPrice` and related root state, a category change targets the root
+category fields, and a lock operation writes `ItemLock` plus its inventory
+side effect. Therefore, “one item write” may mean a six-docset replacement or
+a narrower mutation of one or two existing docsets.
+
 ## 2. Schema, key layout, field inventory, and model lineage
 
 `Docset` is the repository's schema abstraction: a Java class represents a
