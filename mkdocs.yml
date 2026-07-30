@@ -58,16 +58,37 @@ nav:
   - Overview: index.md
   - Core Concepts: concepts/core-concepts.md
   - LDM Catalog:
-      - Entity:
+      - Govern:
           - Item: entities/item.md
-          - Site: entities/site.md
-          - Category: entities/category.md
-          - Country: entities/country.md
-          - User: entities/user.md
-          - MSKU: entities/msku.md
-          - SSKU: entities/ssku.md
           - Variation: entities/variation.md
-          - Product: entities/product.md
+      - Raw:
+          - Item LDMs:
+              - ItemRoot LDM: entities/itemkeyspace-root.md
+              - ItemCompatibility LDM: entities/itemkeyspace-item-compatibility.md
+              - ItemDescription LDM: entities/itemkeyspace-item-description.md
+              - ItemPriceAndQuantity LDM: entities/itemkeyspace-item-qty-price.md
+              - ItemDetails LDM: entities/itemkeyspace-item-details.md
+              - ItemBusinessPolicies LDM: entities/itemkeyspace-business-policies.md
+              - ItemUUIDMapping LDM: entities/itemkeyspace-uuid-map.md
+              - ItemLock LDM: entities/itemkeyspace-item-lock.md
+          - Item Group LDMs:
+              - ItemGroupRoot LDM: entities/itemgroupkeyspace-root.md
+              - ItemGroupDescription LDM: entities/itemgroupkeyspace-group-description.md
+              - ItemGroupBusinessPolicies LDM: entities/itemgroupkeyspace-group-business-policies.md
+          - Listing Draft LDMs:
+              - ListingDraftRoot LDM: entities/listingdraft-root.md
+              - ListingDraftItem LDM: entities/listingdraft-item-draft.md
+              - ListingDraftItemCompatibility LDM: entities/listingdraft-item-draft-compatibility.md
+              - ListingDraftGroup LDM: entities/listingdraft-item-group-draft.md
+              - ListingDraftGroupCompatibility LDM: entities/listingdraft-item-group-draft-compatibility.md
+              - ListingDraftGroupDescription LDM: entities/listingdraft-item-group-draft-desc.md
+          - User Listing Draft LDM:
+              - UserListingDraftMap LDM: entities/userlistingdraft-user-item-draft-map.md
+          - Listing Revision LDMs:
+              - ListingRevisionRoot LDM: entities/listingrevisionkeyspace-root.md
+              - ListingRevision LDM: entities/listingrevisionkeyspace-listing-revision.md
+              - ListingRevisionDetail LDM: entities/listingrevisionkeyspace-listing-revision-detail.md
+              - ListingVariationRevisionDetail LDM: entities/listingrevisionkeyspace-variation-revision-detail.md
       - Relationship:
           - Item Common Attribute Value Mapping: relationships/item_common_attribute_value_mapping.md
       - Business Process:
