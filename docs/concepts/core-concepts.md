@@ -19,12 +19,16 @@ Understanding the foundational concepts in the Item domain.
     
     **Example:** 
     
-    *"Apple iPhone 17 Pro (Unlocked, AT&T, Verizon, T-Mobile) New Open Box, Never Used"*
+    ![Item Example](../assets/item-example.png){ width="800" }
+    
+    *"Apple iPhone 17 Pro for (AT&T or Cricket) - New Open Box, Never Used"*
     
     - Item ID: 227255267188
-    - Price: $1,129.99
-    - Attributes: Brand=Apple, Condition=Open Box, Storage=256GB, Network=Unlocked
-    - Aspects: Screen Size=6.3", Operating System=iOS, Camera Resolution=48MP
+    - Price: $1,029.99
+    
+    ![Item Attributes Example](../assets/item-attributes.png){ width="800" }
+
+    - Attributes: Brand=Apple, Condition=Open Box, Processor=A19 Pro, Style=Smartphone, etc
 
 ### Variation
 
@@ -39,6 +43,8 @@ Understanding the foundational concepts in the Item domain.
     
     **Example:**
     
+    ![Item Variation Example](../assets/item-variation-example.png){ width="800" }
+
     For the iPhone listing above, variations might include:
     
     - Variation 1: Network=AT&T, Storage=256GB, Color=Blue
