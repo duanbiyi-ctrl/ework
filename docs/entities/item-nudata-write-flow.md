@@ -10,14 +10,14 @@ and delete mutations.
 
 There are **22 declared logical docsets** in the source:
 
-| Keyspace family | Logical docsets | Count |
-| --- | --- | ---: |
-| `ItemKeyspace` | `__ROOT__`, `ItemCompatibility`, `ItemDescription`, `ItemQtyPrice`, `ItemDetails`, `BusinessPolicies`, `UuidMap`, `ItemLock` | 8 |
-| `ItemGroupKeyspace` | `__ROOT__`, `GroupDescription`, `GroupBusinessPolicies` | 3 |
-| `ListingDraft` | `__ROOT__`, `ItemDraft`, `ItemGroupDraft`, `ItemDraftCompatibility`, `ItemGroupDraftCompatibility`, `ItemGroupDraftDesc` | 6 |
-| `UserListingDraft` | `UserItemDraftMap` | 1 |
-| `ListingRevisionKeyspace` | `__ROOT__`, `ListingRevision`, `ListingRevisionDetail`, `VariationRevisionDetail` | 4 |
-| **Total** |  | **22** |
+| Keyspace family | Domain purpose | Logical docsets | Count |
+| --- | --- | --- | ---: |
+| `ItemKeyspace` | Current-state identity and operational data for one listing item or variation | `__ROOT__`, `ItemCompatibility`, `ItemDescription`, `ItemQtyPrice`, `ItemDetails`, `BusinessPolicies`, `UuidMap`, `ItemLock` | 8 |
+| `ItemGroupKeyspace` | Shared current-state data for an MSKU item group | `__ROOT__`, `GroupDescription`, `GroupBusinessPolicies` | 3 |
+| `ListingDraft` | Working content and session state before or during listing publication | `__ROOT__`, `ItemDraft`, `ItemGroupDraft`, `ItemDraftCompatibility`, `ItemGroupDraftCompatibility`, `ItemGroupDraftDesc` | 6 |
+| `UserListingDraft` | User-scoped index of active listing drafts | `UserItemDraftMap` | 1 |
+| `ListingRevisionKeyspace` | Historical listing and variation changes, separate from current state | `__ROOT__`, `ListingRevision`, `ListingRevisionDetail`, `VariationRevisionDetail` | 4 |
+| **Total** |  |  | **22** |
 
 For ordinary live data writes, the item create/replace family writes six
 docsets, item-group create/replace writes three, an SSKU draft writes two or
@@ -43,6 +43,95 @@ there are **24 sink pairs**:
 The archive keyspaces reuse the item and group schema classes, so they add two
 physical keyspace/docset sinks but no new logical docset class. The count does
 not claim that all 24 sinks are touched by one business operation.
+
+The five rows above are the logical live keyspaces described by this
+document. `ItemKeyspaceArchive` and `ItemGroupKeyspaceArchive` are archive
+variants that reuse the root schemas; they are physical write targets, not
+additional logical keyspace families.
+
+## Keyspace and docset purpose catalog
+
+This catalog explains what each keyspace represents and why each docset exists.
+The hierarchy role describes the document's relationship to its ancestor; it
+does not imply that every docset is written by every operation.
+
+### `ItemKeyspace`
+
+`ItemKeyspace` is the current-state family for one individual listing item or
+one variation of an MSKU listing. The item root is the identity anchor.
+Compatibility, description, quantity/price, details, and business-policy
+payloads are separated so they can be read and updated independently.
+`UuidMap` and `ItemLock` are auxiliary operational trees in the same keyspace,
+not additional parts of the normal six-docset item create/replace payload.
+
+| Docset | Description and purpose | Hierarchy and key context |
+| --- | --- | --- |
+| `__ROOT__` (`ItemRoot`) | Broad current-state item document: listing identity, seller/location, lifecycle, category, policy references, flags, identifiers, media references, and other item-level state. | Root of the item ancestor tree; persisted primary key `PK`, normally equal to `itemId`. |
+| `ItemCompatibility` | Fitment and compatibility payload for the item, with expanded or compressed representation. | Child of the item ancestor; `ItemCompID`, normally `COMPAT_<itemId>`. |
+| `ItemDescription` | Seller/item description payload and its revision timestamp, with expanded or compressed representation. | Child of the item ancestor; `ItemDescID`, normally `DESC_<itemId>`. |
+| `ItemQtyPrice` | Commercial and inventory state: available quantity, sold quantity, remnant quantity, and price variants. | Child of the item ancestor; `ItemQtyPriceID`, normally `QTY_PRICE_<itemId>`. |
+| `ItemDetails` | Additional item-level details such as high-precision prices, relaxed rules, source listing, and supporting documents. | Child of the item ancestor; `itemDetailsID`, normally `ITEM_DETAILS_<itemId>`. |
+| `BusinessPolicies` | Item-level return, payment, and shipping policy content and identifiers. | Child of the item ancestor; `plcsId`, normally `BIZ_POL_<itemId>`. |
+| `UuidMap` (`ItemUUIDMapping`) | Auxiliary seller-and-UUID lookup that resolves `listingId` and `listingAppId` for UUID-specific operations. | Separate UUID ancestor tree in the same keyspace; composite key is seller ID plus UUID, with `UUID_MAP` child semantics. |
+| `ItemLock` | Inventory reservation lifecycle state for active, committed, cancelled, and extended locks, including the aggregate summary lock. | Auxiliary child under the item ancestor; persisted key `pk`, normally `LOCK_<lockId>`; summary key is `LOCK_$$$SUMMARY$$$`. |
+
+### `ItemGroupKeyspace`
+
+`ItemGroupKeyspace` stores shared current-state data for an MSKU group. It
+identifies group membership and variation context while keeping
+variation-specific price, quantity, lifecycle, and other sellable state in
+the individual `ItemKeyspace` families. The group root references member item
+IDs; this is a logical relationship across keyspaces, not a cross-keyspace
+parent-child key.
+
+| Docset | Description and purpose | Hierarchy and key context |
+| --- | --- | --- |
+| `__ROOT__` (`ItemGroupRoot`) | Group identity, member item IDs, shared title/images, variation traits, group identifiers, version, and group lifecycle data. | Root of the group ancestor tree; persisted primary key `PK`, normally equal to `groupId`. |
+| `GroupDescription` | Shared description for the group, optionally compressed, with its revision timestamp. | Child of the group ancestor; `groupDescId`, normally `GROUP_DESC_<groupId>`. |
+| `GroupBusinessPolicies` | Shared group-level return, payment, and shipping policy content. | Child of the group ancestor; `plcsId`, normally `BIZ_POL_<groupId>`. It inherits the policy field shape but has a distinct collection. |
+
+### `ListingDraft`
+
+`ListingDraft` is the working-state family used while a listing is being
+constructed or revised before publication. A single `draftId` ancestor can
+contain SSKU item content, MSKU group content, compatibility content, group
+description content, and one `ItemDraft` per active MSKU variation. These
+docsets are storage children of the same draft ancestor even when one docset is
+logically associated with the item or group portion.
+
+| Docset | Description and purpose | Hierarchy and key context |
+| --- | --- | --- |
+| `__ROOT__` (`ListingDraftRoot`) | Draft session state, flags, scratch values, progress metadata, dates, and the list of variation item IDs. | Root of the draft ancestor tree; persisted primary key `PK`, normally equal to `draftId`. |
+| `ItemDraft` | Draft content for an SSKU item or one MSKU variation, including title, description, price, quantity, seller, terms, categories, media, and revision metadata. | Direct child of the draft ancestor; `PK`, normally `ITEM_<draftId>` for SSKU or `ITEM_<draftId>_<variationId>` for an MSKU variation. |
+| `ItemDraftCompatibility` | Optional SSKU compatibility payload for the draft item. | Direct storage child of the draft ancestor, logically associated with `ItemDraft`; `DraftCompID`, normally `COMPAT_<draftId>`. |
+| `ItemGroupDraft` | Shared MSKU draft-group content: group title, images, variation traits, seller group key, policies, and group ID. | Direct child of the draft ancestor; `PK`, normally `GROUP_<draftId>`. |
+| `ItemGroupDraftDesc` | Optional shared MSKU group description and description revision metadata. | Direct storage child of the draft ancestor, logically associated with `ItemGroupDraft`; `PK`, normally `GROUPDESC_<draftId>`. |
+| `ItemGroupDraftCompatibility` | Optional MSKU group-level compatibility payload. | Direct storage child of the draft ancestor, logically associated with `ItemGroupDraft`; `DraftCompID`, normally `GROUPCOMPAT_<draftId>`. |
+
+### `UserListingDraft`
+
+`UserListingDraft` is an index family for finding active listing drafts by
+user. It stores summary and lookup metadata rather than the full draft
+payload. It is intentionally separate from `ListingDraft`, so a user-index
+mutation does not automatically mutate the draft content tree.
+
+| Docset | Description and purpose | Hierarchy and key context |
+| --- | --- | --- |
+| `UserItemDraftMap` (`UserListingDraftMap`) | User-scoped summary of an active draft, including `draftId`, user, title, marketplace/application, category, images, creation mode, and timestamps. | User-and-draft composite ancestor key; the schema class has no persisted primary-key field. Conceptually `UserListingDraft/<userId>/<draftId>`. |
+
+### `ListingRevisionKeyspace`
+
+`ListingRevisionKeyspace` stores historical changes rather than the latest
+listing state. A listing ancestor can have an optional retention root, one or
+more generated revision documents, and detail children describing the
+non-variation and variation properties changed by each revision.
+
+| Docset | Description and purpose | Hierarchy and key context |
+| --- | --- | --- |
+| `__ROOT__` (`ListingRevisionRoot`) | Conditional retention state for a listing's revision history, including the listing identifier and TTL-maintenance fields. | Optional sibling under the listing ancestor; `lstgId` identifies the listing. Normal revision inserts do not create it. |
+| `ListingRevision` | Revision summary: changed property groups, revision/version identifiers, application, significant revision count, creation flag, and revision timestamp. | Generated child of the listing ancestor; the schema has no persisted key field. |
+| `ListingRevisionDetail` | Non-variation property-level change record with property group, property, change type, old value, new value, and display label. | Generated child of a particular `ListingRevision`; the schema has no persisted key field. |
+| `VariationRevisionDetail` | Variation-specific property-level change record with variation ID, changed variation property, trait values, change type, and old/new values. | Generated child of a particular `ListingRevision`; the schema has no persisted key field. |
 
 ## 1. End-to-end producer flow
 
@@ -254,12 +343,12 @@ itemId
 ├── ItemQtyPrice / QTY_PRICE_<itemId>
 ├── BusinessPolicies / BIZ_POL_<itemId>
 ├── ItemDetails / ITEM_DETAILS_<itemId>
-└── ItemQtyPrice / ItemLock / LOCK_<lockId>
+└── ItemLock / LOCK_<lockId>
 ```
 
-The lock-summary document is also in `ItemLock`, beneath the item quantity and
-price key, with the reserved summary identifier
-`LOCK_$$$SUMMARY$$$`. `UuidMap` uses a different key shape:
+The lock-summary document uses the same `ItemLock` schema and reserved
+identifier `LOCK_$$$SUMMARY$$$`. Lock mutations also update `ItemQtyPrice` to
+reflect reserved inventory. `UuidMap` uses a different key shape:
 `UUID_<sellerId>/<uuid>` with a `UUID_MAP` child.
 
 | Docset | Document role and representative fields |
@@ -419,15 +508,18 @@ for `ListingRevision`, then generated child keys for optional details:
 
 ```text
 listingId
+├── __ROOT__ / listingId [optional TTL-maintenance root]
 └── ListingRevision / generated-guid
     ├── ListingRevisionDetail / generated-guid (zero or more)
     └── VariationRevisionDetail / generated-guid (zero or more)
 ```
 
-`ListingRevision` contains revised property groups, version/application
-identifiers, significant revision count, revised date, and updated core-listing
-version. Detail documents contain revised group/property, change type, old/new
-values, and (for variation details) variation traits/ID.
+The `__ROOT__` document is an optional sibling under the listing ancestor. It
+is created or updated by expired-date maintenance, not by the normal revision
+insert. `ListingRevision` contains revised property groups,
+version/application identifiers, significant revision count, revised date, and
+updated core-listing version. Detail documents contain revised group/property,
+change type, old/new values, and (for variation details) variation traits/ID.
 
 The declared revision root class exists as a schema class and is queried by
 the revision-history code, but `RevisionHistoryNudataClient.addForInsert()`
@@ -458,6 +550,122 @@ NuData collection. The source classes use Jackson annotations, so the JSON
 property names below are the persisted names, not necessarily the Java member
 names. For item and item-group docsets, each table also includes the
 write-side source property or expression.
+
+### Complete NuDoc hierarchies and primary keys
+
+NuData uses several independent ancestor trees. A keyspace is a storage
+namespace that can contain more than one tree; `ItemKeyspace`, for example,
+contains the normal item tree, the UUID lookup tree, and the item-lock
+subtree. A docset is a child of another docset only when its storage key is
+constructed beneath that ancestor. Sharing a keyspace does not by itself make
+two docsets parent and child.
+
+#### Item current-state and auxiliary lookup trees
+
+```text
+ItemKeyspace
+├── itemId [ItemRoot / PK]
+│   ├── ItemCompatibility / COMPAT_<itemId> [ItemCompID]
+│   ├── ItemDescription / DESC_<itemId> [ItemDescID]
+│   ├── ItemQtyPrice / QTY_PRICE_<itemId> [ItemQtyPriceID]
+│   ├── ItemDetails / ITEM_DETAILS_<itemId> [itemDetailsID]
+│   ├── BusinessPolicies / BIZ_POL_<itemId> [plcsId]
+│   └── ItemLock / LOCK_<lockId> [pk; summary: LOCK_$$$SUMMARY$$$]
+└── UUID_<sellerId>/<uuid>
+    └── UuidMap / UUID_MAP [seller ID + UUID]
+```
+
+`UuidMap` is an auxiliary lookup tree, not a child payload of `ItemRoot`.
+`ItemLock` uses the item ancestor and is operationally associated with the
+quantity/price document because lock mutations update reserved inventory
+there as a side effect.
+
+#### Item-group current-state tree
+
+```text
+ItemGroupKeyspace
+└── groupId [ItemGroupRoot / PK]
+    ├── GroupDescription / GROUP_DESC_<groupId> [groupDescId]
+    └── GroupBusinessPolicies / BIZ_POL_<groupId> [plcsId]
+```
+
+#### Listing-draft tree
+
+```text
+ListingDraft
+└── draftId [ListingDraftRoot / PK]
+    ├── ItemDraft / ITEM_<draftId> [PK]                         (SSKU)
+    ├── ItemDraftCompatibility / COMPAT_<draftId> [DraftCompID] (optional SSKU)
+    ├── ItemGroupDraft / GROUP_<draftId> [PK]                  (MSKU)
+    ├── ItemGroupDraftDesc / GROUPDESC_<draftId> [PK]          (MSKU)
+    ├── ItemGroupDraftCompatibility / GROUPCOMPAT_<draftId> [DraftCompID] (optional MSKU)
+    └── ItemDraft / ITEM_<draftId>_<variationId> [PK]           (MSKU variation)
+```
+
+All six logical docsets are storage children of the same `draftId` ancestor.
+The compatibility and group-description documents are logically associated
+with the item or group portion of the draft, but they are not nested beneath
+those documents in the storage key path. An MSKU draft can contain multiple
+`ItemDraft` documents, one for each active variation.
+
+#### Active-user draft index tree
+
+```text
+UserListingDraft
+└── userId
+    └── UserItemDraftMap / draftId [composite key: userId + draftId]
+```
+
+`UserItemDraftMap` has no persisted key field in its schema class; its key is
+the composite user-and-draft ancestor shape. The repository documents the
+two-part key but does not expose a serialized delimiter or additional prefix.
+It is separate from the full `ListingDraft` content tree.
+
+#### Listing-revision history tree
+
+```text
+ListingRevisionKeyspace
+└── listingId [revision ancestor]
+    ├── __ROOT__ / listingId [lstgId; optional TTL-maintenance root]
+    └── ListingRevision / <generated-guid> [no persisted key field]
+        ├── ListingRevisionDetail / <generated-guid> [no persisted key field]
+        └── VariationRevisionDetail / <generated-guid> [no persisted key field]
+```
+
+The revision root is conditional: TTL maintenance can upsert it, but the
+normal revision-insert path starts at `ListingRevision`. Detail documents are
+children of a particular generated revision key.
+
+#### Primary-key and key-shape inventory
+
+| Hierarchy | Docset | Primary key / key shape | Representative storage key |
+| --- | --- | --- | --- |
+| Item current-state | `__ROOT__` | `PK` | `itemId` |
+| Item current-state | `ItemCompatibility` | `ItemCompID` | `COMPAT_<itemId>` |
+| Item current-state | `ItemDescription` | `ItemDescID` | `DESC_<itemId>` |
+| Item current-state | `ItemQtyPrice` | `ItemQtyPriceID` | `QTY_PRICE_<itemId>` |
+| Item current-state | `ItemDetails` | `itemDetailsID` | `ITEM_DETAILS_<itemId>` |
+| Item current-state | `BusinessPolicies` | `plcsId` | `BIZ_POL_<itemId>` |
+| Item lock subtree | `ItemLock` | `pk` | `LOCK_<lockId>`; summary `LOCK_$$$SUMMARY$$$` |
+| UUID lookup | `UuidMap` | Seller ID and UUID | `UUID_<sellerId>/<uuid>` with `UUID_MAP` child |
+| Item-group current-state | `__ROOT__` | `PK` | `groupId` |
+| Item-group current-state | `GroupDescription` | `groupDescId` | `GROUP_DESC_<groupId>` |
+| Item-group current-state | `GroupBusinessPolicies` | `plcsId` | `BIZ_POL_<groupId>` |
+| Listing draft | `__ROOT__` | `PK` | `draftId` |
+| Listing draft | `ItemDraft` | `PK` | `ITEM_<draftId>` or `ITEM_<draftId>_<variationId>` |
+| Listing draft | `ItemDraftCompatibility` | `DraftCompID` | `COMPAT_<draftId>` |
+| Listing draft | `ItemGroupDraft` | `PK` | `GROUP_<draftId>` |
+| Listing draft | `ItemGroupDraftDesc` | `PK` | `GROUPDESC_<draftId>` |
+| Listing draft | `ItemGroupDraftCompatibility` | `DraftCompID` | `GROUPCOMPAT_<draftId>` |
+| Active-user draft index | `UserItemDraftMap` | Composite ancestor key: `userId` + `draftId`; no persisted key field | `UserListingDraft/<userId>/<draftId>` (conceptual) |
+| Revision history | `__ROOT__` | `lstgId` ancestor key | `listingId` |
+| Revision history | `ListingRevision` | Generated child key; no persisted key field | `<generated-guid>` under `listingId` |
+| Revision history | `ListingRevisionDetail` | Generated child key; no persisted key field | `<generated-guid>` under a revision |
+| Revision history | `VariationRevisionDetail` | Generated child key; no persisted key field | `<generated-guid>` under a revision |
+
+Archive processors reuse the item and group root schemas under
+`ItemKeyspaceArchive` and `ItemGroupKeyspaceArchive`. Those archive roots are
+additional physical sinks, not new logical docsets or new hierarchy types.
 
 #### `ItemKeyspace/__ROOT__`
 
