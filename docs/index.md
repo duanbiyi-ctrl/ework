@@ -42,10 +42,6 @@ Here're the main LDM entities in the Item domain:
 
 <img src="assets/item-domain-ldm-map.png" alt="Item Domain LDM Map" width="700"/>
 
-
-!!! tip "New to Item LDM?"
-    Start with **item**, **variation**, and **attribute** entities - they cover most common use cases.
-
 ---
 
 ## LDM Catalog
