@@ -40,7 +40,7 @@ Understanding Item domain fundamentals:
 
 Here're the main LDM entities in the Item domain:
 
-<img src="assets/item-domain-entity-relationship.png" alt="Item Domain LDM Entity Map" width="700"/>
+<img src="assets/item-domain-ldm-map.png" alt="Item Domain LDM Map" width="700"/>
 
 
 !!! tip "New to Item LDM?"
@@ -50,44 +50,97 @@ Here're the main LDM entities in the Item domain:
 
 ## LDM Catalog
 
-| LDM Name | Type | Description | Primary Key(s) | Details |
+| LDM Name | Type | Description | Business Key(s) | Details |
 |----------|------|-------------|----------------|---------|
-| **item** | Core entity | Core listing entity | `item_id` | [Details →](entities/item.md) |
-| **variation** | Core entity | Multi-SKU variations of a listing | `variation_id` | |
-| **product** | Core entity | Product catalog reference (ePID) | `prod_ref_id` | |
-| **attribute** | Core entity | Item attributes such as brand, model, color, and material | `attribute_id` | |
-| **attribute_value** | Core entity | Attribute values such as Nike, red, or leather | `attribute_value_id` | |
-| **trait** | Core entity | Variation-level traits such as color, size, and material | `trait_name` | |
-| **aspect** | Core entity | SAP-generated classification aspects | `aspect_name`, `namespace_id`, `classifier_id` | |
-| **aspect_value** | Core entity | Aspect value definitions | `aspect_value_name` | |
-| **msku** | Core entity | Multi-SKU listing representation | `msku_id` | |
-| **ssku** | Core entity | Single-SKU listing representation | `ssku_id` | |
-| **site** | Lookup entity | eBay marketplace/site lookup for listing, seller, and bidder site IDs | `site_id` | |
-| **category** | Lookup entity | eBay category hierarchy lookup, including meta, intermediate, and leaf categories | `site_id`, `leaf_categ_id` | |
-| **country** | Lookup entity | Country lookup for item location, seller registration, and bidder registration country IDs | `country_id` | |
-| **user** | Lookup entity | User lookup for seller and user IDs associated with listings | `user_id` | |
+| **item** | Governed entity | Core listing entity representing one eBay listing | `item_id` | [Details →](entities/item.md) |
+| **variation** | Governed entity | Multi-SKU variation of a listing | `variation_id` | [Details →](entities/variation.md) |
+| **ItemRoot** | Raw NuDocument | Current-state identity and broad listing data for one item or variation | `itemId` | [Details →](entities/itemkeyspace-root.md) |
+| **ItemCompatibility** | Raw NuDocument | Item fitment and compatibility payload | `itemId` | [Details →](entities/itemkeyspace-item-compatibility.md) |
+| **ItemDescription** | Raw NuDocument | Seller-provided item description and revision data | `itemId` | [Details →](entities/itemkeyspace-item-description.md) |
+| **ItemPriceAndQuantity** | Raw NuDocument | Item quantity, inventory, and price state | `itemId` | [Details →](entities/itemkeyspace-item-qty-price.md) |
+| **ItemDetails** | Raw NuDocument | Additional item details, high-precision prices, and supporting data | `itemId` | [Details →](entities/itemkeyspace-item-details.md) |
+| **ItemBusinessPolicies** | Raw NuDocument | Item-level return, payment, and shipping policy content | `itemId` | [Details →](entities/itemkeyspace-business-policies.md) |
+| **ItemUUIDMapping** | Raw NuDocument | Seller and UUID lookup mapping to an item and listing application | `sellerId`, `uuid` | [Details →](entities/itemkeyspace-uuid-map.md) |
+| **ItemLock** | Raw NuDocument | Inventory reservation and lock lifecycle state | `itemId`, `lockId` | [Details →](entities/itemkeyspace-item-lock.md) |
+| **ItemGroupRoot** | Raw NuDocument | Shared identity and variation data for an MSKU item group | `groupId` | [Details →](entities/itemgroupkeyspace-root.md) |
+| **ItemGroupDescription** | Raw NuDocument | Shared description for an MSKU item group | `groupId` | [Details →](entities/itemgroupkeyspace-group-description.md) |
+| **ItemGroupBusinessPolicies** | Raw NuDocument | Shared group-level return, payment, and shipping policies | `groupId` | [Details →](entities/itemgroupkeyspace-group-business-policies.md) |
+| **ListingDraftRoot** | Raw NuDocument | Listing-draft session state, flags, and variation identifiers | `draftId` | [Details →](entities/listingdraft-root.md) |
+| **ListingDraftItem** | Raw NuDocument | Draft content for an SSKU item or MSKU variation | `draftId`, `variationId` | [Details →](entities/listingdraft-item-draft.md) |
+| **ListingDraftItemCompatibility** | Raw NuDocument | Optional SSKU compatibility payload for a listing draft | `draftId` | [Details →](entities/listingdraft-item-draft-compatibility.md) |
+| **ListingDraftGroup** | Raw NuDocument | Shared MSKU draft-group content and variation traits | `draftId`, `groupId` | [Details →](entities/listingdraft-item-group-draft.md) |
+| **ListingDraftGroupCompatibility** | Raw NuDocument | Optional MSKU group-level compatibility payload | `draftId` | [Details →](entities/listingdraft-item-group-draft-compatibility.md) |
+| **ListingDraftGroupDescription** | Raw NuDocument | Optional shared MSKU group description and revision data | `draftId` | [Details →](entities/listingdraft-item-group-draft-desc.md) |
+| **UserListingDraftMap** | Raw NuDocument | User-scoped index of active listing drafts and summary metadata | `userId`, `draftId` | [Details →](entities/userlistingdraft-user-item-draft-map.md) |
+| **ListingRevisionRoot** | Raw NuDocument | Retention state for a listing's revision history | `listingId` | [Details →](entities/listingrevisionkeyspace-root.md) |
+| **ListingRevision** | Raw NuDocument | Historical summary of a listing revision and changed property groups | `listingId`, `revisionId` | [Details →](entities/listingrevisionkeyspace-listing-revision.md) |
+| **ListingRevisionDetail** | Raw NuDocument | Historical non-variation property-level change record | `listingId`, `revisionId` | [Details →](entities/listingrevisionkeyspace-listing-revision-detail.md) |
+| **ListingVariationRevisionDetail** | Raw NuDocument | Historical variation-specific property-level change record | `listingId`, `revisionId`, `variationId` | [Details →](entities/listingrevisionkeyspace-variation-revision-detail.md) |
 
 
 ---
 
-## Entity Relationships
+## LDM Relationships and Lifecycle
 
-| Relationship | Type | Description |
-|--------------|------|-------------|
-| **Item → Variation** | 1:N | One item has multiple variations (e.g., different sizes/colors) |
-| **Item → Product** | N:1 | Items can reference product catalog/ePID records |
-| **Item → MSKU** | 1:1 | Multi-SKU item representation for variation listings |
-| **Item → SSKU** | 1:1 | Single-SKU item representation for non-variation listings |
-| **Item ↔ Attribute** | M:N | Items have multiple attributes such as brand, model, and color |
-| **Item ↔ Attribute Value** | M:N | Items are associated with specific attribute values through mapping entities |
-| **Attribute ↔ Attribute Value** | M:N | One attribute can have multiple values |
-| **Item ↔ Aspect** | M:N | Items have SAP-generated classification aspects |
-| **Aspect ↔ Aspect Value** | M:N | One aspect can have multiple values |
-| **Item ↔ Aspect Value** | M:N | Items are associated with classifier-derived aspect values |
-| **Variation ↔ Aspect** | M:N | Variations have SAP aspects at variation level |
-| **Variation ↔ Aspect Value** | M:N | Variations are associated with specific aspect values |
-| **Variation ↔ Trait** | M:N | Variations have traits like Color, Size, Material |
-| **Item ↔ Trait** | M:N | MSKU items have traits like Color, Size, Material |
+The catalog contains two LDM types:
+
+- **Governed LDMs** provide the consumer-facing **item** and **variation**
+  models.
+- **Raw LDMs** represent source data and behavior. They are grouped according
+  to the source and site application model design.
+
+The relationships below explain how the raw-LDM groups support the listing
+lifecycle, rather than describing relational-table joins.
+
+### Current Listing State
+
+The governed **item** and **variation** entities represent a listing and its
+SKU-level variations. Their raw current-state data is held in
+**ItemKeyspace**. **ItemRoot** contains the identity and broad state for one
+item or variation. **ItemCompatibility**, **ItemDescription**,
+**ItemPriceAndQuantity**, **ItemDetails**, and **ItemBusinessPolicies** are
+separate raw LDMs, allowing those portions of the listing to be read and
+updated independently. **ItemLock** records one or more inventory
+reservations for the item. **ItemUUIDMapping** is a seller-and-UUID lookup
+that resolves a listing.
+
+### Shared MSKU State
+
+**ItemGroupKeyspace** holds data shared by the variations in an MSKU listing.
+**ItemGroupRoot** identifies the group and references its member items, while
+**ItemGroupDescription** and **ItemGroupBusinessPolicies** hold the shared
+description and policies. The group does not replace the current state of its
+member variations: their sellable price, quantity, lifecycle, and other
+item-specific data remain in **ItemKeyspace**.
+
+### Draft Listing State
+
+**ListingDraft** is an independent working-state group used before or during
+publication. **ListingDraftRoot** stores draft-session state. An SSKU
+draft contains **ListingDraftItem** and can include
+**ListingDraftItemCompatibility**. An MSKU draft contains
+**ListingDraftGroup**, **ListingDraftGroupDescription**, and optionally
+**ListingDraftGroupCompatibility**, plus one **ListingDraftItem** for each
+variation. Draft LDMs do not imply that a corresponding live
+**ItemKeyspace** or **ItemGroupKeyspace** record exists.
+
+### Active Draft Discovery
+
+**UserListingDraftMap** is a user-scoped index of active drafts. It connects a
+user and a draft identifier to summary metadata used to find the draft, but
+does not contain the full **ListingDraft** content. Its lifecycle is separate
+from the draft content: creating, updating, or deleting one does not
+automatically change the other.
+
+### Listing Revision History
+
+**ListingRevisionKeyspace** stores historical changes by listing identifier,
+separately from current state. **ListingRevisionRoot** is optional retention
+state. Each **ListingRevision** records a revision summary and can
+have multiple **ListingRevisionDetail** children for listing-property changes
+and **ListingVariationRevisionDetail** children for variation-property
+changes. These LDMs are history records and do not replace the latest
+**ItemKeyspace** or **ItemGroupKeyspace** data.
 
 ---
 
