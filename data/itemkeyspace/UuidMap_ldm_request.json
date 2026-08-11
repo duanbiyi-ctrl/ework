@@ -28,7 +28,6 @@
   "name": "item_uuid_mapping",
   "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "sellerId,uuid",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",

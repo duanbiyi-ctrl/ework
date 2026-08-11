@@ -20,11 +20,6 @@ MDM_METADATA = {
     "status": "DRAFT",
 }
 
-COMPOSITE_PRIMARY_KEYS = {
-    ("ItemKeyspace", "UuidMap"): "sellerId,uuid",
-    ("UserListingDraft", "UserItemDraftMap"): "userId,draftId",
-}
-
 DOCSET_ALIASES = {
     ("UserListingDraft", "UserListingDraftMap"): "UserItemDraftMap",
 }
@@ -55,7 +50,6 @@ class DocumentMetadata:
     docset: str
     name: str
     description: str
-    primary_key: str | None
 
 
 @dataclass(frozen=True)
@@ -94,19 +88,6 @@ def _to_snake_case(value: str) -> str:
     return second_pass.replace("-", "_").replace(" ", "_").lower()
 
 
-def _document_primary_key(
-    keyspace: str,
-    docset: str,
-    documented_primary_key: str | None,
-) -> str | None:
-    composite_key = COMPOSITE_PRIMARY_KEYS.get((keyspace, docset))
-    if composite_key:
-        return composite_key
-    if documented_primary_key:
-        return documented_primary_key
-    return None
-
-
 def index_documentation(docs_dir: Path) -> dict[tuple[str, str], DocumentMetadata]:
     """Index raw LDM documentation by its physical keyspace and docset."""
     documents: dict[tuple[str, str], DocumentMetadata] = {}
@@ -131,11 +112,6 @@ def index_documentation(docs_dir: Path) -> dict[tuple[str, str], DocumentMetadat
             docset=docset,
             name=_to_snake_case(ldm_name),
             description=description,
-            primary_key=_document_primary_key(
-                keyspace,
-                docset,
-                _read_document_value(markdown, "Primary Key"),
-            ),
         )
 
     return documents
@@ -240,8 +216,6 @@ def build_payloads(data_dir: Path, docs_dir: Path) -> list[PayloadArtifact]:
             "fields": fields,
             "errorHandlingStorageMappings": [],
         }
-        if document.primary_key:
-            payload["pk"] = document.primary_key
 
         artifacts.append(
             PayloadArtifact(

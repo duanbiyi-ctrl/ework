@@ -127,7 +127,6 @@
   "name": "user_listing_draft_map",
   "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "userId,draftId",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",
