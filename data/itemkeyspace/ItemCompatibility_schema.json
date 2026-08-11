@@ -1,0 +1,33 @@
+{
+    "DataStoreName": "ItemKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "ItemCompID",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cmpCompat",
+            "type": "binary",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ftExempt",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemKeyspace",
+    "DataTableName": "__ROOT__.ItemCompatibility",
+    "DataStoreType": "NuDocument"
+}

@@ -1,0 +1,81 @@
+{
+    "DataStoreName": "ItemKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "STR",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cmtDt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cnclDt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "crtDt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "expDt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "extCnt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "extDt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "modDt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pk",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "qty",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "st",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "uuid",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemKeyspace",
+    "DataTableName": "__ROOT__.ItemQtyPrice.ItemLock",
+    "DataStoreType": "NuDocument"
+}

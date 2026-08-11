@@ -1,0 +1,99 @@
+{
+    "DataStoreName": "ItemGroupKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "PK",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "admEndDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cmpCompat",
+            "type": "binary",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "createdDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "groupTitle",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "grpDrftId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "grpVrs",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "httpsCmplt",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "imgVryBy.trtName",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itemIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lastmodifiedDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mFulfillmentSprt",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "owner",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "sellerGroupKey",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemGroupKeyspace",
+    "DataTableName": "__ROOT__",
+    "DataStoreType": "NuDocument"
+}

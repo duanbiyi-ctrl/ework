@@ -1,0 +1,345 @@
+{
+    "DataStoreName": "ListingDraft",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "PK",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "appCstmInfo",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "autoRlstOrigAppId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bidCnt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "crtDate",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "descRevsnDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl10",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl11",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl12",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl2",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl3",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl4",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl5",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl6",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl7",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl8",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl9",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ftmtCnt",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "galPicMd5Hsh",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "galUrl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmId",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmRevsnDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmVisOpt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lastModDate",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstdItmId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstgMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstgTm",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstgTmpltFls",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mkdnSaleItmPrcRev",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mnMxFls",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "origItmId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pbpElig",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pplIcnTp",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "prgDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "prmSaleEndDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "prmSaleStrtDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "props",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pwdEx",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "qtySold",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ryiStat",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "saleStat",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "scrtchFl",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "scrtchFl2",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "scrtchFl3",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "scrtchFl4",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "shipRgn",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slfHstdPic",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slfHstdPicMap",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strCatIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strdFixdPrc",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "thFl",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "totCumLstgs",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "usrItmPrpKey",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visitCnt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ListingDraft",
+    "DataTableName": "__ROOT__",
+    "DataStoreType": "NuDocument"
+}

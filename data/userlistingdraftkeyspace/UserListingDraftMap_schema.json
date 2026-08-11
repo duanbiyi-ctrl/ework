@@ -1,0 +1,93 @@
+{
+    "DataStoreName": "UserListingDraft",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "crtDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "crtMd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "draftId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "eBGenTtl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ebayGeneratedTitle",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "imgUrl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lastModifiedDate",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstgAppId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPlLstdOn",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "primCatId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "stockImgUrl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ttl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "userId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "UserListingDraft",
+    "DataTableName": "__ROOT__.UserListingDraftMap",
+    "DataStoreType": "NuDocument"
+}

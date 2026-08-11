@@ -1,0 +1,39 @@
+{
+    "DataStoreName": "ItemGroupKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "compDesc",
+            "type": "binary",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "groupDesc",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "groupDescId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "grpDescRevsnDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemGroupKeyspace",
+    "DataTableName": "__ROOT__.GroupDescription",
+    "DataStoreType": "NuDocument"
+}

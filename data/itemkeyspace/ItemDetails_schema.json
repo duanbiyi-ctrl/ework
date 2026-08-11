@@ -1,0 +1,75 @@
+{
+    "DataStoreName": "ItemKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.odometer",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.vhclTtlBck",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.vhclTtlFrnt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.vin",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fixedPriceHP.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fixedPriceHP.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "hasRlxdRls",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itemDetailsID",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strtBidPriceHP.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strtBidPriceHP.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemKeyspace",
+    "DataTableName": "__ROOT__.ItemDetails",
+    "DataStoreType": "NuDocument"
+}

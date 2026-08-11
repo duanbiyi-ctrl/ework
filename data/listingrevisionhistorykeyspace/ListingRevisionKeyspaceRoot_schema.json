@@ -1,0 +1,27 @@
+{
+    "DataStoreName": "ListingRevisionKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "expiredDate",
+            "type": "date",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstgId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ListingRevisionKeyspace",
+    "DataTableName": "__ROOT__",
+    "DataStoreType": "NuDocument"
+}

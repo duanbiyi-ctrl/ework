@@ -1,0 +1,27 @@
+{
+    "DataStoreName": "ListingDraft",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "DraftCompID",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cmpCompat",
+            "type": "binary",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ListingDraft",
+    "DataTableName": "__ROOT__.ItemGroupDraft.ItemGroupDraftCompatibility",
+    "DataStoreType": "NuDocument"
+}

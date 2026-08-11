@@ -1,0 +1,183 @@
+{
+    "DataStoreName": "ItemGroupKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "plcsId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.daysToFulPmt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.depRqd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.hrsToDep",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.immPay",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.pmtInstr",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.pmtMthd",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.ppEmail",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.extHolRet",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.restFeePct",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retInstr",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.buyerRsp",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.excldLocn",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.excldLocnLastModDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.hndlgTm",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpToLocn",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemGroupKeyspace",
+    "DataTableName": "__ROOT__.GroupBusinessPolicies",
+    "DataStoreType": "NuDocument"
+}

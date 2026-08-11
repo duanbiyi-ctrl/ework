@@ -1,0 +1,8 @@
+{
+    "DataStoreName": "ItemKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [],
+    "dataStoreDisplayName": "ItemKeyspace",
+    "DataTableName": "__ROOT__.ItemQtyPrice",
+    "DataStoreType": "NuDocument"
+}

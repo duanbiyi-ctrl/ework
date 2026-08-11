@@ -1,0 +1,39 @@
+{
+    "DataStoreName": "ItemKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "ItemDescID",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "STR",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "compDesc",
+            "type": "binary",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "desc",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "descRevsnDt",
+            "type": "number",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemKeyspace",
+    "DataTableName": "__ROOT__.ItemDescription",
+    "DataStoreType": "NuDocument"
+}

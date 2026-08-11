@@ -1,0 +1,189 @@
+{
+    "DataStoreName": "ListingDraft",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "PK",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.daysToFulPmt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.depRqd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.hrsToDep",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.immPay",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.pmtMthd",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.extHolRet",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.restFeePct",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retInstr",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.buyerRsp",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.excldLocn",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.hndlgTm",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpToLocn",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "grpId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "grpTtl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "imgsVryBy.trtName",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slrGrpKey",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ListingDraft",
+    "DataTableName": "__ROOT__.ItemGroupDraft",
+    "DataStoreType": "NuDocument"
+}

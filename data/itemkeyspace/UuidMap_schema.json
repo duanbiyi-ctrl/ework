@@ -1,0 +1,27 @@
+{
+    "DataStoreName": "ItemKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "listingAppId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "listingId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ItemKeyspace",
+    "DataTableName": "__ROOT__.UuidMap",
+    "DataStoreType": "NuDocument"
+}

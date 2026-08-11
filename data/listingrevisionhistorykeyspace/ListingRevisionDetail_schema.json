@@ -1,0 +1,63 @@
+{
+    "DataStoreName": "ListingRevisionKeyspace",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "chgTp",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lbl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstRvsnDtlId.reference",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstgId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "newVal",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "oldVal",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rvsdPrpty",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rvsdPrptyGrp",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ListingRevisionKeyspace",
+    "DataTableName": "__ROOT__.ListingRevision.ListingRevisionDetail",
+    "DataStoreType": "NuDocument"
+}

@@ -1,0 +1,39 @@
+{
+    "DataStoreName": "ListingDraft",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "PK",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cmpDesc",
+            "type": "binary",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "groupDesc",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "grpDescRevsnDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ListingDraft",
+    "DataTableName": "__ROOT__.ItemGroupDraft.ItemGroupDraftDesc",
+    "DataStoreType": "NuDocument"
+}

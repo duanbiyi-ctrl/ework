@@ -1,0 +1,1353 @@
+{
+    "DataStoreName": "ListingDraft",
+    "VPC": "MPT-PROD",
+    "Columns": [
+        {
+            "name": "COGs.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "COGs.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "PK",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "__KEY",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "auctRsvPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "auctRsvPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "autoRlsTrm.autoRlst",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "autoRlsTrm.rlstCnt",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "avlQty",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.daysToFulPmt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.depAmt.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.depAmt.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.depRqd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.hrsToDep",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.immPay",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.pmtInstr",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.pmtMthd",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.pmtTrms.ppEmail",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.extHolRet",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.refMthd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.restFeePct",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retAcptd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retInstr",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retPrd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.retTrms.retShpmtPayee",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.buyerRsp",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.excldLocn",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.hndlgTm",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpToLocn",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "brnd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bstOfrTrm.autAccptEnbld",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bstOfrTrm.autAcptThrshPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bstOfrTrm.autAcptThrshPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bstOfrTrm.autDclnEnbld",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bstOfrTrm.autDclnThrshPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bstOfrTrm.autDclnThrshPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "bstOfrTrm.bestOfrEnbld",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.prchsRateRqrmnt.minFdbkScore",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.prchsRateRqrmnt.qntyLmtPerByr",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.qntyLmtPerByr",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.rsdncyShpToLocn",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.rstrctBid",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.rstrctnDate",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.unpaidTranThrsh.count",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRst.unpaidTranThrsh.period",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "buyrRstDsbld",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "chrty.charityId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "chrty.donationPct",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cmpDesc",
+            "type": "binary",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cndDesc",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cndId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cndIdNum",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "crtDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "crtMd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cstmPol.prdCmplPolIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "cstmPol.tkBkPolId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "currPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "currPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "desc",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "descRevsnDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.odometer",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.vhclTtlBck",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.vhclTtlFrnt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "docs.vin",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "drtn",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "eBGenTtl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "eBProdDtls",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "eBayVlt",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ebayCmnty.comntyIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ebayCmnty.mktplceVsbl",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "endDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "epid",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "epr.ecoFee",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "epr.prdDocId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "epr.prdPkgId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "epr.prdcrId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "epr.shpPkgId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.dgtDlvLgsPlSprt",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.ebayMgdShpng",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.freeShipAvail",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.gspLgstcPlnSprtd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.ispuLgstcPlSprt",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.mFulfillmentSprt",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.mgdShpngCstPdBy",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.mgdShpngOptin",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.orgPostCode",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.dimensions.depth",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.dimensions.length",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.dimensions.width",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.irregularPackage",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.packageType",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.unitOfMeasure",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.weight.majorWeight",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.pkgSpec.weight.minorWeight",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ffTrm.s2hLgstcPlnSprt",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fl01",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fmt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ftExempt",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fxdPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fxdPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fxdPrcHP.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "fxdPrcHP.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "hidePrt",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "invTrkMth",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmLoc",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmLocCtry",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmLocPstCd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmOnSale",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmOrd",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "itmRevsnDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lotId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lotSz",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstCrtClntIp",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstModDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "lstgAppId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPlLstdOn",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.minAdvrtsPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.minAdvrtsPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.minAdvrtsPrcExp",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.orgnlRtlPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.orgnlRtlPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.prcngTrtmnt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.soldOffeBay",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mktPrc.soldOnEbay",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "mpn",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "oosDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "origItmId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "origItmPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "origItmPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "origPstCd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "prdSpptd",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "primCatId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "prodDtls",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "pymtPlcyId.policyId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "qtySold",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.eek.dataSheet",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.eek.img",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.eek.imgDesc",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.hzdMatrl.addnlInfo",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.hzdMatrl.pctgrmIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.hzdMatrl.sgnlWrdId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.hzdMatrl.stmntIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.cmpNm",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.cntctUrl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.cntry",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.cty",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.email",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.phn",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.strt1",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.strt2",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.stt",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.mnfatr.zip",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.prdSfty.addnlInfo",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.prdSfty.pctgrmIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.prdSfty.stmntIds",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rgltryInfo.rprIdxScore",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rlstId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rlstPrntId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "rtrnsPlcyId.policyId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "schdEndDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "scndCatId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "scndChncItm",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "shipPlcyId.policyId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "sigRevCnt",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.cmpNm",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.cntry",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.ctcByEml",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primPhone",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.anyTime",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.sprtHrsEnd.hrs",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.sprtHrsEnd.mins",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.sprtHrsEnd.tz",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.sprtHrsStrt.hrs",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.sprtHrsStrt.mins",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.sprtHrsStrt.tz",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.primSpprtCtcHrs.sprtOnDays",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.scndSpprtCtcHrs.anyTime",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.scndSpprtCtcHrs.sprtOnDays",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.slrId",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.slrItmCtcInfoKey",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.st",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.st2",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slr.uid",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slrAppData",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "slrItmKey",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "srcLstId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "stPrimCatId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "stScndCatId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "stckPhtUrl",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strtBidPrc.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strtBidPrc.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strtBidPrcHP.currency",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strtBidPrcHP.value",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "strtDt",
+            "type": "numberLong",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "tax.aplcblToShp",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "tax.rcgnzBsnsSlrVat",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "tax.salesTaxTblUsd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "tax.state",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "tax.taxRate",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "tax.thrdPrtTxCtgCd",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "tax.vatPct",
+            "type": "numberDouble",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "trdScp.intlStVsbl",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "trdScp.lclLstngDist",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "ttl",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "uuid",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "vehPkgId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "videos",
+            "type": "string[]",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visEnh.boldTitle",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visEnh.gallDurtn",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visEnh.gallTp",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visEnh.homePgftrd",
+            "type": "boolean",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visEnh.photoDspType",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visEnh.subtitle",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "visEnh.vstCntrTp",
+            "type": "numberInt",
+            "comment": null,
+            "nullable": null
+        },
+        {
+            "name": "vrsId",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ],
+    "dataStoreDisplayName": "ListingDraft",
+    "DataTableName": "__ROOT__.ItemDraft",
+    "DataStoreType": "NuDocument"
+}
