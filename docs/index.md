@@ -42,6 +42,7 @@ Here're the main LDM entities in the Item domain:
 
 <img src="assets/item-domain-ldm-map.png" alt="Item Domain LDM Map" width="900"/>
 
+
 ---
 
 ## LDM Catalog
