@@ -1,7 +1,7 @@
 import json
 import unittest
 
-from scripts.create_raw_ldms import MdmRequestError, create_entities
+from scripts.create_raw_ldms import MdmRequestError, create_entities, select_artifacts
 from scripts.raw_ldm_payloads import PayloadArtifact
 
 
@@ -19,6 +19,25 @@ def payload_artifact(name: str) -> PayloadArtifact:
 
 
 class CreateRawLdmsTests(unittest.TestCase):
+    def test_selects_only_requested_ldms(self):
+        selected = select_artifacts(
+            [
+                payload_artifact("item_root"),
+                payload_artifact("item_details"),
+                payload_artifact("listing_draft_root"),
+            ],
+            ["listing_draft_root", "item_root"],
+        )
+
+        self.assertEqual(
+            [artifact.payload["name"] for artifact in selected],
+            ["item_root", "listing_draft_root"],
+        )
+
+    def test_rejects_unknown_ldm_before_requesting_mdm(self):
+        with self.assertRaisesRegex(MdmRequestError, "Unknown generated LDM: missing_ldm"):
+            select_artifacts([payload_artifact("item_root")], ["missing_ldm"])
+
     def test_dry_run_does_not_make_network_requests(self):
         def unexpected_request(*_args):
             raise AssertionError("dry-run must not call MDM")
