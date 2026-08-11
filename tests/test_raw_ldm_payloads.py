@@ -57,12 +57,12 @@ class RawLdmPayloadTests(unittest.TestCase):
                 for field in payload["fields"]
             )
         )
+        self.assertTrue(all("pk" not in payload for payload in by_name.values()))
         item_root = by_name["item_root"]
         self.assertEqual(item_root["viewType"], "RAW")
         self.assertEqual(item_root["namespaceId"], 114)
         self.assertEqual(item_root["owners"], "jiajsun")
         self.assertEqual(item_root["teamDl"], "DL-eBay-GDS@ebay.com")
-        self.assertEqual(item_root["pk"], "PK")
         self.assertEqual(item_root["fields"][0]["name"], "IncEbyPrdtDtail")
         self.assertEqual(
             item_root["fields"][0]["hierarchicalName"],
@@ -75,23 +75,9 @@ class RawLdmPayloadTests(unittest.TestCase):
         )
 
         self.assertEqual(
-            by_name["item_price_and_quantity"]["pk"],
-            "ItemQtyPriceID",
-        )
-        self.assertEqual(
             by_name["item_price_and_quantity"]["fields"],
             [],
         )
-        self.assertEqual(
-            by_name["item_business_policies"]["pk"],
-            "plcsId",
-        )
-        self.assertEqual(by_name["item_uuid_mapping"]["pk"], "sellerId,uuid")
-        self.assertEqual(
-            by_name["user_listing_draft_map"]["pk"],
-            "userId,draftId",
-        )
-        self.assertNotIn("pk", by_name["listing_revision"])
 
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
