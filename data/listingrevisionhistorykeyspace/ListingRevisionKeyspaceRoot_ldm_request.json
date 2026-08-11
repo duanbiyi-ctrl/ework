@@ -6,19 +6,10 @@
   "errorHandlingStorageMappings": [],
   "fields": [
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
-      "ordinal": 1,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
       "dataType": "{\"type\":\"int\",\"logicalType\":\"date\",\"default\":null}",
       "hierarchicalName": "expiredDate",
       "name": "expiredDate",
-      "ordinal": 2,
+      "ordinal": 1,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -27,7 +18,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "lstgId",
       "name": "lstgId",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

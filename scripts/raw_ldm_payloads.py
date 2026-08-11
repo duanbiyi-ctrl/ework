@@ -42,6 +42,8 @@ AVRO_TYPE_MAPPING = {
     "date": {"type": "int", "logicalType": "date", "default": None},
 }
 
+EXCLUDED_COLUMN_NAMES = {"__KEY"}
+
 
 class MetadataResolutionError(ValueError):
     """Raised when a raw schema cannot be mapped to a documented LDM."""
@@ -212,7 +214,17 @@ def build_payloads(data_dir: Path, docs_dir: Path) -> list[PayloadArtifact]:
                 f"No raw LDM page maps {keyspace}/{documented_docset} from {schema_path}"
             ) from error
 
-        fields = [_build_field(column, ordinal) for ordinal, column in enumerate(columns, 1)]
+        fields = [
+            _build_field(column, ordinal)
+            for ordinal, column in enumerate(
+                (
+                    column
+                    for column in columns
+                    if column.get("name") not in EXCLUDED_COLUMN_NAMES
+                ),
+                1,
+            )
+        ]
         if len({field["name"] for field in fields}) != len(fields):
             raise MetadataResolutionError(
                 f"Schema contains duplicate column names: {schema_path}"

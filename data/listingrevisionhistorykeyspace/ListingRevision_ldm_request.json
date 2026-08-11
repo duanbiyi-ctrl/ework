@@ -6,19 +6,10 @@
   "errorHandlingStorageMappings": [],
   "fields": [
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
-      "ordinal": 1,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "appId",
       "name": "appId",
-      "ordinal": 2,
+      "ordinal": 1,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -27,7 +18,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "rvsdDate",
       "name": "rvsdDate",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -36,7 +27,7 @@
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
       "hierarchicalName": "rvsdPrptyGrps",
       "name": "rvsdPrptyGrps",
-      "ordinal": 4,
+      "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -45,7 +36,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "rvsnId.reference",
       "name": "rvsnId.reference",
-      "ordinal": 5,
+      "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -54,7 +45,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "sigRevCnt",
       "name": "sigRevCnt",
-      "ordinal": 6,
+      "ordinal": 5,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -63,7 +54,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "updCrLstgVrs",
       "name": "updCrLstgVrs",
-      "ordinal": 7,
+      "ordinal": 6,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -72,7 +63,7 @@
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
       "hierarchicalName": "vrsnCrtd",
       "name": "vrsnCrtd",
-      "ordinal": 8,
+      "ordinal": 7,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -81,7 +72,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "vrsnId",
       "name": "vrsnId",
-      "ordinal": 9,
+      "ordinal": 8,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

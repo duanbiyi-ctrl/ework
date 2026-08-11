@@ -16,18 +16,9 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
-      "ordinal": 2,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "appCstmInfo",
       "name": "appCstmInfo",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -36,7 +27,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "autoRlstOrigAppId",
       "name": "autoRlstOrigAppId",
-      "ordinal": 4,
+      "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -45,7 +36,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "bidCnt",
       "name": "bidCnt",
-      "ordinal": 5,
+      "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -54,7 +45,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "crtDate",
       "name": "crtDate",
-      "ordinal": 6,
+      "ordinal": 5,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -63,7 +54,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "descRevsnDt",
       "name": "descRevsnDt",
-      "ordinal": 7,
+      "ordinal": 6,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -72,7 +63,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl",
       "name": "fl",
-      "ordinal": 8,
+      "ordinal": 7,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -81,7 +72,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl10",
       "name": "fl10",
-      "ordinal": 9,
+      "ordinal": 8,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -90,7 +81,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl11",
       "name": "fl11",
-      "ordinal": 10,
+      "ordinal": 9,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -99,7 +90,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl12",
       "name": "fl12",
-      "ordinal": 11,
+      "ordinal": 10,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -108,7 +99,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl2",
       "name": "fl2",
-      "ordinal": 12,
+      "ordinal": 11,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -117,7 +108,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl3",
       "name": "fl3",
-      "ordinal": 13,
+      "ordinal": 12,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -126,7 +117,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl4",
       "name": "fl4",
-      "ordinal": 14,
+      "ordinal": 13,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -135,7 +126,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl5",
       "name": "fl5",
-      "ordinal": 15,
+      "ordinal": 14,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -144,7 +135,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl6",
       "name": "fl6",
-      "ordinal": 16,
+      "ordinal": 15,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -153,7 +144,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl7",
       "name": "fl7",
-      "ordinal": 17,
+      "ordinal": 16,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -162,7 +153,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl8",
       "name": "fl8",
-      "ordinal": 18,
+      "ordinal": 17,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -171,7 +162,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "fl9",
       "name": "fl9",
-      "ordinal": 19,
+      "ordinal": 18,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -180,7 +171,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "ftmtCnt",
       "name": "ftmtCnt",
-      "ordinal": 20,
+      "ordinal": 19,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -189,7 +180,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "galPicMd5Hsh",
       "name": "galPicMd5Hsh",
-      "ordinal": 21,
+      "ordinal": 20,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -198,7 +189,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "galUrl",
       "name": "galUrl",
-      "ordinal": 22,
+      "ordinal": 21,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -207,7 +198,7 @@
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
       "hierarchicalName": "itmId",
       "name": "itmId",
-      "ordinal": 23,
+      "ordinal": 22,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -216,7 +207,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "itmRevsnDt",
       "name": "itmRevsnDt",
-      "ordinal": 24,
+      "ordinal": 23,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -225,7 +216,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "itmVisOpt",
       "name": "itmVisOpt",
-      "ordinal": 25,
+      "ordinal": 24,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -234,7 +225,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "lastModDate",
       "name": "lastModDate",
-      "ordinal": 26,
+      "ordinal": 25,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -243,7 +234,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "lstdItmId",
       "name": "lstdItmId",
-      "ordinal": 27,
+      "ordinal": 26,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -252,7 +243,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "lstgMthd",
       "name": "lstgMthd",
-      "ordinal": 28,
+      "ordinal": 27,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -261,7 +252,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "lstgTm",
       "name": "lstgTm",
-      "ordinal": 29,
+      "ordinal": 28,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -270,7 +261,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "lstgTmpltFls",
       "name": "lstgTmpltFls",
-      "ordinal": 30,
+      "ordinal": 29,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -279,7 +270,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "mkdnSaleItmPrcRev",
       "name": "mkdnSaleItmPrcRev",
-      "ordinal": 31,
+      "ordinal": 30,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -288,7 +279,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "mnMxFls",
       "name": "mnMxFls",
-      "ordinal": 32,
+      "ordinal": 31,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -297,7 +288,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "origItmId",
       "name": "origItmId",
-      "ordinal": 33,
+      "ordinal": 32,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -306,7 +297,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "pbpElig",
       "name": "pbpElig",
-      "ordinal": 34,
+      "ordinal": 33,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -315,7 +306,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "pplIcnTp",
       "name": "pplIcnTp",
-      "ordinal": 35,
+      "ordinal": 34,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -324,7 +315,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "prgDt",
       "name": "prgDt",
-      "ordinal": 36,
+      "ordinal": 35,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -333,7 +324,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "prmSaleEndDt",
       "name": "prmSaleEndDt",
-      "ordinal": 37,
+      "ordinal": 36,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -342,7 +333,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "prmSaleStrtDt",
       "name": "prmSaleStrtDt",
-      "ordinal": 38,
+      "ordinal": 37,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -351,7 +342,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "props",
       "name": "props",
-      "ordinal": 39,
+      "ordinal": 38,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -360,7 +351,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "pwdEx",
       "name": "pwdEx",
-      "ordinal": 40,
+      "ordinal": 39,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -369,7 +360,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "qtySold",
       "name": "qtySold",
-      "ordinal": 41,
+      "ordinal": 40,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -378,7 +369,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "ryiStat",
       "name": "ryiStat",
-      "ordinal": 42,
+      "ordinal": 41,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -387,7 +378,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "saleStat",
       "name": "saleStat",
-      "ordinal": 43,
+      "ordinal": 42,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -396,7 +387,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "scrtchFl",
       "name": "scrtchFl",
-      "ordinal": 44,
+      "ordinal": 43,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -405,7 +396,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "scrtchFl2",
       "name": "scrtchFl2",
-      "ordinal": 45,
+      "ordinal": 44,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -414,7 +405,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "scrtchFl3",
       "name": "scrtchFl3",
-      "ordinal": 46,
+      "ordinal": 45,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -423,7 +414,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "scrtchFl4",
       "name": "scrtchFl4",
-      "ordinal": 47,
+      "ordinal": 46,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -432,7 +423,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "shipRgn",
       "name": "shipRgn",
-      "ordinal": 48,
+      "ordinal": 47,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -441,7 +432,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "slfHstdPic",
       "name": "slfHstdPic",
-      "ordinal": 49,
+      "ordinal": 48,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -450,7 +441,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "slfHstdPicMap",
       "name": "slfHstdPicMap",
-      "ordinal": 50,
+      "ordinal": 49,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -459,7 +450,7 @@
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
       "hierarchicalName": "strCatIds",
       "name": "strCatIds",
-      "ordinal": 51,
+      "ordinal": 50,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -468,7 +459,7 @@
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
       "hierarchicalName": "strdFixdPrc",
       "name": "strdFixdPrc",
-      "ordinal": 52,
+      "ordinal": 51,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -477,7 +468,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "thFl",
       "name": "thFl",
-      "ordinal": 53,
+      "ordinal": 52,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -486,7 +477,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "totCumLstgs",
       "name": "totCumLstgs",
-      "ordinal": 54,
+      "ordinal": 53,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -495,7 +486,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "usrItmPrpKey",
       "name": "usrItmPrpKey",
-      "ordinal": 55,
+      "ordinal": 54,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -504,7 +495,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "visitCnt",
       "name": "visitCnt",
-      "ordinal": 56,
+      "ordinal": 55,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

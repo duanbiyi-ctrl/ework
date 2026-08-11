@@ -15,19 +15,10 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
-      "ordinal": 2,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
       "hierarchicalName": "compDesc",
       "name": "compDesc",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -36,7 +27,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "desc",
       "name": "desc",
-      "ordinal": 4,
+      "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -45,7 +36,7 @@
       "dataType": "{\"type\":\"double\",\"default\":null}",
       "hierarchicalName": "descRevsnDt",
       "name": "descRevsnDt",
-      "ordinal": 5,
+      "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

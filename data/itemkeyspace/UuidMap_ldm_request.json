@@ -7,18 +7,9 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
-      "ordinal": 1,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "listingAppId",
       "name": "listingAppId",
-      "ordinal": 2,
+      "ordinal": 1,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -27,7 +18,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "listingId",
       "name": "listingId",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

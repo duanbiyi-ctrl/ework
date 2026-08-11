@@ -6,19 +6,10 @@
   "errorHandlingStorageMappings": [],
   "fields": [
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
-      "ordinal": 1,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
       "hierarchicalName": "compDesc",
       "name": "compDesc",
-      "ordinal": 2,
+      "ordinal": 1,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -27,7 +18,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "groupDesc",
       "name": "groupDesc",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -36,7 +27,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "groupDescId",
       "name": "groupDescId",
-      "ordinal": 4,
+      "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -45,7 +36,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "grpDescRevsnDt",
       "name": "grpDescRevsnDt",
-      "ordinal": 5,
+      "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

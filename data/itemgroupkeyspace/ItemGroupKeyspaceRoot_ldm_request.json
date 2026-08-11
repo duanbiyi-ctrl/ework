@@ -15,19 +15,10 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
-      "ordinal": 2,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "admEndDt",
       "name": "admEndDt",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -36,7 +27,7 @@
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
       "hierarchicalName": "cmpCompat",
       "name": "cmpCompat",
-      "ordinal": 4,
+      "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -45,7 +36,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "createdDt",
       "name": "createdDt",
-      "ordinal": 5,
+      "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -54,7 +45,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "groupTitle",
       "name": "groupTitle",
-      "ordinal": 6,
+      "ordinal": 5,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -63,7 +54,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "grpDrftId",
       "name": "grpDrftId",
-      "ordinal": 7,
+      "ordinal": 6,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -72,7 +63,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "grpVrs",
       "name": "grpVrs",
-      "ordinal": 8,
+      "ordinal": 7,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -81,7 +72,7 @@
       "dataType": "{\"type\":\"int\",\"default\":null}",
       "hierarchicalName": "httpsCmplt",
       "name": "httpsCmplt",
-      "ordinal": 9,
+      "ordinal": 8,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -90,7 +81,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "imgVryBy.trtName",
       "name": "imgVryBy.trtName",
-      "ordinal": 10,
+      "ordinal": 9,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -99,7 +90,7 @@
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
       "hierarchicalName": "itemIds",
       "name": "itemIds",
-      "ordinal": 11,
+      "ordinal": 10,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -108,7 +99,7 @@
       "dataType": "{\"type\":\"long\",\"default\":null}",
       "hierarchicalName": "lastmodifiedDt",
       "name": "lastmodifiedDt",
-      "ordinal": 12,
+      "ordinal": 11,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -117,7 +108,7 @@
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
       "hierarchicalName": "mFulfillmentSprt",
       "name": "mFulfillmentSprt",
-      "ordinal": 13,
+      "ordinal": 12,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -126,7 +117,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "owner",
       "name": "owner",
-      "ordinal": 14,
+      "ordinal": 13,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -135,7 +126,7 @@
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
       "hierarchicalName": "sellerGroupKey",
       "name": "sellerGroupKey",
-      "ordinal": 15,
+      "ordinal": 14,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
