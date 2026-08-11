@@ -187,9 +187,37 @@ def read_artifacts(data_dir: Path) -> list[PayloadArtifact]:
     return artifacts
 
 
+def select_artifacts(
+    artifacts: list[PayloadArtifact],
+    requested_names: list[str] | None,
+) -> list[PayloadArtifact]:
+    """Return only explicitly requested LDMs, rejecting unknown names."""
+    if not requested_names:
+        return artifacts
+
+    available_names = {artifact.payload["name"] for artifact in artifacts}
+    unknown_names = sorted(set(requested_names) - available_names)
+    if unknown_names:
+        raise MdmRequestError(
+            f"Unknown generated LDM: {', '.join(unknown_names)}"
+        )
+    requested_name_set = set(requested_names)
+    return [
+        artifact
+        for artifact in artifacts
+        if artifact.payload["name"] in requested_name_set
+    ]
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=REPOSITORY_ROOT / "data")
+    parser.add_argument(
+        "--ldm",
+        action="append",
+        metavar="NAME",
+        help="Create or preview only this LDM. Repeat to select multiple LDMs.",
+    )
     parser.add_argument(
         "--apply",
         action="store_true",
@@ -200,7 +228,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    artifacts = read_artifacts(args.data_dir)
+    artifacts = select_artifacts(read_artifacts(args.data_dir), args.ldm)
     if not args.apply:
         for result in create_entities(artifacts, "", "", "", apply=False):
             print(f"{result['status']}: {result['name']}")
