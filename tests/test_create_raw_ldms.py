@@ -1,0 +1,104 @@
+import json
+import unittest
+
+from scripts.create_raw_ldms import MdmRequestError, create_entities
+from scripts.raw_ldm_payloads import PayloadArtifact
+
+
+def payload_artifact(name: str) -> PayloadArtifact:
+    return PayloadArtifact(
+        schema_path=None,
+        output_path=None,
+        payload={
+            "name": name,
+            "namespaceId": 1,
+            "viewType": "RAW",
+            "fields": [],
+        },
+    )
+
+
+class CreateRawLdmsTests(unittest.TestCase):
+    def test_dry_run_does_not_make_network_requests(self):
+        def unexpected_request(*_args):
+            raise AssertionError("dry-run must not call MDM")
+
+        result = create_entities(
+            [payload_artifact("item_root")],
+            "https://mdm.example/v1",
+            "token",
+            "KEYSTONE",
+            apply=False,
+            request=unexpected_request,
+        )
+
+        self.assertEqual(result, [{"name": "item_root", "status": "dry-run"}])
+
+    def test_apply_creates_missing_ldm_with_required_headers(self):
+        calls = []
+
+        def request(method, url, headers, body=None):
+            calls.append((method, url, headers, body))
+            if method == "GET":
+                return 200, []
+            return 201, {"id": 100}
+
+        result = create_entities(
+            [payload_artifact("item_root")],
+            "https://mdm.example/v1/",
+            "token",
+            "KEYSTONE",
+            apply=True,
+            request=request,
+        )
+
+        self.assertEqual(
+            [call[0] for call in calls],
+            ["GET", "POST"],
+        )
+        self.assertEqual(calls[1][2]["Authorization"], "token")
+        self.assertEqual(calls[1][2]["GDS-TOKEN-PROVIDER"], "KEYSTONE")
+        self.assertEqual(
+            json.loads(calls[1][3].decode("utf-8"))["name"],
+            "item_root",
+        )
+        self.assertEqual(result, [{"name": "item_root", "status": "created", "id": 100}])
+
+    def test_apply_skips_ldm_already_in_the_target_namespace(self):
+        calls = []
+
+        def request(method, url, headers, body=None):
+            calls.append(method)
+            return 200, [{"name": "item_root", "namespaceId": 1, "id": 77}]
+
+        result = create_entities(
+            [payload_artifact("item_root")],
+            "https://mdm.example/v1",
+            "token",
+            "KEYSTONE",
+            apply=True,
+            request=request,
+        )
+
+        self.assertEqual(calls, ["GET"])
+        self.assertEqual(result, [{"name": "item_root", "status": "skipped", "id": 77}])
+
+    def test_apply_fails_fast_when_mdm_rejects_a_create_request(self):
+        def request(method, url, headers, body=None):
+            if method == "GET":
+                return 200, {"content": []}
+            return 400, {"message": "invalid payload"}
+
+        with self.assertRaisesRegex(MdmRequestError, "item_root.*400.*invalid payload"):
+            create_entities(
+                [payload_artifact("item_root")],
+                "https://mdm.example/v1",
+                "token",
+                "KEYSTONE",
+                apply=True,
+                request=request,
+            )
+
+
+if __name__ == "__main__":
+    unittest.main()
