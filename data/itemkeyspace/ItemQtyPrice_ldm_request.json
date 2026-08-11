@@ -7,7 +7,7 @@
   "fields": [],
   "jiraProject": "GDS",
   "name": "item_price_and_quantity",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
   "pk": "ItemQtyPriceID",
   "status": "DRAFT",

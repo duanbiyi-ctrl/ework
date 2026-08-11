@@ -44,7 +44,7 @@
   ],
   "jiraProject": "GDS",
   "name": "item_compatibility",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
   "pk": "ItemCompID",
   "status": "DRAFT",

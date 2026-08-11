@@ -10,7 +10,7 @@ from typing import Any
 
 
 MDM_METADATA = {
-    "namespaceId": 1,
+    "namespaceId": 114,
     "owners": "jiajsun",
     "domain": "GDS",
     "jiraProject": "GDS",

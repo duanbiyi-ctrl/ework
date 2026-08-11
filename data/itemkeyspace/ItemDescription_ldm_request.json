@@ -53,7 +53,7 @@
   ],
   "jiraProject": "GDS",
   "name": "item_description",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
   "pk": "ItemDescID",
   "status": "DRAFT",

@@ -35,7 +35,7 @@
   ],
   "jiraProject": "GDS",
   "name": "item_uuid_mapping",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
   "pk": "sellerId,uuid",
   "status": "DRAFT",

@@ -134,7 +134,7 @@
   ],
   "jiraProject": "GDS",
   "name": "user_listing_draft_map",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
   "pk": "userId,draftId",
   "status": "DRAFT",
