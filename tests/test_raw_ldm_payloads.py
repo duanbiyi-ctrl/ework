@@ -153,6 +153,50 @@ class RawLdmPayloadTests(unittest.TestCase):
             with self.assertRaises(MetadataResolutionError):
                 build_payloads(data_dir, docs_dir)
 
+    def test_rejects_emitted_column_without_schema_description(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data"
+            docs_dir = root / "docs"
+            data_dir.mkdir()
+            docs_dir.mkdir()
+            (data_dir / "ItemDescription_schema.json").write_text(
+                json.dumps(
+                    {
+                        "DataStoreName": "ItemKeyspace",
+                        "DataTableName": "__ROOT__.ItemDescription",
+                        "Columns": [
+                            {
+                                "name": "desc",
+                                "type": "string",
+                                "comment": None,
+                                "nullable": None,
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (docs_dir / "item-description.md").write_text(
+                "\n".join(
+                    [
+                        "# ItemDescription LDM",
+                        "",
+                        "**LDM Name:** `ItemDescription LDM`",
+                        "",
+                        "**Description:** Item description payload.",
+                        "",
+                        "**NuDocument Docset:** `ItemDescription`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(MetadataResolutionError, "desc"):
+                build_payloads(data_dir, docs_dir)
+
 
 if __name__ == "__main__":
     unittest.main()
