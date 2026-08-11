@@ -52,7 +52,7 @@ class RawLdmPayloadTests(unittest.TestCase):
         by_name = {payload.payload["name"]: payload.payload for payload in payloads}
         item_root = by_name["item_root"]
         self.assertEqual(item_root["viewType"], "RAW")
-        self.assertEqual(item_root["namespaceId"], 1)
+        self.assertEqual(item_root["namespaceId"], 114)
         self.assertEqual(item_root["owners"], "jiajsun")
         self.assertEqual(item_root["teamDl"], "DL-eBay-GDS@ebay.com")
         self.assertEqual(item_root["pk"], "PK")

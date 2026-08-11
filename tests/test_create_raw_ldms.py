@@ -11,7 +11,7 @@ def payload_artifact(name: str) -> PayloadArtifact:
         output_path=None,
         payload={
             "name": name,
-            "namespaceId": 1,
+            "namespaceId": 114,
             "viewType": "RAW",
             "fields": [],
         },
@@ -69,7 +69,7 @@ class CreateRawLdmsTests(unittest.TestCase):
 
         def request(method, url, headers, body=None):
             calls.append(method)
-            return 200, [{"name": "item_root", "namespaceId": 1, "id": 77}]
+            return 200, [{"name": "item_root", "namespaceId": 114, "id": 77}]
 
         result = create_entities(
             [payload_artifact("item_root")],
