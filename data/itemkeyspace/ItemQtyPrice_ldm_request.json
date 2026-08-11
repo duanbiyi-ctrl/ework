@@ -1,0 +1,18 @@
+{
+  "dcsFields": [],
+  "description": "Current item inventory, sold quantity, price, and minimum-remnant state.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [],
+  "jiraProject": "GDS",
+  "name": "item_price_and_quantity",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "pk": "ItemQtyPriceID",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

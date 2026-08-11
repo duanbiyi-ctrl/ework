@@ -1,0 +1,64 @@
+{
+  "dcsFields": [],
+  "description": "Expanded or compressed shared group description for an MSKU listing draft.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "PK",
+      "name": "PK",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "hierarchicalName": "cmpDesc",
+      "name": "cmpDesc",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "groupDesc",
+      "name": "groupDesc",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "grpDescRevsnDt",
+      "name": "grpDescRevsnDt",
+      "ordinal": 5,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "listing_draft_group_description",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "pk": "PK",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

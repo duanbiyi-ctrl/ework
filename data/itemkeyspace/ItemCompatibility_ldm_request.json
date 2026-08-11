@@ -1,0 +1,55 @@
+{
+  "dcsFields": [],
+  "description": "Fitment and compatibility payload for an item.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "ItemCompID",
+      "name": "ItemCompID",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "hierarchicalName": "cmpCompat",
+      "name": "cmpCompat",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "ftExempt",
+      "name": "ftExempt",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "item_compatibility",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "pk": "ItemCompID",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

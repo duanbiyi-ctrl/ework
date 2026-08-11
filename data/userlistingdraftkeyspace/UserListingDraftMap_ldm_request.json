@@ -1,0 +1,145 @@
+{
+  "dcsFields": [],
+  "description": "User-scoped index of active listing drafts and their summary metadata.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "crtDt",
+      "name": "crtDt",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "crtMd",
+      "name": "crtMd",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "draftId",
+      "name": "draftId",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "eBGenTtl",
+      "name": "eBGenTtl",
+      "ordinal": 5,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "ebayGeneratedTitle",
+      "name": "ebayGeneratedTitle",
+      "ordinal": 6,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "imgUrl",
+      "name": "imgUrl",
+      "ordinal": 7,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "lastModifiedDate",
+      "name": "lastModifiedDate",
+      "ordinal": 8,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "lstgAppId",
+      "name": "lstgAppId",
+      "ordinal": 9,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "mktPlLstdOn",
+      "name": "mktPlLstdOn",
+      "ordinal": 10,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "primCatId",
+      "name": "primCatId",
+      "ordinal": 11,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "stockImgUrl",
+      "name": "stockImgUrl",
+      "ordinal": 12,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "ttl",
+      "name": "ttl",
+      "ordinal": 13,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "userId",
+      "name": "userId",
+      "ordinal": 14,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "user_listing_draft_map",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "pk": "userId,draftId",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

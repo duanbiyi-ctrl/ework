@@ -1,0 +1,46 @@
+{
+  "dcsFields": [],
+  "description": "Seller and UUID lookup mapping to an item and listing application.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "listingAppId",
+      "name": "listingAppId",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "listingId",
+      "name": "listingId",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "item_uuid_mapping",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "pk": "sellerId,uuid",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

@@ -1,0 +1,45 @@
+{
+  "dcsFields": [],
+  "description": "Conditional revision-history root used for listing retention and expiry maintenance.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"logicalType\":\"date\",\"default\":null}",
+      "hierarchicalName": "expiredDate",
+      "name": "expiredDate",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "lstgId",
+      "name": "lstgId",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "listing_revision_root",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

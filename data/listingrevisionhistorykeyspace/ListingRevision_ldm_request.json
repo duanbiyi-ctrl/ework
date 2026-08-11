@@ -1,0 +1,99 @@
+{
+  "dcsFields": [],
+  "description": "Historical summary of a listing revision and its changed property groups.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "appId",
+      "name": "appId",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "rvsdDate",
+      "name": "rvsdDate",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "rvsdPrptyGrps",
+      "name": "rvsdPrptyGrps",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rvsnId.reference",
+      "name": "rvsnId.reference",
+      "ordinal": 5,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sigRevCnt",
+      "name": "sigRevCnt",
+      "ordinal": 6,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "updCrLstgVrs",
+      "name": "updCrLstgVrs",
+      "ordinal": 7,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "vrsnCrtd",
+      "name": "vrsnCrtd",
+      "ordinal": 8,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "vrsnId",
+      "name": "vrsnId",
+      "ordinal": 9,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "listing_revision",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

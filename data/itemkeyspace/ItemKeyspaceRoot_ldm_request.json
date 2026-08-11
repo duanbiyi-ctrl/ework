@@ -1,0 +1,1837 @@
+{
+  "dcsFields": [],
+  "description": "Current-state identity and broad listing data for one item or variation.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "IncEbyPrdtDtail",
+      "name": "IncEbyPrdtDtail",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "IncStkPhtoUrl",
+      "name": "IncStkPhtoUrl",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "PK",
+      "name": "PK",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "PrmnlDtls.mrkdnItmPrcRvsn",
+      "name": "PrmnlDtls.mrkdnItmPrcRvsn",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "PrmnlDtls.onFreeShipPrToPromo",
+      "name": "PrmnlDtls.onFreeShipPrToPromo",
+      "ordinal": 5,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "PrmnlDtls.onFreeShipSale",
+      "name": "PrmnlDtls.onFreeShipSale",
+      "ordinal": 6,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 7,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "admEndDt",
+      "name": "admEndDt",
+      "ordinal": 8,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "autoRlstOrigAppId",
+      "name": "autoRlstOrigAppId",
+      "ordinal": 9,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "autoRlstTerms.autoRlst",
+      "name": "autoRlstTerms.autoRlst",
+      "ordinal": 10,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "autoRlstTerms.rlstCnt",
+      "name": "autoRlstTerms.rlstCnt",
+      "ordinal": 11,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "bidsFl",
+      "name": "bidsFl",
+      "ordinal": 12,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "buyerRstDsbld",
+      "name": "buyerRstDsbld",
+      "ordinal": 13,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "category.prmryCtgrId",
+      "name": "category.prmryCtgrId",
+      "ordinal": 14,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "category.scndryCtgrId",
+      "name": "category.scndryCtgrId",
+      "ordinal": 15,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "category.strPrmryCtgrId",
+      "name": "category.strPrmryCtgrId",
+      "ordinal": 16,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "category.strScndryCtgrId",
+      "name": "category.strScndryCtgrId",
+      "ordinal": 17,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "charity.charityId",
+      "name": "charity.charityId",
+      "ordinal": 18,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "charity.donationPct",
+      "name": "charity.donationPct",
+      "ordinal": 19,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "cndIdNum",
+      "name": "cndIdNum",
+      "ordinal": 20,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "conditionDesc",
+      "name": "conditionDesc",
+      "ordinal": 21,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "conditionId",
+      "name": "conditionId",
+      "ordinal": 22,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "crLstgDtVrs",
+      "name": "crLstgDtVrs",
+      "ordinal": 23,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "creationMode",
+      "name": "creationMode",
+      "ordinal": 24,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "crtDate",
+      "name": "crtDate",
+      "ordinal": 25,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "cstmPol.prdCmplPolIds",
+      "name": "cstmPol.prdCmplPolIds",
+      "ordinal": 26,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "cstmPol.tkBkPolId",
+      "name": "cstmPol.tkBkPolId",
+      "ordinal": 27,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "drftId",
+      "name": "drftId",
+      "ordinal": 28,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "eBayGenTitle",
+      "name": "eBayGenTitle",
+      "ordinal": 29,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "eBayVlt",
+      "name": "eBayVlt",
+      "ordinal": 30,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "ebayCmnty.comntyIds",
+      "name": "ebayCmnty.comntyIds",
+      "ordinal": 31,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "ebayCmnty.mktplceVsbl",
+      "name": "ebayCmnty.mktplceVsbl",
+      "ordinal": 32,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "endRsn",
+      "name": "endRsn",
+      "ordinal": 33,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "epid",
+      "name": "epid",
+      "ordinal": 34,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "epr.ecoFee",
+      "name": "epr.ecoFee",
+      "ordinal": 35,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "epr.prdDocId",
+      "name": "epr.prdDocId",
+      "ordinal": 36,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "epr.prdPkgId",
+      "name": "epr.prdPkgId",
+      "ordinal": 37,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "epr.prdcrId",
+      "name": "epr.prdcrId",
+      "ordinal": 38,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "epr.shpPkgId",
+      "name": "epr.shpPkgId",
+      "ordinal": 39,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "format",
+      "name": "format",
+      "ordinal": 40,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "ftmtId",
+      "name": "ftmtId",
+      "ordinal": 41,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "grpId",
+      "name": "grpId",
+      "ordinal": 42,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "hidePrtcptn",
+      "name": "hidePrtcptn",
+      "ordinal": 43,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "httpsCmplt",
+      "name": "httpsCmplt",
+      "ordinal": 44,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "invntryTrkMthd",
+      "name": "invntryTrkMthd",
+      "ordinal": 45,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isBusinessPolicyItem",
+      "name": "isBusinessPolicyItem",
+      "ordinal": 46,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isBuyerResponsibleForShipping",
+      "name": "isBuyerResponsibleForShipping",
+      "ordinal": 47,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isCreatedBySellSimilar",
+      "name": "isCreatedBySellSimilar",
+      "ordinal": 48,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isListedWithNoContactViaEmailSupport",
+      "name": "isListedWithNoContactViaEmailSupport",
+      "ordinal": 49,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isRestrictedBidding",
+      "name": "isRestrictedBidding",
+      "ordinal": 50,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isRestrictedToBusinessUser",
+      "name": "isRestrictedToBusinessUser",
+      "ordinal": 51,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isSCOStatusIndicator",
+      "name": "isSCOStatusIndicator",
+      "ordinal": 52,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isScheduled",
+      "name": "isScheduled",
+      "ordinal": 53,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isSellerOnVacation",
+      "name": "isSellerOnVacation",
+      "ordinal": 54,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isSemiPrsBin",
+      "name": "isSemiPrsBin",
+      "ordinal": 55,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isVariation",
+      "name": "isVariation",
+      "ordinal": 56,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "isVhclSbscrpItm",
+      "name": "isVhclSbscrpItm",
+      "ordinal": 57,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "itmLocn",
+      "name": "itmLocn",
+      "ordinal": 58,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "itmLocnCntry",
+      "name": "itmLocnCntry",
+      "ordinal": 59,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "itmLocnPostlCd",
+      "name": "itmLocnPostlCd",
+      "ordinal": 60,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "itmOnSale",
+      "name": "itmOnSale",
+      "ordinal": 61,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "itmRevsnDt",
+      "name": "itmRevsnDt",
+      "ordinal": 62,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "lastModDate",
+      "name": "lastModDate",
+      "ordinal": 63,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "lifecycle.dupAuction",
+      "name": "lifecycle.dupAuction",
+      "ordinal": 64,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "lifecycle.duration",
+      "name": "lifecycle.duration",
+      "ordinal": 65,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "lifecycle.endDt",
+      "name": "lifecycle.endDt",
+      "ordinal": 66,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "lifecycle.schdldEndDt",
+      "name": "lifecycle.schdldEndDt",
+      "ordinal": 67,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "lifecycle.schdldLstng",
+      "name": "lifecycle.schdldLstng",
+      "ordinal": 68,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "lifecycle.startDt",
+      "name": "lifecycle.startDt",
+      "ordinal": 69,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "listingAppId",
+      "name": "listingAppId",
+      "ordinal": 70,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "lotId",
+      "name": "lotId",
+      "ordinal": 71,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "lotSize",
+      "name": "lotSize",
+      "ordinal": 72,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "lstgCrtCltIp",
+      "name": "lstgCrtCltIp",
+      "ordinal": 73,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "mktplcLstdOn",
+      "name": "mktplcLstdOn",
+      "ordinal": 74,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "mngByInv",
+      "name": "mngByInv",
+      "ordinal": 75,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "onHold",
+      "name": "onHold",
+      "ordinal": 76,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "outOfStockDt",
+      "name": "outOfStockDt",
+      "ordinal": 77,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "pk",
+      "name": "pk",
+      "ordinal": 78,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "prdGallryFallbckURL",
+      "name": "prdGallryFallbckURL",
+      "ordinal": 79,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "prgSpprtd",
+      "name": "prgSpprtd",
+      "ordinal": 80,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "prtnrLstdAutoDlrItm",
+      "name": "prtnrLstdAutoDlrItm",
+      "ordinal": 81,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.cmpNm",
+      "name": "rgltryInfo.ecoOprtr.cmpNm",
+      "ordinal": 82,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.cntry",
+      "name": "rgltryInfo.ecoOprtr.cntry",
+      "ordinal": 83,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.cty",
+      "name": "rgltryInfo.ecoOprtr.cty",
+      "ordinal": 84,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.email",
+      "name": "rgltryInfo.ecoOprtr.email",
+      "ordinal": 85,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.phn",
+      "name": "rgltryInfo.ecoOprtr.phn",
+      "ordinal": 86,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.strt1",
+      "name": "rgltryInfo.ecoOprtr.strt1",
+      "ordinal": 87,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.strt2",
+      "name": "rgltryInfo.ecoOprtr.strt2",
+      "ordinal": 88,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.ecoOprtr.zip",
+      "name": "rgltryInfo.ecoOprtr.zip",
+      "ordinal": 89,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.eek.dataSheet",
+      "name": "rgltryInfo.eek.dataSheet",
+      "ordinal": 90,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.eek.img",
+      "name": "rgltryInfo.eek.img",
+      "ordinal": 91,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.eek.imgDesc",
+      "name": "rgltryInfo.eek.imgDesc",
+      "ordinal": 92,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.hzdMatrl.addnlInfo",
+      "name": "rgltryInfo.hzdMatrl.addnlInfo",
+      "ordinal": 93,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.hzdMatrl.pctgrmIds",
+      "name": "rgltryInfo.hzdMatrl.pctgrmIds",
+      "ordinal": 94,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.hzdMatrl.sgnlWrdId",
+      "name": "rgltryInfo.hzdMatrl.sgnlWrdId",
+      "ordinal": 95,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.hzdMatrl.stmntIds",
+      "name": "rgltryInfo.hzdMatrl.stmntIds",
+      "ordinal": 96,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.cmpNm",
+      "name": "rgltryInfo.mnfatr.cmpNm",
+      "ordinal": 97,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.cntctUrl",
+      "name": "rgltryInfo.mnfatr.cntctUrl",
+      "ordinal": 98,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.cntry",
+      "name": "rgltryInfo.mnfatr.cntry",
+      "ordinal": 99,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.cty",
+      "name": "rgltryInfo.mnfatr.cty",
+      "ordinal": 100,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.email",
+      "name": "rgltryInfo.mnfatr.email",
+      "ordinal": 101,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.phn",
+      "name": "rgltryInfo.mnfatr.phn",
+      "ordinal": 102,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.strt1",
+      "name": "rgltryInfo.mnfatr.strt1",
+      "ordinal": 103,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.strt2",
+      "name": "rgltryInfo.mnfatr.strt2",
+      "ordinal": 104,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.stt",
+      "name": "rgltryInfo.mnfatr.stt",
+      "ordinal": 105,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.mnfatr.zip",
+      "name": "rgltryInfo.mnfatr.zip",
+      "ordinal": 106,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.prdSfty.addnlInfo",
+      "name": "rgltryInfo.prdSfty.addnlInfo",
+      "ordinal": 107,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.prdSfty.pctgrmIds",
+      "name": "rgltryInfo.prdSfty.pctgrmIds",
+      "ordinal": 108,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.prdSfty.stmntIds",
+      "name": "rgltryInfo.prdSfty.stmntIds",
+      "ordinal": 109,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "rgltryInfo.rprIdxScore",
+      "name": "rgltryInfo.rprIdxScore",
+      "ordinal": 110,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rlstId",
+      "name": "rlstId",
+      "ordinal": 111,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "rlstPrntId",
+      "name": "rlstPrntId",
+      "ordinal": 112,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "scndChncItm",
+      "name": "scndChncItm",
+      "ordinal": 113,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sellerId",
+      "name": "sellerId",
+      "ordinal": 114,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "sellerPOverridn",
+      "name": "sellerPOverridn",
+      "ordinal": 115,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sigRevCnt",
+      "name": "sigRevCnt",
+      "ordinal": 116,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "slrAppData",
+      "name": "slrAppData",
+      "ordinal": 117,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "slrItemKey",
+      "name": "slrItemKey",
+      "ordinal": 118,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.cmpnyName",
+      "name": "sprtCntct.cmpnyName",
+      "ordinal": 119,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.cntctByEmlEnbld",
+      "name": "sprtCntct.cntctByEmlEnbld",
+      "ordinal": 120,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.cntry",
+      "name": "sprtCntct.cntry",
+      "ordinal": 121,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.anyTime",
+      "name": "sprtCntct.prmSprtCntctHr.anyTime",
+      "ordinal": 122,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.hrs",
+      "name": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.hrs",
+      "ordinal": 123,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.mins",
+      "name": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.mins",
+      "ordinal": 124,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.tz",
+      "name": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.tz",
+      "ordinal": 125,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.hrs",
+      "name": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.hrs",
+      "ordinal": 126,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.mins",
+      "name": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.mins",
+      "ordinal": 127,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.tz",
+      "name": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.tz",
+      "ordinal": 128,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmSprtCntctHr.sprtOnDays",
+      "name": "sprtCntct.prmSprtCntctHr.sprtOnDays",
+      "ordinal": 129,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.prmryPhn",
+      "name": "sprtCntct.prmryPhn",
+      "ordinal": 130,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.anyTime",
+      "name": "sprtCntct.scndSprtCntctHr.anyTime",
+      "ordinal": 131,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.hrs",
+      "name": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.hrs",
+      "ordinal": 132,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.mins",
+      "name": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.mins",
+      "ordinal": 133,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.tz",
+      "name": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.tz",
+      "ordinal": 134,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.hrs",
+      "name": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.hrs",
+      "ordinal": 135,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.mins",
+      "name": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.mins",
+      "ordinal": 136,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.tz",
+      "name": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.tz",
+      "ordinal": 137,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "sprtCntct.scndSprtCntctHr.sprtOnDays",
+      "name": "sprtCntct.scndSprtCntctHr.sprtOnDays",
+      "ordinal": 138,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "tax.aplcblToShp",
+      "name": "tax.aplcblToShp",
+      "ordinal": 139,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "tax.rcgnzBsnsSlrVat",
+      "name": "tax.rcgnzBsnsSlrVat",
+      "ordinal": 140,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "tax.salesTaxTblUsd",
+      "name": "tax.salesTaxTblUsd",
+      "ordinal": 141,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "tax.state",
+      "name": "tax.state",
+      "ordinal": 142,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "tax.taxRate",
+      "name": "tax.taxRate",
+      "ordinal": 143,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "tax.thrdPrtTxCtgCd",
+      "name": "tax.thrdPrtTxCtgCd",
+      "ordinal": 144,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "tax.vatPct",
+      "name": "tax.vatPct",
+      "ordinal": 145,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "title",
+      "name": "title",
+      "ordinal": 146,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "trdScp.intlStVsbl",
+      "name": "trdScp.intlStVsbl",
+      "ordinal": 147,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "trdScp.lclLstngDist",
+      "name": "trdScp.lclLstngDist",
+      "ordinal": 148,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.bestOfrTrms.autAccptEnbld",
+      "name": "trmsAndPolicies.bestOfrTrms.autAccptEnbld",
+      "ordinal": 149,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.bestOfrTrms.autAcptThrshPrc.currency",
+      "name": "trmsAndPolicies.bestOfrTrms.autAcptThrshPrc.currency",
+      "ordinal": 150,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.bestOfrTrms.autAcptThrshPrc.value",
+      "name": "trmsAndPolicies.bestOfrTrms.autAcptThrshPrc.value",
+      "ordinal": 151,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.bestOfrTrms.autDclnEnbld",
+      "name": "trmsAndPolicies.bestOfrTrms.autDclnEnbld",
+      "ordinal": 152,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.bestOfrTrms.autDclnThrshPrc.currency",
+      "name": "trmsAndPolicies.bestOfrTrms.autDclnThrshPrc.currency",
+      "ordinal": 153,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.bestOfrTrms.autDclnThrshPrc.value",
+      "name": "trmsAndPolicies.bestOfrTrms.autDclnThrshPrc.value",
+      "ordinal": 154,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.bestOfrTrms.bestOfrEnbld",
+      "name": "trmsAndPolicies.bestOfrTrms.bestOfrEnbld",
+      "ordinal": 155,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.prchsRateRqrmnt.minFdbkScore",
+      "name": "trmsAndPolicies.buyerRstrctns.prchsRateRqrmnt.minFdbkScore",
+      "ordinal": 156,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.prchsRateRqrmnt.qntyLmtPerByr",
+      "name": "trmsAndPolicies.buyerRstrctns.prchsRateRqrmnt.qntyLmtPerByr",
+      "ordinal": 157,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.qntyLmtPerByr",
+      "name": "trmsAndPolicies.buyerRstrctns.qntyLmtPerByr",
+      "ordinal": 158,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.rsdncyShpToLocn",
+      "name": "trmsAndPolicies.buyerRstrctns.rsdncyShpToLocn",
+      "ordinal": 159,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.rstrctBid",
+      "name": "trmsAndPolicies.buyerRstrctns.rstrctBid",
+      "ordinal": 160,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.rstrctToBsnsUsr",
+      "name": "trmsAndPolicies.buyerRstrctns.rstrctToBsnsUsr",
+      "ordinal": 161,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.rstrctnDate",
+      "name": "trmsAndPolicies.buyerRstrctns.rstrctnDate",
+      "ordinal": 162,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.unpaidTranThrsh.count",
+      "name": "trmsAndPolicies.buyerRstrctns.unpaidTranThrsh.count",
+      "ordinal": 163,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.buyerRstrctns.unpaidTranThrsh.period",
+      "name": "trmsAndPolicies.buyerRstrctns.unpaidTranThrsh.period",
+      "ordinal": 164,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.byrRstrctDsbld",
+      "name": "trmsAndPolicies.byrRstrctDsbld",
+      "ordinal": 165,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.cashOnDlvryFee.currency",
+      "name": "trmsAndPolicies.fulflmntTrms.cashOnDlvryFee.currency",
+      "ordinal": 166,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.cashOnDlvryFee.value",
+      "name": "trmsAndPolicies.fulflmntTrms.cashOnDlvryFee.value",
+      "ordinal": 167,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.dgtDlvLgsPlSprt",
+      "name": "trmsAndPolicies.fulflmntTrms.dgtDlvLgsPlSprt",
+      "ordinal": 168,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.ebayMgdShpng",
+      "name": "trmsAndPolicies.fulflmntTrms.ebayMgdShpng",
+      "ordinal": 169,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.freeShipAvail",
+      "name": "trmsAndPolicies.fulflmntTrms.freeShipAvail",
+      "ordinal": 170,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.gspLgstcPlnSprtd",
+      "name": "trmsAndPolicies.fulflmntTrms.gspLgstcPlnSprtd",
+      "ordinal": 171,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.ispuLgstcPlSprt",
+      "name": "trmsAndPolicies.fulflmntTrms.ispuLgstcPlSprt",
+      "ordinal": 172,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.mFulfillmentSprt",
+      "name": "trmsAndPolicies.fulflmntTrms.mFulfillmentSprt",
+      "ordinal": 173,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.mgdShpngCstPdBy",
+      "name": "trmsAndPolicies.fulflmntTrms.mgdShpngCstPdBy",
+      "ordinal": 174,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.mgdShpngOptin",
+      "name": "trmsAndPolicies.fulflmntTrms.mgdShpngOptin",
+      "ordinal": 175,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.orgPostCode",
+      "name": "trmsAndPolicies.fulflmntTrms.orgPostCode",
+      "ordinal": 176,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.depth",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.depth",
+      "ordinal": 177,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.length",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.length",
+      "ordinal": 178,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.width",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.width",
+      "ordinal": 179,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.irregularPackage",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.irregularPackage",
+      "ordinal": 180,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.packageType",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.packageType",
+      "ordinal": 181,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.unitOfMeasure",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.unitOfMeasure",
+      "ordinal": 182,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.weight.majorWeight",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.weight.majorWeight",
+      "ordinal": 183,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.pkgSpec.weight.minorWeight",
+      "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.weight.minorWeight",
+      "ordinal": 184,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.fulflmntTrms.s2hLgstcPlnSprt",
+      "name": "trmsAndPolicies.fulflmntTrms.s2hLgstcPlnSprt",
+      "ordinal": 185,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.pymtPlcyId.plcyVrsn",
+      "name": "trmsAndPolicies.pymtPlcyId.plcyVrsn",
+      "ordinal": 186,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.pymtPlcyId.policyId",
+      "name": "trmsAndPolicies.pymtPlcyId.policyId",
+      "ordinal": 187,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.rtrnsPlcyId.plcyVrsn",
+      "name": "trmsAndPolicies.rtrnsPlcyId.plcyVrsn",
+      "ordinal": 188,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.rtrnsPlcyId.policyId",
+      "name": "trmsAndPolicies.rtrnsPlcyId.policyId",
+      "ordinal": 189,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.shipPlcyId.plcyVrsn",
+      "name": "trmsAndPolicies.shipPlcyId.plcyVrsn",
+      "ordinal": 190,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "trmsAndPolicies.shipPlcyId.policyId",
+      "name": "trmsAndPolicies.shipPlcyId.policyId",
+      "ordinal": 191,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "uuid",
+      "name": "uuid",
+      "ordinal": 192,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "vehPkgId",
+      "name": "vehPkgId",
+      "ordinal": 193,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "hierarchicalName": "videos",
+      "name": "videos",
+      "ordinal": 194,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "vrsnId",
+      "name": "vrsnId",
+      "ordinal": 195,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "vslEncmt.boldTitle",
+      "name": "vslEncmt.boldTitle",
+      "ordinal": 196,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "vslEncmt.gallDurtn",
+      "name": "vslEncmt.gallDurtn",
+      "ordinal": 197,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "vslEncmt.gallTp",
+      "name": "vslEncmt.gallTp",
+      "ordinal": 198,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "hierarchicalName": "vslEncmt.homePgftrd",
+      "name": "vslEncmt.homePgftrd",
+      "ordinal": 199,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "vslEncmt.photoDspType",
+      "name": "vslEncmt.photoDspType",
+      "ordinal": 200,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "vslEncmt.subtitle",
+      "name": "vslEncmt.subtitle",
+      "ordinal": 201,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"int\",\"default\":null}",
+      "hierarchicalName": "vslEncmt.vstCntrTp",
+      "name": "vslEncmt.vstCntrTp",
+      "ordinal": 202,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "item_root",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "pk": "PK",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}

@@ -1,0 +1,127 @@
+{
+  "dcsFields": [],
+  "description": "Inventory reservation and lock state for an item.",
+  "domain": "GDS",
+  "environment": "UNSTAGED",
+  "errorHandlingStorageMappings": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "__KEY",
+      "name": "__KEY",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "cmtDt",
+      "name": "cmtDt",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "cnclDt",
+      "name": "cnclDt",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "crtDt",
+      "name": "crtDt",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "expDt",
+      "name": "expDt",
+      "ordinal": 5,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "extCnt",
+      "name": "extCnt",
+      "ordinal": 6,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "extDt",
+      "name": "extDt",
+      "ordinal": 7,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "modDt",
+      "name": "modDt",
+      "ordinal": 8,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "pk",
+      "name": "pk",
+      "ordinal": 9,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "hierarchicalName": "qty",
+      "name": "qty",
+      "ordinal": 10,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "st",
+      "name": "st",
+      "ordinal": 11,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "hierarchicalName": "uuid",
+      "name": "uuid",
+      "ordinal": 12,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
+  "jiraProject": "GDS",
+  "name": "item_lock",
+  "namespaceId": 1,
+  "owners": "jiajsun",
+  "pk": "pk",
+  "status": "DRAFT",
+  "team": "GDS",
+  "teamDl": "DL-eBay-GDS@ebay.com",
+  "udfs": [],
+  "viewType": "RAW"
+}
