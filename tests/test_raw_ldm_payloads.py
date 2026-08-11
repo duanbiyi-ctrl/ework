@@ -50,6 +50,13 @@ class RawLdmPayloadTests(unittest.TestCase):
         self.assertEqual(len(payloads), 22)
 
         by_name = {payload.payload["name"]: payload.payload for payload in payloads}
+        self.assertTrue(
+            all(
+                field["name"] != "__KEY"
+                for payload in by_name.values()
+                for field in payload["fields"]
+            )
+        )
         item_root = by_name["item_root"]
         self.assertEqual(item_root["viewType"], "RAW")
         self.assertEqual(item_root["namespaceId"], 114)
