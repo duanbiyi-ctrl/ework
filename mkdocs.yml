@@ -93,6 +93,7 @@ nav:
       - Query Examples: guides/query-examples.md
   - Reference:
       - LDM Design Principle: reference/ldm-modeling-principle.md
+      - LDM Review Notes: reference/ldm-review-notes.md
   - FAQ: faq.md
 
 extra_css:
