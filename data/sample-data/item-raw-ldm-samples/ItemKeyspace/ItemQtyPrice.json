@@ -1,0 +1,3695 @@
+[
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_102250629096",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695065481,
+            "modification_date": 1784403055,
+            "revision": 29
+        },
+        "ItemQtyPriceID": "QTYPRICE_102250629096",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 11.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110038967833",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1621543450,
+            "modification_date": 1785345932,
+            "revision": 39
+        },
+        "ItemQtyPriceID": "QTYPRICE_110038967833",
+        "availQty": 99,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 4
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 39
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110063553478",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1625252044,
+            "modification_date": 1785693186,
+            "revision": 35
+        },
+        "ItemQtyPriceID": "QTYPRICE_110063553478",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 2.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110239804719",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110239804719",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1606931428,
+            "modification_date": 1785718796,
+            "revision": 52
+        },
+        "ItemQtyPriceID": "QTYPRICE_110239804719",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 22
+            },
+            "prcGuarantee": false
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110298230558",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110298230558",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593629155,
+            "modification_date": 1786365285,
+            "revision": 35
+        },
+        "ItemQtyPriceID": "QTYPRICE_110298230558",
+        "availQty": 731,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 32.19
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 40
+    },
+    {
+        "__key": [
+            {
+                "string": "110305825325",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110305825325",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1635588872,
+            "modification_date": 1785402724,
+            "revision": 105
+        },
+        "ItemQtyPriceID": "QTYPRICE_110305825325",
+        "availQty": 3,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 18.95
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110311177994",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110311177994",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593550853,
+            "modification_date": 1786474745,
+            "revision": 60
+        },
+        "ItemQtyPriceID": "QTYPRICE_110311177994",
+        "availQty": 39,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 9.29
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "prcngTrtmnt": "None"
+            }
+        },
+        "qtySold": 124
+    },
+    {
+        "__key": [
+            {
+                "string": "110327909680",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110327909680",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695029262,
+            "modification_date": 1784366885,
+            "revision": 36
+        },
+        "ItemQtyPriceID": "QTYPRICE_110327909680",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110340694412",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110340694412",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1604349659,
+            "modification_date": 1784575676,
+            "revision": 33
+        },
+        "ItemQtyPriceID": "QTYPRICE_110340694412",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 4
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110343905989",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110343905989",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1626287887,
+            "modification_date": 1785228899,
+            "revision": 28
+        },
+        "ItemQtyPriceID": "QTYPRICE_110343905989",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110356159844",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110356159844",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601923958,
+            "modification_date": 1785344783,
+            "revision": 107
+        },
+        "ItemQtyPriceID": "QTYPRICE_110356159844",
+        "availQty": 2,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 49
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 46.55
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 3
+    },
+    {
+        "__key": [
+            {
+                "string": "110378146419",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110378146419",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601649369,
+            "modification_date": 1784247403,
+            "revision": 37
+        },
+        "ItemQtyPriceID": "QTYPRICE_110378146419",
+        "availQty": 43,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 2286.28
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 2
+    },
+    {
+        "__key": [
+            {
+                "string": "110379641753",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110379641753",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595260162,
+            "modification_date": 1784562536,
+            "revision": 102
+        },
+        "ItemQtyPriceID": "QTYPRICE_110379641753",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 39.99
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 29.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110402349723",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110402349723",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1694691144,
+            "modification_date": 1784028743,
+            "revision": 35
+        },
+        "ItemQtyPriceID": "QTYPRICE_110402349723",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 10.5
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110403422168",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110403422168",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592268900,
+            "modification_date": 1784237476,
+            "revision": 108
+        },
+        "ItemQtyPriceID": "QTYPRICE_110403422168",
+        "availQty": 5,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 35.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110403422355",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110403422355",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592281724,
+            "modification_date": 1784237516,
+            "revision": 108
+        },
+        "ItemQtyPriceID": "QTYPRICE_110403422355",
+        "availQty": 5,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 35.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110413677241",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110413677241",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593589947,
+            "modification_date": 1786678457,
+            "revision": 117
+        },
+        "ItemQtyPriceID": "QTYPRICE_110413677241",
+        "availQty": 8,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 15.49
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 4
+    },
+    {
+        "__key": [
+            {
+                "string": "110416442607",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110416442607",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593589529,
+            "modification_date": 1786287276,
+            "revision": 76
+        },
+        "ItemQtyPriceID": "QTYPRICE_110416442607",
+        "availQty": 2,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 27.97
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 2
+    },
+    {
+        "__key": [
+            {
+                "string": "110418908413",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110418908413",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1693266504,
+            "modification_date": 1785282499,
+            "revision": 36
+        },
+        "ItemQtyPriceID": "QTYPRICE_110418908413",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 17
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110421705884",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110421705884",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1685059417,
+            "modification_date": 1786023752,
+            "revision": 29
+        },
+        "ItemQtyPriceID": "QTYPRICE_110421705884",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110430303957",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110430303957",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601924822,
+            "modification_date": 1785553760,
+            "revision": 96
+        },
+        "ItemQtyPriceID": "QTYPRICE_110430303957",
+        "availQty": 3,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 34
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 32.3
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 2
+    },
+    {
+        "__key": [
+            {
+                "string": "110436240181",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110436240181",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593006857,
+            "modification_date": 1785423708,
+            "revision": 53
+        },
+        "ItemQtyPriceID": "QTYPRICE_110436240181",
+        "availQty": 10,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 12.9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 165
+    },
+    {
+        "__key": [
+            {
+                "string": "110441350518",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110441350518",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1635532779,
+            "modification_date": 1785685386,
+            "revision": 32
+        },
+        "ItemQtyPriceID": "QTYPRICE_110441350518",
+        "availQty": 36,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 30
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 64
+    },
+    {
+        "__key": [
+            {
+                "string": "110441366174",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110441366174",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1597275285,
+            "modification_date": 1785687911,
+            "revision": 36
+        },
+        "ItemQtyPriceID": "QTYPRICE_110441366174",
+        "availQty": 20,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 60
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 25
+    },
+    {
+        "__key": [
+            {
+                "string": "110445578502",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110445578502",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601924296,
+            "modification_date": 1786673036,
+            "revision": 96
+        },
+        "ItemQtyPriceID": "QTYPRICE_110445578502",
+        "availQty": 3,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 65
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 61.75
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 1
+    },
+    {
+        "__key": [
+            {
+                "string": "110462303442",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110462303442",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593553405,
+            "modification_date": 1785004320,
+            "revision": 34
+        },
+        "ItemQtyPriceID": "QTYPRICE_110462303442",
+        "availQty": 4,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 72.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 19
+    },
+    {
+        "__key": [
+            {
+                "string": "110462935095",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110462935095",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695819137,
+            "modification_date": 1785156844,
+            "revision": 29
+        },
+        "ItemQtyPriceID": "QTYPRICE_110462935095",
+        "availQty": 3,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "AUD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "AUD",
+                "value": 9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 7
+    },
+    {
+        "__key": [
+            {
+                "string": "110475959099",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110475959099",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1596230203,
+            "modification_date": 1785528892,
+            "revision": 93
+        },
+        "ItemQtyPriceID": "QTYPRICE_110475959099",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 29.99
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 22.49
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110483249629",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110483249629",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595096650,
+            "modification_date": 1784395456,
+            "revision": 97
+        },
+        "ItemQtyPriceID": "QTYPRICE_110483249629",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 34.99
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 26.24
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110498535615",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110498535615",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595457587,
+            "modification_date": 1784756372,
+            "revision": 94
+        },
+        "ItemQtyPriceID": "QTYPRICE_110498535615",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 24.99
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 18.74
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110499704249",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110499704249",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1598377627,
+            "modification_date": 1784998033,
+            "revision": 30
+        },
+        "ItemQtyPriceID": "QTYPRICE_110499704249",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 25
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110502734501",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110502734501",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592290402,
+            "modification_date": 1785877411,
+            "revision": 69
+        },
+        "ItemQtyPriceID": "QTYPRICE_110502734501",
+        "availQty": 50,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 448.08
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110502751267",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110502751267",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592265786,
+            "modification_date": 1785880704,
+            "revision": 114
+        },
+        "ItemQtyPriceID": "QTYPRICE_110502751267",
+        "availQty": 50,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 39.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110506664977",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110506664977",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1634178267,
+            "modification_date": 1786670655,
+            "revision": 31
+        },
+        "ItemQtyPriceID": "QTYPRICE_110506664977",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 14.49
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110512114868",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110512114868",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1644501406,
+            "modification_date": 1785068631,
+            "revision": 38
+        },
+        "ItemQtyPriceID": "QTYPRICE_110512114868",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 99.9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110524427544",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110524427544",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595686025,
+            "modification_date": 1784988342,
+            "revision": 42
+        },
+        "ItemQtyPriceID": "QTYPRICE_110524427544",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 9.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 3
+    },
+    {
+        "__key": [
+            {
+                "string": "110538884822",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110538884822",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1604849867,
+            "modification_date": 1786634010,
+            "revision": 45
+        },
+        "ItemQtyPriceID": "QTYPRICE_110538884822",
+        "availQty": 2,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 33
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 4
+    },
+    {
+        "__key": [
+            {
+                "string": "110543674643",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110543674643",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1694121412,
+            "modification_date": 1786137425,
+            "revision": 37
+        },
+        "ItemQtyPriceID": "QTYPRICE_110543674643",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 11.5
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110555009427",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110555009427",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601924809,
+            "modification_date": 1786045800,
+            "revision": 106
+        },
+        "ItemQtyPriceID": "QTYPRICE_110555009427",
+        "availQty": 5,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 69
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 62.1
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110561155326",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110561155326",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1598429980,
+            "modification_date": 1784324349,
+            "revision": 36
+        },
+        "ItemQtyPriceID": "QTYPRICE_110561155326",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 8
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110561777376",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110561777376",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1594756043,
+            "modification_date": 1784449447,
+            "revision": 64
+        },
+        "ItemQtyPriceID": "QTYPRICE_110561777376",
+        "availQty": 5,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 10.75
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 418
+    },
+    {
+        "__key": [
+            {
+                "string": "110572140759",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110572140759",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1597163509,
+            "modification_date": 1786465858,
+            "revision": 205
+        },
+        "ItemQtyPriceID": "QTYPRICE_110572140759",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 39.99
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 33.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110577662009",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110577662009",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1591562030,
+            "modification_date": 1786285069,
+            "revision": 117
+        },
+        "ItemQtyPriceID": "QTYPRICE_110577662009",
+        "availQty": 9,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 15.49
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 4
+    },
+    {
+        "__key": [
+            {
+                "string": "110578364567",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110578364567",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1604348971,
+            "modification_date": 1785060125,
+            "revision": 31
+        },
+        "ItemQtyPriceID": "QTYPRICE_110578364567",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 4
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110585555086",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110585555086",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1640860631,
+            "modification_date": 1786576873,
+            "revision": 58
+        },
+        "ItemQtyPriceID": "QTYPRICE_110585555086",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 19
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110600856191",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110600856191",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592947366,
+            "modification_date": 1784516105,
+            "revision": 35
+        },
+        "ItemQtyPriceID": "QTYPRICE_110600856191",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 12.69
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 16
+    },
+    {
+        "__key": [
+            {
+                "string": "110609752107",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110609752107",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1597003496,
+            "modification_date": 1786302266,
+            "revision": 45
+        },
+        "ItemQtyPriceID": "QTYPRICE_110609752107",
+        "availQty": 120,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 10
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110611546749",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110611546749",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1640860615,
+            "modification_date": 1784038664,
+            "revision": 55
+        },
+        "ItemQtyPriceID": "QTYPRICE_110611546749",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 21
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110613941825",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110613941825",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1626287884,
+            "modification_date": 1784492341,
+            "revision": 31
+        },
+        "ItemQtyPriceID": "QTYPRICE_110613941825",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 4.9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110620286673",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110620286673",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1594414440,
+            "modification_date": 1786480485,
+            "revision": 122
+        },
+        "ItemQtyPriceID": "QTYPRICE_110620286673",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 50
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 40
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1599560112,
+            "modification_date": 1784531482,
+            "revision": 330
+        },
+        "ItemQtyPriceID": "QTYPRICE_110621304979",
+        "availQty": 826,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 1.5
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 2233
+    },
+    {
+        "__key": [
+            {
+                "string": "110625591700",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110625591700",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1602872695,
+            "modification_date": 1784222419,
+            "revision": 53
+        },
+        "ItemQtyPriceID": "QTYPRICE_110625591700",
+        "availQty": 9,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 7.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 37
+    },
+    {
+        "__key": [
+            {
+                "string": "110627123589",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110627123589",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601569391,
+            "modification_date": 1784639082,
+            "revision": 35
+        },
+        "ItemQtyPriceID": "QTYPRICE_110627123589",
+        "availQty": 20,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 27.95
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 23
+    },
+    {
+        "__key": [
+            {
+                "string": "110631393063",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631393063",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592492036,
+            "modification_date": 1785748787,
+            "revision": 124
+        },
+        "ItemQtyPriceID": "QTYPRICE_110631393063",
+        "availQty": 52,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 29.9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 9
+    },
+    {
+        "__key": [
+            {
+                "string": "110631880901",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631880901",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1596560594,
+            "modification_date": 1786419258,
+            "revision": 72
+        },
+        "ItemQtyPriceID": "QTYPRICE_110631880901",
+        "availQty": 72,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 95
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 197
+    },
+    {
+        "__key": [
+            {
+                "string": "110649092978",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110649092978",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1694656565,
+            "modification_date": 1786672558,
+            "revision": 29
+        },
+        "ItemQtyPriceID": "QTYPRICE_110649092978",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 72.5
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110649991320",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110649991320",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1640860614,
+            "modification_date": 1784202145,
+            "revision": 55
+        },
+        "ItemQtyPriceID": "QTYPRICE_110649991320",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 21
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110653194174",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110653194174",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592265088,
+            "modification_date": 1784828427,
+            "revision": 107
+        },
+        "ItemQtyPriceID": "QTYPRICE_110653194174",
+        "availQty": 5,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 35.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110673651693",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110673651693",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595766715,
+            "modification_date": 1786435779,
+            "revision": 31
+        },
+        "ItemQtyPriceID": "QTYPRICE_110673651693",
+        "availQty": 49,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "AUD",
+                "value": 0
+            },
+            "fixedPrice": {
+                "currency": "AUD",
+                "value": 208
+            },
+            "prcGuarantee": false
+        },
+        "qtySold": 25
+    },
+    {
+        "__key": [
+            {
+                "string": "110677777360",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110677777360",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1602937518,
+            "modification_date": 1784648217,
+            "revision": 100
+        },
+        "ItemQtyPriceID": "QTYPRICE_110677777360",
+        "availQty": 989,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 14.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 11
+    },
+    {
+        "__key": [
+            {
+                "string": "110678066423",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110678066423",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593558841,
+            "modification_date": 1784710631,
+            "revision": 36
+        },
+        "ItemQtyPriceID": "QTYPRICE_110678066423",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 17.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110678980966",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110678980966",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1599140256,
+            "modification_date": 1784920036,
+            "revision": 55
+        },
+        "ItemQtyPriceID": "QTYPRICE_110678980966",
+        "availQty": 8,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 1.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 23
+    },
+    {
+        "__key": [
+            {
+                "string": "110682898690",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110682898690",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1645457887,
+            "modification_date": 1785786473,
+            "revision": 30
+        },
+        "ItemQtyPriceID": "QTYPRICE_110682898690",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 29.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110686125281",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110686125281",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1597078478,
+            "modification_date": 1786380894,
+            "revision": 39
+        },
+        "ItemQtyPriceID": "QTYPRICE_110686125281",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 24.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110692345465",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110692345465",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593550338,
+            "modification_date": 1784914737,
+            "revision": 54
+        },
+        "ItemQtyPriceID": "QTYPRICE_110692345465",
+        "availQty": 17,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 4.5
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 33
+    },
+    {
+        "__key": [
+            {
+                "string": "110704047560",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110704047560",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695033039,
+            "modification_date": 1784370628,
+            "revision": 37
+        },
+        "ItemQtyPriceID": "QTYPRICE_110704047560",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 7
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110705186063",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110705186063",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695206851,
+            "modification_date": 1784544460,
+            "revision": 48
+        },
+        "ItemQtyPriceID": "QTYPRICE_110705186063",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 19.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 1
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592922131,
+            "modification_date": 1784832413,
+            "revision": 154
+        },
+        "ItemQtyPriceID": "QTYPRICE_110706599931",
+        "availQty": 17,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 41.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 451
+    },
+    {
+        "__key": [
+            {
+                "string": "110721941312",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110721941312",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1632325469,
+            "modification_date": 1785268579,
+            "revision": 30
+        },
+        "ItemQtyPriceID": "QTYPRICE_110721941312",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 595
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110724852917",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110724852917",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1645138653,
+            "modification_date": 1785868319,
+            "revision": 28
+        },
+        "ItemQtyPriceID": "QTYPRICE_110724852917",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 295
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110734622549",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110734622549",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1621868077,
+            "modification_date": 1785096859,
+            "revision": 51
+        },
+        "ItemQtyPriceID": "QTYPRICE_110734622549",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 8.5
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110741151995",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110741151995",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1602153506,
+            "modification_date": 1786185431,
+            "revision": 35
+        },
+        "ItemQtyPriceID": "QTYPRICE_110741151995",
+        "availQty": 3,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 295
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110741592468",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110741592468",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1632372235,
+            "modification_date": 1786258100,
+            "revision": 32
+        },
+        "ItemQtyPriceID": "QTYPRICE_110741592468",
+        "availQty": 4,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 23.97
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110741894295",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110741894295",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1605378609,
+            "modification_date": 1786303177,
+            "revision": 30
+        },
+        "ItemQtyPriceID": "QTYPRICE_110741894295",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 95
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 1
+    },
+    {
+        "__key": [
+            {
+                "string": "110747744702",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110747744702",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593594063,
+            "modification_date": 1786286831,
+            "revision": 64
+        },
+        "ItemQtyPriceID": "QTYPRICE_110747744702",
+        "availQty": 2,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 39.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110748358786",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110748358786",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595451045,
+            "modification_date": 1784753300,
+            "revision": 105
+        },
+        "ItemQtyPriceID": "QTYPRICE_110748358786",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 19.99
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 14.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110751026200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110751026200",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1591127785,
+            "modification_date": 1785294293,
+            "revision": 42
+        },
+        "ItemQtyPriceID": "QTYPRICE_110751026200",
+        "availQty": 998,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 18.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 97
+    },
+    {
+        "__key": [
+            {
+                "string": "110754314093",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110754314093",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1596732529,
+            "modification_date": 1786034890,
+            "revision": 92
+        },
+        "ItemQtyPriceID": "QTYPRICE_110754314093",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 19
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 17.1
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110756029834",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110756029834",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1591234529,
+            "modification_date": 1786358398,
+            "revision": 60
+        },
+        "ItemQtyPriceID": "QTYPRICE_110756029834",
+        "availQty": 9136,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 7.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 36
+    },
+    {
+        "__key": [
+            {
+                "string": "110761515841",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110761515841",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1607437461,
+            "modification_date": 1785096849,
+            "revision": 60
+        },
+        "ItemQtyPriceID": "QTYPRICE_110761515841",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 7.5
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110765730119",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110765730119",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1591562043,
+            "modification_date": 1786287621,
+            "revision": 101
+        },
+        "ItemQtyPriceID": "QTYPRICE_110765730119",
+        "availQty": 2,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 35.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 3
+    },
+    {
+        "__key": [
+            {
+                "string": "110775354743",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110775354743",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592835406,
+            "modification_date": 1786641438,
+            "revision": 212
+        },
+        "ItemQtyPriceID": "QTYPRICE_110775354743",
+        "availQty": 8,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "AUD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "AUD",
+                "value": 486.69
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 4
+    },
+    {
+        "__key": [
+            {
+                "string": "110781131115",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110781131115",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1645185090,
+            "modification_date": 1784712446,
+            "revision": 34
+        },
+        "ItemQtyPriceID": "QTYPRICE_110781131115",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 12.9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110784240515",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110784240515",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1640861018,
+            "modification_date": 1785237455,
+            "revision": 48
+        },
+        "ItemQtyPriceID": "QTYPRICE_110784240515",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 110
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110791061243",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110791061243",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1694185331,
+            "modification_date": 1786201331,
+            "revision": 29
+        },
+        "ItemQtyPriceID": "QTYPRICE_110791061243",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 6
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110792741938",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110792741938",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1626184995,
+            "modification_date": 1786417356,
+            "revision": 41
+        },
+        "ItemQtyPriceID": "QTYPRICE_110792741938",
+        "availQty": 20,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 12
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 21
+    },
+    {
+        "__key": [
+            {
+                "string": "110798269673",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110798269673",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1609861436,
+            "modification_date": 1784822286,
+            "revision": 76
+        },
+        "ItemQtyPriceID": "QTYPRICE_110798269673",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 22.9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 17
+    },
+    {
+        "__key": [
+            {
+                "string": "110799917314",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110799917314",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695864482,
+            "modification_date": 1785202085,
+            "revision": 27
+        },
+        "ItemQtyPriceID": "QTYPRICE_110799917314",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 3.19
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110803698408",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110803698408",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595192692,
+            "modification_date": 1785877323,
+            "revision": 51
+        },
+        "ItemQtyPriceID": "QTYPRICE_110803698408",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 9
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110806765786",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110806765786",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1624699396,
+            "modification_date": 1786384266,
+            "revision": 30
+        },
+        "ItemQtyPriceID": "QTYPRICE_110806765786",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 8.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110817491532",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110817491532",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1640861011,
+            "modification_date": 1785399608,
+            "revision": 54
+        },
+        "ItemQtyPriceID": "QTYPRICE_110817491532",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 16
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110826072524",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110826072524",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1591174979,
+            "modification_date": 1784121877,
+            "revision": 178
+        },
+        "ItemQtyPriceID": "QTYPRICE_110826072524",
+        "availQty": 50,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "GBP",
+                "value": 25.49
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "prcngTrtmnt": "None"
+            }
+        },
+        "qtySold": 3
+    },
+    {
+        "__key": [
+            {
+                "string": "110832477714",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110832477714",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595192455,
+            "modification_date": 1785747198,
+            "revision": 52
+        },
+        "ItemQtyPriceID": "QTYPRICE_110832477714",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 12
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110833294592",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110833294592",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1603895976,
+            "modification_date": 1779975534,
+            "revision": 42
+        },
+        "lifecycle": {
+            "endDt": {
+                "$numberLong": "1779975523000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1779975523000"
+            }
+        },
+        "ItemQtyPriceID": "QTYPRICE_110833294592",
+        "availQty": 0,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 11.75
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 11,
+        "crLstgDtVrs": "1779975531782"
+    },
+    {
+        "__key": [
+            {
+                "string": "110837615716",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110837615716",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1612727357,
+            "modification_date": 1786118708,
+            "revision": 65
+        },
+        "ItemQtyPriceID": "QTYPRICE_110837615716",
+        "availQty": 0,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "EUR",
+                "value": 30
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": {
+                "orgnlRtlPrc": null,
+                "minAdvrtsPrc": null,
+                "prcngTrtmnt": "None",
+                "OutltCmprsnPrc": null,
+                "soldOnEbay": null,
+                "minAdvrtsPrcExp": null,
+                "soldOffeBay": null
+            }
+        },
+        "qtySold": 35
+    },
+    {
+        "__key": [
+            {
+                "string": "110841409835",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110841409835",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1600025079,
+            "modification_date": 1786648964,
+            "revision": 37
+        },
+        "ItemQtyPriceID": "QTYPRICE_110841409835",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 18.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110851856162",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110851856162",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1630355923,
+            "modification_date": 1785364966,
+            "revision": 50
+        },
+        "ItemQtyPriceID": "QTYPRICE_110851856162",
+        "availQty": 2,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 24.99
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 1
+    },
+    {
+        "__key": [
+            {
+                "string": "110869471930",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110869471930",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1603744651,
+            "modification_date": 1785098214,
+            "revision": 55
+        },
+        "ItemQtyPriceID": "QTYPRICE_110869471930",
+        "availQty": 69,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 44.95
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 107
+    },
+    {
+        "__key": [
+            {
+                "string": "110874107750",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110874107750",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1612995790,
+            "modification_date": 1785860460,
+            "revision": 34
+        },
+        "ItemQtyPriceID": "QTYPRICE_110874107750",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "COGs": null,
+            "auctnRsrvPrc": null,
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 249
+            },
+            "strtBidPrice": null,
+            "prcGuarantee": false,
+            "mrktngPrc": null
+        },
+        "qtySold": 0
+    },
+    {
+        "__key": [
+            {
+                "string": "110881245810",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110881245810",
+                "collection": "ItemQtyPrice"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1644443121,
+            "modification_date": 1784228894,
+            "revision": 29
+        },
+        "ItemQtyPriceID": "QTYPRICE_110881245810",
+        "availQty": 1,
+        "price": {
+            "orgnRetailPrice": {
+                "currency": "USD",
+                "value": 0
+            },
+            "fixedPrice": {
+                "currency": "USD",
+                "value": 9.95
+            },
+            "prcGuarantee": false
+        },
+        "qtySold": 0
+    }
+]

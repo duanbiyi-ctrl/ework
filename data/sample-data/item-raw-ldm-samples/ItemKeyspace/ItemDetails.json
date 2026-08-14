@@ -1,0 +1,1902 @@
+[
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110038967833",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1779665947,
+            "modification_date": 1779665947,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110038967833"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110063553478",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762109937,
+            "modification_date": 1782113051,
+            "revision": 5
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110063553478"
+    },
+    {
+        "__key": [
+            {
+                "string": "110239804719",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110239804719",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785171231,
+            "modification_date": 1785171231,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110239804719"
+    },
+    {
+        "__key": [
+            {
+                "string": "110305825325",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110305825325",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1779862987,
+            "modification_date": 1782208789,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110305825325"
+    },
+    {
+        "__key": [
+            {
+                "string": "110311177994",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110311177994",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781163294,
+            "modification_date": 1781178529,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110311177994"
+    },
+    {
+        "__key": [
+            {
+                "string": "110327909680",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110327909680",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762456258,
+            "modification_date": 1781016590,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110327909680"
+    },
+    {
+        "__key": [
+            {
+                "string": "110340694412",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110340694412",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1780996360,
+            "modification_date": 1781340410,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110340694412"
+    },
+    {
+        "__key": [
+            {
+                "string": "110356159844",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110356159844",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762362629,
+            "modification_date": 1785344783,
+            "revision": 24
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110356159844"
+    },
+    {
+        "__key": [
+            {
+                "string": "110378146419",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110378146419",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1768568043,
+            "modification_date": 1781095397,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110378146419"
+    },
+    {
+        "__key": [
+            {
+                "string": "110379641753",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110379641753",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763183484,
+            "modification_date": 1782852783,
+            "revision": 15
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110379641753"
+    },
+    {
+        "__key": [
+            {
+                "string": "110402349723",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110402349723",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762458089,
+            "modification_date": 1781017865,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110402349723"
+    },
+    {
+        "__key": [
+            {
+                "string": "110403422168",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110403422168",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1765402817,
+            "modification_date": 1783329364,
+            "revision": 10
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110403422168"
+    },
+    {
+        "__key": [
+            {
+                "string": "110403422355",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110403422355",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1765402903,
+            "modification_date": 1783329434,
+            "revision": 9
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110403422355"
+    },
+    {
+        "__key": [
+            {
+                "string": "110413677241",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110413677241",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764584742,
+            "modification_date": 1786286286,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110413677241"
+    },
+    {
+        "__key": [
+            {
+                "string": "110416442607",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110416442607",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763792241,
+            "modification_date": 1786287276,
+            "revision": 9
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110416442607"
+    },
+    {
+        "__key": [
+            {
+                "string": "110418908413",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110418908413",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762468608,
+            "modification_date": 1781017148,
+            "revision": 4
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110418908413"
+    },
+    {
+        "__key": [
+            {
+                "string": "110430303957",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110430303957",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1761966561,
+            "modification_date": 1784240761,
+            "revision": 23
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110430303957"
+    },
+    {
+        "__key": [
+            {
+                "string": "110436240181",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110436240181",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1779455962,
+            "modification_date": 1785423708,
+            "revision": 13
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110436240181"
+    },
+    {
+        "__key": [
+            {
+                "string": "110445578502",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110445578502",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762363009,
+            "modification_date": 1785345174,
+            "revision": 22
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110445578502"
+    },
+    {
+        "__key": [
+            {
+                "string": "110475959099",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110475959099",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763185448,
+            "modification_date": 1782851668,
+            "revision": 13
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110475959099"
+    },
+    {
+        "__key": [
+            {
+                "string": "110483249629",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110483249629",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763183703,
+            "modification_date": 1782852912,
+            "revision": 12
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110483249629"
+    },
+    {
+        "__key": [
+            {
+                "string": "110498535615",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110498535615",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763186088,
+            "modification_date": 1782851081,
+            "revision": 13
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110498535615"
+    },
+    {
+        "__key": [
+            {
+                "string": "110502734501",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110502734501",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781644663,
+            "modification_date": 1783355600,
+            "revision": 8
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110502734501"
+    },
+    {
+        "__key": [
+            {
+                "string": "110502751267",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110502751267",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763473677,
+            "modification_date": 1783365896,
+            "revision": 12
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110502751267"
+    },
+    {
+        "__key": [
+            {
+                "string": "110512114868",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110512114868",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769495372,
+            "modification_date": 1784117221,
+            "revision": 5
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110512114868"
+    },
+    {
+        "__key": [
+            {
+                "string": "110524427544",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110524427544",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764083146,
+            "modification_date": 1780084997,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110524427544"
+    },
+    {
+        "__key": [
+            {
+                "string": "110538884822",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110538884822",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763113266,
+            "modification_date": 1786634010,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110538884822"
+    },
+    {
+        "__key": [
+            {
+                "string": "110543674643",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110543674643",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762456258,
+            "modification_date": 1781016497,
+            "revision": 5
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110543674643"
+    },
+    {
+        "__key": [
+            {
+                "string": "110555009427",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110555009427",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762214840,
+            "modification_date": 1786045800,
+            "revision": 25
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110555009427"
+    },
+    {
+        "__key": [
+            {
+                "string": "110561777376",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110561777376",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762504465,
+            "modification_date": 1767867759,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110561777376"
+    },
+    {
+        "__key": [
+            {
+                "string": "110572140759",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110572140759",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763281119,
+            "modification_date": 1786111218,
+            "revision": 28
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110572140759"
+    },
+    {
+        "__key": [
+            {
+                "string": "110577662009",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110577662009",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764581718,
+            "modification_date": 1786285069,
+            "revision": 5
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110577662009"
+    },
+    {
+        "__key": [
+            {
+                "string": "110585555086",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110585555086",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766580089,
+            "modification_date": 1769129610,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110585555086"
+    },
+    {
+        "__key": [
+            {
+                "string": "110609752107",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110609752107",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1771280821,
+            "modification_date": 1781517643,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110609752107"
+    },
+    {
+        "__key": [
+            {
+                "string": "110611546749",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110611546749",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766573571,
+            "modification_date": 1769139525,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110611546749"
+    },
+    {
+        "__key": [
+            {
+                "string": "110620286673",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110620286673",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1765369290,
+            "modification_date": 1786480485,
+            "revision": 12
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110620286673"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110621304979",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762156289,
+            "modification_date": 1784531482,
+            "revision": 36
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110621304979"
+    },
+    {
+        "__key": [
+            {
+                "string": "110625591700",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110625591700",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763317256,
+            "modification_date": 1765909237,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110625591700"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631393063",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110631393063",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1779704996,
+            "modification_date": 1785225878,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110631393063"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631880901",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110631880901",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762275607,
+            "modification_date": 1785954714,
+            "revision": 10
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110631880901"
+    },
+    {
+        "__key": [
+            {
+                "string": "110649991320",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110649991320",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766572601,
+            "modification_date": 1769139010,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110649991320"
+    },
+    {
+        "__key": [
+            {
+                "string": "110653194174",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110653194174",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1765387241,
+            "modification_date": 1783293311,
+            "revision": 10
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110653194174"
+    },
+    {
+        "__key": [
+            {
+                "string": "110678980966",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110678980966",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762147393,
+            "modification_date": 1771801937,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110678980966"
+    },
+    {
+        "__key": [
+            {
+                "string": "110686125281",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110686125281",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1765303419,
+            "modification_date": 1765303419,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110686125281"
+    },
+    {
+        "__key": [
+            {
+                "string": "110692345465",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110692345465",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781163245,
+            "modification_date": 1781178484,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110692345465"
+    },
+    {
+        "__key": [
+            {
+                "string": "110704047560",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110704047560",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762458090,
+            "modification_date": 1781017383,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110704047560"
+    },
+    {
+        "__key": [
+            {
+                "string": "110705186063",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110705186063",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781788875,
+            "modification_date": 1781788875,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110705186063"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110706599931",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763927211,
+            "modification_date": 1782832403,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110706599931"
+    },
+    {
+        "__key": [
+            {
+                "string": "110734622549",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110734622549",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1767550530,
+            "modification_date": 1785096859,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110734622549"
+    },
+    {
+        "__key": [
+            {
+                "string": "110741151995",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110741151995",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1779891392,
+            "modification_date": 1779891392,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110741151995"
+    },
+    {
+        "__key": [
+            {
+                "string": "110747744702",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110747744702",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764580545,
+            "modification_date": 1786286831,
+            "revision": 9
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110747744702"
+    },
+    {
+        "__key": [
+            {
+                "string": "110748358786",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110748358786",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763184059,
+            "modification_date": 1782849799,
+            "revision": 13
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110748358786"
+    },
+    {
+        "__key": [
+            {
+                "string": "110754314093",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110754314093",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764232698,
+            "modification_date": 1784409111,
+            "revision": 12
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110754314093"
+    },
+    {
+        "__key": [
+            {
+                "string": "110756029834",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110756029834",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1771946809,
+            "modification_date": 1771946809,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110756029834"
+    },
+    {
+        "__key": [
+            {
+                "string": "110761515841",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110761515841",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1767550515,
+            "modification_date": 1785096849,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110761515841"
+    },
+    {
+        "__key": [
+            {
+                "string": "110765730119",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110765730119",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764582562,
+            "modification_date": 1786287621,
+            "revision": 9
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110765730119"
+    },
+    {
+        "__key": [
+            {
+                "string": "110775354743",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110775354743",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762261644,
+            "modification_date": 1786641438,
+            "revision": 28
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110775354743"
+    },
+    {
+        "__key": [
+            {
+                "string": "110784240515",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110784240515",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766570243,
+            "modification_date": 1778667037,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110784240515"
+    },
+    {
+        "__key": [
+            {
+                "string": "110792741938",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110792741938",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766416738,
+            "modification_date": 1781675001,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110792741938"
+    },
+    {
+        "__key": [
+            {
+                "string": "110798269673",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110798269673",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762940304,
+            "modification_date": 1784627078,
+            "revision": 11
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110798269673"
+    },
+    {
+        "__key": [
+            {
+                "string": "110803698408",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110803698408",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766914897,
+            "modification_date": 1785747157,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110803698408"
+    },
+    {
+        "__key": [
+            {
+                "string": "110806765786",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110806765786",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1780996392,
+            "modification_date": 1780996392,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110806765786"
+    },
+    {
+        "__key": [
+            {
+                "string": "110817491532",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110817491532",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766589767,
+            "modification_date": 1769145269,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110817491532"
+    },
+    {
+        "__key": [
+            {
+                "string": "110826072524",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110826072524",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762904089,
+            "modification_date": 1783231930,
+            "revision": 25
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110826072524"
+    },
+    {
+        "__key": [
+            {
+                "string": "110832477714",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110832477714",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766914961,
+            "modification_date": 1785747198,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110832477714"
+    },
+    {
+        "__key": [
+            {
+                "string": "110837615716",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110837615716",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1776361482,
+            "modification_date": 1780068263,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110837615716"
+    },
+    {
+        "__key": [
+            {
+                "string": "110851856162",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110851856162",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1768004559,
+            "modification_date": 1768004559,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110851856162"
+    },
+    {
+        "__key": [
+            {
+                "string": "110869471930",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110869471930",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764193008,
+            "modification_date": 1784963895,
+            "revision": 9
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110869471930"
+    },
+    {
+        "__key": [
+            {
+                "string": "110874107750",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110874107750",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769444279,
+            "modification_date": 1769444279,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110874107750"
+    },
+    {
+        "__key": [
+            {
+                "string": "110881724853",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110881724853",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766584463,
+            "modification_date": 1769138094,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110881724853"
+    },
+    {
+        "__key": [
+            {
+                "string": "110888246880",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110888246880",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1770449957,
+            "modification_date": 1783246723,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110888246880"
+    },
+    {
+        "__key": [
+            {
+                "string": "110890589067",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110890589067",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764580685,
+            "modification_date": 1786284657,
+            "revision": 9
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110890589067"
+    },
+    {
+        "__key": [
+            {
+                "string": "110899599847",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110899599847",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1773690937,
+            "modification_date": 1773690937,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110899599847"
+    },
+    {
+        "__key": [
+            {
+                "string": "110901743919",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110901743919",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763054313,
+            "modification_date": 1774642825,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110901743919"
+    },
+    {
+        "__key": [
+            {
+                "string": "110908157938",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110908157938",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1767550551,
+            "modification_date": 1785096874,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110908157938"
+    },
+    {
+        "__key": [
+            {
+                "string": "110910892565",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110910892565",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769447904,
+            "modification_date": 1785168888,
+            "revision": 5
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110910892565"
+    },
+    {
+        "__key": [
+            {
+                "string": "110912838058",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110912838058",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784282561,
+            "modification_date": 1784888911,
+            "revision": 18
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110912838058"
+    },
+    {
+        "__key": [
+            {
+                "string": "110913533260",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110913533260",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1780994802,
+            "modification_date": 1781787240,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110913533260"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110914859526",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762967110,
+            "modification_date": 1774966529,
+            "revision": 4
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110914859526"
+    },
+    {
+        "__key": [
+            {
+                "string": "110915687156",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110915687156",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764093728,
+            "modification_date": 1786133037,
+            "revision": 10
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110915687156"
+    },
+    {
+        "__key": [
+            {
+                "string": "110925448104",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110925448104",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1761922995,
+            "modification_date": 1771946970,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110925448104"
+    },
+    {
+        "__key": [
+            {
+                "string": "110929187936",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110929187936",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762110233,
+            "modification_date": 1767380486,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110929187936"
+    },
+    {
+        "__key": [
+            {
+                "string": "110932579200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110932579200",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762644520,
+            "modification_date": 1783500647,
+            "revision": 11
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110932579200"
+    },
+    {
+        "__key": [
+            {
+                "string": "110939009676",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110939009676",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1761918584,
+            "modification_date": 1773771950,
+            "revision": 10
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110939009676"
+    },
+    {
+        "__key": [
+            {
+                "string": "110941102944",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110941102944",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764049394,
+            "modification_date": 1772172782,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110941102944"
+    },
+    {
+        "__key": [
+            {
+                "string": "110943173967",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110943173967",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763112466,
+            "modification_date": 1782850889,
+            "revision": 13
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110943173967"
+    },
+    {
+        "__key": [
+            {
+                "string": "110948323259",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110948323259",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769297674,
+            "modification_date": 1777286106,
+            "revision": 21
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110948323259"
+    },
+    {
+        "__key": [
+            {
+                "string": "110954334221",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110954334221",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762725278,
+            "modification_date": 1784574616,
+            "revision": 24
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110954334221"
+    },
+    {
+        "__key": [
+            {
+                "string": "110957154660",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110957154660",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766422041,
+            "modification_date": 1786632555,
+            "revision": 8
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110957154660"
+    },
+    {
+        "__key": [
+            {
+                "string": "110962867064",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110962867064",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1778358046,
+            "modification_date": 1778827555,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110962867064"
+    },
+    {
+        "__key": [
+            {
+                "string": "110963649411",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110963649411",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1767440022,
+            "modification_date": 1767440022,
+            "revision": 1
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110963649411"
+    },
+    {
+        "__key": [
+            {
+                "string": "110965588395",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110965588395",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1774271398,
+            "modification_date": 1785394852,
+            "revision": 6
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110965588395"
+    },
+    {
+        "__key": [
+            {
+                "string": "110968424893",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110968424893",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1772047755,
+            "modification_date": 1786521002,
+            "revision": 7
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110968424893"
+    },
+    {
+        "__key": [
+            {
+                "string": "110969847865",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110969847865",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764284645,
+            "modification_date": 1766876639,
+            "revision": 2
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110969847865"
+    },
+    {
+        "__key": [
+            {
+                "string": "110971896269",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110971896269",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762086898,
+            "modification_date": 1783667193,
+            "revision": 4
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110971896269"
+    },
+    {
+        "__key": [
+            {
+                "string": "110972585186",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110972585186",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762242880,
+            "modification_date": 1786562426,
+            "revision": 82
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110972585186"
+    },
+    {
+        "__key": [
+            {
+                "string": "110974498742",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110974498742",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762599980,
+            "modification_date": 1781849811,
+            "revision": 4
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110974498742"
+    },
+    {
+        "__key": [
+            {
+                "string": "110983851183",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110983851183",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1761991736,
+            "modification_date": 1767265632,
+            "revision": 3
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110983851183"
+    },
+    {
+        "__key": [
+            {
+                "string": "110985144676",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110985144676",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762429050,
+            "modification_date": 1784907532,
+            "revision": 11
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110985144676"
+    },
+    {
+        "__key": [
+            {
+                "string": "110988646401",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEMDET_110988646401",
+                "collection": "ItemDetails"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762857207,
+            "modification_date": 1784184764,
+            "revision": 5
+        },
+        "hasRlxdRls": false,
+        "itemDetailsID": "ITEMDET_110988646401"
+    }
+]
