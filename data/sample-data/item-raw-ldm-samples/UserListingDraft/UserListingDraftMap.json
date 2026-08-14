@@ -1,0 +1,3131 @@
+[
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5089039134101",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781352702,
+            "modification_date": 1782233805,
+            "revision": 3
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/CJMAAOSwzxRm7yhi/$_12.JPG?set_id=880000500F",
+        "draftId": "5089039134101",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1782233805000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1957 topps baseball card # 344 Paul LaPalme Ref # 6B    SCARCE SERIES",
+        "crtDt": {
+            "$numberLong": "1781352702333"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5091912020503",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781360657,
+            "modification_date": 1782233764,
+            "revision": 4
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/e4cAAOSwv1tmoEqP/$_12.JPG?set_id=880000500F",
+        "draftId": "5091912020503",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1782233764000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1954 bowman baseball card # 53A Don Lenhardt Ref# 51",
+        "crtDt": {
+            "$numberLong": "1781360657342"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5101622763701",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781710760,
+            "modification_date": 1782233534,
+            "revision": 22
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxNjAw/z/KpYAAeSw0DRqMr~i/$_1.JPG?set_id=8800005007",
+        "draftId": "5101622763701",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782233534000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1976 topps baseball traded card REF#  2",
+        "crtDt": {
+            "$numberLong": "1781710760643"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5116919779800",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782165398,
+            "modification_date": 1782392384,
+            "revision": 15
+        },
+        "draftId": "5116919779800",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782392384000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261329",
+        "ttl": "1948 Bowman Football Card # 25. Ref# 5",
+        "crtDt": {
+            "$numberLong": "1782165398414"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5116951005500",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782166240,
+            "modification_date": 1782233446,
+            "revision": 12
+        },
+        "draftId": "5116951005500",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782233446000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 Bowman Football Card # 10. ROOKIE CARD    Ref# 4",
+        "crtDt": {
+            "$numberLong": "1782166240398"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5117840596401",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782164535,
+            "modification_date": 1782233697,
+            "revision": 14
+        },
+        "draftId": "5117840596401",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782233697000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 Bowman Football Card # 37. Len Younce. ROOKIE CARD Ref # 3",
+        "crtDt": {
+            "$numberLong": "1782164535864"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5119445342300",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782236318,
+            "modification_date": 1782236942,
+            "revision": 9
+        },
+        "draftId": "5119445342300",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782236942000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 Bowman Baseball Rookie Card # 33",
+        "crtDt": {
+            "$numberLong": "1782236318473"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5119544999300",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782238552,
+            "modification_date": 1784441278,
+            "revision": 30
+        },
+        "draftId": "5119544999300",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1784441277000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1949 bowman baseball Card # 113 ROOKIE CARD",
+        "crtDt": {
+            "$numberLong": "1782238552120"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5120140947301",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782231147,
+            "modification_date": 1782233315,
+            "revision": 9
+        },
+        "draftId": "5120140947301",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782233315000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 BOWMAN FOOTBALL CARD # 49 ROOKIE CARD.   Ref# 2",
+        "crtDt": {
+            "$numberLong": "1782231147476"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5120361737601",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782235490,
+            "modification_date": 1782236166,
+            "revision": 9
+        },
+        "draftId": "5120361737601",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782236166000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 Bowman Baseball Card # 25",
+        "crtDt": {
+            "$numberLong": "1782235490742"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5120940479703",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782178678,
+            "modification_date": 1782233483,
+            "revision": 10
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/IVkAAOSwcx9nit61/$_12.JPG?set_id=880000500F",
+        "draftId": "5120940479703",
+        "stockImgUrl": "https://i.ebayimg.com/images/g/ggUAAOSwnvtnpirG/s-l1600.jpg",
+        "crtMd": "Relist",
+        "lastModifiedDate": {
+            "$numberLong": "1782233483000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1952 Bowman( Small. ). , Football Card # 11 Ref # 8",
+        "crtDt": {
+            "$numberLong": "1782178678057"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5122763385803",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782231949,
+            "modification_date": 1782233373,
+            "revision": 10
+        },
+        "draftId": "5122763385803",
+        "stockImgUrl": "https://i.ebayimg.com/images/g/GSoAAOSwtQtnpiGU/s-l1600.jpg",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782233373000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 Bowman - Neill Armstrong #52 (RC)",
+        "crtDt": {
+            "$numberLong": "1782231949566"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5122896657603",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782234628,
+            "modification_date": 1782235336,
+            "revision": 14
+        },
+        "draftId": "5122896657603",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782235336000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 Bowman Baseball Card # 10",
+        "crtDt": {
+            "$numberLong": "1782234628530"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5123013422303",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782237134,
+            "modification_date": 1783999950,
+            "revision": 19
+        },
+        "draftId": "5123013422303",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1783999950000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 Bowman Baseball Card # 10. CB",
+        "crtDt": {
+            "$numberLong": "1782237134799"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5123156205203",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782240230,
+            "modification_date": 1782247996,
+            "revision": 16
+        },
+        "draftId": "5123156205203",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782247996000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1949 Bowman Baseball Card # 129   Signature On Rear Of Card",
+        "crtDt": {
+            "$numberLong": "1782240230492"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5123534550503",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782248492,
+            "modification_date": 1782249093,
+            "revision": 7
+        },
+        "draftId": "5123534550503",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782249092000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1949 Bowman Baseball Card # 168 ROOKIE CARD",
+        "crtDt": {
+            "$numberLong": "1782248492114"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5126285137602",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782391871,
+            "modification_date": 1782391871,
+            "revision": 1
+        },
+        "draftId": "5126285137602",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1782391870000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 bowman football card # 68 Bill Moore Ref # 9",
+        "userId": "1000002193",
+        "imgUrl": "https://i.ebayimg.com/images/g/ZUsAAeSwKk5nxOHF/s-l1600.jpg",
+        "crtMd": "Relist",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1782391871013"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5128294957203",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782392092,
+            "modification_date": 1782392169,
+            "revision": 3
+        },
+        "imgUrl": "https://i.ebayimg.com/images/g/TUgAAeSwNA5nxNyN/s-l1600.jpg",
+        "draftId": "5128294957203",
+        "crtMd": "Relist",
+        "lastModifiedDate": {
+            "$numberLong": "1782392169000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1948 bowman  football card # 55 Frank Regan Rookie Card Ref # 7",
+        "crtDt": {
+            "$numberLong": "1782392092764"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5131505544601",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782569185,
+            "modification_date": 1782569976,
+            "revision": 19
+        },
+        "draftId": "5131505544601",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782569976000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1950 Bowman Baseball Card # 128.  John Thompson.",
+        "crtDt": {
+            "$numberLong": "1782569185188"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5132585570803",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782509469,
+            "modification_date": 1782535225,
+            "revision": 15
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/JRMAAOSwgS1mU6M2/$_12.JPG?set_id=880000500F",
+        "draftId": "5132585570803",
+        "crtMd": "Relist",
+        "lastModifiedDate": {
+            "$numberLong": "1782535225000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "36059",
+        "ttl": "US NAVAL SHIP WWll.   Post Card Ref # 7",
+        "crtDt": {
+            "$numberLong": "1782509469064"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5143748203603",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782839554,
+            "modification_date": 1784075316,
+            "revision": 6
+        },
+        "draftId": "5143748203603",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1784075316000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "183050",
+        "ttl": "1959 Fleer Three Stooges CARD # 15. Ref # 73 WHITE BACK",
+        "crtDt": {
+            "$numberLong": "1782839554795"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5185085441323",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785593880,
+            "modification_date": 1786061392,
+            "revision": 12
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/h-kAAeSwBEtqbgAz/$_1.JPG?set_id=8800005007",
+        "draftId": "5185085441323",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786061392000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261628",
+        "ttl": "M J HUMMEL FIGURINE #  69. GIRL KINTTING. REF # ",
+        "crtDt": {
+            "$numberLong": "1785593880535"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5210298340820",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786284089,
+            "modification_date": 1786284278,
+            "revision": 3
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/51wAAeSwcsxpd7is/$_1.JPG?set_id=8800005007",
+        "draftId": "5210298340820",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1786284278000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "262380",
+        "ttl": "ROSENTHAL EMINENCE 5 Piece Place Setting Cobolt BLUE/ Gold Accents Ref# 004",
+        "crtDt": {
+            "$numberLong": "1786284089685"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5214872049022",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786411844,
+            "modification_date": 1786411859,
+            "revision": 3
+        },
+        "draftId": "5214872049022",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786411859000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1975 Topps Frank Robinson #580 - No Creases - EX",
+        "crtDt": {
+            "$numberLong": "1786411844586"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5215643333521",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786413203,
+            "modification_date": 1786413217,
+            "revision": 3
+        },
+        "draftId": "5215643333521",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786413217000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "2011 Topps #424 New York Yankees",
+        "crtDt": {
+            "$numberLong": "1786413203599"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5217188458620",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786465629,
+            "modification_date": 1786465638,
+            "revision": 3
+        },
+        "draftId": "5217188458620",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786465638000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "40029",
+        "ttl": "0s 6s 9 True Flipper Near Binary Uncirculated Dollar Bill Note $1 Fancy Serial",
+        "crtDt": {
+            "$numberLong": "1786465629955"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5224466104420",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786655796,
+            "modification_date": 1786656599,
+            "revision": 6
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/1IwAAeSwhrBqfjRQ/$_1.JPG?set_id=8800005007",
+        "draftId": "5224466104420",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786656599000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "Ref # 54 FRED MARSH.   1954 Topps ",
+        "crtDt": {
+            "$numberLong": "1786655796933"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5279190502712",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783388119,
+            "modification_date": 1784075054,
+            "revision": 15
+        },
+        "draftId": "5279190502712",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1784075054000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261328",
+        "ttl": "1959 Topps Ed Bailey Cincinnati Redlegs #210",
+        "crtDt": {
+            "$numberLong": "1783388119837"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5308601666811",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784216162,
+            "modification_date": 1784216165,
+            "revision": 2
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/nJ4AAeSwUnlpd~oD/$_1.JPG?set_id=8800005007",
+        "draftId": "5308601666811",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1784216165000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "262372",
+        "ttl": "Vintage Rosenthal Selb-Plossberg Cobalt & Gold EMINENCE Footed Cup & Saucer Set",
+        "crtDt": {
+            "$numberLong": "1784216162409"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5327964163113",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784753262,
+            "modification_date": 1784989324,
+            "revision": 17
+        },
+        "draftId": "5327964163113",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1784989324000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "40029",
+        "ttl": "1963-B ;BARR NOTE RICHMOND FEDERAL RESERVE BANK",
+        "crtDt": {
+            "$numberLong": "1784753262852"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5338388807510",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785111198,
+            "modification_date": 1785111622,
+            "revision": 16
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/gBcAAOSwynJmVSWd/$_12.JPG?set_id=880000500F",
+        "draftId": "5338388807510",
+        "crtMd": "Relist",
+        "lastModifiedDate": {
+            "$numberLong": "1785111622000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "183050",
+        "ttl": "1959 fleer three stooges card # 58 Ref# 67",
+        "crtDt": {
+            "$numberLong": "1785111198936"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002193",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5351677786112",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785415582,
+            "modification_date": 1785415587,
+            "revision": 2
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTU5OVgxMTk5/z/dXAAAeSwKv1o0qg6/$_1.JPG?set_id=8800005007",
+        "draftId": "5351677786112",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1785415587000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "40029",
+        "ttl": "1988-A WEB PRESS NOTE ATLANTA FEDERAL RESERVE BANK REF# 205",
+        "crtDt": {
+            "$numberLong": "1785415582909"
+        },
+        "userId": "1000002193"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002325",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5109132741300",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781938773,
+            "modification_date": 1781938784,
+            "revision": 3
+        },
+        "draftId": "5109132741300",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1781938784000"
+        },
+        "mktPlLstdOn": "100",
+        "lstgAppId": "461396",
+        "primCatId": "33578",
+        "ttl": "HIGH OUTPUT 250AMP DELCO 22SI ALTERNATOR Fits CUMMINS CATERPILLAR ENGINES MED HD",
+        "crtDt": {
+            "$numberLong": "1781938773921"
+        },
+        "userId": "1000002325"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002325",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5110088796901",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781938794,
+            "modification_date": 1781938794,
+            "revision": 1
+        },
+        "draftId": "5110088796901",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1781938794000"
+        },
+        "mktPlLstdOn": "100",
+        "lstgAppId": "461396",
+        "primCatId": "33578",
+        "ttl": "HIGH OUTPUT 250AMP DELCO 22SI ALTERNATOR Fits CUMMINS CATERPILLAR ENGINES MED HD",
+        "userId": "1000002325",
+        "imgUrl": null,
+        "crtMd": "Add",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1781938794321"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000002325",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5112668215003",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781938787,
+            "modification_date": 1781938787,
+            "revision": 1
+        },
+        "draftId": "5112668215003",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1781938787000"
+        },
+        "mktPlLstdOn": "100",
+        "lstgAppId": "461396",
+        "primCatId": "33578",
+        "ttl": "HIGH OUTPUT 250AMP DELCO 22SI ALTERNATOR Fits CUMMINS CATERPILLAR ENGINES MED HD",
+        "userId": "1000002325",
+        "imgUrl": null,
+        "crtMd": "Add",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1781938787950"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000005885",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5215113213022",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786419524,
+            "modification_date": 1786419736,
+            "revision": 12
+        },
+        "draftId": "5215113213022",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1786419736000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "20659",
+        "ttl": "NWT Williams Sonoma Red Tartan Plaid Dinner Napkins Set of 4 Christmas Holiday",
+        "crtDt": {
+            "$numberLong": "1786419524300"
+        },
+        "userId": "1000005885"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000005885",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5215536734820",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786416329,
+            "modification_date": 1786418655,
+            "revision": 16
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/YVoAAeSwW4tqeo1h/$_1.JPG?set_id=8800005007",
+        "draftId": "5215536734820",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1786418655000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "15687",
+        "ttl": "Peter Millar Summer Comfort Italian Escape Print Polo Kaanapali Size Large",
+        "crtDt": {
+            "$numberLong": "1786416329301"
+        },
+        "userId": "1000005885"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000005885",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5215773330521",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786417174,
+            "modification_date": 1786418479,
+            "revision": 16
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTExMFg5Mzc=/z/wlAAAeSwHdJqepDY/$_1.JPG?set_id=8800005007",
+        "draftId": "5215773330521",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1786418479000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "57989",
+        "ttl": "Under Armour Men’s UA Sportstyle Elite Joggers Size Large Academy Navy",
+        "crtDt": {
+            "$numberLong": "1786417174330"
+        },
+        "userId": "1000005885"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000005885",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5215780880421",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786417420,
+            "modification_date": 1786418607,
+            "revision": 15
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/Ld0AAeSwIDhqepGr/$_1.JPG?set_id=8800005007",
+        "draftId": "5215780880421",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1786418607000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "57989",
+        "ttl": "Under Armour Men’s UA Stretch Woven Pants Size Medium Gray",
+        "crtDt": {
+            "$numberLong": "1786417420859"
+        },
+        "userId": "1000005885"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000008161",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5352533629413",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785436620,
+            "modification_date": 1785436620,
+            "revision": 1
+        },
+        "draftId": "5352533629413",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1785436620000"
+        },
+        "mktPlLstdOn": "77",
+        "lstgAppId": "543106",
+        "primCatId": "20614",
+        "ttl": "vorwerk kobold vk 140",
+        "userId": "1000008161",
+        "imgUrl": null,
+        "crtMd": "Add",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1785436620321"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5052891019101",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1780336171,
+            "modification_date": 1780336206,
+            "revision": 4
+        },
+        "draftId": "5052891019101",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1780336206000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "262382",
+        "ttl": "Vntg 1975 Royal Doulton Stoneware Cornwall Salt Pepper Set Lambethware England",
+        "crtDt": {
+            "$numberLong": "1780336171719"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5138309392702",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782748779,
+            "modification_date": 1782748899,
+            "revision": 10
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/NjAwWDEwNDc=/z/2VgAAOSwrjlmp7r5/$_12.JPG?set_id=880000500F",
+        "draftId": "5138309392702",
+        "crtMd": "Relist",
+        "lastModifiedDate": {
+            "$numberLong": "1782748899000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "62107",
+        "ttl": "Turquose/Green White Stripe Cross Strap Espadrille Slide Sandal Size 9",
+        "crtDt": {
+            "$numberLong": "1782748779504"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5183891186221",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1780254023,
+            "modification_date": 1780254374,
+            "revision": 10
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/iqAAAeSw8xJqHIak/$_1.JPG?set_id=8800005007",
+        "draftId": "5183891186221",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1780254373000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "169291",
+        "ttl": "Michael Kors MK Logo Fallon Messenger Bag 38F7CLOM2B Vanilla  MSRP $258 Leather ",
+        "crtDt": {
+            "$numberLong": "1780254023037"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5186332564823",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785622496,
+            "modification_date": 1785622513,
+            "revision": 3
+        },
+        "draftId": "5186332564823",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1785622513000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "182152",
+        "ttl": "Vintage Music Book,  YE CHRISTMAS PIANO BOOK CHRISTMAS CAROLS, MARY BACON MASON",
+        "crtDt": {
+            "$numberLong": "1785622496319"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5187012287021",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785612414,
+            "modification_date": 1785612953,
+            "revision": 8
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/zUIAAeSwXiNqbkjy/$_1.JPG?set_id=8800005007",
+        "draftId": "5187012287021",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1785612953000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "182151",
+        "ttl": "Crystal Gayle Songbook",
+        "crtDt": {
+            "$numberLong": "1785612414343"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5187347983621",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785621040,
+            "modification_date": 1785621040,
+            "revision": 1
+        },
+        "draftId": "5187347983621",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1785621040000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "176983",
+        "ttl": "Kids Sing America Brentwood Kids Cassette ",
+        "userId": "100001165",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1785621040467"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5209821931423",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786291935,
+            "modification_date": 1786292154,
+            "revision": 7
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/cu8AAeSwRpxqeKbt/$_1.JPG?set_id=8800005007",
+        "draftId": "5209821931423",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1786292154000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "822",
+        "ttl": "Old No 7 JACK DANIELS OLD N°7 12.25” Whiskey Decanter With Stopper Gold Band",
+        "crtDt": {
+            "$numberLong": "1786291935506"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5210716234220",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786292678,
+            "modification_date": 1786292796,
+            "revision": 8
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/YTQAAeSwUcpqeKnx/$_1.JPG?set_id=8800005007",
+        "draftId": "5210716234220",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1786292796000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "822",
+        "ttl": "Vintage Jack Daniels The Mystery of the Belle of Lincoln Bottle Decanter 1979",
+        "crtDt": {
+            "$numberLong": "1786292678371"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5210728855220",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786292913,
+            "modification_date": 1786293172,
+            "revision": 13
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/NrQAAeSwvgtqeKq5/$_1.JPG?set_id=8800005007",
+        "draftId": "5210728855220",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1786293172000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "822",
+        "ttl": "Vtg Jack Daniels Old No 7 Silver Cornet Decanter Whiskey Bottle Empty",
+        "crtDt": {
+            "$numberLong": "1786292913664"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5210901675121",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786292167,
+            "modification_date": 1786292263,
+            "revision": 7
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/qtAAAeSwBVhqeKfO/$_1.JPG?set_id=8800005007",
+        "draftId": "5210901675121",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1786292263000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "822",
+        "ttl": "Old No 7 JACK DANIELS OLD N°7 12.25” Whiskey Decanter With Stopper Silver Band",
+        "crtDt": {
+            "$numberLong": "1786292167166"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5268972407711",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783094002,
+            "modification_date": 1783094396,
+            "revision": 7
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/kzIAAeSwsyhqR9x7/$_1.JPG?set_id=8800005007",
+        "draftId": "5268972407711",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1783094396000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261672",
+        "ttl": "Royal Worcester Bone China \"Friday's Child Is Loving and Giving\" Mug Cup England",
+        "crtDt": {
+            "$numberLong": "1783094002907"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5343172202612",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785181344,
+            "modification_date": 1785181433,
+            "revision": 8
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/vBgAAeSwDTBqZ7TH/$_1.JPG?set_id=8800005007",
+        "draftId": "5343172202612",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1785181433000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "182151",
+        "ttl": "Reader's Digest Festival Of Popular Songs Songbook (Piano/Vocal/Guitar)",
+        "crtDt": {
+            "$numberLong": "1785181344293"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5343180701812",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785181524,
+            "modification_date": 1785181635,
+            "revision": 6
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/4VkAAeSwFuJqZ7Ww/$_1.JPG?set_id=8800005007",
+        "draftId": "5343180701812",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1785181635000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261186",
+        "ttl": "Merry Christmas Song Book",
+        "crtDt": {
+            "$numberLong": "1785181524452"
+        },
+        "userId": "100001165"
+    },
+    {
+        "__key": [
+            {
+                "string": "100001165",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5346096004113",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785264784,
+            "modification_date": 1785264784,
+            "revision": 1
+        },
+        "draftId": "5346096004113",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1785264784000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "290356",
+        "primCatId": "261186",
+        "ttl": "Miracle of Miracles - Paperback By Nevisa, Mina - GOOD",
+        "userId": "100001165",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1785264784917"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000026276",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5079193059202",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781050679,
+            "modification_date": 1781050679,
+            "revision": 1
+        },
+        "draftId": "5079193059202",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1781050679000"
+        },
+        "mktPlLstdOn": "100",
+        "lstgAppId": "543106",
+        "primCatId": "180036",
+        "ttl": "85  Honda XR250 XR 250 OEM Rear Wheel Axle Bolt Shaft Adjusters ",
+        "userId": "1000026276",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1781050679673"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100003325",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5200280992822",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786000926,
+            "modification_date": 1786000928,
+            "revision": 2
+        },
+        "draftId": "5200280992822",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786000928000"
+        },
+        "mktPlLstdOn": "3",
+        "lstgAppId": "461396",
+        "primCatId": "33963",
+        "ttl": "GENUINE APPLE MAGIC KEYBOARD WITH NUMERIC KEYPAD TOUCH ID BLACK WIRELESS A2520",
+        "crtDt": {
+            "$numberLong": "1786000926188"
+        },
+        "userId": "100003325"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000034001",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5297568695212",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783909826,
+            "modification_date": 1783909831,
+            "revision": 2
+        },
+        "draftId": "5297568695212",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1783909831000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "543106",
+        "primCatId": "260923",
+        "ttl": "  SPARK PLUG WIRE TERMINAL END / PLUG WIRE CLIP :",
+        "crtDt": {
+            "$numberLong": "1783909826388"
+        },
+        "userId": "1000034001"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000034001",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5320120563012",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784551516,
+            "modification_date": 1784551521,
+            "revision": 2
+        },
+        "draftId": "5320120563012",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1784551521000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "543106",
+        "primCatId": "260923",
+        "ttl": "  SPARK PLUG WIRE TERMINAL END / PLUG WIRE CLIP :",
+        "crtDt": {
+            "$numberLong": "1784551516349"
+        },
+        "userId": "1000034001"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000038360",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5280990173510",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783501649,
+            "modification_date": 1783501649,
+            "revision": 1
+        },
+        "draftId": "5280990173510",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1783501649000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "219527",
+        "primCatId": "11483",
+        "ttl": "Vintage Wrangler Jeans Men's 46x29 Carpenter Baggy Loose Relaxed 90s Y2K",
+        "userId": "1000038360",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1783501649679"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000038360",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5283250254612",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783501760,
+            "modification_date": 1783501766,
+            "revision": 2
+        },
+        "draftId": "5283250254612",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1783501766000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "11483",
+        "ttl": "Wrangler Carpenter Blue Jeans  Men's Size 48x30 Denim Relaxed Fit Blue 94KMBDV",
+        "crtDt": {
+            "$numberLong": "1783501760986"
+        },
+        "userId": "1000038360"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000038360",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5300724573012",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783992774,
+            "modification_date": 1783992777,
+            "revision": 2
+        },
+        "draftId": "5300724573012",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1783992777000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "11483",
+        "ttl": "Wrangler 94KMBDV Blue Denim Relaxed Fit Jeans Pants 14\" Rise Adult Men's 46 x 30",
+        "crtDt": {
+            "$numberLong": "1783992774151"
+        },
+        "userId": "1000038360"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000039466",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5120736118102",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782231518,
+            "modification_date": 1782231518,
+            "revision": 1
+        },
+        "draftId": "5120736118102",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1782231518000"
+        },
+        "mktPlLstdOn": "100",
+        "lstgAppId": "543106",
+        "primCatId": "9887",
+        "ttl": "X350 Jaguar XJ Picnic Tables Set of 2 Complete With All Clips And Bolts",
+        "userId": "1000039466",
+        "imgUrl": "https://i.ebayimg.com/00/s/MTA2MlgxMjI4/z/ONMAAeSw-6xqKg-E/$_1.JPG?set_id=8800005007",
+        "crtMd": "Relist",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1782231518810"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000039466",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5225090738620",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786674456,
+            "modification_date": 1786674456,
+            "revision": 1
+        },
+        "draftId": "5225090738620",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1786674456000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "33089",
+        "ttl": "Kobalt Tool Box / Chest",
+        "userId": "1000039466",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1786674456499"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000040685",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5078236451101",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781039795,
+            "modification_date": 1781040063,
+            "revision": 3
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/K0sAAeSw6GdpBU2p/$_57.JPG?set_id=880000500F",
+        "draftId": "5078236451101",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1781040063000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "384352",
+        "primCatId": "261993",
+        "ttl": "10k SOLID YELLOW GOLD ROPE CHAIN NECKLACE 14 GRAMS MEN & WOMEN",
+        "crtDt": {
+            "$numberLong": "1781039795725"
+        },
+        "userId": "1000040685"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000040685",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5112553540501",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782015561,
+            "modification_date": 1782015688,
+            "revision": 3
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/UgAAAeSwF0pqN2Ze/$_57.JPG?set_id=880000500F",
+        "draftId": "5112553540501",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1782015688000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "384352",
+        "primCatId": "261994",
+        "crtDt": {
+            "$numberLong": "1782015561878"
+        },
+        "userId": "1000040685",
+        "ttl": "VINTAGE 10k SOLID YELLOW GOLD RING 15 GRAMS MEN & WOMEN"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000040685",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5284484215412",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783531523,
+            "modification_date": 1783531523,
+            "revision": 1
+        },
+        "draftId": "5284484215412",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1783531523000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "384352",
+        "primCatId": "73938",
+        "ttl": "VINTAGE COLT PYTHON BOX",
+        "userId": "1000040685",
+        "imgUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/gFoAAeSwWi9qF2hb/$_57.JPG?set_id=880000500F",
+        "crtMd": "SellSimilar",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1783531523666"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000040685",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5288765476712",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783644738,
+            "modification_date": 1783644823,
+            "revision": 2
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/PVkAAeSwg6BqEhSE/$_57.JPG?set_id=880000500F",
+        "draftId": "5288765476712",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1783644823000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "384352",
+        "primCatId": "261994",
+        "ttl": "VINTAGE 10k SOLID YELLOW GOLD 1967 CLASS RING 30 GRAMS MEN & WOMEN",
+        "crtDt": {
+            "$numberLong": "1783644738021"
+        },
+        "userId": "1000040685"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000040685",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5356770649612",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785557692,
+            "modification_date": 1785557692,
+            "revision": 1
+        },
+        "draftId": "5356770649612",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1785557692000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "384352",
+        "primCatId": "261994",
+        "ttl": "10k gold ring",
+        "userId": "1000040685",
+        "imgUrl": null,
+        "crtMd": "Add",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1785557692401"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000050214",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5092944277500",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781496343,
+            "modification_date": 1781496547,
+            "revision": 7
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/ENAAAeSwQkNqL3rN/$_1.JPG?set_id=8800005007",
+        "draftId": "5092944277500",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1781496547000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "15559",
+        "ttl": "Pampers Swaddlers Size 2 Disposable Diaper",
+        "crtDt": {
+            "$numberLong": "1781496343987"
+        },
+        "userId": "1000050214"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000050214",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5096426702503",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781493963,
+            "modification_date": 1781494378,
+            "revision": 7
+        },
+        "draftId": "5096426702503",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1781494378000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "37631",
+        "ttl": "Huggies Pull Ups 4t-5t 33 count 38-50 Lbs Disney Mickey, 3 PACKS =99 PCS",
+        "crtDt": {
+            "$numberLong": "1781493963282"
+        },
+        "userId": "1000050214"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000050214",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5138706240103",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782700465,
+            "modification_date": 1782700497,
+            "revision": 2
+        },
+        "draftId": "5138706240103",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1782700497000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "261639",
+        "ttl": "scream mask",
+        "crtDt": {
+            "$numberLong": "1782700465408"
+        },
+        "userId": "1000050214"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000050214",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5297479249911",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783916618,
+            "modification_date": 1783916912,
+            "revision": 3
+        },
+        "draftId": "5297479249911",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1783916912000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "24087",
+        "ttl": "Women’s Black Patent Leather Square Toe Lace Up Casual Shoes 7.5",
+        "crtDt": {
+            "$numberLong": "1783916618295"
+        },
+        "userId": "1000050214"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000050214",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5343758706513",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785201311,
+            "modification_date": 1785202364,
+            "revision": 6
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/OTYwWDcyMA==/z/4ikAAeSwf4JqaAP3/$_1.JPG?set_id=8800005007",
+        "draftId": "5343758706513",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1785202364000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "381",
+        "ttl": "ALIENS 2-Laserdisc LD SET WIDESCREEN FORMAT EXCELLENT CONDITION RARE PART TWO",
+        "crtDt": {
+            "$numberLong": "1785201311652"
+        },
+        "userId": "1000050214"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000051345",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5283763896612",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783517020,
+            "modification_date": 1783517020,
+            "revision": 1
+        },
+        "draftId": "5283763896612",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1783517020000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "260923",
+        "ttl": "PTO Clutch for EXMARK 5218-54 Lawn Mower",
+        "userId": "1000051345",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1783517020836"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100005352",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5317872228112",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784481756,
+            "modification_date": 1784481756,
+            "revision": 1
+        },
+        "draftId": "5317872228112",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1784481755000"
+        },
+        "mktPlLstdOn": "3",
+        "lstgAppId": "384352",
+        "primCatId": "3761",
+        "ttl": "Magewell Pro Capture Card Quad HDMI  11100 - Excellent Condition - Little Use",
+        "userId": "100005352",
+        "imgUrl": null,
+        "crtMd": "Add",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1784481756033"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000056083",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5163049217023",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1779646692,
+            "modification_date": 1780517825,
+            "revision": 16
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTUwMFgxMjMw/z/NbsAAeSwv2hqE0Dx/$_57.JPG?set_id=880000500F",
+        "draftId": "5163049217023",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1780517825000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "384352",
+        "primCatId": "57990",
+        "ttl": "polo ralph lauren shirt men XL",
+        "crtDt": {
+            "$numberLong": "1779646692155"
+        },
+        "userId": "1000056083"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000057316",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5192467178820",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785776827,
+            "modification_date": 1785776831,
+            "revision": 2
+        },
+        "draftId": "5192467178820",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1785776831000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "259104",
+        "ttl": "Absolute Superman #18 - Ben Oliver Variant - King Shazam 1st - DC Comics 2026",
+        "crtDt": {
+            "$numberLong": "1785776827750"
+        },
+        "userId": "1000057316"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000057316",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5196657375420",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785883195,
+            "modification_date": 1785883195,
+            "revision": 1
+        },
+        "draftId": "5196657375420",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1785883195000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "259104",
+        "ttl": "2026 SDCC COMIC EXCLUSIVE ABSOLUTE SUPERMAN B&W SKETCH COVER ISSUE BOOK JIM LEE",
+        "userId": "1000057316",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1785883195758"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000057316",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5341774850513",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785157773,
+            "modification_date": 1785157773,
+            "revision": 1
+        },
+        "draftId": "5341774850513",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1785157773000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "259104",
+        "ttl": "DC Comics Absolute Batman #20 Mark Brooks Trade dress Double Signed MB And SS",
+        "userId": "1000057316",
+        "imgUrl": null,
+        "crtMd": "SellLike",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1785157773897"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000057580",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5224599749320",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786659362,
+            "modification_date": 1786659368,
+            "revision": 2
+        },
+        "draftId": "5224599749320",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786659368000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "34061",
+        "ttl": "ARA7116V2 ARRMA LIMITLESS V2 6s CHASSIS",
+        "crtDt": {
+            "$numberLong": "1786659362404"
+        },
+        "userId": "1000057580"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000067681",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5073207325900",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1780935940,
+            "modification_date": 1780935955,
+            "revision": 5
+        },
+        "draftId": "5073207325900",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1780935955000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "11484",
+        "ttl": "Polo Ralph Lauren Men¿s Pima Cotton V-Neck Purple Sweater NWT $228 Sweater (XL)",
+        "crtDt": {
+            "$numberLong": "1780935940640"
+        },
+        "userId": "1000067681"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000069139",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5283246460310",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783555757,
+            "modification_date": 1783555799,
+            "revision": 5
+        },
+        "draftId": "5283246460310",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1783555799000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "429",
+        "ttl": "Kentucky Derby Bar Glass 1976 Color Variations",
+        "crtDt": {
+            "$numberLong": "1783555757858"
+        },
+        "userId": "1000069139"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000069139",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5283258180010",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783556042,
+            "modification_date": 1783556085,
+            "revision": 8
+        },
+        "draftId": "5283258180010",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1783556085000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "429",
+        "ttl": "Official 111th Kentucky Derby 1985 Mint Julep Glass | 12 oz Single Glass",
+        "crtDt": {
+            "$numberLong": "1783556042245"
+        },
+        "userId": "1000069139"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000069139",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5283265537010",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783556217,
+            "modification_date": 1783556225,
+            "revision": 4
+        },
+        "draftId": "5283265537010",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1783556225000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "429",
+        "ttl": "2002 Kentucky DERBY Glass 128",
+        "crtDt": {
+            "$numberLong": "1783556217660"
+        },
+        "userId": "1000069139"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000069139",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5285274229713",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783555302,
+            "modification_date": 1783555365,
+            "revision": 8
+        },
+        "draftId": "5285274229713",
+        "crtMd": "SellLike",
+        "lastModifiedDate": {
+            "$numberLong": "1783555365000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "461396",
+        "primCatId": "429",
+        "ttl": "SANTA ANITA PARK Laffit Pincay COMMEMORATIVE DESK LAMP Horse Racing VINTAGE",
+        "crtDt": {
+            "$numberLong": "1783555302730"
+        },
+        "userId": "1000069139"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000071738",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5213595932920",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786372728,
+            "modification_date": 1786372735,
+            "revision": 2
+        },
+        "draftId": "5213595932920",
+        "crtMd": "Add",
+        "lastModifiedDate": {
+            "$numberLong": "1786372734000"
+        },
+        "mktPlLstdOn": "0",
+        "lstgAppId": "543106",
+        "primCatId": "230",
+        "ttl": "BALONAR 15Inch Large Size Christmas Plush Gingerbread Man Boy Girl Figures wi...",
+        "crtDt": {
+            "$numberLong": "1786372728615"
+        },
+        "userId": "1000071738"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5084869785603",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781154044,
+            "modification_date": 1781154044,
+            "revision": 1
+        },
+        "draftId": "5084869785603",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1781154044000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "384352",
+        "primCatId": "51567",
+        "ttl": "BBBYO Rash Top Kids size Medium - RRP $49 Half price - Angel Fish print",
+        "userId": "1000082462",
+        "imgUrl": "https://i.ebayimg.com/00/s/MTQ2M1gxMDk3/z/L5kAAeSwsDBpkXvW/$_57.JPG?set_id=880000500F",
+        "crtMd": "SellSimilar",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1781154044443"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5196696617423",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1785912912,
+            "modification_date": 1785912933,
+            "revision": 5
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTU5OVgxMTk5/z/AooAAeSwa59pI-on/$_1.JPG?set_id=8800005007",
+        "draftId": "5196696617423",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1785912933000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "57988",
+        "ttl": "Adidas puffer vest size L new with tags",
+        "crtDt": {
+            "$numberLong": "1785912912348"
+        },
+        "userId": "1000082462"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5261537577011",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782894263,
+            "modification_date": 1782894267,
+            "revision": 2
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/faUAAeSw-Y5pVLlV/$_1.JPG?set_id=8800005007",
+        "draftId": "5261537577011",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1782894267000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "57990",
+        "ttl": "Ermenegildo Zegna lightweight soft flannel shirt great condition size XL",
+        "crtDt": {
+            "$numberLong": "1782894263049"
+        },
+        "userId": "1000082462"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5286055974213",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783581866,
+            "modification_date": 1783581866,
+            "revision": 1
+        },
+        "draftId": "5286055974213",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1783581866000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "15687",
+        "ttl": "PYRA T shirt NEW with tags $30. Black Size XL",
+        "userId": "1000082462",
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/jtAAAOSwofVnHens/$_57.JPG?set_id=880000500F",
+        "crtMd": "Relist",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1783581866302"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5286265291612",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783581836,
+            "modification_date": 1783581851,
+            "revision": 3
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3JYAAOSwKyFnIeCB/$_57.JPG?set_id=880000500F",
+        "draftId": "5286265291612",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1783581851000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "57989",
+        "ttl": "Dickies Joggers Pants Near New  Tank Khaki Size 36",
+        "crtDt": {
+            "$numberLong": "1783581836186"
+        },
+        "userId": "1000082462"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5294439436411",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783826713,
+            "modification_date": 1783826718,
+            "revision": 2
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/VZkAAeSwzLJpN2NO/$_1.JPG?set_id=8800005007",
+        "draftId": "5294439436411",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1783826718000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "57990",
+        "ttl": "Ermenegildo Zegna long sleeve top size XL",
+        "crtDt": {
+            "$numberLong": "1783826713487"
+        },
+        "userId": "1000082462"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5297770473011",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783928059,
+            "modification_date": 1783928064,
+            "revision": 2
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/OTYwWDk2MA==/z/AVsAAOSw8lle5YNi/$_57.JPG?set_id=8800005007",
+        "draftId": "5297770473011",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1783928064000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "48319",
+        "ttl": "Beanbag by BBBYO - Pumpkin style super cute Beanbag for Kids -  50% off!",
+        "crtDt": {
+            "$numberLong": "1783928059263"
+        },
+        "userId": "1000082462"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5297846394913",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783927969,
+            "modification_date": 1783928001,
+            "revision": 3
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/OTYwWDk2MA==/z/AVsAAOSw8lle5YNi/$_57.JPG?set_id=8800005007",
+        "draftId": "5297846394913",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1783928000000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "48319",
+        "ttl": "Beanbag Cover for Kids - Pumpkin style super cute Beanbag for Kids -  85% off!",
+        "crtDt": {
+            "$numberLong": "1783927969533"
+        },
+        "userId": "1000082462"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5307562697312",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784178738,
+            "modification_date": 1784178772,
+            "revision": 4
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/OTYwWDk2MA==/z/AVsAAOSw8lle5YNi/$_57.JPG?set_id=8800005007",
+        "draftId": "5307562697312",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1784178772000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "48319",
+        "ttl": "Beanbag Cover for Kids - Pumpkin style super cute Beanbag for Kids -  85% off!",
+        "crtDt": {
+            "$numberLong": "1784178738085"
+        },
+        "userId": "1000082462"
+    },
+    {
+        "__key": [
+            {
+                "string": "1000082462",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5307564729212",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784178815,
+            "modification_date": 1784178815,
+            "revision": 1
+        },
+        "draftId": "5307564729212",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1784178815000"
+        },
+        "mktPlLstdOn": "15",
+        "lstgAppId": "290356",
+        "primCatId": "48319",
+        "ttl": "Beanbag Cover for Kids - Pumpkin style super cute Beanbag for Kids -  85% off!",
+        "userId": "1000082462",
+        "imgUrl": "https://i.ebayimg.com/00/s/OTYwWDk2MA==/z/AVsAAOSw8lle5YNi/$_57.JPG?set_id=8800005007",
+        "crtMd": "Relist",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1784178815612"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100008749",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5110349574501",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781950394,
+            "modification_date": 1781950394,
+            "revision": 1
+        },
+        "draftId": "5110349574501",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1781950394000"
+        },
+        "mktPlLstdOn": "77",
+        "lstgAppId": "384352",
+        "primCatId": "67500",
+        "ttl": "Alfa Romeo Geschenkset \"Black\" 15ml Edt+ 150ml Body Spray OVP",
+        "userId": "100008749",
+        "imgUrl": "https://i.ebayimg.com/00/s/MTI4MFgxMjgw/z/Z0cAAeSwhANqDMuI/$_1.JPG?set_id=8800005007",
+        "crtMd": "SellSimilar",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1781950394963"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100008749",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5113014441303",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781953432,
+            "modification_date": 1781953432,
+            "revision": 1
+        },
+        "draftId": "5113014441303",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1781953432000"
+        },
+        "mktPlLstdOn": "77",
+        "lstgAppId": "384352",
+        "primCatId": "67500",
+        "ttl": "Alfa Romeo Geschenkset \"Black\" 15ml Edt+ 150ml Body Spray OVP",
+        "userId": "100008749",
+        "imgUrl": "https://i.ebayimg.com/00/s/MTI4MFgxMjgw/z/Z0cAAeSwhANqDMuI/$_1.JPG?set_id=8800005007",
+        "crtMd": "SellSimilar",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1781953432864"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100008749",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5133656133303",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782554363,
+            "modification_date": 1782554363,
+            "revision": 1
+        },
+        "draftId": "5133656133303",
+        "stockImgUrl": null,
+        "eBGenTtl": null,
+        "lastModifiedDate": {
+            "$numberLong": "1782554363000"
+        },
+        "mktPlLstdOn": "77",
+        "lstgAppId": "290356",
+        "primCatId": "67500",
+        "ttl": "Alfa Romeo Geschenkset \"GREEN\" 15ml Edt+ 150ml Body Spray OVP",
+        "userId": "100008749",
+        "imgUrl": "https://i.ebayimg.com/00/s/MTI4MFgxMjgw/z/MKsAAeSw6MZqNnoI/$_1.JPG?set_id=8800005007",
+        "crtMd": "SellSimilar",
+        "ebayGeneratedTitle": null,
+        "crtDt": {
+            "$numberLong": "1782554363077"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "100008749",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "5133677836701",
+                "collection": "UserListingDraftMap"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782637606,
+            "modification_date": 1782639432,
+            "revision": 45
+        },
+        "imgUrl": "https://i.ebayimg.com/00/s/OTM5WDc5Nw==/z/EbAAAeSw5zRqQOo~/$_57.PNG?set_id=880000500F",
+        "draftId": "5133677836701",
+        "crtMd": "SellSimilar",
+        "lastModifiedDate": {
+            "$numberLong": "1782639432000"
+        },
+        "mktPlLstdOn": "77",
+        "lstgAppId": "384352",
+        "primCatId": "21205",
+        "ttl": "Figs & Rouge Velvet Cream 30 ml – Mattierend & Porenverfeinernd OVP",
+        "crtDt": {
+            "$numberLong": "1782637606419"
+        },
+        "userId": "100008749"
+    }
+]

@@ -1,0 +1,3294 @@
+[
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfu",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758223864,
+            "modification_date": 1758223864,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "384352"
+        },
+        "rvsdDate": {
+            "$numberLong": "1730073888000"
+        },
+        "sigRevCnt": 1,
+        "vrsnId": {
+            "$numberLong": "-102250629096"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "picUrl",
+            "payMthd",
+            "binPrc",
+            "loc",
+            "revDet",
+            "gal",
+            "ppAcc",
+            "itmSpecChg",
+            "retPolChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfx",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758223864,
+            "modification_date": 1758223864,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1224042287000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "desc",
+            "moAcc",
+            "chkAcc",
+            "payMthd",
+            "revDet"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAFh7JE+2gAfAYgZ",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769617130,
+            "modification_date": 1769617130,
+            "revision": 1
+        },
+        "updCrLstgVrs": "1769617130228",
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1769617130768"
+        },
+        "sigRevCnt": 35,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "hdlTimeChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAF8eVePlwAfOY05",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769623927,
+            "modification_date": 1769623927,
+            "revision": 1
+        },
+        "updCrLstgVrs": "1769623926864",
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1769623927738"
+        },
+        "sigRevCnt": 36,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "hdlTimeChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAF811V7ywAf+oee",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769624021,
+            "modification_date": 1769624021,
+            "revision": 1
+        },
+        "updCrLstgVrs": "1769624020695",
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1769624021717"
+        },
+        "sigRevCnt": 37,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "hdlTimeChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsL",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "384352"
+        },
+        "rvsdDate": {
+            "$numberLong": "1731523761000"
+        },
+        "sigRevCnt": 32,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "picUrl",
+            "gal",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsM",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1714054896000"
+        },
+        "sigRevCnt": 31,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsN",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1711468045000"
+        },
+        "sigRevCnt": 30,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsO",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1709063150000"
+        },
+        "sigRevCnt": 29,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsP",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1708105773000"
+        },
+        "sigRevCnt": 28,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsQ",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1682601861000"
+        },
+        "sigRevCnt": 27,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsR",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "252944"
+        },
+        "rvsdDate": {
+            "$numberLong": "1677689520000"
+        },
+        "sigRevCnt": 26,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsS",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1673915873000"
+        },
+        "sigRevCnt": 25,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsT",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1673062485000"
+        },
+        "sigRevCnt": 24,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsU",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "252944"
+        },
+        "rvsdDate": {
+            "$numberLong": "1643644229000"
+        },
+        "sigRevCnt": 23,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsV",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "56507"
+        },
+        "rvsdDate": {
+            "$numberLong": "1633300369000"
+        },
+        "sigRevCnt": 22,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsW",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "56507"
+        },
+        "rvsdDate": {
+            "$numberLong": "1633091048000"
+        },
+        "sigRevCnt": 21,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "hdlTimeChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsX",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "410105"
+        },
+        "rvsdDate": {
+            "$numberLong": "1612576839000"
+        },
+        "sigRevCnt": 20,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsY",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "252944"
+        },
+        "rvsdDate": {
+            "$numberLong": "1611174123000"
+        },
+        "sigRevCnt": 19,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsZ",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "410105"
+        },
+        "rvsdDate": {
+            "$numberLong": "1609898453000"
+        },
+        "sigRevCnt": 18,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsa",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "410105"
+        },
+        "rvsdDate": {
+            "$numberLong": "1607220145000"
+        },
+        "sigRevCnt": 17,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "vmAcc",
+            "discAcc",
+            "amexAcc",
+            "payMthd",
+            "ppAcc",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsb",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "392113"
+        },
+        "rvsdDate": {
+            "$numberLong": "1566663640000"
+        },
+        "sigRevCnt": 16,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "ctgry",
+            "itmSpecChg",
+            "dimChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsc",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1531144400000"
+        },
+        "sigRevCnt": 15,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "revDet",
+            "dimChg",
+            "retPolChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsf",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1510324273000"
+        },
+        "sigRevCnt": 14,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "dimChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsg",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1510159636000"
+        },
+        "sigRevCnt": 13,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "dimChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsh",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1495034830000"
+        },
+        "sigRevCnt": 12,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "dimChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsi",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1469631975000"
+        },
+        "sigRevCnt": 11,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "ttl",
+            "shpTrms",
+            "desc",
+            "picUrl",
+            "binPrc",
+            "qty",
+            "dimChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsj",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1453845964000"
+        },
+        "sigRevCnt": 10,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "itmSpecChg",
+            "dimChg",
+            "prodIdentsChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsk",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1453312192000"
+        },
+        "sigRevCnt": 9,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "picUrl",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsl",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1452195248000"
+        },
+        "sigRevCnt": 9,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsm",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1452111303000"
+        },
+        "sigRevCnt": 9,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "picUrl",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsn",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1410986368000"
+        },
+        "sigRevCnt": 8,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "picUrl",
+            "binPrc",
+            "gal",
+            "exclListChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGso",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1375210361000"
+        },
+        "sigRevCnt": 7,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "revDet"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsq",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1327349425000"
+        },
+        "sigRevCnt": 6,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsr",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1311968355000"
+        },
+        "sigRevCnt": 5,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGss",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1309891557000"
+        },
+        "sigRevCnt": 4,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGst",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1286459260000"
+        },
+        "sigRevCnt": 3,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "qty",
+            "gal"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsu",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1280949531000"
+        },
+        "sigRevCnt": 2,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "revDet"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsw",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "2887"
+        },
+        "rvsdDate": {
+            "$numberLong": "1232563011000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsx",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1229715772000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "desc",
+            "discAcc",
+            "payMthd",
+            "revDet",
+            "storeId"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGs3",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1155318414000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAgJKtXgCAAfXmg9",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1770053160,
+            "modification_date": 1770053160,
+            "revision": 1
+        },
+        "updCrLstgVrs": "1770053159296",
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1770053160379"
+        },
+        "sigRevCnt": 38,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "bstOff",
+            "revDet"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AA+yium3IgA0uQt3",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1753375402,
+            "modification_date": 1753375402,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "220759"
+        },
+        "rvsdDate": {
+            "$numberLong": "1753375402791"
+        },
+        "sigRevCnt": 34,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "revDet"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//KlBVlflwA1ZMuw",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1751471397,
+            "modification_date": 1751471397,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1751471397038"
+        },
+        "sigRevCnt": 33,
+        "vrsnId": {
+            "$numberLong": "-110005505597"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "ww",
+            "loc",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9+vQbAa1QAf9ui8",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758818767,
+            "modification_date": 1758818767,
+            "revision": 1
+        },
+        "updCrLstgVrs": "1758818766817",
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1758818767729"
+        },
+        "sigRevCnt": 14,
+        "vrsnId": {
+            "$numberLong": "5084487143001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "desc",
+            "revDet",
+            "hdlTimeChg",
+            "itmSpecChg",
+            "retPolChg",
+            "domShpChg",
+            "prodIdentsChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4V",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1720036125000"
+        },
+        "sigRevCnt": 13,
+        "vrsnId": {
+            "$numberLong": "4508924937001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "bpAcc",
+            "gal"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4W",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1696970089000"
+        },
+        "sigRevCnt": 12,
+        "vrsnId": {
+            "$numberLong": "4213704229001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "ww",
+            "itmSpecChg",
+            "shpLocChg",
+            "prodIdentsChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4X",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "56507"
+        },
+        "rvsdDate": {
+            "$numberLong": "1633714794000"
+        },
+        "sigRevCnt": 11,
+        "vrsnId": {
+            "$numberLong": "3428080069001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "ttl",
+            "shpTrms",
+            "desc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4Y",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "431011"
+        },
+        "rvsdDate": {
+            "$numberLong": "1632330265000"
+        },
+        "sigRevCnt": 10,
+        "vrsnId": {
+            "$numberLong": "3406920785001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "itmSpecChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4Z",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "56507"
+        },
+        "rvsdDate": {
+            "$numberLong": "1621543289000"
+        },
+        "sigRevCnt": 9,
+        "vrsnId": {
+            "$numberLong": "3250957986001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "payMthd",
+            "revDet",
+            "ppAcc",
+            "retPolChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4f",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "1285"
+        },
+        "rvsdDate": {
+            "$numberLong": "1582408374000"
+        },
+        "sigRevCnt": 8,
+        "vrsnId": {
+            "$numberLong": "2698603093001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "loc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4g",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1480286678000"
+        },
+        "sigRevCnt": 7,
+        "vrsnId": {
+            "$numberLong": "1144321541001"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4h",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1480119962000"
+        },
+        "sigRevCnt": 7,
+        "vrsnId": {
+            "$numberLong": "1144321541001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "gspChg",
+            "dimChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4i",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1438193311000"
+        },
+        "sigRevCnt": 6,
+        "vrsnId": {
+            "$numberLong": "735723626001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "bpAcc",
+            "binPrc",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4j",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1436733074000"
+        },
+        "sigRevCnt": 5,
+        "vrsnId": {
+            "$numberLong": "565548457001"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "bpAcc",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4k",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "237"
+        },
+        "rvsdDate": {
+            "$numberLong": "1413856287000"
+        },
+        "sigRevCnt": 5,
+        "vrsnId": {
+            "$numberLong": "565548457001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "desc",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4l",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1411246918000"
+        },
+        "sigRevCnt": 4,
+        "vrsnId": {
+            "$numberLong": "550431161001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "ttl",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4m",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1348436527000"
+        },
+        "sigRevCnt": 3,
+        "vrsnId": {
+            "$numberLong": "242065830001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "desc",
+            "bpAcc",
+            "loc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4n",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "2887"
+        },
+        "rvsdDate": {
+            "$numberLong": "1273290498000"
+        },
+        "sigRevCnt": 1,
+        "vrsnId": {
+            "$numberLong": "43228428001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "qty"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4o",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "2887"
+        },
+        "rvsdDate": {
+            "$numberLong": "1253068949000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "-110038401076"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "desc",
+            "revDet"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4q",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1201450533000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "binPrc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9+vQTrRPAAf8EFJ",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758818768,
+            "modification_date": 1758818768,
+            "revision": 1
+        },
+        "updCrLstgVrs": "1758818767015",
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1758818768001"
+        },
+        "sigRevCnt": 16,
+        "vrsnId": {
+            "$numberLong": "5084487154001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "desc",
+            "revDet",
+            "hdlTimeChg",
+            "itmSpecChg",
+            "retPolChg",
+            "domShpChg",
+            "prodIdentsChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlc",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1720293900000"
+        },
+        "sigRevCnt": 15,
+        "vrsnId": {
+            "$numberLong": "4512721609001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "ww"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dld",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "415699"
+        },
+        "rvsdDate": {
+            "$numberLong": "1673371497000"
+        },
+        "sigRevCnt": 14,
+        "vrsnId": {
+            "$numberLong": "3952121210001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "itmSpecChg",
+            "shpLocChg",
+            "prodIdentsChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dle",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "56507"
+        },
+        "rvsdDate": {
+            "$numberLong": "1633543433000"
+        },
+        "sigRevCnt": 13,
+        "vrsnId": {
+            "$numberLong": "3425412412001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "ttl",
+            "shpTrms",
+            "desc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlf",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "56507"
+        },
+        "rvsdDate": {
+            "$numberLong": "1633535217000"
+        },
+        "sigRevCnt": 12,
+        "vrsnId": {
+            "$numberLong": "3425235715001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlg",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "431011"
+        },
+        "rvsdDate": {
+            "$numberLong": "1632330241000"
+        },
+        "sigRevCnt": 11,
+        "vrsnId": {
+            "$numberLong": "3406920295001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "itmSpecChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlh",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "56507"
+        },
+        "rvsdDate": {
+            "$numberLong": "1621543450000"
+        },
+        "sigRevCnt": 10,
+        "vrsnId": {
+            "$numberLong": "3250960861001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "payMthd",
+            "revDet",
+            "ppAcc",
+            "retPolChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dln",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "1285"
+        },
+        "rvsdDate": {
+            "$numberLong": "1582408351000"
+        },
+        "sigRevCnt": 9,
+        "vrsnId": {
+            "$numberLong": "2698601875001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "loc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlo",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1527179185000"
+        },
+        "sigRevCnt": 8,
+        "vrsnId": {
+            "$numberLong": "1818181249001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "desc",
+            "picUrl",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlp",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1480286597000"
+        },
+        "sigRevCnt": 7,
+        "vrsnId": {
+            "$numberLong": "1145701601001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "gspChg",
+            "dimChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlq",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1436732450000"
+        },
+        "sigRevCnt": 6,
+        "vrsnId": {
+            "$numberLong": "724083349001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "bpAcc",
+            "qty",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlr",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "237"
+        },
+        "rvsdDate": {
+            "$numberLong": "1413856413000"
+        },
+        "sigRevCnt": 5,
+        "vrsnId": {
+            "$numberLong": "565549628001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "desc",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dls",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1411249629000"
+        },
+        "sigRevCnt": 4,
+        "vrsnId": {
+            "$numberLong": "550443321001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "ttl",
+            "dimChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlt",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1351367287000"
+        },
+        "sigRevCnt": 3,
+        "vrsnId": {
+            "$numberLong": "248108994001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "desc",
+            "bpAcc",
+            "loc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlu",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "2887"
+        },
+        "rvsdDate": {
+            "$numberLong": "1273291627000"
+        },
+        "sigRevCnt": 1,
+        "vrsnId": {
+            "$numberLong": "43229654001"
+        },
+        "vrsnCrtd": true,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "qty"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlv",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "2887"
+        },
+        "rvsdDate": {
+            "$numberLong": "1253069371000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "desc",
+            "revDet"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlx",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1201650772000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "desc",
+            "binPrc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dly",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1172376601000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "qty",
+            "loc"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91U",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "384352"
+        },
+        "rvsdDate": {
+            "$numberLong": "1718121421000"
+        },
+        "sigRevCnt": 13,
+        "vrsnId": {
+            "$numberLong": "-110063553478"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "domShpChg",
+            "intlShpChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91V",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1698651357000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91W",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1698103682000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91X",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1698004940000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91Y",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1697392236000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91Z",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1660834165000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91a",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1658242220000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91b",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1657928698000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91c",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1655336763000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91d",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1654931010000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91e",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1654372331000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91f",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1654239947000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91g",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1653752055000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91h",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "194048"
+        },
+        "rvsdDate": {
+            "$numberLong": "1638128395000"
+        },
+        "sigRevCnt": 12,
+        "vrsnId": {
+            "$numberLong": "-110063553478"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "ttl",
+            "shpTrms",
+            "desc",
+            "itmSpecChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91i",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "410105"
+        },
+        "rvsdDate": {
+            "$numberLong": "1625252044000"
+        },
+        "sigRevCnt": 11,
+        "vrsnId": {
+            "$numberLong": "-110063553478"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "payMthd",
+            "ppAcc",
+            "itmSpecChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91j",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "194048"
+        },
+        "rvsdDate": {
+            "$numberLong": "1555550287000"
+        },
+        "sigRevCnt": 10,
+        "vrsnId": {
+            "$numberLong": "-110063553478"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "shpTrms",
+            "desc",
+            "picUrl",
+            "revDet",
+            "itmSpecChg",
+            "shpTypeChg",
+            "dimChg",
+            "retPolChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91l",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1464796414000"
+        },
+        "sigRevCnt": 9,
+        "vrsnId": {
+            "$numberLong": "-110063553478"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "picUrl",
+            "revDet",
+            "dimChg",
+            "retPolChg"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91o",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1464104283000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91p",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1463931485000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91q",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1463747797000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleEnd"
+        ]
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91r",
+                "collection": "ListingRevision"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "appId": {
+            "$numberLong": "0"
+        },
+        "rvsdDate": {
+            "$numberLong": "1463661418000"
+        },
+        "sigRevCnt": 0,
+        "vrsnId": {
+            "$numberLong": "0"
+        },
+        "vrsnCrtd": false,
+        "rvsdPrptyGrps": [
+            "binPrc",
+            "saleStrt"
+        ]
+    }
+]

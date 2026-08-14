@@ -1,0 +1,2603 @@
+[
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfu",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfv",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758223864,
+            "modification_date": 1758223864,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfu",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfw",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758223864,
+            "modification_date": 1758223864,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfx",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABgkoEJXNQAfOYfy",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758223864,
+            "modification_date": 1758223864,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsc",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsd",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "14 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "30 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsc",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGse",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "If you purchase a product from us and are unhappy with it fo",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGso",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsp",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsu",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsv",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "rvsdPrptyGrp": "retPolChg",
+        "rvsdPrpty": "itmDmAttr",
+        "chgTp": "dlt"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsx",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsy",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsx",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsz",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsx",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGs0",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsx",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGs1",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Returns Accepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGsx",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAdcK/x3NQAfzGs2",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757123972,
+            "modification_date": 1757123972,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "If you purchase a product from us and are unhappy with it fo",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAgJKtXgCAAfXmg9",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAgJKtXgCAAfXmg+",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1770053160,
+            "modification_date": 1770053160,
+            "revision": 1
+        },
+        "oldVal": "565.0 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "605.0 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110005505597",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AA+yium3IgA0uQt3",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AA+yium3IgA0uQt4",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1753375402,
+            "modification_date": 1753375402,
+            "revision": 1
+        },
+        "oldVal": "513.0 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "565.0 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9+vQbAa1QAf9ui8",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "/9+vQbAa1QAf9ui9",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758818767,
+            "modification_date": 1758818767,
+            "revision": 1
+        },
+        "oldVal": "No",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9+vQbAa1QAf9ui8",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "/9+vQbAa1QAf9ui+",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758818767,
+            "modification_date": 1758818767,
+            "revision": 1
+        },
+        "oldVal": "No",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4Z",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4a",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "oldVal": "ReturnsNotAccepted",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Returns Accepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4Z",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4b",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4Z",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4c",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4Z",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4d",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4Z",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4e",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038401076",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4o",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//tuUyBaFwBCZb4p",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756342186,
+            "modification_date": 1756342186,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "ReturnsNotAccepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9+vQTrRPAAf8EFJ",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "/9+vQTrRPAAf8EFK",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758818768,
+            "modification_date": 1758818768,
+            "revision": 1
+        },
+        "oldVal": "No",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9+vQTrRPAAf8EFJ",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "/9+vQTrRPAAf8EFL",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758818768,
+            "modification_date": 1758818768,
+            "revision": 1
+        },
+        "oldVal": "No",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlh",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//2pNpBklQA05dli",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlh",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//2pNpBklQA05dlj",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlh",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//2pNpBklQA05dlk",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlh",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//2pNpBklQA05dll",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlh",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//2pNpBklQA05dlm",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "oldVal": "ReturnsNotAccepted",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Returns Accepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//2pNpBklQA05dlv",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//2pNpBklQA05dlw",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756488333,
+            "modification_date": 1756488333,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "ReturnsNotAccepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91j",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91k",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "I am happy to work with any buyer to resolve an issue that a",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91l",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91m",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "14 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "30 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91l",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r91n",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "I am happy to work with any buyer to resolve an issue that a",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92Q",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92R",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "7 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92Q",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92S",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "Item can be returned within 10 days (20 for overseas) if it ",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92W",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92X",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "Rap, Hip-Hop",
+        "rvsdPrptyGrp": "invld",
+        "newVal": "Rap & Hip Hop",
+        "rvsdPrpty": "invld",
+        "chgTp": "invld"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92W",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92Y",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "Single, EP",
+        "rvsdPrptyGrp": "invld",
+        "newVal": "Single",
+        "rvsdPrpty": "invld",
+        "chgTp": "invld"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92W",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92Z",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92y",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAL1t2DsGAA0r92z",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756835599,
+            "modification_date": 1756835599,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//AE8KkTBgAfIdbN",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//AE8KkTBgAfIdbO",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781364115,
+            "modification_date": 1781364115,
+            "revision": 1
+        },
+        "oldVal": "2.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "2.24 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//tyeC7/6gAf0unM",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//tyeC7/6gAf0unN",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782113051,
+            "modification_date": 1782113051,
+            "revision": 1
+        },
+        "oldVal": "2.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "2.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110089557492",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Xn",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Xo",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757257947,
+            "modification_date": 1757257947,
+            "revision": 1
+        },
+        "oldVal": "Returns excepted within 7 days of the buyer receiving the it",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110089557492",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Xn",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Xp",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757257947,
+            "modification_date": 1757257947,
+            "revision": 1
+        },
+        "oldVal": "Returns excepted within 7 days of the buyer receiving the it",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110089557492",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Yh",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Yi",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757257947,
+            "modification_date": 1757257947,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110089557492",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Yh",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAlng3GNeQBQu4Yj",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757257947,
+            "modification_date": 1757257947,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08Gv",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08Gw",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08G8",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08G9",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "14 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "30 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08G8",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08G+",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "You may return items sold and fulfilled within 14 days of de",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08G8",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08G/",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08HD",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08HE",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "You may return items sold and fulfilled within 7 days of del",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "You may return items sold and fulfilled within 14 days of de",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08HF",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08HG",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "7 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H2",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H3",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "You may return items sold and fulfilled within 7 days of del",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H2",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H4",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H2",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H5",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "7 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H2",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H6",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Returns Accepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110115517784",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H2",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABSt+TRnqQAf08H7",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757996882,
+            "modification_date": 1757996882,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N4",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2N5",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "7 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N4",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2N6",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "Returns accepted if item is not as described.",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N4",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2N7",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "Returns accepted if item is not as described.",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N8",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2N9",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N/",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2OA",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Seller",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N/",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2OB",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Returns accepted if item is not as described.",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N/",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2OC",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "7 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N/",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2OD",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123221185",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AATo/722RgAfa2N/",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AATo/722RgAfa2OE",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756963415,
+            "modification_date": 1756963415,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Returns Accepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123567759",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAYTBl0mzwAfdplR",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAYTBl0mzwAfdplS",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757039710,
+            "modification_date": 1757039710,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123567759",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAYTBl0mzwAfdplR",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAYTBl0mzwAfdplT",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757039710,
+            "modification_date": 1757039710,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110123567759",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAYTBl0mzwAfdpld",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAYTBl0mzwAfdple",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757039710,
+            "modification_date": 1757039710,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "ReturnsNotAccepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9/aiY1gHAAfcJLa",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "/9/aiY1gHAAfcJLb",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758829847,
+            "modification_date": 1758829847,
+            "revision": 1
+        },
+        "oldVal": "No",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "/9/aiY1gHAAfcJLa",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "/9/aiY1gHAAfcJLc",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758829847,
+            "modification_date": 1758829847,
+            "revision": 1
+        },
+        "oldVal": "No",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//o2OtuorQA0miT3",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//o2OtuorQA0miT4",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756262289,
+            "modification_date": 1756262289,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "No",
+        "rvsdPrpty": "restockFee",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//o2OtuorQA0miT3",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//o2OtuorQA0miT5",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756262289,
+            "modification_date": 1756262289,
+            "revision": 1
+        },
+        "oldVal": "ReturnsNotAccepted",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Returns Accepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//o2OtuorQA0miT3",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//o2OtuorQA0miT6",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756262289,
+            "modification_date": 1756262289,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//o2OtuorQA0miT3",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//o2OtuorQA0miT7",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756262289,
+            "modification_date": 1756262289,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//o2OtuorQA0miT3",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//o2OtuorQA0miT8",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756262289,
+            "modification_date": 1756262289,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "14 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110131805304",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "//o2OtuorQA0miUE",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "//o2OtuorQA0miUF",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756262289,
+            "modification_date": 1756262289,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "ReturnsNotAccepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110139767474",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsP",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsQ",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758052618,
+            "modification_date": 1758052618,
+            "revision": 1
+        },
+        "oldVal": "Buyer",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110139767474",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsP",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsR",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758052618,
+            "modification_date": 1758052618,
+            "revision": 1
+        },
+        "oldVal": "7 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110139767474",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsP",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsS",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758052618,
+            "modification_date": 1758052618,
+            "revision": 1
+        },
+        "oldVal": "Money Back",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110139767474",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsT",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsU",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758052618,
+            "modification_date": 1758052618,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "7 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110139767474",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsT",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsV",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758052618,
+            "modification_date": 1758052618,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110139767474",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsT",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsW",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758052618,
+            "modification_date": 1758052618,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110139767474",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsY",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABWHsmaE3AAfRtsZ",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758052618,
+            "modification_date": 1758052618,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "ReturnsNotAccepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0F",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0G",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0F",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0H",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "desc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0P",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0Q",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "7 Days",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0P",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0R",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "Money Back",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0P",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0S",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "Buyer",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "--",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0T",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0U",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "7 Days",
+        "rvsdPrpty": "rtnWthn",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0T",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0V",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Money Back",
+        "rvsdPrpty": "rfd",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0T",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0W",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "Buyer",
+        "rvsdPrpty": "shipPaidBy",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110146486386",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0Y",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAc5TsOYSAAmqC0Z",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757115046,
+            "modification_date": 1757115046,
+            "revision": 1
+        },
+        "oldVal": "--",
+        "rvsdPrptyGrp": "retPolChg",
+        "newVal": "ReturnsNotAccepted",
+        "rvsdPrpty": "rtnAcc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAADD2kSSABI7Azo",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAADD2kSSABI7Azp",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1752347440,
+            "modification_date": 1752347440,
+            "revision": 1
+        },
+        "oldVal": "15.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "19.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AABTOUd4jQAf7WDF",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AABTOUd4jQAf7WDG",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1760957896,
+            "modification_date": 1760957896,
+            "revision": 1
+        },
+        "oldVal": "19.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "15.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAEUKvMgdwA7dQLH",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAEUKvMgdwA7dQLI",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756712322,
+            "modification_date": 1756712322,
+            "revision": 1
+        },
+        "oldVal": "15.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "19.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAE+LqX1wgBXouLo",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAE+LqX1wgBXouLp",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756723078,
+            "modification_date": 1756723078,
+            "revision": 1
+        },
+        "oldVal": "19.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "15.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAFe9IuhkAQqYAGx",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAFe9IuhkAQqYAGy",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1748141533,
+            "modification_date": 1748141533,
+            "revision": 1
+        },
+        "oldVal": "15.99 USD",
+        "lstRvsnDtlId": {
+            "reference": "1748141533473-203984"
+        },
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "19.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAFldExNKwAfZY4a",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAFldExNKwAfZY4b",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1752438165,
+            "modification_date": 1752438165,
+            "revision": 1
+        },
+        "oldVal": "19.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "15.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAIcMS5aAgAfcfwq",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAIcMS5aAgAfcfwr",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782549717,
+            "modification_date": 1782549717,
+            "revision": 1
+        },
+        "oldVal": "19.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "19.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    },
+    {
+        "__key": [
+            {
+                "string": "110147618403",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "AAIzC7VLfgAfSI6u",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "AAIzC7VLfgAfSI6v",
+                "collection": "ListingRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782555567,
+            "modification_date": 1782555567,
+            "revision": 1
+        },
+        "oldVal": "15.99 USD",
+        "rvsdPrptyGrp": "binPrc",
+        "newVal": "15.99 USD",
+        "rvsdPrpty": "prc",
+        "chgTp": "rvsd"
+    }
+]

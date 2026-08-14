@@ -1,0 +1,2602 @@
+[
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5Y",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696323"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5Z",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Orange",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696324"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5a",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Black",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696325"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5b",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Blue",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696326"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5c",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Red",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696327"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5d",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Purple",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696328"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5e",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Lime Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696329"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5f",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Forest Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696330"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5g",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Pink",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696331"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5h",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696332"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5i",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Orange",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696333"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5j",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Black",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696334"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5k",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Blue",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696335"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5l",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Red",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696336"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5m",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Purple",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696337"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5n",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Lime Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696338"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5o",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Forest Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696339"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5p",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Pink",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696340"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5q",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696341"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5r",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Orange",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696342"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5s",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Black",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696343"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5t",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Blue",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696344"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5u",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Red",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696345"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5v",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Purple",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696346"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5w",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Lime Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696347"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5x",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Forest Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696348"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5y",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, Pink",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696349"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5z",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696350"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK50",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Orange",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696351"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK51",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Black",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696352"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK52",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Blue",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696353"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK53",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Red",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696354"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK54",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Purple",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696355"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK55",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Lime Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696356"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK56",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Forest Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696357"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK57",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, Pink",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696358"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK58",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696359"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK59",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Orange",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696360"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5+",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Black",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696361"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5/",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Blue",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696362"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6A",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Red",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696363"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6B",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Purple",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696364"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6C",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Lime Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696365"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6D",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Forest Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696366"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6E",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, Pink",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696367"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6F",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693103"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6G",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, FOREST CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693105"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6H",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693106"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6I",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, FOREST CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693108"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6J",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693109"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6K",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "M, FOREST CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693111"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6L",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693112"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6M",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "L, FOREST CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693114"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6N",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693115"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6O",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, FOREST CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693117"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6P",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693118"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6Q",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Orange",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693119"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6R",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Black",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693120"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6S",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Blue",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693121"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6T",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Red",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693122"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6U",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Purple",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693123"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6V",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Lime Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693124"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6W",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Forest Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693125"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6X",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Pink",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693126"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6Y",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693127"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK5X",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6Z",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, FOREST CAMO",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "412754693129"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6t",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693115"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6u",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XL, FOREST CAMO",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693117"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6v",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Yellow",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693118"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6w",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Orange",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693119"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6x",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Black",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693120"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6y",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Blue",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693121"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6z",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Red",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693122"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK60",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Purple",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693123"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK61",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Lime Green",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693124"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK62",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Forest Green",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693125"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK63",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, Pink",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693126"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK64",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, WATERFOWLER CAMO",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693127"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK65",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XXL, FOREST CAMO",
+        "rvsdVarPrpty": "var",
+        "rvsdPrptyGrp": "itmVarChg",
+        "chgTp": "add",
+        "varId": "412754693129"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK66",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Yellow",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696323"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK67",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696323"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK68",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Orange",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696324"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK69",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Orange",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696324"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6+",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Black",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696325"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6/",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Black",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696325"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7A",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Blue",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696326"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7B",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Blue",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696326"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7C",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Red",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696327"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7D",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Red",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696327"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7E",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Purple",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696328"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7F",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Purple",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696328"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7G",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Lime Green",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696329"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7H",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Lime Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696329"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7I",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Forest Green",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696330"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7J",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Forest Green",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696330"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7K",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Pink",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696331"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7L",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "S, Pink",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696331"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7M",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Yellow",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696332"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7N",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Yellow",
+        "rvsdVarPrpty": "prc",
+        "rvsdPrptyGrp": "binPrc",
+        "chgTp": "rvsd",
+        "varId": "410009696332"
+    },
+    {
+        "__key": [
+            {
+                "string": "110586717435",
+                "collection": "__ROOT__"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK6s",
+                "collection": "ListingRevision"
+            },
+            {
+                "guid": "ABQl9UxXuAAftK7O",
+                "collection": "VariationRevisionDetail"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757962061,
+            "modification_date": 1757962061,
+            "revision": 1
+        },
+        "varTraitVals": "XS, Orange",
+        "rvsdVarPrpty": "qty",
+        "rvsdPrptyGrp": "qty",
+        "chgTp": "rvsd",
+        "varId": "410009696333"
+    }
+]
