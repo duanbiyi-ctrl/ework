@@ -1,0 +1,212 @@
+[
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_102250629096",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695065481,
+            "modification_date": 1771446652,
+            "revision": 24
+        },
+        "ItemCompID": "COMPAT_102250629096",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110038967833",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1621543450,
+            "modification_date": 1779665947,
+            "revision": 33
+        },
+        "ItemCompID": "COMPAT_110038967833",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110063553478",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1625252044,
+            "modification_date": 1770058386,
+            "revision": 27
+        },
+        "ItemCompID": "COMPAT_110063553478",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110239804719",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110239804719",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1606931428,
+            "modification_date": 1785171231,
+            "revision": 46
+        },
+        "ItemCompID": "COMPAT_110239804719",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110298230558",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110298230558",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593629155,
+            "modification_date": 1770729776,
+            "revision": 29
+        },
+        "ItemCompID": "COMPAT_110298230558",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110305825325",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110305825325",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1635588872,
+            "modification_date": 1782208789,
+            "revision": 99
+        },
+        "ItemCompID": "COMPAT_110305825325",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110311177994",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110311177994",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593550853,
+            "modification_date": 1781178529,
+            "revision": 53
+        },
+        "ItemCompID": "COMPAT_110311177994",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110327909680",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110327909680",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695029262,
+            "modification_date": 1781016590,
+            "revision": 31
+        },
+        "ItemCompID": "COMPAT_110327909680",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110340694412",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110340694412",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1604349659,
+            "modification_date": 1781340410,
+            "revision": 27
+        },
+        "ItemCompID": "COMPAT_110340694412",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110343905989",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "COMPAT_110343905989",
+                "collection": "ItemCompatibility"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1626287887,
+            "modification_date": 1769594101,
+            "revision": 22
+        },
+        "ItemCompID": "COMPAT_110343905989",
+        "compat": null,
+        "cmpCompat": null,
+        "ftExempt": null
+    }
+]
