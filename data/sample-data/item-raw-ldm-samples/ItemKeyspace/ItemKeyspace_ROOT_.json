@@ -1,0 +1,5577 @@
+[
+    {
+        "__key": [
+            {
+                "string": "102250629096",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695065481,
+            "modification_date": 1784403055,
+            "revision": 63
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "4515377753511",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787081441000"
+            },
+            "startDt": {
+                "$numberLong": "1150659041000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787081441000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "16873468",
+        "conditionId": null,
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": null,
+                "unpaidTranThrsh": null,
+                "rstrctBid": null,
+                "rstrctnDate": null,
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": null,
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": null,
+            "wrntyTrms": null,
+            "pymtPlcyId": null,
+            "shipPlcyId": null,
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 1,
+        "crLstgDtVrs": "1784403048382",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/ODI2WDExNjU=/z/eRcAAOSwghFnHtT7/$_57.JPG?set_id=880000500F",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/ODI2WDExNjU=/z/LqAAAOSwZL9nHtT-/$_57.JPG?set_id=880000500F",
+                "order": 2
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1730073887000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Relist",
+        "crtDate": {
+            "$numberLong": "1150659041000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1784403055038"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Real Photo (RPPC)"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "real photo postcard RPPC"
+                ],
+                "name": "Product Type"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": null,
+        "title": "Real Photo Postcard RPPC Indian Agency House Portage WI",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "0",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": null,
+        "listingAppId": "0",
+        "lstgCrtCltIp": "152.163.100.134",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Plus",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": false,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "Chicago, Illinois",
+        "rlstPrntId": "6286571193",
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "102250629096",
+        "PK": "102250629096",
+        "category": {
+            "strPrmryCtgrId": "1",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "36082",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110038967833",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1621543450,
+            "modification_date": 1785345932,
+            "revision": 101
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "5164388171820",
+        "uuid": "000005F916F4CC77C106300CECE3C601",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1788024310000"
+            },
+            "startDt": {
+                "$numberLong": "1159550710000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1788024310000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "75327740",
+        "conditionId": "NEW_OTHER",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": null,
+                "unpaidTranThrsh": null,
+                "rstrctBid": null,
+                "rstrctnDate": null,
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "Letter",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "85028",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "262386842020",
+                "plcyVrsn": "322281587020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "262386841020",
+                "plcyVrsn": "322281586020"
+            },
+            "shipPlcyId": {
+                "policyId": "262386823020",
+                "plcyVrsn": "322565236020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 17,
+        "crLstgDtVrs": "1785345926502",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/NDgwWDY0MA==/z/7N4AAOSwBNtbBueW/$_57.JPG?set_id=8800005007",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1779665947000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Add",
+        "crtDate": {
+            "$numberLong": "1159550710000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": true,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1785345932141"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "European"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "Round"
+                ],
+                "name": "Shape"
+            },
+            {
+                "values": [
+                    "Crystal"
+                ],
+                "name": "Stone Type"
+            },
+            {
+                "values": [
+                    "Pink"
+                ],
+                "name": "Color"
+            },
+            {
+                "values": [
+                    "Flat Back"
+                ],
+                "name": "Style"
+            },
+            {
+                "values": [
+                    "Rhinestone"
+                ],
+                "name": "Material"
+            },
+            {
+                "values": [
+                    "7 mm"
+                ],
+                "name": "Bead Size"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": "5092083950001",
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1500,
+        "title": "34ss LT. AMETHYST HOT FIX European Rhinestones 12pcs.",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "0",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "85028",
+        "listingAppId": "564",
+        "lstgCrtCltIp": "98.165.51.6",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "35110.7.000",
+        "scndChncItm": false,
+        "itmLocn": "Phoenix, Arizona",
+        "rlstPrntId": null,
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110038967833",
+        "PK": "110038967833",
+        "category": {
+            "strPrmryCtgrId": "19",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "261997",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110063553478",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1625252044,
+            "modification_date": 1785693186,
+            "revision": 94
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "4136810557701",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1788371572000"
+            },
+            "startDt": {
+                "$numberLong": "1165085572000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1788371572000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "8914660",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": {
+                    "period": "Months_1",
+                    "count": 2
+                },
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1367186066858"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": false,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": false,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 5
+                    },
+                    "packageType": "PackageThickEnvelope",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "44004",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "127017770020",
+                "plcyVrsn": "177610804020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "195237882020",
+                "plcyVrsn": "249371115020"
+            },
+            "shipPlcyId": {
+                "policyId": "204611852020",
+                "plcyVrsn": "260045721020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 14,
+        "crLstgDtVrs": "1785693182335",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/OTU1WDk2Nw==/z/a7YAAOSwFSVct9BB/$_57.JPG?set_id=8800005007",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1767379988000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1165085572000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": true,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1785693186151"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "United States"
+                ],
+                "name": "Country of Origin"
+            },
+            {
+                "values": [
+                    "12 Gauge"
+                ],
+                "name": "Artist"
+            },
+            {
+                "values": [
+                    "Old School",
+                    "Hip-Hop"
+                ],
+                "name": "Style"
+            },
+            {
+                "values": [
+                    "Mint (M)"
+                ],
+                "name": "CD Grading"
+            },
+            {
+                "values": [
+                    "Mint (M)"
+                ],
+                "name": "Inlay Condition"
+            },
+            {
+                "values": [
+                    "Cardboard Sleeve"
+                ],
+                "name": "Case Type"
+            },
+            {
+                "values": [
+                    "CD"
+                ],
+                "name": "Format"
+            },
+            {
+                "values": [
+                    "Single"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "Sealed"
+                ],
+                "name": "Features"
+            },
+            {
+                "values": [
+                    "Ill Na Na"
+                ],
+                "name": "Release Title"
+            },
+            {
+                "values": [
+                    "Power"
+                ],
+                "name": "Record Label"
+            },
+            {
+                "values": [
+                    "Excellent (EX)"
+                ],
+                "name": "Case Condition"
+            },
+            {
+                "values": [
+                    "1998"
+                ],
+                "name": "Release Year"
+            },
+            {
+                "values": [
+                    "Single"
+                ],
+                "name": "Album Type"
+            },
+            {
+                "values": [
+                    "Rap & Hip Hop",
+                    "Rap & Hip-Hop"
+                ],
+                "name": "Genre"
+            },
+            {
+                "values": [
+                    "Old School"
+                ],
+                "name": "Sub-Genre"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "12 Gauge Ill Na Na CD *SEALED* 5 tracks 1998 Rap Hip Hop Isiah Pinkney",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "0",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "44004",
+        "listingAppId": "0",
+        "lstgCrtCltIp": "184.59.141.192",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": false,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "Ashtabula, Ohio",
+        "rlstPrntId": "110063552576",
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110063553478",
+        "PK": "110063553478",
+        "category": {
+            "strPrmryCtgrId": "16",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "176984",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": false,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110239804719",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1606931428,
+            "modification_date": 1785718796,
+            "revision": 122
+        },
+        "isScheduled": false,
+        "conditionDesc": "Nice copy.  Owners name but no other writing.Illustrated with 759 roentgenograms.  Full refund if not satisfied.",
+        "uuid": "1C4286FCE0AB02EE583B4610EACB7E5D",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1788397188000"
+            },
+            "startDt": {
+                "$numberLong": "1207184388000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1788397188000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "4614940",
+        "conditionId": "VERY_GOOD",
+        "isSCOStatusIndicator": false,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1785171230426"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 15
+                    },
+                    "packageType": "PackageThickEnvelope",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "28792",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "12111236020",
+                "plcyVrsn": "298313705020"
+            },
+            "pymtPlcyId": {
+                "policyId": "236076370020",
+                "plcyVrsn": "293528905020"
+            },
+            "shipPlcyId": {
+                "policyId": "256043682020",
+                "plcyVrsn": "315766250020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 17.6
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 14.3
+                },
+                "autDclnEnbld": true,
+                "bestOfrEnbld": true,
+                "autAccptEnbld": true
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 27,
+        "crLstgDtVrs": "1785718793651",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/1FUAAeSwMttqZ459/$_1.JPG?set_id=8800005007",
+                "extPicUrl": "https://i.ibb.co/6Fh3XXN/IMG-0330.jpg",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1785171231000"
+        },
+        "onHold": false,
+        "creationMode": "Add",
+        "crtDate": {
+            "$numberLong": "1207184388000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": true,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "006584",
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1785718796210"
+        },
+        "mngByInv": false,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "English"
+                ],
+                "name": "Language"
+            },
+            {
+                "values": [
+                    "Hardcover"
+                ],
+                "name": "Format"
+            },
+            {
+                "values": [
+                    "W. B. Saunders"
+                ],
+                "name": "Publisher"
+            },
+            {
+                "values": [
+                    "Urography"
+                ],
+                "name": "Book Title"
+            },
+            {
+                "values": [
+                    "William F. Braasch & Benjamin H. Hager"
+                ],
+                "name": "Author"
+            }
+        ],
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 4000,
+        "title": "Urography",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "0",
+        "isVariation": false,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "sprtCntct": {},
+        "itmLocnPostlCd": "28792",
+        "listingAppId": "3615",
+        "lstgCrtCltIp": "108.220.40.156",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "AOBSKU:006584",
+        "scndChncItm": false,
+        "itmLocn": "Hendersonville, North Carolina",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "ISBN"
+            }
+        ],
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110239804719",
+        "PK": "110239804719",
+        "category": {
+            "strPrmryCtgrId": "6362006",
+            "prmryCtgrId": "261186"
+        },
+        "buyerRstDsbld": true
+    },
+    {
+        "__key": [
+            {
+                "string": "110298230558",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593629155,
+            "modification_date": 1786365285,
+            "revision": 108
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "2138096305812",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1789042969000"
+            },
+            "startDt": {
+                "$numberLong": "1223641369000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1789042969000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "10897361",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1542395609939"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": true,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": false,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 16
+                    },
+                    "packageType": "PackageThickEnvelope",
+                    "dimensions": {
+                        "depth": 3,
+                        "length": 10,
+                        "width": 6
+                    }
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "92806",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": null,
+            "wrntyTrms": null,
+            "pymtPlcyId": null,
+            "shipPlcyId": null,
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 23,
+        "crLstgDtVrs": "1786365276219",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/OTc0WDE2MDA=/z/FjwAAMXQaBtQ~DbS/$_0.JPG?set_id=880000500F",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/ODg3WDE2MDA=/z/17AAAOxyhs9RCCeE/$_0.JPG?set_id=880000500F",
+                "order": 2
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/OTQ1WDE2MDA=/z/o8cAAOxyOBJRCB-e/$_0.JPG?set_id=880000500F",
+                "order": 3
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/OTg2WDE2MDA=/z/UAMAAMXQNOZRCEFh/$_0.JPG?set_id=880000500F",
+                "order": 4
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTEwMFgxNjAw/z/ktMAAOxyY7FRCDov/$_0.JPG?set_id=880000500F",
+                "order": 5
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTMzM1gxNjAw/z/mnQAAMXQgfZRCBTt/$_0.JPG?set_id=880000500F",
+                "order": 6
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMzM1/z/nWkAAMXQNOZRB6tc/$_0.JPG?set_id=880000500F",
+                "order": 7
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTM5MlgxNjAw/z/C54AAMXQgfZRB6ju/$_0.JPG?set_id=880000500F",
+                "order": 8
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTA0M1gxNjAw/z/tMkAAMXQbBVRB4oU/$_0.JPG?set_id=880000500F",
+                "order": 9
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/OTM1WDE2MDA=/z/tSgAAMXQAwNRCAZh/$_0.JPG?set_id=880000500F",
+                "order": 10
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/OTYzWDE2MDA=/z/ExUAAMXQgfZRB81Z/$_0.JPG?set_id=880000500F",
+                "order": 11
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/NzQ4WDE2MDA=/z/6HEAAOxyY7FRB4e8/$_0.JPG?set_id=880000500F",
+                "order": 12
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1706036473000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Add",
+        "crtDate": {
+            "$numberLong": "1223641369000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": true,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "Pack#7366",
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1786365285066"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Bearings"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "VXB"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "Pack#7366"
+                ],
+                "name": "Model"
+            },
+            {
+                "values": [
+                    "Pack#7366"
+                ],
+                "name": "MPN"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": "4319818276001",
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "20mm Mounted Bearing UCP204/Pillow Block Cast Housing",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "0",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "92806",
+        "listingAppId": "15646",
+        "lstgCrtCltIp": "199.19.28.250",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 5,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": false,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "Anaheim, California",
+        "rlstPrntId": null,
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Does not apply"
+                ],
+                "name": "UPC"
+            },
+            {
+                "values": [
+                    "Pack#7366"
+                ],
+                "name": "MPN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110298230558",
+        "PK": "110298230558",
+        "category": {
+            "strPrmryCtgrId": "5110999011",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "185120",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": false,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110305825325",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1635588872,
+            "modification_date": 1785402724,
+            "revision": 161
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "4659857229603",
+        "uuid": "57291C40731A4F5095E8D45A29F15208",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1788081103000"
+            },
+            "startDt": {
+                "$numberLong": "1225361503000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1788081103000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "126263031",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1758808096806"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": true,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": false,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "Letter",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "MK41 0RQ",
+                "gspLgstcPlnSprtd": true,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "414607901022",
+                "plcyVrsn": "490725228022"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "377395267022",
+                "plcyVrsn": "453279988022"
+            },
+            "shipPlcyId": {
+                "policyId": "377395261022",
+                "plcyVrsn": "460411931022"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "GBP",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "GBP",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 30,
+        "crLstgDtVrs": "1785402720633",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/NDExWDUwMA==/z/rgkAAOxyJs5RbXgv/$_0.JPG?set_id=2",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1782208789000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Add",
+        "crtDate": {
+            "$numberLong": "1225361502000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 20,
+            "taxRate": 20,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "EIS-DE117",
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "UK",
+        "lastModDate": {
+            "$numberLong": "1785402724407"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Braking"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "Honda"
+                ],
+                "name": "Manufacturer"
+            },
+            {
+                "values": [
+                    "Civic"
+                ],
+                "name": "Model/ Series"
+            },
+            {
+                "values": [
+                    "DE117"
+                ],
+                "name": "Manufacturer Part Number"
+            },
+            {
+                "values": [
+                    "Brake Pads"
+                ],
+                "name": "Subtype"
+            },
+            {
+                "values": [
+                    "Replacement Part"
+                ],
+                "name": "Intended Use"
+            },
+            {
+                "values": [
+                    "EIS"
+                ],
+                "name": "Brand"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "HONDA CIVIC 1975-1979 FRONT BRAKE PADS",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "3",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "MK41 0RQ",
+        "listingAppId": "564",
+        "lstgCrtCltIp": "81.140.20.235",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "681013.7.2003",
+        "scndChncItm": false,
+        "itmLocn": "Bedford",
+        "rlstPrntId": null,
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110305825325",
+        "PK": "110305825325",
+        "category": {
+            "strPrmryCtgrId": "8497761",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "57357",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": false,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110311177994",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593550853,
+            "modification_date": 1786474745,
+            "revision": 133
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "4454230282112",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1789153112000"
+            },
+            "startDt": {
+                "$numberLong": "1226433512000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1789153112000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "129012211",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1564034684705"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": true,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": false,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "Letter",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "06785",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "316373418011",
+                "plcyVrsn": "364288645011"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "259459951011",
+                "plcyVrsn": "306797292011"
+            },
+            "shipPlcyId": {
+                "policyId": "85910139011",
+                "plcyVrsn": "364284233011"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 74,
+        "crLstgDtVrs": "1786474741475",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/ZqcAAOSw8axZ9LaK/$_1.JPG?set_id=8800005007",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1781178529000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Relist",
+        "crtDate": {
+            "$numberLong": "1226433512000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 19,
+            "taxRate": 19,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": {
+            "mnfatr": {
+                "zip": "73770",
+                "stt": null,
+                "cmpNm": "Tecfast Verbindungssysteme GmbH",
+                "strt2": null,
+                "strt1": "Rechbergstrasse 1",
+                "cntry": "DE",
+                "phn": null,
+                "cntctUrl": null,
+                "cty": "Denkendorf",
+                "email": "info@tecfast.de"
+            }
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "DE",
+        "lastModDate": {
+            "$numberLong": "1786474745694"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Markenlos"
+                ],
+                "name": "Marke"
+            },
+            {
+                "values": [
+                    "Flachkopf"
+                ],
+                "name": "Kopfform"
+            },
+            {
+                "values": [
+                    "Edelstahl"
+                ],
+                "name": "Material"
+            },
+            {
+                "values": [
+                    "nicht zutreffend"
+                ],
+                "name": "Herstellernummer"
+            },
+            {
+                "values": [
+                    "1,5 - 4mm"
+                ],
+                "name": "Klemmbereich"
+            },
+            {
+                "values": [
+                    "Blindnieten Flachkopf"
+                ],
+                "name": "Produktart"
+            },
+            {
+                "values": [
+                    "4,8x8mm"
+                ],
+                "name": "Gr\u00f6\u00dfe"
+            },
+            {
+                "values": [
+                    "Edelstahl"
+                ],
+                "name": "Spanndornmaterial"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": "5377135293001",
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "50 Stk. Edelstahl A2 Blindnieten 4,8x8 Flachkopf   V2A  VA Standard Nieten",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "77",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "06785",
+        "listingAppId": "0",
+        "lstgCrtCltIp": "84.172.122.1",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "681033.7.2012",
+        "scndChncItm": false,
+        "itmLocn": "Brandhorst",
+        "rlstPrntId": "130265871958",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Nicht zutreffend"
+                ],
+                "name": "EAN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110311177994",
+        "PK": "110311177994",
+        "category": {
+            "strPrmryCtgrId": "21407245",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "183926",
+            "scndryCtgrId": "125033"
+        },
+        "buyerRstDsbld": false,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110327909680",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695029262,
+            "modification_date": 1784366885,
+            "revision": 70
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "5077021613801",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787045214000"
+            },
+            "startDt": {
+                "$numberLong": "1229596014000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787045214000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "753571254",
+        "conditionId": "VERY_GOOD",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": null,
+                "unpaidTranThrsh": null,
+                "rstrctBid": null,
+                "rstrctnDate": null,
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "00177",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "272402330020",
+                "plcyVrsn": "332507832020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "272402341020",
+                "plcyVrsn": "332507843020"
+            },
+            "shipPlcyId": {
+                "policyId": "272402340020",
+                "plcyVrsn": "332507842020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 13,
+        "crLstgDtVrs": "1784366880229",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/Mzc1WDUwMA==/z/URkAAMXQCndRifYs/$_0.JPG?set_id=2",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1781016590000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1229596015000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": {
+            "respPrsns": [
+                {
+                    "zip": "20124",
+                    "stt": null,
+                    "cmpNm": "Warner Music",
+                    "strt2": null,
+                    "strt1": "Piazza della Repubblica 16",
+                    "cntry": "IT",
+                    "phn": null,
+                    "cntctUrl": null,
+                    "prsnTyps": [
+                        "EUResponsiblePerson"
+                    ],
+                    "cty": "Milano",
+                    "email": null
+                }
+            ]
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "IT",
+        "lastModDate": {
+            "$numberLong": "1784366885886"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Nuovo: sigillato"
+                ],
+                "name": "Condizioni"
+            },
+            {
+                "values": [
+                    "Album completo"
+                ],
+                "name": "Formato"
+            },
+            {
+                "values": [
+                    "Pop"
+                ],
+                "name": "Genere"
+            },
+            {
+                "values": [
+                    "S\u00ec"
+                ],
+                "name": "Compilation"
+            },
+            {
+                "values": [
+                    "Italia"
+                ],
+                "name": "Paese di origine"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 4000,
+        "title": "MINA L'oro di cd SIGILLATO GEORGE GERSHWIN GENE VINCENT",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "101",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "00177",
+        "listingAppId": "0",
+        "lstgCrtCltIp": "85.18.136.67",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Plus",
+            "photoDspType": "LargePhotoShow",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "Roma, RM",
+        "rlstPrntId": "110327906650",
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110327909680",
+        "PK": "110327909680",
+        "category": {
+            "strPrmryCtgrId": "520046014",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "176984",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110340694412",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1604349659,
+            "modification_date": 1784575676,
+            "revision": 101
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "2732656856102",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787254063000"
+            },
+            "startDt": {
+                "$numberLong": "1232483263000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787254063000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "137441220",
+        "conditionId": "GOOD",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1619593133000"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "48017",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "414439942022",
+                "plcyVrsn": "490555603022"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "246838021022",
+                "plcyVrsn": "316031903022"
+            },
+            "shipPlcyId": {
+                "policyId": "413041921022",
+                "plcyVrsn": "490847393022"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 11,
+        "crLstgDtVrs": "1784575670337",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/NTAwWDQ2NA==/z/xNgAAOxyyF5RSQhU/$_0.JPG?set_id=2",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1781340410000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1232483264000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 4,
+            "taxRate": 4,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "IT",
+        "lastModDate": {
+            "$numberLong": "1784575676729"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Arte e fotografia"
+                ],
+                "name": "Genere"
+            },
+            {
+                "values": [
+                    "19640000"
+                ],
+                "name": "Anno di pubblicazione"
+            },
+            {
+                "values": [
+                    "Belle arti"
+                ],
+                "name": "Soggetto"
+            },
+            {
+                "values": [
+                    "Italiano"
+                ],
+                "name": "Lingua"
+            },
+            {
+                "values": [
+                    "Copertina morbida"
+                ],
+                "name": "Formato"
+            },
+            {
+                "values": [
+                    "Usato"
+                ],
+                "name": "Condizioni"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 5000,
+        "title": "i maestri del colore n 15 Giorgione",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "101",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "48017",
+        "listingAppId": "0",
+        "lstgCrtCltIp": "94.162.182.161",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 5,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Plus",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "641011.7.0002",
+        "scndChncItm": false,
+        "itmLocn": "LAVEZZOLA-RA",
+        "rlstPrntId": "110340693000",
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110340694412",
+        "PK": "110340694412",
+        "category": {
+            "strPrmryCtgrId": "18486438",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "171243",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110343905989",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1626287887,
+            "modification_date": 1785228899,
+            "revision": 88
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "2783019404510",
+        "uuid": "C696B762C47F4A67A67A287669174E32",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787907291000"
+            },
+            "startDt": {
+                "$numberLong": "1233136491000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787907291000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "71174850",
+        "conditionId": null,
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": null,
+                "unpaidTranThrsh": null,
+                "rstrctBid": null,
+                "rstrctnDate": null,
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "PackageThickEnvelope",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "35394",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": null,
+            "wrntyTrms": null,
+            "pymtPlcyId": null,
+            "shipPlcyId": null,
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 7,
+        "crLstgDtVrs": "1785228899099",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/NTAwWDM1OQ==/z/A9AAAOxyZw5RbMbg/$_0.JPG?set_id=2",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1745040098000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Add",
+        "crtDate": {
+            "$numberLong": "1233136491000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 7,
+            "taxRate": 7,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "090108",
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "DE",
+        "lastModDate": {
+            "$numberLong": "1785228899736"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": null,
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": null,
+        "title": "Adolf Schmitthenner: Psyche    (um 1910)",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "77",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "35394",
+        "listingAppId": "564",
+        "lstgCrtCltIp": "93.229.132.211",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 6,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": false,
+        "slrAppData": "691021.7.0003",
+        "scndChncItm": false,
+        "itmLocn": "Gie\u00dfen",
+        "rlstPrntId": null,
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110343905989",
+        "PK": "110343905989",
+        "category": {
+            "strPrmryCtgrId": "1",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "29223",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110356159844",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601923958,
+            "modification_date": 1785344783,
+            "revision": 177
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": "new. You are buying ONE! The photo shows two views.",
+        "drftId": "5084861825722",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787599208000"
+            },
+            "startDt": {
+                "$numberLong": "1235506808000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787599208000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "106544121",
+        "conditionId": "NEW_OTHER",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1783987091931"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 1
+                    },
+                    "packageType": "PackageThickEnvelope",
+                    "dimensions": {
+                        "depth": 1,
+                        "length": 6,
+                        "width": 4
+                    }
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "77035",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "379609697022",
+                "plcyVrsn": "455500035022"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "379609699022",
+                "plcyVrsn": "455500037022"
+            },
+            "shipPlcyId": {
+                "policyId": "381926615022",
+                "plcyVrsn": "493871233022"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": true,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 51,
+        "crLstgDtVrs": "1785344783466",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMTIz/z/ZqMAAOSwK65bzUn5/$_1.JPG?set_id=8800005007",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMTM3/z/Eg4AAOSwoDlbzUoB/$_1.JPG?set_id=8800005007",
+                "order": 2
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMDcw/z/6nAAAOSw6~BbzUoH/$_1.JPG?set_id=8800005007",
+                "order": 3
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1784063120000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1235506809000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": true,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": true,
+        "slrItemKey": null,
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": 2,
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1785344783506"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "United States"
+                ],
+                "name": "Materials sourced from"
+            },
+            {
+                "values": [
+                    "United States"
+                ],
+                "name": "Country of Origin"
+            },
+            {
+                "values": [
+                    "christmas tree"
+                ],
+                "name": "Shape"
+            },
+            {
+                "values": [
+                    "Christmas"
+                ],
+                "name": "Occasion"
+            },
+            {
+                "values": [
+                    "Red"
+                ],
+                "name": "Color"
+            },
+            {
+                "values": [
+                    "Multi-Color"
+                ],
+                "name": "Main Stone Color"
+            },
+            {
+                "values": [
+                    "Crystal"
+                ],
+                "name": "Material"
+            },
+            {
+                "values": [
+                    "Traditional"
+                ],
+                "name": "Charm Type"
+            },
+            {
+                "values": [
+                    "Sterling Silver"
+                ],
+                "name": "Metal"
+            },
+            {
+                "values": [
+                    "crystals"
+                ],
+                "name": "Main Stone"
+            },
+            {
+                "values": [
+                    "Unbranded"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "charm(s)"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "925"
+                ],
+                "name": "Metal Purity"
+            },
+            {
+                "values": [
+                    "holiday"
+                ],
+                "name": "Theme"
+            },
+            {
+                "values": [
+                    "Traditional"
+                ],
+                "name": "Style"
+            },
+            {
+                "values": [
+                    "Silver"
+                ],
+                "name": "Base Metal"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": "5411283351001",
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1500,
+        "title": "Sterling Silver 37x12mm Christmas Tree w/ Green Red Yellow Color Crystals Charm",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "0",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "77035",
+        "listingAppId": "0",
+        "lstgCrtCltIp": "99.178.127.115",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "Houston, Texas",
+        "rlstPrntId": "130167000470",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "does not apply"
+                ],
+                "name": "UPC"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110356159844",
+        "PK": "110356159844",
+        "category": {
+            "strPrmryCtgrId": "335660",
+            "strScndryCtgrId": "17",
+            "prmryCtgrId": "261988",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110378146419",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1601649369,
+            "modification_date": 1784247403,
+            "revision": 106
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "5079909131301",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1786925794000"
+            },
+            "startDt": {
+                "$numberLong": "1239927394000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1786925794000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "186239072",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": {
+                    "period": "Months_1",
+                    "count": 2
+                },
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1569857718923"
+                },
+                "prchsRateRqrmnt": {
+                    "qntyLmtPerByr": 10,
+                    "minFdbkScore": 1
+                },
+                "rsdncyShpToLocn": true,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": false,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "70015",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "272408320020",
+                "plcyVrsn": "332513970020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "272437162020",
+                "plcyVrsn": "332543984020"
+            },
+            "shipPlcyId": {
+                "policyId": "272437176020",
+                "plcyVrsn": "332543993020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 61,
+        "crLstgDtVrs": "1784247400785",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTIwMFgxMjAw/z/IucAAOSwY0hZr~LB/$_1.JPG?set_id=8800005007",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1781095397000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1239927394000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 22,
+            "taxRate": 22,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "OPC/PTX4-AN",
+        "rgltryInfo": {
+            "mnfatr": {
+                "zip": "50041",
+                "stt": "FI",
+                "cmpNm": "OPINION CIATTI SRL",
+                "strt1": "VIA DI PRATO 80",
+                "cntry": "IT",
+                "phn": "+39 055 887091",
+                "cty": "Calenzano",
+                "email": "info@opinionciatti.com"
+            }
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "IT",
+        "lastModDate": {
+            "$numberLong": "1784247403711"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "- Senza marca/Generico -"
+                ],
+                "name": "Marca"
+            },
+            {
+                "values": [
+                    "PTX4197BX-A"
+                ],
+                "name": "MPN"
+            },
+            {
+                "values": [
+                    "Libreria"
+                ],
+                "name": "Tipo"
+            },
+            {
+                "values": [
+                    "Nuovo"
+                ],
+                "name": "Nuovo/Usato"
+            },
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "EAN"
+            },
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "Numero di ripiani"
+            },
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "Colore"
+            },
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "Altezza"
+            },
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "Lunghezza"
+            },
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "Larghezza"
+            },
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "Materiale"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": "5376343405001",
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "OPINION CIATTI libreria PTOLOMEO PTX4-A NERA CON BASE INOX girevole 360\u00b0",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "101",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "70015",
+        "listingAppId": "0",
+        "lstgCrtCltIp": "2.237.77.151",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Plus",
+            "photoDspType": "LargePhotoShow",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "ITALIA",
+        "rlstPrntId": "110378145489",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "EAN"
+            },
+            {
+                "values": [
+                    "PTX4197BX-A"
+                ],
+                "name": "MPN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110378146419",
+        "PK": "110378146419",
+        "category": {
+            "strPrmryCtgrId": "1430863012",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "3199",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": false,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110379641753",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1595260162,
+            "modification_date": 1784562536,
+            "revision": 173
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "4439386020910",
+        "uuid": "8289854972A334952752A22083903212",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787240915000"
+            },
+            "startDt": {
+                "$numberLong": "1240242515000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787240915000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "220839032",
+        "conditionId": "USED",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": {
+                    "period": "Months_6",
+                    "count": 2
+                },
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1529075990690"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": true,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": false,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 4,
+                        "minorWeight": 0
+                    },
+                    "packageType": "PackageThickEnvelope",
+                    "dimensions": {
+                        "depth": 2,
+                        "length": 24,
+                        "width": 2
+                    }
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "84604",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "247354339012",
+                "plcyVrsn": "294625667012"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "247354342012",
+                "plcyVrsn": "294625669012"
+            },
+            "shipPlcyId": {
+                "policyId": "247354349012",
+                "plcyVrsn": "312545578012"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 30,
+        "crLstgDtVrs": "1784562526186",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/Mzc1WDUwMA==/z/tlYAAOxyY9VRSYhw/$_0.JPG?set_id=2",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1774315006000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Relist",
+        "crtDate": {
+            "$numberLong": "1240242514000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": true,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": true,
+        "slrItemKey": null,
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "ALLOW_MARKDOWN_SALE_BLOCK_PRICE_REVISION",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1784562536310"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Japan"
+                ],
+                "name": "Country of Origin"
+            },
+            {
+                "values": [
+                    "Warning: This product contains chemicals known to the State of California to cause cancer and birth defects or other reproductive harm."
+                ],
+                "name": "California Prop 65 Warning"
+            },
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "Manufacturer Part Number"
+            },
+            {
+                "values": [
+                    "Yamaha"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "No Warranty"
+                ],
+                "name": "Warranty"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 3000,
+        "title": "YAMAHA RT1 RT2 RT3 DT1 DT2 DT3 BRAKE ROD & PIVOT",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "100",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "84604",
+        "listingAppId": "2887",
+        "lstgCrtCltIp": "73.20.94.54",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "WIO-798487700",
+        "scndChncItm": false,
+        "itmLocn": "Provo, Utah",
+        "rlstPrntId": "400042768862",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Does not apply"
+                ],
+                "name": "UPC"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110379641753",
+        "PK": "110379641753",
+        "category": {
+            "strPrmryCtgrId": "4282478012",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "177980",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": false,
+        "trdScp": {
+            "intlStVsbl": null,
+            "lclLstngDist": 200
+        },
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110402349723",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1694691144,
+            "modification_date": 1784028743,
+            "revision": 69
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "5076250897500",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1786707132000"
+            },
+            "startDt": {
+                "$numberLong": "1244979132000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1786707132000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "753571254",
+        "conditionId": "VERY_GOOD",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": null,
+                "unpaidTranThrsh": null,
+                "rstrctBid": null,
+                "rstrctnDate": null,
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": null,
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "272402330020",
+                "plcyVrsn": "332507832020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "272402341020",
+                "plcyVrsn": "332507843020"
+            },
+            "shipPlcyId": {
+                "policyId": "272402340020",
+                "plcyVrsn": "332507842020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 20,
+        "crLstgDtVrs": "1784028741551",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/Mzc1WDUwMA==/z/vUkAAMXQCndRh3W6/$_0.JPG?set_id=8800005007",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1781017865000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1244979132000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": {
+            "respPrsns": [
+                {
+                    "zip": "20138",
+                    "stt": null,
+                    "cmpNm": "Messaggerie Musicali",
+                    "strt2": null,
+                    "strt1": "Via Quintiliano 40",
+                    "cntry": "IT",
+                    "phn": null,
+                    "cntctUrl": null,
+                    "prsnTyps": [
+                        "EUResponsiblePerson"
+                    ],
+                    "cty": "Milano",
+                    "email": null
+                }
+            ]
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "IT",
+        "lastModDate": {
+            "$numberLong": "1784028743972"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Italia"
+                ],
+                "name": "Paese di origine"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 4000,
+        "title": "BILLY OCEAN Get outta my dreams get into my car 7\" ITALY MINT -",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "101",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": null,
+        "listingAppId": "0",
+        "lstgCrtCltIp": "93.46.23.42",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Plus",
+            "photoDspType": "LargePhotoShow",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "Roma, Catania",
+        "rlstPrntId": "110402347396",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "EAN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110402349723",
+        "PK": "110402349723",
+        "category": {
+            "strPrmryCtgrId": "570681014",
+            "strScndryCtgrId": "899287014",
+            "prmryCtgrId": "176985",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110403422168",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592268900,
+            "modification_date": 1784237476,
+            "revision": 182
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": null,
+        "uuid": "F67B779B8D0B4A798F24120530CEDAA8",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1786915863000"
+            },
+            "startDt": {
+                "$numberLong": "1245187863000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1786915863000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "73271570",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1782913240056"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "M17 1RN",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "257321831020",
+                "plcyVrsn": "317081230020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "257337576020",
+                "plcyVrsn": "317097233020"
+            },
+            "shipPlcyId": {
+                "policyId": "268013601020",
+                "plcyVrsn": "333178576020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "GBP",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "GBP",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 259,
+        "crLstgDtVrs": "1784237470769",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTE5OVgxNjAw/z/~hUAAeSw4ulqS3JN/$_1.JPG?set_id=2",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTE5OVgxNjAw/z/cDkAAeSwcK9qS3JR/$_1.JPG?set_id=2",
+                "order": 2
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1783329364000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1245187863000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 20,
+            "taxRate": 20,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "LP154WX5-TLC1",
+        "rgltryInfo": {
+            "prdSfty": {
+                "addnlInfo": "Electrostatic-sensitive device",
+                "pctgrmIds": [
+                    "EBPSP101",
+                    "EBPSP201"
+                ],
+                "stmntIds": [
+                    "EBPSS101"
+                ]
+            },
+            "mnfatr": {
+                "zip": "11317",
+                "cmpNm": "eucomply O\u00dc",
+                "strt1": "P\u00e4rnu mnt 139b-14",
+                "cntry": "EE",
+                "phn": "0033757690241",
+                "cty": "Tallinn",
+                "email": "hello@eucompliancepartner.com"
+            },
+            "docs": [
+                {
+                    "id": "3c8cfe06-b842-47ff-a4f5-fb67adb3ab04"
+                }
+            ]
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "UK",
+        "lastModDate": {
+            "$numberLong": "1784237476101"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Laptop Screens"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "CCFL"
+                ],
+                "name": "Display Technology"
+            },
+            {
+                "values": [
+                    "15.4\""
+                ],
+                "name": "Screen Size"
+            },
+            {
+                "values": [
+                    "Packard Bell"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "New"
+                ],
+                "name": "Condition"
+            },
+            {
+                "values": [
+                    "1280x800"
+                ],
+                "name": "Maximum Resolution"
+            },
+            {
+                "values": [
+                    "We May Send Compatible Part Number"
+                ],
+                "name": "Please Note"
+            },
+            {
+                "values": [
+                    "1-3 Pixels is OK"
+                ],
+                "name": "Pixel Policy"
+            },
+            {
+                "values": [
+                    "For Packard Bell"
+                ],
+                "name": "Compatible Brand"
+            },
+            {
+                "values": [
+                    "Normally Same Business Day"
+                ],
+                "name": "Ship Time"
+            },
+            {
+                "values": [
+                    "Glossy"
+                ],
+                "name": "Screen Finish"
+            },
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "MPN"
+            },
+            {
+                "values": [
+                    "Strong Box"
+                ],
+                "name": "Packaging"
+            },
+            {
+                "values": [
+                    "30 Pin"
+                ],
+                "name": "Connection"
+            },
+            {
+                "values": [
+                    "UK Next Working Day Delivery \u00a35.50 NOT FREE"
+                ],
+                "name": "UK Delivery"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "NEW PACKARD BELL EASYNOTE MV46 15.4\" LCD WXGA",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "3",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "M17 1RN",
+        "listingAppId": "564",
+        "lstgCrtCltIp": "86.130.94.52",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "adlRevise260706101602",
+        "scndChncItm": false,
+        "itmLocn": "GB",
+        "rlstPrntId": "110391698866",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "EAN"
+            },
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "MPN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110403422168",
+        "PK": "110403422168",
+        "category": {
+            "strPrmryCtgrId": "21583255010",
+            "strScndryCtgrId": "21583271010",
+            "prmryCtgrId": "31569",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110403422355",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1592281724,
+            "modification_date": 1784237516,
+            "revision": 182
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": null,
+        "uuid": "7A08D065BA674154A542364DEA56415F",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1786915894000"
+            },
+            "startDt": {
+                "$numberLong": "1245187894000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1786915894000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "73271570",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1782913263238"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "M17 1RN",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "257321831020",
+                "plcyVrsn": "317081230020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "257337576020",
+                "plcyVrsn": "317097233020"
+            },
+            "shipPlcyId": {
+                "policyId": "268013601020",
+                "plcyVrsn": "333178576020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "GBP",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "GBP",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 266,
+        "crLstgDtVrs": "1784237504307",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTE5OVgxNjAw/z/~UEAAeSwdlhqS3KX/$_1.JPG?set_id=2",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTE5OVgxNjAw/z/eQQAAeSwTidqS3KY/$_1.JPG?set_id=2",
+                "order": 2
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1783329434000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1245187894000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 20,
+            "taxRate": 20,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "LP154WX5-TLC1",
+        "rgltryInfo": {
+            "prdSfty": {
+                "addnlInfo": "Electrostatic-sensitive device",
+                "pctgrmIds": [
+                    "EBPSP101",
+                    "EBPSP201"
+                ],
+                "stmntIds": [
+                    "EBPSS101"
+                ]
+            },
+            "mnfatr": {
+                "zip": "11317",
+                "stt": null,
+                "cmpNm": "eucomply O\u00dc",
+                "strt2": null,
+                "strt1": "P\u00e4rnu mnt 139b-14",
+                "cntry": "EE",
+                "phn": "0033757690241",
+                "cntctUrl": null,
+                "cty": "Tallinn",
+                "email": "hello@eucompliancepartner.com"
+            },
+            "docs": [
+                {
+                    "id": "3c8cfe06-b842-47ff-a4f5-fb67adb3ab04"
+                }
+            ]
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "UK",
+        "lastModDate": {
+            "$numberLong": "1784237516701"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Laptop Screens"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "CCFL"
+                ],
+                "name": "Display Technology"
+            },
+            {
+                "values": [
+                    "15.4\""
+                ],
+                "name": "Screen Size"
+            },
+            {
+                "values": [
+                    "Packard Bell"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "New"
+                ],
+                "name": "Condition"
+            },
+            {
+                "values": [
+                    "1280x800"
+                ],
+                "name": "Maximum Resolution"
+            },
+            {
+                "values": [
+                    "We May Send Compatible Part Number"
+                ],
+                "name": "Please Note"
+            },
+            {
+                "values": [
+                    "1-3 Pixels is OK"
+                ],
+                "name": "Pixel Policy"
+            },
+            {
+                "values": [
+                    "For Packard Bell"
+                ],
+                "name": "Compatible Brand"
+            },
+            {
+                "values": [
+                    "Normally Same Business Day"
+                ],
+                "name": "Ship Time"
+            },
+            {
+                "values": [
+                    "Glossy"
+                ],
+                "name": "Screen Finish"
+            },
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "MPN"
+            },
+            {
+                "values": [
+                    "Strong Box"
+                ],
+                "name": "Packaging"
+            },
+            {
+                "values": [
+                    "30 Pin"
+                ],
+                "name": "Connection"
+            },
+            {
+                "values": [
+                    "UK Next Working Day Delivery \u00a35.50 NOT FREE"
+                ],
+                "name": "UK Delivery"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "NEW PACKARD BELL EASYNOTE R9 15.4\" LCD WXGA",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "3",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "M17 1RN",
+        "listingAppId": "564",
+        "lstgCrtCltIp": "86.130.94.52",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "adlRevise260706101712",
+        "scndChncItm": false,
+        "itmLocn": "GB",
+        "rlstPrntId": "120422296250",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "EAN"
+            },
+            {
+                "values": [
+                    "Does Not Apply"
+                ],
+                "name": "MPN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110403422355",
+        "PK": "110403422355",
+        "category": {
+            "strPrmryCtgrId": "21583255010",
+            "strScndryCtgrId": "21583271010",
+            "prmryCtgrId": "31569",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110413677241",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593589947,
+            "modification_date": 1786678457,
+            "revision": 189
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": null,
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1789356844000"
+            },
+            "startDt": {
+                "$numberLong": "1247542444000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1789356844000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "160909452",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1782971250962"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 130
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "73614",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "269317247012",
+                "plcyVrsn": "317040578012"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "185535599012",
+                "plcyVrsn": "226885388012"
+            },
+            "shipPlcyId": {
+                "policyId": "62147300012",
+                "plcyVrsn": "320741345012"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 293,
+        "crLstgDtVrs": "1786678455179",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/ODAwWDgwMA==/z/mioAAOSwdsFUPHi0/$_1.JPG?set_id=880000500F",
+                "extPicUrl": "http://www.obsessed-music.de/images/produkte/19707---soundgarden-loud.jpg",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1786286286000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Add",
+        "crtDate": {
+            "$numberLong": "1247542443000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 19,
+            "taxRate": 19,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "#MLID#28170",
+        "rgltryInfo": {
+            "respPrsns": [
+                {
+                    "zip": "10243",
+                    "stt": null,
+                    "cmpNm": "Universal Music GmbH",
+                    "strt2": null,
+                    "strt1": "M\u00fchlenstra\u00dfe 25",
+                    "cntry": "DE",
+                    "phn": "+4930166359800",
+                    "cntctUrl": null,
+                    "prsnTyps": [
+                        "EUResponsiblePerson"
+                    ],
+                    "cty": "Berlin",
+                    "email": "info@universal-music.de"
+                }
+            ]
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "DE",
+        "lastModDate": {
+            "$numberLong": "1786678457495"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "Soundgarden"
+                ],
+                "name": "Interpret"
+            },
+            {
+                "values": [
+                    "Louder Than Love"
+                ],
+                "name": "Musiktitel"
+            },
+            {
+                "values": [
+                    "CD"
+                ],
+                "name": "Format"
+            },
+            {
+                "values": [
+                    "0082839525220"
+                ],
+                "name": "EAN"
+            },
+            {
+                "values": [
+                    "CDs"
+                ],
+                "name": "Herstellernummer"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": "5436509893001",
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "SOUNDGARDEN \"LOUDER THAN LOVE\" CD NEUWARE",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "77",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "73614",
+        "listingAppId": "1741",
+        "lstgCrtCltIp": "87.106.247.93",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 5,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "P1080#L28170#I19707",
+        "scndChncItm": false,
+        "itmLocn": "Schorndorf",
+        "rlstPrntId": null,
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "0082839525220"
+                ],
+                "name": "EAN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110413677241",
+        "PK": "110413677241",
+        "category": {
+            "strPrmryCtgrId": "20996766",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "176984",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110416442607",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1593589529,
+            "modification_date": 1786287276,
+            "revision": 148
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": null,
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787353565000"
+            },
+            "startDt": {
+                "$numberLong": "1248217565000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787353565000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "160909452",
+        "conditionId": "NEW",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": 0,
+                "unpaidTranThrsh": null,
+                "rstrctBid": false,
+                "rstrctnDate": {
+                    "$numberLong": "1786287275619"
+                },
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": true,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 130
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "73614",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "269317247012",
+                "plcyVrsn": "317040578012"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "185535599012",
+                "plcyVrsn": "226885388012"
+            },
+            "shipPlcyId": {
+                "policyId": "62147300012",
+                "plcyVrsn": null
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 424,
+        "crLstgDtVrs": "1786287275479",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/NjAwWDYwMA==/z/7j4AAOSwqu9U5b0e/$_1.JPG?set_id=880000500F",
+                "extPicUrl": "http://www.obsessed-music.de/images/produkte/i18/1853-0602498661352-0600px-front.jpg",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1786287276000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Add",
+        "crtDate": {
+            "$numberLong": "1248217565000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": "30573201",
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": 19,
+            "taxRate": 19,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": "#MLID#3168",
+        "rgltryInfo": {
+            "respPrsns": [
+                {
+                    "zip": "10243",
+                    "stt": null,
+                    "cmpNm": "Universal Music GmbH",
+                    "strt2": null,
+                    "strt1": "M\u00fchlenstra\u00dfe 25",
+                    "cntry": "DE",
+                    "phn": "+4930166359800",
+                    "cntctUrl": null,
+                    "prsnTyps": [
+                        "EUResponsiblePerson"
+                    ],
+                    "cty": "Berlin",
+                    "email": "info@universal-music.de"
+                }
+            ]
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "DE",
+        "lastModDate": {
+            "$numberLong": "1786287276408"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": true,
+        "aspects": [
+            {
+                "values": [
+                    "0602498661352"
+                ],
+                "name": "EAN"
+            },
+            {
+                "values": [
+                    "CDs"
+                ],
+                "name": "Herstellernummer"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": "5436519572001",
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 1000,
+        "title": "ROSENSTOLZ \"HERZ\" CD NEUWARE!!!!!!!!!!!!!!!!!!",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "77",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "73614",
+        "listingAppId": "1741",
+        "lstgCrtCltIp": "87.106.247.93",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 5,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": "P1080#L3168#I1853",
+        "scndChncItm": false,
+        "itmLocn": "Schorndorf",
+        "rlstPrntId": null,
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "0602498661352"
+                ],
+                "name": "EAN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110416442607",
+        "PK": "110416442607",
+        "category": {
+            "strPrmryCtgrId": "11976774",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "176984",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110418908413",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1693266504,
+            "modification_date": 1785282499,
+            "revision": 70
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": null,
+        "drftId": "5079634460803",
+        "uuid": null,
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1787960879000"
+            },
+            "startDt": {
+                "$numberLong": "1248824879000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1787960879000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "753571254",
+        "conditionId": "VERY_GOOD",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": null,
+                "unpaidTranThrsh": null,
+                "rstrctBid": null,
+                "rstrctnDate": null,
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "Metric",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 0
+                    },
+                    "packageType": "None",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": null,
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": {
+                "policyId": "272402330020",
+                "plcyVrsn": "332507832020"
+            },
+            "wrntyTrms": null,
+            "pymtPlcyId": {
+                "policyId": "272402341020",
+                "plcyVrsn": "332507843020"
+            },
+            "shipPlcyId": {
+                "policyId": "272404969020",
+                "plcyVrsn": "332510554020"
+            },
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "EUR",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 20,
+        "crLstgDtVrs": "1785282496340",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/Mzc1WDUwMA==/z/Ka0AAMXQlrxRbmiy/$_0.JPG?set_id=8800005007",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1781017148000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "SellSimilar",
+        "crtDate": {
+            "$numberLong": "1248824879000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": true,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": {
+            "respPrsns": [
+                {
+                    "zip": "20123",
+                    "cmpNm": "Fonit Cetra",
+                    "strt1": "Via M. Gonzaga 4",
+                    "cntry": "IT",
+                    "prsnTyps": [
+                        "EUResponsiblePerson"
+                    ],
+                    "cty": "Milano"
+                }
+            ]
+        },
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "IT",
+        "lastModDate": {
+            "$numberLong": "1785282499958"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": [
+            {
+                "values": [
+                    "LP (12 pollici)"
+                ],
+                "name": "Dimensione"
+            },
+            {
+                "values": [
+                    "33 giri"
+                ],
+                "name": "Velocit\u00e0"
+            },
+            {
+                "values": [
+                    "Rock-n-Roll"
+                ],
+                "name": "Genere"
+            },
+            {
+                "values": [
+                    "Italiano"
+                ],
+                "name": "Sottogenere"
+            },
+            {
+                "values": [
+                    "Mai ascoltato"
+                ],
+                "name": "Condizioni"
+            },
+            {
+                "values": [
+                    "Italia"
+                ],
+                "name": "Paese di origine"
+            }
+        ],
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 4000,
+        "title": "EUGENIO FINARDI Il vento di Elora lp ELIO STORIE TESE",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "101",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": true,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": null,
+        "listingAppId": "0",
+        "lstgCrtCltIp": "93.46.23.42",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Plus",
+            "photoDspType": "LargePhotoShow",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": true,
+        "slrAppData": null,
+        "scndChncItm": false,
+        "itmLocn": "Roma, Catania",
+        "rlstPrntId": "110418906967",
+        "gblIdentifiers": [
+            {
+                "values": [
+                    "Non applicabile"
+                ],
+                "name": "EAN"
+            }
+        ],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110418908413",
+        "PK": "110418908413",
+        "category": {
+            "strPrmryCtgrId": "523597014",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "176985",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    },
+    {
+        "__key": [
+            {
+                "string": "110421705884",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1685059417,
+            "modification_date": 1786023752,
+            "revision": 66
+        },
+        "admEndDt": null,
+        "notes": null,
+        "videos": null,
+        "isScheduled": false,
+        "conditionDesc": "See the Description.",
+        "drftId": "1813863484401",
+        "uuid": "5588359930A393110900A269290122EF",
+        "prgSpprtd": [],
+        "lifecycle": {
+            "duration": "GTC",
+            "schdldLstng": false,
+            "dupAuction": false,
+            "endDt": {
+                "$numberLong": "1788702131000"
+            },
+            "startDt": {
+                "$numberLong": "1249566131000"
+            },
+            "schdldEndDt": {
+                "$numberLong": "1788702131000"
+            }
+        },
+        "hidePrtcptn": false,
+        "sellerId": "269290",
+        "conditionId": "USED",
+        "isSCOStatusIndicator": false,
+        "charity": null,
+        "trmsAndPolicies": {
+            "buyerRstrctns": {
+                "qntyLmtPerByr": null,
+                "unpaidTranThrsh": null,
+                "rstrctBid": null,
+                "rstrctnDate": null,
+                "prchsRateRqrmnt": null,
+                "rsdncyShpToLocn": null,
+                "rstrctToBsnsUsr": null
+            },
+            "minRemntSet": null,
+            "byrRstrctDsbld": true,
+            "fulflmntTrms": {
+                "freeShipAvail": false,
+                "pkgSpec": {
+                    "unitOfMeasure": "English",
+                    "irregularPackage": false,
+                    "weight": {
+                        "majorWeight": 0,
+                        "minorWeight": 7
+                    },
+                    "packageType": "PackageThickEnvelope",
+                    "dimensions": null
+                },
+                "mgdShpngCstPdBy": null,
+                "orgPostCode": "15066",
+                "gspLgstcPlnSprtd": false,
+                "ebayMgdShpng": false,
+                "ispuLgstcPlSprt": false,
+                "mFulfillmentSprt": false,
+                "s2hLgstcPlnSprt": false,
+                "mgdShpngOptin": false,
+                "pudoLgstPlnSprt": null,
+                "ovrridShipOptn": [],
+                "cashOnDlvryFee": null,
+                "dgtDlvLgsPlSprt": false
+            },
+            "rtrnsPlcyId": null,
+            "wrntyTrms": null,
+            "pymtPlcyId": null,
+            "shipPlcyId": null,
+            "bestOfrTrms": {
+                "autAcptThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnThrshPrc": {
+                    "currency": "USD",
+                    "value": 0
+                },
+                "autDclnEnbld": false,
+                "bestOfrEnbld": false,
+                "autAccptEnbld": false
+            }
+        },
+        "httpsCmplt": 1,
+        "sigRevCnt": 13,
+        "crLstgDtVrs": "1786023740487",
+        "isBuyerResponsibleForShipping": false,
+        "isRestrictedBidding": false,
+        "vhclIdentifiers": null,
+        "images": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTAyNFg0NjM=/z/N1kAAOxyyghQ6D1m/$_0.JPG?set_id=880000500F",
+                "order": 1
+            }
+        ],
+        "itmRevsnDt": {
+            "$numberLong": "1685059416000"
+        },
+        "onHold": false,
+        "rlstId": null,
+        "epr": null,
+        "creationMode": "Relist",
+        "crtDate": {
+            "$numberLong": "1249566131000"
+        },
+        "format": "BIN",
+        "IncEbyPrdtDtail": null,
+        "epid": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": 6,
+            "salesTaxTblUsd": false,
+            "state": "PA",
+            "aplcblToShp": true
+        },
+        "sellerPOverridn": false,
+        "itmOnSale": false,
+        "slrItemKey": null,
+        "rgltryInfo": null,
+        "isSellerOnVacation": false,
+        "PrmnlDtls": {
+            "onFreeShipPrToPromo": false,
+            "mrkdnItmPrcRvsn": "DEFAULT",
+            "onFreeShipSale": false
+        },
+        "itmLocnCntry": "US",
+        "lastModDate": {
+            "$numberLong": "1786023752911"
+        },
+        "mngByInv": false,
+        "prdGallryFallbckURL": null,
+        "IncStkPhtoUrl": false,
+        "aspects": null,
+        "outOfStockDt": null,
+        "vrsnId": null,
+        "prtnrLstdAutoDlrItm": false,
+        "cndIdNum": 3000,
+        "title": "1947~New Jersey Road Map~Sunoco Oil",
+        "eBayVlt": false,
+        "bidsFl": false,
+        "mktplcLstdOn": "0",
+        "isVariation": false,
+        "ftmtId": null,
+        "isVhclSbscrpItm": false,
+        "isSemiPrsBin": false,
+        "autoRlstTerms": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "cndDescriptors": null,
+        "vehPkgId": null,
+        "isRestrictedToBusinessUser": false,
+        "invntryTrkMthd": "Item",
+        "endRsn": "NONE",
+        "isCreatedBySellSimilar": false,
+        "lotSize": null,
+        "sprtCntct": {
+            "cntry": null,
+            "scndSprtCntctHr": null,
+            "cmpnyName": null,
+            "cntctByEmlEnbld": null,
+            "prmryPhn": null,
+            "prmSprtCntctHr": null
+        },
+        "lotId": null,
+        "itmLocnPostlCd": "15066",
+        "listingAppId": "2887",
+        "lstgCrtCltIp": "70.17.166.80",
+        "vslEncmt": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Plus",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "isBusinessPolicyItem": false,
+        "slrAppData": "721017.7.2013",
+        "scndChncItm": false,
+        "itmLocn": "New Brighton, Pennsylvania",
+        "rlstPrntId": "110419303148",
+        "gblIdentifiers": [],
+        "autoRlstOrigAppId": null,
+        "ebayCmnty": null,
+        "eBayGenTitle": null,
+        "isListedWithNoContactViaEmailSupport": false,
+        "pk": "110421705884",
+        "PK": "110421705884",
+        "category": {
+            "strPrmryCtgrId": "10",
+            "strScndryCtgrId": null,
+            "prmryCtgrId": "1332",
+            "scndryCtgrId": null
+        },
+        "buyerRstDsbld": true,
+        "trdScp": null,
+        "cstmPol": null
+    }
+]
