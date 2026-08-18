@@ -94,6 +94,7 @@ nav:
   - Reference:
       - LDM Design Principle: reference/ldm-modeling-principle.md
       - LDM Review Notes: reference/ldm-review-notes.md
+      - Sample Data vs. Schema Alignment: reference/sample-data-schema-alignment.md
   - FAQ: faq.md
 
 extra_css:
