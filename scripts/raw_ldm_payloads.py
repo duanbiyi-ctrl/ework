@@ -129,11 +129,16 @@ def _artifact_path(schema_path: Path) -> Path:
 def _build_field(column: dict[str, Any], ordinal: int) -> dict[str, Any]:
     name = column.get("name")
     source_type = column.get("type")
+    description = column.get("comment")
     if not isinstance(name, str) or not name:
         raise MetadataResolutionError("NuDocument columns must have a non-empty name")
     if not isinstance(source_type, str) or not source_type:
         raise MetadataResolutionError(
             f"NuDocument column {name} must have a non-empty type"
+        )
+    if not isinstance(description, str) or not description.strip():
+        raise MetadataResolutionError(
+            f"NuDocument column {name} must have a non-empty description"
         )
 
     field = {
@@ -144,9 +149,8 @@ def _build_field(column: dict[str, Any], ordinal: int) -> dict[str, Any]:
         "signalFilter": [],
         "signalMapping": [],
         "physicalStorageMapping": [],
+        "description": description.strip(),
     }
-    if column.get("comment"):
-        field["description"] = str(column["comment"])
     if column.get("nullable") is not None:
         field["dataSchema"] = {"nullable": bool(column["nullable"])}
     return field
