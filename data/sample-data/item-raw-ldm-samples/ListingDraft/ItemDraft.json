@@ -1,0 +1,2146 @@
+[
+    {
+        "__key": [
+            {
+                "string": "3744315661300",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEM_3744315661300",
+                "collection": "ItemDraft"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1693833814,
+            "modification_date": 1786561436,
+            "revision": 22
+        },
+        "bizPol": {
+            "plcsId": null,
+            "shipTrms": {
+                "excldLocn": [],
+                "shpOpt": [
+                    {
+                        "rtTblId": null,
+                        "shpType": "domestic",
+                        "shpSvcs": null,
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Flat"
+                    },
+                    {
+                        "rtTblId": null,
+                        "shpType": "international",
+                        "shpSvcs": null,
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Flat"
+                    }
+                ],
+                "hndlgTm": "Days_1",
+                "buyerRsp": false,
+                "shpToLocn": [
+                    "UnitedKingdom"
+                ],
+                "excldLocnLastModDt": null
+            },
+            "retTrms": {
+                "restFeePct": null,
+                "intRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "extHolRet": false,
+                "refMthd": null,
+                "domRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "retShpmtPayee": null,
+                "retPrd": null,
+                "retAcptd": false,
+                "retInstr": null
+            },
+            "pmtTrms": {
+                "immPay": false,
+                "pmtInstr": null,
+                "daysToFulPmt": null,
+                "ppEmail": null,
+                "hrsToDep": -1,
+                "pmtMthd": [],
+                "depAmt": null,
+                "depRqd": false
+            }
+        },
+        "ffTrm": {
+            "freeShipAvail": false,
+            "pkgSpec": {
+                "unitOfMeasure": "Metric",
+                "irregularPackage": false,
+                "weight": {
+                    "majorWeight": 1,
+                    "minorWeight": 0
+                },
+                "packageType": "None",
+                "dimensions": {
+                    "depth": 16,
+                    "length": 45,
+                    "width": 35
+                }
+            },
+            "mgdShpngCstPdBy": "Buyer",
+            "orgPostCode": "EN3 6AH",
+            "gspLgstcPlnSprtd": true,
+            "ebayMgdShpng": false,
+            "ispuLgstcPlSprt": false,
+            "mFulfillmentSprt": false,
+            "s2hLgstcPlnSprt": false,
+            "mgdShpngOptin": true,
+            "pudoLgstPlnSprt": null,
+            "ovrridShipOptn": [],
+            "cashOnDlvryFee": null,
+            "dgtDlvLgsPlSprt": false
+        },
+        "itmLocPstCd": "EN3 6AH",
+        "vrsId": null,
+        "primCatId": "435",
+        "endDt": {
+            "$numberLong": "1787166236000"
+        },
+        "videos": null,
+        "shipPlcyId": null,
+        "strtBidPrcHP": null,
+        "autoRlsTrm": {
+            "rlstCnt": null,
+            "autoRlst": true
+        },
+        "docs": null,
+        "bstOfrTrm": {
+            "autAcptThrshPrc": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "autDclnThrshPrc": {
+                "currency": "GBP",
+                "value": 0
+            },
+            "autDclnEnbld": false,
+            "bestOfrEnbld": false,
+            "autAccptEnbld": false
+        },
+        "prodDtls": false,
+        "itmOrd": null,
+        "schdEndDt": {
+            "$numberLong": "1787166236000"
+        },
+        "currPrc": {
+            "currency": "GBP",
+            "value": 0
+        },
+        "eBProdDtls": null,
+        "rlstId": null,
+        "epr": null,
+        "brnd": "Michael Jackson",
+        "epid": null,
+        "mpn": null,
+        "itmOnSale": false,
+        "mktPrc": null,
+        "origItmPrc": null,
+        "slr": {
+            "st2": null,
+            "st": null,
+            "uid": "tonysrecords",
+            "cmpNm": null,
+            "slrId": {
+                "$numberLong": "1056166212"
+            },
+            "primPhone": null,
+            "cntry": null,
+            "tz": null,
+            "ctcByEml": false,
+            "slrItmCtcInfoKey": null,
+            "scndSpprtCtcHrs": null,
+            "primSpprtCtcHrs": null
+        },
+        "vehId": null,
+        "eBGenTtl": null,
+        "srcLstId": null,
+        "cndIdNum": null,
+        "fxdPrcHP": null,
+        "ftmtId": null,
+        "chrty": null,
+        "vehPkgId": null,
+        "COGs": null,
+        "avlQty": 1,
+        "fl01": {
+            "$numberLong": "2593"
+        },
+        "scndCatId": null,
+        "lotId": null,
+        "descRevsnDt": null,
+        "hidePrt": false,
+        "rlstPrntId": null,
+        "stScndCatId": null,
+        "cstmPol": null,
+        "notes": null,
+        "mktPlLstdOn": "3",
+        "strtDt": {
+            "$numberLong": "1786561436000"
+        },
+        "strtBidPrc": null,
+        "fmt": "AUCTION",
+        "uuid": null,
+        "buyrRstDsbld": false,
+        "itmLocCtry": "UK",
+        "origPstCd": "EN3 6AH",
+        "prdSpptd": [],
+        "sigRevCnt": 0,
+        "slrItmKey": null,
+        "lstCrtClntIp": "90.194.189.218,10.111.5.124",
+        "buyrRst": {
+            "qntyLmtPerByr": 0,
+            "unpaidTranThrsh": {
+                "period": "Months_6",
+                "count": 3
+            },
+            "rstrctBid": false,
+            "rstrctnDate": {
+                "$numberLong": "1693833813762"
+            },
+            "prchsRateRqrmnt": {
+                "qntyLmtPerByr": null,
+                "minFdbkScore": null
+            },
+            "rsdncyShpToLocn": false,
+            "rstrctToBsnsUsr": null
+        },
+        "itmId": "0",
+        "itmRevsnDt": null,
+        "cmpDesc": null,
+        "drtn": "Days_7",
+        "rtrnsPlcyId": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "lstModDt": {
+            "$numberLong": "1786561436000"
+        },
+        "rgltryInfo": null,
+        "minRmntSet": null,
+        "fxdPrc": {
+            "currency": "GBP",
+            "value": 0
+        },
+        "lotSz": null,
+        "desc": "Michael Jackson Newspaper The Sun Heart Attack Kills Pop King Fri June 26th 2009. ",
+        "img": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/gn8AAOSwOK9k9drI/$_12.JPG?set_id=880000500F",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/5TgAAOSwVMVk9drL/$_12.JPG?set_id=880000500F",
+                "order": 2
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/7EEAAOSwBeRk9drO/$_12.JPG?set_id=880000500F",
+                "order": 3
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/QE8AAOSwynlk9drS/$_12.JPG?set_id=880000500F",
+                "order": 4
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/lGgAAOSwOcBk9drV/$_12.JPG?set_id=880000500F",
+                "order": 5
+            }
+        ],
+        "origItmId": "235148325999",
+        "invTrkMth": "Item",
+        "glbId": [],
+        "visEnh": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "qtySold": 0,
+        "eBayVlt": false,
+        "stPrimCatId": null,
+        "oosDt": null,
+        "cndDesc": null,
+        "cndDescriptors": [],
+        "ftExempt": null,
+        "aspct": [
+            {
+                "values": [
+                    "United Kingdom"
+                ],
+                "name": "Country of Origin"
+            },
+            {
+                "values": [
+                    "Michael Jackson"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "Clippings/ Cuttings/ Articles"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "No"
+                ],
+                "name": "Autographed"
+            },
+            {
+                "values": [
+                    "Michael Jackson"
+                ],
+                "name": "Artists/Groups"
+            },
+            {
+                "values": [
+                    "Original"
+                ],
+                "name": "Original/Reproduction"
+            }
+        ],
+        "lstgAppId": "290356",
+        "auctRsvPrc": null,
+        "pymtPlcyId": null,
+        "ttl": "Michael Jackson Newspaper The Sun Heart Attack Kills Pop King Fri June 26th 2009",
+        "cndId": null,
+        "slrAppData": null,
+        "crtMd": "Add",
+        "scndChncItm": false,
+        "ebayCmnty": null,
+        "PK": "3744315661300",
+        "itmLoc": "Enfield",
+        "crtDt": {
+            "$numberLong": "1693833814000"
+        },
+        "trdScp": null,
+        "stckPhtUrl": false
+    },
+    {
+        "__key": [
+            {
+                "string": "3757513753703",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEM_3757513753703",
+                "collection": "ItemDraft"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1694026953,
+            "modification_date": 1786473483,
+            "revision": 58
+        },
+        "bizPol": {
+            "plcsId": null,
+            "shipTrms": {
+                "excldLocn": [],
+                "shpOpt": [
+                    {
+                        "rtTblId": null,
+                        "shpType": "domestic",
+                        "shpSvcs": [
+                            {
+                                "addUnitCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "shpSvcId": 9,
+                                "shpCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "pkgHndlgCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "rank": 1,
+                                "shpToLocns": [
+                                    "UnitedStates"
+                                ],
+                                "shpSvc": "USPSMedia"
+                            }
+                        ],
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Flat"
+                    },
+                    {
+                        "rtTblId": null,
+                        "shpType": "international",
+                        "shpSvcs": null,
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Flat"
+                    }
+                ],
+                "hndlgTm": "Days_7",
+                "buyerRsp": false,
+                "shpToLocn": [
+                    "UnitedStates"
+                ],
+                "excldLocnLastModDt": null
+            },
+            "retTrms": {
+                "restFeePct": null,
+                "intRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "extHolRet": false,
+                "refMthd": null,
+                "domRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "retShpmtPayee": null,
+                "retPrd": null,
+                "retAcptd": false,
+                "retInstr": null
+            },
+            "pmtTrms": {
+                "immPay": false,
+                "pmtInstr": null,
+                "daysToFulPmt": null,
+                "ppEmail": null,
+                "hrsToDep": -1,
+                "pmtMthd": [],
+                "depAmt": null,
+                "depRqd": false
+            }
+        },
+        "ffTrm": {
+            "freeShipAvail": true,
+            "pkgSpec": {
+                "unitOfMeasure": "English",
+                "irregularPackage": false,
+                "weight": {
+                    "majorWeight": 0,
+                    "minorWeight": 15
+                },
+                "packageType": "PackageThickEnvelope",
+                "dimensions": null
+            },
+            "mgdShpngCstPdBy": null,
+            "orgPostCode": "94080",
+            "gspLgstcPlnSprtd": false,
+            "ebayMgdShpng": false,
+            "ispuLgstcPlSprt": false,
+            "mFulfillmentSprt": false,
+            "s2hLgstcPlnSprt": false,
+            "mgdShpngOptin": false,
+            "pudoLgstPlnSprt": null,
+            "ovrridShipOptn": [],
+            "cashOnDlvryFee": null,
+            "dgtDlvLgsPlSprt": false
+        },
+        "itmLocPstCd": "94080",
+        "vrsId": null,
+        "primCatId": "617",
+        "endDt": {
+            "$numberLong": "1787078283000"
+        },
+        "videos": null,
+        "shipPlcyId": null,
+        "strtBidPrcHP": null,
+        "autoRlsTrm": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "docs": null,
+        "bstOfrTrm": {
+            "autAcptThrshPrc": {
+                "currency": "USD",
+                "value": 0
+            },
+            "autDclnThrshPrc": {
+                "currency": "USD",
+                "value": 0
+            },
+            "autDclnEnbld": false,
+            "bestOfrEnbld": false,
+            "autAccptEnbld": false
+        },
+        "prodDtls": false,
+        "itmOrd": null,
+        "schdEndDt": {
+            "$numberLong": "1787078283000"
+        },
+        "currPrc": {
+            "currency": "USD",
+            "value": 0
+        },
+        "eBProdDtls": false,
+        "rlstId": "204356727643",
+        "epr": null,
+        "brnd": null,
+        "epid": null,
+        "mpn": null,
+        "itmOnSale": false,
+        "mktPrc": null,
+        "origItmPrc": null,
+        "slr": {
+            "st2": null,
+            "st": null,
+            "uid": "danman94402",
+            "cmpNm": null,
+            "slrId": {
+                "$numberLong": "135673794"
+            },
+            "primPhone": null,
+            "cntry": null,
+            "tz": null,
+            "ctcByEml": false,
+            "slrItmCtcInfoKey": null,
+            "scndSpprtCtcHrs": null,
+            "primSpprtCtcHrs": null
+        },
+        "vehId": null,
+        "eBGenTtl": null,
+        "srcLstId": null,
+        "cndIdNum": 1000,
+        "fxdPrcHP": null,
+        "ftmtId": null,
+        "chrty": null,
+        "vehPkgId": null,
+        "COGs": null,
+        "avlQty": 1,
+        "fl01": {
+            "$numberLong": "43"
+        },
+        "scndCatId": null,
+        "lotId": null,
+        "descRevsnDt": null,
+        "hidePrt": false,
+        "rlstPrntId": "204356727643",
+        "stScndCatId": null,
+        "cstmPol": null,
+        "notes": null,
+        "mktPlLstdOn": "0",
+        "strtDt": {
+            "$numberLong": "1786473483000"
+        },
+        "strtBidPrc": {
+            "currency": "USD",
+            "value": 49.99
+        },
+        "fmt": "AUCTION",
+        "uuid": null,
+        "buyrRstDsbld": true,
+        "itmLocCtry": "US",
+        "origPstCd": "94080",
+        "prdSpptd": [],
+        "sigRevCnt": 0,
+        "slrItmKey": null,
+        "lstCrtClntIp": "208.121.64.10,10.61.122.63",
+        "buyrRst": {
+            "qntyLmtPerByr": 0,
+            "unpaidTranThrsh": null,
+            "rstrctBid": false,
+            "rstrctnDate": {
+                "$numberLong": "1694026952891"
+            },
+            "prchsRateRqrmnt": null,
+            "rsdncyShpToLocn": null,
+            "rstrctToBsnsUsr": null
+        },
+        "itmId": "0",
+        "itmRevsnDt": null,
+        "cmpDesc": null,
+        "drtn": "Days_7",
+        "rtrnsPlcyId": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "lstModDt": {
+            "$numberLong": "1786473483000"
+        },
+        "rgltryInfo": null,
+        "minRmntSet": null,
+        "fxdPrc": {
+            "currency": "USD",
+            "value": 0
+        },
+        "lotSz": 2,
+        "desc": "<font size=\"4\" style=\"\" rwr=\"1\"><hr width=\"85%\" align=\"LEFT\" style=\"font-family: Arial;\">\n<div align=\"left\" style=\"\"><b style=\"font-family: Arial;\"><font face=\"Arial, Helvetica, sans-serif\" size=\"+1\">You are bidding on the Watchmen Blu Ray DVD lot from Warner Bros Home Video/Entertainment.<hr>4K Ultra and One DVD are new, unopened condition.&nbsp; The other is used, in great working condition.&nbsp;&nbsp;</font></b></div><div align=\"left\" style=\"\"><b style=\"font-family: Arial;\"><font face=\"Arial, Helvetica, sans-serif\" size=\"+1\"><hr>You will receive:&nbsp; 1) Watchmen sealed&nbsp;</font></b><font face=\"Arial, Helvetica, sans-serif\"><b>0883929057771&nbsp;</b></font><b style=\"font-family: Arial;\"><font face=\"Arial, Helvetica, sans-serif\" size=\"+1\">and 2)&nbsp;</font></b><b style=\"font-family: Arial;\"><font face=\"Arial, Helvetica, sans-serif\" size=\"+1\">Watchmen's Director's Cut open and 3) HBO TV Limited Series</font></b></div><div align=\"left\" style=\"font-family: Arial;\"><b><font face=\"Arial, Helvetica, sans-serif\" size=\"+1\"><hr>Features include: Widescreen.</font></b><hr>\n<p class=\"MsoNormal\"><o:p></o:p></p><font face=\"Arial, Helvetica, sans-serif\"><b>Movie Actors:&nbsp;&nbsp;</b></font>Billy Crudup, Jeffrey Dean Morgan, Patrick Wilson, Jackie Earle Haley, Malin Akerman, Matthew Goode<font face=\"Arial, Helvetica, sans-serif\"><b><hr>Details:&nbsp; Format: DVD, Languages &amp; Subtitles: English, Frances (Dubbed in Quebec) &amp; Spanish<hr>\nAudio Description: Aspect Ratio: 1:85 / 2.35:1.</b></font><hr>\n<b><font color=\"#cc33cc\">SERIOUS BIDDERS ONLY!!</font></b><hr>\n<b><font color=\"#0000ff\" size=\"4\"> Due to non-paying bidders, please read the following: <hr>\n1. It is the Buyers responsibility to contact me with any and all questions before bidding on the auction (including shipping). PLEASE DO NOT wait until you have already placed a bid or, worse yet, after the auction has ended. By bidding you are agreeing to the terms of E-BAY AUCTIONS and this policy.<hr>\n2. When an auction ends, the high bidder will usually be contacted within 24 hours. However, please allow up to 72 hours if required. If, for whatever reason, you did not receive the confirmation message within 72 hours, please contact me immediately. <hr>\n3. All prices are in U.S. Currency. International bidders are welcomed, but you have to agree to all terms stated to avoid any miscommunication.<hr>\n4. PAYMENT POLICY: Payment must be received within 5 days after the auction ends. Failure to do so will result in a non-paying bidder alert and possible further action. Per E-bay, I accept the following method of payment in US Currency ONLY: Paypal. YOU need to contact me PRIOR to sending payment to avoid any miscommunication.<hr>\n5. SHIPPING POLICY: The winning buyer is responsible for Actual Shipping Charges, whatever they may be, when the auction is completed. Save on shipping on multiple items. Postage is approximate US cost .<hr>\n6. REFUND/INSURANCE POLICY:&nbsp; If the buyer's package is lost or damaged, YOU must have paid for insurance in order to be reimbursed. Rarely is a package lost or damaged, but you must have insurance to obtain a reimbursement.&nbsp;&nbsp;</font></b><font size=\"+1\">OTHERWISE, ALL SALES ARE FINAL.</font><hr>\n<b><font size=\"+1\">PLUS!</font><font color=\"#0000ff\" size=\"3\"></font><font color=\"#cc33cc\" size=\"5\"> Check out other auctions here!</font></b> <hr>\n<b><font size=\"+1\"> Auctions include more DVDs and toys.</font></b><hr>\n<b> A MUST have Blu Ray DVD combo lot for any fan of this cult movie.</b></div><hr style=\"font-family: Arial;\">\n<center style=\"font-family: Arial;\">\n<b> GOOD LUCK!!</b> <hr>\n<font face=\"Arial\" size=\"3\">Thank you.</font><br>\n</center></font>",
+        "img": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/T7kAAOSwb0BglEEm/$_57.JPG?set_id=8800005007",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/ploAAOSwABxglEEy/$_57.JPG?set_id=8800005007",
+                "order": 2
+            }
+        ],
+        "origItmId": "204356727643",
+        "invTrkMth": "Item",
+        "glbId": [
+            {
+                "values": [
+                    "0883929545452"
+                ],
+                "name": "UPC"
+            }
+        ],
+        "visEnh": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "qtySold": 0,
+        "eBayVlt": false,
+        "stPrimCatId": null,
+        "oosDt": null,
+        "cndDesc": null,
+        "cndDescriptors": [],
+        "ftExempt": null,
+        "aspct": [
+            {
+                "values": [
+                    "NTSC"
+                ],
+                "name": "Video Format"
+            },
+            {
+                "values": [
+                    "Blu-ray Case"
+                ],
+                "name": "Case Type"
+            },
+            {
+                "values": [
+                    "No"
+                ],
+                "name": "Former Rental"
+            },
+            {
+                "values": [
+                    "English"
+                ],
+                "name": "Subtitle Language"
+            },
+            {
+                "values": [
+                    "R"
+                ],
+                "name": "Rating"
+            },
+            {
+                "values": [
+                    "Fantasy",
+                    "Film Noir",
+                    "Superhero"
+                ],
+                "name": "Sub-Genre"
+            },
+            {
+                "values": [
+                    "Zack Snyder"
+                ],
+                "name": "Director"
+            },
+            {
+                "values": [
+                    "Cult"
+                ],
+                "name": "Cinematic Movement"
+            },
+            {
+                "values": [
+                    "Warner Home Video"
+                ],
+                "name": "Studio"
+            },
+            {
+                "values": [
+                    "No"
+                ],
+                "name": "Modified Item"
+            },
+            {
+                "values": [
+                    "Movie"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "Blu-ray: A (Americas, Southeast Asia...)"
+                ],
+                "name": "Region Code"
+            },
+            {
+                "values": [
+                    "Ultra HD"
+                ],
+                "name": "Format"
+            },
+            {
+                "values": [
+                    "Bob Bryan, Deborah Snyder, Lawrence Gordon, Lloyd Levin"
+                ],
+                "name": "Producer"
+            },
+            {
+                "values": [
+                    "English"
+                ],
+                "name": "Language"
+            },
+            {
+                "values": [
+                    "2009"
+                ],
+                "name": "Release Year"
+            },
+            {
+                "values": [
+                    "Patrick Wilson"
+                ],
+                "name": "Actor"
+            },
+            {
+                "values": [
+                    "Widescreen"
+                ],
+                "name": "Features"
+            },
+            {
+                "values": [
+                    "128 min."
+                ],
+                "name": "Run Time"
+            },
+            {
+                "values": [
+                    "Superhero"
+                ],
+                "name": "Genre"
+            },
+            {
+                "values": [
+                    "Watchmen"
+                ],
+                "name": "Movie/TV Title"
+            },
+            {
+                "values": [
+                    "United States"
+                ],
+                "name": "Country of Origin"
+            }
+        ],
+        "lstgAppId": "384352",
+        "auctRsvPrc": {
+            "currency": "USD",
+            "value": 0
+        },
+        "pymtPlcyId": null,
+        "ttl": "Watchmen Ultimate director cut snyder morgan comic Rorschach 4K Blu Ray DVD lot",
+        "cndId": "NEW",
+        "slrAppData": null,
+        "crtMd": "Relist",
+        "scndChncItm": false,
+        "ebayCmnty": null,
+        "PK": "3757513753703",
+        "itmLoc": "South San Francisco, California",
+        "crtDt": {
+            "$numberLong": "1694026952000"
+        },
+        "trdScp": null,
+        "stckPhtUrl": false
+    },
+    {
+        "__key": [
+            {
+                "string": "3778603125123",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEM_3778603125123",
+                "collection": "ItemDraft"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1691877208,
+            "modification_date": 1786473964,
+            "revision": 28
+        },
+        "bizPol": {
+            "plcsId": null,
+            "shipTrms": {
+                "excldLocn": [],
+                "shpOpt": [
+                    {
+                        "rtTblId": null,
+                        "shpType": "domestic",
+                        "shpSvcs": [
+                            {
+                                "addUnitCost": {
+                                    "currency": "EUR",
+                                    "value": 0
+                                },
+                                "shpSvcId": 7725,
+                                "shpCost": {
+                                    "currency": "EUR",
+                                    "value": 5
+                                },
+                                "pkgHndlgCost": {
+                                    "currency": "EUR",
+                                    "value": 0
+                                },
+                                "rank": 1,
+                                "shpToLocns": [
+                                    "Germany"
+                                ],
+                                "shpSvc": "DE_HermesPaket"
+                            },
+                            {
+                                "addUnitCost": {
+                                    "currency": "EUR",
+                                    "value": 0
+                                },
+                                "shpSvcId": 7710,
+                                "shpCost": {
+                                    "currency": "EUR",
+                                    "value": 4
+                                },
+                                "pkgHndlgCost": {
+                                    "currency": "EUR",
+                                    "value": 0
+                                },
+                                "rank": 2,
+                                "shpToLocns": [
+                                    "Germany"
+                                ],
+                                "shpSvc": "DE_DeutschePostBrief"
+                            },
+                            {
+                                "addUnitCost": {
+                                    "currency": "EUR",
+                                    "value": 0
+                                },
+                                "shpSvcId": 7750,
+                                "shpCost": {
+                                    "currency": "EUR",
+                                    "value": 0
+                                },
+                                "pkgHndlgCost": {
+                                    "currency": "EUR",
+                                    "value": 0
+                                },
+                                "rank": 3,
+                                "shpToLocns": [
+                                    "Germany"
+                                ],
+                                "shpSvc": "DE_Pickup"
+                            }
+                        ],
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Flat"
+                    },
+                    {
+                        "rtTblId": null,
+                        "shpType": "international",
+                        "shpSvcs": null,
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Flat"
+                    }
+                ],
+                "hndlgTm": "Days_15",
+                "buyerRsp": false,
+                "shpToLocn": [
+                    "Germany"
+                ],
+                "excldLocnLastModDt": null
+            },
+            "retTrms": {
+                "restFeePct": null,
+                "intRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "extHolRet": false,
+                "refMthd": null,
+                "domRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "retShpmtPayee": null,
+                "retPrd": null,
+                "retAcptd": false,
+                "retInstr": null
+            },
+            "pmtTrms": {
+                "immPay": false,
+                "pmtInstr": null,
+                "daysToFulPmt": null,
+                "ppEmail": null,
+                "hrsToDep": -1,
+                "pmtMthd": [],
+                "depAmt": null,
+                "depRqd": false
+            }
+        },
+        "ffTrm": {
+            "freeShipAvail": false,
+            "pkgSpec": {
+                "unitOfMeasure": "Metric",
+                "irregularPackage": false,
+                "weight": {
+                    "majorWeight": 0,
+                    "minorWeight": 0
+                },
+                "packageType": "PackageThickEnvelope",
+                "dimensions": null
+            },
+            "mgdShpngCstPdBy": null,
+            "orgPostCode": "14059",
+            "gspLgstcPlnSprtd": false,
+            "ebayMgdShpng": false,
+            "ispuLgstcPlSprt": false,
+            "mFulfillmentSprt": false,
+            "s2hLgstcPlnSprt": false,
+            "mgdShpngOptin": false,
+            "pudoLgstPlnSprt": null,
+            "ovrridShipOptn": [],
+            "cashOnDlvryFee": null,
+            "dgtDlvLgsPlSprt": false
+        },
+        "itmLocPstCd": "14059",
+        "vrsId": null,
+        "primCatId": "53159",
+        "endDt": {
+            "$numberLong": "1787078764000"
+        },
+        "videos": null,
+        "shipPlcyId": null,
+        "strtBidPrcHP": null,
+        "autoRlsTrm": {
+            "rlstCnt": -1,
+            "autoRlst": true
+        },
+        "docs": null,
+        "bstOfrTrm": {
+            "autAcptThrshPrc": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "autDclnThrshPrc": {
+                "currency": "EUR",
+                "value": 0
+            },
+            "autDclnEnbld": false,
+            "bestOfrEnbld": false,
+            "autAccptEnbld": false
+        },
+        "prodDtls": false,
+        "itmOrd": null,
+        "schdEndDt": {
+            "$numberLong": "1787078764000"
+        },
+        "currPrc": {
+            "currency": "EUR",
+            "value": 0
+        },
+        "eBProdDtls": false,
+        "rlstId": null,
+        "epr": null,
+        "brnd": "Beate Heymann",
+        "epid": null,
+        "mpn": null,
+        "itmOnSale": false,
+        "mktPrc": null,
+        "origItmPrc": null,
+        "slr": {
+            "st2": null,
+            "st": null,
+            "uid": "rosensegler",
+            "cmpNm": null,
+            "slrId": {
+                "$numberLong": "71816810"
+            },
+            "primPhone": null,
+            "cntry": null,
+            "tz": null,
+            "ctcByEml": false,
+            "slrItmCtcInfoKey": null,
+            "scndSpprtCtcHrs": null,
+            "primSpprtCtcHrs": null
+        },
+        "vehId": null,
+        "eBGenTtl": null,
+        "srcLstId": null,
+        "cndIdNum": 3000,
+        "fxdPrcHP": null,
+        "ftmtId": null,
+        "chrty": null,
+        "vehPkgId": null,
+        "COGs": null,
+        "avlQty": 1,
+        "fl01": {
+            "$numberLong": "43"
+        },
+        "scndCatId": null,
+        "lotId": null,
+        "descRevsnDt": {
+            "$numberLong": "1683322197000"
+        },
+        "hidePrt": false,
+        "rlstPrntId": null,
+        "stScndCatId": null,
+        "cstmPol": null,
+        "notes": null,
+        "mktPlLstdOn": "77",
+        "strtDt": {
+            "$numberLong": "1786473964000"
+        },
+        "strtBidPrc": {
+            "currency": "EUR",
+            "value": 149
+        },
+        "fmt": "AUCTION",
+        "uuid": null,
+        "buyrRstDsbld": true,
+        "itmLocCtry": "DE",
+        "origPstCd": "14059",
+        "prdSpptd": [],
+        "sigRevCnt": 0,
+        "slrItmKey": null,
+        "lstCrtClntIp": "2.210.23.196,10.103.213.76",
+        "buyrRst": {
+            "qntyLmtPerByr": 0,
+            "unpaidTranThrsh": null,
+            "rstrctBid": false,
+            "rstrctnDate": {
+                "$numberLong": "1395085599000"
+            },
+            "prchsRateRqrmnt": null,
+            "rsdncyShpToLocn": null,
+            "rstrctToBsnsUsr": null
+        },
+        "itmId": "0",
+        "itmRevsnDt": null,
+        "cmpDesc": null,
+        "drtn": "Days_7",
+        "rtrnsPlcyId": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "lstModDt": {
+            "$numberLong": "1786473964000"
+        },
+        "rgltryInfo": null,
+        "minRmntSet": null,
+        "fxdPrc": {
+            "currency": "EUR",
+            "value": 0
+        },
+        "lotSz": null,
+        "desc": "<p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787;mso-bidi-font-weight:normal\">Sommerliches\nTop in interessanter Struktur aus dehnbaren Stoffen. Die Farbgebung ist auf den\nFotos gut getroffen.&nbsp;<o:p></o:p></span></strong></p><p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787;mso-bidi-font-weight:normal\">Die Ausschnitte\nan den Armen und am Hals sind mit einem hellen, dehnbaren Stoff eingefasst. <o:p></o:p></span></strong></p>\n\n<p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787;mso-bidi-font-weight:normal\">Das\nTop wurde nur einmal getragen und hat keine M\u00e4ngel. <o:p></o:p></span></strong></p>\n\n<p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787\">Leider fehlen die Gr\u00f6\u00dfen- und\nMaterialangabe.&nbsp;</span></strong></p><p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787\">Das Top wurde bei dt. 42/44 getragen, aber bitte die Masse\nvergleichen: Weite (einfach und ungedehnt): ca. 54\ncm;&nbsp;L\u00e4nge:&nbsp;ca.&nbsp;63 cm. </span></strong><span style=\"font-size:\n13.5pt;font-family:&quot;Arial&quot;,sans-serif\"><o:p></o:p></span></p>\n\n<p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787\">Ich biete weiterer sch\u00f6ne Sachen\nan. Bei Kauf mehrerer Teile fallen nat\u00fcrlich nur einmal Versandkosten an.</span></strong><span style=\"font-size:13.5pt;font-family:&quot;Arial&quot;,sans-serif\"><o:p></o:p></span></p>\n\n<p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787\">Tierfreier Nichtraucherhaushalt.</span></strong><span style=\"font-size:13.5pt;font-family:&quot;Arial&quot;,sans-serif\"><o:p></o:p></span></p>\n\n<p align=\"center\" style=\"text-align:center\"><strong><span style=\"font-size:18.0pt;\nfont-family:&quot;Arial&quot;,sans-serif;color:#878787\">Privatverkauf.</span></strong><span style=\"font-size:13.5pt;font-family:&quot;Arial&quot;,sans-serif\"><o:p></o:p></span></p>\n\n<span style=\"font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;\nmso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#6E6E6E;\nmso-ansi-language:DE;mso-fareast-language:EN-US;mso-bidi-language:AR-SA\">&nbsp;<b>Bitte\nber\u00fccksichtigen Sie f\u00fcr den Versand eine Bearbeitungszeit von 6 Werktagen. Dies\ntrifft zwar nur in Ausnahmef\u00e4llen zu und ich bin immer bem\u00fcht, so rasch wie\nm\u00f6glich zu versenden. Da ich&nbsp;jedoch manchmal kurzfristig f\u00fcr mehrere Tage\nverreisen muss,&nbsp;ergeben sich dann l\u00e4ngere Bearbeitungszeiten.</b></span>",
+        "img": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/pTQAAOSwpQtk1~9~/$_57.JPG?set_id=880000500F",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/WqQAAOSwCBFk1~9~/$_57.JPG?set_id=880000500F",
+                "order": 2
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/VTUAAOSwnlhk1~-A/$_57.JPG?set_id=880000500F",
+                "order": 3
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/pTYAAOSwpQtk1~-A/$_57.JPG?set_id=880000500F",
+                "order": 4
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTQyOFgxNjAw/z/w1oAAOSwzG5k1~-A/$_57.JPG?set_id=880000500F",
+                "order": 5
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/HqEAAOSwTXpk1~-B/$_57.JPG?set_id=880000500F",
+                "order": 6
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/v6sAAOSwJ8Bk1~-B/$_57.JPG?set_id=880000500F",
+                "order": 7
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFg4NTY=/z/4kgAAOSwtBVk1~9~/$_57.JPG?set_id=880000500F",
+                "order": 8
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxNDA4/z/-HYAAOSwP8lk1~9~/$_57.JPG?set_id=880000500F",
+                "order": 9
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxNTMx/z/Mv4AAOSwhBFk1~9~/$_57.JPG?set_id=880000500F",
+                "order": 10
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/OTc2WDE2MDA=/z/LHcAAOSw-~Rk1~9~/$_57.JPG?set_id=880000500F",
+                "order": 11
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/BdYAAOSwrjRk1~-D/$_57.JPG?set_id=880000500F",
+                "order": 12
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/CQUAAOSwMyxk1~-B/$_57.JPG?set_id=880000500F",
+                "order": 13
+            }
+        ],
+        "origItmId": "115881254626",
+        "invTrkMth": "Item",
+        "glbId": [],
+        "visEnh": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "qtySold": 0,
+        "eBayVlt": false,
+        "stPrimCatId": null,
+        "oosDt": null,
+        "cndDesc": "Neuwertig",
+        "cndDescriptors": [],
+        "ftExempt": null,
+        "aspct": [
+            {
+                "values": [
+                    "Damen"
+                ],
+                "name": "Abteilung"
+            },
+            {
+                "values": [
+                    "Trikot"
+                ],
+                "name": "Stil"
+            },
+            {
+                "values": [
+                    "T-Shirt"
+                ],
+                "name": "Produktart"
+            },
+            {
+                "values": [
+                    "Normalgr\u00f6\u00dfe"
+                ],
+                "name": "Gr\u00f6\u00dfenkategorie"
+            },
+            {
+                "values": [
+                    "Rundhalsausschnitt"
+                ],
+                "name": "Ausschnitt"
+            },
+            {
+                "values": [
+                    "Classic"
+                ],
+                "name": "Passform"
+            },
+            {
+                "values": [
+                    "Nein"
+                ],
+                "name": "Vintage"
+            },
+            {
+                "values": [
+                    "Jersey"
+                ],
+                "name": "Gewebeart"
+            },
+            {
+                "values": [
+                    "L"
+                ],
+                "name": "Gr\u00f6\u00dfe"
+            },
+            {
+                "values": [
+                    "Beate Heymann"
+                ],
+                "name": "Marke"
+            },
+            {
+                "values": [
+                    "Mehrfarbig"
+                ],
+                "name": "Farbe"
+            },
+            {
+                "values": [
+                    "Sommer"
+                ],
+                "name": "Jahreszeit"
+            },
+            {
+                "values": [
+                    "\u00c4rmellos"
+                ],
+                "name": "\u00c4rmell\u00e4nge"
+            }
+        ],
+        "lstgAppId": "384352",
+        "auctRsvPrc": {
+            "currency": "EUR",
+            "value": 0
+        },
+        "pymtPlcyId": null,
+        "ttl": "Oberteil, Corsage TALBOT RUNHOF ALL ABOUT EVE schwarz",
+        "cndId": "USED",
+        "slrAppData": null,
+        "crtMd": "SellSimilar",
+        "scndChncItm": false,
+        "ebayCmnty": null,
+        "PK": "3778603125123",
+        "itmLoc": "Berlin",
+        "crtDt": {
+            "$numberLong": "1691877206000"
+        },
+        "trdScp": null,
+        "stckPhtUrl": false
+    },
+    {
+        "__key": [
+            {
+                "string": "3805627097300",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEM_3805627097300",
+                "collection": "ItemDraft"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695161190,
+            "modification_date": 1784416449,
+            "revision": 21
+        },
+        "bizPol": {
+            "plcsId": null,
+            "shipTrms": {
+                "excldLocn": [],
+                "shpOpt": [
+                    {
+                        "rtTblId": null,
+                        "shpType": "domestic",
+                        "shpSvcs": [
+                            {
+                                "addUnitCost": null,
+                                "shpSvcId": 8,
+                                "shpCost": null,
+                                "pkgHndlgCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "rank": 1,
+                                "shpToLocns": [
+                                    "UnitedStates"
+                                ],
+                                "shpSvc": "USPSParcel"
+                            },
+                            {
+                                "addUnitCost": null,
+                                "shpSvcId": 7,
+                                "shpCost": null,
+                                "pkgHndlgCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "rank": 2,
+                                "shpToLocns": [
+                                    "UnitedStates"
+                                ],
+                                "shpSvc": "USPSPriority"
+                            },
+                            {
+                                "addUnitCost": null,
+                                "shpSvcId": 62,
+                                "shpCost": null,
+                                "pkgHndlgCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "rank": 3,
+                                "shpToLocns": [
+                                    "UnitedStates"
+                                ],
+                                "shpSvc": "FedExHomeDelivery"
+                            },
+                            {
+                                "addUnitCost": null,
+                                "shpSvcId": 12,
+                                "shpCost": null,
+                                "pkgHndlgCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "rank": 4,
+                                "shpToLocns": [
+                                    "UnitedStates"
+                                ],
+                                "shpSvc": "UPSNextDayAir"
+                            }
+                        ],
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Calculated"
+                    },
+                    {
+                        "rtTblId": null,
+                        "shpType": "international",
+                        "shpSvcs": null,
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Calculated"
+                    }
+                ],
+                "hndlgTm": "Days_1",
+                "buyerRsp": false,
+                "shpToLocn": [
+                    "UnitedStates"
+                ],
+                "excldLocnLastModDt": null
+            },
+            "retTrms": {
+                "restFeePct": null,
+                "intRetTrm": {
+                    "refMthd": "MoneyBack",
+                    "retShpmtPayee": "Buyer",
+                    "retPrd": "Days_30",
+                    "retAcptd": true
+                },
+                "extHolRet": false,
+                "refMthd": "MoneyBack",
+                "domRetTrm": {
+                    "refMthd": "MoneyBack",
+                    "retShpmtPayee": "Seller",
+                    "retPrd": "Days_30",
+                    "retAcptd": true
+                },
+                "retShpmtPayee": "Seller",
+                "retPrd": "Days_30",
+                "retAcptd": true,
+                "retInstr": null
+            },
+            "pmtTrms": {
+                "immPay": false,
+                "pmtInstr": null,
+                "daysToFulPmt": null,
+                "ppEmail": null,
+                "hrsToDep": -1,
+                "pmtMthd": [],
+                "depAmt": null,
+                "depRqd": false
+            }
+        },
+        "ffTrm": {
+            "freeShipAvail": true,
+            "pkgSpec": {
+                "unitOfMeasure": "English",
+                "irregularPackage": false,
+                "weight": {
+                    "majorWeight": 2,
+                    "minorWeight": 0
+                },
+                "packageType": "PackageThickEnvelope",
+                "dimensions": {
+                    "depth": 4,
+                    "length": 16,
+                    "width": 12
+                }
+            },
+            "mgdShpngCstPdBy": null,
+            "orgPostCode": "06881",
+            "gspLgstcPlnSprtd": false,
+            "ebayMgdShpng": false,
+            "ispuLgstcPlSprt": false,
+            "mFulfillmentSprt": false,
+            "s2hLgstcPlnSprt": false,
+            "mgdShpngOptin": false,
+            "pudoLgstPlnSprt": null,
+            "ovrridShipOptn": [],
+            "cashOnDlvryFee": null,
+            "dgtDlvLgsPlSprt": false
+        },
+        "itmLocPstCd": "06881",
+        "vrsId": "5109499626002",
+        "primCatId": "181780",
+        "endDt": {
+            "$numberLong": "1787094849000"
+        },
+        "videos": null,
+        "shipPlcyId": {
+            "policyId": "245337989020",
+            "plcyVrsn": null
+        },
+        "strtBidPrcHP": null,
+        "autoRlsTrm": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "docs": null,
+        "bstOfrTrm": {
+            "autAcptThrshPrc": {
+                "currency": "USD",
+                "value": 0
+            },
+            "autDclnThrshPrc": {
+                "currency": "USD",
+                "value": 0
+            },
+            "autDclnEnbld": false,
+            "bestOfrEnbld": true,
+            "autAccptEnbld": false
+        },
+        "prodDtls": false,
+        "itmOrd": null,
+        "schdEndDt": {
+            "$numberLong": "1787094849000"
+        },
+        "currPrc": {
+            "currency": "USD",
+            "value": 399
+        },
+        "eBProdDtls": true,
+        "rlstId": "125397031009",
+        "epr": null,
+        "brnd": "Elmo Rietschle",
+        "epid": null,
+        "mpn": "CLFG 41",
+        "itmOnSale": false,
+        "mktPrc": null,
+        "origItmPrc": {
+            "currency": "USD",
+            "value": 0
+        },
+        "slr": {
+            "st2": null,
+            "st": null,
+            "uid": "northeast-supply-solutions",
+            "cmpNm": null,
+            "slrId": {
+                "$numberLong": "1056444360"
+            },
+            "primPhone": null,
+            "cntry": null,
+            "tz": null,
+            "ctcByEml": false,
+            "slrItmCtcInfoKey": null,
+            "scndSpprtCtcHrs": null,
+            "primSpprtCtcHrs": null
+        },
+        "vehId": null,
+        "eBGenTtl": null,
+        "srcLstId": null,
+        "cndIdNum": 1500,
+        "fxdPrcHP": null,
+        "ftmtId": null,
+        "chrty": null,
+        "vehPkgId": null,
+        "COGs": null,
+        "avlQty": 1,
+        "fl01": {
+            "$numberLong": "43"
+        },
+        "scndCatId": null,
+        "lotId": null,
+        "descRevsnDt": {
+            "$numberLong": "1680888006000"
+        },
+        "hidePrt": true,
+        "rlstPrntId": "125397031009",
+        "stScndCatId": null,
+        "cstmPol": null,
+        "notes": null,
+        "mktPlLstdOn": "0",
+        "strtDt": {
+            "$numberLong": "1784416449000"
+        },
+        "strtBidPrc": null,
+        "fmt": "BIN",
+        "uuid": null,
+        "buyrRstDsbld": false,
+        "itmLocCtry": "US",
+        "origPstCd": "06881",
+        "prdSpptd": [],
+        "sigRevCnt": 15,
+        "slrItmKey": null,
+        "lstCrtClntIp": "10.66.51.36",
+        "buyrRst": {
+            "qntyLmtPerByr": 0,
+            "unpaidTranThrsh": {
+                "period": "Months_12",
+                "count": 2
+            },
+            "rstrctBid": false,
+            "rstrctnDate": {
+                "$numberLong": "1695161189832"
+            },
+            "prchsRateRqrmnt": {
+                "qntyLmtPerByr": 10,
+                "minFdbkScore": 0
+            },
+            "rsdncyShpToLocn": false,
+            "rstrctToBsnsUsr": null
+        },
+        "itmId": "0",
+        "itmRevsnDt": null,
+        "cmpDesc": null,
+        "drtn": null,
+        "rtrnsPlcyId": {
+            "policyId": "241266944020",
+            "plcyVrsn": null
+        },
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": 6.35,
+            "salesTaxTblUsd": false,
+            "state": "CT",
+            "aplcblToShp": false
+        },
+        "lstModDt": {
+            "$numberLong": "1784416449000"
+        },
+        "rgltryInfo": null,
+        "minRmntSet": null,
+        "fxdPrc": {
+            "currency": "USD",
+            "value": 399
+        },
+        "lotSz": null,
+        "desc": "<p>Elmo Rietschle CLFG 41 Gasket Kit in original  packaging. We believe this kit to complete. However, the kit has been opened. Therefore, we cannot guarantee 100% completeness. We have provided pictures of everything that is included in the kit. Please contact us if you have any questions or concerns. </p>",
+        "img": [
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjMy/z/ieIAAOSwBYtkMtO5/$_12.JPG?set_id=880000500F",
+                "order": 1
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTI0OFgxNjAw/z/OvEAAOSw6g9kMtO2/$_12.JPG?set_id=880000500F",
+                "order": 2
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTE2MlgxNjAw/z/B2IAAOSwVuJkMtO4/$_12.JPG?set_id=880000500F",
+                "order": 3
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/pngAAOSwbq5iv7jN/$_12.JPG?set_id=880000500F",
+                "order": 4
+            },
+            {
+                "eBayPicUrl": "https://i.ebayimg.com/00/s/MTYwMFg5OTg=/z/nw0AAOSwdV1iv7jP/$_12.JPG?set_id=880000500F",
+                "order": 5
+            }
+        ],
+        "origItmId": "125397031009",
+        "invTrkMth": "Item",
+        "glbId": [
+            {
+                "values": [
+                    "Does not apply"
+                ],
+                "name": "UPC"
+            },
+            {
+                "values": [
+                    "CLFG 41"
+                ],
+                "name": "MPN"
+            }
+        ],
+        "visEnh": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "Gallery",
+            "photoDspType": "PicturePack",
+            "gallDurtn": null
+        },
+        "qtySold": 0,
+        "eBayVlt": false,
+        "stPrimCatId": "1",
+        "oosDt": null,
+        "cndDesc": null,
+        "cndDescriptors": [],
+        "ftExempt": null,
+        "aspct": [
+            {
+                "values": [
+                    "Elmo Rietschle"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "Gasket Kit"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "CLFG 41 Gasket Kit"
+                ],
+                "name": "Description"
+            },
+            {
+                "values": [
+                    "CLFG 41"
+                ],
+                "name": "Model"
+            },
+            {
+                "values": [
+                    "CLFG 41"
+                ],
+                "name": "MPN"
+            }
+        ],
+        "lstgAppId": "415699",
+        "auctRsvPrc": null,
+        "pymtPlcyId": {
+            "policyId": "203545292020",
+            "plcyVrsn": null
+        },
+        "ttl": "Elmo Rietschle CLFG 41 Gasket Kit New open pkg. see pictures for kit contents",
+        "cndId": "NEW_OTHER",
+        "slrAppData": null,
+        "crtMd": "Relist",
+        "scndChncItm": false,
+        "ebayCmnty": null,
+        "PK": "3805627097300",
+        "itmLoc": "Westport, Connecticut",
+        "crtDt": {
+            "$numberLong": "1695161189000"
+        },
+        "trdScp": null,
+        "stckPhtUrl": false
+    },
+    {
+        "__key": [
+            {
+                "string": "3807590991121",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "ITEM_3807590991121",
+                "collection": "ItemDraft"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1692480490,
+            "modification_date": 1780521705,
+            "revision": 23
+        },
+        "bizPol": {
+            "plcsId": null,
+            "shipTrms": {
+                "excldLocn": [
+                    "RussianFederation",
+                    "Germany"
+                ],
+                "shpOpt": [
+                    {
+                        "rtTblId": null,
+                        "shpType": "domestic",
+                        "shpSvcs": [
+                            {
+                                "addUnitCost": null,
+                                "shpSvcId": 8,
+                                "shpCost": null,
+                                "pkgHndlgCost": {
+                                    "currency": "USD",
+                                    "value": 0
+                                },
+                                "rank": 1,
+                                "shpToLocns": [
+                                    "UnitedStates"
+                                ],
+                                "shpSvc": "USPSParcel"
+                            }
+                        ],
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Calculated"
+                    },
+                    {
+                        "rtTblId": null,
+                        "shpType": "international",
+                        "shpSvcs": null,
+                        "promoShp": false,
+                        "shpDscPrfId": "-1",
+                        "cstType": "Calculated"
+                    }
+                ],
+                "hndlgTm": "Days_2",
+                "buyerRsp": false,
+                "shpToLocn": [
+                    "UnitedStates"
+                ],
+                "excldLocnLastModDt": null
+            },
+            "retTrms": {
+                "restFeePct": null,
+                "intRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "extHolRet": false,
+                "refMthd": null,
+                "domRetTrm": {
+                    "refMthd": null,
+                    "retShpmtPayee": null,
+                    "retPrd": null,
+                    "retAcptd": false
+                },
+                "retShpmtPayee": null,
+                "retPrd": null,
+                "retAcptd": false,
+                "retInstr": null
+            },
+            "pmtTrms": {
+                "immPay": true,
+                "pmtInstr": null,
+                "daysToFulPmt": null,
+                "ppEmail": null,
+                "hrsToDep": -1,
+                "pmtMthd": [],
+                "depAmt": null,
+                "depRqd": false
+            }
+        },
+        "ffTrm": {
+            "freeShipAvail": false,
+            "pkgSpec": {
+                "unitOfMeasure": "English",
+                "irregularPackage": false,
+                "weight": {
+                    "majorWeight": 0,
+                    "minorWeight": 0
+                },
+                "packageType": "PackageThickEnvelope",
+                "dimensions": null
+            },
+            "mgdShpngCstPdBy": null,
+            "orgPostCode": "11757",
+            "gspLgstcPlnSprtd": false,
+            "ebayMgdShpng": false,
+            "ispuLgstcPlSprt": false,
+            "mFulfillmentSprt": false,
+            "s2hLgstcPlnSprt": false,
+            "mgdShpngOptin": false,
+            "pudoLgstPlnSprt": null,
+            "ovrridShipOptn": [],
+            "cashOnDlvryFee": null,
+            "dgtDlvLgsPlSprt": false
+        },
+        "notes": null,
+        "itmLocPstCd": "11757",
+        "mktPlLstdOn": "0",
+        "strtDt": {
+            "$numberLong": "1780521705000"
+        },
+        "vrsId": null,
+        "primCatId": "62107",
+        "strtBidPrc": null,
+        "endDt": {
+            "$numberLong": "1783113705000"
+        },
+        "videos": null,
+        "fmt": "BIN",
+        "shipPlcyId": null,
+        "strtBidPrcHP": null,
+        "uuid": null,
+        "autoRlsTrm": {
+            "rlstCnt": null,
+            "autoRlst": false
+        },
+        "buyrRstDsbld": false,
+        "itmLocCtry": "US",
+        "origPstCd": "11757",
+        "docs": null,
+        "prdSpptd": [],
+        "sigRevCnt": 0,
+        "bstOfrTrm": {
+            "autAcptThrshPrc": {
+                "currency": "USD",
+                "value": 0
+            },
+            "autDclnThrshPrc": {
+                "currency": "USD",
+                "value": 0
+            },
+            "autDclnEnbld": false,
+            "bestOfrEnbld": true,
+            "autAccptEnbld": false
+        },
+        "prodDtls": false,
+        "slrItmKey": null,
+        "itmOrd": null,
+        "lstCrtClntIp": "108.30.239.118,10.44.12.24",
+        "buyrRst": {
+            "qntyLmtPerByr": 0,
+            "unpaidTranThrsh": {
+                "period": "Months_1",
+                "count": 2
+            },
+            "rstrctBid": false,
+            "rstrctnDate": {
+                "$numberLong": "1678662233000"
+            },
+            "prchsRateRqrmnt": {
+                "qntyLmtPerByr": null,
+                "minFdbkScore": null
+            },
+            "rsdncyShpToLocn": true,
+            "rstrctToBsnsUsr": null
+        },
+        "schdEndDt": {
+            "$numberLong": "1783113705000"
+        },
+        "itmId": "0",
+        "itmRevsnDt": null,
+        "currPrc": {
+            "currency": "USD",
+            "value": 17
+        },
+        "cmpDesc": null,
+        "eBProdDtls": null,
+        "rlstId": null,
+        "epr": null,
+        "drtn": "Days_30",
+        "brnd": "Report",
+        "rtrnsPlcyId": null,
+        "epid": null,
+        "mpn": null,
+        "tax": {
+            "rcgnzBsnsSlrVat": false,
+            "thrdPrtTxCtgCd": null,
+            "vatPct": null,
+            "taxRate": null,
+            "salesTaxTblUsd": false,
+            "state": null,
+            "aplcblToShp": false
+        },
+        "lstModDt": {
+            "$numberLong": "1780521705000"
+        },
+        "itmOnSale": false,
+        "mktPrc": null,
+        "rgltryInfo": null,
+        "minRmntSet": null,
+        "origItmPrc": {
+            "currency": "USD",
+            "value": 0
+        },
+        "fxdPrc": {
+            "currency": "USD",
+            "value": 17
+        },
+        "slr": {
+            "st2": null,
+            "st": null,
+            "uid": "timetoselleverything",
+            "cmpNm": null,
+            "slrId": {
+                "$numberLong": "752338405"
+            },
+            "primPhone": null,
+            "cntry": null,
+            "tz": null,
+            "ctcByEml": false,
+            "slrItmCtcInfoKey": null,
+            "scndSpprtCtcHrs": null,
+            "primSpprtCtcHrs": null
+        },
+        "vehId": null,
+        "lotSz": null,
+        "desc": "",
+        "img": null,
+        "origItmId": "185973278983",
+        "invTrkMth": "Item",
+        "eBGenTtl": null,
+        "glbId": [],
+        "visEnh": {
+            "homePgftrd": false,
+            "vstCntrTp": 0,
+            "subtitle": null,
+            "boldTitle": false,
+            "gallTp": "None",
+            "photoDspType": null,
+            "gallDurtn": null
+        },
+        "qtySold": 0,
+        "cndIdNum": 3000,
+        "eBayVlt": false,
+        "stPrimCatId": null,
+        "fxdPrcHP": null,
+        "oosDt": null,
+        "ftmtId": null,
+        "cndDesc": null,
+        "chrty": null,
+        "cndDescriptors": [],
+        "ftExempt": null,
+        "vehPkgId": null,
+        "aspct": [
+            {
+                "values": [
+                    "Brazil"
+                ],
+                "name": "Country of Origin"
+            },
+            {
+                "values": [
+                    "Strap with buckle"
+                ],
+                "name": "Closure"
+            },
+            {
+                "values": [
+                    "10M"
+                ],
+                "name": "US Shoe Size"
+            },
+            {
+                "values": [
+                    "Casual"
+                ],
+                "name": "Occasion"
+            },
+            {
+                "values": [
+                    "Flat"
+                ],
+                "name": "Heel Height"
+            },
+            {
+                "values": [
+                    "Very comfortable"
+                ],
+                "name": "Accents"
+            },
+            {
+                "values": [
+                    "No"
+                ],
+                "name": "Vintage"
+            },
+            {
+                "values": [
+                    "N/A"
+                ],
+                "name": "AU Shoe Size"
+            },
+            {
+                "values": [
+                    "Women"
+                ],
+                "name": "Department"
+            },
+            {
+                "values": [
+                    "Mm"
+                ],
+                "name": "Outsole Material"
+            },
+            {
+                "values": [
+                    "Strappy"
+                ],
+                "name": "Style"
+            },
+            {
+                "values": [
+                    "Comfort",
+                    "Cushioned"
+                ],
+                "name": "Features"
+            },
+            {
+                "values": [
+                    "N/A"
+                ],
+                "name": "UK Shoe Size"
+            },
+            {
+                "values": [
+                    "Solid"
+                ],
+                "name": "Pattern"
+            },
+            {
+                "values": [
+                    "Designer",
+                    "Updated fashion"
+                ],
+                "name": "Character"
+            },
+            {
+                "values": [
+                    "N/A"
+                ],
+                "name": "EU Shoe Size"
+            },
+            {
+                "values": [
+                    "mm"
+                ],
+                "name": "Lining Material"
+            },
+            {
+                "values": [
+                    "White"
+                ],
+                "name": "Color"
+            },
+            {
+                "values": [
+                    "Report"
+                ],
+                "name": "Brand"
+            },
+            {
+                "values": [
+                    "Sandal"
+                ],
+                "name": "Type"
+            },
+            {
+                "values": [
+                    "No"
+                ],
+                "name": "Customized"
+            },
+            {
+                "values": [
+                    "Flat"
+                ],
+                "name": "Heel Style"
+            },
+            {
+                "values": [
+                    "Report"
+                ],
+                "name": "Model"
+            },
+            {
+                "values": [
+                    "M"
+                ],
+                "name": "Shoe Width"
+            },
+            {
+                "values": [
+                    "Unknown"
+                ],
+                "name": "Insole Material"
+            },
+            {
+                "values": [
+                    "Man made"
+                ],
+                "name": "Upper Material"
+            },
+            {
+                "values": [
+                    "Stylish fashion"
+                ],
+                "name": "Product Line"
+            }
+        ],
+        "lstgAppId": "384352",
+        "COGs": null,
+        "avlQty": 1,
+        "fl01": {
+            "$numberLong": "2089"
+        },
+        "scndCatId": null,
+        "lotId": null,
+        "auctRsvPrc": null,
+        "pymtPlcyId": null,
+        "ttl": "REPORT MADE IN BRAZIL White STRAPPY SANDAL FLAT SHOE 8 M",
+        "cndId": "USED",
+        "slrAppData": null,
+        "descRevsnDt": null,
+        "crtMd": "Add",
+        "scndChncItm": false,
+        "hidePrt": false,
+        "rlstPrntId": null,
+        "ebayCmnty": null,
+        "PK": "3807590991121",
+        "itmLoc": "Lindenhurst, New York",
+        "crtDt": {
+            "$numberLong": "1692480490000"
+        },
+        "stScndCatId": null,
+        "trdScp": null,
+        "stckPhtUrl": false,
+        "cstmPol": null
+    }
+]

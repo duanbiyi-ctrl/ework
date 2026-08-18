@@ -1,0 +1,4112 @@
+[
+    {
+        "__key": [
+            {
+                "string": "110356159844",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110356159844",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1771289056,
+            "modification_date": 1771289056,
+            "revision": 2
+        },
+        "modDt": {
+            "$numberLong": "1771289056382"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1771289056340"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110356159844",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110356159844",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_648895148001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1771289056,
+            "modification_date": 1771289056,
+            "revision": 2
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1771289056382"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1771292656333"
+        },
+        "pk": "648895148001",
+        "cmtDt": {
+            "$numberLong": "1771289056382"
+        },
+        "crtDt": {
+            "$numberLong": "1771289056333"
+        },
+        "uuid": "110356159844011240385242222567433"
+    },
+    {
+        "__key": [
+            {
+                "string": "110413677241",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110413677241",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1767524308,
+            "modification_date": 1772900195,
+            "revision": 4
+        },
+        "modDt": {
+            "$numberLong": "1772900195528"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1767524308800"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110413677241",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110413677241",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_644312449001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1767524308,
+            "modification_date": 1767524314,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1767524314602"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1767524312639"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1767529708733"
+        },
+        "pk": "644312449001",
+        "cmtDt": {
+            "$numberLong": "1767524314602"
+        },
+        "crtDt": {
+            "$numberLong": "1767524308733"
+        },
+        "uuid": "11041367724101000100029694684786"
+    },
+    {
+        "__key": [
+            {
+                "string": "110413677241",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110413677241",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_650907068001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1772900188,
+            "modification_date": 1772900195,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1772900195528"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1772900191761"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1772905588302"
+        },
+        "pk": "650907068001",
+        "cmtDt": {
+            "$numberLong": "1772900195528"
+        },
+        "crtDt": {
+            "$numberLong": "1772900188302"
+        },
+        "uuid": "11041367724101000100030146956026"
+    },
+    {
+        "__key": [
+            {
+                "string": "110416442607",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110416442607",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766525762,
+            "modification_date": 1766525768,
+            "revision": 2
+        },
+        "modDt": {
+            "$numberLong": "1766525768005"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1766525762483"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110416442607",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110416442607",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_643268633001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766525762,
+            "modification_date": 1766525768,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1766525768005"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1766525765314"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1766531162477"
+        },
+        "pk": "643268633001",
+        "cmtDt": {
+            "$numberLong": "1766525768005"
+        },
+        "crtDt": {
+            "$numberLong": "1766525762477"
+        },
+        "uuid": "11041644260701000100029618440851"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1753510928,
+            "modification_date": 1778942457,
+            "revision": 44
+        },
+        "modDt": {
+            "$numberLong": "1778942457590"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1753510928458"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_627385804001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1753510928,
+            "modification_date": 1753511057,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1753511057347"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1753511053927"
+        },
+        "qty": {
+            "$numberLong": "5"
+        },
+        "expDt": {
+            "$numberLong": "1753516328419"
+        },
+        "pk": "627385804001",
+        "cmtDt": {
+            "$numberLong": "1753511057347"
+        },
+        "crtDt": {
+            "$numberLong": "1753510928419"
+        },
+        "uuid": "11062130497901000100028522838526"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_629903734001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1755595240,
+            "modification_date": 1755595363,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1755595363215"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1755595360187"
+        },
+        "qty": {
+            "$numberLong": "20"
+        },
+        "expDt": {
+            "$numberLong": "1755600640258"
+        },
+        "pk": "629903734001",
+        "cmtDt": {
+            "$numberLong": "1755595363215"
+        },
+        "crtDt": {
+            "$numberLong": "1755595240258"
+        },
+        "uuid": "11062130497901000100028695005743"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_638598100001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762869701,
+            "modification_date": 1762869707,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1762869707526"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1762869704007"
+        },
+        "qty": {
+            "$numberLong": "5"
+        },
+        "expDt": {
+            "$numberLong": "1762875101121"
+        },
+        "pk": "638598100001",
+        "cmtDt": {
+            "$numberLong": "1762869707526"
+        },
+        "crtDt": {
+            "$numberLong": "1762869701121"
+        },
+        "uuid": "11062130497901000100029299594179"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_639018997001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763213533,
+            "modification_date": 1763213539,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1763213539776"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1763213536723"
+        },
+        "qty": {
+            "$numberLong": "5"
+        },
+        "expDt": {
+            "$numberLong": "1763218933035"
+        },
+        "pk": "639018997001",
+        "cmtDt": {
+            "$numberLong": "1763213539776"
+        },
+        "crtDt": {
+            "$numberLong": "1763213533035"
+        },
+        "uuid": "11062130497901000100029324854895"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_639331627001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763441922,
+            "modification_date": 1763441928,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1763441928370"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1763441926384"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1763447322270"
+        },
+        "pk": "639331627001",
+        "cmtDt": {
+            "$numberLong": "1763441928370"
+        },
+        "crtDt": {
+            "$numberLong": "1763441922270"
+        },
+        "uuid": "11062130497901000100029349510530"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_640280289001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764193315,
+            "modification_date": 1764193324,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1764193324275"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1764193321742"
+        },
+        "qty": {
+            "$numberLong": "3"
+        },
+        "expDt": {
+            "$numberLong": "1764198715455"
+        },
+        "pk": "640280289001",
+        "cmtDt": {
+            "$numberLong": "1764193324275"
+        },
+        "crtDt": {
+            "$numberLong": "1764193315455"
+        },
+        "uuid": "11062130497901000100029415520244"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_640563480001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764423119,
+            "modification_date": 1764423125,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1764423125512"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1764423122601"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1764428519245"
+        },
+        "pk": "640563480001",
+        "cmtDt": {
+            "$numberLong": "1764423125512"
+        },
+        "crtDt": {
+            "$numberLong": "1764423119245"
+        },
+        "uuid": "11062130497901000100029435713626"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_640736620001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764536592,
+            "modification_date": 1764536599,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1764536599608"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1764536595811"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1764541991961"
+        },
+        "pk": "640736620001",
+        "cmtDt": {
+            "$numberLong": "1764536599608"
+        },
+        "crtDt": {
+            "$numberLong": "1764536591961"
+        },
+        "uuid": "11062130497901000100029448248818"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_641036067001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764746466,
+            "modification_date": 1764746467,
+            "revision": 2
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1764746467089"
+        },
+        "qty": {
+            "$numberLong": "20"
+        },
+        "expDt": {
+            "$numberLong": "1764750066793"
+        },
+        "pk": "641036067001",
+        "cmtDt": {
+            "$numberLong": "1764746467089"
+        },
+        "crtDt": {
+            "$numberLong": "1764746466793"
+        },
+        "uuid": "110621304979011359837968063891331"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_642906095001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766158895,
+            "modification_date": 1766158903,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1766158903621"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1766158899573"
+        },
+        "qty": {
+            "$numberLong": "26"
+        },
+        "expDt": {
+            "$numberLong": "1766164295655"
+        },
+        "pk": "642906095001",
+        "cmtDt": {
+            "$numberLong": "1766158903621"
+        },
+        "crtDt": {
+            "$numberLong": "1766158895655"
+        },
+        "uuid": "11062130497901000100029594027081"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_645499652001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1768498999,
+            "modification_date": 1768499005,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1768499005970"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1768499002859"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1768504399243"
+        },
+        "pk": "645499652001",
+        "cmtDt": {
+            "$numberLong": "1768499005970"
+        },
+        "crtDt": {
+            "$numberLong": "1768498999243"
+        },
+        "uuid": "11062130497901000100029769980693"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_646110210001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769005431,
+            "modification_date": 1769005437,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1769005437932"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1769005434277"
+        },
+        "qty": {
+            "$numberLong": "20"
+        },
+        "expDt": {
+            "$numberLong": "1769010831170"
+        },
+        "pk": "646110210001",
+        "cmtDt": {
+            "$numberLong": "1769005437932"
+        },
+        "crtDt": {
+            "$numberLong": "1769005431170"
+        },
+        "uuid": "11062130497901000100029812142766"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_651036879001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1772997801,
+            "modification_date": 1772997808,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1772997808210"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1772997806202"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1773003201873"
+        },
+        "pk": "651036879001",
+        "cmtDt": {
+            "$numberLong": "1772997808210"
+        },
+        "crtDt": {
+            "$numberLong": "1772997801873"
+        },
+        "uuid": "11062130497901000100030149528478"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_651556103001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1773415453,
+            "modification_date": 1773415453,
+            "revision": 2
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1773415453908"
+        },
+        "qty": {
+            "$numberLong": "20"
+        },
+        "expDt": {
+            "$numberLong": "1773419053857"
+        },
+        "pk": "651556103001",
+        "cmtDt": {
+            "$numberLong": "1773415453908"
+        },
+        "crtDt": {
+            "$numberLong": "1773415453857"
+        },
+        "uuid": "11062130497901-4428873851420131846"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_653574329001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1775061992,
+            "modification_date": 1775061998,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1775061998791"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1775061996910"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1775067392682"
+        },
+        "pk": "653574329001",
+        "cmtDt": {
+            "$numberLong": "1775061998791"
+        },
+        "crtDt": {
+            "$numberLong": "1775061992682"
+        },
+        "uuid": "11062130497901000100030329726612"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_653649467001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1775127749,
+            "modification_date": 1775127757,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1775127757588"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1775127754173"
+        },
+        "qty": {
+            "$numberLong": "24"
+        },
+        "expDt": {
+            "$numberLong": "1775133149309"
+        },
+        "pk": "653649467001",
+        "cmtDt": {
+            "$numberLong": "1775127757588"
+        },
+        "crtDt": {
+            "$numberLong": "1775127749309"
+        },
+        "uuid": "11062130497901000100030335324297"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_653654449001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1775132425,
+            "modification_date": 1775132432,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1775132432294"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1775132429653"
+        },
+        "qty": {
+            "$numberLong": "24"
+        },
+        "expDt": {
+            "$numberLong": "1775137825877"
+        },
+        "pk": "653654449001",
+        "cmtDt": {
+            "$numberLong": "1775132432294"
+        },
+        "crtDt": {
+            "$numberLong": "1775132425877"
+        },
+        "uuid": "11062130497901000100030335349068"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_654066535001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1775488161,
+            "modification_date": 1775488168,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1775488168671"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1775488164861"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1775493561545"
+        },
+        "pk": "654066535001",
+        "cmtDt": {
+            "$numberLong": "1775488168671"
+        },
+        "crtDt": {
+            "$numberLong": "1775488161545"
+        },
+        "uuid": "11062130497901000100030358315997"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_655033520001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1776278907,
+            "modification_date": 1776278914,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1776278914585"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1776278910666"
+        },
+        "qty": {
+            "$numberLong": "5"
+        },
+        "expDt": {
+            "$numberLong": "1776284307070"
+        },
+        "pk": "655033520001",
+        "cmtDt": {
+            "$numberLong": "1776278914585"
+        },
+        "crtDt": {
+            "$numberLong": "1776278907070"
+        },
+        "uuid": "11062130497901000100030461342169"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_655970661001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1777059786,
+            "modification_date": 1777059793,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1777059793363"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1777059790584"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1777065186129"
+        },
+        "pk": "655970661001",
+        "cmtDt": {
+            "$numberLong": "1777059793363"
+        },
+        "crtDt": {
+            "$numberLong": "1777059786129"
+        },
+        "uuid": "11062130497901000100030495856435"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_657560189001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1778422913,
+            "modification_date": 1778422920,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1778422920626"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1778422917373"
+        },
+        "qty": {
+            "$numberLong": "25"
+        },
+        "expDt": {
+            "$numberLong": "1778428313354"
+        },
+        "pk": "657560189001",
+        "cmtDt": {
+            "$numberLong": "1778422920626"
+        },
+        "crtDt": {
+            "$numberLong": "1778422913354"
+        },
+        "uuid": "11062130497901000100030605516808"
+    },
+    {
+        "__key": [
+            {
+                "string": "110621304979",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110621304979",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_658164744001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1778942450,
+            "modification_date": 1778942457,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1778942457590"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1778942454327"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1778947850437"
+        },
+        "pk": "658164744001",
+        "cmtDt": {
+            "$numberLong": "1778942457590"
+        },
+        "crtDt": {
+            "$numberLong": "1778942450437"
+        },
+        "uuid": "11062130497901000100030642691926"
+    },
+    {
+        "__key": [
+            {
+                "string": "110625591700",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110625591700",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756242864,
+            "modification_date": 1760402627,
+            "revision": 4
+        },
+        "modDt": {
+            "$numberLong": "1760402627733"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1756242864639"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110625591700",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110625591700",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_630674492001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756242864,
+            "modification_date": 1756243029,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1756243029509"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1756243025543"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1756248264579"
+        },
+        "pk": "630674492001",
+        "cmtDt": {
+            "$numberLong": "1756243029509"
+        },
+        "crtDt": {
+            "$numberLong": "1756242864579"
+        },
+        "uuid": "11062559170001000100028750575637"
+    },
+    {
+        "__key": [
+            {
+                "string": "110625591700",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110625591700",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_635628931001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1760402501,
+            "modification_date": 1760402627,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1760402627733"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1760402624998"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1760407901196"
+        },
+        "pk": "635628931001",
+        "cmtDt": {
+            "$numberLong": "1760402627733"
+        },
+        "crtDt": {
+            "$numberLong": "1760402501196"
+        },
+        "uuid": "11062559170001000100029097749181"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631393063",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631393063",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756738273,
+            "modification_date": 1756739414,
+            "revision": 4
+        },
+        "modDt": {
+            "$numberLong": "1756739414498"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1756738273613"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110631393063",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631393063",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_631261580001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756738273,
+            "modification_date": 1756738276,
+            "revision": 2
+        },
+        "st": "X",
+        "modDt": {
+            "$numberLong": "1756738276941"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "cnclDt": {
+            "$numberLong": "1756738276941"
+        },
+        "expDt": {
+            "$numberLong": "1756741873557"
+        },
+        "pk": "631261580001",
+        "crtDt": {
+            "$numberLong": "1756738273557"
+        },
+        "uuid": "11063139306301000100028789475189"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631393063",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631393063",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_631263300001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756739254,
+            "modification_date": 1756739414,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1756739414498"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1756739411262"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1756744654105"
+        },
+        "pk": "631263300001",
+        "cmtDt": {
+            "$numberLong": "1756739414498"
+        },
+        "crtDt": {
+            "$numberLong": "1756739254105"
+        },
+        "uuid": "11063139306301000100028789944942"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631880901",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631880901",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762832811,
+            "modification_date": 1786419269,
+            "revision": 8
+        },
+        "modDt": {
+            "$numberLong": "1786419269833"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1762832811690"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110631880901",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631880901",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_638562650001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762832811,
+            "modification_date": 1762832817,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1762832817079"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1762832814253"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1762838211683"
+        },
+        "pk": "638562650001",
+        "cmtDt": {
+            "$numberLong": "1762832817079"
+        },
+        "crtDt": {
+            "$numberLong": "1762832811683"
+        },
+        "uuid": "11063188090101000100029294794597"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631880901",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631880901",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_640950259001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764688019,
+            "modification_date": 1764688027,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1764688027571"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1764688025119"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1764693419565"
+        },
+        "pk": "640950259001",
+        "cmtDt": {
+            "$numberLong": "1764688027571"
+        },
+        "crtDt": {
+            "$numberLong": "1764688019565"
+        },
+        "uuid": "11063188090101000100029462303822"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631880901",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631880901",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_653466341001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1774973580,
+            "modification_date": 1774973587,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1774973587259"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1774973583879"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1774978980606"
+        },
+        "pk": "653466341001",
+        "cmtDt": {
+            "$numberLong": "1774973587259"
+        },
+        "crtDt": {
+            "$numberLong": "1774973580606"
+        },
+        "uuid": "11063188090101000100030315844325"
+    },
+    {
+        "__key": [
+            {
+                "string": "110631880901",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110631880901",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_666493032001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1786419258,
+            "modification_date": 1786419269,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1786419269833"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1786419267731"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1786424657906"
+        },
+        "pk": "666493032001",
+        "cmtDt": {
+            "$numberLong": "1786419269833"
+        },
+        "crtDt": {
+            "$numberLong": "1786419257906"
+        },
+        "uuid": "11063188090101000100031248728711"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756043637,
+            "modification_date": 1784062470,
+            "revision": 44
+        },
+        "modDt": {
+            "$numberLong": "1784062470137"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1756043637296"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_630418520001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756043637,
+            "modification_date": 1756043783,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1756043783237"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1756043781110"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1756049037241"
+        },
+        "pk": "630418520001",
+        "cmtDt": {
+            "$numberLong": "1756043783237"
+        },
+        "crtDt": {
+            "$numberLong": "1756043637241"
+        },
+        "uuid": "11070659993101000100028731896446"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_630891437001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756424868,
+            "modification_date": 1756425031,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1756425031038"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1756425027888"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1756430268706"
+        },
+        "pk": "630891437001",
+        "cmtDt": {
+            "$numberLong": "1756425031038"
+        },
+        "crtDt": {
+            "$numberLong": "1756424868706"
+        },
+        "uuid": "11070659993101000100028799683425"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_632682463001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757896728,
+            "modification_date": 1757896859,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1757896859414"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1757896856548"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1757902128493"
+        },
+        "pk": "632682463001",
+        "cmtDt": {
+            "$numberLong": "1757896859414"
+        },
+        "crtDt": {
+            "$numberLong": "1757896728493"
+        },
+        "uuid": "11070659993101000100028891977403"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_635649881001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1760428124,
+            "modification_date": 1760428248,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1760428248378"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1760428245726"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1760433524817"
+        },
+        "pk": "635649881001",
+        "cmtDt": {
+            "$numberLong": "1760428248378"
+        },
+        "crtDt": {
+            "$numberLong": "1760428124817"
+        },
+        "uuid": "11070659993101000100029099390925"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_635718119001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1760477394,
+            "modification_date": 1760477526,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1760477526218"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1760477524433"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1760482794660"
+        },
+        "pk": "635718119001",
+        "cmtDt": {
+            "$numberLong": "1760477526218"
+        },
+        "crtDt": {
+            "$numberLong": "1760477394660"
+        },
+        "uuid": "11070659993101000100029097926813"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_635932111001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1760659487,
+            "modification_date": 1760659614,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1760659614934"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1760659613004"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1760664887373"
+        },
+        "pk": "635932111001",
+        "cmtDt": {
+            "$numberLong": "1760659614934"
+        },
+        "crtDt": {
+            "$numberLong": "1760659487373"
+        },
+        "uuid": "11070659993101000100029119015555"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_636710721001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1761322391,
+            "modification_date": 1761322516,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1761322516789"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1761322514496"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1761327791162"
+        },
+        "pk": "636710721001",
+        "cmtDt": {
+            "$numberLong": "1761322516789"
+        },
+        "crtDt": {
+            "$numberLong": "1761322391162"
+        },
+        "uuid": "11070659993101000100029172504115"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_637265386001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1761776267,
+            "modification_date": 1761776394,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1761776394934"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1761776392438"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1761781667893"
+        },
+        "pk": "637265386001",
+        "cmtDt": {
+            "$numberLong": "1761776394934"
+        },
+        "crtDt": {
+            "$numberLong": "1761776267893"
+        },
+        "uuid": "11070659993101000100029210769377"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_638847587001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763064378,
+            "modification_date": 1763064386,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1763064386223"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1763064383498"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1763069778498"
+        },
+        "pk": "638847587001",
+        "cmtDt": {
+            "$numberLong": "1763064386223"
+        },
+        "crtDt": {
+            "$numberLong": "1763064378498"
+        },
+        "uuid": "11070659993101000100029318445230"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_639102555001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763280180,
+            "modification_date": 1763280190,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1763280190428"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1763280188597"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1763285580683"
+        },
+        "pk": "639102555001",
+        "cmtDt": {
+            "$numberLong": "1763280190428"
+        },
+        "crtDt": {
+            "$numberLong": "1763280180683"
+        },
+        "uuid": "11070659993101000100029365671392"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_639650817001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1763692201,
+            "modification_date": 1763692210,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1763692210715"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1763692207638"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1763697601903"
+        },
+        "pk": "639650817001",
+        "cmtDt": {
+            "$numberLong": "1763692210715"
+        },
+        "crtDt": {
+            "$numberLong": "1763692201903"
+        },
+        "uuid": "11070659993101000100029372528682"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_648056481001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1770589077,
+            "modification_date": 1770589082,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1770589082356"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1770589080559"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1770594477189"
+        },
+        "pk": "648056481001",
+        "cmtDt": {
+            "$numberLong": "1770589082356"
+        },
+        "crtDt": {
+            "$numberLong": "1770589077189"
+        },
+        "uuid": "11070659993101000100029954358826"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_648290386001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1770780871,
+            "modification_date": 1770780877,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1770780877493"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1770780875669"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1770786271458"
+        },
+        "pk": "648290386001",
+        "cmtDt": {
+            "$numberLong": "1770780877493"
+        },
+        "crtDt": {
+            "$numberLong": "1770780871458"
+        },
+        "uuid": "11070659993101000100029970836914"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_649023196001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1771384942,
+            "modification_date": 1771384950,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1771384950327"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1771384947518"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1771390342614"
+        },
+        "pk": "649023196001",
+        "cmtDt": {
+            "$numberLong": "1771384950327"
+        },
+        "crtDt": {
+            "$numberLong": "1771384942614"
+        },
+        "uuid": "11070659993101000100030049447592"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_650166840001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1772314523,
+            "modification_date": 1772314528,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1772314528725"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1772314526537"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1772319923000"
+        },
+        "pk": "650166840001",
+        "cmtDt": {
+            "$numberLong": "1772314528725"
+        },
+        "crtDt": {
+            "$numberLong": "1772314523000"
+        },
+        "uuid": "11070659993101000100030093450397"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_650564404001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1772622396,
+            "modification_date": 1772622403,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1772622403148"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1772622400669"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1772627796254"
+        },
+        "pk": "650564404001",
+        "cmtDt": {
+            "$numberLong": "1772622403148"
+        },
+        "crtDt": {
+            "$numberLong": "1772622396254"
+        },
+        "uuid": "11070659993101000100030124064512"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_652028462001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1773785611,
+            "modification_date": 1773785618,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1773785618184"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1773785616217"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1773791011957"
+        },
+        "pk": "652028462001",
+        "cmtDt": {
+            "$numberLong": "1773785618184"
+        },
+        "crtDt": {
+            "$numberLong": "1773785611957"
+        },
+        "uuid": "11070659993101000100030223816432"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_654096217001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1775505204,
+            "modification_date": 1775505212,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1775505212328"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1775505208749"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1775510604090"
+        },
+        "pk": "654096217001",
+        "cmtDt": {
+            "$numberLong": "1775505212328"
+        },
+        "crtDt": {
+            "$numberLong": "1775505204090"
+        },
+        "uuid": "11070659993101000100030360447319"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_655594263001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1776738614,
+            "modification_date": 1776738624,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1776738624892"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1776738621895"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1776744014273"
+        },
+        "pk": "655594263001",
+        "cmtDt": {
+            "$numberLong": "1776738624892"
+        },
+        "crtDt": {
+            "$numberLong": "1776738614273"
+        },
+        "uuid": "11070659993101000100030464779463"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_660692763001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781169585,
+            "modification_date": 1781169592,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1781169592721"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1781169589855"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1781174984897"
+        },
+        "pk": "660692763001",
+        "cmtDt": {
+            "$numberLong": "1781169592721"
+        },
+        "crtDt": {
+            "$numberLong": "1781169584897"
+        },
+        "uuid": "11070659993101000100030828596571"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_661517344001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1781912607,
+            "modification_date": 1781914117,
+            "revision": 4
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1781914117936"
+        },
+        "extCnt": 2,
+        "extDt": {
+            "$numberLong": "1781914114363"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1781919807505"
+        },
+        "pk": "661517344001",
+        "cmtDt": {
+            "$numberLong": "1781914117936"
+        },
+        "crtDt": {
+            "$numberLong": "1781912607505"
+        },
+        "uuid": "11070659993101000100030890850010"
+    },
+    {
+        "__key": [
+            {
+                "string": "110706599931",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110706599931",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_663854330001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784062462,
+            "modification_date": 1784062470,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1784062470137"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1784062466334"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1784067862244"
+        },
+        "pk": "663854330001",
+        "cmtDt": {
+            "$numberLong": "1784062470137"
+        },
+        "crtDt": {
+            "$numberLong": "1784062462244"
+        },
+        "uuid": "11070659993101000100031059967504"
+    },
+    {
+        "__key": [
+            {
+                "string": "110751026200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110751026200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756413175,
+            "modification_date": 1756413335,
+            "revision": 2
+        },
+        "modDt": {
+            "$numberLong": "1756413335243"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1756413175856"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110751026200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110751026200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_630876925001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1756413175,
+            "modification_date": 1756413335,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1756413335243"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1756413331903"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1756418575814"
+        },
+        "pk": "630876925001",
+        "cmtDt": {
+            "$numberLong": "1756413335243"
+        },
+        "crtDt": {
+            "$numberLong": "1756413175814"
+        },
+        "uuid": "11075102620001000100028762882087"
+    },
+    {
+        "__key": [
+            {
+                "string": "110756029834",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110756029834",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1770830591,
+            "modification_date": 1770830598,
+            "revision": 2
+        },
+        "modDt": {
+            "$numberLong": "1770830598202"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1770830591604"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110756029834",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110756029834",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_648341914001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1770830591,
+            "modification_date": 1770830598,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1770830598202"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1770830596142"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1770835991562"
+        },
+        "pk": "648341914001",
+        "cmtDt": {
+            "$numberLong": "1770830598202"
+        },
+        "crtDt": {
+            "$numberLong": "1770830591562"
+        },
+        "uuid": "11075602983401000100029967074765"
+    },
+    {
+        "__key": [
+            {
+                "string": "110792741938",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110792741938",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766414488,
+            "modification_date": 1766414495,
+            "revision": 2
+        },
+        "modDt": {
+            "$numberLong": "1766414495372"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1766414488156"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110792741938",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110792741938",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_643158921001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1766414488,
+            "modification_date": 1766414495,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1766414495372"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1766414492220"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1766419888091"
+        },
+        "pk": "643158921001",
+        "cmtDt": {
+            "$numberLong": "1766414495372"
+        },
+        "crtDt": {
+            "$numberLong": "1766414488091"
+        },
+        "uuid": "11079274193801000100029611908761"
+    },
+    {
+        "__key": [
+            {
+                "string": "110833294592",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110833294592",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758946273,
+            "modification_date": 1764335451,
+            "revision": 4
+        },
+        "modDt": {
+            "$numberLong": "1764335451028"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1758946273186"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110833294592",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110833294592",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_633890682001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1758946273,
+            "modification_date": 1758946401,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1758946401886"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1758946398301"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1758951673143"
+        },
+        "pk": "633890682001",
+        "cmtDt": {
+            "$numberLong": "1758946401886"
+        },
+        "crtDt": {
+            "$numberLong": "1758946273143"
+        },
+        "uuid": "11083329459201000100028977155037"
+    },
+    {
+        "__key": [
+            {
+                "string": "110833294592",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110833294592",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_640441720001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764335444,
+            "modification_date": 1764335451,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1764335451028"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1764335447806"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1764340844262"
+        },
+        "pk": "640441720001",
+        "cmtDt": {
+            "$numberLong": "1764335451028"
+        },
+        "crtDt": {
+            "$numberLong": "1764335444262"
+        },
+        "uuid": "11083329459201000100029427733694"
+    },
+    {
+        "__key": [
+            {
+                "string": "110837615716",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110837615716",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1772479116,
+            "modification_date": 1775545000,
+            "revision": 6
+        },
+        "modDt": {
+            "$numberLong": "1775545000054"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1772479116142"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110837615716",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110837615716",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_650387978001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1772479116,
+            "modification_date": 1772479125,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1772479125895"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1772479123703"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1772484516131"
+        },
+        "pk": "650387978001",
+        "cmtDt": {
+            "$numberLong": "1772479125895"
+        },
+        "crtDt": {
+            "$numberLong": "1772479116131"
+        },
+        "uuid": "11083761571601000100030141505688"
+    },
+    {
+        "__key": [
+            {
+                "string": "110837615716",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110837615716",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_654138666001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1775544945,
+            "modification_date": 1775545000,
+            "revision": 5
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1775545000054"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1775544997915"
+        },
+        "qty": 1,
+        "cnclDt": {
+            "$numberLong": "1775544950592"
+        },
+        "expDt": {
+            "$numberLong": "1775550378106"
+        },
+        "pk": "654138666001",
+        "cmtDt": {
+            "$numberLong": "1775545000054"
+        },
+        "crtDt": {
+            "$numberLong": "1775544945536"
+        },
+        "uuid": "11083761571601000100030366506580"
+    },
+    {
+        "__key": [
+            {
+                "string": "110869471930",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110869471930",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1765067068,
+            "modification_date": 1769096272,
+            "revision": 4
+        },
+        "modDt": {
+            "$numberLong": "1769096272835"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1765067068100"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110869471930",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110869471930",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_641473081001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1765067068,
+            "modification_date": 1765067076,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1765067076396"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1765067072971"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1765072468060"
+        },
+        "pk": "641473081001",
+        "cmtDt": {
+            "$numberLong": "1765067076396"
+        },
+        "crtDt": {
+            "$numberLong": "1765067068060"
+        },
+        "uuid": "11086947193001000100029495979962"
+    },
+    {
+        "__key": [
+            {
+                "string": "110869471930",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110869471930",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_646217471001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769096266,
+            "modification_date": 1769096272,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1769096272835"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1769096269576"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1769101666287"
+        },
+        "pk": "646217471001",
+        "cmtDt": {
+            "$numberLong": "1769096272835"
+        },
+        "crtDt": {
+            "$numberLong": "1769096266287"
+        },
+        "uuid": "11086947193001000100029824233747"
+    },
+    {
+        "__key": [
+            {
+                "string": "110899599847",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110899599847",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764222081,
+            "modification_date": 1783993291,
+            "revision": 10
+        },
+        "modDt": {
+            "$numberLong": "1783993291035"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1764222080913"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110899599847",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110899599847",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_640310584001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1764222081,
+            "modification_date": 1764222088,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1764222088273"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1764222085423"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1764227480865"
+        },
+        "pk": "640310584001",
+        "cmtDt": {
+            "$numberLong": "1764222088273"
+        },
+        "crtDt": {
+            "$numberLong": "1764222080865"
+        },
+        "uuid": "11089959984701000100029418259384"
+    },
+    {
+        "__key": [
+            {
+                "string": "110899599847",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110899599847",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_651553841001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1773414069,
+            "modification_date": 1773414078,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1773414078116"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1773414074732"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1773419469580"
+        },
+        "pk": "651553841001",
+        "cmtDt": {
+            "$numberLong": "1773414078116"
+        },
+        "crtDt": {
+            "$numberLong": "1773414069580"
+        },
+        "uuid": "11089959984701000100030191349232"
+    },
+    {
+        "__key": [
+            {
+                "string": "110899599847",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110899599847",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_652949296001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1774551456,
+            "modification_date": 1774551463,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1774551463919"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1774551460955"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1774556856427"
+        },
+        "pk": "652949296001",
+        "cmtDt": {
+            "$numberLong": "1774551463919"
+        },
+        "crtDt": {
+            "$numberLong": "1774551456427"
+        },
+        "uuid": "11089959984701000100030316918952"
+    },
+    {
+        "__key": [
+            {
+                "string": "110899599847",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110899599847",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_662402660001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1782747137,
+            "modification_date": 1782748593,
+            "revision": 4
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1782748593794"
+        },
+        "extCnt": 2,
+        "extDt": {
+            "$numberLong": "1782748591619"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1782754337784"
+        },
+        "pk": "662402660001",
+        "cmtDt": {
+            "$numberLong": "1782748593794"
+        },
+        "crtDt": {
+            "$numberLong": "1782747137784"
+        },
+        "uuid": "11089959984701000100030954552956"
+    },
+    {
+        "__key": [
+            {
+                "string": "110899599847",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110899599847",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_663777009001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1783993282,
+            "modification_date": 1783993291,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1783993291035"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1783993286849"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1783998682542"
+        },
+        "pk": "663777009001",
+        "cmtDt": {
+            "$numberLong": "1783993291035"
+        },
+        "crtDt": {
+            "$numberLong": "1783993282542"
+        },
+        "uuid": "11089959984701000100031053985914"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1752797028,
+            "modification_date": 1784712156,
+            "revision": 22
+        },
+        "modDt": {
+            "$numberLong": "1779470300265"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1752797028481"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_626571577001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1752797028,
+            "modification_date": 1752797152,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1752797152794"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1752797149559"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1752802428473"
+        },
+        "pk": "626571577001",
+        "cmtDt": {
+            "$numberLong": "1752797152794"
+        },
+        "crtDt": {
+            "$numberLong": "1752797028473"
+        },
+        "uuid": "11091485952601000100028468880557"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_627007805001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1753187107,
+            "modification_date": 1753187230,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1753187230538"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1753187229077"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1753192507105"
+        },
+        "pk": "627007805001",
+        "cmtDt": {
+            "$numberLong": "1753187230538"
+        },
+        "crtDt": {
+            "$numberLong": "1753187107105"
+        },
+        "uuid": "11091485952601000100028532692448"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_658770291001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1779470290,
+            "modification_date": 1779470300,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1779470300265"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1779470298061"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1779475690726"
+        },
+        "pk": "658770291001",
+        "cmtDt": {
+            "$numberLong": "1779470300265"
+        },
+        "crtDt": {
+            "$numberLong": "1779470290726"
+        },
+        "uuid": "11091485952601000100030685346478"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_664269230001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784460528,
+            "modification_date": 1784460532,
+            "revision": 2
+        },
+        "st": "X",
+        "modDt": {
+            "$numberLong": "1784460532428"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "cnclDt": {
+            "$numberLong": "1784460532428"
+        },
+        "expDt": {
+            "$numberLong": "1784464128526"
+        },
+        "pk": "664269230001",
+        "crtDt": {
+            "$numberLong": "1784460528526"
+        },
+        "uuid": "11091485952601000100031120092465"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_664555306001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784709434,
+            "modification_date": 1784709437,
+            "revision": 2
+        },
+        "st": "X",
+        "modDt": {
+            "$numberLong": "1784709437521"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "cnclDt": {
+            "$numberLong": "1784709437521"
+        },
+        "expDt": {
+            "$numberLong": "1784713034362"
+        },
+        "pk": "664555306001",
+        "crtDt": {
+            "$numberLong": "1784709434362"
+        },
+        "uuid": "11091485952601000100031112207291"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_664556251001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784710551,
+            "modification_date": 1784710809,
+            "revision": 8
+        },
+        "st": "X",
+        "modDt": {
+            "$numberLong": "1784710809277"
+        },
+        "qty": 1,
+        "cnclDt": {
+            "$numberLong": "1784710809277"
+        },
+        "expDt": {
+            "$numberLong": "1784714402297"
+        },
+        "pk": "664556251001",
+        "crtDt": {
+            "$numberLong": "1784710551690"
+        },
+        "uuid": "11091485952601000100031105158198"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_664556571001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784710936,
+            "modification_date": 1784710941,
+            "revision": 2
+        },
+        "st": "X",
+        "modDt": {
+            "$numberLong": "1784710941124"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "cnclDt": {
+            "$numberLong": "1784710941124"
+        },
+        "expDt": {
+            "$numberLong": "1784714536359"
+        },
+        "pk": "664556571001",
+        "crtDt": {
+            "$numberLong": "1784710936359"
+        },
+        "uuid": "11091485952601000100031104854813"
+    },
+    {
+        "__key": [
+            {
+                "string": "110914859526",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110914859526",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_664557605001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1784712150,
+            "modification_date": 1784712156,
+            "revision": 2
+        },
+        "st": "X",
+        "modDt": {
+            "$numberLong": "1784712156776"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "cnclDt": {
+            "$numberLong": "1784712156776"
+        },
+        "expDt": {
+            "$numberLong": "1784715750106"
+        },
+        "pk": "664557605001",
+        "crtDt": {
+            "$numberLong": "1784712150106"
+        },
+        "uuid": "11091485952601000100031109935299"
+    },
+    {
+        "__key": [
+            {
+                "string": "110932579200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110932579200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_$$$SUMMARY$$$",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757529144,
+            "modification_date": 1786298569,
+            "revision": 14
+        },
+        "modDt": {
+            "$numberLong": "1786298569096"
+        },
+        "qty": {
+            "$numberLong": "0"
+        },
+        "expDt": {
+            "$numberLong": "0"
+        },
+        "pk": "LOCK_$$$SUMMARY$$$",
+        "crtDt": {
+            "$numberLong": "1757529144313"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "110932579200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110932579200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_632264755001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1757529144,
+            "modification_date": 1757529267,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1757529267796"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1757529264830"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1757534544255"
+        },
+        "pk": "632264755001",
+        "cmtDt": {
+            "$numberLong": "1757529267796"
+        },
+        "crtDt": {
+            "$numberLong": "1757529144255"
+        },
+        "uuid": "11093257920001000100028858029599"
+    },
+    {
+        "__key": [
+            {
+                "string": "110932579200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110932579200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_638249114001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1762601811,
+            "modification_date": 1762601817,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1762601817561"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1762601814673"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1762607211245"
+        },
+        "pk": "638249114001",
+        "cmtDt": {
+            "$numberLong": "1762601817561"
+        },
+        "crtDt": {
+            "$numberLong": "1762601811245"
+        },
+        "uuid": "11093257920001000100029278622891"
+    },
+    {
+        "__key": [
+            {
+                "string": "110932579200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110932579200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_646492861001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1769334375,
+            "modification_date": 1769334386,
+            "revision": 5
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1769334386056"
+        },
+        "extCnt": 3,
+        "extDt": {
+            "$numberLong": "1769334383897"
+        },
+        "qty": {
+            "$numberLong": "2"
+        },
+        "expDt": {
+            "$numberLong": "1769343375851"
+        },
+        "pk": "646492861001",
+        "cmtDt": {
+            "$numberLong": "1769334386056"
+        },
+        "crtDt": {
+            "$numberLong": "1769334375851"
+        },
+        "uuid": "11093257920001000100029843849450"
+    },
+    {
+        "__key": [
+            {
+                "string": "110932579200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110932579200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_652582162001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1774252802,
+            "modification_date": 1774252812,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1774252812889"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1774252810157"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1774258202085"
+        },
+        "pk": "652582162001",
+        "cmtDt": {
+            "$numberLong": "1774252812889"
+        },
+        "crtDt": {
+            "$numberLong": "1774252802085"
+        },
+        "uuid": "11093257920001000100030255262493"
+    },
+    {
+        "__key": [
+            {
+                "string": "110932579200",
+                "collection": "__ROOT__"
+            },
+            {
+                "string": "QTYPRICE_110932579200",
+                "collection": "ItemQtyPrice"
+            },
+            {
+                "string": "LOCK_653801676001",
+                "collection": "ItemLock"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1775249447,
+            "modification_date": 1775249457,
+            "revision": 3
+        },
+        "st": "C",
+        "modDt": {
+            "$numberLong": "1775249457960"
+        },
+        "extCnt": 1,
+        "extDt": {
+            "$numberLong": "1775249456185"
+        },
+        "qty": {
+            "$numberLong": "1"
+        },
+        "expDt": {
+            "$numberLong": "1775254847296"
+        },
+        "pk": "653801676001",
+        "cmtDt": {
+            "$numberLong": "1775249457960"
+        },
+        "crtDt": {
+            "$numberLong": "1775249447296"
+        },
+        "uuid": "11093257920001000100030344603810"
+    }
+]

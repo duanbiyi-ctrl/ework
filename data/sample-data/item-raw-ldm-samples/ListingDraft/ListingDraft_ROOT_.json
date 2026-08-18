@@ -1,0 +1,2494 @@
+[
+    {
+        "__key": [
+            {
+                "string": "3744315661300",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1693833814,
+            "modification_date": 1786561436,
+            "revision": 22
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "UNVERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1693833814000"
+        },
+        "fl3": {
+            "$numberLong": "131586"
+        },
+        "fl2": {
+            "$numberLong": "0"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "11534336"
+        },
+        "fl4": {
+            "$numberLong": "1024"
+        },
+        "props": {
+            "$numberLong": "0"
+        },
+        "fl7": {
+            "$numberLong": "0"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "16845312"
+        },
+        "fl8": {
+            "$numberLong": "262145"
+        },
+        "galPicMd5Hsh": null,
+        "lastModDate": {
+            "$numberLong": "1786561436000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "235148325999",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "2593"
+        },
+        "fl12": {
+            "$numberLong": "268435584"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "0"
+        },
+        "prgDt": {
+            "$numberLong": "1789153436000"
+        },
+        "fl10": {
+            "$numberLong": "1024"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "CREATE",
+                "value": "290356"
+            }
+        ],
+        "appCstmInfo": "<v4entities version=\"1.0\"><Entity type=\"ApplicationCustomInfoList\" id=\"0\"><Collection name=\"ApplicationCustomInfo\"><Entity type=\"ApplicationCustomInfo\" id=\"1\"><Long name=\"ApplicationId\" value=\"290356\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"2\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"3\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"4\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"5\"><String name=\"TagStringName\">USER_AUCTIONBO_TREATMENT</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"6\"><String name=\"Value\">BOLT_U7T2</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"7\"><String name=\"TagStringName\">intlShippingServicePackageType2</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"8\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"9\"><String name=\"TagStringName\">INTERNATIONAL_REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"10\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"11\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"12\"><String name=\"Value\">B2C_BOLT</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"13\"><String name=\"TagStringName\">intlShippingServicePackageType1</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"14\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"15\"><String name=\"TagStringName\">LISTING_AUCTIONBO_QUALIFIED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"16\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"17\"><String name=\"TagStringName\">DEFAULT_DESCRIPTION_ON_CREATE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"18\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"19\"><String name=\"TagStringName\">RECOMMENDED_SHIPPING_SERVICE_PACKAGE_TYPE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"20\"><String name=\"Value\">LargeLetter250g</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"21\"><String name=\"TagStringName\">shr_max_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"22\"><String name=\"Value\">2.25</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"23\"><String name=\"TagStringName\">SMART_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"24\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"25\"><String name=\"TagStringName\">ABO_RULE_VERSION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"26\"><String name=\"Value\">v2:binPriceRule</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"27\"><String name=\"TagStringName\">eBayAPISoapServiceCode0</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"28\"><String name=\"Value\">UK_RoyalMailFirstClassStandard</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"29\"><String name=\"TagStringName\">GHOST_GTC_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"30\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"31\"><String name=\"TagStringName\">shr_shipping_type</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"32\"><String name=\"Value\">FLAT_RATE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"33\"><String name=\"TagStringName\">shr_min_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"34\"><String name=\"Value\">2.25</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"35\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"36\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"37\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"38\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"39\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"40\"><String name=\"Value\">8</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"41\"><String name=\"TagStringName\">INTERNATIONAL_RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"42\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"43\"><String name=\"TagStringName\">PAYPAL_EMAIL_ADDRESS</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"44\"><String name=\"Value\">hellome70@hotmail.co.uk</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"45\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"46\"><String name=\"Value\">summary</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"47\"><String name=\"TagStringName\">useShipReco</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"48\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"49\"><String name=\"TagStringName\">defaultFreeShippingRecommendation</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"50\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"51\"><String name=\"TagStringName\">INTERNATIONAL_RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"52\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"53\"><String name=\"TagStringName\">AUCTION_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"54\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"55\"><String name=\"TagStringName\">DEFAULT_DESCRIPTION_ADDED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"56\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"57\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"58\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"59\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"60\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"61\"><String name=\"TagStringName\">IS_SECURED_DESCRIPTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"62\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"63\"><String name=\"TagStringName\">domesticShippingServicePackageType1</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"64\"><String name=\"Value\">LargeLetter250g</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"65\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"66\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"67\"><String name=\"TagStringName\">systemEnforcedLocalPickup</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"68\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"69\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"70\"><String name=\"Value\">EuropeanUnion</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"71\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"72\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity><Entity type=\"ApplicationCustomInfo\" id=\"73\"><Long name=\"ApplicationId\" value=\"384352\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"74\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"75\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"76\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"77\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"78\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"79\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"80\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"81\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"82\"><String name=\"Value\">8</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"83\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"84\"><String name=\"Value\">summary</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"85\"><String name=\"TagStringName\">intlShippingServicePackageType4</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"86\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"87\"><String name=\"TagStringName\">intlShippingServicePackageType5</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"88\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"89\"><String name=\"TagStringName\">intlShippingServicePackageType2</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"90\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"91\"><String name=\"TagStringName\">intlShippingServicePackageType3</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"92\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"93\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"94\"><String name=\"Value\">CUB</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"95\"><String name=\"TagStringName\">intlShippingServicePackageType1</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"96\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"97\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"98\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"99\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"100\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"101\"><String name=\"TagStringName\">SHIPPING_PACKAGE_DETAILS_UNKNOWN</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"102\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"103\"><String name=\"TagStringName\">systemEnforcedLocalPickup</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"104\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"105\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"106\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"107\"><String name=\"TagStringName\">domesticShippingServicePackageType1</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"108\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"109\"><String name=\"TagStringName\">SHIPPING_DETAILS_AUTO_FILLED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"110\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"111\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"112\"><String name=\"Value\">Worldwide</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"113\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"114\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity></Collection></Entity></v4entities>",
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 128,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "167772160"
+        },
+        "itmVisOpt": "3=3,205=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "12585984"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/gn8AAOSwOK9k9drI/$_12.JPG?set_id=880000500F",
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3744315661300",
+        "totCumLstgs": {
+            "$numberLong": "312"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3757513753703",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1694026953,
+            "modification_date": 1786473483,
+            "revision": 58
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "VERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1694026952000"
+        },
+        "fl3": {
+            "$numberLong": "131587"
+        },
+        "fl2": {
+            "$numberLong": "29360128"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "7340032"
+        },
+        "fl4": {
+            "$numberLong": "68"
+        },
+        "props": {
+            "$numberLong": "268435456"
+        },
+        "fl7": {
+            "$numberLong": "8388608"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "16845312"
+        },
+        "fl8": {
+            "$numberLong": "262149"
+        },
+        "galPicMd5Hsh": "mb0N9hGseyM9IAvgbSGvL9A",
+        "lastModDate": {
+            "$numberLong": "1786473483000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "204356727643",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "43"
+        },
+        "fl12": {
+            "$numberLong": "4224"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "8"
+        },
+        "prgDt": {
+            "$numberLong": "1789065483000"
+        },
+        "fl10": {
+            "$numberLong": "1024"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "CREATE",
+                "value": "384352"
+            }
+        ],
+        "appCstmInfo": "<v4entities version=\"1.0\"><Entity type=\"ApplicationCustomInfoList\" id=\"0\"><Collection name=\"ApplicationCustomInfo\"><Entity type=\"ApplicationCustomInfo\" id=\"1\"><Long name=\"ApplicationId\" value=\"384352\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"2\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"3\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"4\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"5\"><String name=\"TagStringName\">INTERACTED_MODULES</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"6\"><String name=\"Value\">PRICE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"7\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"8\"><String name=\"Value\">CUB</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"9\"><String name=\"TagStringName\">shr_max_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"10\"><String name=\"Value\">5.22</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"11\"><String name=\"TagStringName\">shr_height</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"12\"><String name=\"Value\">9.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"13\"><String name=\"TagStringName\">SMART_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"14\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"15\"><String name=\"TagStringName\">eBayAPISoapServiceCode0</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"16\"><String name=\"Value\">USPSMedia</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"17\"><String name=\"TagStringName\">GHOST_GTC_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"18\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"19\"><String name=\"TagStringName\">shr_width</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"20\"><String name=\"Value\">12.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"21\"><String name=\"TagStringName\">shr_shipping_type</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"22\"><String name=\"Value\">ACTUAL_RATE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"23\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"24\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"25\"><String name=\"TagStringName\">shr_min_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"26\"><String name=\"Value\">5.22</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"27\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"28\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"29\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"30\"><String name=\"Value\">8</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"31\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"32\"><String name=\"Value\">selectOwnDetails</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"33\"><String name=\"TagStringName\">shr_weight_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"34\"><String name=\"Value\">oz</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"35\"><String name=\"TagStringName\">shr_length</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"36\"><String name=\"Value\">14.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"37\"><String name=\"TagStringName\">shr_weight</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"38\"><String name=\"Value\">32.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"39\"><String name=\"TagStringName\">AUCTION_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"40\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"41\"><String name=\"TagStringName\">shr_dimension_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"42\"><String name=\"Value\">inches</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"43\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"44\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"45\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"46\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"47\"><String name=\"TagStringName\">IS_SECURED_DESCRIPTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"48\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"49\"><String name=\"TagStringName\">systemEnforcedLocalPickup</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"50\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"51\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"52\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"53\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"54\"><String name=\"Value\">Worldwide</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"55\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"56\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity></Collection></Entity></v4entities>",
+        "scrtchFl": 524288,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 0,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "0=3,2=3,100=3,210=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "1086327808"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/T7kAAOSwb0BglEEm/$_57.JPG?set_id=8800005007",
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3757513753703",
+        "totCumLstgs": {
+            "$numberLong": "7109"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3778603125123",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1691877208,
+            "modification_date": 1786473964,
+            "revision": 28
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "VERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1691877206000"
+        },
+        "fl3": {
+            "$numberLong": "131587"
+        },
+        "fl2": {
+            "$numberLong": "25427968"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "7340032"
+        },
+        "fl4": {
+            "$numberLong": "4"
+        },
+        "props": {
+            "$numberLong": "269484032"
+        },
+        "fl7": {
+            "$numberLong": "8388608"
+        },
+        "fl6": {
+            "$numberLong": "2048"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "0"
+        },
+        "fl8": {
+            "$numberLong": "262149"
+        },
+        "galPicMd5Hsh": "mU1OLOF90EjfYzG5opd0eYA",
+        "lastModDate": {
+            "$numberLong": "1786473964000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "115881254626",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "43"
+        },
+        "fl12": {
+            "$numberLong": "4224"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "8"
+        },
+        "prgDt": {
+            "$numberLong": "1789065964000"
+        },
+        "fl10": {
+            "$numberLong": "1024"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "CREATE",
+                "value": "384352"
+            }
+        ],
+        "appCstmInfo": "<v4entities version=\"1.0\"><Entity type=\"ApplicationCustomInfoList\" id=\"0\"><Collection name=\"ApplicationCustomInfo\"><Entity type=\"ApplicationCustomInfo\" id=\"1\"><Long name=\"ApplicationId\" value=\"384352\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"2\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"3\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"4\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"5\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"6\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"7\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"8\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"9\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"10\"><String name=\"Value\">8</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"11\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"12\"><String name=\"Value\">summary</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"13\"><String name=\"TagStringName\">intlShippingServicePackageType4</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"14\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"15\"><String name=\"TagStringName\">intlShippingServicePackageType5</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"16\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"17\"><String name=\"TagStringName\">intlShippingServicePackageType2</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"18\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"19\"><String name=\"TagStringName\">intlShippingServicePackageType3</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"20\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"21\"><String name=\"TagStringName\">INTERACTED_MODULES</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"22\"><String name=\"Value\">PRICE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"23\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"24\"><String name=\"Value\">CUB</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"25\"><String name=\"TagStringName\">intlShippingServicePackageType1</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"26\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"27\"><String name=\"TagStringName\">SMART_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"28\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"29\"><String name=\"TagStringName\">AUCTION_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"30\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"31\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"32\"><String name=\"Value\">Days_14</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"33\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"34\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"35\"><String name=\"TagStringName\">GHOST_GTC_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"36\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"37\"><String name=\"TagStringName\">IS_SECURED_DESCRIPTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"38\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"39\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"40\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"41\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"42\"><String name=\"Value\">Worldwide</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"43\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"44\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity></Collection></Entity></v4entities>",
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 268435712,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "167772160"
+        },
+        "itmVisOpt": "77=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "1086327808"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/pTQAAOSwpQtk1~9~/$_57.JPG?set_id=880000500F",
+        "descRevsnDt": {
+            "$numberLong": "1683322197000"
+        },
+        "autoRlstOrigAppId": "384352",
+        "PK": "3778603125123",
+        "totCumLstgs": {
+            "$numberLong": "12343"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3805627097300",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695161190,
+            "modification_date": 1784416449,
+            "revision": 21
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "UNVERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1695161189000"
+        },
+        "fl3": {
+            "$numberLong": "131587"
+        },
+        "fl2": {
+            "$numberLong": "29360128"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "11534336"
+        },
+        "fl4": {
+            "$numberLong": "131092"
+        },
+        "props": {
+            "$numberLong": "269484032"
+        },
+        "fl7": {
+            "$numberLong": "8388608"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "37152"
+        },
+        "fl8": {
+            "$numberLong": "262149"
+        },
+        "galPicMd5Hsh": "mpXUsIZIzRzcNgu0eKoT0Gg",
+        "lastModDate": {
+            "$numberLong": "1784416449000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "125397031009",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "43"
+        },
+        "fl12": {
+            "$numberLong": "4736"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "16384"
+        },
+        "prgDt": {
+            "$numberLong": "1787008449000"
+        },
+        "fl10": {
+            "$numberLong": "33563648"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "CREATE",
+                "value": "415699"
+            }
+        ],
+        "appCstmInfo": null,
+        "scrtchFl": 524288,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 0,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "0=3,2=3,100=3,210=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "1103105024"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjMy/z/ieIAAOSwBYtkMtO5/$_12.JPG?set_id=880000500F",
+        "descRevsnDt": {
+            "$numberLong": "1680888006000"
+        },
+        "autoRlstOrigAppId": null,
+        "PK": "3805627097300",
+        "totCumLstgs": {
+            "$numberLong": "7591"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3807590991121",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1692480490,
+            "modification_date": 1786757905,
+            "revision": 25
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "UNVERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1692480490000"
+        },
+        "fl3": {
+            "$numberLong": "131587"
+        },
+        "fl2": {
+            "$numberLong": "8388608"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "11534336"
+        },
+        "fl4": {
+            "$numberLong": "131072"
+        },
+        "props": {
+            "$numberLong": "0"
+        },
+        "fl7": {
+            "$numberLong": "0"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "16845312"
+        },
+        "fl8": {
+            "$numberLong": "262145"
+        },
+        "galPicMd5Hsh": null,
+        "lastModDate": {
+            "$numberLong": "1786757904000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "185973278983",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "2089"
+        },
+        "fl12": {
+            "$numberLong": "128"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "0"
+        },
+        "prgDt": {
+            "$numberLong": "1789349904000"
+        },
+        "fl10": {
+            "$numberLong": "1024"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "CREATE",
+                "value": "384352"
+            }
+        ],
+        "appCstmInfo": "<v4entities version=\"1.0\"><Entity type=\"ApplicationCustomInfoList\" id=\"0\"><Collection name=\"ApplicationCustomInfo\"><Entity type=\"ApplicationCustomInfo\" id=\"1\"><Long name=\"ApplicationId\" value=\"384352\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"2\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"3\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"4\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"5\"><String name=\"TagStringName\">INTERNATIONAL_REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"6\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"7\"><String name=\"TagStringName\">INTERACTED_MODULES</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"8\"><String name=\"Value\">PRICE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"9\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"10\"><String name=\"Value\">CUB</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"11\"><String name=\"TagStringName\">shr_max_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"12\"><String name=\"Value\">8.55</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"13\"><String name=\"TagStringName\">shr_height</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"14\"><String name=\"Value\">9.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"15\"><String name=\"TagStringName\">SMART_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"16\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"17\"><String name=\"TagStringName\">eBayAPISoapServiceCode0</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"18\"><String name=\"Value\">USPSParcel</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"19\"><String name=\"TagStringName\">GHOST_GTC_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"20\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"21\"><String name=\"TagStringName\">shr_width</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"22\"><String name=\"Value\">12.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"23\"><String name=\"TagStringName\">shr_shipping_type</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"24\"><String name=\"Value\">ACTUAL_RATE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"25\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"26\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"27\"><String name=\"TagStringName\">shr_min_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"28\"><String name=\"Value\">7.6</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"29\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"30\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"31\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"32\"><String name=\"Value\">0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"33\"><String name=\"TagStringName\">INTERNATIONAL_RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"34\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"35\"><String name=\"TagStringName\">PAYPAL_EMAIL_ADDRESS</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"36\"><String name=\"Value\">ccwtwow@aol.com</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"37\"><String name=\"TagStringName\">shr_weight_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"38\"><String name=\"Value\">oz</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"39\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"40\"><String name=\"Value\">selectOwnDetails</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"41\"><String name=\"TagStringName\">shr_length</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"42\"><String name=\"Value\">14.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"43\"><String name=\"TagStringName\">BIN_PRICE_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"44\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"45\"><String name=\"TagStringName\">shr_weight</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"46\"><String name=\"Value\">16.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"47\"><String name=\"TagStringName\">INTERNATIONAL_RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"48\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"49\"><String name=\"TagStringName\">AUCTION_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"50\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"51\"><String name=\"TagStringName\">shr_dimension_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"52\"><String name=\"Value\">inches</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"53\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"54\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"55\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"56\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"57\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"58\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"59\"><String name=\"TagStringName\">systemEnforcedLocalPickup</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"60\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"61\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"62\"><String name=\"Value\">Worldwide</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"63\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"64\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity></Collection></Entity></v4entities>",
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 128,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "0=3,2=3,100=3,210=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "297798656"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": null,
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3807590991121",
+        "totCumLstgs": {
+            "$numberLong": "940"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3819349461402",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695416929,
+            "modification_date": 1785983693,
+            "revision": 72
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "UNVERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1695416928000"
+        },
+        "fl3": {
+            "$numberLong": "131075"
+        },
+        "fl2": {
+            "$numberLong": "8388608"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "1048576"
+        },
+        "fl4": {
+            "$numberLong": "4"
+        },
+        "props": {
+            "$numberLong": "0"
+        },
+        "fl7": {
+            "$numberLong": "8388608"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "41280"
+        },
+        "fl8": {
+            "$numberLong": "262145"
+        },
+        "galPicMd5Hsh": null,
+        "lastModDate": {
+            "$numberLong": "1785983693000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "0",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "2089"
+        },
+        "fl12": {
+            "$numberLong": "128"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "0"
+        },
+        "prgDt": {
+            "$numberLong": "1788575693000"
+        },
+        "fl10": {
+            "$numberLong": "1024"
+        },
+        "usgHistDtl": [
+            {
+                "name": "PUBLISH",
+                "value": "384352"
+            },
+            {
+                "name": "PUBLISH",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "290356"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "CREATE",
+                "value": "290356"
+            }
+        ],
+        "appCstmInfo": "<v4entities version=\"1.0\"><Entity type=\"ApplicationCustomInfoList\" id=\"0\"><Collection name=\"ApplicationCustomInfo\"><Entity type=\"ApplicationCustomInfo\" id=\"1\"><Long name=\"ApplicationId\" value=\"290356\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"2\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"3\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"4\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"5\"><String name=\"TagStringName\">AUTO_DECLINE_CHANGED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"6\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"7\"><String name=\"TagStringName\">INTERNATIONAL_REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"8\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"9\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"10\"><String name=\"Value\">B2C_BOLT</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"11\"><String name=\"TagStringName\">GHOST_GTC_ENABLED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"12\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"13\"><String name=\"TagStringName\">DEFAULT_DESCRIPTION_ON_CREATE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"14\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"15\"><String name=\"TagStringName\">shr_max_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"16\"><String name=\"Value\">8.55</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"17\"><String name=\"TagStringName\">shr_height</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"18\"><String name=\"Value\">4.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"19\"><String name=\"TagStringName\">SMART_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"20\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"21\"><String name=\"TagStringName\">eBayAPISoapServiceCode0</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"22\"><String name=\"Value\">USPSParcel</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"23\"><String name=\"TagStringName\">GHOST_GTC_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"24\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"25\"><String name=\"TagStringName\">shr_width</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"26\"><String name=\"Value\">4.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"27\"><String name=\"TagStringName\">shr_shipping_type</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"28\"><String name=\"Value\">ACTUAL_RATE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"29\"><String name=\"TagStringName\">shr_min_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"30\"><String name=\"Value\">7.6</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"31\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"32\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"33\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"34\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"35\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"36\"><String name=\"Value\">-9</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"37\"><String name=\"TagStringName\">INTERNATIONAL_RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"38\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"39\"><String name=\"TagStringName\">shr_weight_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"40\"><String name=\"Value\">oz</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"41\"><String name=\"TagStringName\">PAYPAL_EMAIL_ADDRESS</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"42\"><String name=\"Value\">grandmerchant2@gmail.com</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"43\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"44\"><String name=\"Value\">selectOwnDetails</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"45\"><String name=\"TagStringName\">shr_length</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"46\"><String name=\"Value\">7.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"47\"><String name=\"TagStringName\">useShipReco</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"48\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"49\"><String name=\"TagStringName\">shr_weight</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"50\"><String name=\"Value\">13.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"51\"><String name=\"TagStringName\">BIN_PRICE_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"52\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"53\"><String name=\"TagStringName\">defaultFreeShippingRecommendation</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"54\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"55\"><String name=\"TagStringName\">AUCTION_RESERVE_PRICE_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"56\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"57\"><String name=\"TagStringName\">INTERNATIONAL_RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"58\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"59\"><String name=\"TagStringName\">shr_dimension_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"60\"><String name=\"Value\">inches</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"61\"><String name=\"TagStringName\">AUCTION_BO_PREFERENCE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"62\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"63\"><String name=\"TagStringName\">DEFAULT_DESCRIPTION_ADDED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"64\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"65\"><String name=\"TagStringName\">SMART_BO_ENABLED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"66\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"67\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"68\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"69\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"70\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"71\"><String name=\"TagStringName\">IS_SECURED_DESCRIPTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"72\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"73\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"74\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"75\"><String name=\"TagStringName\">systemEnforcedLocalPickup</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"76\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"77\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"78\"><String name=\"Value\">Worldwide</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"79\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"80\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity><Entity type=\"ApplicationCustomInfo\" id=\"81\"><Long name=\"ApplicationId\" value=\"384352\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"82\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"83\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"84\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"85\"><String name=\"TagStringName\">INTERACTED_MODULES</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"86\"><String name=\"Value\">PRICE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"87\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"88\"><String name=\"Value\">CUB</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"89\"><String name=\"TagStringName\">shr_max_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"90\"><String name=\"Value\">17.05</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"91\"><String name=\"TagStringName\">shr_height</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"92\"><String name=\"Value\">4.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"93\"><String name=\"TagStringName\">eBayAPISoapServiceCode0</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"94\"><String name=\"Value\">USPSPriority</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"95\"><String name=\"TagStringName\">SHIPPING_PACKAGE_DETAILS_UNKNOWN</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"96\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"97\"><String name=\"TagStringName\">shr_width</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"98\"><String name=\"Value\">8.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"99\"><String name=\"TagStringName\">shr_shipping_type</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"100\"><String name=\"Value\">ACTUAL_RATE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"101\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"102\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"103\"><String name=\"TagStringName\">shr_min_cost</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"104\"><String name=\"Value\">9.8</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"105\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"106\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"107\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"108\"><String name=\"Value\">0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"109\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"110\"><String name=\"Value\">selectOwnDetails</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"111\"><String name=\"TagStringName\">shr_weight_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"112\"><String name=\"Value\">oz</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"113\"><String name=\"TagStringName\">shr_length</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"114\"><String name=\"Value\">10.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"115\"><String name=\"TagStringName\">shr_weight</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"116\"><String name=\"Value\">32.0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"117\"><String name=\"TagStringName\">shr_dimension_unit</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"118\"><String name=\"Value\">inches</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"119\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"120\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"121\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"122\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"123\"><String name=\"TagStringName\">IS_SECURED_DESCRIPTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"124\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"125\"><String name=\"TagStringName\">systemEnforcedLocalPickup</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"126\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"127\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"128\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"129\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"130\"><String name=\"Value\">Worldwide</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"131\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"132\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity></Collection></Entity></v4entities>",
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 256,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 1,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "0=3,2=3,100=3,210=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "297798656"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/MTU2MVg5MDQ=/z/nigAAOSwK~5lDzXh/$_57.PNG?set_id=880000500F",
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3819349461402",
+        "totCumLstgs": {
+            "$numberLong": "0"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3821513525900",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1695504571,
+            "modification_date": 1783116974,
+            "revision": 51
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "UNVERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1695504571000"
+        },
+        "fl3": {
+            "$numberLong": "131074"
+        },
+        "fl2": {
+            "$numberLong": "0"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "9437184"
+        },
+        "fl4": {
+            "$numberLong": "0"
+        },
+        "props": {
+            "$numberLong": "0"
+        },
+        "fl7": {
+            "$numberLong": "0"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "16783392"
+        },
+        "fl8": {
+            "$numberLong": "262145"
+        },
+        "galPicMd5Hsh": null,
+        "lastModDate": {
+            "$numberLong": "1783116974000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "0",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "2593"
+        },
+        "fl12": {
+            "$numberLong": "268435584"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "0"
+        },
+        "prgDt": {
+            "$numberLong": "1785708974000"
+        },
+        "fl10": {
+            "$numberLong": "1024"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "UPDATE",
+                "value": "384352"
+            },
+            {
+                "name": "CREATE",
+                "value": "384352"
+            }
+        ],
+        "appCstmInfo": "<v4entities version=\"1.0\"><Entity type=\"ApplicationCustomInfoList\" id=\"0\"><Collection name=\"ApplicationCustomInfo\"><Entity type=\"ApplicationCustomInfo\" id=\"1\"><Long name=\"ApplicationId\" value=\"384352\"/><Entity type=\"TagNameValuesList\" name=\"ApplicationTagNameValues\" id=\"2\"><Collection name=\"TagNamesAndValues\"><Entity type=\"TagNameValues\" id=\"3\"><String name=\"TagStringName\">isPriceDirty</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"4\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"5\"><String name=\"TagStringName\">SHIPPING_SELECTED_VIEW</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"6\"><String name=\"Value\">selectOwnShipping</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"7\"><String name=\"TagStringName\">autoRelistEligibleListing</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"8\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"9\"><String name=\"TagStringName\">autoRelistsRemaining</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"10\"><String name=\"Value\">0</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"11\"><String name=\"TagStringName\">ATTRIBUTE_VIEW_SELECTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"12\"><String name=\"Value\">selectOwnDetails</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"13\"><String name=\"TagStringName\">intlShippingServicePackageType4</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"14\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"15\"><String name=\"TagStringName\">intlShippingServicePackageType5</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"16\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"17\"><String name=\"TagStringName\">intlShippingServicePackageType2</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"18\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"19\"><String name=\"TagStringName\">intlShippingServicePackageType3</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"20\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"21\"><String name=\"TagStringName\">INTERACTED_MODULES</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"22\"><String name=\"Value\">PRICE</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"23\"><String name=\"TagStringName\">LISTING_TOOL</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"24\"><String name=\"Value\">CUB</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"25\"><String name=\"TagStringName\">intlShippingServicePackageType1</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"26\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"27\"><String name=\"TagStringName\">RETURN_DURATION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"28\"><String name=\"Value\">Days_30</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"29\"><String name=\"TagStringName\">RESTOCKING_FEE</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"30\"><String name=\"Value\">NoRestockingFee</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"31\"><String name=\"TagStringName\">IS_SECURED_DESCRIPTION</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"32\"><String name=\"Value\">true</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"33\"><String name=\"TagStringName\">systemEnforcedLocalPickup</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"34\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"35\"><String name=\"TagStringName\">RETURN_SHIPPING_PAYER</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"36\"><String name=\"Value\">Buyer</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"37\"><String name=\"TagStringName\">domesticShippingServicePackageType1</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"38\"><String name=\"Value\">EMPTY</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"39\"><String name=\"TagStringName\">SHIPPING_DETAILS_AUTO_FILLED</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"40\"><String name=\"Value\">false</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"41\"><String name=\"TagStringName\">INTL_SHIPPING_PREF</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"42\"><String name=\"Value\">Worldwide</String></Entity></Collection></Entity><Entity type=\"TagNameValues\" id=\"43\"><String name=\"TagStringName\">REFUND_METHOD</String><Collection name=\"TagValues\"><Entity type=\"TagStringValue\" id=\"44\"><String name=\"Value\">MoneyBack</String></Entity></Collection></Entity></Collection></Entity></Entity></Collection></Entity></v4entities>",
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 256,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "3=3,205=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "297798656"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/MTUyNVgxNjAw/z/wiUAAOSwQPplD1jO/$_57.JPG?set_id=880000500F",
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3821513525900",
+        "totCumLstgs": {
+            "$numberLong": "38093"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3828295362621",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1692938023,
+            "modification_date": 1786441970,
+            "revision": 20
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "UNVERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1692938022000"
+        },
+        "fl3": {
+            "$numberLong": "131074"
+        },
+        "fl2": {
+            "$numberLong": "25427968"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "13631488"
+        },
+        "fl4": {
+            "$numberLong": "20"
+        },
+        "props": {
+            "$numberLong": "269484032"
+        },
+        "fl7": {
+            "$numberLong": "8388608"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "16845312"
+        },
+        "fl8": {
+            "$numberLong": "262149"
+        },
+        "galPicMd5Hsh": "mprdiHI2LohwsySDbWEJhnw",
+        "lastModDate": {
+            "$numberLong": "1786441970000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "235037154051",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "43"
+        },
+        "fl12": {
+            "$numberLong": "4224"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "8192"
+        },
+        "prgDt": {
+            "$numberLong": "1789033970000"
+        },
+        "fl10": {
+            "$numberLong": "16786432"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "CREATE",
+                "value": "415699"
+            }
+        ],
+        "appCstmInfo": null,
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 268435712,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "3=3,205=3",
+        "thFl": {
+            "$numberLong": "0"
+        },
+        "visitCnt": {
+            "$numberLong": "1086327808"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/ODAwWDUxNg==/z/YOwAAOSwcH9iDrf1/$_57.JPG?set_id=8800005007",
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3828295362621",
+        "totCumLstgs": {
+            "$numberLong": "1065"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3828520091820",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1692938023,
+            "modification_date": 1786442042,
+            "revision": 19
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "VERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1692938022000"
+        },
+        "fl3": {
+            "$numberLong": "131074"
+        },
+        "fl2": {
+            "$numberLong": "25427968"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "13631488"
+        },
+        "fl4": {
+            "$numberLong": "20"
+        },
+        "props": {
+            "$numberLong": "269484032"
+        },
+        "fl7": {
+            "$numberLong": "8388608"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "16845312"
+        },
+        "fl8": {
+            "$numberLong": "262149"
+        },
+        "galPicMd5Hsh": "mQeNP_-HkheCF5fqnE3P_bA",
+        "lastModDate": {
+            "$numberLong": "1786442042000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "235037151182",
+        "lstgTmpltFls": 1,
+        "fl": {
+            "$numberLong": "43"
+        },
+        "fl12": {
+            "$numberLong": "4224"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "8192"
+        },
+        "prgDt": {
+            "$numberLong": "1789034042000"
+        },
+        "fl10": {
+            "$numberLong": "16786432"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "CREATE",
+                "value": "415699"
+            }
+        ],
+        "appCstmInfo": null,
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": 268435712,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "3=3,205=3",
+        "thFl": {
+            "$numberLong": "10"
+        },
+        "visitCnt": {
+            "$numberLong": "1086327808"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/ODAwWDU0Mw==/z/RPMAAOSwse1gkZBX/$_57.JPG?set_id=8800005007",
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3828520091820",
+        "totCumLstgs": {
+            "$numberLong": "1065"
+        }
+    },
+    {
+        "__key": [
+            {
+                "string": "3830014352023",
+                "collection": "__ROOT__"
+            }
+        ],
+        "__meta": {
+            "creation_date": 1692987495,
+            "modification_date": 1786441970,
+            "revision": 19
+        },
+        "strdFixdPrc": false,
+        "lstgTm": null,
+        "prmSaleEndDt": null,
+        "mnMxFls": null,
+        "lstgMthd": "ListingDraftService",
+        "pplIcnTp": "VERIFIED",
+        "ryiStat": 0,
+        "shipRgn": {
+            "$numberLong": "0"
+        },
+        "bidCnt": {
+            "$numberLong": "0"
+        },
+        "prmSaleStrtDt": null,
+        "itmId": null,
+        "pbpElig": {
+            "$numberLong": "0"
+        },
+        "itmRevsnDt": null,
+        "crtDate": {
+            "$numberLong": "1692987494000"
+        },
+        "fl3": {
+            "$numberLong": "131074"
+        },
+        "fl2": {
+            "$numberLong": "25165824"
+        },
+        "mkdnSaleItmPrcRev": {
+            "$numberLong": "0"
+        },
+        "fl5": {
+            "$numberLong": "13631488"
+        },
+        "fl4": {
+            "$numberLong": "4"
+        },
+        "props": {
+            "$numberLong": "268435456"
+        },
+        "fl7": {
+            "$numberLong": "0"
+        },
+        "fl6": {
+            "$numberLong": "0"
+        },
+        "pwdEx": {
+            "$numberLong": "0"
+        },
+        "fl9": {
+            "$numberLong": "16845312"
+        },
+        "fl8": {
+            "$numberLong": "262149"
+        },
+        "galPicMd5Hsh": "m4v9uwnppl491T0wrdTIHOQ",
+        "lastModDate": {
+            "$numberLong": "1786441969000"
+        },
+        "strCatIds": null,
+        "slfHstdPic": null,
+        "origItmId": "234876939545",
+        "lstgTmpltFls": 0,
+        "fl": {
+            "$numberLong": "43"
+        },
+        "fl12": {
+            "$numberLong": "4224"
+        },
+        "qtySold": 0,
+        "fl11": {
+            "$numberLong": "8192"
+        },
+        "prgDt": {
+            "$numberLong": "1789033969000"
+        },
+        "fl10": {
+            "$numberLong": "16786432"
+        },
+        "usgHistDtl": [
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "UPDATE",
+                "value": "415699"
+            },
+            {
+                "name": "CREATE",
+                "value": "415699"
+            }
+        ],
+        "appCstmInfo": null,
+        "scrtchFl": 0,
+        "ftmtCnt": 0,
+        "scrtchFl3": 0,
+        "scrtchFl4": -2147483648,
+        "slfHstdPicMap": null,
+        "scrtchFl2": 0,
+        "lstdItmId": "0",
+        "saleStat": {
+            "$numberLong": "33554432"
+        },
+        "itmVisOpt": "3=3,205=3",
+        "thFl": {
+            "$numberLong": "10"
+        },
+        "visitCnt": {
+            "$numberLong": "1086327808"
+        },
+        "usrItmPrpKey": null,
+        "galUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjU2/z/RfsAAOSw4~1cXw6u/$_57.JPG?set_id=8800005007",
+        "descRevsnDt": null,
+        "autoRlstOrigAppId": null,
+        "PK": "3830014352023",
+        "totCumLstgs": {
+            "$numberLong": "1065"
+        }
+    }
+]
