@@ -134,7 +134,7 @@ class RawLdmPayloadTests(unittest.TestCase):
             )
             self.assertEqual(
                 fields[1]["description"],
-                "JSON-serialized object. Listing detail values.",
+                "JSON-serialized object or array. Listing detail values.",
             )
 
     def test_repository_payloads_serialize_every_nested_field_group(self):
@@ -165,10 +165,43 @@ class RawLdmPayloadTests(unittest.TestCase):
                 )
                 self.assertTrue(
                     fields[field_name]["description"].startswith(
-                        "JSON-serialized object."
+                        "JSON-serialized object or array."
                     ),
                     f"{schema_path.name}/{field_name}",
                 )
+
+    def test_serializes_first_level_object_arrays_as_strings(self):
+        item_root = next(
+            artifact
+            for artifact in build_payloads(DATA_DIR, DOCS_DIR)
+            if artifact.payload["name"] == "item_root"
+        )
+        sample = json.loads(
+            (
+                DATA_DIR
+                / "sample-data"
+                / "item-raw-ldm-samples"
+                / "ItemKeyspace"
+                / "ItemKeyspace_ROOT_.json"
+            ).read_text(encoding="utf-8")
+        )
+        aspects = next(
+            field for field in item_root.payload["fields"] if field["name"] == "aspects"
+        )
+
+        self.assertTrue(
+            any(
+                isinstance(record.get("aspects"), list)
+                and any(isinstance(value, dict) for value in record["aspects"])
+                for record in sample
+            )
+        )
+        self.assertEqual(json.loads(aspects["dataType"])["type"], "string")
+        self.assertEqual(
+            aspects["description"],
+            "JSON-serialized object or array. "
+            "Item aspects, each with an aspect name and its values.",
+        )
 
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
