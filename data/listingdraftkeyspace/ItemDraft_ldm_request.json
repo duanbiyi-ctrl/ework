@@ -7,7 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Cost of goods, including currency and value.",
+      "description": "JSON-serialized object or array. Cost of goods, including currency and value.",
       "hierarchicalName": "COGs",
       "name": "COGs",
       "ordinal": 1,
@@ -27,7 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Auction reserve price, including currency and value.",
+      "description": "JSON-serialized object or array. Auction reserve price, including currency and value.",
       "hierarchicalName": "auctRsvPrc",
       "name": "auctRsvPrc",
       "ordinal": 3,
@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Auto-relist settings, including its enablement and relist count.",
+      "description": "JSON-serialized object or array. Auto-relist settings, including its enablement and relist count.",
       "hierarchicalName": "autoRlsTrm",
       "name": "autoRlsTrm",
       "ordinal": 4,
@@ -57,7 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Business-policy set and embedded return, payment, and shipping terms.",
+      "description": "JSON-serialized object or array. Business-policy set and embedded return, payment, and shipping terms.",
       "hierarchicalName": "bizPol",
       "name": "bizPol",
       "ordinal": 6,
@@ -77,7 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Best-offer settings, including offer flags and automatic threshold prices.",
+      "description": "JSON-serialized object or array. Best-offer settings, including offer flags and automatic threshold prices.",
       "hierarchicalName": "bstOfrTrm",
       "name": "bstOfrTrm",
       "ordinal": 8,
@@ -87,7 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds.",
+      "description": "JSON-serialized object or array. Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds.",
       "hierarchicalName": "buyrRst",
       "name": "buyrRst",
       "ordinal": 9,
@@ -107,7 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Charity identifier and donation percentage.",
+      "description": "JSON-serialized object or array. Charity identifier and donation percentage.",
       "hierarchicalName": "chrty",
       "name": "chrty",
       "ordinal": 11,
@@ -177,7 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Custom take-back and product-compliance policy identifiers, including regional policy associations.",
+      "description": "JSON-serialized object or array. Custom take-back and product-compliance policy identifiers, including regional policy associations.",
       "hierarchicalName": "cstmPol",
       "name": "cstmPol",
       "ordinal": 18,
@@ -187,7 +187,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Current price, including currency and value.",
+      "description": "JSON-serialized object or array. Current price, including currency and value.",
       "hierarchicalName": "currPrc",
       "name": "currPrc",
       "ordinal": 19,
@@ -217,7 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Vehicle document data, including title, VIN, and odometer values.",
+      "description": "JSON-serialized object or array. Vehicle document data, including title, VIN, and odometer values.",
       "hierarchicalName": "docs",
       "name": "docs",
       "ordinal": 22,
@@ -267,7 +267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. eBay community identifiers and marketplace-visibility setting.",
+      "description": "JSON-serialized object or array. eBay community identifiers and marketplace-visibility setting.",
       "hierarchicalName": "ebayCmnty",
       "name": "ebayCmnty",
       "ordinal": 27,
@@ -297,7 +297,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Extended producer responsibility identifiers, document references, and eco-fee data.",
+      "description": "JSON-serialized object or array. Extended producer responsibility identifiers, document references, and eco-fee data.",
       "hierarchicalName": "epr",
       "name": "epr",
       "ordinal": 30,
@@ -307,7 +307,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Fulfillment settings, including shipping options, package specifications, and delivery-related flags.",
+      "description": "JSON-serialized object or array. Fulfillment settings, including shipping options, package specifications, and delivery-related flags.",
       "hierarchicalName": "ffTrm",
       "name": "ffTrm",
       "ordinal": 31,
@@ -347,7 +347,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Fixed price, including currency and value.",
+      "description": "JSON-serialized object or array. Fixed price, including currency and value.",
       "hierarchicalName": "fxdPrc",
       "name": "fxdPrc",
       "ordinal": 35,
@@ -357,7 +357,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. High-precision fixed price, including currency and value.",
+      "description": "JSON-serialized object or array. High-precision fixed price, including currency and value.",
       "hierarchicalName": "fxdPrcHP",
       "name": "fxdPrcHP",
       "ordinal": 36,
@@ -517,7 +517,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Marketing-price data, including comparison, advertised, retail, and pricing-treatment values.",
+      "description": "JSON-serialized object or array. Marketing-price data, including comparison, advertised, retail, and pricing-treatment values.",
       "hierarchicalName": "mktPrc",
       "name": "mktPrc",
       "ordinal": 52,
@@ -557,7 +557,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Original item price, including currency and value.",
+      "description": "JSON-serialized object or array. Original item price, including currency and value.",
       "hierarchicalName": "origItmPrc",
       "name": "origItmPrc",
       "ordinal": 56,
@@ -607,7 +607,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Payment-policy identifier and version.",
+      "description": "JSON-serialized object or array. Payment-policy identifier and version.",
       "hierarchicalName": "pymtPlcyId",
       "name": "pymtPlcyId",
       "ordinal": 61,
@@ -627,7 +627,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels.",
+      "description": "JSON-serialized object or array. Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels.",
       "hierarchicalName": "rgltryInfo",
       "name": "rgltryInfo",
       "ordinal": 63,
@@ -657,7 +657,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Return-policy identifier and version.",
+      "description": "JSON-serialized object or array. Return-policy identifier and version.",
       "hierarchicalName": "rtrnsPlcyId",
       "name": "rtrnsPlcyId",
       "ordinal": 66,
@@ -697,7 +697,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Shipping-policy identifier and version.",
+      "description": "JSON-serialized object or array. Shipping-policy identifier and version.",
       "hierarchicalName": "shipPlcyId",
       "name": "shipPlcyId",
       "ordinal": 70,
@@ -717,7 +717,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Seller identity, contact, and support-hours data.",
+      "description": "JSON-serialized object or array. Seller identity, contact, and support-hours data.",
       "hierarchicalName": "slr",
       "name": "slr",
       "ordinal": 72,
@@ -787,7 +787,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Starting-bid price, including currency and value.",
+      "description": "JSON-serialized object or array. Starting-bid price, including currency and value.",
       "hierarchicalName": "strtBidPrc",
       "name": "strtBidPrc",
       "ordinal": 79,
@@ -797,7 +797,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. High-precision starting-bid price, including currency and value.",
+      "description": "JSON-serialized object or array. High-precision starting-bid price, including currency and value.",
       "hierarchicalName": "strtBidPrcHP",
       "name": "strtBidPrcHP",
       "ordinal": 80,
@@ -817,7 +817,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Tax applicability, jurisdiction, category, rate, and VAT data.",
+      "description": "JSON-serialized object or array. Tax applicability, jurisdiction, category, rate, and VAT data.",
       "hierarchicalName": "tax",
       "name": "tax",
       "ordinal": 82,
@@ -827,7 +827,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Trading-scope data, including international visibility and local distribution.",
+      "description": "JSON-serialized object or array. Trading-scope data, including international visibility and local distribution.",
       "hierarchicalName": "trdScp",
       "name": "trdScp",
       "ordinal": 83,
@@ -877,7 +877,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options.",
+      "description": "JSON-serialized object or array. Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options.",
       "hierarchicalName": "visEnh",
       "name": "visEnh",
       "ordinal": 88,
@@ -897,7 +897,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Item aspect entries, each containing an aspect name and values.",
+      "description": "JSON-serialized object or array. Item aspect entries, each containing an aspect name and values.",
       "hierarchicalName": "aspct",
       "name": "aspct",
       "ordinal": 90,
@@ -907,7 +907,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Global identifier name/value entries.",
+      "description": "JSON-serialized object or array. Global identifier name/value entries.",
       "hierarchicalName": "glbId",
       "name": "glbId",
       "ordinal": 91,
@@ -917,7 +917,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Image mappings, including external and eBay image URLs and display order.",
+      "description": "JSON-serialized object or array. Image mappings, including external and eBay image URLs and display order.",
       "hierarchicalName": "img",
       "name": "img",
       "ordinal": 92,

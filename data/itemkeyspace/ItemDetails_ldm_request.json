@@ -7,7 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Item document details, including vehicle-title, VIN, and odometer information when available.",
+      "description": "JSON-serialized object or array. Item document details, including vehicle-title, VIN, and odometer information when available.",
       "hierarchicalName": "docs",
       "name": "docs",
       "ordinal": 1,
@@ -17,7 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. High-precision fixed-price amount.",
+      "description": "JSON-serialized object or array. High-precision fixed-price amount.",
       "hierarchicalName": "fixedPriceHP",
       "name": "fixedPriceHP",
       "ordinal": 2,
@@ -47,7 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. High-precision starting-bid amount.",
+      "description": "JSON-serialized object or array. High-precision starting-bid amount.",
       "hierarchicalName": "strtBidPriceHP",
       "name": "strtBidPriceHP",
       "ordinal": 5,

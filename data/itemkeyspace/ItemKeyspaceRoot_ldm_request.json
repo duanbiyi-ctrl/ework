@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Promotional pricing revision and free-shipping promotion settings.",
+      "description": "JSON-serialized object or array. Promotional pricing revision and free-shipping promotion settings.",
       "hierarchicalName": "PrmnlDtls",
       "name": "PrmnlDtls",
       "ordinal": 4,
@@ -67,7 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Auto-relisting setting and relist count.",
+      "description": "JSON-serialized object or array. Auto-relisting setting and relist count.",
       "hierarchicalName": "autoRlstTerms",
       "name": "autoRlstTerms",
       "ordinal": 7,
@@ -97,7 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Primary and secondary marketplace and store category identifiers.",
+      "description": "JSON-serialized object or array. Primary and secondary marketplace and store category identifiers.",
       "hierarchicalName": "category",
       "name": "category",
       "ordinal": 10,
@@ -107,7 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Charity identifier and donation percentage.",
+      "description": "JSON-serialized object or array. Charity identifier and donation percentage.",
       "hierarchicalName": "charity",
       "name": "charity",
       "ordinal": 11,
@@ -177,7 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Take-back and product-compliance policy identifiers, including regional policies.",
+      "description": "JSON-serialized object or array. Take-back and product-compliance policy identifiers, including regional policies.",
       "hierarchicalName": "cstmPol",
       "name": "cstmPol",
       "ordinal": 18,
@@ -217,7 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Community identifiers and marketplace visibility.",
+      "description": "JSON-serialized object or array. Community identifiers and marketplace visibility.",
       "hierarchicalName": "ebayCmnty",
       "name": "ebayCmnty",
       "ordinal": 22,
@@ -247,7 +247,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Producer-responsibility identifiers and eco fee.",
+      "description": "JSON-serialized object or array. Producer-responsibility identifiers and eco fee.",
       "hierarchicalName": "epr",
       "name": "epr",
       "ordinal": 25,
@@ -497,7 +497,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Listing duration, start and end times, and scheduled-listing and duplicate-auction status.",
+      "description": "JSON-serialized object or array. Listing duration, start and end times, and scheduled-listing and duplicate-auction status.",
       "hierarchicalName": "lifecycle",
       "name": "lifecycle",
       "ordinal": 50,
@@ -627,7 +627,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information.",
+      "description": "JSON-serialized object or array. Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information.",
       "hierarchicalName": "rgltryInfo",
       "name": "rgltryInfo",
       "ordinal": 63,
@@ -717,7 +717,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Support company, contact details, availability, hours, and supported days.",
+      "description": "JSON-serialized object or array. Support company, contact details, availability, hours, and supported days.",
       "hierarchicalName": "sprtCntct",
       "name": "sprtCntct",
       "ordinal": 72,
@@ -727,7 +727,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Sales-tax and VAT applicability, location, category, and rate details.",
+      "description": "JSON-serialized object or array. Sales-tax and VAT applicability, location, category, and rate details.",
       "hierarchicalName": "tax",
       "name": "tax",
       "ordinal": 73,
@@ -747,7 +747,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. International visibility and local listing distribution settings.",
+      "description": "JSON-serialized object or array. International visibility and local listing distribution settings.",
       "hierarchicalName": "trdScp",
       "name": "trdScp",
       "ordinal": 75,
@@ -757,7 +757,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Best-offer, buyer-restriction, fulfillment, policy, and warranty terms.",
+      "description": "JSON-serialized object or array. Best-offer, buyer-restriction, fulfillment, policy, and warranty terms.",
       "hierarchicalName": "trmsAndPolicies",
       "name": "trmsAndPolicies",
       "ordinal": 76,
@@ -807,7 +807,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Title, gallery, photo-display, visitor-counter, and subtitle enhancements.",
+      "description": "JSON-serialized object or array. Title, gallery, photo-display, visitor-counter, and subtitle enhancements.",
       "hierarchicalName": "vslEncmt",
       "name": "vslEncmt",
       "ordinal": 81,
@@ -817,7 +817,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Item aspects, each with an aspect name and its values.",
+      "description": "JSON-serialized object or array. Item aspects, each with an aspect name and its values.",
       "hierarchicalName": "aspects",
       "name": "aspects",
       "ordinal": 82,
@@ -827,7 +827,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Global item identifiers represented as name-value pairs.",
+      "description": "JSON-serialized object or array. Global item identifiers represented as name-value pairs.",
       "hierarchicalName": "gblIdentifiers",
       "name": "gblIdentifiers",
       "ordinal": 83,
@@ -837,7 +837,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Item images with external and eBay URLs and display order.",
+      "description": "JSON-serialized object or array. Item images with external and eBay URLs and display order.",
       "hierarchicalName": "images",
       "name": "images",
       "ordinal": 84,

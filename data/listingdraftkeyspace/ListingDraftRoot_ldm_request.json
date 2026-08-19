@@ -557,7 +557,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Usage-history detail name/value entries.",
+      "description": "JSON-serialized object or array. Usage-history detail name/value entries.",
       "hierarchicalName": "usgHistDtl",
       "name": "usgHistDtl",
       "ordinal": 56,

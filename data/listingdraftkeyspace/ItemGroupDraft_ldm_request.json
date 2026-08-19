@@ -17,7 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Business-policy set and its embedded policy terms.",
+      "description": "JSON-serialized object or array. Business-policy set and its embedded policy terms.",
       "hierarchicalName": "bizPol",
       "name": "bizPol",
       "ordinal": 2,
@@ -47,7 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Image-variation configuration, including the variation trait and its image associations.",
+      "description": "JSON-serialized object or array. Image-variation configuration, including the variation trait and its image associations.",
       "hierarchicalName": "imgsVryBy",
       "name": "imgsVryBy",
       "ordinal": 5,
@@ -67,7 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Image mappings for the group.",
+      "description": "JSON-serialized object or array. Image mappings for the group.",
       "hierarchicalName": "img",
       "name": "img",
       "ordinal": 7,
@@ -77,7 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Item variation trait name/value entries.",
+      "description": "JSON-serialized object or array. Item variation trait name/value entries.",
       "hierarchicalName": "itmsVryBy",
       "name": "itmsVryBy",
       "ordinal": 8,

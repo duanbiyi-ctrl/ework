@@ -17,7 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email.",
+      "description": "JSON-serialized object or array. Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email.",
       "hierarchicalName": "pmtTrms",
       "name": "pmtTrms",
       "ordinal": 2,
@@ -27,7 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms.",
+      "description": "JSON-serialized object or array. Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms.",
       "hierarchicalName": "retTrms",
       "name": "retTrms",
       "ordinal": 3,
@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs.",
+      "description": "JSON-serialized object or array. Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs.",
       "hierarchicalName": "shipTrms",
       "name": "shipTrms",
       "ordinal": 4,

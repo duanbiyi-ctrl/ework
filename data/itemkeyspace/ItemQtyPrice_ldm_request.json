@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Scheduled and end dates for the listing lifecycle.",
+      "description": "JSON-serialized object or array. Scheduled and end dates for the listing lifecycle.",
       "hierarchicalName": "lifecycle",
       "name": "lifecycle",
       "ordinal": 4,
@@ -47,7 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment.",
+      "description": "JSON-serialized object or array. Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment.",
       "hierarchicalName": "price",
       "name": "price",
       "ordinal": 5,

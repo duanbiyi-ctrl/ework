@@ -87,7 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Trait-driven image variation configuration.",
+      "description": "JSON-serialized object or array. Trait-driven image variation configuration.",
       "hierarchicalName": "imgVryBy",
       "name": "imgVryBy",
       "ordinal": 9,
@@ -147,7 +147,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Global product identifiers for the group.",
+      "description": "JSON-serialized object or array. Global product identifiers for the group.",
       "hierarchicalName": "globalIdentifiers",
       "name": "globalIdentifiers",
       "ordinal": 15,
@@ -157,7 +157,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Shared group images, including image URLs and display order.",
+      "description": "JSON-serialized object or array. Shared group images, including image URLs and display order.",
       "hierarchicalName": "images",
       "name": "images",
       "ordinal": 16,
@@ -167,7 +167,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Traits by which the group's items vary.",
+      "description": "JSON-serialized object or array. Traits by which the group's items vary.",
       "hierarchicalName": "itmsVryBy",
       "name": "itmsVryBy",
       "ordinal": 17,

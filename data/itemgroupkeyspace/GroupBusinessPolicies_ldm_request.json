@@ -17,7 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Embedded payment terms, including payment methods, deposit requirements, and payment instructions.",
+      "description": "JSON-serialized object or array. Embedded payment terms, including payment methods, deposit requirements, and payment instructions.",
       "hierarchicalName": "pmtTrms",
       "name": "pmtTrms",
       "ordinal": 2,
@@ -27,7 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility.",
+      "description": "JSON-serialized object or array. Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility.",
       "hierarchicalName": "retTrms",
       "name": "retTrms",
       "ordinal": 3,
@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Embedded shipping terms, including destinations, excluded locations, handling time, and service options.",
+      "description": "JSON-serialized object or array. Embedded shipping terms, including destinations, excluded locations, handling time, and service options.",
       "hierarchicalName": "shipTrms",
       "name": "shipTrms",
       "ordinal": 4,

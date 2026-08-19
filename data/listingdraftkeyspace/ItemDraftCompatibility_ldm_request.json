@@ -27,7 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Compatibility entries for the item draft.",
+      "description": "JSON-serialized object or array. Compatibility entries for the item draft.",
       "hierarchicalName": "compat",
       "name": "compat",
       "ordinal": 3,

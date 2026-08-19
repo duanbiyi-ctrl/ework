@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "JSON-serialized object. Historical summary of a listing revision and its changed property groups. Inferred field: rvsn id reference.",
+      "description": "JSON-serialized object or array. Historical summary of a listing revision and its changed property groups. Inferred field: rvsn id reference.",
       "hierarchicalName": "rvsnId",
       "name": "rvsnId",
       "ordinal": 4,
