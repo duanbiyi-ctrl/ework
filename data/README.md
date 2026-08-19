@@ -17,6 +17,12 @@ Verify that every generated request is current:
 python3 scripts/generate_raw_ldm_payloads.py --check
 ```
 
+Generated RAW LDM requests expose first-level NuDocument fields only. A
+first-level field with dotted source-schema descendants is emitted as an Avro
+`string`; producers must serialize the complete object or struct as a JSON
+string value. Direct first-level scalar and string-array fields retain their
+source types.
+
 Audit every source schema against its paired production NuDocument sample and
 emit a standalone Markdown report:
 
