@@ -32,10 +32,6 @@ class RawLdmPayloadTests(unittest.TestCase):
             {"type": "long", "default": None},
         )
         self.assertEqual(
-            json.loads(encode_avro_type("string[]")),
-            {"type": "array", "items": "string", "default": None},
-        )
-        self.assertEqual(
             json.loads(encode_avro_type("date")),
             {"type": "int", "logicalType": "date", "default": None},
         )
@@ -87,6 +83,12 @@ class RawLdmPayloadTests(unittest.TestCase):
                                 "comment": "Detail enabled flag.",
                                 "nullable": None,
                             },
+                            {
+                                "name": "tags",
+                                "type": "string[]",
+                                "comment": "Listing tags.",
+                                "nullable": None,
+                            },
                         ],
                     }
                 ),
@@ -115,7 +117,10 @@ class RawLdmPayloadTests(unittest.TestCase):
 
             fields = build_payloads(data_dir, docs_dir)[0].payload["fields"]
 
-            self.assertEqual([field["name"] for field in fields], ["title", "details"])
+            self.assertEqual(
+                [field["name"] for field in fields],
+                ["title", "details", "tags"],
+            )
             self.assertEqual(
                 json.loads(fields[0]["dataType"]),
                 {
@@ -135,6 +140,18 @@ class RawLdmPayloadTests(unittest.TestCase):
             self.assertEqual(
                 fields[1]["description"],
                 "JSON-serialized object or array. Listing detail values.",
+            )
+            self.assertEqual(
+                json.loads(fields[2]["dataType"]),
+                {
+                    "type": "string",
+                    "avro.java.string": "String",
+                    "default": None,
+                },
+            )
+            self.assertEqual(
+                fields[2]["description"],
+                "JSON-serialized array. Listing tags.",
             )
 
     def test_repository_payloads_serialize_every_nested_field_group(self):
@@ -202,6 +219,43 @@ class RawLdmPayloadTests(unittest.TestCase):
             "JSON-serialized object or array. "
             "Item aspects, each with an aspect name and its values.",
         )
+
+    def test_repository_payloads_serialize_every_array_as_strings(self):
+        artifacts = {
+            artifact.schema_path: artifact.payload
+            for artifact in build_payloads(DATA_DIR, DOCS_DIR)
+        }
+
+        for schema_path, payload in artifacts.items():
+            schema = json.loads(schema_path.read_text(encoding="utf-8"))
+            array_names = {
+                column["name"]
+                for column in schema["Columns"]
+                if column["name"] != "__KEY"
+                and "." not in column["name"]
+                and column["type"] == "string[]"
+            }
+            fields = {field["name"]: field for field in payload["fields"]}
+
+            for field_name in array_names:
+                self.assertEqual(
+                    json.loads(fields[field_name]["dataType"])["type"],
+                    "string",
+                    f"{schema_path.name}/{field_name}",
+                )
+                self.assertTrue(
+                    fields[field_name]["description"].startswith(
+                        "JSON-serialized array."
+                    ),
+                    f"{schema_path.name}/{field_name}",
+                )
+            self.assertFalse(
+                any(
+                    json.loads(field["dataType"])["type"] == "array"
+                    for field in payload["fields"]
+                ),
+                schema_path.name,
+            )
 
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
