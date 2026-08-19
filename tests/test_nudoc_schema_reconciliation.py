@@ -79,6 +79,25 @@ class NuDocSchemaReconciliationTests(unittest.TestCase):
                 {},
             )
 
+    def test_uses_double_for_mixed_integer_and_decimal_observations(self):
+        reconciled = reconcile_schema(
+            {"Columns": []},
+            {"score": {"integer", "number"}},
+            {"score": "Listing score."},
+        )
+
+        self.assertEqual(
+            reconciled["Columns"],
+            [
+                {
+                    "name": "score",
+                    "type": "numberDouble",
+                    "comment": "Listing score.",
+                    "nullable": None,
+                }
+            ],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
