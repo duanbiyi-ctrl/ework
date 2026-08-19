@@ -98,6 +98,36 @@ class NuDocSampleAuditTests(unittest.TestCase):
         self.assertNotIn("crLstgDtVrs", result.undocumented_paths)
         self.assertNotIn("lifecycle", result.undocumented_paths)
 
+    def test_listing_revision_root_expiration_is_documented(self):
+        listing_revision_root = next(
+            docset
+            for docset in discover_docsets(DATA_DIR, SAMPLE_DIR, DOCS_DIR)
+            if docset.keyspace == "ListingRevisionKeyspace"
+            and docset.docset == "__ROOT__"
+        )
+        schema = json.loads(
+            listing_revision_root.schema_path.read_text(encoding="utf-8")
+        )
+        expired_date = next(
+            column
+            for column in schema["Columns"]
+            if column["name"] == "expiredDate"
+        )
+        entity_page = listing_revision_root.doc_path.read_text(encoding="utf-8")
+        result = audit_docsets((listing_revision_root,))[0]
+
+        self.assertEqual(
+            expired_date["comment"],
+            "Revision-history expiration date maintained by TTL maintenance.",
+        )
+        self.assertIn(
+            "| `expiredDate` | `Date` | Revision-history expiration date "
+            "maintained by TTL maintenance. |",
+            entity_page,
+        )
+        self.assertNotIn("expiredDate", result.missing_descriptions)
+        self.assertNotIn("expiredDate", result.undocumented_paths)
+
     def test_reports_schema_sample_and_documentation_contract_gaps(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)
