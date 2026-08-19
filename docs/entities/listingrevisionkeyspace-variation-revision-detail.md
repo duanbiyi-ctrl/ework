@@ -24,6 +24,7 @@
 
 | Field | Type | Description |
 | --- | --- | --- |
+| `lstgId` | `String` | Identifier of the listing whose variation property changed. |
 | `varId` | `String` | Identifier of the changed variation. |
 | `rvsdPrptyGrp` | `RevisedPropertyGroupEnum` | Group containing the changed variation property. |
 | `rvsdVarPrpty` | `RevisedVariationPropertyEnum` | Variation-specific property that changed. |

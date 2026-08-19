@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Application identifier for the resolved listing.",
       "hierarchicalName": "listingAppId",
       "name": "listingAppId",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing identifier resolved from the seller-and-UUID key.",
       "hierarchicalName": "listingId",
       "name": "listingId",
       "ordinal": 2,

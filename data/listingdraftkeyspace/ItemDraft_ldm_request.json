@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Cost of goods, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "COGs.currency",
       "name": "COGs.currency",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Cost of goods, including currency and value. Nested property: `value`.",
       "hierarchicalName": "COGs.value",
       "name": "COGs.value",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item draft document identifier.",
       "hierarchicalName": "PK",
       "name": "PK",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Auction reserve price, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "auctRsvPrc.currency",
       "name": "auctRsvPrc.currency",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Auction reserve price, including currency and value. Nested property: `value`.",
       "hierarchicalName": "auctRsvPrc.value",
       "name": "auctRsvPrc.value",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Auto-relist settings, including its enablement and relist count. Nested property: `autoRlst`.",
       "hierarchicalName": "autoRlsTrm.autoRlst",
       "name": "autoRlsTrm.autoRlst",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Auto-relist settings, including its enablement and relist count. Nested property: `rlstCnt`.",
       "hierarchicalName": "autoRlsTrm.rlstCnt",
       "name": "autoRlsTrm.rlstCnt",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Available quantity.",
       "hierarchicalName": "avlQty",
       "name": "avlQty",
       "ordinal": 8,
@@ -79,6 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.daysToFulPmt`.",
       "hierarchicalName": "bizPol.pmtTrms.daysToFulPmt",
       "name": "bizPol.pmtTrms.daysToFulPmt",
       "ordinal": 9,
@@ -88,6 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.depAmt.currency`.",
       "hierarchicalName": "bizPol.pmtTrms.depAmt.currency",
       "name": "bizPol.pmtTrms.depAmt.currency",
       "ordinal": 10,
@@ -97,6 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.depAmt.value`.",
       "hierarchicalName": "bizPol.pmtTrms.depAmt.value",
       "name": "bizPol.pmtTrms.depAmt.value",
       "ordinal": 11,
@@ -106,6 +117,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.depRqd`.",
       "hierarchicalName": "bizPol.pmtTrms.depRqd",
       "name": "bizPol.pmtTrms.depRqd",
       "ordinal": 12,
@@ -115,6 +127,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.hrsToDep`.",
       "hierarchicalName": "bizPol.pmtTrms.hrsToDep",
       "name": "bizPol.pmtTrms.hrsToDep",
       "ordinal": 13,
@@ -124,6 +137,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.immPay`.",
       "hierarchicalName": "bizPol.pmtTrms.immPay",
       "name": "bizPol.pmtTrms.immPay",
       "ordinal": 14,
@@ -133,6 +147,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.pmtInstr`.",
       "hierarchicalName": "bizPol.pmtTrms.pmtInstr",
       "name": "bizPol.pmtTrms.pmtInstr",
       "ordinal": 15,
@@ -142,6 +157,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.pmtMthd`.",
       "hierarchicalName": "bizPol.pmtTrms.pmtMthd",
       "name": "bizPol.pmtTrms.pmtMthd",
       "ordinal": 16,
@@ -151,6 +167,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.ppEmail`.",
       "hierarchicalName": "bizPol.pmtTrms.ppEmail",
       "name": "bizPol.pmtTrms.ppEmail",
       "ordinal": 17,
@@ -160,6 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.refMthd`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.refMthd",
       "name": "bizPol.retTrms.domRetTrm.refMthd",
       "ordinal": 18,
@@ -169,6 +187,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.retAcptd`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retAcptd",
       "name": "bizPol.retTrms.domRetTrm.retAcptd",
       "ordinal": 19,
@@ -178,6 +197,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.retPrd`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retPrd",
       "name": "bizPol.retTrms.domRetTrm.retPrd",
       "ordinal": 20,
@@ -187,6 +207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.retShpmtPayee`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retShpmtPayee",
       "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
       "ordinal": 21,
@@ -196,6 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.extHolRet`.",
       "hierarchicalName": "bizPol.retTrms.extHolRet",
       "name": "bizPol.retTrms.extHolRet",
       "ordinal": 22,
@@ -205,6 +227,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.refMthd`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.refMthd",
       "name": "bizPol.retTrms.intRetTrm.refMthd",
       "ordinal": 23,
@@ -214,6 +237,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.retAcptd`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retAcptd",
       "name": "bizPol.retTrms.intRetTrm.retAcptd",
       "ordinal": 24,
@@ -223,6 +247,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.retPrd`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retPrd",
       "name": "bizPol.retTrms.intRetTrm.retPrd",
       "ordinal": 25,
@@ -232,6 +257,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.retShpmtPayee`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retShpmtPayee",
       "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
       "ordinal": 26,
@@ -241,6 +267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.refMthd`.",
       "hierarchicalName": "bizPol.retTrms.refMthd",
       "name": "bizPol.retTrms.refMthd",
       "ordinal": 27,
@@ -250,6 +277,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.restFeePct`.",
       "hierarchicalName": "bizPol.retTrms.restFeePct",
       "name": "bizPol.retTrms.restFeePct",
       "ordinal": 28,
@@ -259,6 +287,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retAcptd`.",
       "hierarchicalName": "bizPol.retTrms.retAcptd",
       "name": "bizPol.retTrms.retAcptd",
       "ordinal": 29,
@@ -268,6 +297,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retInstr`.",
       "hierarchicalName": "bizPol.retTrms.retInstr",
       "name": "bizPol.retTrms.retInstr",
       "ordinal": 30,
@@ -277,6 +307,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retPrd`.",
       "hierarchicalName": "bizPol.retTrms.retPrd",
       "name": "bizPol.retTrms.retPrd",
       "ordinal": 31,
@@ -286,6 +317,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retShpmtPayee`.",
       "hierarchicalName": "bizPol.retTrms.retShpmtPayee",
       "name": "bizPol.retTrms.retShpmtPayee",
       "ordinal": 32,
@@ -295,6 +327,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.buyerRsp`.",
       "hierarchicalName": "bizPol.shipTrms.buyerRsp",
       "name": "bizPol.shipTrms.buyerRsp",
       "ordinal": 33,
@@ -304,6 +337,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.excldLocn`.",
       "hierarchicalName": "bizPol.shipTrms.excldLocn",
       "name": "bizPol.shipTrms.excldLocn",
       "ordinal": 34,
@@ -313,6 +347,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.hndlgTm`.",
       "hierarchicalName": "bizPol.shipTrms.hndlgTm",
       "name": "bizPol.shipTrms.hndlgTm",
       "ordinal": 35,
@@ -322,6 +357,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpToLocn`.",
       "hierarchicalName": "bizPol.shipTrms.shpToLocn",
       "name": "bizPol.shipTrms.shpToLocn",
       "ordinal": 36,
@@ -331,6 +367,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Brand.",
       "hierarchicalName": "brnd",
       "name": "brnd",
       "ordinal": 37,
@@ -340,6 +377,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autAccptEnbld`.",
       "hierarchicalName": "bstOfrTrm.autAccptEnbld",
       "name": "bstOfrTrm.autAccptEnbld",
       "ordinal": 38,
@@ -349,6 +387,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autAcptThrshPrc.currency`.",
       "hierarchicalName": "bstOfrTrm.autAcptThrshPrc.currency",
       "name": "bstOfrTrm.autAcptThrshPrc.currency",
       "ordinal": 39,
@@ -358,6 +397,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autAcptThrshPrc.value`.",
       "hierarchicalName": "bstOfrTrm.autAcptThrshPrc.value",
       "name": "bstOfrTrm.autAcptThrshPrc.value",
       "ordinal": 40,
@@ -367,6 +407,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autDclnEnbld`.",
       "hierarchicalName": "bstOfrTrm.autDclnEnbld",
       "name": "bstOfrTrm.autDclnEnbld",
       "ordinal": 41,
@@ -376,6 +417,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autDclnThrshPrc.currency`.",
       "hierarchicalName": "bstOfrTrm.autDclnThrshPrc.currency",
       "name": "bstOfrTrm.autDclnThrshPrc.currency",
       "ordinal": 42,
@@ -385,6 +427,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autDclnThrshPrc.value`.",
       "hierarchicalName": "bstOfrTrm.autDclnThrshPrc.value",
       "name": "bstOfrTrm.autDclnThrshPrc.value",
       "ordinal": 43,
@@ -394,6 +437,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `bestOfrEnbld`.",
       "hierarchicalName": "bstOfrTrm.bestOfrEnbld",
       "name": "bstOfrTrm.bestOfrEnbld",
       "ordinal": 44,
@@ -403,6 +447,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `prchsRateRqrmnt.minFdbkScore`.",
       "hierarchicalName": "buyrRst.prchsRateRqrmnt.minFdbkScore",
       "name": "buyrRst.prchsRateRqrmnt.minFdbkScore",
       "ordinal": 45,
@@ -412,6 +457,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `prchsRateRqrmnt.qntyLmtPerByr`.",
       "hierarchicalName": "buyrRst.prchsRateRqrmnt.qntyLmtPerByr",
       "name": "buyrRst.prchsRateRqrmnt.qntyLmtPerByr",
       "ordinal": 46,
@@ -421,6 +467,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `qntyLmtPerByr`.",
       "hierarchicalName": "buyrRst.qntyLmtPerByr",
       "name": "buyrRst.qntyLmtPerByr",
       "ordinal": 47,
@@ -430,6 +477,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `rsdncyShpToLocn`.",
       "hierarchicalName": "buyrRst.rsdncyShpToLocn",
       "name": "buyrRst.rsdncyShpToLocn",
       "ordinal": 48,
@@ -439,6 +487,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `rstrctBid`.",
       "hierarchicalName": "buyrRst.rstrctBid",
       "name": "buyrRst.rstrctBid",
       "ordinal": 49,
@@ -448,6 +497,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `rstrctnDate`.",
       "hierarchicalName": "buyrRst.rstrctnDate",
       "name": "buyrRst.rstrctnDate",
       "ordinal": 50,
@@ -457,6 +507,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `unpaidTranThrsh.count`.",
       "hierarchicalName": "buyrRst.unpaidTranThrsh.count",
       "name": "buyrRst.unpaidTranThrsh.count",
       "ordinal": 51,
@@ -466,6 +517,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `unpaidTranThrsh.period`.",
       "hierarchicalName": "buyrRst.unpaidTranThrsh.period",
       "name": "buyrRst.unpaidTranThrsh.period",
       "ordinal": 52,
@@ -475,6 +527,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Buyer-restrictions-disabled indicator.",
       "hierarchicalName": "buyrRstDsbld",
       "name": "buyrRstDsbld",
       "ordinal": 53,
@@ -484,6 +537,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Charity identifier and donation percentage. Nested property: `charityId`.",
       "hierarchicalName": "chrty.charityId",
       "name": "chrty.charityId",
       "ordinal": 54,
@@ -493,6 +547,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Charity identifier and donation percentage. Nested property: `donationPct`.",
       "hierarchicalName": "chrty.donationPct",
       "name": "chrty.donationPct",
       "ordinal": 55,
@@ -502,6 +557,7 @@
     },
     {
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "description": "Compressed item description.",
       "hierarchicalName": "cmpDesc",
       "name": "cmpDesc",
       "ordinal": 56,
@@ -511,6 +567,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Condition description.",
       "hierarchicalName": "cndDesc",
       "name": "cndDesc",
       "ordinal": 57,
@@ -520,6 +577,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Condition identifier.",
       "hierarchicalName": "cndId",
       "name": "cndId",
       "ordinal": 58,
@@ -529,6 +587,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Numeric condition identifier.",
       "hierarchicalName": "cndIdNum",
       "name": "cndIdNum",
       "ordinal": 59,
@@ -538,6 +597,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Creation date/time value.",
       "hierarchicalName": "crtDt",
       "name": "crtDt",
       "ordinal": 60,
@@ -547,6 +607,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Creation-mode classification.",
       "hierarchicalName": "crtMd",
       "name": "crtMd",
       "ordinal": 61,
@@ -556,6 +617,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Nested property: `prdCmplPolIds`.",
       "hierarchicalName": "cstmPol.prdCmplPolIds",
       "name": "cstmPol.prdCmplPolIds",
       "ordinal": 62,
@@ -565,6 +627,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Nested property: `tkBkPolId`.",
       "hierarchicalName": "cstmPol.tkBkPolId",
       "name": "cstmPol.tkBkPolId",
       "ordinal": 63,
@@ -574,6 +637,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Current price, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "currPrc.currency",
       "name": "currPrc.currency",
       "ordinal": 64,
@@ -583,6 +647,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Current price, including currency and value. Nested property: `value`.",
       "hierarchicalName": "currPrc.value",
       "name": "currPrc.value",
       "ordinal": 65,
@@ -592,6 +657,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Expanded item description.",
       "hierarchicalName": "desc",
       "name": "desc",
       "ordinal": 66,
@@ -601,6 +667,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Description revision date/time value.",
       "hierarchicalName": "descRevsnDt",
       "name": "descRevsnDt",
       "ordinal": 67,
@@ -610,6 +677,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `odometer`.",
       "hierarchicalName": "docs.odometer",
       "name": "docs.odometer",
       "ordinal": 68,
@@ -619,6 +687,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `vhclTtlBck`.",
       "hierarchicalName": "docs.vhclTtlBck",
       "name": "docs.vhclTtlBck",
       "ordinal": 69,
@@ -628,6 +697,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `vhclTtlFrnt`.",
       "hierarchicalName": "docs.vhclTtlFrnt",
       "name": "docs.vhclTtlFrnt",
       "ordinal": 70,
@@ -637,6 +707,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `vin`.",
       "hierarchicalName": "docs.vin",
       "name": "docs.vin",
       "ordinal": 71,
@@ -646,6 +717,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing duration.",
       "hierarchicalName": "drtn",
       "name": "drtn",
       "ordinal": 72,
@@ -655,6 +727,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "eBay-generated title.",
       "hierarchicalName": "eBGenTtl",
       "name": "eBGenTtl",
       "ordinal": 73,
@@ -664,6 +737,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Source-declared eBay-product-details indicator.",
       "hierarchicalName": "eBProdDtls",
       "name": "eBProdDtls",
       "ordinal": 74,
@@ -673,6 +747,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Source-declared eBay Vault indicator.",
       "hierarchicalName": "eBayVlt",
       "name": "eBayVlt",
       "ordinal": 75,
@@ -682,6 +757,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "eBay community identifiers and marketplace-visibility setting. Nested property: `comntyIds`.",
       "hierarchicalName": "ebayCmnty.comntyIds",
       "name": "ebayCmnty.comntyIds",
       "ordinal": 76,
@@ -691,6 +767,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "eBay community identifiers and marketplace-visibility setting. Nested property: `mktplceVsbl`.",
       "hierarchicalName": "ebayCmnty.mktplceVsbl",
       "name": "ebayCmnty.mktplceVsbl",
       "ordinal": 77,
@@ -700,6 +777,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Listing end date/time value.",
       "hierarchicalName": "endDt",
       "name": "endDt",
       "ordinal": 78,
@@ -709,6 +787,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "eBay product identifier.",
       "hierarchicalName": "epid",
       "name": "epid",
       "ordinal": 79,
@@ -718,6 +797,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `ecoFee`.",
       "hierarchicalName": "epr.ecoFee",
       "name": "epr.ecoFee",
       "ordinal": 80,
@@ -727,6 +807,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `prdDocId`.",
       "hierarchicalName": "epr.prdDocId",
       "name": "epr.prdDocId",
       "ordinal": 81,
@@ -736,6 +817,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `prdPkgId`.",
       "hierarchicalName": "epr.prdPkgId",
       "name": "epr.prdPkgId",
       "ordinal": 82,
@@ -745,6 +827,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `prdcrId`.",
       "hierarchicalName": "epr.prdcrId",
       "name": "epr.prdcrId",
       "ordinal": 83,
@@ -754,6 +837,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `shpPkgId`.",
       "hierarchicalName": "epr.shpPkgId",
       "name": "epr.shpPkgId",
       "ordinal": 84,
@@ -763,6 +847,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `dgtDlvLgsPlSprt`.",
       "hierarchicalName": "ffTrm.dgtDlvLgsPlSprt",
       "name": "ffTrm.dgtDlvLgsPlSprt",
       "ordinal": 85,
@@ -772,6 +857,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `ebayMgdShpng`.",
       "hierarchicalName": "ffTrm.ebayMgdShpng",
       "name": "ffTrm.ebayMgdShpng",
       "ordinal": 86,
@@ -781,6 +867,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `freeShipAvail`.",
       "hierarchicalName": "ffTrm.freeShipAvail",
       "name": "ffTrm.freeShipAvail",
       "ordinal": 87,
@@ -790,6 +877,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `gspLgstcPlnSprtd`.",
       "hierarchicalName": "ffTrm.gspLgstcPlnSprtd",
       "name": "ffTrm.gspLgstcPlnSprtd",
       "ordinal": 88,
@@ -799,6 +887,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `ispuLgstcPlSprt`.",
       "hierarchicalName": "ffTrm.ispuLgstcPlSprt",
       "name": "ffTrm.ispuLgstcPlSprt",
       "ordinal": 89,
@@ -808,6 +897,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `mFulfillmentSprt`.",
       "hierarchicalName": "ffTrm.mFulfillmentSprt",
       "name": "ffTrm.mFulfillmentSprt",
       "ordinal": 90,
@@ -817,6 +907,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `mgdShpngCstPdBy`.",
       "hierarchicalName": "ffTrm.mgdShpngCstPdBy",
       "name": "ffTrm.mgdShpngCstPdBy",
       "ordinal": 91,
@@ -826,6 +917,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `mgdShpngOptin`.",
       "hierarchicalName": "ffTrm.mgdShpngOptin",
       "name": "ffTrm.mgdShpngOptin",
       "ordinal": 92,
@@ -835,6 +927,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `orgPostCode`.",
       "hierarchicalName": "ffTrm.orgPostCode",
       "name": "ffTrm.orgPostCode",
       "ordinal": 93,
@@ -844,6 +937,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.dimensions.depth`.",
       "hierarchicalName": "ffTrm.pkgSpec.dimensions.depth",
       "name": "ffTrm.pkgSpec.dimensions.depth",
       "ordinal": 94,
@@ -853,6 +947,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.dimensions.length`.",
       "hierarchicalName": "ffTrm.pkgSpec.dimensions.length",
       "name": "ffTrm.pkgSpec.dimensions.length",
       "ordinal": 95,
@@ -862,6 +957,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.dimensions.width`.",
       "hierarchicalName": "ffTrm.pkgSpec.dimensions.width",
       "name": "ffTrm.pkgSpec.dimensions.width",
       "ordinal": 96,
@@ -871,6 +967,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.irregularPackage`.",
       "hierarchicalName": "ffTrm.pkgSpec.irregularPackage",
       "name": "ffTrm.pkgSpec.irregularPackage",
       "ordinal": 97,
@@ -880,6 +977,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.packageType`.",
       "hierarchicalName": "ffTrm.pkgSpec.packageType",
       "name": "ffTrm.pkgSpec.packageType",
       "ordinal": 98,
@@ -889,6 +987,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.unitOfMeasure`.",
       "hierarchicalName": "ffTrm.pkgSpec.unitOfMeasure",
       "name": "ffTrm.pkgSpec.unitOfMeasure",
       "ordinal": 99,
@@ -898,6 +997,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.weight.majorWeight`.",
       "hierarchicalName": "ffTrm.pkgSpec.weight.majorWeight",
       "name": "ffTrm.pkgSpec.weight.majorWeight",
       "ordinal": 100,
@@ -907,6 +1007,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.weight.minorWeight`.",
       "hierarchicalName": "ffTrm.pkgSpec.weight.minorWeight",
       "name": "ffTrm.pkgSpec.weight.minorWeight",
       "ordinal": 101,
@@ -916,6 +1017,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `s2hLgstcPlnSprt`.",
       "hierarchicalName": "ffTrm.s2hLgstcPlnSprt",
       "name": "ffTrm.s2hLgstcPlnSprt",
       "ordinal": 102,
@@ -925,6 +1027,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared `fl01` flag/value field.",
       "hierarchicalName": "fl01",
       "name": "fl01",
       "ordinal": 103,
@@ -934,6 +1037,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing format classification.",
       "hierarchicalName": "fmt",
       "name": "fmt",
       "ordinal": 104,
@@ -943,6 +1047,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared fulfillment-tax exemption value.",
       "hierarchicalName": "ftExempt",
       "name": "ftExempt",
       "ordinal": 105,
@@ -952,6 +1057,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Fixed price, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "fxdPrc.currency",
       "name": "fxdPrc.currency",
       "ordinal": 106,
@@ -961,6 +1067,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Fixed price, including currency and value. Nested property: `value`.",
       "hierarchicalName": "fxdPrc.value",
       "name": "fxdPrc.value",
       "ordinal": 107,
@@ -970,6 +1077,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "High-precision fixed price, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "fxdPrcHP.currency",
       "name": "fxdPrcHP.currency",
       "ordinal": 108,
@@ -979,6 +1087,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "High-precision fixed price, including currency and value. Nested property: `value`.",
       "hierarchicalName": "fxdPrcHP.value",
       "name": "fxdPrcHP.value",
       "ordinal": 109,
@@ -988,6 +1097,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Source-declared hide-part indicator.",
       "hierarchicalName": "hidePrt",
       "name": "hidePrt",
       "ordinal": 110,
@@ -997,6 +1107,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Inventory tracking method.",
       "hierarchicalName": "invTrkMth",
       "name": "invTrkMth",
       "ordinal": 111,
@@ -1006,6 +1117,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item identifier.",
       "hierarchicalName": "itmId",
       "name": "itmId",
       "ordinal": 112,
@@ -1015,6 +1127,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item location.",
       "hierarchicalName": "itmLoc",
       "name": "itmLoc",
       "ordinal": 113,
@@ -1024,6 +1137,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item-location country.",
       "hierarchicalName": "itmLocCtry",
       "name": "itmLocCtry",
       "ordinal": 114,
@@ -1033,6 +1147,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item-location postal code.",
       "hierarchicalName": "itmLocPstCd",
       "name": "itmLocPstCd",
       "ordinal": 115,
@@ -1042,6 +1157,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Item-on-sale indicator.",
       "hierarchicalName": "itmOnSale",
       "name": "itmOnSale",
       "ordinal": 116,
@@ -1051,6 +1167,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Item order value.",
       "hierarchicalName": "itmOrd",
       "name": "itmOrd",
       "ordinal": 117,
@@ -1060,6 +1177,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Item revision date/time value.",
       "hierarchicalName": "itmRevsnDt",
       "name": "itmRevsnDt",
       "ordinal": 118,
@@ -1069,6 +1187,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Lot identifier.",
       "hierarchicalName": "lotId",
       "name": "lotId",
       "ordinal": 119,
@@ -1078,6 +1197,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Lot size.",
       "hierarchicalName": "lotSz",
       "name": "lotSz",
       "ordinal": 120,
@@ -1087,6 +1207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing-creation client IP value.",
       "hierarchicalName": "lstCrtClntIp",
       "name": "lstCrtClntIp",
       "ordinal": 121,
@@ -1096,6 +1217,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Last-modified date/time value.",
       "hierarchicalName": "lstModDt",
       "name": "lstModDt",
       "ordinal": 122,
@@ -1105,6 +1227,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing application identifier.",
       "hierarchicalName": "lstgAppId",
       "name": "lstgAppId",
       "ordinal": 123,
@@ -1114,6 +1237,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Marketplace on which the item is listed.",
       "hierarchicalName": "mktPlLstdOn",
       "name": "mktPlLstdOn",
       "ordinal": 124,
@@ -1123,6 +1247,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `minAdvrtsPrc.currency`.",
       "hierarchicalName": "mktPrc.minAdvrtsPrc.currency",
       "name": "mktPrc.minAdvrtsPrc.currency",
       "ordinal": 125,
@@ -1132,6 +1257,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `minAdvrtsPrc.value`.",
       "hierarchicalName": "mktPrc.minAdvrtsPrc.value",
       "name": "mktPrc.minAdvrtsPrc.value",
       "ordinal": 126,
@@ -1141,6 +1267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `minAdvrtsPrcExp`.",
       "hierarchicalName": "mktPrc.minAdvrtsPrcExp",
       "name": "mktPrc.minAdvrtsPrcExp",
       "ordinal": 127,
@@ -1150,6 +1277,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `orgnlRtlPrc.currency`.",
       "hierarchicalName": "mktPrc.orgnlRtlPrc.currency",
       "name": "mktPrc.orgnlRtlPrc.currency",
       "ordinal": 128,
@@ -1159,6 +1287,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `orgnlRtlPrc.value`.",
       "hierarchicalName": "mktPrc.orgnlRtlPrc.value",
       "name": "mktPrc.orgnlRtlPrc.value",
       "ordinal": 129,
@@ -1168,6 +1297,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `prcngTrtmnt`.",
       "hierarchicalName": "mktPrc.prcngTrtmnt",
       "name": "mktPrc.prcngTrtmnt",
       "ordinal": 130,
@@ -1177,6 +1307,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `soldOffeBay`.",
       "hierarchicalName": "mktPrc.soldOffeBay",
       "name": "mktPrc.soldOffeBay",
       "ordinal": 131,
@@ -1186,6 +1317,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `soldOnEbay`.",
       "hierarchicalName": "mktPrc.soldOnEbay",
       "name": "mktPrc.soldOnEbay",
       "ordinal": 132,
@@ -1195,6 +1327,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Manufacturer part number.",
       "hierarchicalName": "mpn",
       "name": "mpn",
       "ordinal": 133,
@@ -1204,6 +1337,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Out-of-stock date/time value.",
       "hierarchicalName": "oosDt",
       "name": "oosDt",
       "ordinal": 134,
@@ -1213,6 +1347,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Original item identifier.",
       "hierarchicalName": "origItmId",
       "name": "origItmId",
       "ordinal": 135,
@@ -1222,6 +1357,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Original item price, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "origItmPrc.currency",
       "name": "origItmPrc.currency",
       "ordinal": 136,
@@ -1231,6 +1367,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Original item price, including currency and value. Nested property: `value`.",
       "hierarchicalName": "origItmPrc.value",
       "name": "origItmPrc.value",
       "ordinal": 137,
@@ -1240,6 +1377,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Origin postal code.",
       "hierarchicalName": "origPstCd",
       "name": "origPstCd",
       "ordinal": 138,
@@ -1249,6 +1387,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Supported-program entries.",
       "hierarchicalName": "prdSpptd",
       "name": "prdSpptd",
       "ordinal": 139,
@@ -1258,6 +1397,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Primary category identifier.",
       "hierarchicalName": "primCatId",
       "name": "primCatId",
       "ordinal": 140,
@@ -1267,6 +1407,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Source-declared product-details indicator.",
       "hierarchicalName": "prodDtls",
       "name": "prodDtls",
       "ordinal": 141,
@@ -1276,6 +1417,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Payment-policy identifier and version. Nested property: `policyId`.",
       "hierarchicalName": "pymtPlcyId.policyId",
       "name": "pymtPlcyId.policyId",
       "ordinal": 142,
@@ -1285,6 +1427,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Quantity sold.",
       "hierarchicalName": "qtySold",
       "name": "qtySold",
       "ordinal": 143,
@@ -1294,6 +1437,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `eek.dataSheet`.",
       "hierarchicalName": "rgltryInfo.eek.dataSheet",
       "name": "rgltryInfo.eek.dataSheet",
       "ordinal": 144,
@@ -1303,6 +1447,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `eek.img`.",
       "hierarchicalName": "rgltryInfo.eek.img",
       "name": "rgltryInfo.eek.img",
       "ordinal": 145,
@@ -1312,6 +1457,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `eek.imgDesc`.",
       "hierarchicalName": "rgltryInfo.eek.imgDesc",
       "name": "rgltryInfo.eek.imgDesc",
       "ordinal": 146,
@@ -1321,6 +1467,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.addnlInfo`.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.addnlInfo",
       "name": "rgltryInfo.hzdMatrl.addnlInfo",
       "ordinal": 147,
@@ -1330,6 +1477,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.pctgrmIds`.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.pctgrmIds",
       "name": "rgltryInfo.hzdMatrl.pctgrmIds",
       "ordinal": 148,
@@ -1339,6 +1487,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.sgnlWrdId`.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.sgnlWrdId",
       "name": "rgltryInfo.hzdMatrl.sgnlWrdId",
       "ordinal": 149,
@@ -1348,6 +1497,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.stmntIds`.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.stmntIds",
       "name": "rgltryInfo.hzdMatrl.stmntIds",
       "ordinal": 150,
@@ -1357,6 +1507,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cmpNm`.",
       "hierarchicalName": "rgltryInfo.mnfatr.cmpNm",
       "name": "rgltryInfo.mnfatr.cmpNm",
       "ordinal": 151,
@@ -1366,6 +1517,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cntctUrl`.",
       "hierarchicalName": "rgltryInfo.mnfatr.cntctUrl",
       "name": "rgltryInfo.mnfatr.cntctUrl",
       "ordinal": 152,
@@ -1375,6 +1527,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cntry`.",
       "hierarchicalName": "rgltryInfo.mnfatr.cntry",
       "name": "rgltryInfo.mnfatr.cntry",
       "ordinal": 153,
@@ -1384,6 +1537,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cty`.",
       "hierarchicalName": "rgltryInfo.mnfatr.cty",
       "name": "rgltryInfo.mnfatr.cty",
       "ordinal": 154,
@@ -1393,6 +1547,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.email`.",
       "hierarchicalName": "rgltryInfo.mnfatr.email",
       "name": "rgltryInfo.mnfatr.email",
       "ordinal": 155,
@@ -1402,6 +1557,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.phn`.",
       "hierarchicalName": "rgltryInfo.mnfatr.phn",
       "name": "rgltryInfo.mnfatr.phn",
       "ordinal": 156,
@@ -1411,6 +1567,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.strt1`.",
       "hierarchicalName": "rgltryInfo.mnfatr.strt1",
       "name": "rgltryInfo.mnfatr.strt1",
       "ordinal": 157,
@@ -1420,6 +1577,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.strt2`.",
       "hierarchicalName": "rgltryInfo.mnfatr.strt2",
       "name": "rgltryInfo.mnfatr.strt2",
       "ordinal": 158,
@@ -1429,6 +1587,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.stt`.",
       "hierarchicalName": "rgltryInfo.mnfatr.stt",
       "name": "rgltryInfo.mnfatr.stt",
       "ordinal": 159,
@@ -1438,6 +1597,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.zip`.",
       "hierarchicalName": "rgltryInfo.mnfatr.zip",
       "name": "rgltryInfo.mnfatr.zip",
       "ordinal": 160,
@@ -1447,6 +1607,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `prdSfty.addnlInfo`.",
       "hierarchicalName": "rgltryInfo.prdSfty.addnlInfo",
       "name": "rgltryInfo.prdSfty.addnlInfo",
       "ordinal": 161,
@@ -1456,6 +1617,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `prdSfty.pctgrmIds`.",
       "hierarchicalName": "rgltryInfo.prdSfty.pctgrmIds",
       "name": "rgltryInfo.prdSfty.pctgrmIds",
       "ordinal": 162,
@@ -1465,6 +1627,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `prdSfty.stmntIds`.",
       "hierarchicalName": "rgltryInfo.prdSfty.stmntIds",
       "name": "rgltryInfo.prdSfty.stmntIds",
       "ordinal": 163,
@@ -1474,6 +1637,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `rprIdxScore`.",
       "hierarchicalName": "rgltryInfo.rprIdxScore",
       "name": "rgltryInfo.rprIdxScore",
       "ordinal": 164,
@@ -1483,6 +1647,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Relist identifier.",
       "hierarchicalName": "rlstId",
       "name": "rlstId",
       "ordinal": 165,
@@ -1492,6 +1657,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Parent relist identifier.",
       "hierarchicalName": "rlstPrntId",
       "name": "rlstPrntId",
       "ordinal": 166,
@@ -1501,6 +1667,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy identifier and version. Nested property: `policyId`.",
       "hierarchicalName": "rtrnsPlcyId.policyId",
       "name": "rtrnsPlcyId.policyId",
       "ordinal": 167,
@@ -1510,6 +1677,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Scheduled end date/time value.",
       "hierarchicalName": "schdEndDt",
       "name": "schdEndDt",
       "ordinal": 168,
@@ -1519,6 +1687,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Secondary category identifier.",
       "hierarchicalName": "scndCatId",
       "name": "scndCatId",
       "ordinal": 169,
@@ -1528,6 +1697,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Second-chance-item indicator.",
       "hierarchicalName": "scndChncItm",
       "name": "scndChncItm",
       "ordinal": 170,
@@ -1537,6 +1707,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy identifier and version. Nested property: `policyId`.",
       "hierarchicalName": "shipPlcyId.policyId",
       "name": "shipPlcyId.policyId",
       "ordinal": 171,
@@ -1546,6 +1717,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Significant revision count.",
       "hierarchicalName": "sigRevCnt",
       "name": "sigRevCnt",
       "ordinal": 172,
@@ -1555,6 +1727,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `cmpNm`.",
       "hierarchicalName": "slr.cmpNm",
       "name": "slr.cmpNm",
       "ordinal": 173,
@@ -1564,6 +1737,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `cntry`.",
       "hierarchicalName": "slr.cntry",
       "name": "slr.cntry",
       "ordinal": 174,
@@ -1573,6 +1747,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `ctcByEml`.",
       "hierarchicalName": "slr.ctcByEml",
       "name": "slr.ctcByEml",
       "ordinal": 175,
@@ -1582,6 +1757,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primPhone`.",
       "hierarchicalName": "slr.primPhone",
       "name": "slr.primPhone",
       "ordinal": 176,
@@ -1591,6 +1767,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.anyTime`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.anyTime",
       "name": "slr.primSpprtCtcHrs.anyTime",
       "ordinal": 177,
@@ -1600,6 +1777,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsEnd.hrs`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsEnd.hrs",
       "name": "slr.primSpprtCtcHrs.sprtHrsEnd.hrs",
       "ordinal": 178,
@@ -1609,6 +1787,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsEnd.mins`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsEnd.mins",
       "name": "slr.primSpprtCtcHrs.sprtHrsEnd.mins",
       "ordinal": 179,
@@ -1618,6 +1797,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsEnd.tz`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsEnd.tz",
       "name": "slr.primSpprtCtcHrs.sprtHrsEnd.tz",
       "ordinal": 180,
@@ -1627,6 +1807,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsStrt.hrs`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsStrt.hrs",
       "name": "slr.primSpprtCtcHrs.sprtHrsStrt.hrs",
       "ordinal": 181,
@@ -1636,6 +1817,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsStrt.mins`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsStrt.mins",
       "name": "slr.primSpprtCtcHrs.sprtHrsStrt.mins",
       "ordinal": 182,
@@ -1645,6 +1827,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsStrt.tz`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsStrt.tz",
       "name": "slr.primSpprtCtcHrs.sprtHrsStrt.tz",
       "ordinal": 183,
@@ -1654,6 +1837,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtOnDays`.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtOnDays",
       "name": "slr.primSpprtCtcHrs.sprtOnDays",
       "ordinal": 184,
@@ -1663,6 +1847,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `scndSpprtCtcHrs.anyTime`.",
       "hierarchicalName": "slr.scndSpprtCtcHrs.anyTime",
       "name": "slr.scndSpprtCtcHrs.anyTime",
       "ordinal": 185,
@@ -1672,6 +1857,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `scndSpprtCtcHrs.sprtOnDays`.",
       "hierarchicalName": "slr.scndSpprtCtcHrs.sprtOnDays",
       "name": "slr.scndSpprtCtcHrs.sprtOnDays",
       "ordinal": 186,
@@ -1681,6 +1867,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `slrId`.",
       "hierarchicalName": "slr.slrId",
       "name": "slr.slrId",
       "ordinal": 187,
@@ -1690,6 +1877,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `slrItmCtcInfoKey`.",
       "hierarchicalName": "slr.slrItmCtcInfoKey",
       "name": "slr.slrItmCtcInfoKey",
       "ordinal": 188,
@@ -1699,6 +1887,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `st`.",
       "hierarchicalName": "slr.st",
       "name": "slr.st",
       "ordinal": 189,
@@ -1708,6 +1897,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `st2`.",
       "hierarchicalName": "slr.st2",
       "name": "slr.st2",
       "ordinal": 190,
@@ -1717,6 +1907,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller identity, contact, and support-hours data. Nested property: `uid`.",
       "hierarchicalName": "slr.uid",
       "name": "slr.uid",
       "ordinal": 191,
@@ -1726,6 +1917,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller application data.",
       "hierarchicalName": "slrAppData",
       "name": "slrAppData",
       "ordinal": 192,
@@ -1735,6 +1927,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller item key.",
       "hierarchicalName": "slrItmKey",
       "name": "slrItmKey",
       "ordinal": 193,
@@ -1744,6 +1937,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Source listing identifier.",
       "hierarchicalName": "srcLstId",
       "name": "srcLstId",
       "ordinal": 194,
@@ -1753,6 +1947,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Store primary category identifier.",
       "hierarchicalName": "stPrimCatId",
       "name": "stPrimCatId",
       "ordinal": 195,
@@ -1762,6 +1957,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Store secondary category identifier.",
       "hierarchicalName": "stScndCatId",
       "name": "stScndCatId",
       "ordinal": 196,
@@ -1771,6 +1967,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Source-declared stock-photo-URL indicator.",
       "hierarchicalName": "stckPhtUrl",
       "name": "stckPhtUrl",
       "ordinal": 197,
@@ -1780,6 +1977,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Starting-bid price, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "strtBidPrc.currency",
       "name": "strtBidPrc.currency",
       "ordinal": 198,
@@ -1789,6 +1987,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Starting-bid price, including currency and value. Nested property: `value`.",
       "hierarchicalName": "strtBidPrc.value",
       "name": "strtBidPrc.value",
       "ordinal": 199,
@@ -1798,6 +1997,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "High-precision starting-bid price, including currency and value. Nested property: `currency`.",
       "hierarchicalName": "strtBidPrcHP.currency",
       "name": "strtBidPrcHP.currency",
       "ordinal": 200,
@@ -1807,6 +2007,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "High-precision starting-bid price, including currency and value. Nested property: `value`.",
       "hierarchicalName": "strtBidPrcHP.value",
       "name": "strtBidPrcHP.value",
       "ordinal": 201,
@@ -1816,6 +2017,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Listing start date/time value.",
       "hierarchicalName": "strtDt",
       "name": "strtDt",
       "ordinal": 202,
@@ -1825,6 +2027,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `aplcblToShp`.",
       "hierarchicalName": "tax.aplcblToShp",
       "name": "tax.aplcblToShp",
       "ordinal": 203,
@@ -1834,6 +2037,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `rcgnzBsnsSlrVat`.",
       "hierarchicalName": "tax.rcgnzBsnsSlrVat",
       "name": "tax.rcgnzBsnsSlrVat",
       "ordinal": 204,
@@ -1843,6 +2047,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `salesTaxTblUsd`.",
       "hierarchicalName": "tax.salesTaxTblUsd",
       "name": "tax.salesTaxTblUsd",
       "ordinal": 205,
@@ -1852,6 +2057,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `state`.",
       "hierarchicalName": "tax.state",
       "name": "tax.state",
       "ordinal": 206,
@@ -1861,6 +2067,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `taxRate`.",
       "hierarchicalName": "tax.taxRate",
       "name": "tax.taxRate",
       "ordinal": 207,
@@ -1870,6 +2077,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `thrdPrtTxCtgCd`.",
       "hierarchicalName": "tax.thrdPrtTxCtgCd",
       "name": "tax.thrdPrtTxCtgCd",
       "ordinal": 208,
@@ -1879,6 +2087,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `vatPct`.",
       "hierarchicalName": "tax.vatPct",
       "name": "tax.vatPct",
       "ordinal": 209,
@@ -1888,6 +2097,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Trading-scope data, including international visibility and local distribution. Nested property: `intlStVsbl`.",
       "hierarchicalName": "trdScp.intlStVsbl",
       "name": "trdScp.intlStVsbl",
       "ordinal": 210,
@@ -1897,6 +2107,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Trading-scope data, including international visibility and local distribution. Nested property: `lclLstngDist`.",
       "hierarchicalName": "trdScp.lclLstngDist",
       "name": "trdScp.lclLstngDist",
       "ordinal": 211,
@@ -1906,6 +2117,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item title.",
       "hierarchicalName": "ttl",
       "name": "ttl",
       "ordinal": 212,
@@ -1915,6 +2127,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Universally unique identifier.",
       "hierarchicalName": "uuid",
       "name": "uuid",
       "ordinal": 213,
@@ -1924,6 +2137,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Vehicle package identifier.",
       "hierarchicalName": "vehPkgId",
       "name": "vehPkgId",
       "ordinal": 214,
@@ -1933,6 +2147,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Video values associated with the item.",
       "hierarchicalName": "videos",
       "name": "videos",
       "ordinal": 215,
@@ -1942,6 +2157,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `boldTitle`.",
       "hierarchicalName": "visEnh.boldTitle",
       "name": "visEnh.boldTitle",
       "ordinal": 216,
@@ -1951,6 +2167,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `gallDurtn`.",
       "hierarchicalName": "visEnh.gallDurtn",
       "name": "visEnh.gallDurtn",
       "ordinal": 217,
@@ -1960,6 +2177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `gallTp`.",
       "hierarchicalName": "visEnh.gallTp",
       "name": "visEnh.gallTp",
       "ordinal": 218,
@@ -1969,6 +2187,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `homePgftrd`.",
       "hierarchicalName": "visEnh.homePgftrd",
       "name": "visEnh.homePgftrd",
       "ordinal": 219,
@@ -1978,6 +2197,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `photoDspType`.",
       "hierarchicalName": "visEnh.photoDspType",
       "name": "visEnh.photoDspType",
       "ordinal": 220,
@@ -1987,6 +2207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `subtitle`.",
       "hierarchicalName": "visEnh.subtitle",
       "name": "visEnh.subtitle",
       "ordinal": 221,
@@ -1996,6 +2217,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `vstCntrTp`.",
       "hierarchicalName": "visEnh.vstCntrTp",
       "name": "visEnh.vstCntrTp",
       "ordinal": 222,
@@ -2005,9 +2227,210 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Variation or version identifier.",
       "hierarchicalName": "vrsId",
       "name": "vrsId",
       "ordinal": 223,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item aspect entries, each containing an aspect name and values. Nested property: `name`.",
+      "hierarchicalName": "aspct.name",
+      "name": "aspct.name",
+      "ordinal": 224,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Item aspect entries, each containing an aspect name and values. Nested property: `values`.",
+      "hierarchicalName": "aspct.values",
+      "name": "aspct.values",
+      "ordinal": 225,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.cstType`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.cstType",
+      "name": "bizPol.shipTrms.shpOpt.cstType",
+      "ordinal": 226,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.promoShp`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.promoShp",
+      "name": "bizPol.shipTrms.shpOpt.promoShp",
+      "ordinal": 227,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpDscPrfId`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpDscPrfId",
+      "name": "bizPol.shipTrms.shpOpt.shpDscPrfId",
+      "ordinal": 228,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.currency`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "ordinal": 229,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.value`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "ordinal": 230,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "ordinal": 231,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "ordinal": 232,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.rank`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
+      "ordinal": 233,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.currency`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "ordinal": 234,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.value`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "ordinal": 235,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvc`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
+      "ordinal": 236,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvcId`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "ordinal": 237,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpToLocns`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "ordinal": 238,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpType`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpType",
+      "name": "bizPol.shipTrms.shpOpt.shpType",
+      "ordinal": 239,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Global identifier name/value entries. Nested property: `name`.",
+      "hierarchicalName": "glbId.name",
+      "name": "glbId.name",
+      "ordinal": 240,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Global identifier name/value entries. Nested property: `values`.",
+      "hierarchicalName": "glbId.values",
+      "name": "glbId.values",
+      "ordinal": 241,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Image mappings, including external and eBay image URLs and display order. Nested property: `eBayPicUrl`.",
+      "hierarchicalName": "img.eBayPicUrl",
+      "name": "img.eBayPicUrl",
+      "ordinal": 242,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Image mappings, including external and eBay image URLs and display order. Nested property: `order`.",
+      "hierarchicalName": "img.order",
+      "name": "img.order",
+      "ordinal": 243,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

@@ -5,7 +5,7 @@
         {
             "name": "ItemDescID",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier for this description child document, generated as `DESC_<itemId>`.",
             "nullable": null
         },
         {
@@ -17,19 +17,19 @@
         {
             "name": "compDesc",
             "type": "binary",
-            "comment": null,
+            "comment": "Compressed representation of the item description.",
             "nullable": null
         },
         {
             "name": "desc",
             "type": "string",
-            "comment": null,
+            "comment": "Expanded item description text.",
             "nullable": null
         },
         {
             "name": "descRevsnDt",
             "type": "number",
-            "comment": null,
+            "comment": "Item description revision timestamp.",
             "nullable": null
         }
     ],

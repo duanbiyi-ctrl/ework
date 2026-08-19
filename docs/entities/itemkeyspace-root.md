@@ -44,6 +44,7 @@ docsets.
 | `mktplcLstdOn` | `String` | Marketplace on which the item is listed. |
 | `notes` | `String` | Item notes. |
 | `PK` | `String` | Item identifier and root document primary key. |
+| `pk` | `String` | Lower-case item key carried by the current-state document payload. |
 | `sellerId` | `String` | Seller identifier. |
 | `slrItemKey` | `String` | Seller's item key. |
 | `title` | `String` | Item title. |

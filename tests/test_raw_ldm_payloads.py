@@ -74,9 +74,28 @@ class RawLdmPayloadTests(unittest.TestCase):
             {"type": "boolean", "default": None},
         )
 
+        item_price_fields = by_name["item_price_and_quantity"]["fields"]
         self.assertEqual(
-            by_name["item_price_and_quantity"]["fields"],
-            [],
+            [field["name"] for field in item_price_fields],
+            [
+                "ItemQtyPriceID",
+                "availQty",
+                "crLstgDtVrs",
+                "lifecycle.endDt",
+                "lifecycle.schdldEndDt",
+                "price.fixedPrice.currency",
+                "price.fixedPrice.value",
+                "price.mrktngPrc.prcngTrtmnt",
+                "price.orgnRetailPrice.currency",
+                "price.orgnRetailPrice.value",
+                "price.prcGuarantee",
+                "qtySold",
+            ],
+        )
+        self.assertEqual(
+            item_price_fields[0]["description"],
+            "Identifier for this price-and-quantity child document, "
+            "generated as `QTY_PRICE_<itemId>`.",
         )
 
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):

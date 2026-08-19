@@ -26,6 +26,8 @@
 | --- | --- | --- |
 | `availQty` | `Integer` | Available item quantity. |
 | `ItemQtyPriceID` | `String` | Identifier for this price-and-quantity child document, generated as `QTY_PRICE_<itemId>`. |
+| `crLstgDtVrs` | `String` | Core-listing data version associated with this price-and-quantity state. |
+| `lifecycle` | `Lifecycle` | Price-and-quantity lifecycle timestamps, including end and scheduled-end times. |
 | `price` | `Price` | Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. |
 | `qtySold` | `Integer` | Item quantity sold. |
 | `minRmntSet` | `Integer` | Minimum remnant-set quantity. |

@@ -11,25 +11,25 @@
         {
             "name": "compDesc",
             "type": "binary",
-            "comment": null,
+            "comment": "Compressed representation of the shared group description.",
             "nullable": null
         },
         {
             "name": "groupDesc",
             "type": "string",
-            "comment": null,
+            "comment": "Expanded shared description for the item group.",
             "nullable": null
         },
         {
             "name": "groupDescId",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier for this group-description document.",
             "nullable": null
         },
         {
             "name": "grpDescRevsnDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Timestamp of the group-description revision.",
             "nullable": null
         }
     ],

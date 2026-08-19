@@ -5,7 +5,7 @@
         {
             "name": "PK",
             "type": "string",
-            "comment": null,
+            "comment": "Draft group document identifier.",
             "nullable": null
         },
         {
@@ -17,169 +17,301 @@
         {
             "name": "bizPol.pmtTrms.daysToFulPmt",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.daysToFulPmt`.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.depRqd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.depRqd`.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.hrsToDep",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.hrsToDep`.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.immPay",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.immPay`.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.pmtMthd",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.pmtMthd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.refMthd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.retAcptd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.retPrd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.retShpmtPayee`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.extHolRet",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.extHolRet`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.refMthd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.retAcptd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.retPrd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.retShpmtPayee`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.refMthd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.restFeePct",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.restFeePct`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retAcptd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retInstr",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retInstr`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retPrd`.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retShpmtPayee`.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.buyerRsp",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.buyerRsp`.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.excldLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.excldLocn`.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.hndlgTm",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.hndlgTm`.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpToLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpToLocn`.",
             "nullable": null
         },
         {
             "name": "grpId",
             "type": "string",
-            "comment": null,
+            "comment": "Group identifier.",
             "nullable": null
         },
         {
             "name": "grpTtl",
             "type": "string",
-            "comment": null,
+            "comment": "Group title.",
             "nullable": null
         },
         {
             "name": "imgsVryBy.trtName",
             "type": "string",
-            "comment": null,
+            "comment": "Image-variation configuration, including the variation trait and its image associations. Nested property: `trtName`.",
             "nullable": null
         },
         {
             "name": "slrGrpKey",
             "type": "string",
-            "comment": null,
+            "comment": "Seller group key.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.cstType",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.cstType`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.promoShp",
+            "type": "boolean",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.promoShp`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.rtTblId",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.rtTblId`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpDscPrfId",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpDscPrfId`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.currency`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+            "type": "numberDouble",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.value`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+            "type": "numberLong",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
+            "type": "numberLong",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.rank`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.currency`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
+            "type": "numberDouble",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.value`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvc`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
+            "type": "numberLong",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvcId`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
+            "type": "string[]",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpToLocns`.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpType",
+            "type": "string",
+            "comment": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpType`.",
+            "nullable": null
+        },
+        {
+            "name": "img.eBayPicUrl",
+            "type": "string",
+            "comment": "Image mappings for the group. Nested property: `eBayPicUrl`.",
+            "nullable": null
+        },
+        {
+            "name": "img.extPicUrl",
+            "type": "string",
+            "comment": "Image mappings for the group. Nested property: `extPicUrl`.",
+            "nullable": null
+        },
+        {
+            "name": "img.order",
+            "type": "numberLong",
+            "comment": "Image mappings for the group. Nested property: `order`.",
+            "nullable": null
+        },
+        {
+            "name": "imgsVryBy.trtImg.img",
+            "type": "string[]",
+            "comment": "Image-variation configuration, including the variation trait and its image associations. Nested property: `trtImg.img`.",
+            "nullable": null
+        },
+        {
+            "name": "imgsVryBy.trtImg.trtVal",
+            "type": "string",
+            "comment": "Image-variation configuration, including the variation trait and its image associations. Nested property: `trtImg.trtVal`.",
+            "nullable": null
+        },
+        {
+            "name": "itmsVryBy.name",
+            "type": "string",
+            "comment": "Item variation trait name/value entries. Nested property: `name`.",
+            "nullable": null
+        },
+        {
+            "name": "itmsVryBy.values",
+            "type": "string[]",
+            "comment": "Item variation trait name/value entries. Nested property: `values`.",
             "nullable": null
         }
     ],

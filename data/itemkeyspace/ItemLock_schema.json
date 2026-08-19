@@ -11,67 +11,67 @@
         {
             "name": "cmtDt",
             "type": "number",
-            "comment": null,
+            "comment": "Timestamp when the lock was committed.",
             "nullable": null
         },
         {
             "name": "cnclDt",
             "type": "number",
-            "comment": null,
+            "comment": "Timestamp when the lock was cancelled.",
             "nullable": null
         },
         {
             "name": "crtDt",
             "type": "number",
-            "comment": null,
+            "comment": "Lock creation timestamp.",
             "nullable": null
         },
         {
             "name": "expDt",
             "type": "number",
-            "comment": null,
+            "comment": "Lock expiration timestamp.",
             "nullable": null
         },
         {
             "name": "extCnt",
             "type": "number",
-            "comment": null,
+            "comment": "Number of times the lock was extended.",
             "nullable": null
         },
         {
             "name": "extDt",
             "type": "number",
-            "comment": null,
+            "comment": "Timestamp when the lock was extended.",
             "nullable": null
         },
         {
             "name": "modDt",
             "type": "number",
-            "comment": null,
+            "comment": "Last-modified timestamp, initialized from the creation timestamp.",
             "nullable": null
         },
         {
             "name": "pk",
             "type": "string",
-            "comment": null,
+            "comment": "Lock identifier.",
             "nullable": null
         },
         {
             "name": "qty",
             "type": "number",
-            "comment": null,
+            "comment": "Locked or reserved quantity.",
             "nullable": null
         },
         {
             "name": "st",
             "type": "string",
-            "comment": null,
+            "comment": "Lock status: `A` active, `C` committed, or `X` cancelled.",
             "nullable": null
         },
         {
             "name": "uuid",
             "type": "string",
-            "comment": null,
+            "comment": "Reservation UUID.",
             "nullable": null
         }
     ],

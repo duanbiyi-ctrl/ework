@@ -11,169 +11,259 @@
         {
             "name": "plcsId",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier for the group policy set.",
             "nullable": null
         },
         {
             "name": "pmtTrms.daysToFulPmt",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `daysToFulPmt`.",
             "nullable": null
         },
         {
             "name": "pmtTrms.depRqd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `depRqd`.",
             "nullable": null
         },
         {
             "name": "pmtTrms.hrsToDep",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `hrsToDep`.",
             "nullable": null
         },
         {
             "name": "pmtTrms.immPay",
             "type": "boolean",
-            "comment": null,
+            "comment": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `immPay`.",
             "nullable": null
         },
         {
             "name": "pmtTrms.pmtInstr",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `pmtInstr`.",
             "nullable": null
         },
         {
             "name": "pmtTrms.pmtMthd",
             "type": "string[]",
-            "comment": null,
+            "comment": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `pmtMthd`.",
             "nullable": null
         },
         {
             "name": "pmtTrms.ppEmail",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `ppEmail`.",
             "nullable": null
         },
         {
             "name": "retTrms.domRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.refMthd`.",
             "nullable": null
         },
         {
             "name": "retTrms.domRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.retAcptd`.",
             "nullable": null
         },
         {
             "name": "retTrms.domRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.retPrd`.",
             "nullable": null
         },
         {
             "name": "retTrms.domRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.retShpmtPayee`.",
             "nullable": null
         },
         {
             "name": "retTrms.extHolRet",
             "type": "boolean",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `extHolRet`.",
             "nullable": null
         },
         {
             "name": "retTrms.intRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.refMthd`.",
             "nullable": null
         },
         {
             "name": "retTrms.intRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.retAcptd`.",
             "nullable": null
         },
         {
             "name": "retTrms.intRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.retPrd`.",
             "nullable": null
         },
         {
             "name": "retTrms.intRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.retShpmtPayee`.",
             "nullable": null
         },
         {
             "name": "retTrms.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `refMthd`.",
             "nullable": null
         },
         {
             "name": "retTrms.restFeePct",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `restFeePct`.",
             "nullable": null
         },
         {
             "name": "retTrms.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retAcptd`.",
             "nullable": null
         },
         {
             "name": "retTrms.retInstr",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retInstr`.",
             "nullable": null
         },
         {
             "name": "retTrms.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retPrd`.",
             "nullable": null
         },
         {
             "name": "retTrms.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retShpmtPayee`.",
             "nullable": null
         },
         {
             "name": "shipTrms.buyerRsp",
             "type": "boolean",
-            "comment": null,
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `buyerRsp`.",
             "nullable": null
         },
         {
             "name": "shipTrms.excldLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `excldLocn`.",
             "nullable": null
         },
         {
             "name": "shipTrms.excldLocnLastModDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `excldLocnLastModDt`.",
             "nullable": null
         },
         {
             "name": "shipTrms.hndlgTm",
             "type": "string",
-            "comment": null,
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `hndlgTm`.",
             "nullable": null
         },
         {
             "name": "shipTrms.shpToLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpToLocn`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.cstType",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.cstType`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.promoShp",
+            "type": "boolean",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.promoShp`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.rtTblId",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.rtTblId`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpDscPrfId",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpDscPrfId`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.addUnitCost.currency`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+            "type": "numberDouble",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.addUnitCost.value`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.pkgHndlgCost.currency`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+            "type": "numberLong",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.pkgHndlgCost.value`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.rank",
+            "type": "numberLong",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.rank`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpCost.currency",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpCost.currency`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpCost.value",
+            "type": "numberDouble",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpCost.value`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpSvc",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpSvc`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpSvcId",
+            "type": "numberLong",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpSvcId`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpToLocns",
+            "type": "string[]",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpToLocns`.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpType",
+            "type": "string",
+            "comment": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpType`.",
             "nullable": null
         }
     ],

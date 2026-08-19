@@ -30,6 +30,7 @@
 | `primCatId` | `String` | Primary category identifier. |
 | `crtMd` | `DraftCreationModeEnum` | Draft creation-mode classification. |
 | `eBGenTtl` | `String` | eBay-generated title. |
+| `ebayGeneratedTitle` | `String` | eBay-generated title carried by the active-draft index. |
 | `ttl` | `String` | Draft title. |
 | `imgUrl` | `String` | Image URL. |
 | `stockImgUrl` | `String` | Stock-image URL. |

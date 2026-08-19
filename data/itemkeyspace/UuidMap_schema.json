@@ -11,13 +11,13 @@
         {
             "name": "listingAppId",
             "type": "string",
-            "comment": null,
+            "comment": "Application identifier for the resolved listing.",
             "nullable": null
         },
         {
             "name": "listingId",
             "type": "string",
-            "comment": null,
+            "comment": "Listing identifier resolved from the seller-and-UUID key.",
             "nullable": null
         }
     ],

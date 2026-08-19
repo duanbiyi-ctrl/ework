@@ -25,6 +25,7 @@
 | Field | Type | Description |
 | --- | --- | --- |
 | `rvsdPrptyGrps` | `List<RevisedPropertyGroupEnum>` | Property groups changed by this revision. |
+| `rvsnId` | `Reference` | Reference identifier for this listing revision document. |
 | `vrsnId` | `Long` | Listing revision version identifier. |
 | `appId` | `Long` | Identifier of the application that produced the revision. |
 | `sigRevCnt` | `Integer` | Count of significant revisions. |

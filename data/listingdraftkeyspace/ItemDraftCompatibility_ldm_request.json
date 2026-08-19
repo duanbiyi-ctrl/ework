@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Draft compatibility document identifier.",
       "hierarchicalName": "DraftCompID",
       "name": "DraftCompID",
       "ordinal": 1,
@@ -16,9 +17,30 @@
     },
     {
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "description": "Compressed compatibility representation.",
       "hierarchicalName": "cmpCompat",
       "name": "cmpCompat",
       "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Compatibility entries for the item draft. Nested property: `propertiesList.name`.",
+      "hierarchicalName": "compat.propertiesList.name",
+      "name": "compat.propertiesList.name",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Compatibility entries for the item draft. Nested property: `propertiesList.values`.",
+      "hierarchicalName": "compat.propertiesList.values",
+      "name": "compat.propertiesList.values",
+      "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"int\",\"logicalType\":\"date\",\"default\":null}",
+      "description": "Date when revision-history retention expires.",
       "hierarchicalName": "expiredDate",
       "name": "expiredDate",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier of the listing whose revision history is stored.",
       "hierarchicalName": "lstgId",
       "name": "lstgId",
       "ordinal": 2,

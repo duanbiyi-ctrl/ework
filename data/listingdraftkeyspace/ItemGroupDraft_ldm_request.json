@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Draft group document identifier.",
       "hierarchicalName": "PK",
       "name": "PK",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.daysToFulPmt`.",
       "hierarchicalName": "bizPol.pmtTrms.daysToFulPmt",
       "name": "bizPol.pmtTrms.daysToFulPmt",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.depRqd`.",
       "hierarchicalName": "bizPol.pmtTrms.depRqd",
       "name": "bizPol.pmtTrms.depRqd",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.hrsToDep`.",
       "hierarchicalName": "bizPol.pmtTrms.hrsToDep",
       "name": "bizPol.pmtTrms.hrsToDep",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.immPay`.",
       "hierarchicalName": "bizPol.pmtTrms.immPay",
       "name": "bizPol.pmtTrms.immPay",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `pmtTrms.pmtMthd`.",
       "hierarchicalName": "bizPol.pmtTrms.pmtMthd",
       "name": "bizPol.pmtTrms.pmtMthd",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.refMthd`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.refMthd",
       "name": "bizPol.retTrms.domRetTrm.refMthd",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.retAcptd`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retAcptd",
       "name": "bizPol.retTrms.domRetTrm.retAcptd",
       "ordinal": 8,
@@ -79,6 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.retPrd`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retPrd",
       "name": "bizPol.retTrms.domRetTrm.retPrd",
       "ordinal": 9,
@@ -88,6 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.domRetTrm.retShpmtPayee`.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retShpmtPayee",
       "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
       "ordinal": 10,
@@ -97,6 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.extHolRet`.",
       "hierarchicalName": "bizPol.retTrms.extHolRet",
       "name": "bizPol.retTrms.extHolRet",
       "ordinal": 11,
@@ -106,6 +117,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.refMthd`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.refMthd",
       "name": "bizPol.retTrms.intRetTrm.refMthd",
       "ordinal": 12,
@@ -115,6 +127,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.retAcptd`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retAcptd",
       "name": "bizPol.retTrms.intRetTrm.retAcptd",
       "ordinal": 13,
@@ -124,6 +137,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.retPrd`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retPrd",
       "name": "bizPol.retTrms.intRetTrm.retPrd",
       "ordinal": 14,
@@ -133,6 +147,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.intRetTrm.retShpmtPayee`.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retShpmtPayee",
       "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
       "ordinal": 15,
@@ -142,6 +157,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.refMthd`.",
       "hierarchicalName": "bizPol.retTrms.refMthd",
       "name": "bizPol.retTrms.refMthd",
       "ordinal": 16,
@@ -151,6 +167,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.restFeePct`.",
       "hierarchicalName": "bizPol.retTrms.restFeePct",
       "name": "bizPol.retTrms.restFeePct",
       "ordinal": 17,
@@ -160,6 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retAcptd`.",
       "hierarchicalName": "bizPol.retTrms.retAcptd",
       "name": "bizPol.retTrms.retAcptd",
       "ordinal": 18,
@@ -169,6 +187,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retInstr`.",
       "hierarchicalName": "bizPol.retTrms.retInstr",
       "name": "bizPol.retTrms.retInstr",
       "ordinal": 19,
@@ -178,6 +197,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retPrd`.",
       "hierarchicalName": "bizPol.retTrms.retPrd",
       "name": "bizPol.retTrms.retPrd",
       "ordinal": 20,
@@ -187,6 +207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `retTrms.retShpmtPayee`.",
       "hierarchicalName": "bizPol.retTrms.retShpmtPayee",
       "name": "bizPol.retTrms.retShpmtPayee",
       "ordinal": 21,
@@ -196,6 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.buyerRsp`.",
       "hierarchicalName": "bizPol.shipTrms.buyerRsp",
       "name": "bizPol.shipTrms.buyerRsp",
       "ordinal": 22,
@@ -205,6 +227,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.excldLocn`.",
       "hierarchicalName": "bizPol.shipTrms.excldLocn",
       "name": "bizPol.shipTrms.excldLocn",
       "ordinal": 23,
@@ -214,6 +237,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.hndlgTm`.",
       "hierarchicalName": "bizPol.shipTrms.hndlgTm",
       "name": "bizPol.shipTrms.hndlgTm",
       "ordinal": 24,
@@ -223,6 +247,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpToLocn`.",
       "hierarchicalName": "bizPol.shipTrms.shpToLocn",
       "name": "bizPol.shipTrms.shpToLocn",
       "ordinal": 25,
@@ -232,6 +257,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Group identifier.",
       "hierarchicalName": "grpId",
       "name": "grpId",
       "ordinal": 26,
@@ -241,6 +267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Group title.",
       "hierarchicalName": "grpTtl",
       "name": "grpTtl",
       "ordinal": 27,
@@ -250,6 +277,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Image-variation configuration, including the variation trait and its image associations. Nested property: `trtName`.",
       "hierarchicalName": "imgsVryBy.trtName",
       "name": "imgsVryBy.trtName",
       "ordinal": 28,
@@ -259,9 +287,230 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller group key.",
       "hierarchicalName": "slrGrpKey",
       "name": "slrGrpKey",
       "ordinal": 29,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.cstType`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.cstType",
+      "name": "bizPol.shipTrms.shpOpt.cstType",
+      "ordinal": 30,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.promoShp`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.promoShp",
+      "name": "bizPol.shipTrms.shpOpt.promoShp",
+      "ordinal": 31,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.rtTblId`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.rtTblId",
+      "name": "bizPol.shipTrms.shpOpt.rtTblId",
+      "ordinal": 32,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpDscPrfId`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpDscPrfId",
+      "name": "bizPol.shipTrms.shpOpt.shpDscPrfId",
+      "ordinal": 33,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.currency`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "ordinal": 34,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.value`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "ordinal": 35,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "ordinal": 36,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "ordinal": 37,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.rank`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
+      "ordinal": 38,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.currency`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "ordinal": 39,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.value`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "ordinal": 40,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvc`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
+      "ordinal": 41,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvcId`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "ordinal": 42,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpToLocns`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "ordinal": 43,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Business-policy set and its embedded policy terms. Nested property: `shipTrms.shpOpt.shpType`.",
+      "hierarchicalName": "bizPol.shipTrms.shpOpt.shpType",
+      "name": "bizPol.shipTrms.shpOpt.shpType",
+      "ordinal": 44,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Image mappings for the group. Nested property: `eBayPicUrl`.",
+      "hierarchicalName": "img.eBayPicUrl",
+      "name": "img.eBayPicUrl",
+      "ordinal": 45,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Image mappings for the group. Nested property: `extPicUrl`.",
+      "hierarchicalName": "img.extPicUrl",
+      "name": "img.extPicUrl",
+      "ordinal": 46,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Image mappings for the group. Nested property: `order`.",
+      "hierarchicalName": "img.order",
+      "name": "img.order",
+      "ordinal": 47,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Image-variation configuration, including the variation trait and its image associations. Nested property: `trtImg.img`.",
+      "hierarchicalName": "imgsVryBy.trtImg.img",
+      "name": "imgsVryBy.trtImg.img",
+      "ordinal": 48,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Image-variation configuration, including the variation trait and its image associations. Nested property: `trtImg.trtVal`.",
+      "hierarchicalName": "imgsVryBy.trtImg.trtVal",
+      "name": "imgsVryBy.trtImg.trtVal",
+      "ordinal": 49,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item variation trait name/value entries. Nested property: `name`.",
+      "hierarchicalName": "itmsVryBy.name",
+      "name": "itmsVryBy.name",
+      "ordinal": 50,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Item variation trait name/value entries. Nested property: `values`.",
+      "hierarchicalName": "itmsVryBy.values",
+      "name": "itmsVryBy.values",
+      "ordinal": 51,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

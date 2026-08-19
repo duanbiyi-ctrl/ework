@@ -11,13 +11,13 @@
         {
             "name": "expiredDate",
             "type": "date",
-            "comment": null,
+            "comment": "Date when revision-history retention expires.",
             "nullable": null
         },
         {
             "name": "lstgId",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier of the listing whose revision history is stored.",
             "nullable": null
         }
     ],

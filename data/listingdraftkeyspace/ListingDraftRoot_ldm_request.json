@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Draft root document identifier.",
       "hierarchicalName": "PK",
       "name": "PK",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Application custom-information value.",
       "hierarchicalName": "appCstmInfo",
       "name": "appCstmInfo",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Original application identifier for auto-relist.",
       "hierarchicalName": "autoRlstOrigAppId",
       "name": "autoRlstOrigAppId",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Bid count.",
       "hierarchicalName": "bidCnt",
       "name": "bidCnt",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Creation date/time value.",
       "hierarchicalName": "crtDate",
       "name": "crtDate",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Description revision date/time value.",
       "hierarchicalName": "descRevsnDt",
       "name": "descRevsnDt",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field.",
       "hierarchicalName": "fl",
       "name": "fl",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 10.",
       "hierarchicalName": "fl10",
       "name": "fl10",
       "ordinal": 8,
@@ -79,6 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 11.",
       "hierarchicalName": "fl11",
       "name": "fl11",
       "ordinal": 9,
@@ -88,6 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 12.",
       "hierarchicalName": "fl12",
       "name": "fl12",
       "ordinal": 10,
@@ -97,6 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 2.",
       "hierarchicalName": "fl2",
       "name": "fl2",
       "ordinal": 11,
@@ -106,6 +117,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 3.",
       "hierarchicalName": "fl3",
       "name": "fl3",
       "ordinal": 12,
@@ -115,6 +127,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 4.",
       "hierarchicalName": "fl4",
       "name": "fl4",
       "ordinal": 13,
@@ -124,6 +137,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 5.",
       "hierarchicalName": "fl5",
       "name": "fl5",
       "ordinal": 14,
@@ -133,6 +147,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 6.",
       "hierarchicalName": "fl6",
       "name": "fl6",
       "ordinal": 15,
@@ -142,6 +157,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 7.",
       "hierarchicalName": "fl7",
       "name": "fl7",
       "ordinal": 16,
@@ -151,6 +167,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 8.",
       "hierarchicalName": "fl8",
       "name": "fl8",
       "ordinal": 17,
@@ -160,6 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared flag/value field 9.",
       "hierarchicalName": "fl9",
       "name": "fl9",
       "ordinal": 18,
@@ -169,6 +187,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Fulfillment count.",
       "hierarchicalName": "ftmtCnt",
       "name": "ftmtCnt",
       "ordinal": 19,
@@ -178,6 +197,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Gallery-picture MD5 hash.",
       "hierarchicalName": "galPicMd5Hsh",
       "name": "galPicMd5Hsh",
       "ordinal": 20,
@@ -187,6 +207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Gallery URL.",
       "hierarchicalName": "galUrl",
       "name": "galUrl",
       "ordinal": 21,
@@ -196,6 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Item identifiers associated with this draft root.",
       "hierarchicalName": "itmId",
       "name": "itmId",
       "ordinal": 22,
@@ -205,6 +227,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Item revision date/time value.",
       "hierarchicalName": "itmRevsnDt",
       "name": "itmRevsnDt",
       "ordinal": 23,
@@ -214,6 +237,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item visibility option.",
       "hierarchicalName": "itmVisOpt",
       "name": "itmVisOpt",
       "ordinal": 24,
@@ -223,6 +247,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Last-modified date/time value.",
       "hierarchicalName": "lastModDate",
       "name": "lastModDate",
       "ordinal": 25,
@@ -232,6 +257,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listed-item identifier.",
       "hierarchicalName": "lstdItmId",
       "name": "lstdItmId",
       "ordinal": 26,
@@ -241,6 +267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing method classification.",
       "hierarchicalName": "lstgMthd",
       "name": "lstgMthd",
       "ordinal": 27,
@@ -250,6 +277,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared listing-time value.",
       "hierarchicalName": "lstgTm",
       "name": "lstgTm",
       "ordinal": 28,
@@ -259,6 +287,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared listing-template flags value.",
       "hierarchicalName": "lstgTmpltFls",
       "name": "lstgTmpltFls",
       "ordinal": 29,
@@ -268,6 +297,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Markdown-sale item-price revision value.",
       "hierarchicalName": "mkdnSaleItmPrcRev",
       "name": "mkdnSaleItmPrcRev",
       "ordinal": 30,
@@ -277,6 +307,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared minimum/maximum flags value.",
       "hierarchicalName": "mnMxFls",
       "name": "mnMxFls",
       "ordinal": 31,
@@ -286,6 +317,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Original item identifier.",
       "hierarchicalName": "origItmId",
       "name": "origItmId",
       "ordinal": 32,
@@ -295,6 +327,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared `pbp` eligibility value.",
       "hierarchicalName": "pbpElig",
       "name": "pbpElig",
       "ordinal": 33,
@@ -304,6 +337,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "PayPal icon type.",
       "hierarchicalName": "pplIcnTp",
       "name": "pplIcnTp",
       "ordinal": 34,
@@ -313,6 +347,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared progress-date value.",
       "hierarchicalName": "prgDt",
       "name": "prgDt",
       "ordinal": 35,
@@ -322,6 +357,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Promotion-sale end date/time value.",
       "hierarchicalName": "prmSaleEndDt",
       "name": "prmSaleEndDt",
       "ordinal": 36,
@@ -331,6 +367,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Promotion-sale start date/time value.",
       "hierarchicalName": "prmSaleStrtDt",
       "name": "prmSaleStrtDt",
       "ordinal": 37,
@@ -340,6 +377,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared properties value.",
       "hierarchicalName": "props",
       "name": "props",
       "ordinal": 38,
@@ -349,6 +387,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared password-expiration value.",
       "hierarchicalName": "pwdEx",
       "name": "pwdEx",
       "ordinal": 39,
@@ -358,6 +397,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Quantity sold.",
       "hierarchicalName": "qtySold",
       "name": "qtySold",
       "ordinal": 40,
@@ -367,6 +407,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared `ryi` status value.",
       "hierarchicalName": "ryiStat",
       "name": "ryiStat",
       "ordinal": 41,
@@ -376,6 +417,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared sale-status value.",
       "hierarchicalName": "saleStat",
       "name": "saleStat",
       "ordinal": 42,
@@ -385,6 +427,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared scratch flag value.",
       "hierarchicalName": "scrtchFl",
       "name": "scrtchFl",
       "ordinal": 43,
@@ -394,6 +437,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared scratch flag value 2.",
       "hierarchicalName": "scrtchFl2",
       "name": "scrtchFl2",
       "ordinal": 44,
@@ -403,6 +447,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared scratch flag value 3.",
       "hierarchicalName": "scrtchFl3",
       "name": "scrtchFl3",
       "ordinal": 45,
@@ -412,6 +457,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Source-declared scratch flag value 4.",
       "hierarchicalName": "scrtchFl4",
       "name": "scrtchFl4",
       "ordinal": 46,
@@ -421,6 +467,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared shipping-region value.",
       "hierarchicalName": "shipRgn",
       "name": "shipRgn",
       "ordinal": 47,
@@ -430,6 +477,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Self-hosted picture value.",
       "hierarchicalName": "slfHstdPic",
       "name": "slfHstdPic",
       "ordinal": 48,
@@ -439,6 +487,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Self-hosted picture mapping value.",
       "hierarchicalName": "slfHstdPicMap",
       "name": "slfHstdPicMap",
       "ordinal": 49,
@@ -448,6 +497,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Store category identifiers.",
       "hierarchicalName": "strCatIds",
       "name": "strCatIds",
       "ordinal": 50,
@@ -457,6 +507,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Source-declared stored-fixed-price indicator.",
       "hierarchicalName": "strdFixdPrc",
       "name": "strdFixdPrc",
       "ordinal": 51,
@@ -466,6 +517,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Source-declared `th` flag value.",
       "hierarchicalName": "thFl",
       "name": "thFl",
       "ordinal": 52,
@@ -475,6 +527,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Cumulative-listings count.",
       "hierarchicalName": "totCumLstgs",
       "name": "totCumLstgs",
       "ordinal": 53,
@@ -484,6 +537,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "User-item-property key.",
       "hierarchicalName": "usrItmPrpKey",
       "name": "usrItmPrpKey",
       "ordinal": 54,
@@ -493,9 +547,30 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Visit count.",
       "hierarchicalName": "visitCnt",
       "name": "visitCnt",
       "ordinal": 55,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Usage-history detail name/value entries. Nested property: `name`.",
+      "hierarchicalName": "usgHistDtl.name",
+      "name": "usgHistDtl.name",
+      "ordinal": 56,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Usage-history detail name/value entries. Nested property: `value`.",
+      "hierarchicalName": "usgHistDtl.value",
+      "name": "usgHistDtl.value",
+      "ordinal": 57,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

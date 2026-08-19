@@ -4,7 +4,418 @@
   "domain": "GDS",
   "environment": "UNSTAGED",
   "errorHandlingStorageMappings": [],
-  "fields": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier for this policy-set child document, generated as `BIZ_POL_<itemId>`.",
+      "hierarchicalName": "plcsId",
+      "name": "plcsId",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Nested property: `depRqd`.",
+      "hierarchicalName": "pmtTrms.depRqd",
+      "name": "pmtTrms.depRqd",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Nested property: `hrsToDep`.",
+      "hierarchicalName": "pmtTrms.hrsToDep",
+      "name": "pmtTrms.hrsToDep",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Nested property: `immPay`.",
+      "hierarchicalName": "pmtTrms.immPay",
+      "name": "pmtTrms.immPay",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Nested property: `pmtMthd`.",
+      "hierarchicalName": "pmtTrms.pmtMthd",
+      "name": "pmtTrms.pmtMthd",
+      "ordinal": 5,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Nested property: `ppEmail`.",
+      "hierarchicalName": "pmtTrms.ppEmail",
+      "name": "pmtTrms.ppEmail",
+      "ordinal": 6,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `domRetTrm.refMthd`.",
+      "hierarchicalName": "retTrms.domRetTrm.refMthd",
+      "name": "retTrms.domRetTrm.refMthd",
+      "ordinal": 7,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `domRetTrm.retAcptd`.",
+      "hierarchicalName": "retTrms.domRetTrm.retAcptd",
+      "name": "retTrms.domRetTrm.retAcptd",
+      "ordinal": 8,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `domRetTrm.retPrd`.",
+      "hierarchicalName": "retTrms.domRetTrm.retPrd",
+      "name": "retTrms.domRetTrm.retPrd",
+      "ordinal": 9,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `domRetTrm.retShpmtPayee`.",
+      "hierarchicalName": "retTrms.domRetTrm.retShpmtPayee",
+      "name": "retTrms.domRetTrm.retShpmtPayee",
+      "ordinal": 10,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `extHolRet`.",
+      "hierarchicalName": "retTrms.extHolRet",
+      "name": "retTrms.extHolRet",
+      "ordinal": 11,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `intRetTrm.refMthd`.",
+      "hierarchicalName": "retTrms.intRetTrm.refMthd",
+      "name": "retTrms.intRetTrm.refMthd",
+      "ordinal": 12,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `intRetTrm.retAcptd`.",
+      "hierarchicalName": "retTrms.intRetTrm.retAcptd",
+      "name": "retTrms.intRetTrm.retAcptd",
+      "ordinal": 13,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `intRetTrm.retPrd`.",
+      "hierarchicalName": "retTrms.intRetTrm.retPrd",
+      "name": "retTrms.intRetTrm.retPrd",
+      "ordinal": 14,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `intRetTrm.retShpmtPayee`.",
+      "hierarchicalName": "retTrms.intRetTrm.retShpmtPayee",
+      "name": "retTrms.intRetTrm.retShpmtPayee",
+      "ordinal": 15,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `refMthd`.",
+      "hierarchicalName": "retTrms.refMthd",
+      "name": "retTrms.refMthd",
+      "ordinal": 16,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `restFeePct`.",
+      "hierarchicalName": "retTrms.restFeePct",
+      "name": "retTrms.restFeePct",
+      "ordinal": 17,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `retAcptd`.",
+      "hierarchicalName": "retTrms.retAcptd",
+      "name": "retTrms.retAcptd",
+      "ordinal": 18,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `retInstr`.",
+      "hierarchicalName": "retTrms.retInstr",
+      "name": "retTrms.retInstr",
+      "ordinal": 19,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `retPrd`.",
+      "hierarchicalName": "retTrms.retPrd",
+      "name": "retTrms.retPrd",
+      "ordinal": 20,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Nested property: `retShpmtPayee`.",
+      "hierarchicalName": "retTrms.retShpmtPayee",
+      "name": "retTrms.retShpmtPayee",
+      "ordinal": 21,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `buyerRsp`.",
+      "hierarchicalName": "shipTrms.buyerRsp",
+      "name": "shipTrms.buyerRsp",
+      "ordinal": 22,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `excldLocn`.",
+      "hierarchicalName": "shipTrms.excldLocn",
+      "name": "shipTrms.excldLocn",
+      "ordinal": 23,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `excldLocnLastModDt`.",
+      "hierarchicalName": "shipTrms.excldLocnLastModDt",
+      "name": "shipTrms.excldLocnLastModDt",
+      "ordinal": 24,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `hndlgTm`.",
+      "hierarchicalName": "shipTrms.hndlgTm",
+      "name": "shipTrms.hndlgTm",
+      "ordinal": 25,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.cstType`.",
+      "hierarchicalName": "shipTrms.shpOpt.cstType",
+      "name": "shipTrms.shpOpt.cstType",
+      "ordinal": 26,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.promoShp`.",
+      "hierarchicalName": "shipTrms.shpOpt.promoShp",
+      "name": "shipTrms.shpOpt.promoShp",
+      "ordinal": 27,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.rtTblId`.",
+      "hierarchicalName": "shipTrms.shpOpt.rtTblId",
+      "name": "shipTrms.shpOpt.rtTblId",
+      "ordinal": 28,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpDscPrfId`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpDscPrfId",
+      "name": "shipTrms.shpOpt.shpDscPrfId",
+      "ordinal": 29,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.addUnitCost.currency`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "ordinal": 30,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.addUnitCost.value`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "ordinal": 31,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.pkgHndlgCost.currency`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "ordinal": 32,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.pkgHndlgCost.value`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "ordinal": 33,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.rank`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.rank",
+      "name": "shipTrms.shpOpt.shpSvcs.rank",
+      "ordinal": 34,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.shpCost.currency`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "name": "shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "ordinal": 35,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.shpCost.value`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "name": "shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "ordinal": 36,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.shpSvc`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpSvc",
+      "name": "shipTrms.shpOpt.shpSvcs.shpSvc",
+      "ordinal": 37,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.shpSvcId`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "name": "shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "ordinal": 38,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpSvcs.shpToLocns`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "name": "shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "ordinal": 39,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpOpt.shpType`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpType",
+      "name": "shipTrms.shpOpt.shpType",
+      "ordinal": 40,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Nested property: `shpToLocn`.",
+      "hierarchicalName": "shipTrms.shpToLocn",
+      "name": "shipTrms.shpToLocn",
+      "ordinal": 41,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
   "jiraProject": "GDS",
   "name": "item_business_policies",
   "namespaceId": 114,

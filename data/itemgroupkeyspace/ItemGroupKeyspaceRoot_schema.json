@@ -5,7 +5,7 @@
         {
             "name": "PK",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier for the item group.",
             "nullable": null
         },
         {
@@ -17,79 +17,133 @@
         {
             "name": "admEndDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Timestamp when the group was administratively ended.",
             "nullable": null
         },
         {
             "name": "cmpCompat",
             "type": "binary",
-            "comment": null,
+            "comment": "Compressed compatibility data for the group.",
             "nullable": null
         },
         {
             "name": "createdDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Timestamp when the group was created.",
             "nullable": null
         },
         {
             "name": "groupTitle",
             "type": "string",
-            "comment": null,
+            "comment": "Shared title for the group.",
             "nullable": null
         },
         {
             "name": "grpDrftId",
             "type": "string",
-            "comment": null,
+            "comment": "Draft identifier associated with the group.",
             "nullable": null
         },
         {
             "name": "grpVrs",
             "type": "string",
-            "comment": null,
+            "comment": "Version of the group.",
             "nullable": null
         },
         {
             "name": "httpsCmplt",
             "type": "numberInt",
-            "comment": null,
+            "comment": "HTTPS compliance indicator.",
             "nullable": null
         },
         {
             "name": "imgVryBy.trtName",
             "type": "string",
-            "comment": null,
+            "comment": "Trait-driven image variation configuration. Nested property: `trtName`.",
             "nullable": null
         },
         {
             "name": "itemIds",
             "type": "string[]",
-            "comment": null,
+            "comment": "Identifiers of the individual items in the group.",
             "nullable": null
         },
         {
             "name": "lastmodifiedDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Timestamp of the latest group update.",
             "nullable": null
         },
         {
             "name": "mFulfillmentSprt",
             "type": "boolean",
-            "comment": null,
+            "comment": "Indicates whether managed fulfillment is supported.",
             "nullable": null
         },
         {
             "name": "owner",
             "type": "string",
-            "comment": null,
+            "comment": "Owner of the item group.",
             "nullable": null
         },
         {
             "name": "sellerGroupKey",
             "type": "string",
-            "comment": null,
+            "comment": "Seller-provided group key.",
+            "nullable": null
+        },
+        {
+            "name": "globalIdentifiers.name",
+            "type": "string",
+            "comment": "Global product identifiers for the group. Nested property: `name`.",
+            "nullable": null
+        },
+        {
+            "name": "globalIdentifiers.values",
+            "type": "string[]",
+            "comment": "Global product identifiers for the group. Nested property: `values`.",
+            "nullable": null
+        },
+        {
+            "name": "images.eBayPicUrl",
+            "type": "string",
+            "comment": "Shared group images, including image URLs and display order. Nested property: `eBayPicUrl`.",
+            "nullable": null
+        },
+        {
+            "name": "images.extPicUrl",
+            "type": "string",
+            "comment": "Shared group images, including image URLs and display order. Nested property: `extPicUrl`.",
+            "nullable": null
+        },
+        {
+            "name": "images.order",
+            "type": "numberLong",
+            "comment": "Shared group images, including image URLs and display order. Nested property: `order`.",
+            "nullable": null
+        },
+        {
+            "name": "imgVryBy.trtImg.img",
+            "type": "string[]",
+            "comment": "Trait-driven image variation configuration. Nested property: `trtImg.img`.",
+            "nullable": null
+        },
+        {
+            "name": "imgVryBy.trtImg.trtVal",
+            "type": "string",
+            "comment": "Trait-driven image variation configuration. Nested property: `trtImg.trtVal`.",
+            "nullable": null
+        },
+        {
+            "name": "itmsVryBy.name",
+            "type": "string",
+            "comment": "Traits by which the group's items vary. Nested property: `name`.",
+            "nullable": null
+        },
+        {
+            "name": "itmsVryBy.values",
+            "type": "string[]",
+            "comment": "Traits by which the group's items vary. Nested property: `values`.",
             "nullable": null
         }
     ],

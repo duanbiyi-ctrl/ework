@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `odometer`.",
       "hierarchicalName": "docs.odometer",
       "name": "docs.odometer",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `vhclTtlBck`.",
       "hierarchicalName": "docs.vhclTtlBck",
       "name": "docs.vhclTtlBck",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `vhclTtlFrnt`.",
       "hierarchicalName": "docs.vhclTtlFrnt",
       "name": "docs.vhclTtlFrnt",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `vin`.",
       "hierarchicalName": "docs.vin",
       "name": "docs.vin",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "High-precision fixed-price amount. Nested property: `currency`.",
       "hierarchicalName": "fixedPriceHP.currency",
       "name": "fixedPriceHP.currency",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "High-precision fixed-price amount. Nested property: `value`.",
       "hierarchicalName": "fixedPriceHP.value",
       "name": "fixedPriceHP.value",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Indicates whether the item uses relaxed rules.",
       "hierarchicalName": "hasRlxdRls",
       "name": "hasRlxdRls",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier for this item-details child document, generated as `ITEM_DETAILS_<itemId>`.",
       "hierarchicalName": "itemDetailsID",
       "name": "itemDetailsID",
       "ordinal": 8,
@@ -79,6 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "High-precision starting-bid amount. Nested property: `currency`.",
       "hierarchicalName": "strtBidPriceHP.currency",
       "name": "strtBidPriceHP.currency",
       "ordinal": 9,
@@ -88,6 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "High-precision starting-bid amount. Nested property: `value`.",
       "hierarchicalName": "strtBidPriceHP.value",
       "name": "strtBidPriceHP.value",
       "ordinal": 10,

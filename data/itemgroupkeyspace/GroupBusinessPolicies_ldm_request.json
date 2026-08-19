@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier for the group policy set.",
       "hierarchicalName": "plcsId",
       "name": "plcsId",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `daysToFulPmt`.",
       "hierarchicalName": "pmtTrms.daysToFulPmt",
       "name": "pmtTrms.daysToFulPmt",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `depRqd`.",
       "hierarchicalName": "pmtTrms.depRqd",
       "name": "pmtTrms.depRqd",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `hrsToDep`.",
       "hierarchicalName": "pmtTrms.hrsToDep",
       "name": "pmtTrms.hrsToDep",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `immPay`.",
       "hierarchicalName": "pmtTrms.immPay",
       "name": "pmtTrms.immPay",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `pmtInstr`.",
       "hierarchicalName": "pmtTrms.pmtInstr",
       "name": "pmtTrms.pmtInstr",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `pmtMthd`.",
       "hierarchicalName": "pmtTrms.pmtMthd",
       "name": "pmtTrms.pmtMthd",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded payment terms, including payment methods, deposit requirements, and payment instructions. Nested property: `ppEmail`.",
       "hierarchicalName": "pmtTrms.ppEmail",
       "name": "pmtTrms.ppEmail",
       "ordinal": 8,
@@ -79,6 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.refMthd`.",
       "hierarchicalName": "retTrms.domRetTrm.refMthd",
       "name": "retTrms.domRetTrm.refMthd",
       "ordinal": 9,
@@ -88,6 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.retAcptd`.",
       "hierarchicalName": "retTrms.domRetTrm.retAcptd",
       "name": "retTrms.domRetTrm.retAcptd",
       "ordinal": 10,
@@ -97,6 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.retPrd`.",
       "hierarchicalName": "retTrms.domRetTrm.retPrd",
       "name": "retTrms.domRetTrm.retPrd",
       "ordinal": 11,
@@ -106,6 +117,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `domRetTrm.retShpmtPayee`.",
       "hierarchicalName": "retTrms.domRetTrm.retShpmtPayee",
       "name": "retTrms.domRetTrm.retShpmtPayee",
       "ordinal": 12,
@@ -115,6 +127,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `extHolRet`.",
       "hierarchicalName": "retTrms.extHolRet",
       "name": "retTrms.extHolRet",
       "ordinal": 13,
@@ -124,6 +137,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.refMthd`.",
       "hierarchicalName": "retTrms.intRetTrm.refMthd",
       "name": "retTrms.intRetTrm.refMthd",
       "ordinal": 14,
@@ -133,6 +147,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.retAcptd`.",
       "hierarchicalName": "retTrms.intRetTrm.retAcptd",
       "name": "retTrms.intRetTrm.retAcptd",
       "ordinal": 15,
@@ -142,6 +157,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.retPrd`.",
       "hierarchicalName": "retTrms.intRetTrm.retPrd",
       "name": "retTrms.intRetTrm.retPrd",
       "ordinal": 16,
@@ -151,6 +167,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `intRetTrm.retShpmtPayee`.",
       "hierarchicalName": "retTrms.intRetTrm.retShpmtPayee",
       "name": "retTrms.intRetTrm.retShpmtPayee",
       "ordinal": 17,
@@ -160,6 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `refMthd`.",
       "hierarchicalName": "retTrms.refMthd",
       "name": "retTrms.refMthd",
       "ordinal": 18,
@@ -169,6 +187,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `restFeePct`.",
       "hierarchicalName": "retTrms.restFeePct",
       "name": "retTrms.restFeePct",
       "ordinal": 19,
@@ -178,6 +197,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retAcptd`.",
       "hierarchicalName": "retTrms.retAcptd",
       "name": "retTrms.retAcptd",
       "ordinal": 20,
@@ -187,6 +207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retInstr`.",
       "hierarchicalName": "retTrms.retInstr",
       "name": "retTrms.retInstr",
       "ordinal": 21,
@@ -196,6 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retPrd`.",
       "hierarchicalName": "retTrms.retPrd",
       "name": "retTrms.retPrd",
       "ordinal": 22,
@@ -205,6 +227,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded return-policy terms, including acceptance, refund, timing, and return-shipping responsibility. Nested property: `retShpmtPayee`.",
       "hierarchicalName": "retTrms.retShpmtPayee",
       "name": "retTrms.retShpmtPayee",
       "ordinal": 23,
@@ -214,6 +237,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `buyerRsp`.",
       "hierarchicalName": "shipTrms.buyerRsp",
       "name": "shipTrms.buyerRsp",
       "ordinal": 24,
@@ -223,6 +247,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `excldLocn`.",
       "hierarchicalName": "shipTrms.excldLocn",
       "name": "shipTrms.excldLocn",
       "ordinal": 25,
@@ -232,6 +257,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `excldLocnLastModDt`.",
       "hierarchicalName": "shipTrms.excldLocnLastModDt",
       "name": "shipTrms.excldLocnLastModDt",
       "ordinal": 26,
@@ -241,6 +267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `hndlgTm`.",
       "hierarchicalName": "shipTrms.hndlgTm",
       "name": "shipTrms.hndlgTm",
       "ordinal": 27,
@@ -250,9 +277,160 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpToLocn`.",
       "hierarchicalName": "shipTrms.shpToLocn",
       "name": "shipTrms.shpToLocn",
       "ordinal": 28,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.cstType`.",
+      "hierarchicalName": "shipTrms.shpOpt.cstType",
+      "name": "shipTrms.shpOpt.cstType",
+      "ordinal": 29,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.promoShp`.",
+      "hierarchicalName": "shipTrms.shpOpt.promoShp",
+      "name": "shipTrms.shpOpt.promoShp",
+      "ordinal": 30,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.rtTblId`.",
+      "hierarchicalName": "shipTrms.shpOpt.rtTblId",
+      "name": "shipTrms.shpOpt.rtTblId",
+      "ordinal": 31,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpDscPrfId`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpDscPrfId",
+      "name": "shipTrms.shpOpt.shpDscPrfId",
+      "ordinal": 32,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.addUnitCost.currency`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+      "ordinal": 33,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.addUnitCost.value`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+      "ordinal": 34,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.pkgHndlgCost.currency`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+      "ordinal": 35,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.pkgHndlgCost.value`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+      "ordinal": 36,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.rank`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.rank",
+      "name": "shipTrms.shpOpt.shpSvcs.rank",
+      "ordinal": 37,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpCost.currency`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "name": "shipTrms.shpOpt.shpSvcs.shpCost.currency",
+      "ordinal": 38,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpCost.value`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "name": "shipTrms.shpOpt.shpSvcs.shpCost.value",
+      "ordinal": 39,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpSvc`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpSvc",
+      "name": "shipTrms.shpOpt.shpSvcs.shpSvc",
+      "ordinal": 40,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpSvcId`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "name": "shipTrms.shpOpt.shpSvcs.shpSvcId",
+      "ordinal": 41,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpSvcs.shpToLocns`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "name": "shipTrms.shpOpt.shpSvcs.shpToLocns",
+      "ordinal": 42,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Embedded shipping terms, including destinations, excluded locations, handling time, and service options. Nested property: `shpOpt.shpType`.",
+      "hierarchicalName": "shipTrms.shpOpt.shpType",
+      "name": "shipTrms.shpOpt.shpType",
+      "ordinal": 43,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

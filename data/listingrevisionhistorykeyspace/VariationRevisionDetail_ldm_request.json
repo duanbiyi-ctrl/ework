@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Kind of change recorded.",
       "hierarchicalName": "chgTp",
       "name": "chgTp",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier of the listing whose variation property changed.",
       "hierarchicalName": "lstgId",
       "name": "lstgId",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Group containing the changed variation property.",
       "hierarchicalName": "rvsdPrptyGrp",
       "name": "rvsdPrptyGrp",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Variation-specific property that changed.",
       "hierarchicalName": "rvsdVarPrpty",
       "name": "rvsdVarPrpty",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier of the changed variation.",
       "hierarchicalName": "varId",
       "name": "varId",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Serialized variation trait values associated with the change.",
       "hierarchicalName": "varTraitVals",
       "name": "varTraitVals",
       "ordinal": 6,

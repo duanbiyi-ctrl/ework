@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Kind of change recorded.",
       "hierarchicalName": "chgTp",
       "name": "chgTp",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Display label for the changed property.",
       "hierarchicalName": "lbl",
       "name": "lbl",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Reference identifier for this listing revision-detail document. Nested property: `reference`.",
       "hierarchicalName": "lstRvsnDtlId.reference",
       "name": "lstRvsnDtlId.reference",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier of the listing whose revision property changed.",
       "hierarchicalName": "lstgId",
       "name": "lstgId",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Value after the change.",
       "hierarchicalName": "newVal",
       "name": "newVal",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Value before the change.",
       "hierarchicalName": "oldVal",
       "name": "oldVal",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing property that changed.",
       "hierarchicalName": "rvsdPrpty",
       "name": "rvsdPrpty",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Group containing the changed listing property.",
       "hierarchicalName": "rvsdPrptyGrp",
       "name": "rvsdPrptyGrp",
       "ordinal": 8,

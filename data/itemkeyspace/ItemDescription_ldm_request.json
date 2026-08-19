@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier for this description child document, generated as `DESC_<itemId>`.",
       "hierarchicalName": "ItemDescID",
       "name": "ItemDescID",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "description": "Compressed representation of the item description.",
       "hierarchicalName": "compDesc",
       "name": "compDesc",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Expanded item description text.",
       "hierarchicalName": "desc",
       "name": "desc",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
+      "description": "Item description revision timestamp.",
       "hierarchicalName": "descRevsnDt",
       "name": "descRevsnDt",
       "ordinal": 4,

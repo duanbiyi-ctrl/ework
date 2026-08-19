@@ -5,7 +5,7 @@
         {
             "name": "ItemCompID",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier for this compatibility child document, generated as `COMPAT_<itemId>`.",
             "nullable": null
         },
         {
@@ -17,13 +17,13 @@
         {
             "name": "cmpCompat",
             "type": "binary",
-            "comment": null,
+            "comment": "Compressed representation of the item's compatibility entries.",
             "nullable": null
         },
         {
             "name": "ftExempt",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Item fitment-threshold exemption value.",
             "nullable": null
         }
     ],

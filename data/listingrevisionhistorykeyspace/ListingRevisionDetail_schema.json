@@ -11,49 +11,49 @@
         {
             "name": "chgTp",
             "type": "string",
-            "comment": null,
+            "comment": "Kind of change recorded.",
             "nullable": null
         },
         {
             "name": "lbl",
             "type": "string",
-            "comment": null,
+            "comment": "Display label for the changed property.",
             "nullable": null
         },
         {
             "name": "lstRvsnDtlId.reference",
             "type": "string",
-            "comment": null,
+            "comment": "Reference identifier for this listing revision-detail document. Nested property: `reference`.",
             "nullable": null
         },
         {
             "name": "lstgId",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier of the listing whose revision property changed.",
             "nullable": null
         },
         {
             "name": "newVal",
             "type": "string",
-            "comment": null,
+            "comment": "Value after the change.",
             "nullable": null
         },
         {
             "name": "oldVal",
             "type": "string",
-            "comment": null,
+            "comment": "Value before the change.",
             "nullable": null
         },
         {
             "name": "rvsdPrpty",
             "type": "string",
-            "comment": null,
+            "comment": "Listing property that changed.",
             "nullable": null
         },
         {
             "name": "rvsdPrptyGrp",
             "type": "string",
-            "comment": null,
+            "comment": "Group containing the changed listing property.",
             "nullable": null
         }
     ],

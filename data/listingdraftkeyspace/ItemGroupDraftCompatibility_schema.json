@@ -5,7 +5,7 @@
         {
             "name": "DraftCompID",
             "type": "string",
-            "comment": null,
+            "comment": "Draft compatibility document identifier.",
             "nullable": null
         },
         {
@@ -17,7 +17,19 @@
         {
             "name": "cmpCompat",
             "type": "binary",
-            "comment": null,
+            "comment": "Compressed compatibility representation.",
+            "nullable": null
+        },
+        {
+            "name": "compat.propertiesList.name",
+            "type": "string",
+            "comment": "Compatibility entries for the item group draft. Nested property: `propertiesList.name`.",
+            "nullable": null
+        },
+        {
+            "name": "compat.propertiesList.values",
+            "type": "string[]",
+            "comment": "Compatibility entries for the item group draft. Nested property: `propertiesList.values`.",
             "nullable": null
         }
     ],

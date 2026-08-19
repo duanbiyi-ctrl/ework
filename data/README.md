@@ -17,6 +17,22 @@ Verify that every generated request is current:
 python3 scripts/generate_raw_ldm_payloads.py --check
 ```
 
+Audit every source schema against its paired production NuDocument sample and
+emit a standalone Markdown report:
+
+```bash
+python3 scripts/nudoc_sample_audit.py --output /tmp/nudoc-sample-audit.md
+```
+
+Reconcile observed sample fields, compatible types, and entity-page-backed
+descriptions into the source schemas. Review with `--check` first; use
+`--apply` only after resolving any reported type inconsistencies.
+
+```bash
+python3 scripts/nudoc_schema_reconciliation.py --check
+python3 scripts/nudoc_schema_reconciliation.py --apply
+```
+
 Review the MDM creation plan without making network calls:
 
 ```bash

@@ -1,7 +1,11 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
 
 from scripts.nudoc_schema_reconciliation import (
     DescriptionResolutionError,
+    main,
     reconcile_schema,
 )
 
@@ -114,6 +118,80 @@ class NuDocSchemaReconciliationTests(unittest.TestCase):
         )
 
         self.assertEqual(reconciled["Columns"][0]["type"], "numberInt")
+
+    def test_rejects_unsupported_observed_type(self):
+        with self.assertRaisesRegex(ValueError, "Unsupported observed sample type"):
+            reconcile_schema(
+                {"Columns": []},
+                {"values": {"array"}},
+                {"values": "Values."},
+            )
+
+    def test_check_and_apply_reconciliation_commands(self):
+        with TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data" / "itemkeyspace"
+            samples_dir = root / "samples" / "ItemKeyspace"
+            docs_dir = root / "docs"
+            data_dir.mkdir(parents=True)
+            samples_dir.mkdir(parents=True)
+            docs_dir.mkdir()
+
+            schema_path = data_dir / "Item_schema.json"
+            schema_path.write_text(
+                """{
+    "DataStoreName": "ItemKeyspace",
+    "DataTableName": "__ROOT__.Item",
+    "Columns": [
+        {
+            "name": "title",
+            "type": "string",
+            "comment": null,
+            "nullable": null
+        }
+    ]
+}
+""",
+                encoding="utf-8",
+            )
+            (samples_dir / "Item.json").write_text(
+                '{"title": "Sample title"}\n',
+                encoding="utf-8",
+            )
+            (docs_dir / "item.md").write_text(
+                "\n".join(
+                    [
+                        "# Item LDM",
+                        "",
+                        "**NuDocument Docset:** `Item`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                        "",
+                        "| Field | Type | Description |",
+                        "| --- | --- | --- |",
+                        "| `title` | `String` | Listing title. |",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            base_arguments = [
+                "nudoc_schema_reconciliation.py",
+                "--data-dir",
+                str(root / "data"),
+                "--samples-dir",
+                str(root / "samples"),
+                "--docs-dir",
+                str(docs_dir),
+            ]
+
+            with patch("sys.argv", [*base_arguments, "--check"]):
+                self.assertEqual(main(), 1)
+            with patch("sys.argv", [*base_arguments, "--apply"]):
+                self.assertEqual(main(), 0)
+            with patch("sys.argv", [*base_arguments, "--check"]):
+                self.assertEqual(main(), 0)
+
+            self.assertIn('"comment": "Listing title."', schema_path.read_text())
 
 
 if __name__ == "__main__":

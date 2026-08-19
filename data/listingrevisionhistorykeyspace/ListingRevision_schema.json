@@ -11,49 +11,49 @@
         {
             "name": "appId",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Identifier of the application that produced the revision.",
             "nullable": null
         },
         {
             "name": "rvsdDate",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Timestamp when the revision was recorded.",
             "nullable": null
         },
         {
             "name": "rvsdPrptyGrps",
             "type": "string[]",
-            "comment": null,
+            "comment": "Property groups changed by this revision.",
             "nullable": null
         },
         {
             "name": "rvsnId.reference",
             "type": "string",
-            "comment": null,
+            "comment": "Reference identifier for this listing revision document. Nested property: `reference`.",
             "nullable": null
         },
         {
             "name": "sigRevCnt",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Count of significant revisions.",
             "nullable": null
         },
         {
             "name": "updCrLstgVrs",
             "type": "string",
-            "comment": null,
+            "comment": "Core-listing version after the update.",
             "nullable": null
         },
         {
             "name": "vrsnCrtd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Indicates whether the revision created a version.",
             "nullable": null
         },
         {
             "name": "vrsnId",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Listing revision version identifier.",
             "nullable": null
         }
     ],

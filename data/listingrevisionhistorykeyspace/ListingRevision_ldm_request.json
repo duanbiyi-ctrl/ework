@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Identifier of the application that produced the revision.",
       "hierarchicalName": "appId",
       "name": "appId",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Timestamp when the revision was recorded.",
       "hierarchicalName": "rvsdDate",
       "name": "rvsdDate",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Property groups changed by this revision.",
       "hierarchicalName": "rvsdPrptyGrps",
       "name": "rvsdPrptyGrps",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Reference identifier for this listing revision document. Nested property: `reference`.",
       "hierarchicalName": "rvsnId.reference",
       "name": "rvsnId.reference",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "Count of significant revisions.",
       "hierarchicalName": "sigRevCnt",
       "name": "sigRevCnt",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Core-listing version after the update.",
       "hierarchicalName": "updCrLstgVrs",
       "name": "updCrLstgVrs",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Indicates whether the revision created a version.",
       "hierarchicalName": "vrsnCrtd",
       "name": "vrsnCrtd",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Listing revision version identifier.",
       "hierarchicalName": "vrsnId",
       "name": "vrsnId",
       "ordinal": 8,

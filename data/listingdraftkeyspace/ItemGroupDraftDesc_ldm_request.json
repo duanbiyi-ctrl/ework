@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Group-description document identifier.",
       "hierarchicalName": "PK",
       "name": "PK",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "description": "Compressed group description.",
       "hierarchicalName": "cmpDesc",
       "name": "cmpDesc",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Expanded group description.",
       "hierarchicalName": "groupDesc",
       "name": "groupDesc",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Group-description revision date/time value.",
       "hierarchicalName": "grpDescRevsnDt",
       "name": "grpDescRevsnDt",
       "ordinal": 4,

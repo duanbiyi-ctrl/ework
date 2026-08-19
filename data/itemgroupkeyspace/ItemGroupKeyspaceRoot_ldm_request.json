@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier for the item group.",
       "hierarchicalName": "PK",
       "name": "PK",
       "ordinal": 1,
@@ -16,6 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Timestamp when the group was administratively ended.",
       "hierarchicalName": "admEndDt",
       "name": "admEndDt",
       "ordinal": 2,
@@ -25,6 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "description": "Compressed compatibility data for the group.",
       "hierarchicalName": "cmpCompat",
       "name": "cmpCompat",
       "ordinal": 3,
@@ -34,6 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Timestamp when the group was created.",
       "hierarchicalName": "createdDt",
       "name": "createdDt",
       "ordinal": 4,
@@ -43,6 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shared title for the group.",
       "hierarchicalName": "groupTitle",
       "name": "groupTitle",
       "ordinal": 5,
@@ -52,6 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Draft identifier associated with the group.",
       "hierarchicalName": "grpDrftId",
       "name": "grpDrftId",
       "ordinal": 6,
@@ -61,6 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Version of the group.",
       "hierarchicalName": "grpVrs",
       "name": "grpVrs",
       "ordinal": 7,
@@ -70,6 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
+      "description": "HTTPS compliance indicator.",
       "hierarchicalName": "httpsCmplt",
       "name": "httpsCmplt",
       "ordinal": 8,
@@ -79,6 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Trait-driven image variation configuration. Nested property: `trtName`.",
       "hierarchicalName": "imgVryBy.trtName",
       "name": "imgVryBy.trtName",
       "ordinal": 9,
@@ -88,6 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Identifiers of the individual items in the group.",
       "hierarchicalName": "itemIds",
       "name": "itemIds",
       "ordinal": 10,
@@ -97,6 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Timestamp of the latest group update.",
       "hierarchicalName": "lastmodifiedDt",
       "name": "lastmodifiedDt",
       "ordinal": 11,
@@ -106,6 +117,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Indicates whether managed fulfillment is supported.",
       "hierarchicalName": "mFulfillmentSprt",
       "name": "mFulfillmentSprt",
       "ordinal": 12,
@@ -115,6 +127,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Owner of the item group.",
       "hierarchicalName": "owner",
       "name": "owner",
       "ordinal": 13,
@@ -124,9 +137,100 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller-provided group key.",
       "hierarchicalName": "sellerGroupKey",
       "name": "sellerGroupKey",
       "ordinal": 14,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Global product identifiers for the group. Nested property: `name`.",
+      "hierarchicalName": "globalIdentifiers.name",
+      "name": "globalIdentifiers.name",
+      "ordinal": 15,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Global product identifiers for the group. Nested property: `values`.",
+      "hierarchicalName": "globalIdentifiers.values",
+      "name": "globalIdentifiers.values",
+      "ordinal": 16,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shared group images, including image URLs and display order. Nested property: `eBayPicUrl`.",
+      "hierarchicalName": "images.eBayPicUrl",
+      "name": "images.eBayPicUrl",
+      "ordinal": 17,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Shared group images, including image URLs and display order. Nested property: `extPicUrl`.",
+      "hierarchicalName": "images.extPicUrl",
+      "name": "images.extPicUrl",
+      "ordinal": 18,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Shared group images, including image URLs and display order. Nested property: `order`.",
+      "hierarchicalName": "images.order",
+      "name": "images.order",
+      "ordinal": 19,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Trait-driven image variation configuration. Nested property: `trtImg.img`.",
+      "hierarchicalName": "imgVryBy.trtImg.img",
+      "name": "imgVryBy.trtImg.img",
+      "ordinal": 20,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Trait-driven image variation configuration. Nested property: `trtImg.trtVal`.",
+      "hierarchicalName": "imgVryBy.trtImg.trtVal",
+      "name": "imgVryBy.trtImg.trtVal",
+      "ordinal": 21,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Traits by which the group's items vary. Nested property: `name`.",
+      "hierarchicalName": "itmsVryBy.name",
+      "name": "itmsVryBy.name",
+      "ordinal": 22,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
+      "description": "Traits by which the group's items vary. Nested property: `values`.",
+      "hierarchicalName": "itmsVryBy.values",
+      "name": "itmsVryBy.values",
+      "ordinal": 23,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
