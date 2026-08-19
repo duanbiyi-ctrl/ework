@@ -4,14 +4,13 @@ from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 from scripts.nudoc_schema_reconciliation import (
-    DescriptionResolutionError,
     main,
     reconcile_schema,
 )
 
 
 class NuDocSchemaReconciliationTests(unittest.TestCase):
-    def test_adds_sample_fields_corrects_types_and_backfills_descriptions(self):
+    def test_leaves_parent_only_descriptions_empty(self):
         schema = {
             "Columns": [
                 {
@@ -23,7 +22,7 @@ class NuDocSchemaReconciliationTests(unittest.TestCase):
                 {
                     "name": "details.count",
                     "type": "string",
-                    "comment": None,
+                    "comment": "Item detail values. Nested property: `count`.",
                     "nullable": None,
                 },
             ]
@@ -54,34 +53,35 @@ class NuDocSchemaReconciliationTests(unittest.TestCase):
                 {
                     "name": "details.count",
                     "type": "numberLong",
-                    "comment": "Item detail values. Nested property: `count`.",
+                    "comment": None,
                     "nullable": None,
                 },
                 {
                     "name": "details.enabled",
                     "type": "boolean",
-                    "comment": "Item detail values. Nested property: `enabled`.",
+                    "comment": None,
                     "nullable": None,
                 },
             ],
         )
         self.assertIsNone(schema["Columns"][0]["comment"])
 
-    def test_rejects_fields_without_documentation_evidence(self):
-        with self.assertRaisesRegex(DescriptionResolutionError, "unknown"):
-            reconcile_schema(
-                {
-                    "Columns": [
-                        {
-                            "name": "unknown",
-                            "type": "string",
-                            "comment": None,
-                        }
-                    ]
-                },
-                {"unknown": {"string"}},
-                {},
-            )
+    def test_leaves_fields_without_documentation_evidence_empty(self):
+        reconciled = reconcile_schema(
+            {
+                "Columns": [
+                    {
+                        "name": "unknown",
+                        "type": "string",
+                        "comment": None,
+                    }
+                ]
+            },
+            {"unknown": {"string"}},
+            {},
+        )
+
+        self.assertIsNone(reconciled["Columns"][0]["comment"])
 
     def test_uses_double_for_mixed_integer_and_decimal_observations(self):
         reconciled = reconcile_schema(

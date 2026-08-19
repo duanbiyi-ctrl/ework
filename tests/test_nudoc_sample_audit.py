@@ -85,6 +85,7 @@ class NuDocSampleAuditTests(unittest.TestCase):
                         "| Field | Type | Description |",
                         "| --- | --- | --- |",
                         "| `title` | `String` | Listing title. |",
+                        "| `details` | `Details` | Item details. |",
                     ]
                 ),
                 encoding="utf-8",
