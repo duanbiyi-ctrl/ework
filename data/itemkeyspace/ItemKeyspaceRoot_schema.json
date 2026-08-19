@@ -22,7 +22,7 @@
         },
         {
             "name": "PrmnlDtls.mrkdnItmPrcRvsn",
-            "type": "numberInt",
+            "type": "string",
             "comment": null,
             "nullable": null
         },
