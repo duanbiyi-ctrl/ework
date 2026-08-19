@@ -85,7 +85,6 @@ class NuDocSampleAuditTests(unittest.TestCase):
                         "| Field | Type | Description |",
                         "| --- | --- | --- |",
                         "| `title` | `String` | Listing title. |",
-                        "| `details` | `Details` | Item details. |",
                     ]
                 ),
                 encoding="utf-8",
@@ -98,7 +97,7 @@ class NuDocSampleAuditTests(unittest.TestCase):
             self.assertEqual(result.sample_only_paths, ("details.brand",))
             self.assertEqual(result.type_mismatches, ("quantity",))
             self.assertEqual(result.missing_descriptions, ("quantity",))
-            self.assertEqual(result.undocumented_paths, ("quantity",))
+            self.assertEqual(result.undocumented_paths, ("details", "quantity"))
             self.assertEqual(result.unobservable_paths, ("optional", "tags"))
 
     def test_renders_one_markdown_section_per_docset_with_findings(self):
