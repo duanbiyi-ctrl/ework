@@ -16,7 +16,17 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DOCSET_ALIASES = {
     ("UserListingDraft", "UserListingDraftMap"): "UserItemDraftMap",
 }
-INTERNAL_SAMPLE_PATHS = {"__KEY"}
+INTERNAL_SAMPLE_PATHS = {"__KEY", "__key", "__meta"}
+EXTENDED_JSON_TYPES = {
+    "$binary": "binary",
+    "$date": "date",
+    "$numberDecimal": "number",
+    "$numberDouble": "number",
+    "$numberInt": "integer",
+    "$numberLong": "integer",
+    "$oid": "string",
+    "$uuid": "string",
+}
 
 
 @dataclass(frozen=True)
@@ -152,6 +162,17 @@ def _record_observed_value(
         raise ValueError(f"Unexpected scalar at {path}: {type(value).__name__}")
 
 
+def _extended_json_type(value: dict[str, Any]) -> str | None:
+    type_keys = set(value) & set(EXTENDED_JSON_TYPES)
+    if len(type_keys) != 1:
+        return None
+    type_key = type_keys.pop()
+    allowed_keys = {type_key}
+    if type_key == "$binary":
+        allowed_keys.add("$type")
+    return EXTENDED_JSON_TYPES[type_key] if set(value) <= allowed_keys else None
+
+
 def _observe(
     value: Any,
     path: str,
@@ -159,6 +180,10 @@ def _observe(
     unobservable: set[str],
 ) -> None:
     if isinstance(value, dict):
+        extended_type = _extended_json_type(value)
+        if extended_type:
+            values[path].add(extended_type)
+            return
         if not value:
             unobservable.add(path)
         for name, child in value.items():
@@ -207,9 +232,9 @@ def _is_type_compatible(expected_type: str, observed_types: set[str]) -> bool:
         "numberDouble": {"integer", "number"},
         "numberInt": {"integer"},
         "numberLong": {"integer"},
-        "binary": {"string"},
+        "binary": {"binary", "string"},
         "string[]": {"string[]"},
-        "date": {"string"},
+        "date": {"date", "string"},
     }
     return observed_types <= compatibility.get(expected_type, set())
 
