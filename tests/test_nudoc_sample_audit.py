@@ -47,6 +47,20 @@ class NuDocSampleAuditTests(unittest.TestCase):
         self.assertEqual(field["type"], "string")
         self.assertNotIn("PrmnlDtls.mrkdnItmPrcRvsn", result.type_mismatches)
 
+    def test_item_root_sample_keeps_the_canonical_primary_key_only(self):
+        sample = json.loads(
+            (
+                SAMPLE_DIR
+                / "ItemKeyspace"
+                / "ItemKeyspace_ROOT_.json"
+            ).read_text(encoding="utf-8")
+        )
+        records = sample if isinstance(sample, list) else [sample]
+
+        self.assertTrue(
+            all("PK" in record and "pk" not in record for record in records)
+        )
+
     def test_reports_schema_sample_and_documentation_contract_gaps(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)
