@@ -56,6 +56,120 @@ class RawLdmPayloadTests(unittest.TestCase):
             )
         )
 
+    def test_emits_only_first_level_fields_and_serializes_objects_as_strings(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data"
+            docs_dir = root / "docs"
+            data_dir.mkdir()
+            docs_dir.mkdir()
+            (data_dir / "Item_schema.json").write_text(
+                json.dumps(
+                    {
+                        "DataStoreName": "ItemKeyspace",
+                        "DataTableName": "__ROOT__.Item",
+                        "Columns": [
+                            {
+                                "name": "title",
+                                "type": "string",
+                                "comment": "Listing title.",
+                                "nullable": None,
+                            },
+                            {
+                                "name": "details.count",
+                                "type": "numberLong",
+                                "comment": "Detail count.",
+                                "nullable": None,
+                            },
+                            {
+                                "name": "details.enabled",
+                                "type": "boolean",
+                                "comment": "Detail enabled flag.",
+                                "nullable": None,
+                            },
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (docs_dir / "item.md").write_text(
+                "\n".join(
+                    [
+                        "# Item LDM",
+                        "",
+                        "**LDM Name:** `Item LDM`",
+                        "",
+                        "**Description:** Item data.",
+                        "",
+                        "**NuDocument Docset:** `Item`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                        "",
+                        "| Field | Type | Description |",
+                        "| --- | --- | --- |",
+                        "| `details` | `Details` | Listing detail values. |",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            fields = build_payloads(data_dir, docs_dir)[0].payload["fields"]
+
+            self.assertEqual([field["name"] for field in fields], ["title", "details"])
+            self.assertEqual(
+                json.loads(fields[0]["dataType"]),
+                {
+                    "type": "string",
+                    "avro.java.string": "String",
+                    "default": None,
+                },
+            )
+            self.assertEqual(
+                json.loads(fields[1]["dataType"]),
+                {
+                    "type": "string",
+                    "avro.java.string": "String",
+                    "default": None,
+                },
+            )
+            self.assertEqual(
+                fields[1]["description"],
+                "JSON-serialized object. Listing detail values.",
+            )
+
+    def test_repository_payloads_serialize_every_nested_field_group(self):
+        artifacts = {
+            artifact.schema_path: artifact.payload
+            for artifact in build_payloads(DATA_DIR, DOCS_DIR)
+        }
+
+        for schema_path, payload in artifacts.items():
+            schema = json.loads(schema_path.read_text(encoding="utf-8"))
+            nested_field_names = {
+                column["name"].split(".", maxsplit=1)[0]
+                for column in schema["Columns"]
+                if "." in column["name"]
+            }
+            fields = {field["name"]: field for field in payload["fields"]}
+
+            self.assertFalse(
+                any("." in field_name for field_name in fields),
+                schema_path.name,
+            )
+            self.assertTrue(nested_field_names <= fields.keys(), schema_path.name)
+            for field_name in nested_field_names:
+                self.assertEqual(
+                    json.loads(fields[field_name]["dataType"])["type"],
+                    "string",
+                    f"{schema_path.name}/{field_name}",
+                )
+                self.assertTrue(
+                    fields[field_name]["description"].startswith(
+                        "JSON-serialized object."
+                    ),
+                    f"{schema_path.name}/{field_name}",
+                )
+
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)
