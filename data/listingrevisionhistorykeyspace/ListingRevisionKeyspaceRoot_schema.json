@@ -11,7 +11,7 @@
         {
             "name": "expiredDate",
             "type": "date",
-            "comment": null,
+            "comment": "Revision-history expiration date maintained by TTL maintenance.",
             "nullable": null
         },
         {
