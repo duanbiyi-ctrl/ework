@@ -173,7 +173,7 @@ def _first_level_fields(
     columns: list[dict[str, Any]],
     document: DocumentMetadata,
 ) -> list[dict[str, Any]]:
-    """Build scalar fields and JSON-string fields for nested source objects."""
+    """Build scalar fields and JSON-string fields for nested source values."""
     grouped_columns: dict[str, list[dict[str, Any]]] = {}
     for column in columns:
         name = column.get("name")
@@ -209,7 +209,9 @@ def _first_level_fields(
                 {
                     "name": name,
                     "type": "string",
-                    "comment": f"JSON-serialized object. {description}",
+                    "comment": (
+                        f"JSON-serialized object or array. {description}"
+                    ),
                     "nullable": None,
                 },
                 ordinal,
