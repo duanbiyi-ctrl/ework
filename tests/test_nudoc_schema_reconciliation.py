@@ -98,6 +98,23 @@ class NuDocSchemaReconciliationTests(unittest.TestCase):
             ],
         )
 
+    def test_preserves_existing_type_for_incompatible_sample_observations(self):
+        reconciled = reconcile_schema(
+            {
+                "Columns": [
+                    {
+                        "name": "revision",
+                        "type": "numberInt",
+                        "comment": "Revision number.",
+                    }
+                ]
+            },
+            {"revision": {"integer", "string"}},
+            {"revision": "Revision number."},
+        )
+
+        self.assertEqual(reconciled["Columns"][0]["type"], "numberInt")
+
 
 if __name__ == "__main__":
     unittest.main()
