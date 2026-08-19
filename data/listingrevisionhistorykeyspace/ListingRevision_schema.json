@@ -29,7 +29,7 @@
         {
             "name": "rvsnId.reference",
             "type": "string",
-            "comment": null,
+            "comment": "Historical summary of a listing revision and its changed property groups. Inferred field: rvsn id reference.",
             "nullable": null
         },
         {

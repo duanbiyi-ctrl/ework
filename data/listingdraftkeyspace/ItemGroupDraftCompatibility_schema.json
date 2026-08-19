@@ -23,13 +23,13 @@
         {
             "name": "compat.propertiesList.name",
             "type": "string",
-            "comment": null,
+            "comment": "Compatibility entries for the item group draft. Inferred nested field: properties list name.",
             "nullable": null
         },
         {
             "name": "compat.propertiesList.values",
             "type": "string[]",
-            "comment": null,
+            "comment": "Compatibility entries for the item group draft. Inferred nested field: properties list values.",
             "nullable": null
         }
     ],

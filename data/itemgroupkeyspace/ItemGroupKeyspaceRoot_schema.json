@@ -59,7 +59,7 @@
         {
             "name": "imgVryBy.trtName",
             "type": "string",
-            "comment": null,
+            "comment": "Trait-driven image variation configuration. Inferred nested field: trt name.",
             "nullable": null
         },
         {
@@ -95,55 +95,55 @@
         {
             "name": "globalIdentifiers.name",
             "type": "string",
-            "comment": null,
+            "comment": "Global product identifiers for the group. Inferred nested field: name.",
             "nullable": null
         },
         {
             "name": "globalIdentifiers.values",
             "type": "string[]",
-            "comment": null,
+            "comment": "Global product identifiers for the group. Inferred nested field: values.",
             "nullable": null
         },
         {
             "name": "images.eBayPicUrl",
             "type": "string",
-            "comment": null,
+            "comment": "Shared group images, including image URLs and display order. Inferred nested field: e bay pic url.",
             "nullable": null
         },
         {
             "name": "images.extPicUrl",
             "type": "string",
-            "comment": null,
+            "comment": "Shared group images, including image URLs and display order. Inferred nested field: ext pic url.",
             "nullable": null
         },
         {
             "name": "images.order",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Shared group images, including image URLs and display order. Inferred nested field: order.",
             "nullable": null
         },
         {
             "name": "imgVryBy.trtImg.img",
             "type": "string[]",
-            "comment": null,
+            "comment": "Trait-driven image variation configuration. Inferred nested field: trt img img.",
             "nullable": null
         },
         {
             "name": "imgVryBy.trtImg.trtVal",
             "type": "string",
-            "comment": null,
+            "comment": "Trait-driven image variation configuration. Inferred nested field: trt img trt val.",
             "nullable": null
         },
         {
             "name": "itmsVryBy.name",
             "type": "string",
-            "comment": null,
+            "comment": "Traits by which the group's items vary. Inferred nested field: name.",
             "nullable": null
         },
         {
             "name": "itmsVryBy.values",
             "type": "string[]",
-            "comment": null,
+            "comment": "Traits by which the group's items vary. Inferred nested field: values.",
             "nullable": null
         }
     ],

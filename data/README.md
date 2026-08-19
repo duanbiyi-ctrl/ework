@@ -28,11 +28,13 @@ Entity pages document first-level fields only. The audit therefore evaluates
 entity-page coverage at that level, while schema comments still require direct
 evidence for their exact field paths.
 
-Reconcile observed sample fields and compatible types. A schema comment is
-filled only when an entity page documents that exact field; fields without
-direct evidence remain empty and block RAW LDM payload generation until
-reviewed. Review with `--check` first; use `--apply` only after resolving
-reported type or description gaps.
+Reconcile observed sample fields and compatible types. Exact entity-page field
+descriptions take precedence. When a required nested field has no exact
+description, its comment is inferred from the nearest documented parent and
+the child field name. For a field without a documented parent, reconciliation
+uses the docset description and field name. These inferred comments are
+explicitly labeled in the generated metadata; entity pages remain limited to
+first-level fields. Review with `--check` first, then use `--apply`.
 
 ```bash
 python3 scripts/nudoc_schema_reconciliation.py --check

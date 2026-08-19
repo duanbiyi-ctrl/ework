@@ -35,7 +35,7 @@
         {
             "name": "ebayGeneratedTitle",
             "type": "string",
-            "comment": null,
+            "comment": "User-scoped index of active listing drafts and their summary metadata. Inferred field: ebay generated title.",
             "nullable": null
         },
         {

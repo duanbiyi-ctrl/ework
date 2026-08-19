@@ -35,37 +35,37 @@
         {
             "name": "price.fixedPrice.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price currency.",
             "nullable": null
         },
         {
             "name": "price.fixedPrice.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price value.",
             "nullable": null
         },
         {
             "name": "price.mrktngPrc.prcngTrtmnt",
             "type": "string",
-            "comment": null,
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: mrktng prc prcng trtmnt.",
             "nullable": null
         },
         {
             "name": "price.orgnRetailPrice.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price currency.",
             "nullable": null
         },
         {
             "name": "price.orgnRetailPrice.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price value.",
             "nullable": null
         },
         {
             "name": "price.prcGuarantee",
             "type": "boolean",
-            "comment": null,
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: prc guarantee.",
             "nullable": null
         },
         {

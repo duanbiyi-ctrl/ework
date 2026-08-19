@@ -17,7 +17,7 @@
         {
             "name": "lstgId",
             "type": "string",
-            "comment": null,
+            "comment": "Historical old and new values for a changed variation property. Inferred field: lstg id.",
             "nullable": null
         },
         {

@@ -22,7 +22,12 @@ except ModuleNotFoundError:
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
-INHERITED_DESCRIPTION_PATTERN = re.compile(r" Nested property: `[^`]+`\.$")
+LEGACY_INHERITED_DESCRIPTION_PATTERN = re.compile(
+    r" Nested property: `[^`]+`\.$"
+)
+INFERRED_DESCRIPTION_PATTERN = re.compile(
+    r" Inferred (?:nested )?field: .+\.$"
+)
 
 
 def _source_type(observed_types: set[str]) -> str:
@@ -76,14 +81,81 @@ def _documentation_descriptions(doc_path: Path) -> dict[str, str]:
     }
 
 
-def _description_for_path(path: str, descriptions: dict[str, str]) -> str | None:
-    return descriptions.get(path)
+def _readable_field_path(path: str) -> str:
+    """Render a flattened NuDocument path as a readable field label."""
+    words = []
+    for segment in path.split("."):
+        separated = re.sub(r"([A-Z]+)([A-Z][a-z])", r"\1 \2", segment)
+        separated = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", separated)
+        words.extend(re.split(r"[_\-\s]+", separated))
+    return " ".join(word.lower() for word in words if word)
+
+
+def _inferred_description(
+    context: str,
+    field_path: str,
+    *,
+    nested: bool,
+) -> str:
+    field_kind = "nested field" if nested else "field"
+    normalized_context = context.rstrip()
+    if normalized_context[-1:] not in ".!?":
+        normalized_context += "."
+    return (
+        f"{normalized_context} Inferred {field_kind}: "
+        f"{_readable_field_path(field_path)}."
+    )
+
+
+def _description_for_path(
+    path: str,
+    descriptions: dict[str, str],
+    docset_description: str | None = None,
+) -> str | None:
+    """Prefer exact docs, then derive from a documented parent or docset."""
+    exact_description = descriptions.get(path)
+    if exact_description:
+        return exact_description
+
+    segments = path.split(".")
+    for index in range(len(segments) - 1, 0, -1):
+        parent_path = ".".join(segments[:index])
+        parent_description = descriptions.get(parent_path)
+        if parent_description:
+            return _inferred_description(
+                parent_description,
+                ".".join(segments[index:]),
+                nested=True,
+            )
+
+    if docset_description:
+        return _inferred_description(docset_description, path, nested=False)
+    return None
+
+
+def _document_description(doc_path: Path) -> str | None:
+    match = re.search(
+        r"^\*\*Description:\*\*\s*(.+?)\s*$",
+        doc_path.read_text(encoding="utf-8"),
+        flags=re.MULTILINE,
+    )
+    return match.group(1).strip() if match else None
+
+
+def _is_replaceable_comment(comment: Any) -> bool:
+    return (
+        not isinstance(comment, str)
+        or not comment.strip()
+        or LEGACY_INHERITED_DESCRIPTION_PATTERN.search(comment) is not None
+        or INFERRED_DESCRIPTION_PATTERN.search(comment) is not None
+    )
 
 
 def reconcile_schema(
     schema: dict[str, Any],
     observed_types: dict[str, set[str]],
     descriptions: dict[str, str],
+    docset_description: str | None = None,
 ) -> dict[str, Any]:
     """Return a schema with observed fields, types, and descriptions reconciled."""
     reconciled = copy.deepcopy(schema)
@@ -108,19 +180,15 @@ def reconcile_schema(
             except ValueError:
                 if not isinstance(column.get("type"), str) or not column["type"]:
                     raise
-        description = _description_for_path(name, descriptions)
+        description = _description_for_path(
+            name,
+            descriptions,
+            docset_description,
+        )
         if description:
-            if (
-                not isinstance(column.get("comment"), str)
-                or not column["comment"].strip()
-                or INHERITED_DESCRIPTION_PATTERN.search(column["comment"])
-            ):
+            if _is_replaceable_comment(column.get("comment")):
                 column["comment"] = description
-        elif (
-            not isinstance(column.get("comment"), str)
-            or not column["comment"].strip()
-            or INHERITED_DESCRIPTION_PATTERN.search(column["comment"])
-        ):
+        elif _is_replaceable_comment(column.get("comment")):
             column["comment"] = None
 
     for name in sorted(set(observed_types) - set(by_name)):
@@ -128,7 +196,11 @@ def reconcile_schema(
             {
                 "name": name,
                 "type": _source_type(observed_types[name]),
-                "comment": _description_for_path(name, descriptions),
+                "comment": _description_for_path(
+                    name,
+                    descriptions,
+                    docset_description,
+                ),
                 "nullable": None,
             }
         )
@@ -147,6 +219,7 @@ def reconcile_docsets(docsets: tuple[Docset, ...]) -> dict[Path, dict[str, Any]]
             schema,
             observed_types,
             _documentation_descriptions(docset.doc_path),
+            _document_description(docset.doc_path),
         )
     return reconciled
 

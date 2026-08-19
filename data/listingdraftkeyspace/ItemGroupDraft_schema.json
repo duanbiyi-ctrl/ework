@@ -17,145 +17,145 @@
         {
             "name": "bizPol.pmtTrms.daysToFulPmt",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: pmt trms days to ful pmt.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.depRqd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: pmt trms dep rqd.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.hrsToDep",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: pmt trms hrs to dep.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.immPay",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: pmt trms imm pay.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.pmtMthd",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: pmt trms pmt mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms dom ret trm ref mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms dom ret trm ret acptd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms dom ret trm ret prd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms dom ret trm ret shpmt payee.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.extHolRet",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms ext hol ret.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms int ret trm ref mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms int ret trm ret acptd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms int ret trm ret prd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms int ret trm ret shpmt payee.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms ref mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.restFeePct",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms rest fee pct.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms ret acptd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retInstr",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms ret instr.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms ret prd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ret trms ret shpmt payee.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.buyerRsp",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms buyer rsp.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.excldLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms excld locn.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.hndlgTm",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms hndlg tm.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpToLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp to locn.",
             "nullable": null
         },
         {
@@ -173,7 +173,7 @@
         {
             "name": "imgsVryBy.trtName",
             "type": "string",
-            "comment": null,
+            "comment": "Image-variation configuration, including the variation trait and its image associations. Inferred nested field: trt name.",
             "nullable": null
         },
         {
@@ -185,133 +185,133 @@
         {
             "name": "bizPol.shipTrms.shpOpt.cstType",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt cst type.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.promoShp",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt promo shp.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.rtTblId",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt rt tbl id.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpDscPrfId",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp dsc prf id.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs add unit cost currency.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs add unit cost value.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs pkg hndlg cost currency.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs pkg hndlg cost value.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs rank.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs shp cost currency.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs shp cost value.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs shp svc.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs shp svc id.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp svcs shp to locns.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpOpt.shpType",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and its embedded policy terms. Inferred nested field: ship trms shp opt shp type.",
             "nullable": null
         },
         {
             "name": "img.eBayPicUrl",
             "type": "string",
-            "comment": null,
+            "comment": "Image mappings for the group. Inferred nested field: e bay pic url.",
             "nullable": null
         },
         {
             "name": "img.extPicUrl",
             "type": "string",
-            "comment": null,
+            "comment": "Image mappings for the group. Inferred nested field: ext pic url.",
             "nullable": null
         },
         {
             "name": "img.order",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Image mappings for the group. Inferred nested field: order.",
             "nullable": null
         },
         {
             "name": "imgsVryBy.trtImg.img",
             "type": "string[]",
-            "comment": null,
+            "comment": "Image-variation configuration, including the variation trait and its image associations. Inferred nested field: trt img img.",
             "nullable": null
         },
         {
             "name": "imgsVryBy.trtImg.trtVal",
             "type": "string",
-            "comment": null,
+            "comment": "Image-variation configuration, including the variation trait and its image associations. Inferred nested field: trt img trt val.",
             "nullable": null
         },
         {
             "name": "itmsVryBy.name",
             "type": "string",
-            "comment": null,
+            "comment": "Item variation trait name/value entries. Inferred nested field: name.",
             "nullable": null
         },
         {
             "name": "itmsVryBy.values",
             "type": "string[]",
-            "comment": null,
+            "comment": "Item variation trait name/value entries. Inferred nested field: values.",
             "nullable": null
         }
     ],
