@@ -10,7 +10,7 @@ from scripts.nudoc_schema_reconciliation import (
 
 
 class NuDocSchemaReconciliationTests(unittest.TestCase):
-    def test_leaves_parent_only_descriptions_empty(self):
+    def test_prefers_exact_descriptions_and_derives_documented_children(self):
         schema = {
             "Columns": [
                 {
@@ -38,6 +38,7 @@ class NuDocSchemaReconciliationTests(unittest.TestCase):
             {
                 "title": "Listing title.",
                 "details": "Item detail values.",
+                "details.count": "Exact count description.",
             },
         )
 
@@ -53,18 +54,42 @@ class NuDocSchemaReconciliationTests(unittest.TestCase):
                 {
                     "name": "details.count",
                     "type": "numberLong",
-                    "comment": None,
+                    "comment": "Exact count description.",
                     "nullable": None,
                 },
                 {
                     "name": "details.enabled",
                     "type": "boolean",
-                    "comment": None,
+                    "comment": (
+                        "Item detail values. "
+                        "Inferred nested field: enabled."
+                    ),
                     "nullable": None,
                 },
             ],
         )
         self.assertIsNone(schema["Columns"][0]["comment"])
+
+    def test_derives_parentless_field_descriptions_from_docset_metadata(self):
+        reconciled = reconcile_schema(
+            {
+                "Columns": [
+                    {
+                        "name": "unreferencedValue",
+                        "type": "string",
+                        "comment": None,
+                    }
+                ]
+            },
+            {"unreferencedValue": {"string"}},
+            {},
+            "Item detail document.",
+        )
+
+        self.assertEqual(
+            reconciled["Columns"][0]["comment"],
+            "Item detail document. Inferred field: unreferenced value.",
+        )
 
     def test_leaves_fields_without_documentation_evidence_empty(self):
         reconciled = reconcile_schema(

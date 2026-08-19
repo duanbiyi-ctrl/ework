@@ -44,9 +44,17 @@ class RawLdmPayloadTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             encode_avro_type("object")
 
-    def test_rejects_raw_payloads_until_every_schema_field_has_evidence(self):
-        with self.assertRaisesRegex(MetadataResolutionError, "pmtTrms.daysToFulPmt"):
-            build_payloads(DATA_DIR, DOCS_DIR)
+    def test_builds_all_repository_raw_payloads_after_reconciliation(self):
+        artifacts = build_payloads(DATA_DIR, DOCS_DIR)
+
+        self.assertEqual(len(artifacts), 22)
+        self.assertTrue(
+            all(
+                field["description"].strip()
+                for artifact in artifacts
+                for field in artifact.payload["fields"]
+            )
+        )
 
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
