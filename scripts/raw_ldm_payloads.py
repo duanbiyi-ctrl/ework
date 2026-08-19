@@ -33,7 +33,6 @@ AVRO_TYPE_MAPPING = {
     "numberInt": {"type": "int", "default": None},
     "numberLong": {"type": "long", "default": None},
     "binary": {"type": "bytes", "default": None},
-    "string[]": {"type": "array", "items": "string", "default": None},
     "date": {"type": "int", "logicalType": "date", "default": None},
 }
 
@@ -186,6 +185,25 @@ def _first_level_fields(
     fields = []
     for ordinal, (name, grouped) in enumerate(grouped_columns.items(), 1):
         if len(grouped) == 1 and grouped[0]["name"] == name:
+            if grouped[0].get("type") == "string[]":
+                description = grouped[0].get("comment")
+                if not isinstance(description, str) or not description.strip():
+                    raise MetadataResolutionError(
+                        f"NuDocument column {name} must have a non-empty description"
+                    )
+                fields.append(
+                    _build_field(
+                        {
+                            **grouped[0],
+                            "type": "string",
+                            "comment": (
+                                f"JSON-serialized array. {description.strip()}"
+                            ),
+                        },
+                        ordinal,
+                    )
+                )
+                continue
             fields.append(_build_field(grouped[0], ordinal))
             continue
 
