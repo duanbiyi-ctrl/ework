@@ -61,6 +61,43 @@ class NuDocSampleAuditTests(unittest.TestCase):
             all("PK" in record and "pk" not in record for record in records)
         )
 
+    def test_item_qty_price_lifecycle_descriptions_are_source_backed(self):
+        item_qty_price = next(
+            docset
+            for docset in discover_docsets(DATA_DIR, SAMPLE_DIR, DOCS_DIR)
+            if docset.keyspace == "ItemKeyspace"
+            and docset.docset == "ItemQtyPrice"
+        )
+        schema = json.loads(
+            item_qty_price.schema_path.read_text(encoding="utf-8")
+        )
+        comments = {
+            column["name"]: column["comment"] for column in schema["Columns"]
+        }
+        entity_page = item_qty_price.doc_path.read_text(encoding="utf-8")
+        result = audit_docsets((item_qty_price,))[0]
+
+        self.assertEqual(
+            comments["crLstgDtVrs"], "Core listing data version."
+        )
+        self.assertEqual(comments["lifecycle.endDt"], "Listing end date.")
+        self.assertEqual(
+            comments["lifecycle.schdldEndDt"], "Scheduled listing end date."
+        )
+        self.assertIn(
+            "| `crLstgDtVrs` | `String` | Core listing data version. |",
+            entity_page,
+        )
+        self.assertIn(
+            "| `lifecycle` | `Lifecycle` | "
+            "Scheduled and end dates for the listing lifecycle. |",
+            entity_page,
+        )
+        self.assertNotIn("`lifecycle.endDt`", entity_page)
+        self.assertNotIn("`lifecycle.schdldEndDt`", entity_page)
+        self.assertNotIn("crLstgDtVrs", result.undocumented_paths)
+        self.assertNotIn("lifecycle", result.undocumented_paths)
+
     def test_reports_schema_sample_and_documentation_contract_gaps(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)
