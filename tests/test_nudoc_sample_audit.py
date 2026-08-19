@@ -147,6 +147,72 @@ class NuDocSampleAuditTests(unittest.TestCase):
             self.assertIn("## ItemKeyspace / Item", markdown)
             self.assertIn("`title`", markdown)
 
+    def test_merges_observed_paths_from_a_top_level_sample_array(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data" / "itemkeyspace"
+            sample_dir = root / "samples" / "ItemKeyspace"
+            docs_dir = root / "docs"
+            data_dir.mkdir(parents=True)
+            sample_dir.mkdir(parents=True)
+            docs_dir.mkdir()
+
+            (data_dir / "Item_schema.json").write_text(
+                json.dumps(
+                    {
+                        "DataStoreName": "ItemKeyspace",
+                        "DataTableName": "__ROOT__.Item",
+                        "Columns": [
+                            {
+                                "name": "title",
+                                "type": "string",
+                                "comment": "Listing title.",
+                            },
+                            {
+                                "name": "quantity",
+                                "type": "numberInt",
+                                "comment": "Available quantity.",
+                            },
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (sample_dir / "Item.json").write_text(
+                json.dumps(
+                    [
+                        {"title": "First sample"},
+                        {"title": "Second sample", "quantity": 2},
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            (docs_dir / "item.md").write_text(
+                "\n".join(
+                    [
+                        "# Item LDM",
+                        "",
+                        "**NuDocument Docset:** `Item`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                        "",
+                        "| Field | Type | Description |",
+                        "| --- | --- | --- |",
+                        "| `title` | `String` | Listing title. |",
+                        "| `quantity` | `Integer` | Available quantity. |",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            result = audit_docsets(
+                discover_docsets(root / "data", root / "samples", docs_dir)
+            )[0]
+
+            self.assertEqual(result.observed_paths, ("quantity", "title"))
+            self.assertEqual(result.sample_only_paths, ())
+            self.assertEqual(result.type_mismatches, ())
+
 
 if __name__ == "__main__":
     unittest.main()
