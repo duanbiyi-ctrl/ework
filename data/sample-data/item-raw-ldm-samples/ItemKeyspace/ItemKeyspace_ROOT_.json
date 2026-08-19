@@ -216,7 +216,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "102250629096",
         "PK": "102250629096",
         "category": {
             "strPrmryCtgrId": "1",
@@ -480,7 +479,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110038967833",
         "PK": "110038967833",
         "category": {
             "strPrmryCtgrId": "19",
@@ -805,7 +803,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110063553478",
         "PK": "110063553478",
         "category": {
             "strPrmryCtgrId": "16",
@@ -1036,7 +1033,6 @@
             }
         ],
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110239804719",
         "PK": "110239804719",
         "category": {
             "strPrmryCtgrId": "6362006",
@@ -1332,7 +1328,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110298230558",
         "PK": "110298230558",
         "category": {
             "strPrmryCtgrId": "5110999011",
@@ -1598,7 +1593,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110305825325",
         "PK": "110305825325",
         "category": {
             "strPrmryCtgrId": "8497761",
@@ -1890,7 +1884,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110311177994",
         "PK": "110311177994",
         "category": {
             "strPrmryCtgrId": "21407245",
@@ -2160,7 +2153,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110327909680",
         "PK": "110327909680",
         "category": {
             "strPrmryCtgrId": "520046014",
@@ -2420,7 +2412,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110340694412",
         "PK": "110340694412",
         "category": {
             "strPrmryCtgrId": "18486438",
@@ -2632,7 +2623,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110343905989",
         "PK": "110343905989",
         "category": {
             "strPrmryCtgrId": "1",
@@ -2802,7 +2792,7 @@
         "isSellerOnVacation": false,
         "PrmnlDtls": {
             "onFreeShipPrToPromo": false,
-            "mrkdnItmPrcRvsn": 2,
+            "mrkdnItmPrcRvsn": "2",
             "onFreeShipSale": false
         },
         "itmLocnCntry": "US",
@@ -2971,7 +2961,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110356159844",
         "PK": "110356159844",
         "category": {
             "strPrmryCtgrId": "335660",
@@ -3291,7 +3280,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110378146419",
         "PK": "110378146419",
         "category": {
             "strPrmryCtgrId": "1430863012",
@@ -3559,7 +3547,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110379641753",
         "PK": "110379641753",
         "category": {
             "strPrmryCtgrId": "4282478012",
@@ -3815,7 +3802,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110402349723",
         "PK": "110402349723",
         "category": {
             "strPrmryCtgrId": "570681014",
@@ -4171,7 +4157,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110403422168",
         "PK": "110403422168",
         "category": {
             "strPrmryCtgrId": "21583255010",
@@ -4530,7 +4515,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110403422355",
         "PK": "110403422355",
         "category": {
             "strPrmryCtgrId": "21583255010",
@@ -4810,7 +4794,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110413677241",
         "PK": "110413677241",
         "category": {
             "strPrmryCtgrId": "20996766",
@@ -5072,7 +5055,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110416442607",
         "PK": "110416442607",
         "category": {
             "strPrmryCtgrId": "11976774",
@@ -5350,7 +5332,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110418908413",
         "PK": "110418908413",
         "category": {
             "strPrmryCtgrId": "523597014",
@@ -5562,7 +5543,6 @@
         "ebayCmnty": null,
         "eBayGenTitle": null,
         "isListedWithNoContactViaEmailSupport": false,
-        "pk": "110421705884",
         "PK": "110421705884",
         "category": {
             "strPrmryCtgrId": "10",
