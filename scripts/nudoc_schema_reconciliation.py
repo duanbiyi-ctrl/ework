@@ -22,10 +22,7 @@ except ModuleNotFoundError:
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
-
-
-class DescriptionResolutionError(ValueError):
-    """Raised when an observed field is not supported by entity documentation."""
+INHERITED_DESCRIPTION_PATTERN = re.compile(r" Nested property: `[^`]+`\.$")
 
 
 def _source_type(observed_types: set[str]) -> str:
@@ -79,20 +76,8 @@ def _documentation_descriptions(doc_path: Path) -> dict[str, str]:
     }
 
 
-def _description_for_path(path: str, descriptions: dict[str, str]) -> str:
-    if path in descriptions:
-        return descriptions[path]
-
-    segments = path.split(".")
-    for index in range(len(segments) - 1, 0, -1):
-        parent = ".".join(segments[:index])
-        parent_description = descriptions.get(parent)
-        if parent_description:
-            remainder = ".".join(segments[index:])
-            return f"{parent_description} Nested property: `{remainder}`."
-    raise DescriptionResolutionError(
-        f"No entity-page description supports observed field: {path}"
-    )
+def _description_for_path(path: str, descriptions: dict[str, str]) -> str | None:
+    return descriptions.get(path)
 
 
 def reconcile_schema(
@@ -123,8 +108,20 @@ def reconcile_schema(
             except ValueError:
                 if not isinstance(column.get("type"), str) or not column["type"]:
                     raise
-        if not isinstance(column.get("comment"), str) or not column["comment"].strip():
-            column["comment"] = _description_for_path(name, descriptions)
+        description = _description_for_path(name, descriptions)
+        if description:
+            if (
+                not isinstance(column.get("comment"), str)
+                or not column["comment"].strip()
+                or INHERITED_DESCRIPTION_PATTERN.search(column["comment"])
+            ):
+                column["comment"] = description
+        elif (
+            not isinstance(column.get("comment"), str)
+            or not column["comment"].strip()
+            or INHERITED_DESCRIPTION_PATTERN.search(column["comment"])
+        ):
+            column["comment"] = None
 
     for name in sorted(set(observed_types) - set(by_name)):
         columns.append(

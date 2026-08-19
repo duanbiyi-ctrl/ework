@@ -17,55 +17,55 @@
         {
             "name": "crLstgDtVrs",
             "type": "string",
-            "comment": "Core-listing data version associated with this price-and-quantity state.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lifecycle.endDt",
             "type": "numberLong",
-            "comment": "Price-and-quantity lifecycle timestamps, including end and scheduled-end times. Nested property: `endDt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lifecycle.schdldEndDt",
             "type": "numberLong",
-            "comment": "Price-and-quantity lifecycle timestamps, including end and scheduled-end times. Nested property: `schdldEndDt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "price.fixedPrice.currency",
             "type": "string",
-            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `fixedPrice.currency`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "price.fixedPrice.value",
             "type": "numberDouble",
-            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `fixedPrice.value`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "price.mrktngPrc.prcngTrtmnt",
             "type": "string",
-            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `mrktngPrc.prcngTrtmnt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "price.orgnRetailPrice.currency",
             "type": "string",
-            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `orgnRetailPrice.currency`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "price.orgnRetailPrice.value",
             "type": "numberDouble",
-            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `orgnRetailPrice.value`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "price.prcGuarantee",
             "type": "boolean",
-            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `prcGuarantee`.",
+            "comment": null,
             "nullable": null
         },
         {

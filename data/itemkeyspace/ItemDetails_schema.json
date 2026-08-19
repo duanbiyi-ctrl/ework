@@ -11,37 +11,37 @@
         {
             "name": "docs.odometer",
             "type": "string",
-            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `odometer`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "docs.vhclTtlBck",
             "type": "string",
-            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `vhclTtlBck`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "docs.vhclTtlFrnt",
             "type": "string",
-            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `vhclTtlFrnt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "docs.vin",
             "type": "string",
-            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Nested property: `vin`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "fixedPriceHP.currency",
             "type": "string",
-            "comment": "High-precision fixed-price amount. Nested property: `currency`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "fixedPriceHP.value",
             "type": "numberDouble",
-            "comment": "High-precision fixed-price amount. Nested property: `value`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -59,13 +59,13 @@
         {
             "name": "strtBidPriceHP.currency",
             "type": "string",
-            "comment": "High-precision starting-bid amount. Nested property: `currency`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "strtBidPriceHP.value",
             "type": "numberDouble",
-            "comment": "High-precision starting-bid amount. Nested property: `value`.",
+            "comment": null,
             "nullable": null
         }
     ],

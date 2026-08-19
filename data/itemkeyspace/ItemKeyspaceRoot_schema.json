@@ -23,19 +23,19 @@
         {
             "name": "PrmnlDtls.mrkdnItmPrcRvsn",
             "type": "numberInt",
-            "comment": "Promotional pricing revision and free-shipping promotion settings. Nested property: `mrkdnItmPrcRvsn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "PrmnlDtls.onFreeShipPrToPromo",
             "type": "boolean",
-            "comment": "Promotional pricing revision and free-shipping promotion settings. Nested property: `onFreeShipPrToPromo`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "PrmnlDtls.onFreeShipSale",
             "type": "boolean",
-            "comment": "Promotional pricing revision and free-shipping promotion settings. Nested property: `onFreeShipSale`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -59,13 +59,13 @@
         {
             "name": "autoRlstTerms.autoRlst",
             "type": "boolean",
-            "comment": "Auto-relisting setting and relist count. Nested property: `autoRlst`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "autoRlstTerms.rlstCnt",
             "type": "numberInt",
-            "comment": "Auto-relisting setting and relist count. Nested property: `rlstCnt`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -83,37 +83,37 @@
         {
             "name": "category.prmryCtgrId",
             "type": "string",
-            "comment": "Primary and secondary marketplace and store category identifiers. Nested property: `prmryCtgrId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "category.scndryCtgrId",
             "type": "string",
-            "comment": "Primary and secondary marketplace and store category identifiers. Nested property: `scndryCtgrId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "category.strPrmryCtgrId",
             "type": "string",
-            "comment": "Primary and secondary marketplace and store category identifiers. Nested property: `strPrmryCtgrId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "category.strScndryCtgrId",
             "type": "string",
-            "comment": "Primary and secondary marketplace and store category identifiers. Nested property: `strScndryCtgrId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "charity.charityId",
             "type": "string",
-            "comment": "Charity identifier and donation percentage. Nested property: `charityId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "charity.donationPct",
             "type": "numberInt",
-            "comment": "Charity identifier and donation percentage. Nested property: `donationPct`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -155,13 +155,13 @@
         {
             "name": "cstmPol.prdCmplPolIds",
             "type": "string[]",
-            "comment": "Take-back and product-compliance policy identifiers, including regional policies. Nested property: `prdCmplPolIds`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "cstmPol.tkBkPolId",
             "type": "string",
-            "comment": "Take-back and product-compliance policy identifiers, including regional policies. Nested property: `tkBkPolId`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -185,13 +185,13 @@
         {
             "name": "ebayCmnty.comntyIds",
             "type": "string[]",
-            "comment": "Community identifiers and marketplace visibility. Nested property: `comntyIds`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "ebayCmnty.mktplceVsbl",
             "type": "boolean",
-            "comment": "Community identifiers and marketplace visibility. Nested property: `mktplceVsbl`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -209,31 +209,31 @@
         {
             "name": "epr.ecoFee",
             "type": "numberDouble",
-            "comment": "Producer-responsibility identifiers and eco fee. Nested property: `ecoFee`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "epr.prdDocId",
             "type": "string",
-            "comment": "Producer-responsibility identifiers and eco fee. Nested property: `prdDocId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "epr.prdPkgId",
             "type": "string",
-            "comment": "Producer-responsibility identifiers and eco fee. Nested property: `prdPkgId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "epr.prdcrId",
             "type": "string",
-            "comment": "Producer-responsibility identifiers and eco fee. Nested property: `prdcrId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "epr.shpPkgId",
             "type": "string",
-            "comment": "Producer-responsibility identifiers and eco fee. Nested property: `shpPkgId`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -383,37 +383,37 @@
         {
             "name": "lifecycle.dupAuction",
             "type": "boolean",
-            "comment": "Listing duration, start and end times, and scheduled-listing and duplicate-auction status. Nested property: `dupAuction`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lifecycle.duration",
             "type": "string",
-            "comment": "Listing duration, start and end times, and scheduled-listing and duplicate-auction status. Nested property: `duration`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lifecycle.endDt",
             "type": "numberLong",
-            "comment": "Listing duration, start and end times, and scheduled-listing and duplicate-auction status. Nested property: `endDt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lifecycle.schdldEndDt",
             "type": "numberLong",
-            "comment": "Listing duration, start and end times, and scheduled-listing and duplicate-auction status. Nested property: `schdldEndDt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lifecycle.schdldLstng",
             "type": "boolean",
-            "comment": "Listing duration, start and end times, and scheduled-listing and duplicate-auction status. Nested property: `schdldLstng`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lifecycle.startDt",
             "type": "numberLong",
-            "comment": "Listing duration, start and end times, and scheduled-listing and duplicate-auction status. Nested property: `startDt`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -467,7 +467,7 @@
         {
             "name": "pk",
             "type": "string",
-            "comment": "Lower-case item key carried by the current-state document payload.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -491,175 +491,175 @@
         {
             "name": "rgltryInfo.ecoOprtr.cmpNm",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.cmpNm`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.ecoOprtr.cntry",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.cntry`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.ecoOprtr.cty",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.cty`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.ecoOprtr.email",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.email`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.ecoOprtr.phn",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.phn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.ecoOprtr.strt1",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.strt1`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.ecoOprtr.strt2",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.strt2`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.ecoOprtr.zip",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `ecoOprtr.zip`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.eek.dataSheet",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `eek.dataSheet`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.eek.img",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `eek.img`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.eek.imgDesc",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `eek.imgDesc`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.addnlInfo",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `hzdMatrl.addnlInfo`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.pctgrmIds",
             "type": "string[]",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `hzdMatrl.pctgrmIds`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.sgnlWrdId",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `hzdMatrl.sgnlWrdId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.stmntIds",
             "type": "string[]",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `hzdMatrl.stmntIds`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cmpNm",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.cmpNm`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cntctUrl",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.cntctUrl`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cntry",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.cntry`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cty",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.cty`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.email",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.email`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.phn",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.phn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.strt1",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.strt1`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.strt2",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.strt2`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.stt",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.stt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.zip",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `mnfatr.zip`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.prdSfty.addnlInfo",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `prdSfty.addnlInfo`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.prdSfty.pctgrmIds",
             "type": "string[]",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `prdSfty.pctgrmIds`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.prdSfty.stmntIds",
             "type": "string[]",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `prdSfty.stmntIds`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.rprIdxScore",
             "type": "numberDouble",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `rprIdxScore`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -713,163 +713,163 @@
         {
             "name": "sprtCntct.cmpnyName",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `cmpnyName`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.cntctByEmlEnbld",
             "type": "boolean",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `cntctByEmlEnbld`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.cntry",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `cntry`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.anyTime",
             "type": "boolean",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.anyTime`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.hrs",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.sprtHrsEnd.hrs`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.mins",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.sprtHrsEnd.mins`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.sprtHrsEnd.tz",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.sprtHrsEnd.tz`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.hrs",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.sprtHrsStrt.hrs`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.mins",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.sprtHrsStrt.mins`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.sprtHrsStrt.tz",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.sprtHrsStrt.tz`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmSprtCntctHr.sprtOnDays",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmSprtCntctHr.sprtOnDays`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.prmryPhn",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `prmryPhn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.anyTime",
             "type": "boolean",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.anyTime`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.hrs",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.sprtHrsEnd.hrs`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.mins",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.sprtHrsEnd.mins`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.sprtHrsEnd.tz",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.sprtHrsEnd.tz`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.hrs",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.sprtHrsStrt.hrs`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.mins",
             "type": "numberInt",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.sprtHrsStrt.mins`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.sprtHrsStrt.tz",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.sprtHrsStrt.tz`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "sprtCntct.scndSprtCntctHr.sprtOnDays",
             "type": "string",
-            "comment": "Support company, contact details, availability, hours, and supported days. Nested property: `scndSprtCntctHr.sprtOnDays`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "tax.aplcblToShp",
             "type": "boolean",
-            "comment": "Sales-tax and VAT applicability, location, category, and rate details. Nested property: `aplcblToShp`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "tax.rcgnzBsnsSlrVat",
             "type": "boolean",
-            "comment": "Sales-tax and VAT applicability, location, category, and rate details. Nested property: `rcgnzBsnsSlrVat`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "tax.salesTaxTblUsd",
             "type": "boolean",
-            "comment": "Sales-tax and VAT applicability, location, category, and rate details. Nested property: `salesTaxTblUsd`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "tax.state",
             "type": "string",
-            "comment": "Sales-tax and VAT applicability, location, category, and rate details. Nested property: `state`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "tax.taxRate",
             "type": "numberDouble",
-            "comment": "Sales-tax and VAT applicability, location, category, and rate details. Nested property: `taxRate`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "tax.thrdPrtTxCtgCd",
             "type": "string",
-            "comment": "Sales-tax and VAT applicability, location, category, and rate details. Nested property: `thrdPrtTxCtgCd`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "tax.vatPct",
             "type": "numberDouble",
-            "comment": "Sales-tax and VAT applicability, location, category, and rate details. Nested property: `vatPct`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -881,271 +881,271 @@
         {
             "name": "trdScp.intlStVsbl",
             "type": "string[]",
-            "comment": "International visibility and local listing distribution settings. Nested property: `intlStVsbl`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trdScp.lclLstngDist",
             "type": "numberInt",
-            "comment": "International visibility and local listing distribution settings. Nested property: `lclLstngDist`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.bestOfrTrms.autAccptEnbld",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `bestOfrTrms.autAccptEnbld`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.bestOfrTrms.autAcptThrshPrc.currency",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `bestOfrTrms.autAcptThrshPrc.currency`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.bestOfrTrms.autAcptThrshPrc.value",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `bestOfrTrms.autAcptThrshPrc.value`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.bestOfrTrms.autDclnEnbld",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `bestOfrTrms.autDclnEnbld`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.bestOfrTrms.autDclnThrshPrc.currency",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `bestOfrTrms.autDclnThrshPrc.currency`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.bestOfrTrms.autDclnThrshPrc.value",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `bestOfrTrms.autDclnThrshPrc.value`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.bestOfrTrms.bestOfrEnbld",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `bestOfrTrms.bestOfrEnbld`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.prchsRateRqrmnt.minFdbkScore",
             "type": "numberInt",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.prchsRateRqrmnt.minFdbkScore`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.prchsRateRqrmnt.qntyLmtPerByr",
             "type": "numberInt",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.prchsRateRqrmnt.qntyLmtPerByr`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.qntyLmtPerByr",
             "type": "numberInt",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.qntyLmtPerByr`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.rsdncyShpToLocn",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.rsdncyShpToLocn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.rstrctBid",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.rstrctBid`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.rstrctToBsnsUsr",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.rstrctToBsnsUsr`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.rstrctnDate",
             "type": "numberLong",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.rstrctnDate`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.unpaidTranThrsh.count",
             "type": "numberInt",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.unpaidTranThrsh.count`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.buyerRstrctns.unpaidTranThrsh.period",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `buyerRstrctns.unpaidTranThrsh.period`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.byrRstrctDsbld",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `byrRstrctDsbld`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.cashOnDlvryFee.currency",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.cashOnDlvryFee.currency`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.cashOnDlvryFee.value",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.cashOnDlvryFee.value`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.dgtDlvLgsPlSprt",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.dgtDlvLgsPlSprt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.ebayMgdShpng",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.ebayMgdShpng`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.freeShipAvail",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.freeShipAvail`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.gspLgstcPlnSprtd",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.gspLgstcPlnSprtd`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.ispuLgstcPlSprt",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.ispuLgstcPlSprt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.mFulfillmentSprt",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.mFulfillmentSprt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.mgdShpngCstPdBy",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.mgdShpngCstPdBy`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.mgdShpngOptin",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.mgdShpngOptin`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.orgPostCode",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.orgPostCode`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.depth",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.dimensions.depth`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.length",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.dimensions.length`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.dimensions.width",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.dimensions.width`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.irregularPackage",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.irregularPackage`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.packageType",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.packageType`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.unitOfMeasure",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.unitOfMeasure`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.weight.majorWeight",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.weight.majorWeight`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.pkgSpec.weight.minorWeight",
             "type": "numberDouble",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.pkgSpec.weight.minorWeight`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.fulflmntTrms.s2hLgstcPlnSprt",
             "type": "boolean",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `fulflmntTrms.s2hLgstcPlnSprt`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.pymtPlcyId.plcyVrsn",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `pymtPlcyId.plcyVrsn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.pymtPlcyId.policyId",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `pymtPlcyId.policyId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.rtrnsPlcyId.plcyVrsn",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `rtrnsPlcyId.plcyVrsn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.rtrnsPlcyId.policyId",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `rtrnsPlcyId.policyId`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.shipPlcyId.plcyVrsn",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `shipPlcyId.plcyVrsn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "trmsAndPolicies.shipPlcyId.policyId",
             "type": "string",
-            "comment": "Best-offer, buyer-restriction, fulfillment, policy, and warranty terms. Nested property: `shipPlcyId.policyId`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -1175,139 +1175,139 @@
         {
             "name": "vslEncmt.boldTitle",
             "type": "boolean",
-            "comment": "Title, gallery, photo-display, visitor-counter, and subtitle enhancements. Nested property: `boldTitle`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "vslEncmt.gallDurtn",
             "type": "string",
-            "comment": "Title, gallery, photo-display, visitor-counter, and subtitle enhancements. Nested property: `gallDurtn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "vslEncmt.gallTp",
             "type": "string",
-            "comment": "Title, gallery, photo-display, visitor-counter, and subtitle enhancements. Nested property: `gallTp`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "vslEncmt.homePgftrd",
             "type": "boolean",
-            "comment": "Title, gallery, photo-display, visitor-counter, and subtitle enhancements. Nested property: `homePgftrd`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "vslEncmt.photoDspType",
             "type": "string",
-            "comment": "Title, gallery, photo-display, visitor-counter, and subtitle enhancements. Nested property: `photoDspType`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "vslEncmt.subtitle",
             "type": "string",
-            "comment": "Title, gallery, photo-display, visitor-counter, and subtitle enhancements. Nested property: `subtitle`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "vslEncmt.vstCntrTp",
             "type": "numberInt",
-            "comment": "Title, gallery, photo-display, visitor-counter, and subtitle enhancements. Nested property: `vstCntrTp`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "aspects.name",
             "type": "string",
-            "comment": "Item aspects, each with an aspect name and its values. Nested property: `name`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "aspects.values",
             "type": "string[]",
-            "comment": "Item aspects, each with an aspect name and its values. Nested property: `values`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "gblIdentifiers.name",
             "type": "string",
-            "comment": "Global item identifiers represented as name-value pairs. Nested property: `name`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "gblIdentifiers.values",
             "type": "string[]",
-            "comment": "Global item identifiers represented as name-value pairs. Nested property: `values`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "images.eBayPicUrl",
             "type": "string",
-            "comment": "Item images with external and eBay URLs and display order. Nested property: `eBayPicUrl`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "images.extPicUrl",
             "type": "string",
-            "comment": "Item images with external and eBay URLs and display order. Nested property: `extPicUrl`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "images.order",
             "type": "numberLong",
-            "comment": "Item images with external and eBay URLs and display order. Nested property: `order`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.docs.id",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `docs.id`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.cmpNm",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.cmpNm`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.cntry",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.cntry`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.cty",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.cty`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.email",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.email`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.phn",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.phn`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.prsnTyps",
             "type": "string[]",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.prsnTyps`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.strt1",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.strt1`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "rgltryInfo.respPrsns.zip",
             "type": "string",
-            "comment": "Hazardous-material, product-safety, repairability, operator, manufacturer, responsible-person, document, and energy-label information. Nested property: `respPrsns.zip`.",
+            "comment": null,
             "nullable": null
         }
     ],

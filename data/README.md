@@ -24,9 +24,11 @@ emit a standalone Markdown report:
 python3 scripts/nudoc_sample_audit.py --output /tmp/nudoc-sample-audit.md
 ```
 
-Reconcile observed sample fields, compatible types, and entity-page-backed
-descriptions into the source schemas. Review with `--check` first; use
-`--apply` only after resolving any reported type inconsistencies.
+Reconcile observed sample fields and compatible types. A schema comment is
+filled only when an entity page documents that exact field; fields without
+direct evidence remain empty and block RAW LDM payload generation until
+reviewed. Review with `--check` first; use `--apply` only after resolving
+reported type or description gaps.
 
 ```bash
 python3 scripts/nudoc_schema_reconciliation.py --check

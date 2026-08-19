@@ -14,9 +14,12 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 try:
-    from scripts.raw_ldm_payloads import PayloadArtifact
+    from scripts.raw_ldm_payloads import (
+        PayloadArtifact,
+        check_artifacts,
+    )
 except ModuleNotFoundError:
-    from raw_ldm_payloads import PayloadArtifact
+    from raw_ldm_payloads import PayloadArtifact, check_artifacts
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -187,6 +190,21 @@ def read_artifacts(data_dir: Path) -> list[PayloadArtifact]:
     return artifacts
 
 
+def validate_artifacts(data_dir: Path, docs_dir: Path) -> None:
+    """Reject stale artifacts and unresolved source-schema metadata."""
+    try:
+        stale_paths = check_artifacts(data_dir, docs_dir)
+    except ValueError as error:
+        raise MdmRequestError(
+            f"Cannot use generated requests until source schemas are resolved: {error}"
+        ) from error
+    if stale_paths:
+        stale = ", ".join(str(path) for path in stale_paths)
+        raise MdmRequestError(
+            f"Generated requests are stale; regenerate them before use: {stale}"
+        )
+
+
 def select_artifacts(
     artifacts: list[PayloadArtifact],
     requested_names: list[str] | None,
@@ -213,6 +231,11 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=REPOSITORY_ROOT / "data")
     parser.add_argument(
+        "--docs-dir",
+        type=Path,
+        default=REPOSITORY_ROOT / "docs" / "entities",
+    )
+    parser.add_argument(
         "--ldm",
         action="append",
         metavar="NAME",
@@ -228,6 +251,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    validate_artifacts(args.data_dir, args.docs_dir)
     artifacts = select_artifacts(read_artifacts(args.data_dir), args.ldm)
     if not args.apply:
         for result in create_entities(artifacts, "", "", "", apply=False):

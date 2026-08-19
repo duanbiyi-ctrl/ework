@@ -29,7 +29,7 @@
         {
             "name": "rvsnId.reference",
             "type": "string",
-            "comment": "Reference identifier for this listing revision document. Nested property: `reference`.",
+            "comment": null,
             "nullable": null
         },
         {

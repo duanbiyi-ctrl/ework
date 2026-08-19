@@ -1,11 +1,15 @@
 import json
 import tempfile
 import unittest
+from io import StringIO
 from pathlib import Path
+from unittest.mock import patch
 
 from scripts.create_raw_ldms import (
     MdmRequestError,
     create_entities,
+    main,
+    read_artifacts,
     select_artifacts,
     validate_artifacts,
 )
@@ -26,6 +30,19 @@ def payload_artifact(name: str) -> PayloadArtifact:
 
 
 class CreateRawLdmsTests(unittest.TestCase):
+    def write_request(self, data_dir: Path) -> None:
+        (data_dir / "Item_ldm_request.json").write_text(
+            json.dumps(
+                {
+                    "name": "item",
+                    "namespaceId": 114,
+                    "viewType": "RAW",
+                    "fields": [],
+                }
+            ),
+            encoding="utf-8",
+        )
+
     def test_selects_only_requested_ldms(self):
         selected = select_artifacts(
             [
@@ -168,6 +185,85 @@ class CreateRawLdmsTests(unittest.TestCase):
 
             with self.assertRaisesRegex(MdmRequestError, "title.*description"):
                 validate_artifacts(root / "data", docs_dir)
+
+    def test_reads_generated_artifacts(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            data_dir = Path(temporary_directory)
+            self.write_request(data_dir)
+
+            artifacts = read_artifacts(data_dir)
+
+            self.assertEqual([artifact.payload["name"] for artifact in artifacts], ["item"])
+
+    def test_rejects_invalid_generated_artifacts(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            data_dir = Path(temporary_directory)
+            invalid_path = data_dir / "Invalid_ldm_request.json"
+            invalid_path.write_text("{", encoding="utf-8")
+
+            with self.assertRaisesRegex(MdmRequestError, "Invalid generated request"):
+                read_artifacts(data_dir)
+
+            invalid_path.write_text("[]", encoding="utf-8")
+            with self.assertRaisesRegex(MdmRequestError, "must be a JSON object"):
+                read_artifacts(data_dir)
+
+    def test_rejects_when_no_generated_artifacts_exist(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            with self.assertRaisesRegex(MdmRequestError, "No generated requests"):
+                read_artifacts(Path(temporary_directory))
+
+    def test_rejects_stale_generated_artifacts(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            path = Path(temporary_directory) / "Item_ldm_request.json"
+            with patch(
+                "scripts.create_raw_ldms.check_artifacts",
+                return_value=[path],
+            ):
+                with self.assertRaisesRegex(MdmRequestError, "Generated requests are stale"):
+                    validate_artifacts(Path(temporary_directory), Path(temporary_directory))
+
+    def test_main_dry_run_validates_then_prints_plan(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            data_dir = Path(temporary_directory)
+            self.write_request(data_dir)
+            arguments = [
+                "create_raw_ldms.py",
+                "--data-dir",
+                str(data_dir),
+                "--docs-dir",
+                str(data_dir),
+            ]
+
+            with (
+                patch("scripts.create_raw_ldms.check_artifacts", return_value=[]),
+                patch("sys.argv", arguments),
+                patch("sys.stdout", new_callable=StringIO) as output,
+            ):
+                self.assertEqual(main(), 0)
+
+            self.assertEqual(output.getvalue(), "dry-run: item\n")
+
+    def test_main_apply_requires_mdm_credentials_after_preflight(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            data_dir = Path(temporary_directory)
+            self.write_request(data_dir)
+            arguments = [
+                "create_raw_ldms.py",
+                "--data-dir",
+                str(data_dir),
+                "--docs-dir",
+                str(data_dir),
+                "--apply",
+            ]
+
+            with (
+                patch("scripts.create_raw_ldms.check_artifacts", return_value=[]),
+                patch("sys.argv", arguments),
+                patch.dict("os.environ", {}, clear=True),
+            ):
+                with self.assertRaisesRegex(MdmRequestError, "MDM_BASE_URL and MDM_TOKEN"):
+                    main()
 
 
 if __name__ == "__main__":

@@ -59,7 +59,7 @@
         {
             "name": "imgVryBy.trtName",
             "type": "string",
-            "comment": "Trait-driven image variation configuration. Nested property: `trtName`.",
+            "comment": null,
             "nullable": null
         },
         {
@@ -95,55 +95,55 @@
         {
             "name": "globalIdentifiers.name",
             "type": "string",
-            "comment": "Global product identifiers for the group. Nested property: `name`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "globalIdentifiers.values",
             "type": "string[]",
-            "comment": "Global product identifiers for the group. Nested property: `values`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "images.eBayPicUrl",
             "type": "string",
-            "comment": "Shared group images, including image URLs and display order. Nested property: `eBayPicUrl`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "images.extPicUrl",
             "type": "string",
-            "comment": "Shared group images, including image URLs and display order. Nested property: `extPicUrl`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "images.order",
             "type": "numberLong",
-            "comment": "Shared group images, including image URLs and display order. Nested property: `order`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "imgVryBy.trtImg.img",
             "type": "string[]",
-            "comment": "Trait-driven image variation configuration. Nested property: `trtImg.img`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "imgVryBy.trtImg.trtVal",
             "type": "string",
-            "comment": "Trait-driven image variation configuration. Nested property: `trtImg.trtVal`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "itmsVryBy.name",
             "type": "string",
-            "comment": "Traits by which the group's items vary. Nested property: `name`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "itmsVryBy.values",
             "type": "string[]",
-            "comment": "Traits by which the group's items vary. Nested property: `values`.",
+            "comment": null,
             "nullable": null
         }
     ],

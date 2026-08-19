@@ -35,7 +35,7 @@
         {
             "name": "ebayGeneratedTitle",
             "type": "string",
-            "comment": "eBay-generated title carried by the active-draft index.",
+            "comment": null,
             "nullable": null
         },
         {

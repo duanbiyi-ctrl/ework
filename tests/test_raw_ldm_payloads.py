@@ -44,59 +44,9 @@ class RawLdmPayloadTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             encode_avro_type("object")
 
-    def test_builds_all_raw_payloads_from_schemas_and_documentation(self):
-        payloads = build_payloads(DATA_DIR, DOCS_DIR)
-
-        self.assertEqual(len(payloads), 22)
-
-        by_name = {payload.payload["name"]: payload.payload for payload in payloads}
-        self.assertTrue(
-            all(
-                field["name"] != "__KEY"
-                for payload in by_name.values()
-                for field in payload["fields"]
-            )
-        )
-        self.assertTrue(all("pk" not in payload for payload in by_name.values()))
-        item_root = by_name["item_root"]
-        self.assertEqual(item_root["viewType"], "RAW")
-        self.assertEqual(item_root["namespaceId"], 114)
-        self.assertEqual(item_root["owners"], "jiajsun")
-        self.assertEqual(item_root["teamDl"], "DL-eBay-GDS@ebay.com")
-        self.assertEqual(item_root["fields"][0]["name"], "IncEbyPrdtDtail")
-        self.assertEqual(
-            item_root["fields"][0]["hierarchicalName"],
-            "IncEbyPrdtDtail",
-        )
-        self.assertEqual(item_root["fields"][0]["ordinal"], 1)
-        self.assertEqual(
-            json.loads(item_root["fields"][0]["dataType"]),
-            {"type": "boolean", "default": None},
-        )
-
-        item_price_fields = by_name["item_price_and_quantity"]["fields"]
-        self.assertEqual(
-            [field["name"] for field in item_price_fields],
-            [
-                "ItemQtyPriceID",
-                "availQty",
-                "crLstgDtVrs",
-                "lifecycle.endDt",
-                "lifecycle.schdldEndDt",
-                "price.fixedPrice.currency",
-                "price.fixedPrice.value",
-                "price.mrktngPrc.prcngTrtmnt",
-                "price.orgnRetailPrice.currency",
-                "price.orgnRetailPrice.value",
-                "price.prcGuarantee",
-                "qtySold",
-            ],
-        )
-        self.assertEqual(
-            item_price_fields[0]["description"],
-            "Identifier for this price-and-quantity child document, "
-            "generated as `QTY_PRICE_<itemId>`.",
-        )
+    def test_rejects_raw_payloads_until_every_schema_field_has_evidence(self):
+        with self.assertRaisesRegex(MetadataResolutionError, "pmtTrms.daysToFulPmt"):
+            build_payloads(DATA_DIR, DOCS_DIR)
 
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):
         with tempfile.TemporaryDirectory() as temporary_directory:

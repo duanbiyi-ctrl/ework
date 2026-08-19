@@ -25,7 +25,9 @@
 | Field | Type | Description |
 | --- | --- | --- |
 | `lstgId` | `String` | Identifier of the listing whose revision history is stored. |
-| `expiredDate` | `Date` | Date when revision-history retention expires. |
+
+The TTL maintenance operation also upserts `expiredDate`, an operational field
+written by that path but not declared as a Java property on this schema class.
 
 ## Write and Read Behavior
 

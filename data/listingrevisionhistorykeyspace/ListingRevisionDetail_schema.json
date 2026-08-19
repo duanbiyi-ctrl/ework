@@ -23,13 +23,13 @@
         {
             "name": "lstRvsnDtlId.reference",
             "type": "string",
-            "comment": "Reference identifier for this listing revision-detail document. Nested property: `reference`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "lstgId",
             "type": "string",
-            "comment": "Identifier of the listing whose revision property changed.",
+            "comment": null,
             "nullable": null
         },
         {

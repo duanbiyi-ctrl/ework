@@ -249,7 +249,7 @@ def _documented_fields(doc_path: Path) -> set[str]:
 
 
 def _is_documented(path: str, fields: set[str]) -> bool:
-    return path in fields or path.split(".", maxsplit=1)[0] in fields
+    return path in fields
 
 
 def audit_docsets(docsets: tuple[Docset, ...]) -> tuple[AuditResult, ...]:

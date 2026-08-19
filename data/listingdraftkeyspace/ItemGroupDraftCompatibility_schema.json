@@ -23,13 +23,13 @@
         {
             "name": "compat.propertiesList.name",
             "type": "string",
-            "comment": "Compatibility entries for the item group draft. Nested property: `propertiesList.name`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "compat.propertiesList.values",
             "type": "string[]",
-            "comment": "Compatibility entries for the item group draft. Nested property: `propertiesList.values`.",
+            "comment": null,
             "nullable": null
         }
     ],

@@ -11,7 +11,7 @@
         {
             "name": "expiredDate",
             "type": "date",
-            "comment": "Date when revision-history retention expires.",
+            "comment": null,
             "nullable": null
         },
         {

@@ -24,8 +24,6 @@
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `lstgId` | `String` | Identifier of the listing whose revision property changed. |
-| `lstRvsnDtlId` | `Reference` | Reference identifier for this listing revision-detail document. |
 | `rvsdPrptyGrp` | `RevisedPropertyGroupEnum` | Group containing the changed listing property. |
 | `rvsdPrpty` | `RevisedPropertyEnum` | Listing property that changed. |
 | `chgTp` | `ChangeTypeEnum` | Kind of change recorded. |

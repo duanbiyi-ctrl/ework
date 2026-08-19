@@ -341,13 +341,13 @@
         {
             "name": "usgHistDtl.name",
             "type": "string",
-            "comment": "Usage-history detail name/value entries. Nested property: `name`.",
+            "comment": null,
             "nullable": null
         },
         {
             "name": "usgHistDtl.value",
             "type": "string",
-            "comment": "Usage-history detail name/value entries. Nested property: `value`.",
+            "comment": null,
             "nullable": null
         }
     ],
