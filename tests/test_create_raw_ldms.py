@@ -1,7 +1,14 @@
 import json
+import tempfile
 import unittest
+from pathlib import Path
 
-from scripts.create_raw_ldms import MdmRequestError, create_entities, select_artifacts
+from scripts.create_raw_ldms import (
+    MdmRequestError,
+    create_entities,
+    select_artifacts,
+    validate_artifacts,
+)
 from scripts.raw_ldm_payloads import PayloadArtifact
 
 
@@ -117,6 +124,50 @@ class CreateRawLdmsTests(unittest.TestCase):
                 apply=True,
                 request=request,
             )
+
+    def test_rejects_generated_requests_without_direct_description_evidence(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data" / "itemkeyspace"
+            docs_dir = root / "docs" / "entities"
+            data_dir.mkdir(parents=True)
+            docs_dir.mkdir(parents=True)
+            (data_dir / "Item_schema.json").write_text(
+                json.dumps(
+                    {
+                        "DataStoreName": "ItemKeyspace",
+                        "DataTableName": "__ROOT__.Item",
+                        "Columns": [
+                            {
+                                "name": "title",
+                                "type": "string",
+                                "comment": None,
+                                "nullable": None,
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (docs_dir / "item.md").write_text(
+                "\n".join(
+                    [
+                        "# Item LDM",
+                        "",
+                        "**LDM Name:** `Item LDM`",
+                        "",
+                        "**Description:** Item data.",
+                        "",
+                        "**NuDocument Docset:** `Item`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(MdmRequestError, "title.*description"):
+                validate_artifacts(root / "data", docs_dir)
 
 
 if __name__ == "__main__":
