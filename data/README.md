@@ -24,6 +24,10 @@ emit a standalone Markdown report:
 python3 scripts/nudoc_sample_audit.py --output /tmp/nudoc-sample-audit.md
 ```
 
+Entity pages document first-level fields only. The audit therefore evaluates
+entity-page coverage at that level, while schema comments still require direct
+evidence for their exact field paths.
+
 Reconcile observed sample fields and compatible types. A schema comment is
 filled only when an entity page documents that exact field; fields without
 direct evidence remain empty and block RAW LDM payload generation until

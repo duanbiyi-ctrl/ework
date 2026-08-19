@@ -249,7 +249,7 @@ def _documented_fields(doc_path: Path) -> set[str]:
 
 
 def _is_documented(path: str, fields: set[str]) -> bool:
-    return path in fields
+    return path.split(".", maxsplit=1)[0] in fields
 
 
 def audit_docsets(docsets: tuple[Docset, ...]) -> tuple[AuditResult, ...]:
@@ -288,7 +288,11 @@ def audit_docsets(docsets: tuple[Docset, ...]) -> tuple[AuditResult, ...]:
             or not column["comment"].strip()
         )
         undocumented = sorted(
-            path for path in observed if not _is_documented(path, documented_fields)
+            {
+                path.split(".", maxsplit=1)[0]
+                for path in observed
+                if not _is_documented(path, documented_fields)
+            }
         )
 
         results.append(
@@ -317,7 +321,7 @@ def render_markdown(results: tuple[AuditResult, ...]) -> str:
         "",
         f"Reviewed **{len(results)}** source-schema, production-sample, and entity-page triples.",
         "",
-        "| Keyspace | Docset | Observed fields | Sample-only | Type mismatches | Missing descriptions | Undocumented |",
+        "| Keyspace | Docset | Observed fields | Sample-only | Type mismatches | Missing descriptions | Undocumented top-level fields |",
         "| --- | --- | ---: | ---: | ---: | ---: | ---: |",
     ]
     for result in results:
@@ -342,7 +346,8 @@ def render_markdown(results: tuple[AuditResult, ...]) -> str:
                 f"- **Schema-only paths:** {_markdown_list(result.schema_only_paths)}",
                 f"- **Type mismatches:** {_markdown_list(result.type_mismatches)}",
                 f"- **Missing schema descriptions:** {_markdown_list(result.missing_descriptions)}",
-                f"- **Undocumented observed paths:** {_markdown_list(result.undocumented_paths)}",
+                f"- **Undocumented observed top-level fields:** "
+                f"{_markdown_list(result.undocumented_paths)}",
                 f"- **Unobservable paths:** {_markdown_list(result.unobservable_paths)}",
             ]
         )
