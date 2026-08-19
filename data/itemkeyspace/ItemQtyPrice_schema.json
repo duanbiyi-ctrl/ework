@@ -17,19 +17,19 @@
         {
             "name": "crLstgDtVrs",
             "type": "string",
-            "comment": null,
+            "comment": "Core listing data version.",
             "nullable": null
         },
         {
             "name": "lifecycle.endDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Listing end date.",
             "nullable": null
         },
         {
             "name": "lifecycle.schdldEndDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Scheduled listing end date.",
             "nullable": null
         },
         {
