@@ -64,9 +64,13 @@ def _document_docset(keyspace: str, docset: str) -> str:
     return DOCSET_ALIASES.get((keyspace, docset), docset)
 
 
-def _load_json(path: Path) -> dict[str, Any]:
+def _load_json(path: Path) -> Any:
     with path.open(encoding="utf-8") as file:
-        value = json.load(file)
+        return json.load(file)
+
+
+def _load_object(path: Path) -> dict[str, Any]:
+    value = _load_json(path)
     if not isinstance(value, dict):
         raise ValueError(f"Expected a JSON object: {path}")
     return value
@@ -98,7 +102,7 @@ def discover_docsets(data_dir: Path, samples_dir: Path, docs_dir: Path) -> tuple
     docsets: list[Docset] = []
 
     for schema_path in sorted(data_dir.rglob("*_schema.json")):
-        schema = _load_json(schema_path)
+        schema = _load_object(schema_path)
         keyspace = schema.get("DataStoreName")
         if not isinstance(keyspace, str) or not keyspace:
             raise ValueError(f"Schema is missing DataStoreName: {schema_path}")
@@ -179,13 +183,19 @@ def _observe(
     _record_observed_value(values, unobservable, path, value)
 
 
-def _observed_paths(sample: dict[str, Any]) -> tuple[dict[str, set[str]], set[str]]:
+def _observed_paths(sample: Any) -> tuple[dict[str, set[str]], set[str]]:
     values: dict[str, set[str]] = defaultdict(set)
     unobservable: set[str] = set()
-    for name, value in sample.items():
-        if name in INTERNAL_SAMPLE_PATHS:
-            continue
-        _observe(value, name, values, unobservable)
+    documents = [sample] if isinstance(sample, dict) else sample
+    if not isinstance(documents, list) or not all(
+        isinstance(document, dict) for document in documents
+    ):
+        raise ValueError("A production sample must be an object or an array of objects")
+    for document in documents:
+        for name, value in document.items():
+            if name in INTERNAL_SAMPLE_PATHS:
+                continue
+            _observe(value, name, values, unobservable)
     return values, unobservable
 
 
@@ -221,7 +231,7 @@ def audit_docsets(docsets: tuple[Docset, ...]) -> tuple[AuditResult, ...]:
     """Compare schema field paths, types, descriptions, and docs to samples."""
     results: list[AuditResult] = []
     for docset in docsets:
-        schema = _load_json(docset.schema_path)
+        schema = _load_object(docset.schema_path)
         columns = [
             column
             for column in schema.get("Columns", [])
