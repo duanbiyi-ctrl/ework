@@ -606,8 +606,8 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Programs supported by the item.",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized array. Programs supported by the item.",
       "hierarchicalName": "prgSpprtd",
       "name": "prgSpprtd",
       "ordinal": 61,
@@ -786,8 +786,8 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Item video values.",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized array. Item video values.",
       "hierarchicalName": "videos",
       "name": "videos",
       "ordinal": 79,

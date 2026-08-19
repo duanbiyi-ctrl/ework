@@ -96,8 +96,8 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Identifiers of the individual items in the group.",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized array. Identifiers of the individual items in the group.",
       "hierarchicalName": "itemIds",
       "name": "itemIds",
       "ordinal": 10,

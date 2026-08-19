@@ -216,8 +216,8 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Item identifiers associated with this draft root.",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized array. Item identifiers associated with this draft root.",
       "hierarchicalName": "itmId",
       "name": "itmId",
       "ordinal": 22,
@@ -496,8 +496,8 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Store category identifiers.",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized array. Store category identifiers.",
       "hierarchicalName": "strCatIds",
       "name": "strCatIds",
       "ordinal": 50,

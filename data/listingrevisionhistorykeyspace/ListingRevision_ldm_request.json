@@ -26,8 +26,8 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Property groups changed by this revision.",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized array. Property groups changed by this revision.",
       "hierarchicalName": "rvsdPrptyGrps",
       "name": "rvsdPrptyGrps",
       "ordinal": 3,
