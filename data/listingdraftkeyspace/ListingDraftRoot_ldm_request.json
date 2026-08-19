@@ -557,7 +557,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Usage-history detail name/value entries. Nested property: `name`.",
+      "description": "Usage-history detail name/value entries. Inferred nested field: name.",
       "hierarchicalName": "usgHistDtl.name",
       "name": "usgHistDtl.name",
       "ordinal": 56,
@@ -567,7 +567,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Usage-history detail name/value entries. Nested property: `value`.",
+      "description": "Usage-history detail name/value entries. Inferred nested field: value.",
       "hierarchicalName": "usgHistDtl.value",
       "name": "usgHistDtl.value",
       "ordinal": 57,

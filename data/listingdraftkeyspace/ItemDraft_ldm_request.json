@@ -7,7 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Cost of goods, including currency and value. Nested property: `currency`.",
+      "description": "Cost of goods, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "COGs.currency",
       "name": "COGs.currency",
       "ordinal": 1,
@@ -17,7 +17,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Cost of goods, including currency and value. Nested property: `value`.",
+      "description": "Cost of goods, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "COGs.value",
       "name": "COGs.value",
       "ordinal": 2,
@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Auction reserve price, including currency and value. Nested property: `currency`.",
+      "description": "Auction reserve price, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "auctRsvPrc.currency",
       "name": "auctRsvPrc.currency",
       "ordinal": 4,
@@ -47,7 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Auction reserve price, including currency and value. Nested property: `value`.",
+      "description": "Auction reserve price, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "auctRsvPrc.value",
       "name": "auctRsvPrc.value",
       "ordinal": 5,
@@ -57,7 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Auto-relist settings, including its enablement and relist count. Nested property: `autoRlst`.",
+      "description": "Auto-relist settings, including its enablement and relist count. Inferred nested field: auto rlst.",
       "hierarchicalName": "autoRlsTrm.autoRlst",
       "name": "autoRlsTrm.autoRlst",
       "ordinal": 6,
@@ -67,7 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Auto-relist settings, including its enablement and relist count. Nested property: `rlstCnt`.",
+      "description": "Auto-relist settings, including its enablement and relist count. Inferred nested field: rlst cnt.",
       "hierarchicalName": "autoRlsTrm.rlstCnt",
       "name": "autoRlsTrm.rlstCnt",
       "ordinal": 7,
@@ -87,7 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.daysToFulPmt`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms days to ful pmt.",
       "hierarchicalName": "bizPol.pmtTrms.daysToFulPmt",
       "name": "bizPol.pmtTrms.daysToFulPmt",
       "ordinal": 9,
@@ -97,7 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.depAmt.currency`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms dep amt currency.",
       "hierarchicalName": "bizPol.pmtTrms.depAmt.currency",
       "name": "bizPol.pmtTrms.depAmt.currency",
       "ordinal": 10,
@@ -107,7 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.depAmt.value`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms dep amt value.",
       "hierarchicalName": "bizPol.pmtTrms.depAmt.value",
       "name": "bizPol.pmtTrms.depAmt.value",
       "ordinal": 11,
@@ -117,7 +117,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.depRqd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms dep rqd.",
       "hierarchicalName": "bizPol.pmtTrms.depRqd",
       "name": "bizPol.pmtTrms.depRqd",
       "ordinal": 12,
@@ -127,7 +127,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.hrsToDep`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms hrs to dep.",
       "hierarchicalName": "bizPol.pmtTrms.hrsToDep",
       "name": "bizPol.pmtTrms.hrsToDep",
       "ordinal": 13,
@@ -137,7 +137,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.immPay`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms imm pay.",
       "hierarchicalName": "bizPol.pmtTrms.immPay",
       "name": "bizPol.pmtTrms.immPay",
       "ordinal": 14,
@@ -147,7 +147,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.pmtInstr`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms pmt instr.",
       "hierarchicalName": "bizPol.pmtTrms.pmtInstr",
       "name": "bizPol.pmtTrms.pmtInstr",
       "ordinal": 15,
@@ -157,7 +157,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.pmtMthd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms pmt mthd.",
       "hierarchicalName": "bizPol.pmtTrms.pmtMthd",
       "name": "bizPol.pmtTrms.pmtMthd",
       "ordinal": 16,
@@ -167,7 +167,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `pmtTrms.ppEmail`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms pp email.",
       "hierarchicalName": "bizPol.pmtTrms.ppEmail",
       "name": "bizPol.pmtTrms.ppEmail",
       "ordinal": 17,
@@ -177,7 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.refMthd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ref mthd.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.refMthd",
       "name": "bizPol.retTrms.domRetTrm.refMthd",
       "ordinal": 18,
@@ -187,7 +187,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.retAcptd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ret acptd.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retAcptd",
       "name": "bizPol.retTrms.domRetTrm.retAcptd",
       "ordinal": 19,
@@ -197,7 +197,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.retPrd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ret prd.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retPrd",
       "name": "bizPol.retTrms.domRetTrm.retPrd",
       "ordinal": 20,
@@ -207,7 +207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.domRetTrm.retShpmtPayee`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ret shpmt payee.",
       "hierarchicalName": "bizPol.retTrms.domRetTrm.retShpmtPayee",
       "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
       "ordinal": 21,
@@ -217,7 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.extHolRet`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ext hol ret.",
       "hierarchicalName": "bizPol.retTrms.extHolRet",
       "name": "bizPol.retTrms.extHolRet",
       "ordinal": 22,
@@ -227,7 +227,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.refMthd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ref mthd.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.refMthd",
       "name": "bizPol.retTrms.intRetTrm.refMthd",
       "ordinal": 23,
@@ -237,7 +237,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.retAcptd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ret acptd.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retAcptd",
       "name": "bizPol.retTrms.intRetTrm.retAcptd",
       "ordinal": 24,
@@ -247,7 +247,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.retPrd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ret prd.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retPrd",
       "name": "bizPol.retTrms.intRetTrm.retPrd",
       "ordinal": 25,
@@ -257,7 +257,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.intRetTrm.retShpmtPayee`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ret shpmt payee.",
       "hierarchicalName": "bizPol.retTrms.intRetTrm.retShpmtPayee",
       "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
       "ordinal": 26,
@@ -267,7 +267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.refMthd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ref mthd.",
       "hierarchicalName": "bizPol.retTrms.refMthd",
       "name": "bizPol.retTrms.refMthd",
       "ordinal": 27,
@@ -277,7 +277,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.restFeePct`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms rest fee pct.",
       "hierarchicalName": "bizPol.retTrms.restFeePct",
       "name": "bizPol.retTrms.restFeePct",
       "ordinal": 28,
@@ -287,7 +287,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retAcptd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret acptd.",
       "hierarchicalName": "bizPol.retTrms.retAcptd",
       "name": "bizPol.retTrms.retAcptd",
       "ordinal": 29,
@@ -297,7 +297,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retInstr`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret instr.",
       "hierarchicalName": "bizPol.retTrms.retInstr",
       "name": "bizPol.retTrms.retInstr",
       "ordinal": 30,
@@ -307,7 +307,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retPrd`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret prd.",
       "hierarchicalName": "bizPol.retTrms.retPrd",
       "name": "bizPol.retTrms.retPrd",
       "ordinal": 31,
@@ -317,7 +317,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `retTrms.retShpmtPayee`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret shpmt payee.",
       "hierarchicalName": "bizPol.retTrms.retShpmtPayee",
       "name": "bizPol.retTrms.retShpmtPayee",
       "ordinal": 32,
@@ -327,7 +327,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.buyerRsp`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms buyer rsp.",
       "hierarchicalName": "bizPol.shipTrms.buyerRsp",
       "name": "bizPol.shipTrms.buyerRsp",
       "ordinal": 33,
@@ -337,7 +337,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.excldLocn`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms excld locn.",
       "hierarchicalName": "bizPol.shipTrms.excldLocn",
       "name": "bizPol.shipTrms.excldLocn",
       "ordinal": 34,
@@ -347,7 +347,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.hndlgTm`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms hndlg tm.",
       "hierarchicalName": "bizPol.shipTrms.hndlgTm",
       "name": "bizPol.shipTrms.hndlgTm",
       "ordinal": 35,
@@ -357,7 +357,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpToLocn`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp to locn.",
       "hierarchicalName": "bizPol.shipTrms.shpToLocn",
       "name": "bizPol.shipTrms.shpToLocn",
       "ordinal": 36,
@@ -377,7 +377,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autAccptEnbld`.",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut accpt enbld.",
       "hierarchicalName": "bstOfrTrm.autAccptEnbld",
       "name": "bstOfrTrm.autAccptEnbld",
       "ordinal": 38,
@@ -387,7 +387,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autAcptThrshPrc.currency`.",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut acpt thrsh prc currency.",
       "hierarchicalName": "bstOfrTrm.autAcptThrshPrc.currency",
       "name": "bstOfrTrm.autAcptThrshPrc.currency",
       "ordinal": 39,
@@ -397,7 +397,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autAcptThrshPrc.value`.",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut acpt thrsh prc value.",
       "hierarchicalName": "bstOfrTrm.autAcptThrshPrc.value",
       "name": "bstOfrTrm.autAcptThrshPrc.value",
       "ordinal": 40,
@@ -407,7 +407,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autDclnEnbld`.",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut dcln enbld.",
       "hierarchicalName": "bstOfrTrm.autDclnEnbld",
       "name": "bstOfrTrm.autDclnEnbld",
       "ordinal": 41,
@@ -417,7 +417,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autDclnThrshPrc.currency`.",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut dcln thrsh prc currency.",
       "hierarchicalName": "bstOfrTrm.autDclnThrshPrc.currency",
       "name": "bstOfrTrm.autDclnThrshPrc.currency",
       "ordinal": 42,
@@ -427,7 +427,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `autDclnThrshPrc.value`.",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut dcln thrsh prc value.",
       "hierarchicalName": "bstOfrTrm.autDclnThrshPrc.value",
       "name": "bstOfrTrm.autDclnThrshPrc.value",
       "ordinal": 43,
@@ -437,7 +437,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Best-offer settings, including offer flags and automatic threshold prices. Nested property: `bestOfrEnbld`.",
+      "description": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: best ofr enbld.",
       "hierarchicalName": "bstOfrTrm.bestOfrEnbld",
       "name": "bstOfrTrm.bestOfrEnbld",
       "ordinal": 44,
@@ -447,7 +447,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `prchsRateRqrmnt.minFdbkScore`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: prchs rate rqrmnt min fdbk score.",
       "hierarchicalName": "buyrRst.prchsRateRqrmnt.minFdbkScore",
       "name": "buyrRst.prchsRateRqrmnt.minFdbkScore",
       "ordinal": 45,
@@ -457,7 +457,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `prchsRateRqrmnt.qntyLmtPerByr`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: prchs rate rqrmnt qnty lmt per byr.",
       "hierarchicalName": "buyrRst.prchsRateRqrmnt.qntyLmtPerByr",
       "name": "buyrRst.prchsRateRqrmnt.qntyLmtPerByr",
       "ordinal": 46,
@@ -467,7 +467,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `qntyLmtPerByr`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: qnty lmt per byr.",
       "hierarchicalName": "buyrRst.qntyLmtPerByr",
       "name": "buyrRst.qntyLmtPerByr",
       "ordinal": 47,
@@ -477,7 +477,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `rsdncyShpToLocn`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: rsdncy shp to locn.",
       "hierarchicalName": "buyrRst.rsdncyShpToLocn",
       "name": "buyrRst.rsdncyShpToLocn",
       "ordinal": 48,
@@ -487,7 +487,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `rstrctBid`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: rstrct bid.",
       "hierarchicalName": "buyrRst.rstrctBid",
       "name": "buyrRst.rstrctBid",
       "ordinal": 49,
@@ -497,7 +497,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `rstrctnDate`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: rstrctn date.",
       "hierarchicalName": "buyrRst.rstrctnDate",
       "name": "buyrRst.rstrctnDate",
       "ordinal": 50,
@@ -507,7 +507,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `unpaidTranThrsh.count`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: unpaid tran thrsh count.",
       "hierarchicalName": "buyrRst.unpaidTranThrsh.count",
       "name": "buyrRst.unpaidTranThrsh.count",
       "ordinal": 51,
@@ -517,7 +517,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Nested property: `unpaidTranThrsh.period`.",
+      "description": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: unpaid tran thrsh period.",
       "hierarchicalName": "buyrRst.unpaidTranThrsh.period",
       "name": "buyrRst.unpaidTranThrsh.period",
       "ordinal": 52,
@@ -537,7 +537,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Charity identifier and donation percentage. Nested property: `charityId`.",
+      "description": "Charity identifier and donation percentage. Inferred nested field: charity id.",
       "hierarchicalName": "chrty.charityId",
       "name": "chrty.charityId",
       "ordinal": 54,
@@ -547,7 +547,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Charity identifier and donation percentage. Nested property: `donationPct`.",
+      "description": "Charity identifier and donation percentage. Inferred nested field: donation pct.",
       "hierarchicalName": "chrty.donationPct",
       "name": "chrty.donationPct",
       "ordinal": 55,
@@ -617,7 +617,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Nested property: `prdCmplPolIds`.",
+      "description": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Inferred nested field: prd cmpl pol ids.",
       "hierarchicalName": "cstmPol.prdCmplPolIds",
       "name": "cstmPol.prdCmplPolIds",
       "ordinal": 62,
@@ -627,7 +627,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Nested property: `tkBkPolId`.",
+      "description": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Inferred nested field: tk bk pol id.",
       "hierarchicalName": "cstmPol.tkBkPolId",
       "name": "cstmPol.tkBkPolId",
       "ordinal": 63,
@@ -637,7 +637,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Current price, including currency and value. Nested property: `currency`.",
+      "description": "Current price, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "currPrc.currency",
       "name": "currPrc.currency",
       "ordinal": 64,
@@ -647,7 +647,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Current price, including currency and value. Nested property: `value`.",
+      "description": "Current price, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "currPrc.value",
       "name": "currPrc.value",
       "ordinal": 65,
@@ -677,7 +677,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `odometer`.",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: odometer.",
       "hierarchicalName": "docs.odometer",
       "name": "docs.odometer",
       "ordinal": 68,
@@ -687,7 +687,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `vhclTtlBck`.",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: vhcl ttl bck.",
       "hierarchicalName": "docs.vhclTtlBck",
       "name": "docs.vhclTtlBck",
       "ordinal": 69,
@@ -697,7 +697,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `vhclTtlFrnt`.",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: vhcl ttl frnt.",
       "hierarchicalName": "docs.vhclTtlFrnt",
       "name": "docs.vhclTtlFrnt",
       "ordinal": 70,
@@ -707,7 +707,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Vehicle document data, including title, VIN, and odometer values. Nested property: `vin`.",
+      "description": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: vin.",
       "hierarchicalName": "docs.vin",
       "name": "docs.vin",
       "ordinal": 71,
@@ -757,7 +757,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "eBay community identifiers and marketplace-visibility setting. Nested property: `comntyIds`.",
+      "description": "eBay community identifiers and marketplace-visibility setting. Inferred nested field: comnty ids.",
       "hierarchicalName": "ebayCmnty.comntyIds",
       "name": "ebayCmnty.comntyIds",
       "ordinal": 76,
@@ -767,7 +767,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "eBay community identifiers and marketplace-visibility setting. Nested property: `mktplceVsbl`.",
+      "description": "eBay community identifiers and marketplace-visibility setting. Inferred nested field: mktplce vsbl.",
       "hierarchicalName": "ebayCmnty.mktplceVsbl",
       "name": "ebayCmnty.mktplceVsbl",
       "ordinal": 77,
@@ -797,7 +797,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `ecoFee`.",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: eco fee.",
       "hierarchicalName": "epr.ecoFee",
       "name": "epr.ecoFee",
       "ordinal": 80,
@@ -807,7 +807,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `prdDocId`.",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: prd doc id.",
       "hierarchicalName": "epr.prdDocId",
       "name": "epr.prdDocId",
       "ordinal": 81,
@@ -817,7 +817,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `prdPkgId`.",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: prd pkg id.",
       "hierarchicalName": "epr.prdPkgId",
       "name": "epr.prdPkgId",
       "ordinal": 82,
@@ -827,7 +827,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `prdcrId`.",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: prdcr id.",
       "hierarchicalName": "epr.prdcrId",
       "name": "epr.prdcrId",
       "ordinal": 83,
@@ -837,7 +837,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Nested property: `shpPkgId`.",
+      "description": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: shp pkg id.",
       "hierarchicalName": "epr.shpPkgId",
       "name": "epr.shpPkgId",
       "ordinal": 84,
@@ -847,7 +847,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `dgtDlvLgsPlSprt`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: dgt dlv lgs pl sprt.",
       "hierarchicalName": "ffTrm.dgtDlvLgsPlSprt",
       "name": "ffTrm.dgtDlvLgsPlSprt",
       "ordinal": 85,
@@ -857,7 +857,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `ebayMgdShpng`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: ebay mgd shpng.",
       "hierarchicalName": "ffTrm.ebayMgdShpng",
       "name": "ffTrm.ebayMgdShpng",
       "ordinal": 86,
@@ -867,7 +867,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `freeShipAvail`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: free ship avail.",
       "hierarchicalName": "ffTrm.freeShipAvail",
       "name": "ffTrm.freeShipAvail",
       "ordinal": 87,
@@ -877,7 +877,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `gspLgstcPlnSprtd`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: gsp lgstc pln sprtd.",
       "hierarchicalName": "ffTrm.gspLgstcPlnSprtd",
       "name": "ffTrm.gspLgstcPlnSprtd",
       "ordinal": 88,
@@ -887,7 +887,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `ispuLgstcPlSprt`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: ispu lgstc pl sprt.",
       "hierarchicalName": "ffTrm.ispuLgstcPlSprt",
       "name": "ffTrm.ispuLgstcPlSprt",
       "ordinal": 89,
@@ -897,7 +897,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `mFulfillmentSprt`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: m fulfillment sprt.",
       "hierarchicalName": "ffTrm.mFulfillmentSprt",
       "name": "ffTrm.mFulfillmentSprt",
       "ordinal": 90,
@@ -907,7 +907,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `mgdShpngCstPdBy`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: mgd shpng cst pd by.",
       "hierarchicalName": "ffTrm.mgdShpngCstPdBy",
       "name": "ffTrm.mgdShpngCstPdBy",
       "ordinal": 91,
@@ -917,7 +917,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `mgdShpngOptin`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: mgd shpng optin.",
       "hierarchicalName": "ffTrm.mgdShpngOptin",
       "name": "ffTrm.mgdShpngOptin",
       "ordinal": 92,
@@ -927,7 +927,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `orgPostCode`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: org post code.",
       "hierarchicalName": "ffTrm.orgPostCode",
       "name": "ffTrm.orgPostCode",
       "ordinal": 93,
@@ -937,7 +937,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.dimensions.depth`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec dimensions depth.",
       "hierarchicalName": "ffTrm.pkgSpec.dimensions.depth",
       "name": "ffTrm.pkgSpec.dimensions.depth",
       "ordinal": 94,
@@ -947,7 +947,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.dimensions.length`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec dimensions length.",
       "hierarchicalName": "ffTrm.pkgSpec.dimensions.length",
       "name": "ffTrm.pkgSpec.dimensions.length",
       "ordinal": 95,
@@ -957,7 +957,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.dimensions.width`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec dimensions width.",
       "hierarchicalName": "ffTrm.pkgSpec.dimensions.width",
       "name": "ffTrm.pkgSpec.dimensions.width",
       "ordinal": 96,
@@ -967,7 +967,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.irregularPackage`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec irregular package.",
       "hierarchicalName": "ffTrm.pkgSpec.irregularPackage",
       "name": "ffTrm.pkgSpec.irregularPackage",
       "ordinal": 97,
@@ -977,7 +977,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.packageType`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec package type.",
       "hierarchicalName": "ffTrm.pkgSpec.packageType",
       "name": "ffTrm.pkgSpec.packageType",
       "ordinal": 98,
@@ -987,7 +987,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.unitOfMeasure`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec unit of measure.",
       "hierarchicalName": "ffTrm.pkgSpec.unitOfMeasure",
       "name": "ffTrm.pkgSpec.unitOfMeasure",
       "ordinal": 99,
@@ -997,7 +997,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.weight.majorWeight`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec weight major weight.",
       "hierarchicalName": "ffTrm.pkgSpec.weight.majorWeight",
       "name": "ffTrm.pkgSpec.weight.majorWeight",
       "ordinal": 100,
@@ -1007,7 +1007,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `pkgSpec.weight.minorWeight`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec weight minor weight.",
       "hierarchicalName": "ffTrm.pkgSpec.weight.minorWeight",
       "name": "ffTrm.pkgSpec.weight.minorWeight",
       "ordinal": 101,
@@ -1017,7 +1017,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Nested property: `s2hLgstcPlnSprt`.",
+      "description": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: s2h lgstc pln sprt.",
       "hierarchicalName": "ffTrm.s2hLgstcPlnSprt",
       "name": "ffTrm.s2hLgstcPlnSprt",
       "ordinal": 102,
@@ -1057,7 +1057,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Fixed price, including currency and value. Nested property: `currency`.",
+      "description": "Fixed price, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "fxdPrc.currency",
       "name": "fxdPrc.currency",
       "ordinal": 106,
@@ -1067,7 +1067,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Fixed price, including currency and value. Nested property: `value`.",
+      "description": "Fixed price, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "fxdPrc.value",
       "name": "fxdPrc.value",
       "ordinal": 107,
@@ -1077,7 +1077,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "High-precision fixed price, including currency and value. Nested property: `currency`.",
+      "description": "High-precision fixed price, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "fxdPrcHP.currency",
       "name": "fxdPrcHP.currency",
       "ordinal": 108,
@@ -1087,7 +1087,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "High-precision fixed price, including currency and value. Nested property: `value`.",
+      "description": "High-precision fixed price, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "fxdPrcHP.value",
       "name": "fxdPrcHP.value",
       "ordinal": 109,
@@ -1247,7 +1247,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `minAdvrtsPrc.currency`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: min advrts prc currency.",
       "hierarchicalName": "mktPrc.minAdvrtsPrc.currency",
       "name": "mktPrc.minAdvrtsPrc.currency",
       "ordinal": 125,
@@ -1257,7 +1257,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `minAdvrtsPrc.value`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: min advrts prc value.",
       "hierarchicalName": "mktPrc.minAdvrtsPrc.value",
       "name": "mktPrc.minAdvrtsPrc.value",
       "ordinal": 126,
@@ -1267,7 +1267,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `minAdvrtsPrcExp`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: min advrts prc exp.",
       "hierarchicalName": "mktPrc.minAdvrtsPrcExp",
       "name": "mktPrc.minAdvrtsPrcExp",
       "ordinal": 127,
@@ -1277,7 +1277,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `orgnlRtlPrc.currency`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: orgnl rtl prc currency.",
       "hierarchicalName": "mktPrc.orgnlRtlPrc.currency",
       "name": "mktPrc.orgnlRtlPrc.currency",
       "ordinal": 128,
@@ -1287,7 +1287,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `orgnlRtlPrc.value`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: orgnl rtl prc value.",
       "hierarchicalName": "mktPrc.orgnlRtlPrc.value",
       "name": "mktPrc.orgnlRtlPrc.value",
       "ordinal": 129,
@@ -1297,7 +1297,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `prcngTrtmnt`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: prcng trtmnt.",
       "hierarchicalName": "mktPrc.prcngTrtmnt",
       "name": "mktPrc.prcngTrtmnt",
       "ordinal": 130,
@@ -1307,7 +1307,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `soldOffeBay`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: sold offe bay.",
       "hierarchicalName": "mktPrc.soldOffeBay",
       "name": "mktPrc.soldOffeBay",
       "ordinal": 131,
@@ -1317,7 +1317,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Nested property: `soldOnEbay`.",
+      "description": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: sold on ebay.",
       "hierarchicalName": "mktPrc.soldOnEbay",
       "name": "mktPrc.soldOnEbay",
       "ordinal": 132,
@@ -1357,7 +1357,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Original item price, including currency and value. Nested property: `currency`.",
+      "description": "Original item price, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "origItmPrc.currency",
       "name": "origItmPrc.currency",
       "ordinal": 136,
@@ -1367,7 +1367,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Original item price, including currency and value. Nested property: `value`.",
+      "description": "Original item price, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "origItmPrc.value",
       "name": "origItmPrc.value",
       "ordinal": 137,
@@ -1417,7 +1417,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Payment-policy identifier and version. Nested property: `policyId`.",
+      "description": "Payment-policy identifier and version. Inferred nested field: policy id.",
       "hierarchicalName": "pymtPlcyId.policyId",
       "name": "pymtPlcyId.policyId",
       "ordinal": 142,
@@ -1437,7 +1437,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `eek.dataSheet`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: eek data sheet.",
       "hierarchicalName": "rgltryInfo.eek.dataSheet",
       "name": "rgltryInfo.eek.dataSheet",
       "ordinal": 144,
@@ -1447,7 +1447,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `eek.img`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: eek img.",
       "hierarchicalName": "rgltryInfo.eek.img",
       "name": "rgltryInfo.eek.img",
       "ordinal": 145,
@@ -1457,7 +1457,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `eek.imgDesc`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: eek img desc.",
       "hierarchicalName": "rgltryInfo.eek.imgDesc",
       "name": "rgltryInfo.eek.imgDesc",
       "ordinal": 146,
@@ -1467,7 +1467,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.addnlInfo`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl addnl info.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.addnlInfo",
       "name": "rgltryInfo.hzdMatrl.addnlInfo",
       "ordinal": 147,
@@ -1477,7 +1477,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.pctgrmIds`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl pctgrm ids.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.pctgrmIds",
       "name": "rgltryInfo.hzdMatrl.pctgrmIds",
       "ordinal": 148,
@@ -1487,7 +1487,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.sgnlWrdId`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl sgnl wrd id.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.sgnlWrdId",
       "name": "rgltryInfo.hzdMatrl.sgnlWrdId",
       "ordinal": 149,
@@ -1497,7 +1497,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `hzdMatrl.stmntIds`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl stmnt ids.",
       "hierarchicalName": "rgltryInfo.hzdMatrl.stmntIds",
       "name": "rgltryInfo.hzdMatrl.stmntIds",
       "ordinal": 150,
@@ -1507,7 +1507,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cmpNm`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cmp nm.",
       "hierarchicalName": "rgltryInfo.mnfatr.cmpNm",
       "name": "rgltryInfo.mnfatr.cmpNm",
       "ordinal": 151,
@@ -1517,7 +1517,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cntctUrl`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cntct url.",
       "hierarchicalName": "rgltryInfo.mnfatr.cntctUrl",
       "name": "rgltryInfo.mnfatr.cntctUrl",
       "ordinal": 152,
@@ -1527,7 +1527,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cntry`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cntry.",
       "hierarchicalName": "rgltryInfo.mnfatr.cntry",
       "name": "rgltryInfo.mnfatr.cntry",
       "ordinal": 153,
@@ -1537,7 +1537,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.cty`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cty.",
       "hierarchicalName": "rgltryInfo.mnfatr.cty",
       "name": "rgltryInfo.mnfatr.cty",
       "ordinal": 154,
@@ -1547,7 +1547,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.email`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr email.",
       "hierarchicalName": "rgltryInfo.mnfatr.email",
       "name": "rgltryInfo.mnfatr.email",
       "ordinal": 155,
@@ -1557,7 +1557,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.phn`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr phn.",
       "hierarchicalName": "rgltryInfo.mnfatr.phn",
       "name": "rgltryInfo.mnfatr.phn",
       "ordinal": 156,
@@ -1567,7 +1567,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.strt1`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr strt1.",
       "hierarchicalName": "rgltryInfo.mnfatr.strt1",
       "name": "rgltryInfo.mnfatr.strt1",
       "ordinal": 157,
@@ -1577,7 +1577,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.strt2`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr strt2.",
       "hierarchicalName": "rgltryInfo.mnfatr.strt2",
       "name": "rgltryInfo.mnfatr.strt2",
       "ordinal": 158,
@@ -1587,7 +1587,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.stt`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr stt.",
       "hierarchicalName": "rgltryInfo.mnfatr.stt",
       "name": "rgltryInfo.mnfatr.stt",
       "ordinal": 159,
@@ -1597,7 +1597,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `mnfatr.zip`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr zip.",
       "hierarchicalName": "rgltryInfo.mnfatr.zip",
       "name": "rgltryInfo.mnfatr.zip",
       "ordinal": 160,
@@ -1607,7 +1607,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `prdSfty.addnlInfo`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: prd sfty addnl info.",
       "hierarchicalName": "rgltryInfo.prdSfty.addnlInfo",
       "name": "rgltryInfo.prdSfty.addnlInfo",
       "ordinal": 161,
@@ -1617,7 +1617,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `prdSfty.pctgrmIds`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: prd sfty pctgrm ids.",
       "hierarchicalName": "rgltryInfo.prdSfty.pctgrmIds",
       "name": "rgltryInfo.prdSfty.pctgrmIds",
       "ordinal": 162,
@@ -1627,7 +1627,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `prdSfty.stmntIds`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: prd sfty stmnt ids.",
       "hierarchicalName": "rgltryInfo.prdSfty.stmntIds",
       "name": "rgltryInfo.prdSfty.stmntIds",
       "ordinal": 163,
@@ -1637,7 +1637,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Nested property: `rprIdxScore`.",
+      "description": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: rpr idx score.",
       "hierarchicalName": "rgltryInfo.rprIdxScore",
       "name": "rgltryInfo.rprIdxScore",
       "ordinal": 164,
@@ -1667,7 +1667,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Return-policy identifier and version. Nested property: `policyId`.",
+      "description": "Return-policy identifier and version. Inferred nested field: policy id.",
       "hierarchicalName": "rtrnsPlcyId.policyId",
       "name": "rtrnsPlcyId.policyId",
       "ordinal": 167,
@@ -1707,7 +1707,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Shipping-policy identifier and version. Nested property: `policyId`.",
+      "description": "Shipping-policy identifier and version. Inferred nested field: policy id.",
       "hierarchicalName": "shipPlcyId.policyId",
       "name": "shipPlcyId.policyId",
       "ordinal": 171,
@@ -1727,7 +1727,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `cmpNm`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: cmp nm.",
       "hierarchicalName": "slr.cmpNm",
       "name": "slr.cmpNm",
       "ordinal": 173,
@@ -1737,7 +1737,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `cntry`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: cntry.",
       "hierarchicalName": "slr.cntry",
       "name": "slr.cntry",
       "ordinal": 174,
@@ -1747,7 +1747,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `ctcByEml`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: ctc by eml.",
       "hierarchicalName": "slr.ctcByEml",
       "name": "slr.ctcByEml",
       "ordinal": 175,
@@ -1757,7 +1757,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primPhone`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim phone.",
       "hierarchicalName": "slr.primPhone",
       "name": "slr.primPhone",
       "ordinal": 176,
@@ -1767,7 +1767,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.anyTime`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs any time.",
       "hierarchicalName": "slr.primSpprtCtcHrs.anyTime",
       "name": "slr.primSpprtCtcHrs.anyTime",
       "ordinal": 177,
@@ -1777,7 +1777,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsEnd.hrs`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs end hrs.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsEnd.hrs",
       "name": "slr.primSpprtCtcHrs.sprtHrsEnd.hrs",
       "ordinal": 178,
@@ -1787,7 +1787,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsEnd.mins`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs end mins.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsEnd.mins",
       "name": "slr.primSpprtCtcHrs.sprtHrsEnd.mins",
       "ordinal": 179,
@@ -1797,7 +1797,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsEnd.tz`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs end tz.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsEnd.tz",
       "name": "slr.primSpprtCtcHrs.sprtHrsEnd.tz",
       "ordinal": 180,
@@ -1807,7 +1807,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsStrt.hrs`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs strt hrs.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsStrt.hrs",
       "name": "slr.primSpprtCtcHrs.sprtHrsStrt.hrs",
       "ordinal": 181,
@@ -1817,7 +1817,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsStrt.mins`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs strt mins.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsStrt.mins",
       "name": "slr.primSpprtCtcHrs.sprtHrsStrt.mins",
       "ordinal": 182,
@@ -1827,7 +1827,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtHrsStrt.tz`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs strt tz.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtHrsStrt.tz",
       "name": "slr.primSpprtCtcHrs.sprtHrsStrt.tz",
       "ordinal": 183,
@@ -1837,7 +1837,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `primSpprtCtcHrs.sprtOnDays`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt on days.",
       "hierarchicalName": "slr.primSpprtCtcHrs.sprtOnDays",
       "name": "slr.primSpprtCtcHrs.sprtOnDays",
       "ordinal": 184,
@@ -1847,7 +1847,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `scndSpprtCtcHrs.anyTime`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: scnd spprt ctc hrs any time.",
       "hierarchicalName": "slr.scndSpprtCtcHrs.anyTime",
       "name": "slr.scndSpprtCtcHrs.anyTime",
       "ordinal": 185,
@@ -1857,7 +1857,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `scndSpprtCtcHrs.sprtOnDays`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: scnd spprt ctc hrs sprt on days.",
       "hierarchicalName": "slr.scndSpprtCtcHrs.sprtOnDays",
       "name": "slr.scndSpprtCtcHrs.sprtOnDays",
       "ordinal": 186,
@@ -1867,7 +1867,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `slrId`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: slr id.",
       "hierarchicalName": "slr.slrId",
       "name": "slr.slrId",
       "ordinal": 187,
@@ -1877,7 +1877,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `slrItmCtcInfoKey`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: slr itm ctc info key.",
       "hierarchicalName": "slr.slrItmCtcInfoKey",
       "name": "slr.slrItmCtcInfoKey",
       "ordinal": 188,
@@ -1887,7 +1887,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `st`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: st.",
       "hierarchicalName": "slr.st",
       "name": "slr.st",
       "ordinal": 189,
@@ -1897,7 +1897,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `st2`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: st2.",
       "hierarchicalName": "slr.st2",
       "name": "slr.st2",
       "ordinal": 190,
@@ -1907,7 +1907,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Seller identity, contact, and support-hours data. Nested property: `uid`.",
+      "description": "Seller identity, contact, and support-hours data. Inferred nested field: uid.",
       "hierarchicalName": "slr.uid",
       "name": "slr.uid",
       "ordinal": 191,
@@ -1977,7 +1977,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Starting-bid price, including currency and value. Nested property: `currency`.",
+      "description": "Starting-bid price, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "strtBidPrc.currency",
       "name": "strtBidPrc.currency",
       "ordinal": 198,
@@ -1987,7 +1987,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Starting-bid price, including currency and value. Nested property: `value`.",
+      "description": "Starting-bid price, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "strtBidPrc.value",
       "name": "strtBidPrc.value",
       "ordinal": 199,
@@ -1997,7 +1997,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "High-precision starting-bid price, including currency and value. Nested property: `currency`.",
+      "description": "High-precision starting-bid price, including currency and value. Inferred nested field: currency.",
       "hierarchicalName": "strtBidPrcHP.currency",
       "name": "strtBidPrcHP.currency",
       "ordinal": 200,
@@ -2007,7 +2007,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "High-precision starting-bid price, including currency and value. Nested property: `value`.",
+      "description": "High-precision starting-bid price, including currency and value. Inferred nested field: value.",
       "hierarchicalName": "strtBidPrcHP.value",
       "name": "strtBidPrcHP.value",
       "ordinal": 201,
@@ -2027,7 +2027,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `aplcblToShp`.",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: aplcbl to shp.",
       "hierarchicalName": "tax.aplcblToShp",
       "name": "tax.aplcblToShp",
       "ordinal": 203,
@@ -2037,7 +2037,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `rcgnzBsnsSlrVat`.",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: rcgnz bsns slr vat.",
       "hierarchicalName": "tax.rcgnzBsnsSlrVat",
       "name": "tax.rcgnzBsnsSlrVat",
       "ordinal": 204,
@@ -2047,7 +2047,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `salesTaxTblUsd`.",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: sales tax tbl usd.",
       "hierarchicalName": "tax.salesTaxTblUsd",
       "name": "tax.salesTaxTblUsd",
       "ordinal": 205,
@@ -2057,7 +2057,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `state`.",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: state.",
       "hierarchicalName": "tax.state",
       "name": "tax.state",
       "ordinal": 206,
@@ -2067,7 +2067,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `taxRate`.",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: tax rate.",
       "hierarchicalName": "tax.taxRate",
       "name": "tax.taxRate",
       "ordinal": 207,
@@ -2077,7 +2077,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `thrdPrtTxCtgCd`.",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: thrd prt tx ctg cd.",
       "hierarchicalName": "tax.thrdPrtTxCtgCd",
       "name": "tax.thrdPrtTxCtgCd",
       "ordinal": 208,
@@ -2087,7 +2087,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Nested property: `vatPct`.",
+      "description": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: vat pct.",
       "hierarchicalName": "tax.vatPct",
       "name": "tax.vatPct",
       "ordinal": 209,
@@ -2097,7 +2097,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Trading-scope data, including international visibility and local distribution. Nested property: `intlStVsbl`.",
+      "description": "Trading-scope data, including international visibility and local distribution. Inferred nested field: intl st vsbl.",
       "hierarchicalName": "trdScp.intlStVsbl",
       "name": "trdScp.intlStVsbl",
       "ordinal": 210,
@@ -2107,7 +2107,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Trading-scope data, including international visibility and local distribution. Nested property: `lclLstngDist`.",
+      "description": "Trading-scope data, including international visibility and local distribution. Inferred nested field: lcl lstng dist.",
       "hierarchicalName": "trdScp.lclLstngDist",
       "name": "trdScp.lclLstngDist",
       "ordinal": 211,
@@ -2157,7 +2157,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `boldTitle`.",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: bold title.",
       "hierarchicalName": "visEnh.boldTitle",
       "name": "visEnh.boldTitle",
       "ordinal": 216,
@@ -2167,7 +2167,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `gallDurtn`.",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: gall durtn.",
       "hierarchicalName": "visEnh.gallDurtn",
       "name": "visEnh.gallDurtn",
       "ordinal": 217,
@@ -2177,7 +2177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `gallTp`.",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: gall tp.",
       "hierarchicalName": "visEnh.gallTp",
       "name": "visEnh.gallTp",
       "ordinal": 218,
@@ -2187,7 +2187,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `homePgftrd`.",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: home pgftrd.",
       "hierarchicalName": "visEnh.homePgftrd",
       "name": "visEnh.homePgftrd",
       "ordinal": 219,
@@ -2197,7 +2197,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `photoDspType`.",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: photo dsp type.",
       "hierarchicalName": "visEnh.photoDspType",
       "name": "visEnh.photoDspType",
       "ordinal": 220,
@@ -2207,7 +2207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `subtitle`.",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: subtitle.",
       "hierarchicalName": "visEnh.subtitle",
       "name": "visEnh.subtitle",
       "ordinal": 221,
@@ -2217,7 +2217,7 @@
     },
     {
       "dataType": "{\"type\":\"int\",\"default\":null}",
-      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Nested property: `vstCntrTp`.",
+      "description": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: vst cntr tp.",
       "hierarchicalName": "visEnh.vstCntrTp",
       "name": "visEnh.vstCntrTp",
       "ordinal": 222,
@@ -2237,7 +2237,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Item aspect entries, each containing an aspect name and values. Nested property: `name`.",
+      "description": "Item aspect entries, each containing an aspect name and values. Inferred nested field: name.",
       "hierarchicalName": "aspct.name",
       "name": "aspct.name",
       "ordinal": 224,
@@ -2247,7 +2247,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Item aspect entries, each containing an aspect name and values. Nested property: `values`.",
+      "description": "Item aspect entries, each containing an aspect name and values. Inferred nested field: values.",
       "hierarchicalName": "aspct.values",
       "name": "aspct.values",
       "ordinal": 225,
@@ -2257,7 +2257,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.cstType`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt cst type.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.cstType",
       "name": "bizPol.shipTrms.shpOpt.cstType",
       "ordinal": 226,
@@ -2267,7 +2267,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.promoShp`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt promo shp.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.promoShp",
       "name": "bizPol.shipTrms.shpOpt.promoShp",
       "ordinal": 227,
@@ -2277,7 +2277,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpDscPrfId`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp dsc prf id.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpDscPrfId",
       "name": "bizPol.shipTrms.shpOpt.shpDscPrfId",
       "ordinal": 228,
@@ -2287,7 +2287,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.currency`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs add unit cost currency.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
       "ordinal": 229,
@@ -2297,7 +2297,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.addUnitCost.value`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs add unit cost value.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
       "ordinal": 230,
@@ -2307,7 +2307,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs pkg hndlg cost currency.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
       "ordinal": 231,
@@ -2317,7 +2317,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs pkg hndlg cost value.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
       "ordinal": 232,
@@ -2327,7 +2327,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.rank`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs rank.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
       "ordinal": 233,
@@ -2337,7 +2337,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.currency`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp cost currency.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
       "ordinal": 234,
@@ -2347,7 +2347,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpCost.value`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp cost value.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
       "ordinal": 235,
@@ -2357,7 +2357,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvc`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp svc.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
       "ordinal": 236,
@@ -2367,7 +2367,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpSvcId`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp svc id.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
       "ordinal": 237,
@@ -2377,7 +2377,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpSvcs.shpToLocns`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp to locns.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
       "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
       "ordinal": 238,
@@ -2387,7 +2387,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Business-policy set and embedded return, payment, and shipping terms. Nested property: `shipTrms.shpOpt.shpType`.",
+      "description": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp type.",
       "hierarchicalName": "bizPol.shipTrms.shpOpt.shpType",
       "name": "bizPol.shipTrms.shpOpt.shpType",
       "ordinal": 239,
@@ -2397,7 +2397,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Global identifier name/value entries. Nested property: `name`.",
+      "description": "Global identifier name/value entries. Inferred nested field: name.",
       "hierarchicalName": "glbId.name",
       "name": "glbId.name",
       "ordinal": 240,
@@ -2407,7 +2407,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Global identifier name/value entries. Nested property: `values`.",
+      "description": "Global identifier name/value entries. Inferred nested field: values.",
       "hierarchicalName": "glbId.values",
       "name": "glbId.values",
       "ordinal": 241,
@@ -2417,7 +2417,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Image mappings, including external and eBay image URLs and display order. Nested property: `eBayPicUrl`.",
+      "description": "Image mappings, including external and eBay image URLs and display order. Inferred nested field: e bay pic url.",
       "hierarchicalName": "img.eBayPicUrl",
       "name": "img.eBayPicUrl",
       "ordinal": 242,
@@ -2427,7 +2427,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Image mappings, including external and eBay image URLs and display order. Nested property: `order`.",
+      "description": "Image mappings, including external and eBay image URLs and display order. Inferred nested field: order.",
       "hierarchicalName": "img.order",
       "name": "img.order",
       "ordinal": 243,

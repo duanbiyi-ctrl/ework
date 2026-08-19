@@ -27,7 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Compatibility entries for the item group draft. Nested property: `propertiesList.name`.",
+      "description": "Compatibility entries for the item group draft. Inferred nested field: properties list name.",
       "hierarchicalName": "compat.propertiesList.name",
       "name": "compat.propertiesList.name",
       "ordinal": 3,
@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Compatibility entries for the item group draft. Nested property: `propertiesList.values`.",
+      "description": "Compatibility entries for the item group draft. Inferred nested field: properties list values.",
       "hierarchicalName": "compat.propertiesList.values",
       "name": "compat.propertiesList.values",
       "ordinal": 4,

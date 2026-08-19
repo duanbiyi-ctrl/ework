@@ -27,7 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Core-listing data version associated with this price-and-quantity state.",
+      "description": "Core listing data version.",
       "hierarchicalName": "crLstgDtVrs",
       "name": "crLstgDtVrs",
       "ordinal": 3,
@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Price-and-quantity lifecycle timestamps, including end and scheduled-end times. Nested property: `endDt`.",
+      "description": "Listing end date.",
       "hierarchicalName": "lifecycle.endDt",
       "name": "lifecycle.endDt",
       "ordinal": 4,
@@ -47,7 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Price-and-quantity lifecycle timestamps, including end and scheduled-end times. Nested property: `schdldEndDt`.",
+      "description": "Scheduled listing end date.",
       "hierarchicalName": "lifecycle.schdldEndDt",
       "name": "lifecycle.schdldEndDt",
       "ordinal": 5,
@@ -57,7 +57,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `fixedPrice.currency`.",
+      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price currency.",
       "hierarchicalName": "price.fixedPrice.currency",
       "name": "price.fixedPrice.currency",
       "ordinal": 6,
@@ -67,7 +67,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `fixedPrice.value`.",
+      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price value.",
       "hierarchicalName": "price.fixedPrice.value",
       "name": "price.fixedPrice.value",
       "ordinal": 7,
@@ -77,7 +77,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `mrktngPrc.prcngTrtmnt`.",
+      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: mrktng prc prcng trtmnt.",
       "hierarchicalName": "price.mrktngPrc.prcngTrtmnt",
       "name": "price.mrktngPrc.prcngTrtmnt",
       "ordinal": 8,
@@ -87,7 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `orgnRetailPrice.currency`.",
+      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price currency.",
       "hierarchicalName": "price.orgnRetailPrice.currency",
       "name": "price.orgnRetailPrice.currency",
       "ordinal": 9,
@@ -97,7 +97,7 @@
     },
     {
       "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `orgnRetailPrice.value`.",
+      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price value.",
       "hierarchicalName": "price.orgnRetailPrice.value",
       "name": "price.orgnRetailPrice.value",
       "ordinal": 10,
@@ -107,7 +107,7 @@
     },
     {
       "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Nested property: `prcGuarantee`.",
+      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: prc guarantee.",
       "hierarchicalName": "price.prcGuarantee",
       "name": "price.prcGuarantee",
       "ordinal": 11,

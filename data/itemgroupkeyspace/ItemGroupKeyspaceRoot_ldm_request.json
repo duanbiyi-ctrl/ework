@@ -87,7 +87,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Trait-driven image variation configuration. Nested property: `trtName`.",
+      "description": "Trait-driven image variation configuration. Inferred nested field: trt name.",
       "hierarchicalName": "imgVryBy.trtName",
       "name": "imgVryBy.trtName",
       "ordinal": 9,
@@ -147,7 +147,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Global product identifiers for the group. Nested property: `name`.",
+      "description": "Global product identifiers for the group. Inferred nested field: name.",
       "hierarchicalName": "globalIdentifiers.name",
       "name": "globalIdentifiers.name",
       "ordinal": 15,
@@ -157,7 +157,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Global product identifiers for the group. Nested property: `values`.",
+      "description": "Global product identifiers for the group. Inferred nested field: values.",
       "hierarchicalName": "globalIdentifiers.values",
       "name": "globalIdentifiers.values",
       "ordinal": 16,
@@ -167,7 +167,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Shared group images, including image URLs and display order. Nested property: `eBayPicUrl`.",
+      "description": "Shared group images, including image URLs and display order. Inferred nested field: e bay pic url.",
       "hierarchicalName": "images.eBayPicUrl",
       "name": "images.eBayPicUrl",
       "ordinal": 17,
@@ -177,7 +177,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Shared group images, including image URLs and display order. Nested property: `extPicUrl`.",
+      "description": "Shared group images, including image URLs and display order. Inferred nested field: ext pic url.",
       "hierarchicalName": "images.extPicUrl",
       "name": "images.extPicUrl",
       "ordinal": 18,
@@ -187,7 +187,7 @@
     },
     {
       "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Shared group images, including image URLs and display order. Nested property: `order`.",
+      "description": "Shared group images, including image URLs and display order. Inferred nested field: order.",
       "hierarchicalName": "images.order",
       "name": "images.order",
       "ordinal": 19,
@@ -197,7 +197,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Trait-driven image variation configuration. Nested property: `trtImg.img`.",
+      "description": "Trait-driven image variation configuration. Inferred nested field: trt img img.",
       "hierarchicalName": "imgVryBy.trtImg.img",
       "name": "imgVryBy.trtImg.img",
       "ordinal": 20,
@@ -207,7 +207,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Trait-driven image variation configuration. Nested property: `trtImg.trtVal`.",
+      "description": "Trait-driven image variation configuration. Inferred nested field: trt img trt val.",
       "hierarchicalName": "imgVryBy.trtImg.trtVal",
       "name": "imgVryBy.trtImg.trtVal",
       "ordinal": 21,
@@ -217,7 +217,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Traits by which the group's items vary. Nested property: `name`.",
+      "description": "Traits by which the group's items vary. Inferred nested field: name.",
       "hierarchicalName": "itmsVryBy.name",
       "name": "itmsVryBy.name",
       "ordinal": 22,
@@ -227,7 +227,7 @@
     },
     {
       "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Traits by which the group's items vary. Nested property: `values`.",
+      "description": "Traits by which the group's items vary. Inferred nested field: values.",
       "hierarchicalName": "itmsVryBy.values",
       "name": "itmsVryBy.values",
       "ordinal": 23,

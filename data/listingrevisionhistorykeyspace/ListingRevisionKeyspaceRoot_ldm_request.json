@@ -7,7 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"int\",\"logicalType\":\"date\",\"default\":null}",
-      "description": "Date when revision-history retention expires.",
+      "description": "Revision-history expiration date maintained by TTL maintenance.",
       "hierarchicalName": "expiredDate",
       "name": "expiredDate",
       "ordinal": 1,

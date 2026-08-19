@@ -27,7 +27,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Reference identifier for this listing revision-detail document. Nested property: `reference`.",
+      "description": "Historical old and new values for a changed listing property. Inferred field: lst rvsn dtl id reference.",
       "hierarchicalName": "lstRvsnDtlId.reference",
       "name": "lstRvsnDtlId.reference",
       "ordinal": 3,
@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Identifier of the listing whose revision property changed.",
+      "description": "Historical old and new values for a changed listing property. Inferred field: lstg id.",
       "hierarchicalName": "lstgId",
       "name": "lstgId",
       "ordinal": 4,

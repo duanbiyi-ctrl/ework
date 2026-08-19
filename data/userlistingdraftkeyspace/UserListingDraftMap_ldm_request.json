@@ -47,7 +47,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "eBay-generated title carried by the active-draft index.",
+      "description": "User-scoped index of active listing drafts and their summary metadata. Inferred field: ebay generated title.",
       "hierarchicalName": "ebayGeneratedTitle",
       "name": "ebayGeneratedTitle",
       "ordinal": 5,

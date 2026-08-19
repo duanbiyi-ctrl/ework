@@ -37,7 +37,7 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Reference identifier for this listing revision document. Nested property: `reference`.",
+      "description": "Historical summary of a listing revision and its changed property groups. Inferred field: rvsn id reference.",
       "hierarchicalName": "rvsnId.reference",
       "name": "rvsnId.reference",
       "ordinal": 4,
