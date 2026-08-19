@@ -213,6 +213,78 @@ class NuDocSampleAuditTests(unittest.TestCase):
             self.assertEqual(result.sample_only_paths, ())
             self.assertEqual(result.type_mismatches, ())
 
+    def test_ignores_nudocument_envelope_and_normalizes_extended_json_types(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data" / "itemkeyspace"
+            sample_dir = root / "samples" / "ItemKeyspace"
+            docs_dir = root / "docs"
+            data_dir.mkdir(parents=True)
+            sample_dir.mkdir(parents=True)
+            docs_dir.mkdir()
+
+            (data_dir / "Item_schema.json").write_text(
+                json.dumps(
+                    {
+                        "DataStoreName": "ItemKeyspace",
+                        "DataTableName": "__ROOT__.Item",
+                        "Columns": [
+                            {
+                                "name": "quantity",
+                                "type": "numberInt",
+                                "comment": "Available quantity.",
+                            },
+                            {
+                                "name": "payload",
+                                "type": "binary",
+                                "comment": "Serialized payload.",
+                            },
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (sample_dir / "Item.json").write_text(
+                json.dumps(
+                    {
+                        "__key": {"collection": "Item", "string": "item-1"},
+                        "__meta": {
+                            "creation_date": 1,
+                            "modification_date": 2,
+                            "revision": 3,
+                        },
+                        "quantity": {"$numberLong": "2"},
+                        "payload": {"$binary": "Ynl0ZXM=", "$type": "00"},
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (docs_dir / "item.md").write_text(
+                "\n".join(
+                    [
+                        "# Item LDM",
+                        "",
+                        "**NuDocument Docset:** `Item`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                        "",
+                        "| Field | Type | Description |",
+                        "| --- | --- | --- |",
+                        "| `quantity` | `Integer` | Available quantity. |",
+                        "| `payload` | `Binary` | Serialized payload. |",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            result = audit_docsets(
+                discover_docsets(root / "data", root / "samples", docs_dir)
+            )[0]
+
+            self.assertEqual(result.observed_paths, ("payload", "quantity"))
+            self.assertEqual(result.sample_only_paths, ())
+            self.assertEqual(result.type_mismatches, ())
+
 
 if __name__ == "__main__":
     unittest.main()
