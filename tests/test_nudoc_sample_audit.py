@@ -30,6 +30,23 @@ class NuDocSampleAuditTests(unittest.TestCase):
             "userlistingdraft-user-item-draft-map.md",
         )
 
+    def test_item_root_markdown_revision_uses_the_sample_string_type(self):
+        item_root = next(
+            docset
+            for docset in discover_docsets(DATA_DIR, SAMPLE_DIR, DOCS_DIR)
+            if docset.keyspace == "ItemKeyspace" and docset.docset == "__ROOT__"
+        )
+        schema = json.loads(item_root.schema_path.read_text(encoding="utf-8"))
+        field = next(
+            column
+            for column in schema["Columns"]
+            if column["name"] == "PrmnlDtls.mrkdnItmPrcRvsn"
+        )
+        result = audit_docsets((item_root,))[0]
+
+        self.assertEqual(field["type"], "string")
+        self.assertNotIn("PrmnlDtls.mrkdnItmPrcRvsn", result.type_mismatches)
+
     def test_reports_schema_sample_and_documentation_contract_gaps(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)
