@@ -27,20 +27,10 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Compatibility entries for the item group draft. Inferred nested field: properties list name.",
-      "hierarchicalName": "compat.propertiesList.name",
-      "name": "compat.propertiesList.name",
+      "description": "JSON-serialized object. Compatibility entries for the item group draft.",
+      "hierarchicalName": "compat",
+      "name": "compat",
       "ordinal": 3,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "description": "Compatibility entries for the item group draft. Inferred nested field: properties list values.",
-      "hierarchicalName": "compat.propertiesList.values",
-      "name": "compat.propertiesList.values",
-      "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

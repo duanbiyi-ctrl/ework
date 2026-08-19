@@ -557,20 +557,10 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Usage-history detail name/value entries. Inferred nested field: name.",
-      "hierarchicalName": "usgHistDtl.name",
-      "name": "usgHistDtl.name",
+      "description": "JSON-serialized object. Usage-history detail name/value entries.",
+      "hierarchicalName": "usgHistDtl",
+      "name": "usgHistDtl",
       "ordinal": 56,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Usage-history detail name/value entries. Inferred nested field: value.",
-      "hierarchicalName": "usgHistDtl.value",
-      "name": "usgHistDtl.value",
-      "ordinal": 57,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

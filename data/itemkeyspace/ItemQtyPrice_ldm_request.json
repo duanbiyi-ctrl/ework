@@ -36,81 +36,21 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Listing end date.",
-      "hierarchicalName": "lifecycle.endDt",
-      "name": "lifecycle.endDt",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object. Scheduled and end dates for the listing lifecycle.",
+      "hierarchicalName": "lifecycle",
+      "name": "lifecycle",
       "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"long\",\"default\":null}",
-      "description": "Scheduled listing end date.",
-      "hierarchicalName": "lifecycle.schdldEndDt",
-      "name": "lifecycle.schdldEndDt",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object. Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment.",
+      "hierarchicalName": "price",
+      "name": "price",
       "ordinal": 5,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price currency.",
-      "hierarchicalName": "price.fixedPrice.currency",
-      "name": "price.fixedPrice.currency",
-      "ordinal": 6,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price value.",
-      "hierarchicalName": "price.fixedPrice.value",
-      "name": "price.fixedPrice.value",
-      "ordinal": 7,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: mrktng prc prcng trtmnt.",
-      "hierarchicalName": "price.mrktngPrc.prcngTrtmnt",
-      "name": "price.mrktngPrc.prcngTrtmnt",
-      "ordinal": 8,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price currency.",
-      "hierarchicalName": "price.orgnRetailPrice.currency",
-      "name": "price.orgnRetailPrice.currency",
-      "ordinal": 9,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"double\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price value.",
-      "hierarchicalName": "price.orgnRetailPrice.value",
-      "name": "price.orgnRetailPrice.value",
-      "ordinal": 10,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "description": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: prc guarantee.",
-      "hierarchicalName": "price.prcGuarantee",
-      "name": "price.prcGuarantee",
-      "ordinal": 11,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -120,7 +60,7 @@
       "description": "Item quantity sold.",
       "hierarchicalName": "qtySold",
       "name": "qtySold",
-      "ordinal": 12,
+      "ordinal": 6,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []

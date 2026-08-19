@@ -27,9 +27,9 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "description": "Historical old and new values for a changed listing property. Inferred field: lst rvsn dtl id reference.",
-      "hierarchicalName": "lstRvsnDtlId.reference",
-      "name": "lstRvsnDtlId.reference",
+      "description": "JSON-serialized object. Historical old and new values for a changed listing property. Inferred field: lst rvsn dtl id reference.",
+      "hierarchicalName": "lstRvsnDtlId",
+      "name": "lstRvsnDtlId",
       "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
