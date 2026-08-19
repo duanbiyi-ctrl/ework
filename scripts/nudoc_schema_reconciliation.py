@@ -118,7 +118,11 @@ def reconcile_schema(
             str(column.get("type", "")),
             observed_types[name],
         ):
-            column["type"] = _source_type(observed_types[name])
+            try:
+                column["type"] = _source_type(observed_types[name])
+            except ValueError:
+                if not isinstance(column.get("type"), str) or not column["type"]:
+                    raise
         if not isinstance(column.get("comment"), str) or not column["comment"].strip():
             column["comment"] = _description_for_path(name, descriptions)
 
