@@ -3,9 +3,9 @@
 ## ItemKeyspace
 
 1. **ItemRoot**
-   - Entity Name:
-   - ESS Logical Data Model Link:
-   - Review Comments:
+   - Entity Name: item_root
+   - ESS Logical Data Model Link: https://gdsgovtool.muse.qa.ebay.com/logical-data-models/view/1641
+   - Review Comments: PK, listing for one time or variation current-state
 
 2. **ItemDescription**
    - Entity Name: item_description
@@ -45,9 +45,9 @@
 ## ItemGroupKeyspace
 
 9. **ItemGroupRoot**
-   - Entity Name:
-   - ESS Logical Data Model Link:
-   - Review Comments:
+   - Entity Name: item_group_root
+   - ESS Logical Data Model Link: https://gdsgovtool.muse.qa.ebay.com/logical-data-models/view/1638
+   - Review Comments: PK, 110497936440, so this should be item group id, in data, it shows 1 group can have several itemIds, can join with ItemKeyspace and its docsets
 
 10. **ItemGroupDescription**
     - Entity Name: item_group_description
@@ -62,9 +62,9 @@
 ## ListingDraftKeyspace
 
 12. **ListingDraftRoot**
-    - Entity Name: 
-    - ESS Logical Data Model Link:
-    - Review Comments:
+    - Entity Name: listing_draft_root
+    - ESS Logical Data Model Link: https://gdsgovtool.muse.qa.ebay.com/logical-data-models/view/1648
+    - Review Comments: PK "3830014352023"
 
 13. **ListingDraftItem**
     - Entity Name: listing_draft_item
@@ -72,9 +72,9 @@
     - Review Comments: missing primary key, should be PK (no biz meaning), "ITEM_3805627097300", ITEM_<??>
 
 14. **ListingDraftItemCompatibility**
-    - Entity Name: 
-    - ESS Logical Data Model Link: 
-    - Review Comments:
+    - Entity Name: listing_draft_item_compatibility
+    - ESS Logical Data Model Link: https://gdsgovtool.muse.qa.ebay.com/logical-data-models/view/1647
+    - Review Comments: missing primary key, should be DraftCompID, "3955961447620"
 
 15. **ListingDraftGroup**
     - Entity Name: listing_draft_group
@@ -92,9 +92,9 @@
     - Review Comments: missing primary key, should be PK (no business meaning), "GROUPDESC_4371476363820", GROUPDESC_<??>
 
 18. **UserListingDraftMap**
-    - Entity Name: 
-    - ESS Logical Data Model Link:
-    - Review Comments:
+    - Entity Name: user_listing_draft_map
+    - ESS Logical Data Model Link: https://gdsgovtool.muse.qa.ebay.com/logical-data-models/view/1653
+    - Review Comments: userid to draftid mapping, a user can have multiple drafts
 
 ## ListingRevisionKeyspace
 
