@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
@@ -366,13 +366,74 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#entity-relationships" class="md-nav__link">
+  <a href="#ldm-relationships-and-lifecycle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Entity Relationships
+        LDM Relationships and Lifecycle
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="LDM Relationships and Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-listing-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Listing State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-msku-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared MSKU State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draft-listing-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Draft Listing State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-draft-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Draft Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Revision History
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1637,6 +1698,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/ldm-review-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Review Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/sample-data-schema-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample Data vs. Schema Alignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1742,13 +1859,74 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#entity-relationships" class="md-nav__link">
+  <a href="#ldm-relationships-and-lifecycle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Entity Relationships
+        LDM Relationships and Lifecycle
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="LDM Relationships and Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-listing-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Listing State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-msku-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared MSKU State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draft-listing-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Draft Listing State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-draft-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Draft Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Revision History
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1840,11 +2018,7 @@
 <hr />
 <h2 id="item-domain-ldm-map">Item Domain LDM Map</h2>
 <p>Here're the main LDM entities in the Item domain:</p>
-<p><img src="assets/item-domain-entity-relationship.png" alt="Item Domain LDM Entity Map" width="700"/></p>
-<div class="admonition tip">
-<p class="admonition-title">New to Item LDM?</p>
-<p>Start with <strong>item</strong>, <strong>variation</strong>, and <strong>attribute</strong> entities - they cover most common use cases.</p>
-</div>
+<p><img src="assets/item-domain-ldm-map.png" alt="Item Domain LDM Map" width="900"/></p>
 <hr />
 <h2 id="ldm-catalog">LDM Catalog</h2>
 <table>
@@ -1853,194 +2027,232 @@
 <th>LDM Name</th>
 <th>Type</th>
 <th>Description</th>
-<th>Primary Key(s)</th>
+<th>Business Key(s)</th>
 <th>Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>item</strong></td>
-<td>Core entity</td>
-<td>Core listing entity</td>
+<td>Governed LDM</td>
+<td>Core listing entity representing one eBay listing</td>
 <td><code>item_id</code></td>
 <td><a href="entities/item/">Details →</a></td>
 </tr>
 <tr>
 <td><strong>variation</strong></td>
-<td>Core entity</td>
-<td>Multi-SKU variations of a listing</td>
+<td>Governed LDM</td>
+<td>Multi-SKU variation of a listing</td>
 <td><code>variation_id</code></td>
-<td></td>
+<td><a href="entities/variation/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>product</strong></td>
-<td>Core entity</td>
-<td>Product catalog reference (ePID)</td>
-<td><code>prod_ref_id</code></td>
-<td></td>
+<td><strong>ItemRoot</strong></td>
+<td>Raw LDM</td>
+<td>Current-state identity and broad listing data for one item or variation</td>
+<td><code>itemId</code></td>
+<td><a href="entities/itemkeyspace-root/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>attribute</strong></td>
-<td>Core entity</td>
-<td>Item attributes such as brand, model, color, and material</td>
-<td><code>attribute_id</code></td>
-<td></td>
+<td><strong>ItemCompatibility</strong></td>
+<td>Raw LDM</td>
+<td>Item fitment and compatibility payload</td>
+<td><code>itemId</code></td>
+<td><a href="entities/itemkeyspace-item-compatibility/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>attribute_value</strong></td>
-<td>Core entity</td>
-<td>Attribute values such as Nike, red, or leather</td>
-<td><code>attribute_value_id</code></td>
-<td></td>
+<td><strong>ItemDescription</strong></td>
+<td>Raw LDM</td>
+<td>Seller-provided item description and revision data</td>
+<td><code>itemId</code></td>
+<td><a href="entities/itemkeyspace-item-description/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>trait</strong></td>
-<td>Core entity</td>
-<td>Variation-level traits such as color, size, and material</td>
-<td><code>trait_name</code></td>
-<td></td>
+<td><strong>ItemPriceAndQuantity</strong></td>
+<td>Raw LDM</td>
+<td>Item quantity, inventory, and price state</td>
+<td><code>itemId</code></td>
+<td><a href="entities/itemkeyspace-item-qty-price/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>aspect</strong></td>
-<td>Core entity</td>
-<td>SAP-generated classification aspects</td>
-<td><code>aspect_name</code>, <code>namespace_id</code>, <code>classifier_id</code></td>
-<td></td>
+<td><strong>ItemDetails</strong></td>
+<td>Raw LDM</td>
+<td>Additional item details, high-precision prices, and supporting data</td>
+<td><code>itemId</code></td>
+<td><a href="entities/itemkeyspace-item-details/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>aspect_value</strong></td>
-<td>Core entity</td>
-<td>Aspect value definitions</td>
-<td><code>aspect_value_name</code></td>
-<td></td>
+<td><strong>ItemBusinessPolicies</strong></td>
+<td>Raw LDM</td>
+<td>Item-level return, payment, and shipping policy content</td>
+<td><code>itemId</code></td>
+<td><a href="entities/itemkeyspace-business-policies/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>msku</strong></td>
-<td>Core entity</td>
-<td>Multi-SKU listing representation</td>
-<td><code>msku_id</code></td>
-<td></td>
+<td><strong>ItemUUIDMapping</strong></td>
+<td>Raw LDM</td>
+<td>Seller and UUID lookup mapping to an item and listing application</td>
+<td><code>sellerId</code>, <code>uuid</code></td>
+<td><a href="entities/itemkeyspace-uuid-map/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>ssku</strong></td>
-<td>Core entity</td>
-<td>Single-SKU listing representation</td>
-<td><code>ssku_id</code></td>
-<td></td>
+<td><strong>ItemLock</strong></td>
+<td>Raw LDM</td>
+<td>Inventory reservation and lock lifecycle state</td>
+<td><code>itemId</code>, <code>lockId</code></td>
+<td><a href="entities/itemkeyspace-item-lock/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>site</strong></td>
-<td>Lookup entity</td>
-<td>eBay marketplace/site lookup for listing, seller, and bidder site IDs</td>
-<td><code>site_id</code></td>
-<td></td>
+<td><strong>ItemGroupRoot</strong></td>
+<td>Raw LDM</td>
+<td>Shared identity and variation data for an MSKU item group</td>
+<td><code>groupId</code></td>
+<td><a href="entities/itemgroupkeyspace-root/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>category</strong></td>
-<td>Lookup entity</td>
-<td>eBay category hierarchy lookup, including meta, intermediate, and leaf categories</td>
-<td><code>site_id</code>, <code>leaf_categ_id</code></td>
-<td></td>
+<td><strong>ItemGroupDescription</strong></td>
+<td>Raw LDM</td>
+<td>Shared description for an MSKU item group</td>
+<td><code>groupId</code></td>
+<td><a href="entities/itemgroupkeyspace-group-description/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>country</strong></td>
-<td>Lookup entity</td>
-<td>Country lookup for item location, seller registration, and bidder registration country IDs</td>
-<td><code>country_id</code></td>
-<td></td>
+<td><strong>ItemGroupBusinessPolicies</strong></td>
+<td>Raw LDM</td>
+<td>Shared group-level return, payment, and shipping policies</td>
+<td><code>groupId</code></td>
+<td><a href="entities/itemgroupkeyspace-group-business-policies/">Details →</a></td>
 </tr>
 <tr>
-<td><strong>user</strong></td>
-<td>Lookup entity</td>
-<td>User lookup for seller and user IDs associated with listings</td>
-<td><code>user_id</code></td>
-<td></td>
+<td><strong>ListingDraftRoot</strong></td>
+<td>Raw LDM</td>
+<td>Listing-draft session state, flags, and variation identifiers</td>
+<td><code>draftId</code></td>
+<td><a href="entities/listingdraft-root/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingDraftItem</strong></td>
+<td>Raw LDM</td>
+<td>Draft content for an SSKU item or MSKU variation</td>
+<td><code>draftId</code>, <code>variationId</code></td>
+<td><a href="entities/listingdraft-item-draft/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingDraftItemCompatibility</strong></td>
+<td>Raw LDM</td>
+<td>Optional SSKU compatibility payload for a listing draft</td>
+<td><code>draftId</code></td>
+<td><a href="entities/listingdraft-item-draft-compatibility/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingDraftGroup</strong></td>
+<td>Raw LDM</td>
+<td>Shared MSKU draft-group content and variation traits</td>
+<td><code>draftId</code>, <code>groupId</code></td>
+<td><a href="entities/listingdraft-item-group-draft/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingDraftGroupCompatibility</strong></td>
+<td>Raw LDM</td>
+<td>Optional MSKU group-level compatibility payload</td>
+<td><code>draftId</code></td>
+<td><a href="entities/listingdraft-item-group-draft-compatibility/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingDraftGroupDescription</strong></td>
+<td>Raw LDM</td>
+<td>Optional shared MSKU group description and revision data</td>
+<td><code>draftId</code></td>
+<td><a href="entities/listingdraft-item-group-draft-desc/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>UserListingDraftMap</strong></td>
+<td>Raw LDM</td>
+<td>User-scoped index of active listing drafts and summary metadata</td>
+<td><code>userId</code>, <code>draftId</code></td>
+<td><a href="entities/userlistingdraft-user-item-draft-map/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingRevisionRoot</strong></td>
+<td>Raw LDM</td>
+<td>Retention state for a listing's revision history</td>
+<td><code>listingId</code></td>
+<td><a href="entities/listingrevisionkeyspace-root/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingRevision</strong></td>
+<td>Raw LDM</td>
+<td>Historical summary of a listing revision and changed property groups</td>
+<td><code>listingId</code>, <code>revisionId</code></td>
+<td><a href="entities/listingrevisionkeyspace-listing-revision/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingRevisionDetail</strong></td>
+<td>Raw LDM</td>
+<td>Historical non-variation property-level change record</td>
+<td><code>listingId</code>, <code>revisionId</code></td>
+<td><a href="entities/listingrevisionkeyspace-listing-revision-detail/">Details →</a></td>
+</tr>
+<tr>
+<td><strong>ListingVariationRevisionDetail</strong></td>
+<td>Raw LDM</td>
+<td>Historical variation-specific property-level change record</td>
+<td><code>listingId</code>, <code>revisionId</code>, <code>variationId</code></td>
+<td><a href="entities/listingrevisionkeyspace-variation-revision-detail/">Details →</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="entity-relationships">Entity Relationships</h2>
-<table>
-<thead>
-<tr>
-<th>Relationship</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Item → Variation</strong></td>
-<td>1:N</td>
-<td>One item has multiple variations (e.g., different sizes/colors)</td>
-</tr>
-<tr>
-<td><strong>Item → Product</strong></td>
-<td>N:1</td>
-<td>Items can reference product catalog/ePID records</td>
-</tr>
-<tr>
-<td><strong>Item → MSKU</strong></td>
-<td>1:1</td>
-<td>Multi-SKU item representation for variation listings</td>
-</tr>
-<tr>
-<td><strong>Item → SSKU</strong></td>
-<td>1:1</td>
-<td>Single-SKU item representation for non-variation listings</td>
-</tr>
-<tr>
-<td><strong>Item ↔ Attribute</strong></td>
-<td>M:N</td>
-<td>Items have multiple attributes such as brand, model, and color</td>
-</tr>
-<tr>
-<td><strong>Item ↔ Attribute Value</strong></td>
-<td>M:N</td>
-<td>Items are associated with specific attribute values through mapping entities</td>
-</tr>
-<tr>
-<td><strong>Attribute ↔ Attribute Value</strong></td>
-<td>M:N</td>
-<td>One attribute can have multiple values</td>
-</tr>
-<tr>
-<td><strong>Item ↔ Aspect</strong></td>
-<td>M:N</td>
-<td>Items have SAP-generated classification aspects</td>
-</tr>
-<tr>
-<td><strong>Aspect ↔ Aspect Value</strong></td>
-<td>M:N</td>
-<td>One aspect can have multiple values</td>
-</tr>
-<tr>
-<td><strong>Item ↔ Aspect Value</strong></td>
-<td>M:N</td>
-<td>Items are associated with classifier-derived aspect values</td>
-</tr>
-<tr>
-<td><strong>Variation ↔ Aspect</strong></td>
-<td>M:N</td>
-<td>Variations have SAP aspects at variation level</td>
-</tr>
-<tr>
-<td><strong>Variation ↔ Aspect Value</strong></td>
-<td>M:N</td>
-<td>Variations are associated with specific aspect values</td>
-</tr>
-<tr>
-<td><strong>Variation ↔ Trait</strong></td>
-<td>M:N</td>
-<td>Variations have traits like Color, Size, Material</td>
-</tr>
-<tr>
-<td><strong>Item ↔ Trait</strong></td>
-<td>M:N</td>
-<td>MSKU items have traits like Color, Size, Material</td>
-</tr>
-</tbody>
-</table>
+<h2 id="ldm-relationships-and-lifecycle">LDM Relationships and Lifecycle</h2>
+<p>The catalog contains two LDM types:</p>
+<ul>
+<li><strong>Governed LDMs</strong> provide the consumer-facing <strong>item</strong> and <strong>variation</strong>
+  models.</li>
+<li><strong>Raw LDMs</strong> represent source data and behavior. They are grouped according
+  to the source and site application model design.</li>
+</ul>
+<p>The relationships below explain how the raw-LDM groups support the listing
+lifecycle, rather than describing relational-table joins.</p>
+<h3 id="current-listing-state">Current Listing State</h3>
+<p>The governed <strong>item</strong> and <strong>variation</strong> entities represent a listing and its
+SKU-level variations. Their raw current-state data is held in
+<strong>ItemKeyspace</strong>. <strong>ItemRoot</strong> contains the identity and broad state for one
+item or variation. <strong>ItemCompatibility</strong>, <strong>ItemDescription</strong>,
+<strong>ItemPriceAndQuantity</strong>, <strong>ItemDetails</strong>, and <strong>ItemBusinessPolicies</strong> are
+separate raw LDMs, allowing those portions of the listing to be read and
+updated independently. <strong>ItemLock</strong> records one or more inventory
+reservations for the item. <strong>ItemUUIDMapping</strong> is a seller-and-UUID lookup
+that resolves a listing.</p>
+<h3 id="shared-msku-state">Shared MSKU State</h3>
+<p><strong>ItemGroupKeyspace</strong> holds data shared by the variations in an MSKU listing.
+<strong>ItemGroupRoot</strong> identifies the group and references its member items, while
+<strong>ItemGroupDescription</strong> and <strong>ItemGroupBusinessPolicies</strong> hold the shared
+description and policies. The group does not replace the current state of its
+member variations: their sellable price, quantity, lifecycle, and other
+item-specific data remain in <strong>ItemKeyspace</strong>.</p>
+<h3 id="draft-listing-state">Draft Listing State</h3>
+<p><strong>ListingDraft</strong> is an independent working-state group used before or during
+publication. <strong>ListingDraftRoot</strong> stores draft-session state. An SSKU
+draft contains <strong>ListingDraftItem</strong> and can include
+<strong>ListingDraftItemCompatibility</strong>. An MSKU draft contains
+<strong>ListingDraftGroup</strong>, <strong>ListingDraftGroupDescription</strong>, and optionally
+<strong>ListingDraftGroupCompatibility</strong>, plus one <strong>ListingDraftItem</strong> for each
+variation. Draft LDMs do not imply that a corresponding live
+<strong>ItemKeyspace</strong> or <strong>ItemGroupKeyspace</strong> record exists.</p>
+<h3 id="active-draft-discovery">Active Draft Discovery</h3>
+<p><strong>UserListingDraftMap</strong> is a user-scoped index of active drafts. It connects a
+user and a draft identifier to summary metadata used to find the draft, but
+does not contain the full <strong>ListingDraft</strong> content. Its lifecycle is separate
+from the draft content: creating, updating, or deleting one does not
+automatically change the other.</p>
+<h3 id="listing-revision-history">Listing Revision History</h3>
+<p><strong>ListingRevisionKeyspace</strong> stores historical changes by listing identifier,
+separately from current state. <strong>ListingRevisionRoot</strong> is optional retention
+state. Each <strong>ListingRevision</strong> records a revision summary and can
+have multiple <strong>ListingRevisionDetail</strong> children for listing-property changes
+and <strong>ListingVariationRevisionDetail</strong> children for variation-property
+changes. These LDMs are history records and do not replace the latest
+<strong>ItemKeyspace</strong> or <strong>ItemGroupKeyspace</strong> data.</p>
 <hr />
 <h2 id="quick-start">Quick Start</h2>
 <h3 id="access-methods">Access Methods</h3>
@@ -2178,7 +2390,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

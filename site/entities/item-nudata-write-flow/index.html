@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1494,6 +1494,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ldm-review-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Review Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/sample-data-schema-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample Data vs. Schema Alignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1562,6 +1618,78 @@
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyspace-and-docset-purpose-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keyspace and docset purpose catalog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keyspace and docset purpose catalog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#itemkeyspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemKeyspace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemgroupkeyspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemGroupKeyspace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listingdraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ListingDraft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userlistingdraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UserListingDraft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listingrevisionkeyspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ListingRevisionKeyspace
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1837,8 +1965,85 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Detailed field schema and source-model lineage">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-nudoc-hierarchies-and-primary-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete NuDoc hierarchies and primary keys
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complete NuDoc hierarchies and primary keys">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#item-current-state-and-auxiliary-lookup-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item current-state and auxiliary lookup trees
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-group-current-state-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item-group current-state tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-draft-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing-draft tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-user-draft-index-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active-user draft index tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-revision-history-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing-revision history tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-key-and-key-shape-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary-key and key-shape inventory
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#itemkeyspace__root__" class="md-nav__link">
@@ -2411,6 +2616,7 @@ and delete mutations.</p>
 <thead>
 <tr>
 <th>Keyspace family</th>
+<th>Domain purpose</th>
 <th>Logical docsets</th>
 <th style="text-align: right;">Count</th>
 </tr>
@@ -2418,31 +2624,37 @@ and delete mutations.</p>
 <tbody>
 <tr>
 <td><code>ItemKeyspace</code></td>
+<td>Current-state identity and operational data for one listing item or variation</td>
 <td><code>__ROOT__</code>, <code>ItemCompatibility</code>, <code>ItemDescription</code>, <code>ItemQtyPrice</code>, <code>ItemDetails</code>, <code>BusinessPolicies</code>, <code>UuidMap</code>, <code>ItemLock</code></td>
 <td style="text-align: right;">8</td>
 </tr>
 <tr>
 <td><code>ItemGroupKeyspace</code></td>
+<td>Shared current-state data for an MSKU item group</td>
 <td><code>__ROOT__</code>, <code>GroupDescription</code>, <code>GroupBusinessPolicies</code></td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr>
 <td><code>ListingDraft</code></td>
+<td>Working content and session state before or during listing publication</td>
 <td><code>__ROOT__</code>, <code>ItemDraft</code>, <code>ItemGroupDraft</code>, <code>ItemDraftCompatibility</code>, <code>ItemGroupDraftCompatibility</code>, <code>ItemGroupDraftDesc</code></td>
 <td style="text-align: right;">6</td>
 </tr>
 <tr>
 <td><code>UserListingDraft</code></td>
+<td>User-scoped index of active listing drafts</td>
 <td><code>UserItemDraftMap</code></td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr>
 <td><code>ListingRevisionKeyspace</code></td>
+<td>Historical listing and variation changes, separate from current state</td>
 <td><code>__ROOT__</code>, <code>ListingRevision</code>, <code>ListingRevisionDetail</code>, <code>VariationRevisionDetail</code></td>
 <td style="text-align: right;">4</td>
 </tr>
 <tr>
 <td><strong>Total</strong></td>
+<td></td>
 <td></td>
 <td style="text-align: right;"><strong>22</strong></td>
 </tr>
@@ -2471,6 +2683,210 @@ there are <strong>24 sink pairs</strong>:</p>
 <p>The archive keyspaces reuse the item and group schema classes, so they add two
 physical keyspace/docset sinks but no new logical docset class. The count does
 not claim that all 24 sinks are touched by one business operation.</p>
+<p>The five rows above are the logical live keyspaces described by this
+document. <code>ItemKeyspaceArchive</code> and <code>ItemGroupKeyspaceArchive</code> are archive
+variants that reuse the root schemas; they are physical write targets, not
+additional logical keyspace families.</p>
+<h2 id="keyspace-and-docset-purpose-catalog">Keyspace and docset purpose catalog</h2>
+<p>This catalog explains what each keyspace represents and why each docset exists.
+The hierarchy role describes the document's relationship to its ancestor; it
+does not imply that every docset is written by every operation.</p>
+<h3 id="itemkeyspace"><code>ItemKeyspace</code></h3>
+<p><code>ItemKeyspace</code> is the current-state family for one individual listing item or
+one variation of an MSKU listing. The item root is the identity anchor.
+Compatibility, description, quantity/price, details, and business-policy
+payloads are separated so they can be read and updated independently.
+<code>UuidMap</code> and <code>ItemLock</code> are auxiliary operational trees in the same keyspace,
+not additional parts of the normal six-docset item create/replace payload.</p>
+<table>
+<thead>
+<tr>
+<th>Docset</th>
+<th>Description and purpose</th>
+<th>Hierarchy and key context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__ROOT__</code> (<code>ItemRoot</code>)</td>
+<td>Broad current-state item document: listing identity, seller/location, lifecycle, category, policy references, flags, identifiers, media references, and other item-level state.</td>
+<td>Root of the item ancestor tree; persisted primary key <code>PK</code>, normally equal to <code>itemId</code>.</td>
+</tr>
+<tr>
+<td><code>ItemCompatibility</code></td>
+<td>Fitment and compatibility payload for the item, with expanded or compressed representation.</td>
+<td>Child of the item ancestor; <code>ItemCompID</code>, normally <code>COMPAT_&lt;itemId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>ItemDescription</code></td>
+<td>Seller/item description payload and its revision timestamp, with expanded or compressed representation.</td>
+<td>Child of the item ancestor; <code>ItemDescID</code>, normally <code>DESC_&lt;itemId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>ItemQtyPrice</code></td>
+<td>Commercial and inventory state: available quantity, sold quantity, remnant quantity, and price variants.</td>
+<td>Child of the item ancestor; <code>ItemQtyPriceID</code>, normally <code>QTY_PRICE_&lt;itemId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>ItemDetails</code></td>
+<td>Additional item-level details such as high-precision prices, relaxed rules, source listing, and supporting documents.</td>
+<td>Child of the item ancestor; <code>itemDetailsID</code>, normally <code>ITEM_DETAILS_&lt;itemId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>BusinessPolicies</code></td>
+<td>Item-level return, payment, and shipping policy content and identifiers.</td>
+<td>Child of the item ancestor; <code>plcsId</code>, normally <code>BIZ_POL_&lt;itemId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>UuidMap</code> (<code>ItemUUIDMapping</code>)</td>
+<td>Auxiliary seller-and-UUID lookup that resolves <code>listingId</code> and <code>listingAppId</code> for UUID-specific operations.</td>
+<td>Separate UUID ancestor tree in the same keyspace; composite key is seller ID plus UUID, with <code>UUID_MAP</code> child semantics.</td>
+</tr>
+<tr>
+<td><code>ItemLock</code></td>
+<td>Inventory reservation lifecycle state for active, committed, cancelled, and extended locks, including the aggregate summary lock.</td>
+<td>Auxiliary child under the item ancestor; persisted key <code>pk</code>, normally <code>LOCK_&lt;lockId&gt;</code>; summary key is <code>LOCK_$$$SUMMARY$$$</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="itemgroupkeyspace"><code>ItemGroupKeyspace</code></h3>
+<p><code>ItemGroupKeyspace</code> stores shared current-state data for an MSKU group. It
+identifies group membership and variation context while keeping
+variation-specific price, quantity, lifecycle, and other sellable state in
+the individual <code>ItemKeyspace</code> families. The group root references member item
+IDs; this is a logical relationship across keyspaces, not a cross-keyspace
+parent-child key.</p>
+<table>
+<thead>
+<tr>
+<th>Docset</th>
+<th>Description and purpose</th>
+<th>Hierarchy and key context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__ROOT__</code> (<code>ItemGroupRoot</code>)</td>
+<td>Group identity, member item IDs, shared title/images, variation traits, group identifiers, version, and group lifecycle data.</td>
+<td>Root of the group ancestor tree; persisted primary key <code>PK</code>, normally equal to <code>groupId</code>.</td>
+</tr>
+<tr>
+<td><code>GroupDescription</code></td>
+<td>Shared description for the group, optionally compressed, with its revision timestamp.</td>
+<td>Child of the group ancestor; <code>groupDescId</code>, normally <code>GROUP_DESC_&lt;groupId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>GroupBusinessPolicies</code></td>
+<td>Shared group-level return, payment, and shipping policy content.</td>
+<td>Child of the group ancestor; <code>plcsId</code>, normally <code>BIZ_POL_&lt;groupId&gt;</code>. It inherits the policy field shape but has a distinct collection.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="listingdraft"><code>ListingDraft</code></h3>
+<p><code>ListingDraft</code> is the working-state family used while a listing is being
+constructed or revised before publication. A single <code>draftId</code> ancestor can
+contain SSKU item content, MSKU group content, compatibility content, group
+description content, and one <code>ItemDraft</code> per active MSKU variation. These
+docsets are storage children of the same draft ancestor even when one docset is
+logically associated with the item or group portion.</p>
+<table>
+<thead>
+<tr>
+<th>Docset</th>
+<th>Description and purpose</th>
+<th>Hierarchy and key context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__ROOT__</code> (<code>ListingDraftRoot</code>)</td>
+<td>Draft session state, flags, scratch values, progress metadata, dates, and the list of variation item IDs.</td>
+<td>Root of the draft ancestor tree; persisted primary key <code>PK</code>, normally equal to <code>draftId</code>.</td>
+</tr>
+<tr>
+<td><code>ItemDraft</code></td>
+<td>Draft content for an SSKU item or one MSKU variation, including title, description, price, quantity, seller, terms, categories, media, and revision metadata.</td>
+<td>Direct child of the draft ancestor; <code>PK</code>, normally <code>ITEM_&lt;draftId&gt;</code> for SSKU or <code>ITEM_&lt;draftId&gt;_&lt;variationId&gt;</code> for an MSKU variation.</td>
+</tr>
+<tr>
+<td><code>ItemDraftCompatibility</code></td>
+<td>Optional SSKU compatibility payload for the draft item.</td>
+<td>Direct storage child of the draft ancestor, logically associated with <code>ItemDraft</code>; <code>DraftCompID</code>, normally <code>COMPAT_&lt;draftId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>ItemGroupDraft</code></td>
+<td>Shared MSKU draft-group content: group title, images, variation traits, seller group key, policies, and group ID.</td>
+<td>Direct child of the draft ancestor; <code>PK</code>, normally <code>GROUP_&lt;draftId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>ItemGroupDraftDesc</code></td>
+<td>Optional shared MSKU group description and description revision metadata.</td>
+<td>Direct storage child of the draft ancestor, logically associated with <code>ItemGroupDraft</code>; <code>PK</code>, normally <code>GROUPDESC_&lt;draftId&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>ItemGroupDraftCompatibility</code></td>
+<td>Optional MSKU group-level compatibility payload.</td>
+<td>Direct storage child of the draft ancestor, logically associated with <code>ItemGroupDraft</code>; <code>DraftCompID</code>, normally <code>GROUPCOMPAT_&lt;draftId&gt;</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="userlistingdraft"><code>UserListingDraft</code></h3>
+<p><code>UserListingDraft</code> is an index family for finding active listing drafts by
+user. It stores summary and lookup metadata rather than the full draft
+payload. It is intentionally separate from <code>ListingDraft</code>, so a user-index
+mutation does not automatically mutate the draft content tree.</p>
+<table>
+<thead>
+<tr>
+<th>Docset</th>
+<th>Description and purpose</th>
+<th>Hierarchy and key context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UserItemDraftMap</code> (<code>UserListingDraftMap</code>)</td>
+<td>User-scoped summary of an active draft, including <code>draftId</code>, user, title, marketplace/application, category, images, creation mode, and timestamps.</td>
+<td>User-and-draft composite ancestor key; the schema class has no persisted primary-key field. Conceptually <code>UserListingDraft/&lt;userId&gt;/&lt;draftId&gt;</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="listingrevisionkeyspace"><code>ListingRevisionKeyspace</code></h3>
+<p><code>ListingRevisionKeyspace</code> stores historical changes rather than the latest
+listing state. A listing ancestor can have an optional retention root, one or
+more generated revision documents, and detail children describing the
+non-variation and variation properties changed by each revision.</p>
+<table>
+<thead>
+<tr>
+<th>Docset</th>
+<th>Description and purpose</th>
+<th>Hierarchy and key context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__ROOT__</code> (<code>ListingRevisionRoot</code>)</td>
+<td>Conditional retention state for a listing's revision history, including the listing identifier and TTL-maintenance fields.</td>
+<td>Optional sibling under the listing ancestor; <code>lstgId</code> identifies the listing. Normal revision inserts do not create it.</td>
+</tr>
+<tr>
+<td><code>ListingRevision</code></td>
+<td>Revision summary: changed property groups, revision/version identifiers, application, significant revision count, creation flag, and revision timestamp.</td>
+<td>Generated child of the listing ancestor; the schema has no persisted key field.</td>
+</tr>
+<tr>
+<td><code>ListingRevisionDetail</code></td>
+<td>Non-variation property-level change record with property group, property, change type, old value, new value, and display label.</td>
+<td>Generated child of a particular <code>ListingRevision</code>; the schema has no persisted key field.</td>
+</tr>
+<tr>
+<td><code>VariationRevisionDetail</code></td>
+<td>Variation-specific property-level change record with variation ID, changed variation property, trait values, change type, and old/new values.</td>
+<td>Generated child of a particular <code>ListingRevision</code>; the schema has no persisted key field.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="1-end-to-end-producer-flow">1. End-to-end producer flow</h2>
 <p>The common path is:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>REST resource or V1 dual-write trigger
@@ -2699,11 +3115,11 @@ of that root:</p>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>├── ItemQtyPrice / QTY_PRICE_&lt;itemId&gt;
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>├── BusinessPolicies / BIZ_POL_&lt;itemId&gt;
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>├── ItemDetails / ITEM_DETAILS_&lt;itemId&gt;
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>└── ItemQtyPrice / ItemLock / LOCK_&lt;lockId&gt;
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>└── ItemLock / LOCK_&lt;lockId&gt;
 </code></pre></div>
-<p>The lock-summary document is also in <code>ItemLock</code>, beneath the item quantity and
-price key, with the reserved summary identifier
-<code>LOCK_$$$SUMMARY$$$</code>. <code>UuidMap</code> uses a different key shape:
+<p>The lock-summary document uses the same <code>ItemLock</code> schema and reserved
+identifier <code>LOCK_$$$SUMMARY$$$</code>. Lock mutations also update <code>ItemQtyPrice</code> to
+reflect reserved inventory. <code>UuidMap</code> uses a different key shape:
 <code>UUID_&lt;sellerId&gt;/&lt;uuid&gt;</code> with a <code>UUID_MAP</code> child.</p>
 <table>
 <thead>
@@ -2924,14 +3340,17 @@ the caller's dual-write behavior.</p>
 <p>The listing ID is the ancestor. A normal insert creates a generated child key
 for <code>ListingRevision</code>, then generated child keys for optional details:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>listingId
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>└── ListingRevision / generated-guid
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    ├── ListingRevisionDetail / generated-guid (zero or more)
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    └── VariationRevisionDetail / generated-guid (zero or more)
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├── __ROOT__ / listingId [optional TTL-maintenance root]
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>└── ListingRevision / generated-guid
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    ├── ListingRevisionDetail / generated-guid (zero or more)
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    └── VariationRevisionDetail / generated-guid (zero or more)
 </code></pre></div>
-<p><code>ListingRevision</code> contains revised property groups, version/application
-identifiers, significant revision count, revised date, and updated core-listing
-version. Detail documents contain revised group/property, change type, old/new
-values, and (for variation details) variation traits/ID.</p>
+<p>The <code>__ROOT__</code> document is an optional sibling under the listing ancestor. It
+is created or updated by expired-date maintenance, not by the normal revision
+insert. <code>ListingRevision</code> contains revised property groups,
+version/application identifiers, significant revision count, revised date, and
+updated core-listing version. Detail documents contain revised group/property,
+change type, old/new values, and (for variation details) variation traits/ID.</p>
 <p>The declared revision root class exists as a schema class and is queried by
 the revision-history code, but <code>RevisionHistoryNudataClient.addForInsert()</code>
 explicitly does not create a root document in the normal insert path. A
@@ -2957,6 +3376,218 @@ NuData collection. The source classes use Jackson annotations, so the JSON
 property names below are the persisted names, not necessarily the Java member
 names. For item and item-group docsets, each table also includes the
 write-side source property or expression.</p>
+<h3 id="complete-nudoc-hierarchies-and-primary-keys">Complete NuDoc hierarchies and primary keys</h3>
+<p>NuData uses several independent ancestor trees. A keyspace is a storage
+namespace that can contain more than one tree; <code>ItemKeyspace</code>, for example,
+contains the normal item tree, the UUID lookup tree, and the item-lock
+subtree. A docset is a child of another docset only when its storage key is
+constructed beneath that ancestor. Sharing a keyspace does not by itself make
+two docsets parent and child.</p>
+<h4 id="item-current-state-and-auxiliary-lookup-trees">Item current-state and auxiliary lookup trees</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ItemKeyspace
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>├── itemId [ItemRoot / PK]
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>│   ├── ItemCompatibility / COMPAT_&lt;itemId&gt; [ItemCompID]
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>│   ├── ItemDescription / DESC_&lt;itemId&gt; [ItemDescID]
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>│   ├── ItemQtyPrice / QTY_PRICE_&lt;itemId&gt; [ItemQtyPriceID]
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>│   ├── ItemDetails / ITEM_DETAILS_&lt;itemId&gt; [itemDetailsID]
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>│   ├── BusinessPolicies / BIZ_POL_&lt;itemId&gt; [plcsId]
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>│   └── ItemLock / LOCK_&lt;lockId&gt; [pk; summary: LOCK_$$$SUMMARY$$$]
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>└── UUID_&lt;sellerId&gt;/&lt;uuid&gt;
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    └── UuidMap / UUID_MAP [seller ID + UUID]
+</code></pre></div>
+<p><code>UuidMap</code> is an auxiliary lookup tree, not a child payload of <code>ItemRoot</code>.
+<code>ItemLock</code> uses the item ancestor and is operationally associated with the
+quantity/price document because lock mutations update reserved inventory
+there as a side effect.</p>
+<h4 id="item-group-current-state-tree">Item-group current-state tree</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ItemGroupKeyspace
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>└── groupId [ItemGroupRoot / PK]
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    ├── GroupDescription / GROUP_DESC_&lt;groupId&gt; [groupDescId]
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    └── GroupBusinessPolicies / BIZ_POL_&lt;groupId&gt; [plcsId]
+</code></pre></div>
+<h4 id="listing-draft-tree">Listing-draft tree</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>ListingDraft
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>└── draftId [ListingDraftRoot / PK]
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    ├── ItemDraft / ITEM_&lt;draftId&gt; [PK]                         (SSKU)
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    ├── ItemDraftCompatibility / COMPAT_&lt;draftId&gt; [DraftCompID] (optional SSKU)
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    ├── ItemGroupDraft / GROUP_&lt;draftId&gt; [PK]                  (MSKU)
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    ├── ItemGroupDraftDesc / GROUPDESC_&lt;draftId&gt; [PK]          (MSKU)
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    ├── ItemGroupDraftCompatibility / GROUPCOMPAT_&lt;draftId&gt; [DraftCompID] (optional MSKU)
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    └── ItemDraft / ITEM_&lt;draftId&gt;_&lt;variationId&gt; [PK]           (MSKU variation)
+</code></pre></div>
+<p>All six logical docsets are storage children of the same <code>draftId</code> ancestor.
+The compatibility and group-description documents are logically associated
+with the item or group portion of the draft, but they are not nested beneath
+those documents in the storage key path. An MSKU draft can contain multiple
+<code>ItemDraft</code> documents, one for each active variation.</p>
+<h4 id="active-user-draft-index-tree">Active-user draft index tree</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>UserListingDraft
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>└── userId
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    └── UserItemDraftMap / draftId [composite key: userId + draftId]
+</code></pre></div>
+<p><code>UserItemDraftMap</code> has no persisted key field in its schema class; its key is
+the composite user-and-draft ancestor shape. The repository documents the
+two-part key but does not expose a serialized delimiter or additional prefix.
+It is separate from the full <code>ListingDraft</code> content tree.</p>
+<h4 id="listing-revision-history-tree">Listing-revision history tree</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>ListingRevisionKeyspace
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>└── listingId [revision ancestor]
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    ├── __ROOT__ / listingId [lstgId; optional TTL-maintenance root]
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    └── ListingRevision / &lt;generated-guid&gt; [no persisted key field]
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        ├── ListingRevisionDetail / &lt;generated-guid&gt; [no persisted key field]
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>        └── VariationRevisionDetail / &lt;generated-guid&gt; [no persisted key field]
+</code></pre></div>
+<p>The revision root is conditional: TTL maintenance can upsert it, but the
+normal revision-insert path starts at <code>ListingRevision</code>. Detail documents are
+children of a particular generated revision key.</p>
+<h4 id="primary-key-and-key-shape-inventory">Primary-key and key-shape inventory</h4>
+<table>
+<thead>
+<tr>
+<th>Hierarchy</th>
+<th>Docset</th>
+<th>Primary key / key shape</th>
+<th>Representative storage key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item current-state</td>
+<td><code>__ROOT__</code></td>
+<td><code>PK</code></td>
+<td><code>itemId</code></td>
+</tr>
+<tr>
+<td>Item current-state</td>
+<td><code>ItemCompatibility</code></td>
+<td><code>ItemCompID</code></td>
+<td><code>COMPAT_&lt;itemId&gt;</code></td>
+</tr>
+<tr>
+<td>Item current-state</td>
+<td><code>ItemDescription</code></td>
+<td><code>ItemDescID</code></td>
+<td><code>DESC_&lt;itemId&gt;</code></td>
+</tr>
+<tr>
+<td>Item current-state</td>
+<td><code>ItemQtyPrice</code></td>
+<td><code>ItemQtyPriceID</code></td>
+<td><code>QTY_PRICE_&lt;itemId&gt;</code></td>
+</tr>
+<tr>
+<td>Item current-state</td>
+<td><code>ItemDetails</code></td>
+<td><code>itemDetailsID</code></td>
+<td><code>ITEM_DETAILS_&lt;itemId&gt;</code></td>
+</tr>
+<tr>
+<td>Item current-state</td>
+<td><code>BusinessPolicies</code></td>
+<td><code>plcsId</code></td>
+<td><code>BIZ_POL_&lt;itemId&gt;</code></td>
+</tr>
+<tr>
+<td>Item lock subtree</td>
+<td><code>ItemLock</code></td>
+<td><code>pk</code></td>
+<td><code>LOCK_&lt;lockId&gt;</code>; summary <code>LOCK_$$$SUMMARY$$$</code></td>
+</tr>
+<tr>
+<td>UUID lookup</td>
+<td><code>UuidMap</code></td>
+<td>Seller ID and UUID</td>
+<td><code>UUID_&lt;sellerId&gt;/&lt;uuid&gt;</code> with <code>UUID_MAP</code> child</td>
+</tr>
+<tr>
+<td>Item-group current-state</td>
+<td><code>__ROOT__</code></td>
+<td><code>PK</code></td>
+<td><code>groupId</code></td>
+</tr>
+<tr>
+<td>Item-group current-state</td>
+<td><code>GroupDescription</code></td>
+<td><code>groupDescId</code></td>
+<td><code>GROUP_DESC_&lt;groupId&gt;</code></td>
+</tr>
+<tr>
+<td>Item-group current-state</td>
+<td><code>GroupBusinessPolicies</code></td>
+<td><code>plcsId</code></td>
+<td><code>BIZ_POL_&lt;groupId&gt;</code></td>
+</tr>
+<tr>
+<td>Listing draft</td>
+<td><code>__ROOT__</code></td>
+<td><code>PK</code></td>
+<td><code>draftId</code></td>
+</tr>
+<tr>
+<td>Listing draft</td>
+<td><code>ItemDraft</code></td>
+<td><code>PK</code></td>
+<td><code>ITEM_&lt;draftId&gt;</code> or <code>ITEM_&lt;draftId&gt;_&lt;variationId&gt;</code></td>
+</tr>
+<tr>
+<td>Listing draft</td>
+<td><code>ItemDraftCompatibility</code></td>
+<td><code>DraftCompID</code></td>
+<td><code>COMPAT_&lt;draftId&gt;</code></td>
+</tr>
+<tr>
+<td>Listing draft</td>
+<td><code>ItemGroupDraft</code></td>
+<td><code>PK</code></td>
+<td><code>GROUP_&lt;draftId&gt;</code></td>
+</tr>
+<tr>
+<td>Listing draft</td>
+<td><code>ItemGroupDraftDesc</code></td>
+<td><code>PK</code></td>
+<td><code>GROUPDESC_&lt;draftId&gt;</code></td>
+</tr>
+<tr>
+<td>Listing draft</td>
+<td><code>ItemGroupDraftCompatibility</code></td>
+<td><code>DraftCompID</code></td>
+<td><code>GROUPCOMPAT_&lt;draftId&gt;</code></td>
+</tr>
+<tr>
+<td>Active-user draft index</td>
+<td><code>UserItemDraftMap</code></td>
+<td>Composite ancestor key: <code>userId</code> + <code>draftId</code>; no persisted key field</td>
+<td><code>UserListingDraft/&lt;userId&gt;/&lt;draftId&gt;</code> (conceptual)</td>
+</tr>
+<tr>
+<td>Revision history</td>
+<td><code>__ROOT__</code></td>
+<td><code>lstgId</code> ancestor key</td>
+<td><code>listingId</code></td>
+</tr>
+<tr>
+<td>Revision history</td>
+<td><code>ListingRevision</code></td>
+<td>Generated child key; no persisted key field</td>
+<td><code>&lt;generated-guid&gt;</code> under <code>listingId</code></td>
+</tr>
+<tr>
+<td>Revision history</td>
+<td><code>ListingRevisionDetail</code></td>
+<td>Generated child key; no persisted key field</td>
+<td><code>&lt;generated-guid&gt;</code> under a revision</td>
+</tr>
+<tr>
+<td>Revision history</td>
+<td><code>VariationRevisionDetail</code></td>
+<td>Generated child key; no persisted key field</td>
+<td><code>&lt;generated-guid&gt;</code> under a revision</td>
+</tr>
+</tbody>
+</table>
+<p>Archive processors reuse the item and group root schemas under
+<code>ItemKeyspaceArchive</code> and <code>ItemGroupKeyspaceArchive</code>. Those archive roots are
+additional physical sinks, not new logical docsets or new hierarchy types.</p>
 <h4 id="itemkeyspace__root__"><code>ItemKeyspace/__ROOT__</code></h4>
 <p>The item root is the broadest item document. It combines listing identity,
 seller/location, lifecycle, category, policy references, flags, and item
@@ -4658,7 +5289,7 @@ membership.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
