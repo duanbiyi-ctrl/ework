@@ -11,61 +11,61 @@
         {
             "name": "docs.odometer",
             "type": "string",
-            "comment": null,
+            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Inferred nested field: odometer.",
             "nullable": null
         },
         {
             "name": "docs.vhclTtlBck",
             "type": "string",
-            "comment": null,
+            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Inferred nested field: vhcl ttl bck.",
             "nullable": null
         },
         {
             "name": "docs.vhclTtlFrnt",
             "type": "string",
-            "comment": null,
+            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Inferred nested field: vhcl ttl frnt.",
             "nullable": null
         },
         {
             "name": "docs.vin",
             "type": "string",
-            "comment": null,
+            "comment": "Item document details, including vehicle-title, VIN, and odometer information when available. Inferred nested field: vin.",
             "nullable": null
         },
         {
             "name": "fixedPriceHP.currency",
             "type": "string",
-            "comment": null,
+            "comment": "High-precision fixed-price amount. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "fixedPriceHP.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "High-precision fixed-price amount. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "hasRlxdRls",
             "type": "boolean",
-            "comment": null,
+            "comment": "Indicates whether the item uses relaxed rules.",
             "nullable": null
         },
         {
             "name": "itemDetailsID",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier for this item-details child document, generated as `ITEM_DETAILS_<itemId>`.",
             "nullable": null
         },
         {
             "name": "strtBidPriceHP.currency",
             "type": "string",
-            "comment": null,
+            "comment": "High-precision starting-bid amount. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "strtBidPriceHP.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "High-precision starting-bid amount. Inferred nested field: value.",
             "nullable": null
         }
     ],

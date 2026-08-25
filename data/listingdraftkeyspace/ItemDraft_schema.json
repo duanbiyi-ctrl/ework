@@ -5,19 +5,19 @@
         {
             "name": "COGs.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Cost of goods, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "COGs.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Cost of goods, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "PK",
             "type": "string",
-            "comment": null,
+            "comment": "Item draft document identifier.",
             "nullable": null
         },
         {
@@ -29,1321 +29,1441 @@
         {
             "name": "auctRsvPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Auction reserve price, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "auctRsvPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Auction reserve price, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "autoRlsTrm.autoRlst",
             "type": "boolean",
-            "comment": null,
+            "comment": "Auto-relist settings, including its enablement and relist count. Inferred nested field: auto rlst.",
             "nullable": null
         },
         {
             "name": "autoRlsTrm.rlstCnt",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Auto-relist settings, including its enablement and relist count. Inferred nested field: rlst cnt.",
             "nullable": null
         },
         {
             "name": "avlQty",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Available quantity.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.daysToFulPmt",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms days to ful pmt.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.depAmt.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms dep amt currency.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.depAmt.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms dep amt value.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.depRqd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms dep rqd.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.hrsToDep",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms hrs to dep.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.immPay",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms imm pay.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.pmtInstr",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms pmt instr.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.pmtMthd",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms pmt mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.pmtTrms.ppEmail",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: pmt trms pp email.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ref mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ret acptd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ret prd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms dom ret trm ret shpmt payee.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.extHolRet",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ext hol ret.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ref mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ret acptd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ret prd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms int ret trm ret shpmt payee.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.refMthd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ref mthd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.restFeePct",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms rest fee pct.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retAcptd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret acptd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retInstr",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret instr.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retPrd",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret prd.",
             "nullable": null
         },
         {
             "name": "bizPol.retTrms.retShpmtPayee",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ret trms ret shpmt payee.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.buyerRsp",
             "type": "boolean",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms buyer rsp.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.excldLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms excld locn.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.hndlgTm",
             "type": "string",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms hndlg tm.",
             "nullable": null
         },
         {
             "name": "bizPol.shipTrms.shpToLocn",
             "type": "string[]",
-            "comment": null,
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp to locn.",
             "nullable": null
         },
         {
             "name": "brnd",
             "type": "string",
-            "comment": null,
+            "comment": "Brand.",
             "nullable": null
         },
         {
             "name": "bstOfrTrm.autAccptEnbld",
             "type": "boolean",
-            "comment": null,
+            "comment": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut accpt enbld.",
             "nullable": null
         },
         {
             "name": "bstOfrTrm.autAcptThrshPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut acpt thrsh prc currency.",
             "nullable": null
         },
         {
             "name": "bstOfrTrm.autAcptThrshPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut acpt thrsh prc value.",
             "nullable": null
         },
         {
             "name": "bstOfrTrm.autDclnEnbld",
             "type": "boolean",
-            "comment": null,
+            "comment": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut dcln enbld.",
             "nullable": null
         },
         {
             "name": "bstOfrTrm.autDclnThrshPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut dcln thrsh prc currency.",
             "nullable": null
         },
         {
             "name": "bstOfrTrm.autDclnThrshPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: aut dcln thrsh prc value.",
             "nullable": null
         },
         {
             "name": "bstOfrTrm.bestOfrEnbld",
             "type": "boolean",
-            "comment": null,
+            "comment": "Best-offer settings, including offer flags and automatic threshold prices. Inferred nested field: best ofr enbld.",
             "nullable": null
         },
         {
             "name": "buyrRst.prchsRateRqrmnt.minFdbkScore",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: prchs rate rqrmnt min fdbk score.",
             "nullable": null
         },
         {
             "name": "buyrRst.prchsRateRqrmnt.qntyLmtPerByr",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: prchs rate rqrmnt qnty lmt per byr.",
             "nullable": null
         },
         {
             "name": "buyrRst.qntyLmtPerByr",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: qnty lmt per byr.",
             "nullable": null
         },
         {
             "name": "buyrRst.rsdncyShpToLocn",
             "type": "boolean",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: rsdncy shp to locn.",
             "nullable": null
         },
         {
             "name": "buyrRst.rstrctBid",
             "type": "boolean",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: rstrct bid.",
             "nullable": null
         },
         {
             "name": "buyrRst.rstrctnDate",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: rstrctn date.",
             "nullable": null
         },
         {
             "name": "buyrRst.unpaidTranThrsh.count",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: unpaid tran thrsh count.",
             "nullable": null
         },
         {
             "name": "buyrRst.unpaidTranThrsh.period",
             "type": "string",
-            "comment": null,
+            "comment": "Buyer restriction settings, including purchase-rate and unpaid-transaction thresholds. Inferred nested field: unpaid tran thrsh period.",
             "nullable": null
         },
         {
             "name": "buyrRstDsbld",
             "type": "boolean",
-            "comment": null,
+            "comment": "Buyer-restrictions-disabled indicator.",
             "nullable": null
         },
         {
             "name": "chrty.charityId",
             "type": "string",
-            "comment": null,
+            "comment": "Charity identifier and donation percentage. Inferred nested field: charity id.",
             "nullable": null
         },
         {
             "name": "chrty.donationPct",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Charity identifier and donation percentage. Inferred nested field: donation pct.",
             "nullable": null
         },
         {
             "name": "cmpDesc",
             "type": "binary",
-            "comment": null,
+            "comment": "Compressed item description.",
             "nullable": null
         },
         {
             "name": "cndDesc",
             "type": "string",
-            "comment": null,
+            "comment": "Condition description.",
             "nullable": null
         },
         {
             "name": "cndId",
             "type": "string",
-            "comment": null,
+            "comment": "Condition identifier.",
             "nullable": null
         },
         {
             "name": "cndIdNum",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Numeric condition identifier.",
             "nullable": null
         },
         {
             "name": "crtDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Creation date/time value.",
             "nullable": null
         },
         {
             "name": "crtMd",
             "type": "string",
-            "comment": null,
+            "comment": "Creation-mode classification.",
             "nullable": null
         },
         {
             "name": "cstmPol.prdCmplPolIds",
             "type": "string[]",
-            "comment": null,
+            "comment": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Inferred nested field: prd cmpl pol ids.",
             "nullable": null
         },
         {
             "name": "cstmPol.tkBkPolId",
             "type": "string",
-            "comment": null,
+            "comment": "Custom take-back and product-compliance policy identifiers, including regional policy associations. Inferred nested field: tk bk pol id.",
             "nullable": null
         },
         {
             "name": "currPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Current price, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "currPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Current price, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "desc",
             "type": "string",
-            "comment": null,
+            "comment": "Expanded item description.",
             "nullable": null
         },
         {
             "name": "descRevsnDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Description revision date/time value.",
             "nullable": null
         },
         {
             "name": "docs.odometer",
             "type": "string",
-            "comment": null,
+            "comment": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: odometer.",
             "nullable": null
         },
         {
             "name": "docs.vhclTtlBck",
             "type": "string",
-            "comment": null,
+            "comment": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: vhcl ttl bck.",
             "nullable": null
         },
         {
             "name": "docs.vhclTtlFrnt",
             "type": "string",
-            "comment": null,
+            "comment": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: vhcl ttl frnt.",
             "nullable": null
         },
         {
             "name": "docs.vin",
             "type": "string",
-            "comment": null,
+            "comment": "Vehicle document data, including title, VIN, and odometer values. Inferred nested field: vin.",
             "nullable": null
         },
         {
             "name": "drtn",
             "type": "string",
-            "comment": null,
+            "comment": "Listing duration.",
             "nullable": null
         },
         {
             "name": "eBGenTtl",
             "type": "string",
-            "comment": null,
+            "comment": "eBay-generated title.",
             "nullable": null
         },
         {
             "name": "eBProdDtls",
             "type": "boolean",
-            "comment": null,
+            "comment": "Source-declared eBay-product-details indicator.",
             "nullable": null
         },
         {
             "name": "eBayVlt",
             "type": "boolean",
-            "comment": null,
+            "comment": "Source-declared eBay Vault indicator.",
             "nullable": null
         },
         {
             "name": "ebayCmnty.comntyIds",
             "type": "string[]",
-            "comment": null,
+            "comment": "eBay community identifiers and marketplace-visibility setting. Inferred nested field: comnty ids.",
             "nullable": null
         },
         {
             "name": "ebayCmnty.mktplceVsbl",
             "type": "boolean",
-            "comment": null,
+            "comment": "eBay community identifiers and marketplace-visibility setting. Inferred nested field: mktplce vsbl.",
             "nullable": null
         },
         {
             "name": "endDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Listing end date/time value.",
             "nullable": null
         },
         {
             "name": "epid",
             "type": "string",
-            "comment": null,
+            "comment": "eBay product identifier.",
             "nullable": null
         },
         {
             "name": "epr.ecoFee",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: eco fee.",
             "nullable": null
         },
         {
             "name": "epr.prdDocId",
             "type": "string",
-            "comment": null,
+            "comment": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: prd doc id.",
             "nullable": null
         },
         {
             "name": "epr.prdPkgId",
             "type": "string",
-            "comment": null,
+            "comment": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: prd pkg id.",
             "nullable": null
         },
         {
             "name": "epr.prdcrId",
             "type": "string",
-            "comment": null,
+            "comment": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: prdcr id.",
             "nullable": null
         },
         {
             "name": "epr.shpPkgId",
             "type": "string",
-            "comment": null,
+            "comment": "Extended producer responsibility identifiers, document references, and eco-fee data. Inferred nested field: shp pkg id.",
             "nullable": null
         },
         {
             "name": "ffTrm.dgtDlvLgsPlSprt",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: dgt dlv lgs pl sprt.",
             "nullable": null
         },
         {
             "name": "ffTrm.ebayMgdShpng",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: ebay mgd shpng.",
             "nullable": null
         },
         {
             "name": "ffTrm.freeShipAvail",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: free ship avail.",
             "nullable": null
         },
         {
             "name": "ffTrm.gspLgstcPlnSprtd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: gsp lgstc pln sprtd.",
             "nullable": null
         },
         {
             "name": "ffTrm.ispuLgstcPlSprt",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: ispu lgstc pl sprt.",
             "nullable": null
         },
         {
             "name": "ffTrm.mFulfillmentSprt",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: m fulfillment sprt.",
             "nullable": null
         },
         {
             "name": "ffTrm.mgdShpngCstPdBy",
             "type": "string",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: mgd shpng cst pd by.",
             "nullable": null
         },
         {
             "name": "ffTrm.mgdShpngOptin",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: mgd shpng optin.",
             "nullable": null
         },
         {
             "name": "ffTrm.orgPostCode",
             "type": "string",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: org post code.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.dimensions.depth",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec dimensions depth.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.dimensions.length",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec dimensions length.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.dimensions.width",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec dimensions width.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.irregularPackage",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec irregular package.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.packageType",
             "type": "string",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec package type.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.unitOfMeasure",
             "type": "string",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec unit of measure.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.weight.majorWeight",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec weight major weight.",
             "nullable": null
         },
         {
             "name": "ffTrm.pkgSpec.weight.minorWeight",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: pkg spec weight minor weight.",
             "nullable": null
         },
         {
             "name": "ffTrm.s2hLgstcPlnSprt",
             "type": "boolean",
-            "comment": null,
+            "comment": "Fulfillment settings, including shipping options, package specifications, and delivery-related flags. Inferred nested field: s2h lgstc pln sprt.",
             "nullable": null
         },
         {
             "name": "fl01",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Source-declared `fl01` flag/value field.",
             "nullable": null
         },
         {
             "name": "fmt",
             "type": "string",
-            "comment": null,
+            "comment": "Listing format classification.",
             "nullable": null
         },
         {
             "name": "ftExempt",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Source-declared fulfillment-tax exemption value.",
             "nullable": null
         },
         {
             "name": "fxdPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Fixed price, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "fxdPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Fixed price, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "fxdPrcHP.currency",
             "type": "string",
-            "comment": null,
+            "comment": "High-precision fixed price, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "fxdPrcHP.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "High-precision fixed price, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "hidePrt",
             "type": "boolean",
-            "comment": null,
+            "comment": "Source-declared hide-part indicator.",
             "nullable": null
         },
         {
             "name": "invTrkMth",
             "type": "string",
-            "comment": null,
+            "comment": "Inventory tracking method.",
             "nullable": null
         },
         {
             "name": "itmId",
             "type": "string",
-            "comment": null,
+            "comment": "Item identifier.",
             "nullable": null
         },
         {
             "name": "itmLoc",
             "type": "string",
-            "comment": null,
+            "comment": "Item location.",
             "nullable": null
         },
         {
             "name": "itmLocCtry",
             "type": "string",
-            "comment": null,
+            "comment": "Item-location country.",
             "nullable": null
         },
         {
             "name": "itmLocPstCd",
             "type": "string",
-            "comment": null,
+            "comment": "Item-location postal code.",
             "nullable": null
         },
         {
             "name": "itmOnSale",
             "type": "boolean",
-            "comment": null,
+            "comment": "Item-on-sale indicator.",
             "nullable": null
         },
         {
             "name": "itmOrd",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Item order value.",
             "nullable": null
         },
         {
             "name": "itmRevsnDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Item revision date/time value.",
             "nullable": null
         },
         {
             "name": "lotId",
             "type": "string",
-            "comment": null,
+            "comment": "Lot identifier.",
             "nullable": null
         },
         {
             "name": "lotSz",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Lot size.",
             "nullable": null
         },
         {
             "name": "lstCrtClntIp",
             "type": "string",
-            "comment": null,
+            "comment": "Listing-creation client IP value.",
             "nullable": null
         },
         {
             "name": "lstModDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Last-modified date/time value.",
             "nullable": null
         },
         {
             "name": "lstgAppId",
             "type": "string",
-            "comment": null,
+            "comment": "Listing application identifier.",
             "nullable": null
         },
         {
             "name": "mktPlLstdOn",
             "type": "string",
-            "comment": null,
+            "comment": "Marketplace on which the item is listed.",
             "nullable": null
         },
         {
             "name": "mktPrc.minAdvrtsPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: min advrts prc currency.",
             "nullable": null
         },
         {
             "name": "mktPrc.minAdvrtsPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: min advrts prc value.",
             "nullable": null
         },
         {
             "name": "mktPrc.minAdvrtsPrcExp",
             "type": "string",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: min advrts prc exp.",
             "nullable": null
         },
         {
             "name": "mktPrc.orgnlRtlPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: orgnl rtl prc currency.",
             "nullable": null
         },
         {
             "name": "mktPrc.orgnlRtlPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: orgnl rtl prc value.",
             "nullable": null
         },
         {
             "name": "mktPrc.prcngTrtmnt",
             "type": "string",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: prcng trtmnt.",
             "nullable": null
         },
         {
             "name": "mktPrc.soldOffeBay",
             "type": "boolean",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: sold offe bay.",
             "nullable": null
         },
         {
             "name": "mktPrc.soldOnEbay",
             "type": "boolean",
-            "comment": null,
+            "comment": "Marketing-price data, including comparison, advertised, retail, and pricing-treatment values. Inferred nested field: sold on ebay.",
             "nullable": null
         },
         {
             "name": "mpn",
             "type": "string",
-            "comment": null,
+            "comment": "Manufacturer part number.",
             "nullable": null
         },
         {
             "name": "oosDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Out-of-stock date/time value.",
             "nullable": null
         },
         {
             "name": "origItmId",
             "type": "string",
-            "comment": null,
+            "comment": "Original item identifier.",
             "nullable": null
         },
         {
             "name": "origItmPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Original item price, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "origItmPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Original item price, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "origPstCd",
             "type": "string",
-            "comment": null,
+            "comment": "Origin postal code.",
             "nullable": null
         },
         {
             "name": "prdSpptd",
             "type": "string[]",
-            "comment": null,
+            "comment": "Supported-program entries.",
             "nullable": null
         },
         {
             "name": "primCatId",
             "type": "string",
-            "comment": null,
+            "comment": "Primary category identifier.",
             "nullable": null
         },
         {
             "name": "prodDtls",
             "type": "boolean",
-            "comment": null,
+            "comment": "Source-declared product-details indicator.",
             "nullable": null
         },
         {
             "name": "pymtPlcyId.policyId",
             "type": "string",
-            "comment": null,
+            "comment": "Payment-policy identifier and version. Inferred nested field: policy id.",
             "nullable": null
         },
         {
             "name": "qtySold",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Quantity sold.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.eek.dataSheet",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: eek data sheet.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.eek.img",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: eek img.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.eek.imgDesc",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: eek img desc.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.addnlInfo",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl addnl info.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.pctgrmIds",
             "type": "string[]",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl pctgrm ids.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.sgnlWrdId",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl sgnl wrd id.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.hzdMatrl.stmntIds",
             "type": "string[]",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: hzd matrl stmnt ids.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cmpNm",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cmp nm.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cntctUrl",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cntct url.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cntry",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cntry.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.cty",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr cty.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.email",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr email.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.phn",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr phn.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.strt1",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr strt1.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.strt2",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr strt2.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.stt",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr stt.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.mnfatr.zip",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: mnfatr zip.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.prdSfty.addnlInfo",
             "type": "string",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: prd sfty addnl info.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.prdSfty.pctgrmIds",
             "type": "string[]",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: prd sfty pctgrm ids.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.prdSfty.stmntIds",
             "type": "string[]",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: prd sfty stmnt ids.",
             "nullable": null
         },
         {
             "name": "rgltryInfo.rprIdxScore",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Regulatory data for hazardous materials, product safety, repairability, responsible parties, documents, and energy labels. Inferred nested field: rpr idx score.",
             "nullable": null
         },
         {
             "name": "rlstId",
             "type": "string",
-            "comment": null,
+            "comment": "Relist identifier.",
             "nullable": null
         },
         {
             "name": "rlstPrntId",
             "type": "string",
-            "comment": null,
+            "comment": "Parent relist identifier.",
             "nullable": null
         },
         {
             "name": "rtrnsPlcyId.policyId",
             "type": "string",
-            "comment": null,
+            "comment": "Return-policy identifier and version. Inferred nested field: policy id.",
             "nullable": null
         },
         {
             "name": "schdEndDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Scheduled end date/time value.",
             "nullable": null
         },
         {
             "name": "scndCatId",
             "type": "string",
-            "comment": null,
+            "comment": "Secondary category identifier.",
             "nullable": null
         },
         {
             "name": "scndChncItm",
             "type": "boolean",
-            "comment": null,
+            "comment": "Second-chance-item indicator.",
             "nullable": null
         },
         {
             "name": "shipPlcyId.policyId",
             "type": "string",
-            "comment": null,
+            "comment": "Shipping-policy identifier and version. Inferred nested field: policy id.",
             "nullable": null
         },
         {
             "name": "sigRevCnt",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Significant revision count.",
             "nullable": null
         },
         {
             "name": "slr.cmpNm",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: cmp nm.",
             "nullable": null
         },
         {
             "name": "slr.cntry",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: cntry.",
             "nullable": null
         },
         {
             "name": "slr.ctcByEml",
             "type": "boolean",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: ctc by eml.",
             "nullable": null
         },
         {
             "name": "slr.primPhone",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim phone.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.anyTime",
             "type": "boolean",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs any time.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.sprtHrsEnd.hrs",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs end hrs.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.sprtHrsEnd.mins",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs end mins.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.sprtHrsEnd.tz",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs end tz.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.sprtHrsStrt.hrs",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs strt hrs.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.sprtHrsStrt.mins",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs strt mins.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.sprtHrsStrt.tz",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt hrs strt tz.",
             "nullable": null
         },
         {
             "name": "slr.primSpprtCtcHrs.sprtOnDays",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: prim spprt ctc hrs sprt on days.",
             "nullable": null
         },
         {
             "name": "slr.scndSpprtCtcHrs.anyTime",
             "type": "boolean",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: scnd spprt ctc hrs any time.",
             "nullable": null
         },
         {
             "name": "slr.scndSpprtCtcHrs.sprtOnDays",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: scnd spprt ctc hrs sprt on days.",
             "nullable": null
         },
         {
             "name": "slr.slrId",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: slr id.",
             "nullable": null
         },
         {
             "name": "slr.slrItmCtcInfoKey",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: slr itm ctc info key.",
             "nullable": null
         },
         {
             "name": "slr.st",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: st.",
             "nullable": null
         },
         {
             "name": "slr.st2",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: st2.",
             "nullable": null
         },
         {
             "name": "slr.uid",
             "type": "string",
-            "comment": null,
+            "comment": "Seller identity, contact, and support-hours data. Inferred nested field: uid.",
             "nullable": null
         },
         {
             "name": "slrAppData",
             "type": "string",
-            "comment": null,
+            "comment": "Seller application data.",
             "nullable": null
         },
         {
             "name": "slrItmKey",
             "type": "string",
-            "comment": null,
+            "comment": "Seller item key.",
             "nullable": null
         },
         {
             "name": "srcLstId",
             "type": "string",
-            "comment": null,
+            "comment": "Source listing identifier.",
             "nullable": null
         },
         {
             "name": "stPrimCatId",
             "type": "string",
-            "comment": null,
+            "comment": "Store primary category identifier.",
             "nullable": null
         },
         {
             "name": "stScndCatId",
             "type": "string",
-            "comment": null,
+            "comment": "Store secondary category identifier.",
             "nullable": null
         },
         {
             "name": "stckPhtUrl",
             "type": "boolean",
-            "comment": null,
+            "comment": "Source-declared stock-photo-URL indicator.",
             "nullable": null
         },
         {
             "name": "strtBidPrc.currency",
             "type": "string",
-            "comment": null,
+            "comment": "Starting-bid price, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "strtBidPrc.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Starting-bid price, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "strtBidPrcHP.currency",
             "type": "string",
-            "comment": null,
+            "comment": "High-precision starting-bid price, including currency and value. Inferred nested field: currency.",
             "nullable": null
         },
         {
             "name": "strtBidPrcHP.value",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "High-precision starting-bid price, including currency and value. Inferred nested field: value.",
             "nullable": null
         },
         {
             "name": "strtDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Listing start date/time value.",
             "nullable": null
         },
         {
             "name": "tax.aplcblToShp",
             "type": "boolean",
-            "comment": null,
+            "comment": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: aplcbl to shp.",
             "nullable": null
         },
         {
             "name": "tax.rcgnzBsnsSlrVat",
             "type": "boolean",
-            "comment": null,
+            "comment": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: rcgnz bsns slr vat.",
             "nullable": null
         },
         {
             "name": "tax.salesTaxTblUsd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: sales tax tbl usd.",
             "nullable": null
         },
         {
             "name": "tax.state",
             "type": "string",
-            "comment": null,
+            "comment": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: state.",
             "nullable": null
         },
         {
             "name": "tax.taxRate",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: tax rate.",
             "nullable": null
         },
         {
             "name": "tax.thrdPrtTxCtgCd",
             "type": "string",
-            "comment": null,
+            "comment": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: thrd prt tx ctg cd.",
             "nullable": null
         },
         {
             "name": "tax.vatPct",
             "type": "numberDouble",
-            "comment": null,
+            "comment": "Tax applicability, jurisdiction, category, rate, and VAT data. Inferred nested field: vat pct.",
             "nullable": null
         },
         {
             "name": "trdScp.intlStVsbl",
             "type": "string[]",
-            "comment": null,
+            "comment": "Trading-scope data, including international visibility and local distribution. Inferred nested field: intl st vsbl.",
             "nullable": null
         },
         {
             "name": "trdScp.lclLstngDist",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Trading-scope data, including international visibility and local distribution. Inferred nested field: lcl lstng dist.",
             "nullable": null
         },
         {
             "name": "ttl",
             "type": "string",
-            "comment": null,
+            "comment": "Item title.",
             "nullable": null
         },
         {
             "name": "uuid",
             "type": "string",
-            "comment": null,
+            "comment": "Universally unique identifier.",
             "nullable": null
         },
         {
             "name": "vehPkgId",
             "type": "string",
-            "comment": null,
+            "comment": "Vehicle package identifier.",
             "nullable": null
         },
         {
             "name": "videos",
             "type": "string[]",
-            "comment": null,
+            "comment": "Video values associated with the item.",
             "nullable": null
         },
         {
             "name": "visEnh.boldTitle",
             "type": "boolean",
-            "comment": null,
+            "comment": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: bold title.",
             "nullable": null
         },
         {
             "name": "visEnh.gallDurtn",
             "type": "string",
-            "comment": null,
+            "comment": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: gall durtn.",
             "nullable": null
         },
         {
             "name": "visEnh.gallTp",
             "type": "string",
-            "comment": null,
+            "comment": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: gall tp.",
             "nullable": null
         },
         {
             "name": "visEnh.homePgftrd",
             "type": "boolean",
-            "comment": null,
+            "comment": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: home pgftrd.",
             "nullable": null
         },
         {
             "name": "visEnh.photoDspType",
             "type": "string",
-            "comment": null,
+            "comment": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: photo dsp type.",
             "nullable": null
         },
         {
             "name": "visEnh.subtitle",
             "type": "string",
-            "comment": null,
+            "comment": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: subtitle.",
             "nullable": null
         },
         {
             "name": "visEnh.vstCntrTp",
             "type": "numberInt",
-            "comment": null,
+            "comment": "Visual-enhancement settings, such as title, gallery, photo-display, subtitle, and visitor-counter options. Inferred nested field: vst cntr tp.",
             "nullable": null
         },
         {
             "name": "vrsId",
             "type": "string",
-            "comment": null,
+            "comment": "Variation or version identifier.",
+            "nullable": null
+        },
+        {
+            "name": "aspct.name",
+            "type": "string",
+            "comment": "Item aspect entries, each containing an aspect name and values. Inferred nested field: name.",
+            "nullable": null
+        },
+        {
+            "name": "aspct.values",
+            "type": "string[]",
+            "comment": "Item aspect entries, each containing an aspect name and values. Inferred nested field: values.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.cstType",
+            "type": "string",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt cst type.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.promoShp",
+            "type": "boolean",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt promo shp.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpDscPrfId",
+            "type": "string",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp dsc prf id.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+            "type": "string",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs add unit cost currency.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+            "type": "numberLong",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs add unit cost value.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+            "type": "string",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs pkg hndlg cost currency.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+            "type": "numberLong",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs pkg hndlg cost value.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.rank",
+            "type": "numberLong",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs rank.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.currency",
+            "type": "string",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp cost currency.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpCost.value",
+            "type": "numberLong",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp cost value.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvc",
+            "type": "string",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp svc.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpSvcId",
+            "type": "numberLong",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp svc id.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpSvcs.shpToLocns",
+            "type": "string[]",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp svcs shp to locns.",
+            "nullable": null
+        },
+        {
+            "name": "bizPol.shipTrms.shpOpt.shpType",
+            "type": "string",
+            "comment": "Business-policy set and embedded return, payment, and shipping terms. Inferred nested field: ship trms shp opt shp type.",
+            "nullable": null
+        },
+        {
+            "name": "glbId.name",
+            "type": "string",
+            "comment": "Global identifier name/value entries. Inferred nested field: name.",
+            "nullable": null
+        },
+        {
+            "name": "glbId.values",
+            "type": "string[]",
+            "comment": "Global identifier name/value entries. Inferred nested field: values.",
+            "nullable": null
+        },
+        {
+            "name": "img.eBayPicUrl",
+            "type": "string",
+            "comment": "Image mappings, including external and eBay image URLs and display order. Inferred nested field: e bay pic url.",
+            "nullable": null
+        },
+        {
+            "name": "img.order",
+            "type": "numberLong",
+            "comment": "Image mappings, including external and eBay image URLs and display order. Inferred nested field: order.",
             "nullable": null
         }
     ],

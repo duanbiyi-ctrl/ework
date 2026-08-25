@@ -24,6 +24,7 @@
 
 | Field | Type | Description |
 | --- | --- | --- |
+| `expiredDate` | `Date` | Revision-history expiration date maintained by TTL maintenance. |
 | `lstgId` | `String` | Identifier of the listing whose revision history is stored. |
 
 The TTL maintenance operation also upserts `expiredDate`, an operational field

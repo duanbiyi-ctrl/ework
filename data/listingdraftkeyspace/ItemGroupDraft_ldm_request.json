@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Draft group document identifier.",
       "hierarchicalName": "PK",
       "name": "PK",
       "ordinal": 1,
@@ -16,8 +17,9 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
+      "description": "JSON-serialized object or array. Business-policy set and its embedded policy terms.",
+      "hierarchicalName": "bizPol",
+      "name": "bizPol",
       "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
@@ -25,44 +27,49 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.pmtTrms.daysToFulPmt",
-      "name": "bizPol.pmtTrms.daysToFulPmt",
+      "description": "Group identifier.",
+      "hierarchicalName": "grpId",
+      "name": "grpId",
       "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "bizPol.pmtTrms.depRqd",
-      "name": "bizPol.pmtTrms.depRqd",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Group title.",
+      "hierarchicalName": "grpTtl",
+      "name": "grpTtl",
       "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"int\",\"default\":null}",
-      "hierarchicalName": "bizPol.pmtTrms.hrsToDep",
-      "name": "bizPol.pmtTrms.hrsToDep",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Image-variation configuration, including the variation trait and its image associations.",
+      "hierarchicalName": "imgsVryBy",
+      "name": "imgsVryBy",
       "ordinal": 5,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "bizPol.pmtTrms.immPay",
-      "name": "bizPol.pmtTrms.immPay",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Seller group key.",
+      "hierarchicalName": "slrGrpKey",
+      "name": "slrGrpKey",
       "ordinal": 6,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "hierarchicalName": "bizPol.pmtTrms.pmtMthd",
-      "name": "bizPol.pmtTrms.pmtMthd",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Image mappings for the group.",
+      "hierarchicalName": "img",
+      "name": "img",
       "ordinal": 7,
       "physicalStorageMapping": [],
       "signalFilter": [],
@@ -70,207 +77,10 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.domRetTrm.refMthd",
-      "name": "bizPol.retTrms.domRetTrm.refMthd",
+      "description": "JSON-serialized object or array. Item variation trait name/value entries.",
+      "hierarchicalName": "itmsVryBy",
+      "name": "itmsVryBy",
       "ordinal": 8,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.domRetTrm.retAcptd",
-      "name": "bizPol.retTrms.domRetTrm.retAcptd",
-      "ordinal": 9,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.domRetTrm.retPrd",
-      "name": "bizPol.retTrms.domRetTrm.retPrd",
-      "ordinal": 10,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.domRetTrm.retShpmtPayee",
-      "name": "bizPol.retTrms.domRetTrm.retShpmtPayee",
-      "ordinal": 11,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.extHolRet",
-      "name": "bizPol.retTrms.extHolRet",
-      "ordinal": 12,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.intRetTrm.refMthd",
-      "name": "bizPol.retTrms.intRetTrm.refMthd",
-      "ordinal": 13,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.intRetTrm.retAcptd",
-      "name": "bizPol.retTrms.intRetTrm.retAcptd",
-      "ordinal": 14,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.intRetTrm.retPrd",
-      "name": "bizPol.retTrms.intRetTrm.retPrd",
-      "ordinal": 15,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.intRetTrm.retShpmtPayee",
-      "name": "bizPol.retTrms.intRetTrm.retShpmtPayee",
-      "ordinal": 16,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.refMthd",
-      "name": "bizPol.retTrms.refMthd",
-      "ordinal": 17,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"double\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.restFeePct",
-      "name": "bizPol.retTrms.restFeePct",
-      "ordinal": 18,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.retAcptd",
-      "name": "bizPol.retTrms.retAcptd",
-      "ordinal": 19,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.retInstr",
-      "name": "bizPol.retTrms.retInstr",
-      "ordinal": 20,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.retPrd",
-      "name": "bizPol.retTrms.retPrd",
-      "ordinal": 21,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.retTrms.retShpmtPayee",
-      "name": "bizPol.retTrms.retShpmtPayee",
-      "ordinal": 22,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "bizPol.shipTrms.buyerRsp",
-      "name": "bizPol.shipTrms.buyerRsp",
-      "ordinal": 23,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "hierarchicalName": "bizPol.shipTrms.excldLocn",
-      "name": "bizPol.shipTrms.excldLocn",
-      "ordinal": 24,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "bizPol.shipTrms.hndlgTm",
-      "name": "bizPol.shipTrms.hndlgTm",
-      "ordinal": 25,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"array\",\"items\":\"string\",\"default\":null}",
-      "hierarchicalName": "bizPol.shipTrms.shpToLocn",
-      "name": "bizPol.shipTrms.shpToLocn",
-      "ordinal": 26,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "grpId",
-      "name": "grpId",
-      "ordinal": 27,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "grpTtl",
-      "name": "grpTtl",
-      "ordinal": 28,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "imgsVryBy.trtName",
-      "name": "imgsVryBy.trtName",
-      "ordinal": 29,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "slrGrpKey",
-      "name": "slrGrpKey",
-      "ordinal": 30,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -278,9 +88,8 @@
   ],
   "jiraProject": "GDS",
   "name": "listing_draft_group",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "PK",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",

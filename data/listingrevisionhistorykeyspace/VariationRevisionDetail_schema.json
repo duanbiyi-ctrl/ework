@@ -11,37 +11,37 @@
         {
             "name": "chgTp",
             "type": "string",
-            "comment": null,
+            "comment": "Kind of change recorded.",
             "nullable": null
         },
         {
             "name": "lstgId",
             "type": "string",
-            "comment": null,
+            "comment": "Historical old and new values for a changed variation property. Inferred field: lstg id.",
             "nullable": null
         },
         {
             "name": "rvsdPrptyGrp",
             "type": "string",
-            "comment": null,
+            "comment": "Group containing the changed variation property.",
             "nullable": null
         },
         {
             "name": "rvsdVarPrpty",
             "type": "string",
-            "comment": null,
+            "comment": "Variation-specific property that changed.",
             "nullable": null
         },
         {
             "name": "varId",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier of the changed variation.",
             "nullable": null
         },
         {
             "name": "varTraitVals",
             "type": "string",
-            "comment": null,
+            "comment": "Serialized variation trait values associated with the change.",
             "nullable": null
         }
     ],

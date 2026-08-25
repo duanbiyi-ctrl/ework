@@ -11,79 +11,79 @@
         {
             "name": "crtDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Creation date/time value.",
             "nullable": null
         },
         {
             "name": "crtMd",
             "type": "string",
-            "comment": null,
+            "comment": "Draft creation-mode classification.",
             "nullable": null
         },
         {
             "name": "draftId",
             "type": "string",
-            "comment": null,
+            "comment": "Listing draft identifier.",
             "nullable": null
         },
         {
             "name": "eBGenTtl",
             "type": "string",
-            "comment": null,
+            "comment": "eBay-generated title.",
             "nullable": null
         },
         {
             "name": "ebayGeneratedTitle",
             "type": "string",
-            "comment": null,
+            "comment": "User-scoped index of active listing drafts and their summary metadata. Inferred field: ebay generated title.",
             "nullable": null
         },
         {
             "name": "imgUrl",
             "type": "string",
-            "comment": null,
+            "comment": "Image URL.",
             "nullable": null
         },
         {
             "name": "lastModifiedDate",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Last-modified date/time value.",
             "nullable": null
         },
         {
             "name": "lstgAppId",
             "type": "string",
-            "comment": null,
+            "comment": "Listing application identifier.",
             "nullable": null
         },
         {
             "name": "mktPlLstdOn",
             "type": "string",
-            "comment": null,
+            "comment": "Marketplace on which the draft is listed.",
             "nullable": null
         },
         {
             "name": "primCatId",
             "type": "string",
-            "comment": null,
+            "comment": "Primary category identifier.",
             "nullable": null
         },
         {
             "name": "stockImgUrl",
             "type": "string",
-            "comment": null,
+            "comment": "Stock-image URL.",
             "nullable": null
         },
         {
             "name": "ttl",
             "type": "string",
-            "comment": null,
+            "comment": "Draft title.",
             "nullable": null
         },
         {
             "name": "userId",
             "type": "string",
-            "comment": null,
+            "comment": "User identifier.",
             "nullable": null
         }
     ],

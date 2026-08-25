@@ -1,7 +1,80 @@
 {
     "DataStoreName": "ItemKeyspace",
     "VPC": "MPT-PROD",
-    "Columns": [],
+    "Columns": [
+        {
+            "name": "ItemQtyPriceID",
+            "type": "string",
+            "comment": "Identifier for this price-and-quantity child document, generated as `QTY_PRICE_<itemId>`.",
+            "nullable": null
+        },
+        {
+            "name": "availQty",
+            "type": "numberLong",
+            "comment": "Available item quantity.",
+            "nullable": null
+        },
+        {
+            "name": "crLstgDtVrs",
+            "type": "string",
+            "comment": "Core listing data version.",
+            "nullable": null
+        },
+        {
+            "name": "lifecycle.endDt",
+            "type": "numberLong",
+            "comment": "Listing end date.",
+            "nullable": null
+        },
+        {
+            "name": "lifecycle.schdldEndDt",
+            "type": "numberLong",
+            "comment": "Scheduled listing end date.",
+            "nullable": null
+        },
+        {
+            "name": "price.fixedPrice.currency",
+            "type": "string",
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price currency.",
+            "nullable": null
+        },
+        {
+            "name": "price.fixedPrice.value",
+            "type": "numberDouble",
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: fixed price value.",
+            "nullable": null
+        },
+        {
+            "name": "price.mrktngPrc.prcngTrtmnt",
+            "type": "string",
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: mrktng prc prcng trtmnt.",
+            "nullable": null
+        },
+        {
+            "name": "price.orgnRetailPrice.currency",
+            "type": "string",
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price currency.",
+            "nullable": null
+        },
+        {
+            "name": "price.orgnRetailPrice.value",
+            "type": "numberDouble",
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: orgn retail price value.",
+            "nullable": null
+        },
+        {
+            "name": "price.prcGuarantee",
+            "type": "boolean",
+            "comment": "Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment. Inferred nested field: prc guarantee.",
+            "nullable": null
+        },
+        {
+            "name": "qtySold",
+            "type": "numberLong",
+            "comment": "Item quantity sold.",
+            "nullable": null
+        }
+    ],
     "dataStoreDisplayName": "ItemKeyspace",
     "DataTableName": "__ROOT__.ItemQtyPrice",
     "DataStoreType": "NuDocument"

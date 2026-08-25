@@ -32,10 +32,6 @@ class RawLdmPayloadTests(unittest.TestCase):
             {"type": "long", "default": None},
         )
         self.assertEqual(
-            json.loads(encode_avro_type("string[]")),
-            {"type": "array", "items": "string", "default": None},
-        )
-        self.assertEqual(
             json.loads(encode_avro_type("date")),
             {"type": "int", "logicalType": "date", "default": None},
         )
@@ -44,47 +40,222 @@ class RawLdmPayloadTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             encode_avro_type("object")
 
-    def test_builds_all_raw_payloads_from_schemas_and_documentation(self):
-        payloads = build_payloads(DATA_DIR, DOCS_DIR)
+    def test_builds_all_repository_raw_payloads_after_reconciliation(self):
+        artifacts = build_payloads(DATA_DIR, DOCS_DIR)
 
-        self.assertEqual(len(payloads), 22)
-
-        by_name = {payload.payload["name"]: payload.payload for payload in payloads}
-        item_root = by_name["item_root"]
-        self.assertEqual(item_root["viewType"], "RAW")
-        self.assertEqual(item_root["namespaceId"], 1)
-        self.assertEqual(item_root["owners"], "jiajsun")
-        self.assertEqual(item_root["teamDl"], "DL-eBay-GDS@ebay.com")
-        self.assertEqual(item_root["pk"], "PK")
-        self.assertEqual(item_root["fields"][0]["name"], "IncEbyPrdtDtail")
-        self.assertEqual(
-            item_root["fields"][0]["hierarchicalName"],
-            "IncEbyPrdtDtail",
-        )
-        self.assertEqual(item_root["fields"][0]["ordinal"], 1)
-        self.assertEqual(
-            json.loads(item_root["fields"][0]["dataType"]),
-            {"type": "boolean", "default": None},
+        self.assertEqual(len(artifacts), 22)
+        self.assertTrue(
+            all(
+                field["description"].strip()
+                for artifact in artifacts
+                for field in artifact.payload["fields"]
+            )
         )
 
-        self.assertEqual(
-            by_name["item_price_and_quantity"]["pk"],
-            "ItemQtyPriceID",
+    def test_emits_only_first_level_fields_and_serializes_objects_as_strings(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data"
+            docs_dir = root / "docs"
+            data_dir.mkdir()
+            docs_dir.mkdir()
+            (data_dir / "Item_schema.json").write_text(
+                json.dumps(
+                    {
+                        "DataStoreName": "ItemKeyspace",
+                        "DataTableName": "__ROOT__.Item",
+                        "Columns": [
+                            {
+                                "name": "title",
+                                "type": "string",
+                                "comment": "Listing title.",
+                                "nullable": None,
+                            },
+                            {
+                                "name": "details.count",
+                                "type": "numberLong",
+                                "comment": "Detail count.",
+                                "nullable": None,
+                            },
+                            {
+                                "name": "details.enabled",
+                                "type": "boolean",
+                                "comment": "Detail enabled flag.",
+                                "nullable": None,
+                            },
+                            {
+                                "name": "tags",
+                                "type": "string[]",
+                                "comment": "Listing tags.",
+                                "nullable": None,
+                            },
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (docs_dir / "item.md").write_text(
+                "\n".join(
+                    [
+                        "# Item LDM",
+                        "",
+                        "**LDM Name:** `Item LDM`",
+                        "",
+                        "**Description:** Item data.",
+                        "",
+                        "**NuDocument Docset:** `Item`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                        "",
+                        "| Field | Type | Description |",
+                        "| --- | --- | --- |",
+                        "| `details` | `Details` | Listing detail values. |",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            fields = build_payloads(data_dir, docs_dir)[0].payload["fields"]
+
+            self.assertEqual(
+                [field["name"] for field in fields],
+                ["title", "details", "tags"],
+            )
+            self.assertEqual(
+                json.loads(fields[0]["dataType"]),
+                {
+                    "type": "string",
+                    "avro.java.string": "String",
+                    "default": None,
+                },
+            )
+            self.assertEqual(
+                json.loads(fields[1]["dataType"]),
+                {
+                    "type": "string",
+                    "avro.java.string": "String",
+                    "default": None,
+                },
+            )
+            self.assertEqual(
+                fields[1]["description"],
+                "JSON-serialized object or array. Listing detail values.",
+            )
+            self.assertEqual(
+                json.loads(fields[2]["dataType"]),
+                {
+                    "type": "string",
+                    "avro.java.string": "String",
+                    "default": None,
+                },
+            )
+            self.assertEqual(
+                fields[2]["description"],
+                "JSON-serialized array. Listing tags.",
+            )
+
+    def test_repository_payloads_serialize_every_nested_field_group(self):
+        artifacts = {
+            artifact.schema_path: artifact.payload
+            for artifact in build_payloads(DATA_DIR, DOCS_DIR)
+        }
+
+        for schema_path, payload in artifacts.items():
+            schema = json.loads(schema_path.read_text(encoding="utf-8"))
+            nested_field_names = {
+                column["name"].split(".", maxsplit=1)[0]
+                for column in schema["Columns"]
+                if "." in column["name"]
+            }
+            fields = {field["name"]: field for field in payload["fields"]}
+
+            self.assertFalse(
+                any("." in field_name for field_name in fields),
+                schema_path.name,
+            )
+            self.assertTrue(nested_field_names <= fields.keys(), schema_path.name)
+            for field_name in nested_field_names:
+                self.assertEqual(
+                    json.loads(fields[field_name]["dataType"])["type"],
+                    "string",
+                    f"{schema_path.name}/{field_name}",
+                )
+                self.assertTrue(
+                    fields[field_name]["description"].startswith(
+                        "JSON-serialized object or array."
+                    ),
+                    f"{schema_path.name}/{field_name}",
+                )
+
+    def test_serializes_first_level_object_arrays_as_strings(self):
+        item_root = next(
+            artifact
+            for artifact in build_payloads(DATA_DIR, DOCS_DIR)
+            if artifact.payload["name"] == "item_root"
         )
-        self.assertEqual(
-            by_name["item_price_and_quantity"]["fields"],
-            [],
+        sample = json.loads(
+            (
+                DATA_DIR
+                / "sample-data"
+                / "item-raw-ldm-samples"
+                / "ItemKeyspace"
+                / "ItemKeyspace_ROOT_.json"
+            ).read_text(encoding="utf-8")
         )
-        self.assertEqual(
-            by_name["item_business_policies"]["pk"],
-            "plcsId",
+        aspects = next(
+            field for field in item_root.payload["fields"] if field["name"] == "aspects"
         )
-        self.assertEqual(by_name["item_uuid_mapping"]["pk"], "sellerId,uuid")
-        self.assertEqual(
-            by_name["user_listing_draft_map"]["pk"],
-            "userId,draftId",
+
+        self.assertTrue(
+            any(
+                isinstance(record.get("aspects"), list)
+                and any(isinstance(value, dict) for value in record["aspects"])
+                for record in sample
+            )
         )
-        self.assertNotIn("pk", by_name["listing_revision"])
+        self.assertEqual(json.loads(aspects["dataType"])["type"], "string")
+        self.assertEqual(
+            aspects["description"],
+            "JSON-serialized object or array. "
+            "Item aspects, each with an aspect name and its values.",
+        )
+
+    def test_repository_payloads_serialize_every_array_as_strings(self):
+        artifacts = {
+            artifact.schema_path: artifact.payload
+            for artifact in build_payloads(DATA_DIR, DOCS_DIR)
+        }
+
+        for schema_path, payload in artifacts.items():
+            schema = json.loads(schema_path.read_text(encoding="utf-8"))
+            array_names = {
+                column["name"]
+                for column in schema["Columns"]
+                if column["name"] != "__KEY"
+                and "." not in column["name"]
+                and column["type"] == "string[]"
+            }
+            fields = {field["name"]: field for field in payload["fields"]}
+
+            for field_name in array_names:
+                self.assertEqual(
+                    json.loads(fields[field_name]["dataType"])["type"],
+                    "string",
+                    f"{schema_path.name}/{field_name}",
+                )
+                self.assertTrue(
+                    fields[field_name]["description"].startswith(
+                        "JSON-serialized array."
+                    ),
+                    f"{schema_path.name}/{field_name}",
+                )
+            self.assertFalse(
+                any(
+                    json.loads(field["dataType"])["type"] == "array"
+                    for field in payload["fields"]
+                ),
+                schema_path.name,
+            )
 
     def test_writes_payload_beside_each_source_schema_and_checks_staleness(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
@@ -158,6 +329,50 @@ class RawLdmPayloadTests(unittest.TestCase):
             )
 
             with self.assertRaises(MetadataResolutionError):
+                build_payloads(data_dir, docs_dir)
+
+    def test_rejects_emitted_column_without_schema_description(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            data_dir = root / "data"
+            docs_dir = root / "docs"
+            data_dir.mkdir()
+            docs_dir.mkdir()
+            (data_dir / "ItemDescription_schema.json").write_text(
+                json.dumps(
+                    {
+                        "DataStoreName": "ItemKeyspace",
+                        "DataTableName": "__ROOT__.ItemDescription",
+                        "Columns": [
+                            {
+                                "name": "desc",
+                                "type": "string",
+                                "comment": None,
+                                "nullable": None,
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (docs_dir / "item-description.md").write_text(
+                "\n".join(
+                    [
+                        "# ItemDescription LDM",
+                        "",
+                        "**LDM Name:** `ItemDescription LDM`",
+                        "",
+                        "**Description:** Item description payload.",
+                        "",
+                        "**NuDocument Docset:** `ItemDescription`",
+                        "",
+                        "**Keyspace:** `ItemKeyspace`",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(MetadataResolutionError, "desc"):
                 build_payloads(data_dir, docs_dir)
 
 

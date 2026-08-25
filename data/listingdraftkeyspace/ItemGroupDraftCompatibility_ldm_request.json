@@ -7,6 +7,7 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Draft compatibility document identifier.",
       "hierarchicalName": "DraftCompID",
       "name": "DraftCompID",
       "ordinal": 1,
@@ -15,18 +16,20 @@
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
+      "dataType": "{\"type\":\"bytes\",\"default\":null}",
+      "description": "Compressed compatibility representation.",
+      "hierarchicalName": "cmpCompat",
+      "name": "cmpCompat",
       "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"bytes\",\"default\":null}",
-      "hierarchicalName": "cmpCompat",
-      "name": "cmpCompat",
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Compatibility entries for the item group draft.",
+      "hierarchicalName": "compat",
+      "name": "compat",
       "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
@@ -35,9 +38,8 @@
   ],
   "jiraProject": "GDS",
   "name": "listing_draft_group_compatibility",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "DraftCompID",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",

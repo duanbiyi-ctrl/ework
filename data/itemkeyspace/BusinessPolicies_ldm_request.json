@@ -4,12 +4,52 @@
   "domain": "GDS",
   "environment": "UNSTAGED",
   "errorHandlingStorageMappings": [],
-  "fields": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier for this policy-set child document, generated as `BIZ_POL_<itemId>`.",
+      "hierarchicalName": "plcsId",
+      "name": "plcsId",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email.",
+      "hierarchicalName": "pmtTrms",
+      "name": "pmtTrms",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms.",
+      "hierarchicalName": "retTrms",
+      "name": "retTrms",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs.",
+      "hierarchicalName": "shipTrms",
+      "name": "shipTrms",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
   "jiraProject": "GDS",
   "name": "item_business_policies",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "plcsId",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",

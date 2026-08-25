@@ -1,7 +1,254 @@
 {
     "DataStoreName": "ItemKeyspace",
     "VPC": "MPT-PROD",
-    "Columns": [],
+    "Columns": [
+        {
+            "name": "plcsId",
+            "type": "string",
+            "comment": "Identifier for this policy-set child document, generated as `BIZ_POL_<itemId>`.",
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.depRqd",
+            "type": "boolean",
+            "comment": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Inferred nested field: dep rqd.",
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.hrsToDep",
+            "type": "numberLong",
+            "comment": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Inferred nested field: hrs to dep.",
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.immPay",
+            "type": "boolean",
+            "comment": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Inferred nested field: imm pay.",
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.pmtMthd",
+            "type": "string[]",
+            "comment": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Inferred nested field: pmt mthd.",
+            "nullable": null
+        },
+        {
+            "name": "pmtTrms.ppEmail",
+            "type": "string",
+            "comment": "Payment-policy terms, including payment timing, deposit requirements and amount, payment methods, instructions, and PayPal email. Inferred nested field: pp email.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.refMthd",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: dom ret trm ref mthd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: dom ret trm ret acptd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.retPrd",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: dom ret trm ret prd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.domRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: dom ret trm ret shpmt payee.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.extHolRet",
+            "type": "boolean",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: ext hol ret.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.refMthd",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: int ret trm ref mthd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.retAcptd",
+            "type": "boolean",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: int ret trm ret acptd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.retPrd",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: int ret trm ret prd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.intRetTrm.retShpmtPayee",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: int ret trm ret shpmt payee.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.refMthd",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: ref mthd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.restFeePct",
+            "type": "numberLong",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: rest fee pct.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retAcptd",
+            "type": "boolean",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: ret acptd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retInstr",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: ret instr.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retPrd",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: ret prd.",
+            "nullable": null
+        },
+        {
+            "name": "retTrms.retShpmtPayee",
+            "type": "string",
+            "comment": "Return-policy terms, including acceptance, refund, duration, instructions, shipping payer, and domestic or international terms. Inferred nested field: ret shpmt payee.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.buyerRsp",
+            "type": "boolean",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: buyer rsp.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.excldLocn",
+            "type": "string[]",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: excld locn.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.excldLocnLastModDt",
+            "type": "numberLong",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: excld locn last mod dt.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.hndlgTm",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: hndlg tm.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.cstType",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt cst type.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.promoShp",
+            "type": "boolean",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt promo shp.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.rtTblId",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt rt tbl id.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpDscPrfId",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp dsc prf id.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.currency",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs add unit cost currency.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.addUnitCost.value",
+            "type": "numberDouble",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs add unit cost value.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.currency",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs pkg hndlg cost currency.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.pkgHndlgCost.value",
+            "type": "numberLong",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs pkg hndlg cost value.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.rank",
+            "type": "numberLong",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs rank.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpCost.currency",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs shp cost currency.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpCost.value",
+            "type": "numberDouble",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs shp cost value.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpSvc",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs shp svc.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpSvcId",
+            "type": "numberLong",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs shp svc id.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpSvcs.shpToLocns",
+            "type": "string[]",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp svcs shp to locns.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpOpt.shpType",
+            "type": "string",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp opt shp type.",
+            "nullable": null
+        },
+        {
+            "name": "shipTrms.shpToLocn",
+            "type": "string[]",
+            "comment": "Shipping-policy terms, including destinations and exclusions, handling time, buyer responsibility, shipping options, services, and costs. Inferred nested field: shp to locn.",
+            "nullable": null
+        }
+    ],
     "dataStoreDisplayName": "ItemKeyspace",
     "DataTableName": "__ROOT__.BusinessPolicies",
     "DataStoreType": "NuDocument"

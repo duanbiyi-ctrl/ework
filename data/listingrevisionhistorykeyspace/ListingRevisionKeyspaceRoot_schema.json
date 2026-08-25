@@ -11,13 +11,13 @@
         {
             "name": "expiredDate",
             "type": "date",
-            "comment": null,
+            "comment": "Revision-history expiration date maintained by TTL maintenance.",
             "nullable": null
         },
         {
             "name": "lstgId",
             "type": "string",
-            "comment": null,
+            "comment": "Identifier of the listing whose revision history is stored.",
             "nullable": null
         }
     ],

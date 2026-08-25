@@ -4,12 +4,72 @@
   "domain": "GDS",
   "environment": "UNSTAGED",
   "errorHandlingStorageMappings": [],
-  "fields": [],
+  "fields": [
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier for this price-and-quantity child document, generated as `QTY_PRICE_<itemId>`.",
+      "hierarchicalName": "ItemQtyPriceID",
+      "name": "ItemQtyPriceID",
+      "ordinal": 1,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Available item quantity.",
+      "hierarchicalName": "availQty",
+      "name": "availQty",
+      "ordinal": 2,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Core listing data version.",
+      "hierarchicalName": "crLstgDtVrs",
+      "name": "crLstgDtVrs",
+      "ordinal": 3,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Scheduled and end dates for the listing lifecycle.",
+      "hierarchicalName": "lifecycle",
+      "name": "lifecycle",
+      "ordinal": 4,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "JSON-serialized object or array. Pricing details, including reserve, fixed, marketing, starting-bid, original retail, and cost-of-goods prices, plus price-guarantee enrollment.",
+      "hierarchicalName": "price",
+      "name": "price",
+      "ordinal": 5,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    },
+    {
+      "dataType": "{\"type\":\"long\",\"default\":null}",
+      "description": "Item quantity sold.",
+      "hierarchicalName": "qtySold",
+      "name": "qtySold",
+      "ordinal": 6,
+      "physicalStorageMapping": [],
+      "signalFilter": [],
+      "signalMapping": []
+    }
+  ],
   "jiraProject": "GDS",
   "name": "item_price_and_quantity",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "ItemQtyPriceID",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",

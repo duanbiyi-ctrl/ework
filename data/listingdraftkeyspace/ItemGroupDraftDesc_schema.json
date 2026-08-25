@@ -5,7 +5,7 @@
         {
             "name": "PK",
             "type": "string",
-            "comment": null,
+            "comment": "Group-description document identifier.",
             "nullable": null
         },
         {
@@ -17,19 +17,19 @@
         {
             "name": "cmpDesc",
             "type": "binary",
-            "comment": null,
+            "comment": "Compressed group description.",
             "nullable": null
         },
         {
             "name": "groupDesc",
             "type": "string",
-            "comment": null,
+            "comment": "Expanded group description.",
             "nullable": null
         },
         {
             "name": "grpDescRevsnDt",
             "type": "numberLong",
-            "comment": null,
+            "comment": "Group-description revision date/time value.",
             "nullable": null
         }
     ],

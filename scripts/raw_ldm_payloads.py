@@ -10,7 +10,7 @@ from typing import Any
 
 
 MDM_METADATA = {
-    "namespaceId": 1,
+    "namespaceId": 114,
     "owners": "jiajsun",
     "domain": "GDS",
     "jiraProject": "GDS",
@@ -18,11 +18,6 @@ MDM_METADATA = {
     "teamDl": "DL-eBay-GDS@ebay.com",
     "environment": "UNSTAGED",
     "status": "DRAFT",
-}
-
-COMPOSITE_PRIMARY_KEYS = {
-    ("ItemKeyspace", "UuidMap"): "sellerId,uuid",
-    ("UserListingDraft", "UserItemDraftMap"): "userId,draftId",
 }
 
 DOCSET_ALIASES = {
@@ -38,9 +33,10 @@ AVRO_TYPE_MAPPING = {
     "numberInt": {"type": "int", "default": None},
     "numberLong": {"type": "long", "default": None},
     "binary": {"type": "bytes", "default": None},
-    "string[]": {"type": "array", "items": "string", "default": None},
     "date": {"type": "int", "logicalType": "date", "default": None},
 }
+
+EXCLUDED_COLUMN_NAMES = {"__KEY"}
 
 
 class MetadataResolutionError(ValueError):
@@ -53,7 +49,7 @@ class DocumentMetadata:
     docset: str
     name: str
     description: str
-    primary_key: str | None
+    field_descriptions: dict[str, str]
 
 
 @dataclass(frozen=True)
@@ -92,17 +88,15 @@ def _to_snake_case(value: str) -> str:
     return second_pass.replace("-", "_").replace(" ", "_").lower()
 
 
-def _document_primary_key(
-    keyspace: str,
-    docset: str,
-    documented_primary_key: str | None,
-) -> str | None:
-    composite_key = COMPOSITE_PRIMARY_KEYS.get((keyspace, docset))
-    if composite_key:
-        return composite_key
-    if documented_primary_key:
-        return documented_primary_key
-    return None
+def _field_descriptions(markdown: str) -> dict[str, str]:
+    return {
+        match.group(1): match.group(2).strip()
+        for match in re.finditer(
+            r"^\| `([^`]+)` \| [^|]* \| (.+) \|$",
+            markdown,
+            flags=re.MULTILINE,
+        )
+    }
 
 
 def index_documentation(docs_dir: Path) -> dict[tuple[str, str], DocumentMetadata]:
@@ -129,11 +123,7 @@ def index_documentation(docs_dir: Path) -> dict[tuple[str, str], DocumentMetadat
             docset=docset,
             name=_to_snake_case(ldm_name),
             description=description,
-            primary_key=_document_primary_key(
-                keyspace,
-                docset,
-                _read_document_value(markdown, "Primary Key"),
-            ),
+            field_descriptions=_field_descriptions(markdown),
         )
 
     return documents
@@ -151,11 +141,16 @@ def _artifact_path(schema_path: Path) -> Path:
 def _build_field(column: dict[str, Any], ordinal: int) -> dict[str, Any]:
     name = column.get("name")
     source_type = column.get("type")
+    description = column.get("comment")
     if not isinstance(name, str) or not name:
         raise MetadataResolutionError("NuDocument columns must have a non-empty name")
     if not isinstance(source_type, str) or not source_type:
         raise MetadataResolutionError(
             f"NuDocument column {name} must have a non-empty type"
+        )
+    if not isinstance(description, str) or not description.strip():
+        raise MetadataResolutionError(
+            f"NuDocument column {name} must have a non-empty description"
         )
 
     field = {
@@ -166,12 +161,81 @@ def _build_field(column: dict[str, Any], ordinal: int) -> dict[str, Any]:
         "signalFilter": [],
         "signalMapping": [],
         "physicalStorageMapping": [],
+        "description": description.strip(),
     }
-    if column.get("comment"):
-        field["description"] = str(column["comment"])
     if column.get("nullable") is not None:
         field["dataSchema"] = {"nullable": bool(column["nullable"])}
     return field
+
+
+def _first_level_fields(
+    columns: list[dict[str, Any]],
+    document: DocumentMetadata,
+) -> list[dict[str, Any]]:
+    """Build scalar fields and JSON-string fields for nested source values."""
+    grouped_columns: dict[str, list[dict[str, Any]]] = {}
+    for column in columns:
+        name = column.get("name")
+        if not isinstance(name, str) or not name:
+            raise MetadataResolutionError(
+                "NuDocument columns must have a non-empty name"
+            )
+        grouped_columns.setdefault(name.split(".", maxsplit=1)[0], []).append(column)
+
+    fields = []
+    for ordinal, (name, grouped) in enumerate(grouped_columns.items(), 1):
+        if len(grouped) == 1 and grouped[0]["name"] == name:
+            if grouped[0].get("type") == "string[]":
+                description = grouped[0].get("comment")
+                if not isinstance(description, str) or not description.strip():
+                    raise MetadataResolutionError(
+                        f"NuDocument column {name} must have a non-empty description"
+                    )
+                fields.append(
+                    _build_field(
+                        {
+                            **grouped[0],
+                            "type": "string",
+                            "comment": (
+                                f"JSON-serialized array. {description.strip()}"
+                            ),
+                        },
+                        ordinal,
+                    )
+                )
+                continue
+            fields.append(_build_field(grouped[0], ordinal))
+            continue
+
+        description = document.field_descriptions.get(name)
+        if not description:
+            description = next(
+                (
+                    column.get("comment", "").strip()
+                    for column in grouped
+                    if isinstance(column.get("comment"), str)
+                    and column["comment"].strip()
+                ),
+                "",
+            )
+        if not description:
+            raise MetadataResolutionError(
+                f"NuDocument object {name} must have a non-empty description"
+            )
+        fields.append(
+            _build_field(
+                {
+                    "name": name,
+                    "type": "string",
+                    "comment": (
+                        f"JSON-serialized object or array. {description}"
+                    ),
+                    "nullable": None,
+                },
+                ordinal,
+            )
+        )
+    return fields
 
 
 def _read_schema(path: Path) -> dict[str, Any]:
@@ -212,7 +276,14 @@ def build_payloads(data_dir: Path, docs_dir: Path) -> list[PayloadArtifact]:
                 f"No raw LDM page maps {keyspace}/{documented_docset} from {schema_path}"
             ) from error
 
-        fields = [_build_field(column, ordinal) for ordinal, column in enumerate(columns, 1)]
+        fields = _first_level_fields(
+            [
+                column
+                for column in columns
+                if column.get("name") not in EXCLUDED_COLUMN_NAMES
+            ],
+            document,
+        )
         if len({field["name"] for field in fields}) != len(fields):
             raise MetadataResolutionError(
                 f"Schema contains duplicate column names: {schema_path}"
@@ -228,8 +299,6 @@ def build_payloads(data_dir: Path, docs_dir: Path) -> list[PayloadArtifact]:
             "fields": fields,
             "errorHandlingStorageMappings": [],
         }
-        if document.primary_key:
-            payload["pk"] = document.primary_key
 
         artifacts.append(
             PayloadArtifact(

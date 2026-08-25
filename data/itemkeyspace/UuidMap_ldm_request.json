@@ -7,8 +7,9 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
+      "description": "Application identifier for the resolved listing.",
+      "hierarchicalName": "listingAppId",
+      "name": "listingAppId",
       "ordinal": 1,
       "physicalStorageMapping": [],
       "signalFilter": [],
@@ -16,18 +17,10 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "listingAppId",
-      "name": "listingAppId",
-      "ordinal": 2,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Listing identifier resolved from the seller-and-UUID key.",
       "hierarchicalName": "listingId",
       "name": "listingId",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -35,9 +28,8 @@
   ],
   "jiraProject": "GDS",
   "name": "item_uuid_mapping",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "sellerId,uuid",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",

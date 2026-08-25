@@ -6,28 +6,21 @@
   "errorHandlingStorageMappings": [],
   "fields": [
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
+      "dataType": "{\"type\":\"int\",\"logicalType\":\"date\",\"default\":null}",
+      "description": "Revision-history expiration date maintained by TTL maintenance.",
+      "hierarchicalName": "expiredDate",
+      "name": "expiredDate",
       "ordinal": 1,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"int\",\"logicalType\":\"date\",\"default\":null}",
-      "hierarchicalName": "expiredDate",
-      "name": "expiredDate",
-      "ordinal": 2,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
+      "description": "Identifier of the listing whose revision history is stored.",
       "hierarchicalName": "lstgId",
       "name": "lstgId",
-      "ordinal": 3,
+      "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -35,7 +28,7 @@
   ],
   "jiraProject": "GDS",
   "name": "listing_revision_root",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
   "status": "DRAFT",
   "team": "GDS",

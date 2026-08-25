@@ -7,8 +7,9 @@
   "fields": [
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "__KEY",
-      "name": "__KEY",
+      "description": "JSON-serialized object or array. Item document details, including vehicle-title, VIN, and odometer information when available.",
+      "hierarchicalName": "docs",
+      "name": "docs",
       "ordinal": 1,
       "physicalStorageMapping": [],
       "signalFilter": [],
@@ -16,17 +17,19 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "docs.odometer",
-      "name": "docs.odometer",
+      "description": "JSON-serialized object or array. High-precision fixed-price amount.",
+      "hierarchicalName": "fixedPriceHP",
+      "name": "fixedPriceHP",
       "ordinal": 2,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
     },
     {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "docs.vhclTtlBck",
-      "name": "docs.vhclTtlBck",
+      "dataType": "{\"type\":\"boolean\",\"default\":null}",
+      "description": "Indicates whether the item uses relaxed rules.",
+      "hierarchicalName": "hasRlxdRls",
+      "name": "hasRlxdRls",
       "ordinal": 3,
       "physicalStorageMapping": [],
       "signalFilter": [],
@@ -34,8 +37,9 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "docs.vhclTtlFrnt",
-      "name": "docs.vhclTtlFrnt",
+      "description": "Identifier for this item-details child document, generated as `ITEM_DETAILS_<itemId>`.",
+      "hierarchicalName": "itemDetailsID",
+      "name": "itemDetailsID",
       "ordinal": 4,
       "physicalStorageMapping": [],
       "signalFilter": [],
@@ -43,63 +47,10 @@
     },
     {
       "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "docs.vin",
-      "name": "docs.vin",
+      "description": "JSON-serialized object or array. High-precision starting-bid amount.",
+      "hierarchicalName": "strtBidPriceHP",
+      "name": "strtBidPriceHP",
       "ordinal": 5,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "fixedPriceHP.currency",
-      "name": "fixedPriceHP.currency",
-      "ordinal": 6,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"double\",\"default\":null}",
-      "hierarchicalName": "fixedPriceHP.value",
-      "name": "fixedPriceHP.value",
-      "ordinal": 7,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"boolean\",\"default\":null}",
-      "hierarchicalName": "hasRlxdRls",
-      "name": "hasRlxdRls",
-      "ordinal": 8,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "itemDetailsID",
-      "name": "itemDetailsID",
-      "ordinal": 9,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"string\",\"avro.java.string\":\"String\",\"default\":null}",
-      "hierarchicalName": "strtBidPriceHP.currency",
-      "name": "strtBidPriceHP.currency",
-      "ordinal": 10,
-      "physicalStorageMapping": [],
-      "signalFilter": [],
-      "signalMapping": []
-    },
-    {
-      "dataType": "{\"type\":\"double\",\"default\":null}",
-      "hierarchicalName": "strtBidPriceHP.value",
-      "name": "strtBidPriceHP.value",
-      "ordinal": 11,
       "physicalStorageMapping": [],
       "signalFilter": [],
       "signalMapping": []
@@ -107,9 +58,8 @@
   ],
   "jiraProject": "GDS",
   "name": "item_details",
-  "namespaceId": 1,
+  "namespaceId": 114,
   "owners": "jiajsun",
-  "pk": "itemDetailsID",
   "status": "DRAFT",
   "team": "GDS",
   "teamDl": "DL-eBay-GDS@ebay.com",
