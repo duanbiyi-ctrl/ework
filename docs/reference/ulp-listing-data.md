@@ -1,18 +1,21 @@
 # ULP Listing Data Reference
 
 This reference explains how Unified Listing Platform (ULP) data relates to
-Core Listing Service (CLS) NuDoc data. It is intended for consumers choosing
-the correct listing-data surface, not as a physical-storage contract.
+Core Listing Service (CLS) NuDoc data. It helps consumers choose the correct
+listing-data surface and records the provider-local storage and lifecycle
+facts established by the checked-out source.
 
 ## Scope and evidence
 
-The analysis is based on the three repositories linked locally under `.link/`:
+The analysis is based on the shared services and provider repositories linked
+locally under `.link/`:
 
 | Repository | Role proven by source | Not proven by source |
 | --- | --- | --- |
 | `crlstngsv` | CLS accepts, persists, reconstructs, and changes core listing state. Its converters map V2 listing objects to NuDoc document families. | A complete public ULP API contract or post-listing provider calculations. |
 | `unilistingsvc` | The ULP listing-read service supplies `ListingV2` and `Item`, maps fields to groups, gates provider queries, reads cached group data, and refreshes groups from provider events. | A provider's storage, calculation, or deployment enablement. |
 | `fgql` | The Federated GraphQL Gateway composes the graph, validates and routes requests, and provides local schema snapshots. | NuDoc writes, provider business logic, or a guarantee that a snapshot is the deployed graph. |
+| `ulp_providers` | The 25 direct provider repositories establish each provider's output schema, local resolver and storage behavior, and any local write or refresh path. | External-store schema, runtime provider enablement, source-system ownership, event delivery, or a production freshness guarantee unless provider code proves it. |
 
 The sources establish a set of related, but different, layers:
 
@@ -28,7 +31,10 @@ Domain providers and derived-data jobs
   -> FGQL federated GraphQL response
 ```
 
-Use the following evidence labels throughout this page:
+Provider storage means the provider-local persistence or request-time source
+seen in code. A NuKV cache, an external service request, a CLS NuDoc document,
+and the ULP provider-group cache are separate boundaries. Use the following
+evidence labels throughout this page:
 
 | Label | Meaning |
 | --- | --- |
@@ -278,9 +284,11 @@ The ULP implementation applies the following rules:
 1. `FieldOnDemandFieldGroupLookup` loads generated field-to-group,
    group-to-subgraph, and group-classification JSON files. If an exact field
    path is not found, it walks upward through parent paths to find a group.
-2. A refreshable `defaultFieldGroup` configuration can classify a declared
-   group as default; otherwise ULP treats it as on-demand. This runtime setting
-   can override the schema-derived classification.
+2. At lookup construction, `unilistingcfg.defaultFieldGroup` classifies a
+   declared group as default; otherwise ULP treats it as on-demand. The
+   checked-in query-template refresh listener does not rebuild those lookup
+   sets, so a changed value is not by itself evidence of an immediate
+   reclassification in a running process.
 3. `ListingGraphQLQueryBuilder` enables a group only when its mapped provider
    has `queryEnabled=true` in external configuration. Default groups are
    requested whenever enabled; on-demand groups require both enablement and
@@ -289,9 +297,13 @@ The ULP implementation applies the following rules:
    an entire provider-group container rather than an independently cached
    provider leaf, and adds the minimum listing identity/lifecycle/seller
    context needed for the response.
-5. Provider-event handling maps an event application name through external
-   configuration and refreshes the corresponding group. The source does not
-   establish every production event-producer mapping or delivery guarantee.
+5. Provider-event handling requires a listing ID and application-name header,
+   maps the application name through external configuration, and refreshes
+   that singleton provider group for the listing. The provider-consumer dedupe
+   key is listing ID + application name + event type. Exhausted retries create
+   a DLQ record. The source does not establish every production
+   event-producer mapping, tenant/caller cache isolation, or delivery
+   guarantee.
 
 The schema-level `@onDemand` directive is useful snapshot metadata, but it
 does not on its own prove default/on-demand behavior in a deployment.
@@ -312,12 +324,13 @@ schema also names 24 field groups in `@excludeGroupsInQuery`, while the FGQL
 supergraph snapshot contains 233 Federation subgraphs. These are
 schema-snapshot inventories, not production provider counts.
 
-The active provider set depends on refreshable external configuration:
-`unilistingcfg.defaultFieldGroup` determines default versus on-demand
-classification, and `unilistingcfg.provider.<group>.queryEnabled` determines
-whether a mapped group is requested. Confirm a provider's deployment status
-from the active configuration and generated environment-specific query
-template, not from a schema declaration alone.
+Provider query inclusion depends on external configuration:
+`unilistingcfg.provider.<group>.queryEnabled` determines whether a mapped
+group is requested, and the lookup's construction-time
+`unilistingcfg.defaultFieldGroup` determines its default/on-demand set.
+Confirm a provider's deployment status from the active configuration and
+generated environment-specific query template, not from a schema declaration
+alone.
 
 ### Declared provider-group catalog
 
@@ -330,9 +343,9 @@ which remains external configuration.
 
 | Declared group | Mapped service | Returned data family | Provider core logic | Provider data source and update behavior | ULP contract status |
 | --- | --- | --- | --- | --- | --- |
-| `PURCHASEVIEWGRAPHSVC` | `purchaseviewgraphsvc` | Last purchase time, unique buyer count, and last-purchase amounts/currencies. | Runs only tasks for selected fields: count unique buyers and find the latest qualifying purchase. | Request-time COMS/Cosmos aggregation with a 90-day default lookback; no provider cache. | Production selection present; see [analysis](#purchaseviewgraphsvc). |
-| `EBAYPLUSELIGIBILITY` | `ebaypluseligibility` | eBay Plus shipping-program eligibility in fulfillment terms. | Batches `FulfillmentTerms` and maps a precomputed eligibility flag. | NuKV listing-eligibility entity; no local GraphQL-path event publisher, TTL, or invalidation found. | Production selection present; see [analysis](#ebaypluseligibilitysvc). |
-| `LCLISTINGPROVIDER` | `lclistingprovider` | eBay Live buy-spot eligibility, intent, purchasability, visibility, and live-event state. | Batches listings, reads `EbayLive`, selects the first live event as primary, and normalizes time values. | Retried NuKV reads; primary-event data is documented as eventually consistent. | Production selection present; see [analysis](#lc-listingprovider). |
+| `PURCHASEVIEWGRAPHSVC` | `purchaseviewgraphsvc` | Last purchase time, unique buyer count, and last-purchase amounts/currencies. | Runs only tasks for selected fields: count unique buyers and find the latest qualifying purchase. | Request-time COMS aggregation with a 90-day default lookback; no provider cache. | Production selection present; see [analysis](#purchaseviewgraphsvc). |
+| `EBAYPLUSELIGIBILITY` | `ebaypluseligibility` | eBay Plus shipping-program eligibility in fulfillment terms. | Batches `FulfillmentTerms` and maps a precomputed eligibility flag. | NuKV listing-eligibility entity with no configured TTL; evaluation writes can synchronously refresh ULP. | Production selection present; see [analysis](#ebaypluseligibilitysvc). |
+| `LCLISTINGPROVIDER` | `lclistingprovider` | eBay Live buy-spot eligibility, intent, purchasability, visibility, and live-event state. | Batches listings, reads `EbayLive`, selects the first live event as primary, and normalizes time values. | NuKV cache read with up to four attempts; primary-event data is documented as eventually consistent. | Production selection present; see [analysis](#lc-listingprovider). |
 | `BASICLISTINGDATA` | `basiclistingdata` | Listing/item watch counts and certified-expert-insight asset/classification. | Validates and merges app-owned listing/item JSON; federation reads return the stored projection. | Provider-owned NuData/Monstor; changed writes emit `ITEM_REVISED`; refresh send failures are logged. | Production selection present; see [analysis](#basiclistingdata). |
 | `ITMVZBLIT` | `itmvzblit` | Default-visible sites, explicitly suppressed sites, and packed visibility. | Batches visibility reads, merges NuData and SaleBo, then checks discrepancies before mapping. | Caty remains source of truth during dual-write; eventual NuData reads; changed visibility can emit refresh. | Production selection present; see [analysis](#itemvisibility-itmvzblit). |
 | `SAPSVC` | `sapsvc` | Auto-tagged product ID and dynamic annotated search aspects. | Converts Monstor classifier/annotator results into a product reference and deduplicated aspects. | SAP classifier data through Monstor; aspect configuration refreshes dynamically; no local TTL or event publisher found. | Production selection present; see [analysis](#sapsvc). |
@@ -361,7 +374,7 @@ their provider-owned output schemas and source-backed implementation analyses.
 
 | ULP group/subgraph label | ULP data scope | Example mapped data | Source-analysis status |
 | --- | --- | --- | --- |
-| `svls` | Broad core-listing contract. | Aspect images, auto-relist terms, and best-offer settings; 683 mapped paths. | Default baseline group; no dedicated generated `@include` selection. See [analysis](#svls). |
+| `svls` | Broad core-listing contract. | Aspect images, auto-relist terms, and best-offer settings. | Default baseline group; no dedicated generated `@include` selection. See [analysis](#svls). |
 | `itemcompatibilitysvc` | Vehicle/item compatibility. | Listing and item compatibility, including computed compatibility by marketplace. | Generated selection present; see [analysis](#itemcompatibilitysvc). |
 | `vehentsvc` | Vehicle-listing enrichment. | Vehicle details and vehicle-history-report content. | Generated selection present; see [analysis](#vehentsvc). |
 | `pickupeligibility` | Pickup and fulfillment eligibility. | Pickup eligibility, in-store-pickup logistics, and package specifications. | Generated selection present; see [analysis](#pickupeligibility). |
@@ -369,7 +382,48 @@ their provider-owned output schemas and source-backed implementation analyses.
 | `mdmlusvcio` | Markdown-promotion data. | Markdown discount duration and promotion start/end dates. | Generated selection present; see [analysis](#mdmlusvcio). |
 | `dalasproxysourcesvc` | DALAS source evaluation. | Source-evaluation metadata and source entity containers. | Generated selection present; see [analysis](#dalasproxysourcesvc). |
 | `dalasproxysinksvc` | DALAS sink evaluation. | Sink entity containers and DALAS storage manifests. | Generated selection present; see [analysis](#dalasproxysinksvc). |
-| `dalasuuidprovidersvc` | DALAS identity data. | `dalasUuid`, generated from listing identity during federation resolution. | Generated selection present; see [analysis](#dalasuuidprovidersvc). |
+| `dalasuuidprovidersvc` | DALAS identity data. | Fresh `dalasUuid` generated during federation resolution. | Generated selection present; see [analysis](#dalasuuidprovidersvc). |
+
+### Provider storage and lifecycle catalog
+
+This catalog records the provider-local backend boundary that the checked-out
+code establishes. A named NuData, Monstor, or NuKV store is not automatically
+the enterprise-wide source of truth; an external provider's backing database,
+runtime configuration, and event delivery remain unverified unless stated in
+the detailed analysis.
+
+| Provider group | Provider-local storage or resolution source | Storage / resolution grain | Write and ULP-refresh boundary |
+| --- | --- | --- | --- |
+| `BASICLISTINGDATA` | NuData/Monstor `BasicListingData`, `__ROOT__`. | Listing ID root; contained item data is keyed by item ID. | Revision-aware listing and counter writes emit asynchronous `ITEM_REVISED`; send failures are logged without a local retry. |
+| `CMPLREGULATORYSVC` | NuDocument `CountryOfOrigin`; external vendor/vector paths exist outside federated reads. | Base64 of `identifierType|identifierValue`; audit records use `audit`, vector search uses `__ROOT__`. | COO cache changes and seller clearing can emit refresh. The three-day expiry applies to soft-deleted records, not all active COO data. |
+| `CONNECTEDPRODUCTSULP` | NuDocument/Monstor `ConnectedProductsULPData`, `__ROOT__`. | Item ID root; listing ID supplies federation and refresh context. | Changed REST module writes/deletes synchronously emit `ITEM_REVISED` only when `shouldPublishToULP` is enabled. |
+| `DEALSGRAPH` | Read-only NuDocument/Monstor `DealsULP`, `__ROOT__`, or configured fake fetcher. | Numeric listing ID. | No provider write, event, cache, TTL, or read-retry path is established. |
+| `DEFAULTULPPROVIDER` | Static example resolver. | No listing or item identity. | No persistence, event, cache, or refresh implementation. |
+| `EBAYPLUSELIGIBILITY` | NuKV `ebaypluslistingeligibilitynukvhost`. | Decimal listing ID. | Evaluation writes upsert the entity and send `ITEM_REVISED` up to three times; refresh-send failures are logged. |
+| `ITMVZBLIT` | NuData/Monstor `LvfVisibilityStorage`, `__ROOT__`, alongside SaleBo/Caty during migration. | Decimal item/listing ID. | Visibility writes can asynchronously refresh ULP; Caty remains the code-documented source of truth during this dual-write path. |
+| `LCLISTINGPROVIDER` | NuKV `cplivecommercenukvhost` cache holding `EbayLive` JSON. | `i:<listingId>`. | No local writer, refresh publisher, invalidator, or entry TTL is established; reads retry at most four times with 100 ms waits. |
+| `LOCNMAPPINGSVC` | NuData `ListingLocations`, `__ROOT__`. | Concatenated seller ID, listing ID, and normalized SKU. | REST upsert/delete retries NuData up to five times, emits BES, and can emit default-disabled, fire-and-forget ULP refresh. |
+| `MPLS` | Monstor/NuData `GlobalShippingProgram`. | `KeyFactory(listingId)`. | GraphQL has no local write, event, TTL, or cache path; strong reads allow Monstor retry, whose policy is unproven here. |
+| `PURCHASEVIEWGRAPHSVC` | Request-time COMS aggregation. | Listing ID and seller ID. | No provider persistence, refresh publisher, or cache for `listingPurchaseView`; its default lookback is 90 days. |
+| `SAPSVC` | External Monstor bulk endpoint with `SAP_INTERNAL` key type. | Normalized item ID. | No provider-local storage, write, event, TTL, or retry path; dynamic-aspect configuration is refreshable. |
+| `SELLERPORTALSVC` | Provider `ItemGroupDataObject` DAO; physical store is unproven. | Listing ID and SKU. | Listing workflows update provider records and refresh ULP: synchronous sends have three total attempts; async sends have an initial attempt plus up to three retries. |
+| `SELLERRISKENTITYSVC` | NuDocument/Monstor `DelayedItem`, `__ROOT__`. | Listing ID. | REST upsert asynchronously emits `ITEM_REVISED`; no local retry, TTL, or cache is established. |
+| `SEOCORELABSVC` | NuKV `seocorelabcachenukvhost` cache. | Listing ID, including parent listing ID for `Item`. | No local cache writer; a protected endpoint only emits feature-gated refresh and has no retry. |
+| `SLRINVSVC` | `SKUStatusDAO` / `SKUStatus` DAL entity; physical database is unproven. | Seller legacy user ID and listing ID. | Inventory write paths can send default-disabled, asynchronous `ITEM_REVISED`; callback failures are logged without retry. |
+| `SVLS` | Authenticated CLS HTTP read. | Listing ID; a separate item path is also available. | No provider-local store, ULP refresh publisher, or DataLoader cache; the CLS client config sets `maxRetryCount=2`. |
+| `ITEMCOMPATIBILITYSVC` | NuData/Monstor `ItemCompatibility`; history uses separately configured `FPAListingHistory`. | Item/listing ID with marketplace-specific rows. | Refresh/mutation paths can persist Fitment-derived data and emit `ITEM.REVISED` or backfill; broker retry is runtime-configured and disabled in checked-in configuration. |
+| `VEHENTSVC` | NuData `MotorsVehicleHistoryReports` and `MotorsPartnerData`, with CATY fallback for history. | History key is `vin + sellerId + siteId + attrId`; verification uses listing ID. | Vehicle writes can refresh ULP; verification records have a 90-day TTL. Callback delivery failures are logged. |
+| `PICKUPELIGIBILITY` | Request-time ULOS seller-offer state and legacy listing conversion; optional `PickupEligibility` NuDocument comparison. | Listing context plus seller/program-commitment identity. | Event-driven flows can refresh ULP; a separate commitment cache has a 3,600-second lifetime but is not proven to serve the GraphQL evaluation path. |
+| `EGDSELLERMGMT` | Monstor/NuData `EbayGuaranteedDelivery`, `__ROOT__`. | Listing ID. | REST create/update/delete changes synchronously refresh ULP; store calls use strong consistency with client retry enabled and a 5,000 ms configured timeout. |
+| `MDMLUSVCIO` | NuKV `ItemSellerDiscount`; selected MSKU recovery reads SaleBo and SME markdown data. | Listing ID, including for variation items. | Backfill can write NuKV; succeeded markdown/markup changes can synchronously refresh ULP when the default-disabled flag is enabled. |
+| `DALASPROXYSOURCESVC` | Request-time external `POST /dalas/v3/plugin-orchestrations/{listingId}`. | Listing ID and external `dalasUuid`. | No local persistence, event, cache, or retry loop; null-status and 5xx failures are classified retryable. |
+| `DALASPROXYSINKSVC` | Request-time external `POST /dalas/v3/immutable-append/{listingId}`. | Listing ID, source container, base GUID, and external UUID. | No local persistence, event, cache, or retry loop; null-status and 5xx failures are classified retryable. |
+| `DALASUUIDPROVIDERSVC` | Locally generated `GuidGenerator` value. | Federation listing ID is validated but not used to generate the GUID. | No database, external source, cache, event, or retry path; values are not stable across separate resolutions. |
+
+The detailed provider analyses below contain output-schema facts and the
+source artifacts supporting this catalog. Their storage statements are scoped
+to the checked-out implementation and do not replace an owning service's
+operational database or event contract.
 
 ### Provider output schemas
 
@@ -398,8 +452,8 @@ schema.
 `itemCountryOfOrigin` is excluded from `publicapi` and `sandbox`; its
 single-SKU and variation implementations require core seller-product,
 aspect, and marketplace data. The energy-efficiency containers are
-public-tagged; their concrete listing implementations require core listing
-product, category, regulatory, seller, and marketplace fields.
+public-tagged in this provider schema, but the checked-out ULP mappings do not
+establish them as `CMPLREGULATORYSVC` current-listing group output.
 
 | Provider output field | Type | Description |
 | --- | --- | --- |
@@ -669,9 +723,9 @@ single-SKU and variation fields require the seller's legacy user ID.
 #### SVLS
 
 SVLS is the broad core-listing read provider, rather than a narrow
-post-listing enrichment. Its schema contains 104 output object/interface
-types and 726 output-field definitions, while ULP maps 683 paths to the
-default `svls` group. The root-level inventory below keeps this page readable;
+post-listing enrichment. Its broad schema and ULP's default `svls` group are
+separate inventories whose counts must be regenerated from the current source.
+The root-level inventory below keeps this page readable;
 the core-listing section and
 `svls/svlsService/src/main/resources/schema/SvlsGraphQLSchema.graphqls`
 remain the authoritative detail for the nested contract.
@@ -714,7 +768,7 @@ in the schema for compatibility, but are deprecated in favor of
 
 | Provider output field | Type | Description |
 | --- | --- | --- |
-| `[ListingV2, SingleSkuListing, VariationListing].vehicleListingDetails` | `VehicleListingDetails` | Vehicle-listing enrichment; null for listings without vehicle data. |
+| `[ListingV2, SingleSkuListing, VariationListing].vehicleListingDetails` | `VehicleListingDetails` | Vehicle-listing enrichment. The resolver can return an object containing the listing ID even when nested vehicle data is absent. |
 | `vehicleListingDetails.vehicleHistoryReport` | `VehicleHistoryReport` | Available, purchasable, or unavailable vehicle-history-report information. |
 | `vehicleListingDetails.vehicleIdentifiers` | `[VehicleIdentifier!]` | Vehicle identifiers, such as a VIN, when available. |
 | `vehicleListingDetails.vehicleVerification.verified` | `Boolean!` | Whether uploaded seller vehicle documents passed verification. |
@@ -770,7 +824,7 @@ not fields in ULP's mapped current-listing selection.
 | `dalasEvaluation.dalasSource` | `DalasSourceEvaluation!` | First-phase plugin evaluation output; inaccessible because it is intended for DALAS plugins. |
 | `dalasSource.baseGuid` | `String` | Identifier supporting sequential evaluation, garbage collection, and ULP synchronization. |
 | `dalasSource.dalasEntityContainerSource` | `String!` | Base64-encoded first plugin-evaluation entity container. |
-| `dalasSource.dalasEntityContainerPreExisting` | `String` | Previously completed evaluation container when available; null for first-time evaluations. |
+| `dalasSource.dalasEntityContainerPreExisting` | `String` | Declared container for a prior evaluation. The checked-in successful source path does not populate it. |
 
 The concrete listing `dalasUuid` prerequisite is `@external`; source-provider
 ownership is limited to `dalasEvaluation` and its source-phase fields.
@@ -789,7 +843,7 @@ The sink consumes `dalasUuid`, `dalasSource`, and source-container fields as
 
 | Provider output field | Type | Description |
 | --- | --- | --- |
-| `[ListingV2, SingleSkuListing, VariationListing].dalasUuid` | `String!` | DALAS-generated evaluation UUID used to determine the evaluation or commit path; excluded from `publicapi`. |
+| `[ListingV2, SingleSkuListing, VariationListing].dalasUuid` | `String!` | DALAS evaluation UUID generated at resolution time. The generator does not derive it from the listing ID; excluded from `publicapi`. |
 
 ### Provider implementation analyses
 
@@ -816,11 +870,13 @@ refresh event. Federation entity fetchers read the listing document; item
 lookup derives a listing ID and finds the requested entry in `items`.
 
 **Storage, errors, and boundary.** The provider stores its owned document in
-NuData/Monstor. Single reads request strong consistency, while multi-get does
-not use that option. Database exceptions are mapped to typed provider errors;
-the refresh helper logs send failures without a local retry. Its data is
-ULP-only relative to CLS core NuDoc, even though this provider also uses
-NuData.
+NuData/Monstor `BasicListingData`, `__ROOT__`, keyed by listing ID. Items are
+stored within that document by item ID. Single reads request strong
+consistency, while multi-get does not use that option. Database exceptions are
+mapped to typed provider errors; both listing and counter changes can emit
+asynchronous refresh, whose send failures are logged without a local retry.
+Its data is ULP-only relative to CLS core NuDoc, even though this provider also
+uses NuData.
 
 **Evidence.** `basiclistingdata/src/main/resources/schema/basiclistingdata.graphqls`,
 `schema/watchcount.graphqls`, `graphql/mutation/ListingDataMutation.java`,
@@ -835,19 +891,20 @@ and related compliance state. It exposes
 an `itemCountryOfOrigin` query that accepts listing/product/category/site and
 seller-cleared COO inputs.
 
-**Core logic and lifecycle.** The direct query uses `COOQueryHandler`, which
-selects cache-first, vendor, seller-cleared, vector-search, or non-production
-mock paths. Federated listing reads are cache-only through `COOEntityHandler`.
-`COOVendorService` calls VMP when needed; `COOVectorService` embeds text,
-searches a NuDoc vector index, and calculates confidence from top similarity
-and consensus. Clearing COO writes an event and emits ULP `ITEM_REVISED`.
+**Core logic and lifecycle.** Federated listing reads are cache-only through
+`COOEntityHandler`. The direct query defaults to cache-only mode; its vendor
+mode emits a Zonos request event rather than calling VMP synchronously.
+Vector search is an optional REST vendor-fetch path, not a federated listing
+read. Clearing COO writes an event and emits ULP `ITEM_REVISED`.
 
-**Storage, errors, and boundary.** COO cache entries are stored in the
-`CountryOfOrigin` NuDoc keyspace with soft/hard deletion and a three-day
-expiry. Vendor rate-limit and authorization failures are explicitly handled,
-and the Zonos event producer retries once. This is provider-owned enrichment,
-not CLS core listing NuDoc; the source does not establish external VMP or
-vector-index behavior.
+**Storage, errors, and boundary.** COO records are stored in the
+`CountryOfOrigin` NuDoc keyspace under a Base64
+`identifierType|identifierValue` root key; audit entries use the `audit`
+docset. The three-day expiry applies to soft-deleted records rather than all
+active COO values. Vendor rate-limit and authorization failures are explicitly
+handled. This is provider-owned enrichment, not CLS core listing NuDoc; the
+source does not establish external VMP, vector-index, or single-system
+ownership behavior.
 
 **Evidence.** `cmplregulatorysvc/src/main/resources/schema/countryOfOrigin.graphqls`,
 `schema/listing.graphqls`, `graphql/countryoforigin/CountryOfOriginDataFetcher.java`,
@@ -870,12 +927,16 @@ reads `connectedProduct.*` from its NuDocument representation, maps it to
 update, retrieve, or remove provider-owned modules. Modified updates and
 deletes synchronously send `ITEM_REVISED` through the ULP event producer.
 
-**Storage, errors, and boundary.** The repository supports partial module
-updates and no-op detection before it persists the full provider document.
+**Storage, errors, and boundary.** The repository stores provider-owned data
+in `ConnectedProductsULPData`, `__ROOT__`, keyed by item ID; the listing ID is
+federation and refresh context, not part of the persistence key. It supports
+partial module updates and no-op detection before it persists the full
+document. Changed REST writes/deletes send synchronous `ITEM_REVISED` only
+when `shouldPublishToULP` is enabled; no retry, TTL, or local cache is shown.
 It normalizes provider failures into typed GraphQL errors. This is
 provider-owned NuDocument data, not a CLS core docset. Its checked-in
-build-time GraphQL generation and runtime mapping explain that the source
-can expose the field even though the `unilistingsvc` generated mapping has no
+build-time GraphQL generation and runtime mapping explain that the source can
+expose the field even though the `unilistingsvc` generated mapping has no
 local `CONNECTEDPRODUCTSULP` entry; deployed availability still requires
 schema/configuration confirmation.
 
@@ -900,11 +961,12 @@ maps stored values, including epoch milliseconds, to GraphQL. When disabled,
 it uses `FakeDealFetcher`.
 
 **Storage, errors, and boundary.** A missing document becomes
-`isDailyDeal=false`; other Monstor errors become retryable provider errors
-with listing and service context. The provider refreshes configuration from
-`dealsgraphcfg`; the inspected read path has no TTL, event publisher, or
-provider-local cache. Deal state is separate from CLS core listing NuDoc,
-although it is keyed by the core listing ID.
+`isDailyDeal=false`; invalid numeric IDs and omitted results do as well.
+Other Monstor errors become typed, non-retryable provider errors with listing
+and service context. The provider refreshes configuration from
+`dealsgraphcfg`; the inspected read path has no local write, retry, TTL, event
+publisher, or provider-local cache. Deal state is separate from CLS core
+listing NuDoc, although it is keyed by the core listing ID.
 
 **Evidence.** `dealsgraph/src/main/resources/schema/listingDailyDealDetails.graphqls`,
 `resource/DealsResource.java`, `dataloader/DealFlagsDataLoader.java`,
@@ -920,10 +982,12 @@ gateway-excluded `defaultUlpProvider` query and an illustrative
 `otherGroupField` demonstrates `@fieldGroup`; the repository also defines a
 shared `Photo` type.
 
-**Core logic and lifecycle.** Its sole data fetcher returns a hard-coded URL.
-There is no listing entity resolver, data service, persistence adapter, cache,
-or event-generation implementation in the inspected path. A test verifies
-normal GraphQL subselection validation only.
+**Core logic and lifecycle.** Its sole data fetcher returns a hard-coded
+string, despite the schema declaring an object output. There is no listing
+entity resolver, data service, persistence adapter, cache, or event-generation
+implementation in the inspected path. A test verifies normal GraphQL
+subselection validation only; it does not prove a valid object-subselection
+response.
 
 **Storage, errors, and boundary.** The schema defines general directives such
 as principal authorization, fallback, and event-generation controls, but this
@@ -950,11 +1014,13 @@ layer does not calculate eligibility. A separate
 public-namespace program properties.
 
 **Storage, errors, and boundary.** The provider reads the
-`ebaypluslistingeligibilitynukvhost` keyspace, warming up and cleaning up
-NuKV client state at application start/stop. Missing IDs and NuKV failures
-become `ListingLogisticsDataFetcherException` and emit monitoring counters.
-No TTL, invalidation, or event publisher was found in the GraphQL path.
-This is shipping-program enrichment, not a CLS NuDoc mapping.
+`ebaypluslistingeligibilitynukvhost` keyspace by decimal listing ID, warming
+up and cleaning up NuKV client state at application start/stop. Missing IDs
+and NuKV failures become `ListingLogisticsDataFetcherException` and emit
+monitoring counters. The DAO configures no expiry. Although the GraphQL path
+does not publish events, evaluation writes upsert the same entity and send
+`ITEM_REVISED` up to three times; refresh-send failures are logged. This is
+shipping-program enrichment, not a CLS NuDoc mapping.
 
 **Evidence.** `ebaypluseligibilitysvc/ebaypluseligibility-lib/src/main/resources/schema/ebaypluseligibility.graphqls`,
 `EbayPlusDataFetcher.java`, `EbayPlusDataLoader.java`,
@@ -975,13 +1041,15 @@ batch-load the two outputs using request-scoped user/site context.
 discrepancies, and maps the result to GraphQL DTOs. This establishes a
 consumer view of a visibility calculation, not a binary checkout decision.
 
-**Storage, errors, and boundary.** IVF dual-writes Caty and NuData while Caty
-remains its source of truth. It uses eventual NuData read consistency,
-retries storage operations, handles not-found as empty, and can recover an
-optimistic-lock conflict when a reread matches. A visibility change, or a
-missing incoming ULP summary, can publish an `ITEM_REVISED` cache refresh.
-The source proves ULP core-data enrichment but does not identify a CLS NuDoc
-docset.
+**Storage, errors, and boundary.** IVF stores the `LvfVisibilityStorage`
+`__ROOT__` document by decimal item/listing ID. It dual-writes Caty and NuData
+while Caty remains its source of truth during the checked-in migration. It uses
+eventual NuData read consistency, retries storage operations, handles not-found
+as empty, and can recover an optimistic-lock conflict when a reread matches.
+A visibility change, or a missing incoming ULP summary, can asynchronously
+publish an `ITEM_REVISED` cache refresh. The source proves ULP core-data
+enrichment but does not identify a CLS NuDoc docset, a Caty physical schema, or
+a provider-document TTL.
 
 **Evidence.** `ItemVisibility/ItemVisibilityService/src/main/resources/api-graphql/schema.graphql`,
 `graphql/DataFetchers.java`, `BatchVisibilityLoader.java`,
@@ -1001,12 +1069,14 @@ key prefix. `EbayLiveMapper` makes the first live event the primary event,
 converts epoch milliseconds to UTC, and applies an orphan-listing
 compatibility rule to `purchasable`.
 
-**Storage, errors, and boundary.** NuKV reads retry; not-found returns no
-provider data, while other response codes become retryable failures and typed
-GraphQL provider errors. `primaryEvent` is documented as eventually
-consistent cache data suited to high-throughput buyer-facing reads. The
-provider supports only single-SKU and variation listing types, and it has no
-CLS/NuDoc reference in the inspected source.
+**Storage, errors, and boundary.** The provider reads `EbayLive` JSON from
+the `cplivecommercenukvhost` cache under `i:<listingId>`. Reads make at most
+four attempts with 100 ms waits for configured retryable failures; not-found
+and terminal failures degrade to null provider data. `primaryEvent` is
+documented as eventually consistent cache data suited to high-throughput
+buyer-facing reads. The provider supports only single-SKU and variation
+listing types, and it has no local writer, refresh publisher, invalidator, or
+entry TTL in the inspected source. It also has no CLS/NuDoc reference.
 
 **Evidence.** `LC-ListingProvider/schema/ebayLive_provider.graphqls`,
 `ListingDataFetcher.java`, `ListingDataLoader.java`, `NuKvClient.java`,
@@ -1026,12 +1096,14 @@ reads `ListingLocations` from NuData, removes deleted documents, and maps
 each stored location to the GraphQL output. Batch reads are chunked at 100
 keys on a dedicated executor.
 
-**Storage, errors, and boundary.** REST writes and deletes upsert/delete
-NuData with up to five retries, publish an item-location BES event, and
-optionally publish `ITEM_REVISED` ULP cache refreshes. If a write fails, it
-rolls back the listing-extension flag; cache-refresh failures are
-fire-and-forget. This is provider-owned inventory-topology data keyed by
-ULP core identifiers; no CLS docset is identified.
+**Storage, errors, and boundary.** REST writes and deletes upsert/delete the
+`ListingLocations` `__ROOT__` NuData document keyed by concatenated seller ID,
+listing ID, and normalized SKU. They pass a `-1` TTL argument, retry NuData up
+to five times, publish an item-location BES event, and can publish
+default-disabled, fire-and-forget `ITEM_REVISED` ULP refreshes. If a write
+fails, it rolls back the listing-extension flag; cache-refresh failures do not
+retry. This is provider-owned inventory-topology data keyed by ULP core
+identifiers; no CLS docset or NuData retention meaning for `-1` is identified.
 
 **Evidence.** `locnmappingsvc/src/main/resources/schema/locationMapping.graphqls`,
 `LocationMappingDataFetcher.java`, `LocationMappingDataLoader.java`,
@@ -1053,11 +1125,14 @@ Monstor keyspace. It normalizes the response for GraphQL, including a default
 GBP currency, two-decimal domestic-leg cost, and pipe-separated restricted
 country codes.
 
-**Storage, errors, and boundary.** Missing store data returns a
-`ShippingProgramEligibility` object with a null GSP payload. Exceptions are
-logged and surfaced through the GraphQL exception handler. The inspected
-GraphQL path has no provider-local cache, TTL, or event publisher. It reads
-NuData keyed by core listing ID but does not identify a CLS NuDoc document.
+**Storage, errors, and boundary.** The provider reads
+`GlobalShippingProgram` through `KeyFactory(listingId)` with strong
+consistency. Missing store data returns a `ShippingProgramEligibility` object
+with a null GSP payload. Exceptions are logged and surfaced through the
+GraphQL exception handler; the Monstor read allows retries, but this source
+does not set their count or backoff. The inspected GraphQL path has no
+provider-local cache, TTL, or event publisher. It reads NuData keyed by core
+listing ID but does not identify a CLS NuDoc document or the upstream writer.
 
 **Evidence.** `MarketplaceLogisticService/src/main/resources/schema/mpls.graphqls`,
 `graphql/MplsDataFetcher.java`, `graphql/MplsDataLoader.java`,
@@ -1075,16 +1150,19 @@ from `publicapi`.
 **Core logic and lifecycle.** `SaleSummaryDetailsDataFetcher` creates a
 request context from the selected GraphQL subfields and delegates to
 `SaleSummaryDetailsApplicationHandler`. The handler executes only the needed
-COMS/Cosmos tasks: one counts unique counterparties over the configured
-lookback and another pages orders to find the latest qualifying purchase or a
+COMS tasks: one counts unique counterparties over the configured lookback and
+another pages orders to find the latest qualifying purchase or a
 commitment-date fallback. The default lookback is 90 days, batch size is five,
-and the local retry limit is zero.
+and the local COMS-contract retry limit is zero. The separate
+`AuctionData.purchasedAsBin` handler uses Cosmos and is not evidence that
+`listingPurchaseView` does.
 
-**Storage, errors, and boundary.** This is a request-time aggregation rather
-than a provider cache. COMS timeouts/failures become sentinel responses, and
-retryable cases become typed GraphQL provider errors. No CLS/NuDoc
-implementation is referenced in the provider source; QA test synchronization
-with other stores is not evidence of a production data path.
+**Storage, errors, and boundary.** This is a request-time COMS aggregation
+keyed by listing and seller ID, rather than a provider cache or database.
+COMS timeouts/failures become sentinel responses, and retryable cases become
+typed GraphQL provider errors. No CLS/NuDoc implementation is referenced in
+the provider source; QA test synchronization with other stores is not evidence
+of a production data path.
 
 **Evidence.** `purchaseviewgraphsvc/PurchaseViewGraphLib/src/main/resources/schema/schema.graphqls`,
 `PurchaseViewGraphService/.../SaleSummaryDetailsDataFetcher.java`,
@@ -1106,11 +1184,13 @@ calls `/v1/monstorGetBulk`, reads the `ClassifierResult` payload, obtains
 dynamic-aspect names from the `df` namespace across annotators. The aspect
 configuration is refreshable through `sapeventprocessorcfg`.
 
-**Storage, errors, and boundary.** The inspected provider uses a DGS batch
-loader but has no explicit TTL, cache invalidation, or event publisher.
-Invalid item IDs produce typed bad-request errors; client/parse failures are
-logged and return null or an empty map. It reads SAP/Monstor classifier
-results and contains no CLS/NuDoc lineage.
+**Storage, errors, and boundary.** The provider uses a DGS batch loader and
+reads the external `/v1/monstorGetBulk` endpoint with `SAP_INTERNAL` key type;
+the checked-out source does not establish the physical Monstor store as a
+provider-owned source of truth. It has no provider-local write, TTL, cache
+invalidation, retry, or event publisher. Invalid item IDs produce typed
+bad-request errors; client/parse failures are logged and return null or an
+empty map. It contains no CLS/NuDoc lineage.
 
 **Evidence.** `sapsvc/src/main/resources/schema/sapitemdata.graphqls`,
 `graphql/datafetcher/SapItemDataFetcher.java`,
@@ -1131,13 +1211,15 @@ enrich from catalog, create or synchronize inventory/offers, and map
 item-group data to listing responses. Its DAO has batch reads and atomic
 item-group/item updates.
 
-**Storage, errors, and boundary.** Creation and synchronization update
+**Storage, errors, and boundary.** The ULP field is resolved from
+`ItemGroupDataObject` records keyed by listing ID and SKU; the checked-out DAO
+does not establish its physical store. Creation and synchronization update
 provider-owned state; creation rolls back offers, variation groups, and
-inventory items if it fails. ULP cache refresh can be synchronous or
-asynchronous with three attempts, while cache/IMS failures are logged and do
-not fail a completed creation. The checkout contains no explicit CLS or
-NuDoc reference, so its exact physical store and core-field lineage remain
-unverified.
+inventory items if it fails. Synchronous ULP refresh makes three total send
+attempts. Asynchronous refresh makes its initial attempt plus up to three
+retries; cache/IMS failures are logged and do not fail a completed creation.
+The checkout contains no explicit CLS or NuDoc reference, so its exact
+physical store and core-field lineage remain unverified.
 
 **Evidence.** `sellerportalsvc/src/main/java/com/ebay/sellerportal/app/graphql/SellerListingDataFetcher.java`,
 `ItemGroupDataLoader.java`, `dal/dao/ItemGroupDAO.java`,
@@ -1158,11 +1240,13 @@ and invoke `ListingSearchabilityRiskHoldDataLoader`. The loader reads
 original-index, log, and delay-period fields into the GraphQL projection.
 
 **Storage, errors, and boundary.** REST update paths whitelist the
-`DELAYED_ITEM_KEYSPACE` API, upsert NuDoc state through Monstor, and emit
-`ITEM_REVISED` for ULP refresh; deserialization and upsert errors are logged
-and surfaced. A null epoch is mapped to the loader's current time, so it must
-not be read as a source timestamp. This is provider-owned NuDocument risk
-state, not CLS core NuDoc.
+`DELAYED_ITEM_KEYSPACE` API, upsert `DelayedItem` `__ROOT__` documents by
+listing ID through Monstor, and asynchronously emit `ITEM_REVISED` for ULP
+refresh without a local retry. Deserialization and upsert errors are logged
+and surfaced, while the REST get path converts retrieval errors to HTTP 204.
+A null epoch is mapped to the loader's current time, so it must not be read as
+a source timestamp. This is provider-owned NuDocument risk state, not CLS core
+NuDoc.
 
 **Evidence.** `sellerriskentitysvc/src/main/resources/schema/schema.graphqls`,
 `ListingSearchabilityRiskHoldDataFetcher.java`,
@@ -1182,10 +1266,12 @@ image GUID to cached alt text. `PhotoAltTextLoader` bulk-reads the NuKV SEO
 cache. The mapper retains the first alt-text value for a GUID collision and
 returns the original photos without alt text when mapping/data load fails.
 
-**Storage, errors, and boundary.** A protected REST refresh endpoint is
-called after upstream alt text is written to NuKV. It emits `ITEM_REVISED`
-when the refresh feature and client allowlist permit it. The provider source
-has no explicit retry or persistence implementation beyond NuKV reads, and it
+**Storage, errors, and boundary.** The provider reads the
+`seocorelabcachenukvhost` NuKV cache by listing ID with a three-second loader
+timeout. A protected REST refresh endpoint emits `ITEM_REVISED` when the
+refresh feature and client allowlist permit it; the source does not establish
+that an upstream NuKV write precedes the request. The provider has no local
+NuKV writer, explicit retry, or persistence implementation beyond reads, and
 does not establish a CLS/NuDoc source for the photo itself.
 
 **Evidence.** `seocorelabsvc/src/main/resources/schema/photo-alt-text-schema.graphqls`,
@@ -1208,12 +1294,15 @@ executor. `ListingFlagsService` groups requests by seller, reads
 ship-to-home and AND for search hiding, then fills absent listings with null
 flags.
 
-**Storage, errors, and boundary.** The GraphQL path is read-through with no
-provider-local TTL/cache found. Invalid context and DAO errors become typed
-provider GraphQL errors. Separate inventory write paths can emit asynchronous,
-feature-flagged, fire-and-forget `ITEM_REVISED` cache refreshes; send failures
-are ignored after logging. The source has no CLS/NuDoc references, so only
-the federation relationship is established.
+**Storage, errors, and boundary.** The GraphQL path is read-through from
+`SKUStatusDAO`/`SKUStatus` by seller legacy user ID and listing ID; the
+physical database is not established. When aggregated ship-to-home is false,
+the provider forces `hideFromSearch=true`; an absent row remains null for both
+flags. Invalid context and DAO errors become typed provider GraphQL errors.
+Separate inventory write paths can emit default-disabled, asynchronous,
+fire-and-forget `ITEM_REVISED` cache refreshes; send failures are ignored
+after logging and do not retry. The source has no CLS/NuDoc references, so
+only the federation relationship is established.
 
 **Evidence.** `slrinvsvc/src/main/resources/schema/listingflags.graphqls`,
 `ListingFlagsDataFetcher.java`, `ListingFlagsDataLoader.java`,
@@ -1225,8 +1314,8 @@ the federation relationship is established.
 **Purpose and fields.** SVLS is the broad, read-only seller-view/core-listing
 provider. It reconstructs listing, item, seller-product, category, price,
 quantity, terms, fulfillment, lifecycle, variation, tax, regulatory, vehicle,
-and document data. It is the source-backed read boundary for the large
-default `svls` group, rather than a narrow provider enrichment.
+and document data. It is the source-backed listing-ID read boundary for the
+large default `svls` group, rather than a narrow provider enrichment.
 
 **Core logic and lifecycle.** Listing and federation fetchers batch IDs using
 a DataLoader with caching disabled, then call `ItemAndGroupProcessor` and
@@ -1238,14 +1327,14 @@ SVLS has no listing write path or ULP refresh publisher; its CLS clients have
 a configured maximum retry count of two.
 
 **Storage, errors, and boundary.** SVLS reads CLS over authenticated HTTP and
-does not directly access a NuData/NuDocument DAO. Failed ordinary batch
-records can be omitted, while bulk reads retain typed GraphQL error data,
-including listing identity and retryability. The source proves a direct
-service-level CLS relationship, but it does not identify the individual CLS
-NuDoc document that supplies each GraphQL field. The lack of a dedicated
-`_svls` query branch is expected for this baseline group; the schema's 726
-output-field definitions and ULP's 683 mapped paths are related inventories,
-not directly comparable counts.
+does not directly access a NuData/NuDocument DAO. Its DataLoader cache is
+disabled. Failed ordinary batch records can be omitted, while bulk reads retain
+typed GraphQL error data, including listing identity and retryability. The CLS
+client config sets `maxRetryCount=2`, but this does not prove an effective
+downstream retry policy. The source proves a direct service-level CLS
+relationship, but it does not identify the individual CLS NuDoc document that
+supplies each GraphQL field. The lack of a dedicated `_svls` query branch is
+expected for this baseline group.
 
 **Evidence.** `svls/svlsService/src/main/resources/schema/SvlsGraphQLSchema.graphqls`,
 `dgsgraphql/datafetcher/ListingDataFetcher.java`,
@@ -1272,14 +1361,17 @@ Service, construct or update notional-profile groupings, and persist the
 result. The current item-entity ULP path intentionally returns an empty
 compatibility item; it does not populate `compatibilityCatalogProduct`.
 
-**Storage, errors, and boundary.** Provider compatibility data, audit
-records, and listing history are separate from CLS core NuDoc. Category data
-uses an in-memory cache refreshed at the configured 24-hour interval; the
-compatibility documents have no local TTL. Successful changed fitment data
-can publish `ITEM.REVISED` or backfill events, with configurable sync/async
-send behavior and a two-second refresh timeout. The refresh consumer retries
-failed messages. Fitment timeout, throttle, and 5xx responses are retryable;
-an invalid compatibility type is retried only by mutation/refresh paths, not
+**Storage, errors, and boundary.** Provider compatibility documents use the
+`ItemCompatibility` NuData/Monstor keyspace, while listing history is
+separately configured as `FPAListingHistory`; both are distinct from CLS core
+NuDoc. Category data uses an in-memory cache refreshed at the configured
+24-hour interval; the compatibility documents have no local TTL. Successful
+changed fitment data can publish `ITEM.REVISED` or backfill events, with
+configurable sync/async send behavior and a two-second refresh timeout. The
+consumer requests broker retry on processing errors, but checked-in
+configuration disables message retries, so delivery behavior is runtime
+dependent. Fitment timeout, throttle, and 5xx responses are retryable; an
+invalid compatibility type is retried only by mutation/refresh paths, not
 normal ULP reads.
 
 **Evidence.** `itemcompatibilitysvc/src/main/resources/schema/schema.graphqls`,
@@ -1306,14 +1398,19 @@ falls back to Oracle CATY for missing, unparsable, or `NO_VHR` data. The
 independently selected `vehicleVerification` field reads a
 `VehicleVerificationDetails` NuDocument child record by listing ID.
 
-**Storage, errors, and boundary.** Vehicle-history writes can dual-write
-NuDocument and CATY, while vehicle verification writes a NuDocument record
-with a 90-day TTL. Both changed-write paths publish ULP refresh events.
-`UlpCacheRefreshPublisher` retries `ULPException` three times with a 500 ms
-delay; the core-context FGQL client retries only transport failures three
-times before returning no result. This is provider-owned vehicle data
-keyed from ULP core context, not a CLS document family. The source establishes
-the CATY fallback but not its external service semantics.
+**Storage, errors, and boundary.** Vehicle-history data uses
+`MotorsVehicleHistoryReports`, keyed by the concatenation of VIN, seller ID,
+site ID, and attribute ID; vehicle verification uses `MotorsPartnerData` and
+a `VehicleVerificationDetails` child record keyed by listing ID with a
+90-day TTL. Vehicle-history writes can dual-write NuDocument and CATY, while
+vehicle-verification writes NuDocument. Both changed-write paths publish ULP
+refresh events. `UlpCacheRefreshPublisher` has `maxRetries=2` with a 500 ms
+delay for thrown `ULPException`, but asynchronous producer-callback failures
+are logged rather than rethrown. The core-context FGQL client retries only
+transport failures three times before returning no result. This is
+provider-owned vehicle data keyed from ULP core context, not a CLS document
+family. The source establishes the CATY fallback but not its physical-store
+or external service semantics.
 
 **Evidence.** `vehentsvcService/src/main/resources/schema/VehicleHistoryReport.graphqls`,
 `graphql/VehicleHistoryReportDataFetcher.java`,
@@ -1341,14 +1438,16 @@ the rules. The result is true if any PUDO program is eligible; configured
 filtered sites return false.
 
 **Storage, errors, and boundary.** The GraphQL path is a request-time
-evaluation and does not write the Sale PUDO bit. Other event-driven listing
-flows can update that legacy `Sale.Flags12` bit and emit an asynchronous ULP
-`ITEM_REVISED` event when eligibility changes. ULOS uses Oracle records with
-an optional asynchronous NuDoc comparison, but this does not establish CLS
-NuDoc lineage. No provider-local TTL is present. Despite the schema
-documenting null for service failure, the loader maps many conversion and
-calculation failures to false; downstream consumers must not equate false
-with a definitive business ineligibility without error context.
+evaluation and does not write the Sale PUDO bit. ULOS persistence code
+establishes `USER_PROG_COMMITMENT` and `USER_PROG_ELIGIBILITY`, keyed by user
+ID and program-commitment ID; an optional `PickupEligibility` NuDocument
+client uses user/program-commitment keys. Other event-driven listing flows can
+update the legacy `Sale.Flags12` bit and refresh ULP. A separate commitment
+cache has a 3,600-second lifetime, but this source does not establish that it
+serves the GraphQL path or which store is authoritative during migration.
+Despite the schema documenting null for service failure, the loader maps many
+conversion and calculation failures to false; downstream consumers must not
+equate false with a definitive business ineligibility without error context.
 
 **Evidence.** `PickupEligibilityService/upcsService/.../schema/pickupeligibility.graphqls`,
 `graphql/datafetcher/EligibleForPudoDataFetcher.java`,
@@ -1372,13 +1471,15 @@ eligibility type. Separate listing-logistics operations create, merge, and
 delete these provider records; successful writes synchronously send an
 `ITEM_REVISED` ULP refresh.
 
-**Storage, errors, and boundary.** A missing document produces a null
-`ebayGuaranteedDelivery` object, while async loader failures also collapse
-to null. Write requests can enable Monstor retry and use a configured timeout;
-the source does not prove the active retry setting or count. Refresh-send
-failures are logged rather than rethrown, and no GraphQL-path cache or TTL is
-defined. This is provider-owned Monstor/NuData enrichment keyed by core
-listing ID, not a named CLS core NuDoc family.
+**Storage, errors, and boundary.** The provider stores
+`EbayGuaranteedDelivery` `__ROOT__` documents by listing ID. A missing
+document produces a null `ebayGuaranteedDelivery` object, while async loader
+failures also collapse to null. Write requests use strong-consistency Monstor
+calls, enable client retry, and set a 5,000 ms timeout; the source does not
+prove the retry count or backoff. Refresh-send failures are logged rather than
+rethrown, and no GraphQL-path cache or TTL is defined. This is provider-owned
+Monstor/NuData enrichment keyed by core listing ID, not a named CLS core NuDoc
+family.
 
 **Evidence.** `GuaranteedDeliverySellerManagement/egdsellermgmtService/.../schema/egd.graphqls`,
 `graphql/datafetcher/EbayGuaranteedDeliveryResolver.java`,
@@ -1402,13 +1503,14 @@ dates are written back to NuKV. SSKU items with no usable NuKV data return
 null. Other report/summary paths read SME markdown database data.
 
 **Storage, errors, and boundary.** Markdown detail/log/history data is
-provider-owned SME database state, while duration data is primarily NuKV;
-NuKV is not NuDoc. The ULP listing field has no local TTL. Per-item lookup or
-backfill failures become null. Markdown operations can publish
-`ITEM_REVISED`, but publication is feature-gated and disabled by the
-checked-in default. Listing Processing Service calls retry failed-system
-responses up to the configured limit. The SaleBo fallback is a legacy
-recovery path, not proof of CLS NuDoc ownership.
+provider-owned SME database state, while duration data is primarily the NuKV
+`ItemSellerDiscount` record looked up by listing ID; NuKV is not NuDoc. The
+ULP listing field disables DataLoader caching and limits batches to 10; no
+NuKV namespace or TTL is established. Per-item lookup or backfill failures
+become null. Markdown operations can publish `ITEM_REVISED`, but publication
+is feature-gated and disabled by the checked-in default. Listing Processing
+Service calls retry failed-system responses up to the configured limit. The
+SaleBo fallback is a legacy recovery path, not proof of CLS NuDoc ownership.
 
 **Evidence.** `mdmlusvcioLib/src/main/resources/schema/markdown.graphqls`,
 `graphql/datafetcher/PromoSaleDateDataFetcher.java`,
@@ -1436,11 +1538,12 @@ populate the schema's optional `dalasEntityContainerPreExisting` field on its
 successful source path.
 
 **Storage, errors, and boundary.** The repository proves an external DALAS
-POST, not DALAS persistence, event delivery, or source freshness. HTTP 5xx
-and network failures are retryable; 4xx and validation failures are not.
-Per-listing batch failures retain status/error information and are mapped to
-typed GraphQL errors. It consumes ULP core listing context but has no CLS
-client or NuDoc DAO.
+POST, not DALAS persistence, event delivery, or source freshness. It has no
+local HTTP retry loop; null-status and HTTP 5xx failures are classified
+retryable, while 4xx and validation failures are not. Per-listing batch
+failures retain status/error information and are mapped to typed GraphQL
+errors. It consumes ULP core listing context but has no CLS client or NuDoc
+DAO.
 
 **Evidence.** `dalasproxysourcesvc/src/main/resources/schema/schema.graphqls`,
 `resolver/DalasSourceEvaluationEntityResolver.java`,
@@ -1464,10 +1567,11 @@ the incoming source container to `dalasEntityContainerSink`, despite the
 schema describing the field as the final container.
 
 **Storage, errors, and boundary.** This is a request-time DALAS pipeline
-stage, not a CLS/NuDoc owner. It classifies HTTP 5xx and network failures as
-retryable and 4xx or malformed input as non-retryable, then surfaces typed
-GraphQL errors with per-listing status. The generated ULP branches for both
-DALAS groups intentionally include the composed nested
+stage, not a CLS/NuDoc owner. It has no local HTTP retry loop; null-status and
+HTTP 5xx failures are classified retryable, while 4xx or malformed input are
+non-retryable. It then surfaces typed GraphQL errors with per-listing status.
+The generated ULP branches for both DALAS groups intentionally include the
+composed nested
 `{ dalasStorageManifest listingId }` selection: aliases control generated
 query inclusion, not field ownership. `dalasproxysourcesvc` owns the
 listing-level parent, `dalasproxysinksvc` owns the manifest, `listingId` is
@@ -1494,10 +1598,11 @@ external service.
 
 **Storage, errors, and boundary.** The service has no writes, event flow,
 provider-local cache, TTL, persistence, or retryable downstream request. It
-generates at resolution time, so the source does not establish UUID stability
-across separate ULP requests. Validation failures are non-retryable bad-input
-errors; generic runtime errors become structured internal errors. It uses
-only listing ID and has no CLS/NuDoc data lineage.
+generates a fresh GUID at resolution time and ignores the validated listing ID
+when generating it, so the source does not establish UUID stability across
+separate ULP requests. Validation failures are non-retryable bad-input errors;
+generic runtime errors become structured internal errors. It has no CLS/NuDoc
+data lineage.
 
 **Evidence.** `dalasuuidprovidersvc/src/main/resources/schema/schema.graphqls`,
 `README.md`, `resolver/DalasUuidEvaluationEntityResolver.java`,
@@ -1524,7 +1629,7 @@ the inspected source proves.
 | `LCLISTINGPROVIDER` | NuKV `EbayLive` JSON cache. | Separate eventually consistent live-commerce state. |
 | `LOCNMAPPINGSVC` | NuData `ListingLocations` documents. | Separate inventory-topology data keyed by listing/SKU/seller. |
 | `MPLS` | `GlobalShippingProgram` Monstor/NuData records. | Separate shipping-program result keyed by listing ID. |
-| `PURCHASEVIEWGRAPHSVC` | Request-time COMS/Cosmos aggregation. | Separate purchase-view computation; no CLS/NuDoc path shown. |
+| `PURCHASEVIEWGRAPHSVC` | Request-time COMS aggregation for `listingPurchaseView`. | Separate purchase-view computation; no CLS/NuDoc path shown. |
 | `SAPSVC` | SAP classifier results read through Monstor. | Separate derived product/aspect enrichment. |
 | `SELLERPORTALSVC` | Provider item-group/item DAO and external inventory/catalog clients. | Core-field or physical-store lineage is not established. |
 | `SELLERRISKENTITYSVC` | `DelayedItem` NuDocument in `DELAYED_ITEM_KEYSPACE`. | Separate risk/searchability state. |
