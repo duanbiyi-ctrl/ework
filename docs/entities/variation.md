@@ -94,99 +94,99 @@ EAN(European Article Number) number of the SKU.
 
 GTIN(Global Trade Item Number) number of the SKU.
 
-**`incebyprdtdtail`** <span class="field-type">BOOLEAN</span>
+**`inc_eby_prdt_dtail`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether eBay product details are included for the SKU. Possible values: True = eBay product details are included, False = eBay product details are not included, Null = no value present / not populated.
 
-**`incstkphtourl`** <span class="field-type">BOOLEAN</span>
+**`inc_stk_phto_url`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the stock photo URL is included for the SKU. Possible values: True = stock photo URL is included, False = stock photo URL is not included, Null = no value present / not populated.
 
-**`bidsfl`** <span class="field-type">BOOLEAN</span>
+**`bids_fl`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU BIN activity on the listing has concluded . Possible values: True = SKU BIN activity concluded, False = SKU BIN activity not concluded, Null = no value present / not populated.
 
-**`buyerrstdsbld`** <span class="field-type">BOOLEAN</span>
+**`buyer_rst_dsbld`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether buyer restrictions are disabled for the SKU. Possible values: True = buyer restrictions are disabled, False = buyer restrictions are not disabled, Null = no value present / not populated.
 
-**`cndidnum`** <span class="field-type">INTEGER</span>
+**`cnd_id_num`** <span class="field-type">INTEGER</span>
 
 Stores the numeric condition ID for the SKU. This is the integer representation of the item condition and is used alongside conditionId and conditionDesc in the listing record.
 
-**`conditiondesc`** <span class="field-type">STRING</span>
+**`condition_desc`** <span class="field-type">STRING</span>
 
 Stores the condition description for the SKU. This field contains the human-readable description of the item condition when a textual condition description is present.
 
-**`conditionid`** <span class="field-type">STRING</span>
+**`condition_id`** <span class="field-type">STRING</span>
 
 Stores the condition identifier for the SKU. This field contains the condition enum value used for the listing, such as NEW,USED ,LIKE_NEW,GOOD,VERY_GOOD etc..
 
-**`creationmode`** <span class="field-type">STRING</span>
+**`creation_mode`** <span class="field-type">STRING</span>
 
 Stores the creation mode for the SKU. This field identifies how the listing was created, such as Add, Relist, or SellSimilar.
 
-**`ftmtid`** <span class="field-type">STRING</span>
+**`ftmt_id`** <span class="field-type">STRING</span>
 
-Stores the fitment ID associated with the SKU. This field is used in the listing's fitment/compatibility context and relates to parts compatibility or fitment data.
+Stores the fitment ID associated with the SKU. This field is used in the listing’s fitment/compatibility context and relates to parts compatibility or fitment data.
 
-**`gblidentifiers`** <span class="field-type">ARRAY</span>
+**`gbl_identifiers`** <span class="field-type">ARRAY</span>
 
 Stores the global product identifiers for the SKU. This field is modeled as a list of name/value pairs and can contain identifiers such as UPC, EAN, and ISBN.
 
-**`invntrytrkmthd`** <span class="field-type">STRING</span>
+**`invntry_trk_mthd`** <span class="field-type">STRING</span>
 
 Specifies the inventory tracking method for the SKU. This field determines whether inventory is tracked by SKU or by ItemID
 
-**`isbuyerresponsibleforshipping`** <span class="field-type">BOOLEAN</span>
+**`is_buyer_responsible_for_shipping`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the buyer is responsible for shipping for the SKU. This field is used for Motors shipping scenarios where the buyer pays or arranges shipping. Possible values: True = buyer is responsible for shipping, False = buyer is not responsible for shipping.
 
-**`iscreatedbysellsimilar`** <span class="field-type">BOOLEAN</span>
+**`is_created_by_sell_similar`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU was created using the Sell Similar flow. Possible values: True = created via Sell Similar, False = not created via Sell Similar.
 
-**`islistedwithnocontactviaemailsupport`** <span class="field-type">BOOLEAN</span>
+**`is_listed_with_no_contact_via_email_support`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU was listed in a format that does not support contacting the seller by email. Possible values: True = no contact-via-email support, False = email contact support is allowed.
 
-**`isrestrictedbidding`** <span class="field-type">BOOLEAN</span>
+**`is_restricted_bidding`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether bidding is restricted for the SKU. This field is used when the item requires pre-approved bidders. Possible values: True = restricted bidding is enabled, False = restricted bidding is not enabled.
 
-**`isrestrictedtobusinessuser`** <span class="field-type">BOOLEAN</span>
+**`is_restricted_to_business_user`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU is restricted to business users only. Possible values: True = restricted to business users, False = not restricted to business users.
 
-**`isselleronvacation`** <span class="field-type">BOOLEAN</span>
+**`is_seller_on_vacation`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether seller vacation hold applies to the SKU. This field is used to hide eligible items from buyer discoverability while the seller is on vacation. Possible values: True = seller vacation hold applies, False = seller vacation hold does not apply.
 
-**`itmonsale`** <span class="field-type">BOOLEAN</span>
+**`itm_on_sale`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU is on an active promotional sale. Possible values: True = the SKU is on an active promotional sale, False = the SKU is not on an active promotional sale, Null = legacy.
 
-**`itmrevsndt`** <span class="field-type">LONG</span>
+**`itm_revsn_dt`** <span class="field-type">LONG</span>
 
 Stores the item revision date for the SKU. This field is a bigint timestamp stored in epoch milliseconds.
 
-**`mngbyinv`** <span class="field-type">BOOLEAN</span>
+**`mng_by_inv`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU is managed by inventory. Possible values: True = managed by inventory, False = not managed by inventory.
 
-**`onhold`** <span class="field-type">BOOLEAN</span>
+**`on_hold`** <span class="field-type">BOOLEAN</span>
 
-Indicates whether the SKU is on hold. This field represents the listing's on-hold status. Possible values: True = on hold, False = not on hold.
+Indicates whether the SKU is on hold. This field represents the listing’s on-hold status. Possible values: True = on hold, False = not on hold.
 
-**`outofstockdt`** <span class="field-type">LONG</span>
+**`out_of_stock_dt`** <span class="field-type">LONG</span>
 
 Stores the out-of-stock date for the SKU. This field is a bigint timestamp stored in epoch milliseconds.
 
-**`prgspprtd`** <span class="field-type">ARRAY</span>
+**`prg_spprtd`** <span class="field-type">ARRAY</span>
 
 Stores the list of programs supported for the SKU.
 
-**`vehpkgid`** <span class="field-type">STRING</span>
+**`veh_pkg_id`** <span class="field-type">STRING</span>
 
 Stores the vehicle package ID associated with the SKU. This field is used for Motors listings.
 
@@ -194,23 +194,23 @@ Stores the vehicle package ID associated with the SKU. This field is used for Mo
 
 Stores the videos attached to the SKU listing. This field is modeled as an array of video structures, not a single value.
 
-**`epr_ecofee`** <span class="field-type">DOUBLE</span>
+**`epr_eco_fee`** <span class="field-type">DOUBLE</span>
 
 Specifies the Extended Producer Responsibility (EPR) eco fee for the SKU variation.
 
-**`epr_prddocid`** <span class="field-type">STRING</span>
+**`epr_prd_doc_id`** <span class="field-type">STRING</span>
 
 Stores the Extended Producer Responsibility (EPR) product document identifier associated with the SKU.
 
-**`epr_prdpkgid`** <span class="field-type">STRING</span>
+**`epr_prd_pkg_id`** <span class="field-type">STRING</span>
 
 Stores the Extended Producer Responsibility (EPR) product package identifier associated with the SKU.
 
-**`epr_prdcrid`** <span class="field-type">STRING</span>
+**`epr_prdcr_id`** <span class="field-type">STRING</span>
 
 Stores the Extended Producer Responsibility (EPR) producer identifier associated with the SKU.
 
-**`epr_shppkgid`** <span class="field-type">STRING</span>
+**`epr_shp_pkg_id`** <span class="field-type">STRING</span>
 
 Stores the Extended Producer Responsibility (EPR) shipment package identifier associated with the SKU.
 
@@ -218,187 +218,187 @@ Stores the Extended Producer Responsibility (EPR) shipment package identifier as
 
 Specifies the listing duration for the SKU, it can be null. and the value 'GTC' means 'GOOD TILL CANCEL'
 
-**`onfreeshipprtopromo`** <span class="field-type">BOOLEAN</span>
+**`on_free_ship_pr_to_promo`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU had standard free shipping before it was placed into a promotional free shipping sale. Possible values: True = the SKU was on standard free shipping prior to the promotional free shipping sale, False = it was not.
 
-**`onfreeshipsale`** <span class="field-type">BOOLEAN</span>
+**`on_free_ship_sale`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU is on a promotional free shipping sale. Possible values: True = the SKU is on a promotional free shipping sale, False = it is not.
 
-**`aplcbltoshp`** <span class="field-type">BOOLEAN</span>
+**`aplcbl_to_shp`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether sales tax is applicable to the shipping fee for the SKU/listing. Possible values: True = tax applies to shipping, False = tax does not apply to shipping.
 
-**`tax_rcgnzbsnsslrvat`** <span class="field-type">BOOLEAN</span>
+**`tax_rcgnz_bsns_slr_vat`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU/listing is recognized as a business seller for VAT purposes.It is a boolean field with values true or false.
 
-**`tax_thrdprttxctgcd`** <span class="field-type">STRING</span>
+**`tax_thrd_prt_tx_ctg_cd`** <span class="field-type">STRING</span>
 
 Stores the third-party tax category code for the SKU/listing.
 
-**`tax_vatpct`** <span class="field-type">DOUBLE</span>
+**`tax_vat_pct`** <span class="field-type">DOUBLE</span>
 
 Specifies the VAT percentage for the SKU/listing as a numeric tax rate.
 
-**`trdscp_intlstvsbl`** <span class="field-type">ARRAY</span>
+**`trd_scp_intl_st_vsbl`** <span class="field-type">ARRAY</span>
 
-Stores the list of international site visibility targets for the SKU/listing.
+Stores the list of international site visibility targets for the SKU/listing. T
 
-**`autaccptenbld`** <span class="field-type">BOOLEAN</span>
+**`aut_accpt_enbld`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether Best Offer auto accept is enabled for the SKU. Possible values: True = auto accept is enabled, False = auto accept is not enabled.
 
-**`bestofrtrms_autacptthrshprc_currency`** <span class="field-type">STRING</span>
+**`best_ofr_trms_aut_acpt_thrsh_prc_currency`** <span class="field-type">STRING</span>
 
 Specifies the currency code for the Best Offer auto-accept threshold price for the SKU.
 
-**`bestofrtrms_autacptthrshprc_value`** <span class="field-type">DOUBLE</span>
+**`best_ofr_trms_aut_acpt_thrsh_prc_value`** <span class="field-type">DOUBLE</span>
 
 Specifies the Best Offer auto-accept threshold price value for the SKU.
 
-**`autdclnenbld`** <span class="field-type">BOOLEAN</span>
+**`aut_dcln_enbld`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether Best Offer auto decline is enabled for the SKU. Possible values: True = auto decline is enabled, False = auto decline is not enabled.
 
-**`bestofrtrms_autdclnthrshprc_currency`** <span class="field-type">STRING</span>
+**`best_ofr_trms_aut_dcln_thrsh_prc_currency`** <span class="field-type">STRING</span>
 
 Specifies the currency code for the Best Offer auto-decline threshold price for the SKU.
 
-**`bestofrtrms_autdclnthrshprc_value`** <span class="field-type">DOUBLE</span>
+**`best_ofr_trms_aut_dcln_thrsh_prc_value`** <span class="field-type">DOUBLE</span>
 
 Specifies the Best Offer auto-decline threshold price value for the SKU.
 
-**`buyerrstrctns_minfdbkscore`** <span class="field-type">INTEGER</span>
+**`buyer_rstrctns_min_fdbk_score`** <span class="field-type">INTEGER</span>
 
 Specifies the minimum feedback score a buyer must have to be eligible to purchase the SKU when buyer restrictions are applied.
 
-**`buyerrstrctns_prchsrate_qntylmtperbyr`** <span class="field-type">INTEGER</span>
+**`buyer_rstrctns_prchs_rate_qnty_lmt_per_byr`** <span class="field-type">INTEGER</span>
 
 Specifies the maximum quantity of the SKU that a single buyer is allowed to purchase when buyer purchase-rate restrictions apply.
 
-**`qntylmtperbyr`** <span class="field-type">INTEGER</span>
+**`qnty_lmt_per_byr`** <span class="field-type">INTEGER</span>
 
 Specifies the maximum quantity of the SKU that a single buyer is allowed to purchase. This field is used to enforce per-buyer quantity limits for the listing.
 
-**`rstrctbid`** <span class="field-type">BOOLEAN</span>
+**`rstrct_bid`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether bidding is restricted for the SKU.
 
-**`rstrcttobsnsusr`** <span class="field-type">BOOLEAN</span>
+**`rstrct_to_bsns_usr`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU is restricted to business users only. When enabled, the listing is intended for business-buyer contexts rather than general consumer purchase.
 
-**`rstrctndate`** <span class="field-type">LONG</span>
+**`rstrctn_date`** <span class="field-type">LONG</span>
 
 Specifies the date associated with a restriction for the SKU. This field can be used to capture the effective, recorded, or applicable date of a buyer or listing restriction for downstream processing.
 
-**`unpaidtranthrsh_count`** <span class="field-type">INTEGER</span>
+**`unpaid_tran_thrsh_count`** <span class="field-type">INTEGER</span>
 
 Specifies the unpaid-transaction count threshold used for the SKU.
 
-**`byrrstrctdsbld`** <span class="field-type">BOOLEAN</span>
+**`byr_rstrct_dsbld`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether buyer restrictions are disabled for the SKU. When enabled, buyer-restriction rules are not enforced for the listing.
 
-**`cashondlvryfee_currency`** <span class="field-type">STRING</span>
+**`cash_on_dlvry_fee_currency`** <span class="field-type">STRING</span>
 
 Specifies the currency used for the cash-on-delivery fee applied to the SKU. This field identifies the monetary denomination for the COD fee amount.
 
-**`cashondlvryfee_value`** <span class="field-type">DOUBLE</span>
+**`cash_on_dlvry_fee_value`** <span class="field-type">DOUBLE</span>
 
 Specifies the cash-on-delivery fee amount applied to the SKU. This field stores the fee charged when the buyer selects cash on delivery as the payment method.
 
-**`dgtdlvlgsplsprt`** <span class="field-type">BOOLEAN</span>
+**`dgt_dlv_lgs_pl_sprt`** <span class="field-type">BOOLEAN</span>
 
 Flag to determine if the item can be delivered as a digital good
 
-**`ebaymgdshpng`** <span class="field-type">BOOLEAN</span>
+**`ebay_mgd_shpng`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether eBay Managed Shipping is enabled for the SKU.Possible values: True = eBay Managed Shipping is enabled, False = eBay Managed Shipping is not enabled, Null = no value present / not populated.
 
-**`freeshipavail`** <span class="field-type">BOOLEAN</span>
+**`free_ship_avail`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether free shipping is available for the SKU.Possible values: True = free shipping is available, False = free shipping is not available.
 
-**`gsplgstcplnsprtd`** <span class="field-type">BOOLEAN</span>
+**`gsp_lgstc_pln_sprtd`** <span class="field-type">BOOLEAN</span>
 
 Flag to indicate if the item is listed using an Intermediated Shipping enabled business profile
 
-**`ispulgstcplsprt`** <span class="field-type">BOOLEAN</span>
+**`ispu_lgstc_pl_sprt`** <span class="field-type">BOOLEAN</span>
 
 Flag to determine if an item is eligible for pickup in store or not
 
-**`mfulfillmentsprt`** <span class="field-type">BOOLEAN</span>
+**`m_fulfillment_sprt`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether managed fulfillment is supported for the SKU.Possible values: True = managed fulfillment is supported, False = managed fulfillment is not supported, Null = no value present / not populated.
 
-**`mgdshpngcstpdby`** <span class="field-type">STRING</span>
+**`mgd_shpng_cst_pd_by`** <span class="field-type">STRING</span>
 
 Specifies who(Buyer vs Seller) pays the managed shipping cost for the SKU. It can be null. This field is part of the managed shipping or fulfillment terms and is stored as a managed-shipping-cost-paid-by .
 
-**`mgdshpngoptin`** <span class="field-type">BOOLEAN</span>
+**`mgd_shpng_optin`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether managed shipping is opted in for the SKU.Possible values: True = managed shipping is opted in, False = managed shipping is not opted in, Null = no value present / not populated.
 
-**`ovrridshipoptn`** <span class="field-type">ARRAY</span>
+**`ovrrid_ship_optn`** <span class="field-type">ARRAY</span>
 
 Stores the list of override shipping options for the SKU. It is used when the seller overrides the flat shipping costs in the Business Policies shipping profile for domestic or international shipping services.
 
-**`pkgspec_depth`** <span class="field-type">DOUBLE</span>
+**`pkg_spec_depth`** <span class="field-type">DOUBLE</span>
 
 Specifies the package depth for the SKU. This field stores the depth component of the shipping package dimensions associated with the SKU and is part of the package-dimension structure used to define a shipping package.
 
-**`pkgspec_length`** <span class="field-type">DOUBLE</span>
+**`pkg_spec_length`** <span class="field-type">DOUBLE</span>
 
 Specifies the package length for the SKU. This field stores the length component of the shipping package dimensions associated with the SKU and is used together with width and depth to define the full package size for shipping-related processing.
 
-**`pkgspec_width`** <span class="field-type">DOUBLE</span>
+**`pkg_spec_width`** <span class="field-type">DOUBLE</span>
 
 Specifies the package width for the SKU. This field stores the width component of the shipping package dimensions associated with the SKU and is used together with length and depth as part of the package specification for shipping.
 
-**`irregularpackage`** <span class="field-type">BOOLEAN</span>
+**`irregular_package`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the shipping package for the SKU has an irregular or non-standard shape. Possible values: True = the package has an irregular shape, False = the package does not have an irregular shape.
 
-**`unitofmeasure`** <span class="field-type">STRING</span>
+**`unit_of_measure`** <span class="field-type">STRING</span>
 
 Specifies the unit of measure associated with the SKU. This field identifies the measurement unit used to interpret related quantity, weight, dimension, or package-specific values stored for the SKU.
 
-**`pkgspec_majorweight`** <span class="field-type">DOUBLE</span>
+**`pkg_spec_major_weight`** <span class="field-type">DOUBLE</span>
 
 Specifies the major weight component of the package specification for the SKU. This field stores the higher-order weight value used in package definition, typically representing the primary weight unit for shipment calculation.
 
-**`pkgspec_minorweight`** <span class="field-type">DOUBLE</span>
+**`pkg_spec_minor_weight`** <span class="field-type">DOUBLE</span>
 
 Specifies the minor weight component of the package specification for the SKU. This field stores the lower-order weight value used along with the major weight component to represent the complete package weight for the SKU.
 
-**`pymtplcyid_plcyvrsn`** <span class="field-type">STRING</span>
+**`pymt_plcy_id_plcy_vrsn`** <span class="field-type">STRING</span>
 
 Stores the version of the payment business policy used for the SKU. This helps identify which version of the payment policy was associated with the listing record.
 
-**`pymtplcyid_policyid`** <span class="field-type">STRING</span>
+**`pymt_plcy_id_policy_id`** <span class="field-type">STRING</span>
 
 Stores the identifier of the payment business policy associated with the SKU.
 
-**`rtrnsplcyid_plcyvrsn`** <span class="field-type">STRING</span>
+**`rtrns_plcy_id_plcy_vrsn`** <span class="field-type">STRING</span>
 
 Stores the version of the returns business policy used for the SKU. This helps identify which version of the returns policy was associated with the listing record.
 
-**`rtrnsplcyid_policyid`** <span class="field-type">STRING</span>
+**`rtrns_plcy_id_policy_id`** <span class="field-type">STRING</span>
 
 Stores the identifier of the returns business policy associated with the SKU.
 
-**`shipplcyid_plcyvrsn`** <span class="field-type">STRING</span>
+**`ship_plcy_id_plcy_vrsn`** <span class="field-type">STRING</span>
 
 Stores the version of the shipping business policy used for the SKU. This helps identify which version of the shipping policy was associated with the listing record.
 
-**`shipplcyid_policyid`** <span class="field-type">STRING</span>
+**`ship_plcy_id_policy_id`** <span class="field-type">STRING</span>
 
 Stores the identifier of the shipping business policy associated with the SKU.
 
-**`galldurtn`** <span class="field-type">STRING</span>
+**`gall_durtn`** <span class="field-type">STRING</span>
 
 Specifies the gallery duration for the SKU listing. This captures how long the gallery enhancement is applied; example values may include Days_7,Lifetime etc..
 
@@ -456,7 +456,7 @@ Indicates the number of items in the lot for the SKU. A lot is a set of two or m
 
 **`owner`** <span class="field-type">LONG</span>
 
-Seller's Oracle user ID associated with the SKU. This is the internal user identifier for the seller and can be used as a foreign key to user LDM.
+Seller’s Oracle user ID associated with the SKU. This is the internal user identifier for the seller and can be used as a foreign key to user LDM.
 
 **`package_size_package_type_id`** <span class="field-type">INTEGER</span>
 
@@ -524,7 +524,7 @@ State or jurisdiction for which sales tax is collected for the SKU.
 
 **`gtc`** <span class="field-type">BOOLEAN</span>
 
-Indicates whether the SKU is a Good 'Til Cancelled (GTC) listing.Possible values: True = GTC listing, False = not a GTC listing.
+Indicates whether the SKU is a Good ’Til Cancelled (GTC) listing.Possible values: True = GTC listing, False = not a GTC listing.
 
 **`relist`** <span class="field-type">BOOLEAN</span>
 
@@ -542,11 +542,11 @@ Indicates the unit of weight for the SKU. Valid values are 1 = Ounces and 2 = Gr
 
 Appropriate SaleTypeEnum code for the SKU. Only fixed_price listings can have SKU variations
 
-**`prcguarantee`** <span class="field-type">BOOLEAN</span>
+**`prc_guarantee`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether the SKU has a price guarantee. This boolean field identifies whether the SKU is enrolled in a price-guarantee or price-protection condition. Possible Values True , False .
 
-**`itemqtypriceid`** <span class="field-type">STRING</span>
+**`item_qty_price_id`** <span class="field-type">STRING</span>
 
 Stores the identifier for the item quantity pricing associated with the SKU.
 
@@ -570,31 +570,31 @@ Lowest price at which the seller is willing to sell the SKU in an auction listin
 
 Start price for the SKU in listing currency. For fixed-price SKU, this is the Buy It Now price; for auction or Dutch listing, it is the opening bid price.
 
-**`daystofulpmt`** <span class="field-type">STRING</span>
+**`days_to_ful_pmt`** <span class="field-type">STRING</span>
 
 Specifies the number of days allowed for full payment for the SKU. This field defines the payment window within which the buyer is expected to complete the full payment after the purchase or commitment. It is used to enforce or track payment timing requirements for the listing.
 
-**`pmttrms_depamt_currency`** <span class="field-type">STRING</span>
+**`pmt_trms_dep_amt_currency`** <span class="field-type">STRING</span>
 
 Specifies the currency code for the deposit amount required for the SKU. This field identifies the currency in which the deposit amount is defined, ensuring that the deposit value is interpreted correctly in the payment terms. It should align with the currency used for the related payment or listing context.
 
-**`pmttrms_depamt_value`** <span class="field-type">DOUBLE</span>
+**`pmt_trms_dep_amt_value`** <span class="field-type">DOUBLE</span>
 
 Specifies the deposit amount required for the SKU as part of its payment terms. This field stores the monetary amount that must be paid upfront as a deposit. It is used together with the deposit currency and deposit timing fields to define the complete deposit requirement.
 
-**`deprqd`** <span class="field-type">BOOLEAN</span>
+**`dep_rqd`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether a deposit is required for the SKU. This boolean flag identifies whether the listing requires the buyer to pay an upfront deposit as part of the payment terms. A value of true means a deposit applies, while false means no deposit is required.
 
-**`hrstodep`** <span class="field-type">INTEGER</span>
+**`hrs_to_dep`** <span class="field-type">INTEGER</span>
 
 Specifies the number of hours allowed to make the deposit for the SKU. This field defines the deadline for the buyer to submit the required deposit after purchase or commitment. It is used along with the deposit amount and deposit-required flag to control deposit payment terms.
 
-**`pmtmthd`** <span class="field-type">ARRAY</span>
+**`pmt_mthd`** <span class="field-type">ARRAY</span>
 
 Stores the list of payment methods accepted for the SKU. This field is part of the payment terms in the business policy and is modeled as an array of PaymentMethod values, so it can contain multiple accepted payment methods for the same SKU rather than a single flag. Downstream boolean payment fields such as COD, CashInPerson, Discover, LoanCheck, MOCC, OtherOnlinePayments, PaymentSeeDescription, PersonalCheck, and VisaMC are derived by checking whether those values are present in pmtMthd.
 
-**`amex`** <span class="field-type">BOOLEAN</span>
+**`am_ex`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether American Express is accepted as a payment option for the SKU. Possible values: True = American Express is accepted, False = American Express is not accepted.
 
@@ -602,7 +602,7 @@ Indicates whether American Express is accepted as a payment option for the SKU. 
 
 Indicates whether Cash on Delivery is accepted as a payment option for the SKU. When this option is enabled, the buyer pays for the item at the time of delivery instead of paying in advance through an online payment flow. This field is used to identify whether the SKU supports COD as one of its available payment methods. Possible values: True = COD is accepted, False = COD is not accepted.
 
-**`codprepaydelivery`** <span class="field-type">BOOLEAN</span>
+**`codpre_pay_delivery`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether COD pre-pay delivery is enabled for the SKU. This field identifies whether the SKU supports the CODPrePayDelivery payment method as part of its listing payment terms. Possible values: True = COD pre-pay delivery is enabled, False = COD pre-pay delivery is not enabled.
 
@@ -610,41 +610,41 @@ Indicates whether COD pre-pay delivery is enabled for the SKU. This field identi
 
 Indicates whether Discover is accepted as a payment option for the SKU. Possible values: True = Discover is accepted, False = Discover is not accepted.
 
-**`loancheck`** <span class="field-type">BOOLEAN</span>
+**`loan_check`** <span class="field-type">BOOLEAN</span>
 
-Indicates whether Loan Check is accepted as a payment option for the SKU. Possible values: True = Loan Check is accepted, False = Loan Check is not accepted.
+ndicates whether Loan Check is accepted as a payment option for the SKU. Possible values: True = Loan Check is accepted, False = Loan Check is not accepted.
 
 **`mocc`** <span class="field-type">BOOLEAN</span>
 
-Indicates whether Money Order or Cashier's/Bank Check is accepted as a payment option for the SKU. Possible values: True = MOCC is accepted, False = MOCC is not accepted.
+Indicates whether Money Order or Cashier’s/Bank Check is accepted as a payment option for the SKU. Possible values: True = MOCC is accepted, False = MOCC is not accepted.
 
 **`other`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether other forms of payment are accepted as a payment option for the SKU. Possible values: True = other forms of payment are accepted, False = they are not accepted.
 
-**`otheronlinepayments`** <span class="field-type">BOOLEAN</span>
+**`other_online_payments`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether other online payments are accepted as a payment option for the SKU. Possible values: True = other online payments are accepted, False = they are not accepted.
 
-**`paymentseedescription`** <span class="field-type">BOOLEAN</span>
+**`payment_see_description`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether PaymentSeeDescription is accepted as a payment option for the SKU. Possible values: True = PaymentSeeDescription is accepted, False = PaymentSeeDescription is not accepted.
 
-**`paypal`** <span class="field-type">BOOLEAN</span>
+**`pay_pal`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether PayPal is accepted as a payment option for the SKU. Possible values: True = PayPal is accepted, False = PayPal is not accepted.
 
-**`postaltransfer`** <span class="field-type">BOOLEAN</span>
+**`postal_transfer`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether Postal Transfer is accepted as a payment option for the SKU. Possible values: True = Postal Transfer is accepted, False = Postal Transfer is not accepted.
 
-**`prepaydelivery`** <span class="field-type">BOOLEAN</span>
+**`pre_pay_delivery`** <span class="field-type">BOOLEAN</span>
 
 Indicates whether PrePayDelivery is accepted as a payment option for the SKU.Possible values: True = PrePayDelivery is accepted, False = PrePayDelivery is not accepted.
 
-**`visamc`** <span class="field-type">BOOLEAN</span>
+**`visa_mc`** <span class="field-type">BOOLEAN</span>
 
-Indicates whether Visa or MasterCard is accepted as a payment option for the SKU. This field maps to the VisaMC payment method in listing/payment policy terms, and internal payment method definitions describe VisaMC as "Visa/Mastercard." Possible values: True = Visa or MasterCard is accepted, False = Visa or MasterCard is not accepted.
+Indicates whether Visa or MasterCard is accepted as a payment option for the SKU. This field maps to the VisaMC payment method in listing/payment policy terms, and internal payment method definitions describe VisaMC as “Visa/Mastercard.” Possible values: True = Visa or MasterCard is accepted, False = Visa or MasterCard is not accepted.
 
 **`payment_cc`** <span class="field-type">STRING</span>
 
@@ -653,7 +653,6 @@ Indicates whether credit card payment is accepted as a payment method for the SK
 **`payment_moneyxfer`** <span class="field-type">STRING</span>
 
 Indicates whether direct money transfer is accepted as a payment method for the SKU. Values: "0"=no, "1"=yes, empty string=legacy records.
-
 <!-- END GENERATED VARIATION FIELDS -->
 
 ---
