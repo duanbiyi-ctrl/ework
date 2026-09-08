@@ -2,182 +2,210 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/faq/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/concepts/core-concepts/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/application/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/category/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/country/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/currency/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/item-business-process/</loc>
-         <lastmod>2026-08-18</lastmod>
-    </url>
-    <url>
-         <loc>https://yeqli.github.io/gds-item-docs/entities/item-nudata-write-flow/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/item/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemgroupkeyspace-group-business-policies/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemgroupkeyspace-group-description/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemgroupkeyspace-root/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-business-policies/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-item-compatibility/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-item-description/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-item-details/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-item-lock/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-item-qty-price/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-root/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/itemkeyspace-uuid-map/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingdraft-item-draft-compatibility/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingdraft-item-draft/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingdraft-item-group-draft-compatibility/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingdraft-item-group-draft-desc/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingdraft-item-group-draft/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingdraft-root/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingrevisionkeyspace-listing-revision-detail/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingrevisionkeyspace-listing-revision/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingrevisionkeyspace-root/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/listingrevisionkeyspace-variation-revision-detail/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/msku/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/product/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/site/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/ssku/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/user/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/userlistingdraft-user-item-draft-map/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/entities/variation/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/guides/migration-guide/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/guides/query-examples/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/reference/ldm-design/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/reference/ldm-modeling-principle/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/reference/ldm-review-notes/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/reference/review-created-ldms/</loc>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/reference/sample-data-schema-alignment/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/reference/ulp-listing-data/</loc>
+         <lastmod>2026-09-07</lastmod>
     </url>
     <url>
          <loc>https://yeqli.github.io/gds-item-docs/relationships/item_common_attribute_value_mapping/</loc>
-         <lastmod>2026-08-18</lastmod>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/spike/item-nudata-write-flow/</loc>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/spike/nudata-schema-analysis/</loc>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/wiki/Core_Listing_Service-NuData_V2_Database_Schema/</loc>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/wiki/ItemKeyspace/</loc>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/wiki/Listing_NuData_Design/</loc>
+         <lastmod>2026-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://yeqli.github.io/gds-item-docs/wiki/Oracle_Caty_Item_Tables_Migration_Guide/</loc>
+         <lastmod>2026-09-07</lastmod>
     </url>
 </urlset>
