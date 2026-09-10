@@ -1,0 +1,3853 @@
+{
+    "metadata": {
+        "id": "317811882364",
+        "operation": "Update",
+        "ulpListingVersionId": "63",
+        "customFields": {
+            "marketplaceId": "EBAY-US",
+            "numberOfItems": 1,
+            "listingFormat": "BIN",
+            "primaryLeafCategoryId": "261186"
+        }
+    },
+    "beforeChangePatch": "[{\"op\":\"replace\",\"path\":\"/listing/coreListingVersionId\",\"value\":\"1788536044273\"},{\"op\":\"replace\",\"path\":\"/listing/itemRevisionDate\",\"value\":\"2026-09-04T15:34:04.589Z\"},{\"op\":\"replace\",\"path\":\"/listing/items/0/sellerPrice/fixedPrice/original/amount\",\"value\":\"9.56\"},{\"op\":\"replace\",\"path\":\"/listing/items/0/itemTerms/pricingTerms/fixedPrice/original/value\",\"value\":\"9.56\"},{\"op\":\"replace\",\"path\":\"/listing/significantRevisionCount\",\"value\":41}]",
+    "afterchangeDocument": "H4sIAAAAAAAA/+1daXPbONL+KyrV+1G2BYq6XJV6izqtWNeIlD3JlstFi7DECUVqeTjRZvzftxuHDshnMrVjZ5CaoSQQ3Wg0HjS6AbL9PR/4SeqH8/zpd/m15+VP8yVSrRFSqxmlipkv5N1kRWdpkj/91/d86C4p1LChxHeDnJWmsX+TpTSBendukFGslm//ftTvNSbW5FP+6r6woRpnN4E/c1M/CnNDLNqlGX27jWIvNw39OxonfrrOjWOaJIVcL5xF8SqK3ZR6wO6qkF+68ReargJ3Rpm87Yb16WhqA7uEBgGNx3HkZbMUu0VXvoefeM2zLpXL+ftCfh5EN27Q82iY+rc+NLjbu57dGO7JVq/WiqRugFYqpsFlSP00wLrOguaE6MMsTmi8zjkxdZMMvpy5sTeLoDu5nhvmGnT2Bbh6NJnF/gqVAOSNKMJCP5wFmUdpw10L4Vs0df0AWk/jjL7BMQAWdB7FPhJ+z69iHwZl3eSF643GjQrgqIIKT9IopuNHqhGQIgPdMSDSuTtbT+EXG9sqMctm3ajl7++BC5DPKdcCvXHXPfw5jQOot0jTVXJ6cuIf4w1/OT+eRcuTYvEkORn+MVhftqZfB9aHDyf/ORnaM8ui9tfl0FtRt9k++b9rcvxx3P3/hKbXvvehVivCv3KxWAWp6LeUxiEg5YGWmCzHN19v2BgnrMGZFx7N5j6/efLV99LFB2BV+HfmBqDPDwS+3/rph1kUwviGJwCrE4DQEdf8kYDQkYTQ0R7yjv9YzUEmqIiqIjiqL9fCwPn0ddCZm4OWhVpo+AOmhW/J5K/XAjZ+0rhsXE/ta5tCXz0YdUa83wUDkSSwb6fR7Mt4EaXRdNKXsPdTumwCuc+ny3cJu3VvB10FDiIT5M0rJC0x2SI2wa+kgTi4zydjJ4qXMFkD/yYGeXOzaLU+zo2xfzkfhmuW5r766SK3ipLEvwlo7mvso808WfjzRQD/44/jXMMH5uE8l6RxBB+MZOmHUZz7St34ONfKkjT3hzsDE5acJNlqFdAlmKEkt3TXuTBKczc0J3TiHePMw2/JRio0fsA+Oc4xjeVWqLLcKo7ufEYg7IdkAaJzI7fmMvnQLgjRoCkMae4yigMvh0YoOc01sjX/CjJGuW4Uecegz5nW1Y/rSuAOTZcLwgvDKwxbuY7YvaFJOrq9pXE7dEFRcOvWDRK6c8Oh8ZJZWTdLI2s2o6tUreuy0oak2JZvKJwFWPJFFHjWMspCtjaC9Z77MKvZvMrimIYzMMn5qd2SiwL8Kh4X80z8Q05gzWdUZeQK9oywoPKVnFp0FvghPejG9tZfIa/K6ocEvt+sdev/5UoH6y3tc5/sAtdigRrwzOBfhRRJxSijuLBQMMBBQyhF0agcFcmRUXOK5dMSOTVrx2AWP+/UHEQe1rQ8Dw07GOoLNwvSzRDcZsGtHwQ4yza480BbqRu0aIB+wbofzVGwWTIO3NCGSRnF6c4gIs+BG4Ip8OyFv1oxB1NyjymVhdYdODg4/tLYc59M3n6mFT+0mZ5hjmarZ+ouuTSdbdcerSNbH4GdCzc3V2CB4C56XGwkASLzLHDjMS/fYfJHFF9SNG8bQDFzppQJfs56hUMxjEJ0w7LQh9k7YAs/FrfDOTjlC7gjfPOpWmHY7ffssy2/lg99Q6jgqN1vimXj37l8yCZ/WhSSiV8IuUT0fTPuN9maxhOarIAjGnGw+QcjSr/x1RvKnagfcQPHnMlGF+flcDSBa7/Xhqvz8RyuVuMSrs1PY7heWA5cBzbWGTRHcD0fWlhniLQ9dr0eIG1rNIDrGS+xsaTfxJqT0RSujT5CvG0jz+G4D1d7gDyn53h1WM1uH+92HeTTOMNo4byLVM0z5GbZWG5N8DrsNVGePsp25vSwzggl/9j+hBx6DeR/gSXdLpYMm9hio4dD8dFCDt0Jyjn+1EE+wy5y7uC176C0Y1bS/IztDpzfkEOf1Z9gi44zYj1Cyc8mF1inhdfpZ2zXchi3HtNSH0s6TPLGBL/3JijJuYX9anSRgzV1mGaYnodMbxdIe8moWkPsxdjCq3OOJeP+JdPAlLXL9DYdsPHCa+cjaqMzwXKbtT5hcde1hT1tDVj9CWrP/oj1bSaVM0X5mxOkHY9Qwgsm1eAce33RdNiI4/W8N2Gcsf5FF2n756ynTFfnDEtjC4Ozsyle7cs2wwPWGZz12WhieX/6O2rDwfJGm42Ow+pf4LXTw6szwmvPxrvdNur8so+9GE6mefAUF27oBTgbfBY3tdx1cm3k+SxRkN5qTzdauWbfp0yiboOPANPQJUM9yH61nWmjleQBK1qUpMIgdPpsWvhJL2R+N1bCxUpaozhaRrzsYDpKzi0/meG6Bh4O2DweJh+R/LaCTeM7WA15267H3RY3QHMgmTZBotcv77EbfoHg5EFFoVp2uv9jDSg9aPL1bJQuYFUtPNGVH3QkpHt5aOFwzIBjzGnz90rPfrA9pXtI81SPDyk4qPYrsTBrB0v2HgAP0NM8wKKKq0n2EKjGMQXvE7pHuav0BE5ZHPacF/SiWcGdhzcxKYwfmhVoGl46Kx5v4QmQ7CvsL5wjxksmCR9q2cqEznkAeTma9FuXvVb7ZyeO8WMzZ18pL5lGKsUPQaT8NEKMBxGiLBtPNkDeFELKr7Ki4Kf9JBjIuwLD42PF0VB6EA3oULwYDbW3hAbyukXVmv40HGrvCQ7m02gwH0QDOpkvRcObAoP5KixAMPCTWHhXUHh0pDgUyi+KQ15sJMzj8tvBRe1VuED/obBb0JmIgjD1Q8r6155ORuOf9jOYlv4GAD3nu3P/94257leP7Qz13SQdRB4eunq4aSnCa75xWTkyKrhxadZOi+S4WKngPsZNlsBAJsk4CvzZdie1appmyShVi6SGWt2vtT3YZb0RZQoVDO3OzmqpVKxVzHqZCIZetKS4p7ivbrYvpkN1HarrUF05sBDT/RnlN1qKuR6OlIJ+TylwPioF1qVS0PykFFxYSsHAVguaSsH5UG1FlbTHazwSzg56rVa/fd22bEeha6k9PHuSkT2aOmfI5tqye2o/+qrYE5V547NS0Fa7PhwrBfZAKZiqzTpqs12VR1ftdUNt9ryrjtqZqnGVxFIFG6rYGKjNnqkFzXOl4KPqMHRVprZK0lVFH6r6aKga+6iK3lXhNO6ofTlAoFqjr3ZufKBTdfQHv6mi91UeKlPnYCjV6XU2UVu5UBGkymGpklqq1i1VsI6qwkZDnZHqUJ6rzTYOmlU711Z5DNSCvtq5SxWnLRUwY7XAUfsyVm3YcKrKoQKmq9Y4V8elo1rKjjpQtqrCiWS69ZatzqTXVPHcOsDzAWu18YmqJkdVZFPlMVYxcHGgFVWzF2wqKoo5mNFqyxcqLvoqX0uF0vmBsKqOzlRh7faBcpl1v7YG7Qd0PFANYlO1CH21hd7BXFXR21Br2KpyOgcLrrqm9NSR7KqtXKqmajhhnszuIVori13x8FDL+mSzw7S/PsbbN0MHgqv4t6ZPrcU7e9T7A2M956e9NE7Qhxf68OL97Erpwwt9eKEPL/ThhT680IcX+vBCH178oocXe2+Y6f1/vf+v9/+fnzJhFA5+dtboaFhHw+/HzdHRsI6GdTSso2EdDetoWEfDOhr+ZaNhybhx8CTeS57NO9STjmT/EZGsNpfaXP4N6+1zkXtFR+46cn8SIVUduevIfYOGmo7cdeS+QUNdR+7vMHK/ui88leFSSXB0mB1oPzXRM9mIDm/v5A/yb/2Nbn/pTEJOdBYt6WOZmTDSvdf5/d5izjqtq9fn9+OwlGaTn3YyoylsEksBBLoCIyNKzErZxNATNENpankeJlqF8gFMVPer+8XFpKue74Yua3cn5IdZvGnnoepCmAm983EG72WGqx8Vaw6p4AuWBjmu18lnMaO4pcdvD9nHl2eZQw62moT3p5Pt6rSv+V8u7euK42MPFbxjO8h5QdpmqJTc4FTYx83Wp2nfPJxUGWqkseuncgbDWAHXdL2Tl9DYltpR4LG1TqaYFl7Lrf+NPpNYsn5cIQ97fPwxI7Zl68vdWn8GvxEI6ZLv4bBFna2qXzKcmrVyzayT8lGFzZrYZzPT2uSHviq8KK03LupoLbezCpyXFNyB/8m8erittzKzXqqJv2JuvVwTr0uqzCz5hCbpZHsYkL8jf+6C4E/pT/U8kWOUPmD8scI2BS2fHD7qHn+/aNIg1gSut6lsZwhbiXuo8fhEejSYYBPrwXnEji1S2dhDOU2fzwmKLHYTBJSJWTSL5VoVlj+cz5hh1nHnj1qr++1MRGfKxbncYJkHRWnfv6Wz9SxgHaahp6zUuLqabHWty9VVEO68SdV1mttyO3XTDJ0Iq+n0LjAzYhSesSGQ5z2zBfWygHrtl7QG3kqcPrrkb6qBLwhzETha6dP8mBdBd6s96EJ4GU+UTC2OkY302EsgT2zZi707O3rphZitcaOd3V4/JyPr8yMSikrbUHKbKFWnan4jqZplytoU6DdRtlq4m3+EjTSpMzhUHcM4hf+K1Q0W/QS73TjkKtQgLV3fX/rpmMasJvMToCMYbczWvXB/U2XjfSzg/hjgBpZx5e4hff+QGAzwBbjy0uj+6+qNRRuBtGMb9Gtj9v6M2WaN6vR+b7eux5Nes70djY5OCy4f1NBpwXVacJ0WXKcF12nB9RNa7/wJrXf6rpF+l0g/kfTPeiJJv0ukn0jS7xLpJ5L0u0S/yhNJ+uF4/XD8P+9doiudFlyH6jpU/+eE6jotuE4LvieHTgu+z0OnBd8v0GnB98dFpwXXacFV/ei04K+O8fbNkE4Lrg8v9OGFPrzQhxf68EIfXujDC314oQ8v9OGFPrx4bjNTpwXX+/96/1+nBdfRsI6GdTSso2EdDetoWEfDOhrW0bCOhv950bBkrNOC60hWpwXX5vJtr7c6LbiO3HVacB2567TgOnLXacF15O7qtOBvNi24kGfsrvcSTq347wFNF5Encp0+EmoaZrFSrddI8XXvge2R7b8IZtRqpUqxXq3IF8HoKkr8dEL/nfnxzqAuoixOnKjFb+dPjwjmL15Sz3dTCj2S4fx+H/f6BIF5FF/QhT8L6IbP91e0eL/V4YSmWRxuc3aJ19eU4pj95EkD5TgUROmYxn6EGmC5bkoIL34DcY+yQxcowoXnvttp+TYLPd4xuDsYDdufrhtW85wx2L8HAF03AEwb3upTwQ802wvvIpjk25bvlW2UX7SPT2yuGHVivv7FR0ml4t0sVSr1iiF3a1ZxNI/dZbIzXRGsqfttm/VyxbLd3QTUiQ52lWI6i+ah/x/Meie3jHiq8A6g3XK2209uQBPH/WY9xU1WcvD+NNkO6J0LM0S2tN+OTOwKQkdg1397MHftnZ+wDIALN5zxZPRsRysKPMdPg60pnrvIcj0Osm02yCS7SXmlfCemNDe1c3LxyP2Zw0znp7spqpkF1Sbuh02cTmD96yawfsTaxHo5+8X6+HctZy845JCV+lw7F08kA098WHDQhw9T+Yc3mjwCMg1luWGrDOY8nlBU+17KaF60MXvAzlJL799XkuMDWVu8tZ3EsKE3AdvGgDMcsVyUNIwjULzX4wniu5kLUXZKt4vvU6mT7wAbUbx2YgAnjNoGsb2ULvnTZfBlFNruzmIu8N8Uf+ekGfiI1jHfFiH1Y1IuHRM20KLmGRq6ZrQED8XFUeazT2SLbYA6hBTbO5tn4DCwalifrnmWZuhEyBEGfhGMddKiIFjMhH3gcdHNX7D4zlh60dcQqzI1SeAxPV4PrMl5a3Q5vLatPup0h0lnJ93unhqS1EWj7O1WANZR7ERjSb6FYcJseJM5SnvyJnTpj3GyQKfCtLGTMRecxV54G70rX/GOeyl2drP5+0h7vX2pw3gL2IKF0tvzGIUXKQL1Lv+VR4dnSfGvLXUE0UF2aIoWh8a4xbHcLMI29GOLGvSOYLYB6CR/UW3MzfYrvdVC/vo6BT7i7/bYIAVo5UsmrGOeaUJkKbezJcBzzV26WzcLUpbBHOr7KTvnLRaMQqlAygUDvlUKNVIgRfhdNAukVCmQKnyvw51irWAQ+CRmwTDg/3LpCj0PHGuQnO3IYCZz6km+V3xTgnrbjOk2mB4EQ774gZTrBYNdS+xqfiBGrVBm1wq7Vtm1xq51diVF/kH4h8E/SvyDMyBlxo1wFoTzIJwJ4VwM0TjnYnAuBudicC4Gl8Oo8Jqci8G5GJxLictS4lxKnEuJcylxLiXOpcTJS5y8xMlNTm5ycpOTm5zc5OQm74PJyU1ObnLyMicvc/IyJy9z8jJvtswJypygwgkqnKDCCSqcoMLbqwjl82YrvNkK51LhXKqcvMrJq5y8ysmrnLwqBg/IzXqhysmrnLxGmD5rnLzGyWucvMbJa5y8Jgafk9c4eZ33oS6Gvwg/SwhU+VvgocgBBQAWn2VRLjBRFKAoClQUBbgkniSgJKKIoJeYkqCSqDIEKg0JS8FHQIoITBEBKmIIPoakF+0LRBEBKVKS+BZ8BKqIgBVMTt4/gS8iAEYEwoiAGBEYIwJkxJQTRvAzBT+BNyIARwTiiMAaEWAjAm1EwI0IvJGyoC8L+rKkF/IICBIBMCIQRgS2SFXcFyAjAmWkKsZT4IwIoJGqnOOCj8AaEWAjNcFHwI0IvBEBOCKgRmrSSAi6OrcPROKsLujqon5d1K9LqyLNSlF8CsMi8GgUhWkpCtsi8GgIPBoCjwbiEa2NwKNBpJ0S/AQ+DYFPg5jivuAn8GkIfBoCn4Y0ewKnhjR1hqCXxk7g0pDmTto7gU9D4NIoSYsp+AhcGgKXRknwEbg0BC4NgUtD4NIQuDQELg1TmmDBT+DSELg0BC4NgUtDmEJD4NMQ+DQEPo0yx41RljZd8BM4NQRODYFTg+MUF1dYeecim/4486LtH1qRu1MizT7fQJceDDrCHXDNbOrGs8WObzZb0KUrIhZ0/48JOxjYW8LFyt1mxzj3/wXHRroVD8gAAA==",
+    "afterchangeDocumentPlain": {
+        "listing": {
+            "listingId": "317811882364",
+            "aspects": [
+                {
+                    "name": "Special Attributes",
+                    "values": [
+                        "EX-LIBRARY"
+                    ]
+                },
+                {
+                    "name": "Publication Name",
+                    "values": [
+                        "Oxford University Press, Incorporated"
+                    ]
+                }
+            ],
+            "marketplaceId": "EBAY-US",
+            "sellerProduct": {
+                "epid": {
+                    "id": "1882355"
+                },
+                "globalIdentifiers": [
+                    {
+                        "name": "ISBN",
+                        "values": [
+                            "9780192781642"
+                        ]
+                    }
+                ],
+                "title": "The Oxford Nursery Treasury Hardcover Ian Beck",
+                "description": "Book",
+                "includeeBayProductDetails": true,
+                "aspects": [
+                    {
+                        "name": "Special Attributes",
+                        "values": [
+                            "EX-LIBRARY"
+                        ]
+                    },
+                    {
+                        "name": "Publication Name",
+                        "values": [
+                            "Oxford University Press, Incorporated"
+                        ]
+                    }
+                ],
+                "categories": {
+                    "primaryCategory": {
+                        "id": "261186"
+                    },
+                    "storePrimaryCategory": {
+                        "id": "1",
+                        "user": {
+                            "legacyUserId": "71454928"
+                        }
+                    }
+                },
+                "images": [
+                    {
+                        "ebayImageUrl": "https://i.ebayimg.com/00/s/NjMyWDUwMA==/z/NScAAeSwmNdpeaCE/$_1.JPG?set_id=8800005007",
+                        "externalImageUrl": "https://images.bwbcovers.com/cdn-cgi/image/width=500,quality=100,fit=contain/019/The-Oxford-Nursery-Treasury-9780192781642.jpg",
+                        "order": 1
+                    },
+                    {
+                        "ebayImageUrl": "https://i.ebayimg.com/00/s/MTYwMFg4MDA=/z/BiMAAeSwxsRpeaCE/$_1.JPG?set_id=8800005007",
+                        "externalImageUrl": "https://images.bwbcovers.com/ebay/BWB_US_SecondaryImage.jpg",
+                        "order": 2
+                    }
+                ],
+                "includeStockPhotoURL": true,
+                "itemCondition": {
+                    "categoryId": "261186",
+                    "id": "4000",
+                    "itemConditionDescriptors": [],
+                    "sellerConditionDescription": "Former library copy. Pages intact with possible writing/highlighting. Binding strong with minor wear. Dust jackets/supplements may not be included. Includes library markings. Stock photo provided. Product includes identifying sticker. Better World Books: Buy Books. Do Good.",
+                    "conditionDescription": "Former library copy. Pages intact with possible writing/highlighting. Binding strong with minor wear. Dust jackets/supplements may not be included. Includes library markings. Stock photo provided. Product includes identifying sticker. Better World Books: Buy Books. Do Good.",
+                    "conditionDescriptors": []
+                }
+            },
+            "applicationId": "71596",
+            "bestOfferEnabled": false,
+            "bestOfferTerms": {
+                "autoAcceptEnabled": false,
+                "acceptBestOffer": false,
+                "autoAcceptThresholdAmount": {
+                    "original": {
+                        "currency": "USD",
+                        "value": "0.0"
+                    }
+                },
+                "autoAcceptThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "USD"
+                    }
+                },
+                "autoDeclineEnabled": false,
+                "autoDeclineThresholdAmount": {
+                    "original": {
+                        "currency": "USD",
+                        "value": "0.0"
+                    }
+                },
+                "autoDeclineThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "USD"
+                    }
+                }
+            },
+            "category": {
+                "primaryCategory": {
+                    "id": "261186"
+                },
+                "storePrimaryCategory": {
+                    "id": "1",
+                    "user": {
+                        "legacyUserId": "71454928"
+                    }
+                }
+            },
+            "coreListingVersionId": "1788886101625",
+            "creationDate": "2026-01-28T05:31:48.000Z",
+            "creationMode": "Add",
+            "ebayVault": false,
+            "fulfillmentTerms": {
+                "digitalDeliveryLogisticsPlanSupported": false,
+                "ebayManagedShipping": false,
+                "freeShippingAvailable": true,
+                "globalShippingLogisticsPlanSupported": false,
+                "inStorePickupLogisticsPlanSupported": false,
+                "managedFulfillmentSupported": false,
+                "managedShippingOptin": false,
+                "packageSpec": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "English",
+                    "listingUnitOfMeasure": "ENGLISH",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shippingTerms": {
+                    "buyerResponsibleForShipping": false,
+                    "excludeShipToLocations": [
+                        "BGD",
+                        "NOR",
+                        "LIE",
+                        "TJK",
+                        "ABW",
+                        "CYP",
+                        "VAT",
+                        "MSR",
+                        "MCO",
+                        "KNA",
+                        "AND",
+                        "IND",
+                        "_ME",
+                        "DOM",
+                        "HND",
+                        "_SE",
+                        "LCA",
+                        "ROU",
+                        "BLZ",
+                        "ESP",
+                        "NPL",
+                        "SMR",
+                        "UKR",
+                        "TCA",
+                        "GLP",
+                        "GTM",
+                        "BHS",
+                        "KGZ",
+                        "CHE",
+                        "ASM",
+                        "ARM",
+                        "NIC",
+                        "MLT",
+                        "HTI",
+                        "COK",
+                        "JEY",
+                        "GIB",
+                        "SVK",
+                        "GGY",
+                        "NCL",
+                        "BIH",
+                        "JAM",
+                        "GRD",
+                        "PYF",
+                        "MNG",
+                        "AFG",
+                        "LTU",
+                        "PNG",
+                        "CZE",
+                        "MTQ",
+                        "NLD",
+                        "PRT",
+                        "TTO",
+                        "BLR",
+                        "HRV",
+                        "MDV",
+                        "UZB",
+                        "ATG",
+                        "AIA",
+                        "ALB",
+                        "FSM",
+                        "BRB",
+                        "IRL",
+                        "KAZ",
+                        "BGR",
+                        "AUT",
+                        "EST",
+                        "MNE",
+                        "LVA",
+                        "WSM",
+                        "DNK",
+                        "PAK",
+                        "TKM",
+                        "PLW",
+                        "NIU",
+                        "MDA",
+                        "GUM",
+                        "CYM",
+                        "FJI",
+                        "FRA",
+                        "SLB",
+                        "RUS",
+                        "_AF",
+                        "DMA",
+                        "GRC",
+                        "SJM",
+                        "SRB",
+                        "TUV",
+                        "CRI",
+                        "POL",
+                        "VUT",
+                        "MKD",
+                        "VCT",
+                        "ANT",
+                        "KIR",
+                        "SLV",
+                        "VGB",
+                        "LKA",
+                        "AZE",
+                        "KOR",
+                        "PAN",
+                        "HUN",
+                        "SWE",
+                        "_SA",
+                        "MHL",
+                        "CHN",
+                        "LUX",
+                        "ITA",
+                        "BEL",
+                        "BTN",
+                        "SVN",
+                        "FIN",
+                        "TON",
+                        "ISL",
+                        "GEO",
+                        "WLF",
+                        "NRU"
+                    ],
+                    "handlingTime": "Days_2",
+                    "shipToLocations": [
+                        "DEU",
+                        "FRA",
+                        "_EU",
+                        "USA",
+                        "GBR",
+                        "AUS",
+                        "_WW",
+                        "CAN"
+                    ],
+                    "shippingOptions": [
+                        {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "USA"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "Other",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "US"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "Other"
+                                    },
+                                    "shippingServiceOptionCode": "Other"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "71454928"
+                                }
+                            }
+                        },
+                        {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "20.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "_WW"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "20.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "20.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "sellerShippingRegion": "WORLDWIDE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "20.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "5.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 2,
+                                    "shipToLocations": [
+                                        "CAN"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "10.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "5.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "CA"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "10.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "10.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 3,
+                                    "shipToLocations": [
+                                        "AUS"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "18.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "10.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "AU"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "18.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "4.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 4,
+                                    "shipToLocations": [
+                                        "GBR"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "8.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "4.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "GB"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "8.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "8.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 5,
+                                    "shipToLocations": [
+                                        "DEU",
+                                        "FRA",
+                                        "_EU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "14.5",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "8.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        },
+                                        {
+                                            "country": "FR"
+                                        },
+                                        {
+                                            "continent": "EUROPE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "14.5"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                }
+                            ],
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "71454928"
+                                }
+                            }
+                        }
+                    ],
+                    "excludeShipToLocationsLastModifiedDateTime": "2026-06-26T05:48:01.066Z",
+                    "businessPolicy": {
+                        "id": "74443237018"
+                    },
+                    "businessPolicyIdentifier": {
+                        "policyId": "74443237018",
+                        "versionId": "330864951018"
+                    },
+                    "domesticShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "USA"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "Other",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "US"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "Other"
+                                },
+                                "shippingServiceOptionCode": "Other"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "71454928"
+                            }
+                        }
+                    },
+                    "excludedShipToLocations": [
+                        {
+                            "country": "BD"
+                        },
+                        {
+                            "country": "NO"
+                        },
+                        {
+                            "country": "LI"
+                        },
+                        {
+                            "country": "TJ"
+                        },
+                        {
+                            "country": "AW"
+                        },
+                        {
+                            "country": "CY"
+                        },
+                        {
+                            "country": "VA"
+                        },
+                        {
+                            "country": "MS"
+                        },
+                        {
+                            "country": "MC"
+                        },
+                        {
+                            "country": "KN"
+                        },
+                        {
+                            "country": "AD"
+                        },
+                        {
+                            "country": "IN"
+                        },
+                        {
+                            "sellerShippingRegion": "MIDDLE_EAST"
+                        },
+                        {
+                            "country": "DO"
+                        },
+                        {
+                            "country": "HN"
+                        },
+                        {
+                            "sellerShippingRegion": "SOUTHEAST_ASIA"
+                        },
+                        {
+                            "country": "LC"
+                        },
+                        {
+                            "country": "RO"
+                        },
+                        {
+                            "country": "BZ"
+                        },
+                        {
+                            "country": "ES"
+                        },
+                        {
+                            "country": "NP"
+                        },
+                        {
+                            "country": "SM"
+                        },
+                        {
+                            "country": "UA"
+                        },
+                        {
+                            "country": "TC"
+                        },
+                        {
+                            "country": "GP"
+                        },
+                        {
+                            "country": "GT"
+                        },
+                        {
+                            "country": "BS"
+                        },
+                        {
+                            "country": "KG"
+                        },
+                        {
+                            "country": "CH"
+                        },
+                        {
+                            "country": "AS"
+                        },
+                        {
+                            "country": "AM"
+                        },
+                        {
+                            "country": "NI"
+                        },
+                        {
+                            "country": "MT"
+                        },
+                        {
+                            "country": "HT"
+                        },
+                        {
+                            "country": "CK"
+                        },
+                        {
+                            "country": "JE"
+                        },
+                        {
+                            "country": "GI"
+                        },
+                        {
+                            "country": "SK"
+                        },
+                        {
+                            "country": "GG"
+                        },
+                        {
+                            "country": "NC"
+                        },
+                        {
+                            "country": "BA"
+                        },
+                        {
+                            "country": "JM"
+                        },
+                        {
+                            "country": "GD"
+                        },
+                        {
+                            "country": "PF"
+                        },
+                        {
+                            "country": "MN"
+                        },
+                        {
+                            "country": "AF"
+                        },
+                        {
+                            "country": "LT"
+                        },
+                        {
+                            "country": "PG"
+                        },
+                        {
+                            "country": "CZ"
+                        },
+                        {
+                            "country": "MQ"
+                        },
+                        {
+                            "country": "NL"
+                        },
+                        {
+                            "country": "PT"
+                        },
+                        {
+                            "country": "TT"
+                        },
+                        {
+                            "country": "BY"
+                        },
+                        {
+                            "country": "HR"
+                        },
+                        {
+                            "country": "MV"
+                        },
+                        {
+                            "country": "UZ"
+                        },
+                        {
+                            "country": "AG"
+                        },
+                        {
+                            "country": "AI"
+                        },
+                        {
+                            "country": "AL"
+                        },
+                        {
+                            "country": "FM"
+                        },
+                        {
+                            "country": "BB"
+                        },
+                        {
+                            "country": "IE"
+                        },
+                        {
+                            "country": "KZ"
+                        },
+                        {
+                            "country": "BG"
+                        },
+                        {
+                            "country": "AT"
+                        },
+                        {
+                            "country": "EE"
+                        },
+                        {
+                            "country": "ME"
+                        },
+                        {
+                            "country": "LV"
+                        },
+                        {
+                            "country": "WS"
+                        },
+                        {
+                            "country": "DK"
+                        },
+                        {
+                            "country": "PK"
+                        },
+                        {
+                            "country": "TM"
+                        },
+                        {
+                            "country": "PW"
+                        },
+                        {
+                            "country": "NU"
+                        },
+                        {
+                            "country": "MD"
+                        },
+                        {
+                            "country": "GU"
+                        },
+                        {
+                            "country": "KY"
+                        },
+                        {
+                            "country": "FJ"
+                        },
+                        {
+                            "country": "FR"
+                        },
+                        {
+                            "country": "SB"
+                        },
+                        {
+                            "country": "RU"
+                        },
+                        {
+                            "continent": "AFRICA"
+                        },
+                        {
+                            "country": "DM"
+                        },
+                        {
+                            "country": "GR"
+                        },
+                        {
+                            "country": "SJ"
+                        },
+                        {
+                            "country": "RS"
+                        },
+                        {
+                            "country": "TV"
+                        },
+                        {
+                            "country": "CR"
+                        },
+                        {
+                            "country": "PL"
+                        },
+                        {
+                            "country": "VU"
+                        },
+                        {
+                            "country": "MK"
+                        },
+                        {
+                            "country": "VC"
+                        },
+                        {},
+                        {
+                            "country": "KI"
+                        },
+                        {
+                            "country": "SV"
+                        },
+                        {
+                            "country": "VG"
+                        },
+                        {
+                            "country": "LK"
+                        },
+                        {
+                            "country": "AZ"
+                        },
+                        {
+                            "country": "KR"
+                        },
+                        {
+                            "country": "PA"
+                        },
+                        {
+                            "country": "HU"
+                        },
+                        {
+                            "country": "SE"
+                        },
+                        {
+                            "continent": "SOUTH_AMERICA"
+                        },
+                        {
+                            "country": "MH"
+                        },
+                        {
+                            "country": "CN"
+                        },
+                        {
+                            "country": "LU"
+                        },
+                        {
+                            "country": "IT"
+                        },
+                        {
+                            "country": "BE"
+                        },
+                        {
+                            "country": "BT"
+                        },
+                        {
+                            "country": "SI"
+                        },
+                        {
+                            "country": "FI"
+                        },
+                        {
+                            "country": "TO"
+                        },
+                        {
+                            "country": "IS"
+                        },
+                        {
+                            "country": "GE"
+                        },
+                        {
+                            "country": "WF"
+                        },
+                        {
+                            "country": "NR"
+                        }
+                    ],
+                    "handlingTimeDuration": "DAYS_2",
+                    "includedShipToLocations": [
+                        {
+                            "country": "DE"
+                        },
+                        {
+                            "country": "FR"
+                        },
+                        {
+                            "continent": "EUROPE"
+                        },
+                        {
+                            "country": "US"
+                        },
+                        {
+                            "country": "GB"
+                        },
+                        {
+                            "country": "AU"
+                        },
+                        {
+                            "sellerShippingRegion": "WORLDWIDE"
+                        },
+                        {
+                            "country": "CA"
+                        }
+                    ],
+                    "internationalShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "20.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "_WW"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "20.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "20.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "sellerShippingRegion": "WORLDWIDE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "20.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "5.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 2,
+                                "shipToLocations": [
+                                    "CAN"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "10.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "5.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "CA"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "10.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "10.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 3,
+                                "shipToLocations": [
+                                    "AUS"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "18.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "10.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "AU"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "18.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "4.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 4,
+                                "shipToLocations": [
+                                    "GBR"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "8.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "4.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "GB"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "8.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "8.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 5,
+                                "shipToLocations": [
+                                    "DEU",
+                                    "FRA",
+                                    "_EU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "14.5",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "8.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    },
+                                    {
+                                        "country": "FR"
+                                    },
+                                    {
+                                        "continent": "EUROPE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "14.5"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            }
+                        ],
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "71454928"
+                            }
+                        }
+                    },
+                    "marketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "USA"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "Other",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "US"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "Other"
+                                },
+                                "shippingServiceOptionCode": "Other"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "71454928"
+                            }
+                        }
+                    },
+                    "nonMarketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "20.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "_WW"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "20.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "20.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "sellerShippingRegion": "WORLDWIDE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "20.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "5.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 2,
+                                "shipToLocations": [
+                                    "CAN"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "10.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "5.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "CA"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "10.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "10.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 3,
+                                "shipToLocations": [
+                                    "AUS"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "18.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "10.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "AU"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "18.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "4.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 4,
+                                "shipToLocations": [
+                                    "GBR"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "8.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "4.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "GB"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "8.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "8.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 5,
+                                "shipToLocations": [
+                                    "DEU",
+                                    "FRA",
+                                    "_EU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "14.5",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "8.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    },
+                                    {
+                                        "country": "FR"
+                                    },
+                                    {
+                                        "continent": "EUROPE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "14.5"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            }
+                        ],
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "71454928"
+                            }
+                        }
+                    },
+                    "shippingBusinessPolicy": {
+                        "businessPolicy": {
+                            "id": "74443237018"
+                        }
+                    },
+                    "shippingServices": [
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "rank": 1,
+                            "shipToLocations": [
+                                "USA"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "shippingServiceCode": "Other",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "0.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "US"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "0.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "Other"
+                            },
+                            "shippingServiceOptionCode": "Other"
+                        },
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "8.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "rank": 5,
+                            "shipToLocations": [
+                                "DEU",
+                                "FRA",
+                                "_EU"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "14.5",
+                                    "currency": "USD"
+                                }
+                            },
+                            "shippingServiceCode": "OtherInternational",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "8.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "DE"
+                                },
+                                {
+                                    "country": "FR"
+                                },
+                                {
+                                    "continent": "EUROPE"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "14.5"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "OtherInternational"
+                            },
+                            "shippingServiceOptionCode": "OtherInternational"
+                        },
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "20.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "rank": 6,
+                            "shipToLocations": [
+                                "_WW"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "20.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "shippingServiceCode": "OtherInternational",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "20.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "sellerShippingRegion": "WORLDWIDE"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "20.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "OtherInternational"
+                            },
+                            "shippingServiceOptionCode": "OtherInternational"
+                        },
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "5.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "rank": 7,
+                            "shipToLocations": [
+                                "CAN"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "10.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "shippingServiceCode": "OtherInternational",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "5.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "CA"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "10.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "OtherInternational"
+                            },
+                            "shippingServiceOptionCode": "OtherInternational"
+                        },
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "10.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "rank": 8,
+                            "shipToLocations": [
+                                "AUS"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "18.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "shippingServiceCode": "OtherInternational",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "10.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "AU"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "18.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "OtherInternational"
+                            },
+                            "shippingServiceOptionCode": "OtherInternational"
+                        },
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "4.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "rank": 9,
+                            "shipToLocations": [
+                                "GBR"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "8.0",
+                                    "currency": "USD"
+                                }
+                            },
+                            "shippingServiceCode": "OtherInternational",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "4.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "GB"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "8.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "OtherInternational"
+                            },
+                            "shippingServiceOptionCode": "OtherInternational"
+                        }
+                    ]
+                },
+                "listingId": "317811882364",
+                "digitalDeliverySupported": false,
+                "globalShippingSupported": false,
+                "inStorePickupSupported": false,
+                "packageSpecifications": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "English",
+                    "listingUnitOfMeasure": "ENGLISH",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shipToHomeLogisticsPlanSupported": true
+            },
+            "itemCondition": {
+                "categoryId": "261186",
+                "id": "4000",
+                "itemConditionDescriptors": [],
+                "sellerConditionDescription": "Former library copy. Pages intact with possible writing/highlighting. Binding strong with minor wear. Dust jackets/supplements may not be included. Includes library markings. Stock photo provided. Product includes identifying sticker. Better World Books: Buy Books. Do Good.",
+                "conditionDescription": "Former library copy. Pages intact with possible writing/highlighting. Binding strong with minor wear. Dust jackets/supplements may not be included. Includes library markings. Stock photo provided. Product includes identifying sticker. Better World Books: Buy Books. Do Good.",
+                "conditionDescriptors": []
+            },
+            "itemLocation": {
+                "countryCode": "US",
+                "postalCode": "46545",
+                "streetAddress": "Mishawaka, Indiana",
+                "country": "US",
+                "location": "Mishawaka, Indiana"
+            },
+            "itemRevisionDate": "2026-09-08T16:48:21.991Z",
+            "items": [
+                {
+                    "itemId": "317811882364",
+                    "creationDate": "2026-01-28T05:31:48.000Z",
+                    "itemSellerProduct": {
+                        "globalIdentifiers": [
+                            {
+                                "name": "ISBN",
+                                "values": [
+                                    "9780192781642"
+                                ]
+                            }
+                        ],
+                        "images": [
+                            {
+                                "ebayImageUrl": "https://i.ebayimg.com/00/s/NjMyWDUwMA==/z/NScAAeSwmNdpeaCE/$_1.JPG?set_id=8800005007",
+                                "externalImageUrl": "https://images.bwbcovers.com/cdn-cgi/image/width=500,quality=100,fit=contain/019/The-Oxford-Nursery-Treasury-9780192781642.jpg",
+                                "order": 1
+                            },
+                            {
+                                "ebayImageUrl": "https://i.ebayimg.com/00/s/MTYwMFg4MDA=/z/BiMAAeSwxsRpeaCE/$_1.JPG?set_id=8800005007",
+                                "externalImageUrl": "https://images.bwbcovers.com/ebay/BWB_US_SecondaryImage.jpg",
+                                "order": 2
+                            }
+                        ],
+                        "productIdentifiers": {
+                            "ebayProduct": {
+                                "id": "1882355"
+                            },
+                            "globalIdentifiers": {
+                                "isbn": "9780192781642"
+                            },
+                            "includeEbayProductDetails": true
+                        },
+                        "traits": []
+                    },
+                    "quantityAvailable": 2,
+                    "quantitySold": 0,
+                    "sellerPrice": {
+                        "fixedPrice": {
+                            "original": {
+                                "amount": "9.61",
+                                "currency": "USD"
+                            }
+                        },
+                        "marketingPrice": {
+                            "pricingTreatment": "None"
+                        }
+                    },
+                    "sku": "38584915-6",
+                    "variationAspects": [],
+                    "listing": {
+                        "listingId": "317811882364"
+                    },
+                    "photos": [
+                        {
+                            "ebayPictureUrl": "https://i.ebayimg.com/00/s/NjMyWDUwMA==/z/NScAAeSwmNdpeaCE/$_1.JPG?set_id=8800005007",
+                            "externalPictureUrl": "https://images.bwbcovers.com/cdn-cgi/image/width=500,quality=100,fit=contain/019/The-Oxford-Nursery-Treasury-9780192781642.jpg",
+                            "order": 1
+                        },
+                        {
+                            "ebayPictureUrl": "https://i.ebayimg.com/00/s/MTYwMFg4MDA=/z/BiMAAeSwxsRpeaCE/$_1.JPG?set_id=8800005007",
+                            "externalPictureUrl": "https://images.bwbcovers.com/ebay/BWB_US_SecondaryImage.jpg",
+                            "order": 2
+                        }
+                    ],
+                    "itemIdRestReference": "v1|317811882364|0",
+                    "itemIdVersioned": "317811882364",
+                    "itemTerms": {
+                        "availability": {
+                            "quantityAvailable": 2,
+                            "quantitySold": 0
+                        },
+                        "pricingTerms": {
+                            "auctionPrice": {},
+                            "fixedPrice": {
+                                "original": {
+                                    "currency": "USD",
+                                    "value": "9.61"
+                                }
+                            },
+                            "marketingPrice": {}
+                        }
+                    },
+                    "terms": {
+                        "fulfillmentTerms": {
+                            "managedFulfillmentSupported": false
+                        }
+                    },
+                    "versionId": "5140405872021",
+                    "autoTagProduct": {
+                        "id": "1882355"
+                    }
+                }
+            ],
+            "listingFormat": "BIN",
+            "listingLifecycle": {
+                "endDate": "2026-09-28T04:31:49.000Z",
+                "listingDuration": "GTC",
+                "listingStatus": "ACTIVE",
+                "onHold": false,
+                "scheduledEndDate": "2026-09-28T04:31:49.000Z",
+                "startDate": "2026-01-28T05:31:49.000Z",
+                "actualEndAt": "2026-09-28T04:31:49.000Z",
+                "createdAt": "2026-01-28T05:31:48.000Z",
+                "duplicateAuction": false,
+                "listedAsScheduled": false,
+                "listingDurationInDays": "GTC",
+                "scheduledEndAt": "2026-09-28T04:31:49.000Z",
+                "startAt": "2026-01-28T05:31:49.000Z"
+            },
+            "listingTerms": {
+                "bestOfferTerms": {
+                    "autoAcceptEnabled": false,
+                    "acceptBestOffer": false,
+                    "autoAcceptThresholdAmount": {
+                        "original": {
+                            "currency": "USD",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoAcceptThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "USD"
+                        }
+                    },
+                    "autoDeclineEnabled": false,
+                    "autoDeclineThresholdAmount": {
+                        "original": {
+                            "currency": "USD",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoDeclineThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "USD"
+                        }
+                    }
+                },
+                "buyerRestrictions": {
+                    "buyerRestrictionModifiedDate": "2019-09-27T22:22:07.000Z",
+                    "disableBuyerRestrictions": false,
+                    "quantityLimitPerBuyer": 0,
+                    "residencyInShipToLocation": true
+                },
+                "hideParticipation": false,
+                "internationalSiteVisibility": [],
+                "itemLocation": {
+                    "countryCode": "US",
+                    "postalCode": "46545",
+                    "streetAddress": "Mishawaka, Indiana",
+                    "country": "US",
+                    "location": "Mishawaka, Indiana"
+                },
+                "lifecycleTerms": {
+                    "endDate": "2026-09-28T04:31:49.000Z",
+                    "listingDuration": "GTC",
+                    "listingStatus": "ACTIVE",
+                    "onHold": false,
+                    "scheduledEndDate": "2026-09-28T04:31:49.000Z",
+                    "startDate": "2026-01-28T05:31:49.000Z",
+                    "actualEndAt": "2026-09-28T04:31:49.000Z",
+                    "createdAt": "2026-01-28T05:31:48.000Z",
+                    "duplicateAuction": false,
+                    "listedAsScheduled": false,
+                    "listingDurationInDays": "GTC",
+                    "scheduledEndAt": "2026-09-28T04:31:49.000Z",
+                    "startAt": "2026-01-28T05:31:49.000Z"
+                },
+                "listingFormat": "FIXED_PRICE",
+                "listingFulfillmentTerms": {
+                    "digitalDeliveryLogisticsPlanSupported": false,
+                    "ebayManagedShipping": false,
+                    "freeShippingAvailable": true,
+                    "globalShippingLogisticsPlanSupported": false,
+                    "inStorePickupLogisticsPlanSupported": false,
+                    "managedFulfillmentSupported": false,
+                    "managedShippingOptin": false,
+                    "packageSpec": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "English",
+                        "listingUnitOfMeasure": "ENGLISH",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shippingTerms": {
+                        "buyerResponsibleForShipping": false,
+                        "excludeShipToLocations": [
+                            "BGD",
+                            "NOR",
+                            "LIE",
+                            "TJK",
+                            "ABW",
+                            "CYP",
+                            "VAT",
+                            "MSR",
+                            "MCO",
+                            "KNA",
+                            "AND",
+                            "IND",
+                            "_ME",
+                            "DOM",
+                            "HND",
+                            "_SE",
+                            "LCA",
+                            "ROU",
+                            "BLZ",
+                            "ESP",
+                            "NPL",
+                            "SMR",
+                            "UKR",
+                            "TCA",
+                            "GLP",
+                            "GTM",
+                            "BHS",
+                            "KGZ",
+                            "CHE",
+                            "ASM",
+                            "ARM",
+                            "NIC",
+                            "MLT",
+                            "HTI",
+                            "COK",
+                            "JEY",
+                            "GIB",
+                            "SVK",
+                            "GGY",
+                            "NCL",
+                            "BIH",
+                            "JAM",
+                            "GRD",
+                            "PYF",
+                            "MNG",
+                            "AFG",
+                            "LTU",
+                            "PNG",
+                            "CZE",
+                            "MTQ",
+                            "NLD",
+                            "PRT",
+                            "TTO",
+                            "BLR",
+                            "HRV",
+                            "MDV",
+                            "UZB",
+                            "ATG",
+                            "AIA",
+                            "ALB",
+                            "FSM",
+                            "BRB",
+                            "IRL",
+                            "KAZ",
+                            "BGR",
+                            "AUT",
+                            "EST",
+                            "MNE",
+                            "LVA",
+                            "WSM",
+                            "DNK",
+                            "PAK",
+                            "TKM",
+                            "PLW",
+                            "NIU",
+                            "MDA",
+                            "GUM",
+                            "CYM",
+                            "FJI",
+                            "FRA",
+                            "SLB",
+                            "RUS",
+                            "_AF",
+                            "DMA",
+                            "GRC",
+                            "SJM",
+                            "SRB",
+                            "TUV",
+                            "CRI",
+                            "POL",
+                            "VUT",
+                            "MKD",
+                            "VCT",
+                            "ANT",
+                            "KIR",
+                            "SLV",
+                            "VGB",
+                            "LKA",
+                            "AZE",
+                            "KOR",
+                            "PAN",
+                            "HUN",
+                            "SWE",
+                            "_SA",
+                            "MHL",
+                            "CHN",
+                            "LUX",
+                            "ITA",
+                            "BEL",
+                            "BTN",
+                            "SVN",
+                            "FIN",
+                            "TON",
+                            "ISL",
+                            "GEO",
+                            "WLF",
+                            "NRU"
+                        ],
+                        "handlingTime": "Days_2",
+                        "shipToLocations": [
+                            "DEU",
+                            "FRA",
+                            "_EU",
+                            "USA",
+                            "GBR",
+                            "AUS",
+                            "_WW",
+                            "CAN"
+                        ],
+                        "shippingOptions": [
+                            {
+                                "costType": "FLAT",
+                                "isInternational": false,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "-1",
+                                "shippingServices": [
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "rank": 1,
+                                        "shipToLocations": [
+                                            "USA"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "shippingServiceCode": "Other",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "US"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "Other"
+                                        },
+                                        "shippingServiceOptionCode": "Other"
+                                    }
+                                ],
+                                "internationalShippingOption": false,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "-1",
+                                "shippingPreference": {
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "71454928"
+                                    }
+                                }
+                            },
+                            {
+                                "costType": "FLAT",
+                                "isInternational": true,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "-1",
+                                "shippingServices": [
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "20.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "rank": 1,
+                                        "shipToLocations": [
+                                            "_WW"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "20.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "shippingServiceCode": "OtherInternational",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "20.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "sellerShippingRegion": "WORLDWIDE"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "20.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "OtherInternational"
+                                        },
+                                        "shippingServiceOptionCode": "OtherInternational"
+                                    },
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "5.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "rank": 2,
+                                        "shipToLocations": [
+                                            "CAN"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "10.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "shippingServiceCode": "OtherInternational",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "5.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "CA"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "10.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "OtherInternational"
+                                        },
+                                        "shippingServiceOptionCode": "OtherInternational"
+                                    },
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "10.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "rank": 3,
+                                        "shipToLocations": [
+                                            "AUS"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "18.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "shippingServiceCode": "OtherInternational",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "10.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "AU"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "18.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "OtherInternational"
+                                        },
+                                        "shippingServiceOptionCode": "OtherInternational"
+                                    },
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "4.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "rank": 4,
+                                        "shipToLocations": [
+                                            "GBR"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "8.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "shippingServiceCode": "OtherInternational",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "4.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "GB"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "8.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "OtherInternational"
+                                        },
+                                        "shippingServiceOptionCode": "OtherInternational"
+                                    },
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "8.0",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "rank": 5,
+                                        "shipToLocations": [
+                                            "DEU",
+                                            "FRA",
+                                            "_EU"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "14.5",
+                                                "currency": "USD"
+                                            }
+                                        },
+                                        "shippingServiceCode": "OtherInternational",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "8.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "DE"
+                                            },
+                                            {
+                                                "country": "FR"
+                                            },
+                                            {
+                                                "continent": "EUROPE"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "USD",
+                                                "value": "14.5"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "OtherInternational"
+                                        },
+                                        "shippingServiceOptionCode": "OtherInternational"
+                                    }
+                                ],
+                                "internationalShippingOption": true,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "-1",
+                                "shippingPreference": {
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "71454928"
+                                    }
+                                }
+                            }
+                        ],
+                        "excludeShipToLocationsLastModifiedDateTime": "2026-06-26T05:48:01.066Z",
+                        "businessPolicy": {
+                            "id": "74443237018"
+                        },
+                        "businessPolicyIdentifier": {
+                            "policyId": "74443237018",
+                            "versionId": "330864951018"
+                        },
+                        "domesticShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "USA"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "Other",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "US"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "Other"
+                                    },
+                                    "shippingServiceOptionCode": "Other"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "71454928"
+                                }
+                            }
+                        },
+                        "excludedShipToLocations": [
+                            {
+                                "country": "BD"
+                            },
+                            {
+                                "country": "NO"
+                            },
+                            {
+                                "country": "LI"
+                            },
+                            {
+                                "country": "TJ"
+                            },
+                            {
+                                "country": "AW"
+                            },
+                            {
+                                "country": "CY"
+                            },
+                            {
+                                "country": "VA"
+                            },
+                            {
+                                "country": "MS"
+                            },
+                            {
+                                "country": "MC"
+                            },
+                            {
+                                "country": "KN"
+                            },
+                            {
+                                "country": "AD"
+                            },
+                            {
+                                "country": "IN"
+                            },
+                            {
+                                "sellerShippingRegion": "MIDDLE_EAST"
+                            },
+                            {
+                                "country": "DO"
+                            },
+                            {
+                                "country": "HN"
+                            },
+                            {
+                                "sellerShippingRegion": "SOUTHEAST_ASIA"
+                            },
+                            {
+                                "country": "LC"
+                            },
+                            {
+                                "country": "RO"
+                            },
+                            {
+                                "country": "BZ"
+                            },
+                            {
+                                "country": "ES"
+                            },
+                            {
+                                "country": "NP"
+                            },
+                            {
+                                "country": "SM"
+                            },
+                            {
+                                "country": "UA"
+                            },
+                            {
+                                "country": "TC"
+                            },
+                            {
+                                "country": "GP"
+                            },
+                            {
+                                "country": "GT"
+                            },
+                            {
+                                "country": "BS"
+                            },
+                            {
+                                "country": "KG"
+                            },
+                            {
+                                "country": "CH"
+                            },
+                            {
+                                "country": "AS"
+                            },
+                            {
+                                "country": "AM"
+                            },
+                            {
+                                "country": "NI"
+                            },
+                            {
+                                "country": "MT"
+                            },
+                            {
+                                "country": "HT"
+                            },
+                            {
+                                "country": "CK"
+                            },
+                            {
+                                "country": "JE"
+                            },
+                            {
+                                "country": "GI"
+                            },
+                            {
+                                "country": "SK"
+                            },
+                            {
+                                "country": "GG"
+                            },
+                            {
+                                "country": "NC"
+                            },
+                            {
+                                "country": "BA"
+                            },
+                            {
+                                "country": "JM"
+                            },
+                            {
+                                "country": "GD"
+                            },
+                            {
+                                "country": "PF"
+                            },
+                            {
+                                "country": "MN"
+                            },
+                            {
+                                "country": "AF"
+                            },
+                            {
+                                "country": "LT"
+                            },
+                            {
+                                "country": "PG"
+                            },
+                            {
+                                "country": "CZ"
+                            },
+                            {
+                                "country": "MQ"
+                            },
+                            {
+                                "country": "NL"
+                            },
+                            {
+                                "country": "PT"
+                            },
+                            {
+                                "country": "TT"
+                            },
+                            {
+                                "country": "BY"
+                            },
+                            {
+                                "country": "HR"
+                            },
+                            {
+                                "country": "MV"
+                            },
+                            {
+                                "country": "UZ"
+                            },
+                            {
+                                "country": "AG"
+                            },
+                            {
+                                "country": "AI"
+                            },
+                            {
+                                "country": "AL"
+                            },
+                            {
+                                "country": "FM"
+                            },
+                            {
+                                "country": "BB"
+                            },
+                            {
+                                "country": "IE"
+                            },
+                            {
+                                "country": "KZ"
+                            },
+                            {
+                                "country": "BG"
+                            },
+                            {
+                                "country": "AT"
+                            },
+                            {
+                                "country": "EE"
+                            },
+                            {
+                                "country": "ME"
+                            },
+                            {
+                                "country": "LV"
+                            },
+                            {
+                                "country": "WS"
+                            },
+                            {
+                                "country": "DK"
+                            },
+                            {
+                                "country": "PK"
+                            },
+                            {
+                                "country": "TM"
+                            },
+                            {
+                                "country": "PW"
+                            },
+                            {
+                                "country": "NU"
+                            },
+                            {
+                                "country": "MD"
+                            },
+                            {
+                                "country": "GU"
+                            },
+                            {
+                                "country": "KY"
+                            },
+                            {
+                                "country": "FJ"
+                            },
+                            {
+                                "country": "FR"
+                            },
+                            {
+                                "country": "SB"
+                            },
+                            {
+                                "country": "RU"
+                            },
+                            {
+                                "continent": "AFRICA"
+                            },
+                            {
+                                "country": "DM"
+                            },
+                            {
+                                "country": "GR"
+                            },
+                            {
+                                "country": "SJ"
+                            },
+                            {
+                                "country": "RS"
+                            },
+                            {
+                                "country": "TV"
+                            },
+                            {
+                                "country": "CR"
+                            },
+                            {
+                                "country": "PL"
+                            },
+                            {
+                                "country": "VU"
+                            },
+                            {
+                                "country": "MK"
+                            },
+                            {
+                                "country": "VC"
+                            },
+                            {},
+                            {
+                                "country": "KI"
+                            },
+                            {
+                                "country": "SV"
+                            },
+                            {
+                                "country": "VG"
+                            },
+                            {
+                                "country": "LK"
+                            },
+                            {
+                                "country": "AZ"
+                            },
+                            {
+                                "country": "KR"
+                            },
+                            {
+                                "country": "PA"
+                            },
+                            {
+                                "country": "HU"
+                            },
+                            {
+                                "country": "SE"
+                            },
+                            {
+                                "continent": "SOUTH_AMERICA"
+                            },
+                            {
+                                "country": "MH"
+                            },
+                            {
+                                "country": "CN"
+                            },
+                            {
+                                "country": "LU"
+                            },
+                            {
+                                "country": "IT"
+                            },
+                            {
+                                "country": "BE"
+                            },
+                            {
+                                "country": "BT"
+                            },
+                            {
+                                "country": "SI"
+                            },
+                            {
+                                "country": "FI"
+                            },
+                            {
+                                "country": "TO"
+                            },
+                            {
+                                "country": "IS"
+                            },
+                            {
+                                "country": "GE"
+                            },
+                            {
+                                "country": "WF"
+                            },
+                            {
+                                "country": "NR"
+                            }
+                        ],
+                        "handlingTimeDuration": "DAYS_2",
+                        "includedShipToLocations": [
+                            {
+                                "country": "DE"
+                            },
+                            {
+                                "country": "FR"
+                            },
+                            {
+                                "continent": "EUROPE"
+                            },
+                            {
+                                "country": "US"
+                            },
+                            {
+                                "country": "GB"
+                            },
+                            {
+                                "country": "AU"
+                            },
+                            {
+                                "sellerShippingRegion": "WORLDWIDE"
+                            },
+                            {
+                                "country": "CA"
+                            }
+                        ],
+                        "internationalShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "20.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "_WW"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "20.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "20.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "sellerShippingRegion": "WORLDWIDE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "20.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "5.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 2,
+                                    "shipToLocations": [
+                                        "CAN"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "10.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "5.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "CA"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "10.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "10.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 3,
+                                    "shipToLocations": [
+                                        "AUS"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "18.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "10.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "AU"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "18.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "4.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 4,
+                                    "shipToLocations": [
+                                        "GBR"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "8.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "4.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "GB"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "8.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "8.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 5,
+                                    "shipToLocations": [
+                                        "DEU",
+                                        "FRA",
+                                        "_EU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "14.5",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "8.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        },
+                                        {
+                                            "country": "FR"
+                                        },
+                                        {
+                                            "continent": "EUROPE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "14.5"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                }
+                            ],
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "71454928"
+                                }
+                            }
+                        },
+                        "marketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "USA"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "Other",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "US"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "Other"
+                                    },
+                                    "shippingServiceOptionCode": "Other"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "71454928"
+                                }
+                            }
+                        },
+                        "nonMarketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "20.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "_WW"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "20.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "20.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "sellerShippingRegion": "WORLDWIDE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "20.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "5.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 2,
+                                    "shipToLocations": [
+                                        "CAN"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "10.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "5.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "CA"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "10.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "10.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 3,
+                                    "shipToLocations": [
+                                        "AUS"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "18.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "10.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "AU"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "18.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "4.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 4,
+                                    "shipToLocations": [
+                                        "GBR"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "8.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "4.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "GB"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "8.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "8.0",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "rank": 5,
+                                    "shipToLocations": [
+                                        "DEU",
+                                        "FRA",
+                                        "_EU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "14.5",
+                                            "currency": "USD"
+                                        }
+                                    },
+                                    "shippingServiceCode": "OtherInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "8.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        },
+                                        {
+                                            "country": "FR"
+                                        },
+                                        {
+                                            "continent": "EUROPE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "USD",
+                                            "value": "14.5"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "OtherInternational"
+                                    },
+                                    "shippingServiceOptionCode": "OtherInternational"
+                                }
+                            ],
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "71454928"
+                                }
+                            }
+                        },
+                        "shippingBusinessPolicy": {
+                            "businessPolicy": {
+                                "id": "74443237018"
+                            }
+                        },
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "USA"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "Other",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "US"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "Other"
+                                },
+                                "shippingServiceOptionCode": "Other"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "8.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 5,
+                                "shipToLocations": [
+                                    "DEU",
+                                    "FRA",
+                                    "_EU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "14.5",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "8.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    },
+                                    {
+                                        "country": "FR"
+                                    },
+                                    {
+                                        "continent": "EUROPE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "14.5"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "20.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 6,
+                                "shipToLocations": [
+                                    "_WW"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "20.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "20.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "sellerShippingRegion": "WORLDWIDE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "20.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "5.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 7,
+                                "shipToLocations": [
+                                    "CAN"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "10.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "5.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "CA"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "10.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "10.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 8,
+                                "shipToLocations": [
+                                    "AUS"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "18.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "10.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "AU"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "18.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "4.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "rank": 9,
+                                "shipToLocations": [
+                                    "GBR"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "8.0",
+                                        "currency": "USD"
+                                    }
+                                },
+                                "shippingServiceCode": "OtherInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "4.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "GB"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "USD",
+                                        "value": "8.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "OtherInternational"
+                                },
+                                "shippingServiceOptionCode": "OtherInternational"
+                            }
+                        ]
+                    },
+                    "listingId": "317811882364",
+                    "digitalDeliverySupported": false,
+                    "globalShippingSupported": false,
+                    "inStorePickupSupported": false,
+                    "packageSpecifications": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "English",
+                        "listingUnitOfMeasure": "ENGLISH",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shipToHomeLogisticsPlanSupported": true
+                },
+                "listingPaymentTerms": {
+                    "paymentMethods": [],
+                    "businessPolicy": {
+                        "id": "240679810018"
+                    },
+                    "businessPolicyIdentifier": {
+                        "policyId": "240679810018",
+                        "versionId": "288360976018"
+                    },
+                    "depositRequired": false,
+                    "hoursToDeposit": -1,
+                    "immediatePay": true,
+                    "listingPaymentMethods": [],
+                    "motorVehicleDeposit": {
+                        "depositRequired": false,
+                        "hoursToDeposit": -1
+                    }
+                },
+                "listingReturnTerms": {
+                    "domesticReturnTerms": {
+                        "returnAccepted": true,
+                        "returnPeriod": "Days_30",
+                        "returnShipmentPayee": "Buyer",
+                        "listingRefundMethod": "MONEY_BACK",
+                        "refundMethod": "MoneyBack",
+                        "returnDuration": "DAYS_30",
+                        "returnShipmentInvoicee": "Buyer"
+                    },
+                    "internationalReturnTerms": {
+                        "returnAccepted": true,
+                        "returnPeriod": "Days_30",
+                        "returnShipmentPayee": "Buyer",
+                        "listingRefundMethod": "MONEY_BACK",
+                        "refundMethod": "MoneyBack",
+                        "returnDuration": "DAYS_30",
+                        "returnShipmentInvoicee": "Buyer"
+                    },
+                    "businessPolicy": {
+                        "id": "74442914018"
+                    },
+                    "businessPolicyIdentifier": {
+                        "policyId": "74442914018",
+                        "versionId": "284366962018"
+                    }
+                },
+                "programsSupported": [],
+                "taxTerms": {
+                    "applicableToShipping": false,
+                    "recognizedAsBusinessSellerForVAT": false,
+                    "salesTaxApplicableToShipping": false,
+                    "salesTaxTableUsed": true,
+                    "vatRecognizedBusinessSeller": false
+                },
+                "totalQuantityAvailable": 2,
+                "visualEnhancements": {
+                    "boldTitle": false,
+                    "galleryPlus": false,
+                    "subtitle": "Free US Delivery | ISBN:0192781642"
+                }
+            },
+            "paymentTerms": {
+                "paymentMethods": [],
+                "businessPolicy": {
+                    "id": "240679810018"
+                },
+                "businessPolicyIdentifier": {
+                    "policyId": "240679810018",
+                    "versionId": "288360976018"
+                },
+                "depositRequired": false,
+                "hoursToDeposit": -1,
+                "immediatePay": true,
+                "listingPaymentMethods": [],
+                "motorVehicleDeposit": {
+                    "depositRequired": false,
+                    "hoursToDeposit": -1
+                }
+            },
+            "photos": [
+                {
+                    "ebayPictureUrl": "https://i.ebayimg.com/00/s/NjMyWDUwMA==/z/NScAAeSwmNdpeaCE/$_1.JPG?set_id=8800005007",
+                    "externalPictureUrl": "https://images.bwbcovers.com/cdn-cgi/image/width=500,quality=100,fit=contain/019/The-Oxford-Nursery-Treasury-9780192781642.jpg",
+                    "order": 1
+                },
+                {
+                    "ebayPictureUrl": "https://i.ebayimg.com/00/s/MTYwMFg4MDA=/z/BiMAAeSwxsRpeaCE/$_1.JPG?set_id=8800005007",
+                    "externalPictureUrl": "https://images.bwbcovers.com/ebay/BWB_US_SecondaryImage.jpg",
+                    "order": 2
+                }
+            ],
+            "programsSupported": [],
+            "returnTerms": {
+                "domesticReturnTerms": {
+                    "returnAccepted": true,
+                    "returnPeriod": "Days_30",
+                    "returnShipmentPayee": "Buyer",
+                    "listingRefundMethod": "MONEY_BACK",
+                    "refundMethod": "MoneyBack",
+                    "returnDuration": "DAYS_30",
+                    "returnShipmentInvoicee": "Buyer"
+                },
+                "internationalReturnTerms": {
+                    "returnAccepted": true,
+                    "returnPeriod": "Days_30",
+                    "returnShipmentPayee": "Buyer",
+                    "listingRefundMethod": "MONEY_BACK",
+                    "refundMethod": "MoneyBack",
+                    "returnDuration": "DAYS_30",
+                    "returnShipmentInvoicee": "Buyer"
+                },
+                "businessPolicy": {
+                    "id": "74442914018"
+                },
+                "businessPolicyIdentifier": {
+                    "policyId": "74442914018",
+                    "versionId": "284366962018"
+                }
+            },
+            "seller": {
+                "legacyUserId": "71454928"
+            },
+            "sellerListingVersionId": "5140405872021",
+            "significantRevisionCount": 42,
+            "totalQuantity": 2,
+            "autoRelistTerms": {
+                "autoRelist": false,
+                "canAutoRelist": false
+            },
+            "buyerRestrictions": {
+                "buyerRestrictionModifiedDate": "2019-09-27T22:22:07.000Z",
+                "disableBuyerRestrictions": false,
+                "quantityLimitPerBuyer": 0,
+                "residencyInShipToLocation": true
+            },
+            "buyerRestrictionsDisabled": false,
+            "endReason": "NONE",
+            "enrolledInPriceGuarantee": false,
+            "hideParticipation": false,
+            "inventoryTrackingMethod": "Item",
+            "isItemOnSale": false,
+            "listingCreationClientIP": "10.19.153.121",
+            "listingHttpsCompliant": true,
+            "managedByInventory": true,
+            "marketplace": "EBAY_US",
+            "partnerListedAutosDealerItem": false,
+            "promotionalDetails": {
+                "markdownItemPriceRevision": "NO_MARKDOWN_SALE",
+                "promotionalFreeShippingSale": false,
+                "standardFreeShippingPriorToPromotion": false
+            },
+            "secondChanceItem": false,
+            "semiPersistentBin": false,
+            "taxInfo": {
+                "applicableToShipping": false,
+                "recognizedAsBusinessSellerForVAT": false,
+                "salesTaxApplicableToShipping": false,
+                "salesTaxTableUsed": true,
+                "vatRecognizedBusinessSeller": false
+            },
+            "vehicleSubscriptionItem": false,
+            "visualEnhancements": {
+                "boldTitle": false,
+                "featuredPlus": false,
+                "galleryType": "Gallery",
+                "homePageFeatured": false,
+                "listingDesignerOptimalPictureSize": false,
+                "photoDisplayType": "PicturePack",
+                "subtitle": "Free US Delivery | ISBN:0192781642"
+            },
+            "__typename": "SingleSkuListing",
+            "visibilitySummary": {
+                "defaultVisibleSites": [
+                    0,
+                    2,
+                    3,
+                    15,
+                    20,
+                    26,
+                    81,
+                    103,
+                    104,
+                    136,
+                    173,
+                    190,
+                    208,
+                    210,
+                    214,
+                    224,
+                    253
+                ],
+                "explicitlySuppressedSites": [],
+                "packedVisibilityString": "0=159,2=159,3=159,4=128,5=128,6=128,7=128,8=128,9=128,10=128,11=128,12=128,13=128,14=128,15=159,16=128,17=128,18=128,19=128,20=159,21=128,22=128,23=128,24=128,25=128,26=159,27=128,28=128,29=128,30=128,31=128,32=128,33=128,34=128,35=128,37=128,38=128,39=128,40=128,41=128,42=128,43=128,44=128,46=128,47=128,48=128,49=128,50=128,51=128,52=128,53=128,55=128,58=128,59=128,60=128,61=128,62=128,63=128,64=128,65=128,66=128,67=128,68=128,69=128,71=128,72=128,73=128,74=128,75=128,76=128,77=149,78=128,79=128,81=159,82=128,83=128,84=128,85=128,86=128,87=128,88=128,89=128,90=128,91=128,100=133,101=128,102=128,103=159,104=159,105=128,106=128,107=128,108=128,109=128,112=128,113=128,114=128,115=128,116=128,117=128,118=128,120=128,121=128,122=128,123=128,124=128,125=128,126=128,128=128,129=128,130=128,131=128,132=128,133=128,134=128,135=128,136=159,137=128,138=128,139=128,140=128,141=128,142=128,143=128,144=128,145=128,146=128,147=128,148=128,150=128,151=128,152=128,153=128,155=128,156=128,157=128,158=128,159=128,160=128,166=128,167=128,169=128,170=128,171=128,172=128,173=159,174=128,175=128,176=128,177=128,178=128,179=128,181=128,182=128,183=128,184=128,186=128,187=128,189=128,190=159,191=128,193=128,196=128,197=128,198=128,199=128,200=128,201=128,202=128,203=128,204=128,205=128,206=128,207=128,208=159,209=128,210=159,211=128,212=128,213=128,214=159,215=128,216=128,217=128,218=128,219=128,220=128,223=128,224=159,225=128,226=128,227=128,228=128,229=128,231=128,232=128,233=128,234=128,235=128,236=128,237=128,238=128,239=128,240=128,241=128,242=128,243=128,244=128,245=128,246=128,247=128,248=128,249=128,250=128,251=128,252=128,253=159,254=128,255=128,256=128,257=128,258=128,259=128"
+            },
+            "eligibleForPudo": false,
+            "availableForShipToHome": true,
+            "hideFromSearch": false
+        },
+        "schemaVersion": "2.1.0",
+        "__typename": "ListingEntry"
+    }
+}

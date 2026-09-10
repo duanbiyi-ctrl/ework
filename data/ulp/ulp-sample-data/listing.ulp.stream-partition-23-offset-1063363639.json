@@ -1,0 +1,2297 @@
+{
+    "metadata": {
+        "id": "206331794191",
+        "operation": "Update",
+        "ulpListingVersionId": "29",
+        "customFields": {
+            "marketplaceId": "EBAY-DE",
+            "numberOfItems": 1,
+            "listingFormat": "BIN",
+            "primaryLeafCategoryId": "42320"
+        }
+    },
+    "beforeChangePatch": "[{\"op\":\"replace\",\"path\":\"/listing/coreListingVersionId\",\"value\":\"1788822010094\"},{\"op\":\"replace\",\"path\":\"/listing/listingLifecycle/endDate\",\"value\":\"2026-09-08T16:48:11.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingLifecycle/scheduledEndDate\",\"value\":\"2026-09-08T16:48:11.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingLifecycle/actualEndAt\",\"value\":\"2026-09-08T16:48:11.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingLifecycle/scheduledEndAt\",\"value\":\"2026-09-08T16:48:11.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingTerms/lifecycleTerms/endDate\",\"value\":\"2026-09-08T16:48:11.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingTerms/lifecycleTerms/scheduledEndDate\",\"value\":\"2026-09-08T16:48:11.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingTerms/lifecycleTerms/actualEndAt\",\"value\":\"2026-09-08T16:48:11.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingTerms/lifecycleTerms/scheduledEndAt\",\"value\":\"2026-09-08T16:48:11.000Z\"}]",
+    "afterchangeDocument": "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",
+    "afterchangeDocumentPlain": {
+        "listing": {
+            "listingId": "206331794191",
+            "aspects": [
+                {
+                    "name": "Manufacturer Part Number",
+                    "values": [
+                        "KMC01BX12TI126"
+                    ]
+                },
+                {
+                    "name": "Größe",
+                    "values": [
+                        "Not applicable here"
+                    ]
+                }
+            ],
+            "marketplaceId": "EBAY-DE",
+            "sellerProduct": {
+                "epid": {
+                    "id": "9026578968"
+                },
+                "globalIdentifiers": [
+                    {
+                        "name": "EAN",
+                        "values": [
+                            "4715575890197"
+                        ]
+                    },
+                    {
+                        "name": "MPN",
+                        "values": [
+                            "BX12TI126"
+                        ]
+                    }
+                ],
+                "title": "KMC Fahrradkette X12",
+                "description": "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:1100px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#333\"><tr><td style=\"padding:8px 0;border-bottom:2px solid #0654ba\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td><img src=\"https://www.foottic.com/logotipos/tudetic70.jpg\" alt=\"Logo\" style=\"height:50px\"/></td><td style=\"text-align:right\"><a href=\"https://stores.ebay.es/trikivadershop/\" style=\"color:#0654ba;text-decoration:none;font-size:13px\">BESUCHEN SIE EBAY STORE</a></td></tr></table></td></tr><tr><td style=\"padding:10px 0;text-align:center;font-size:0;line-height:0\"><img src=\"https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126.jpg\" alt=\"Imagen del producto\" style=\"width:250px;max-width:100%;height:auto;display:inline-block;vertical-align:top;margin:0 12.5px 25px 12.5px;border:1px solid #ddd\"/><img src=\"https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126-2.jpg\" alt=\"Imagen del producto\" style=\"width:250px;max-width:100%;height:auto;display:inline-block;vertical-align:top;margin:0 12.5px 25px 12.5px;border:1px solid #ddd\"/></td></tr><tr><td style=\"font-size:20px;padding:14px 0 8px;color:#222;font-weight:bold\">Fahrradkette X12</td></tr><tr><td style=\"font-size:14px;line-height:1.5;padding-bottom:14px\">12 GÄNGE<br>TI-N GOLD<br><br>KMC01BX12TI126: KMC01BX12TI126<br>Produktreihe: X-Serie<br>GESCHWINDIGKEITEN: 12<br>Beschichtung: Titannitrid<br>Farbe: Ti-N Gold<br>Gliedbreite (Zoll): 11/128\"<br>Kompatibilität: Shimano, TRP, Campagnolo, Sram und andere 12-Gang-Antriebe (außer T-Type)<br>Gewicht: 276<br>LINKS: 126<br>Anmerkungen: Enthält MissingLink; Nicht-direktionale Zeichenkette</td></tr><tr><td style=\"padding:10px 14px;background:#f8f9fa\"><div style=\"font-size:16px;color:#0654ba;font-weight:bold;margin-bottom:6px\">VERSAND</div><div style=\"font-size:13px;line-height:1.5\">Wir versenden weltweit. Falls Sie Ihr Land nicht auswählen können, kontaktieren Sie uns bitte.</div></td></tr><tr><td style=\"text-align:center;font-size:11px;color:#999;padding:10px 0;border-top:1px solid #eee\">&copy; Tudetic</td></tr></table>",
+                "includeeBayProductDetails": true,
+                "aspects": [
+                    {
+                        "name": "Manufacturer Part Number",
+                        "values": [
+                            "KMC01BX12TI126"
+                        ]
+                    },
+                    {
+                        "name": "Größe",
+                        "values": [
+                            "Not applicable here"
+                        ]
+                    }
+                ],
+                "categories": {
+                    "primaryCategory": {
+                        "id": "42320"
+                    },
+                    "storePrimaryCategory": {
+                        "id": "1",
+                        "user": {
+                            "legacyUserId": "1035860100"
+                        }
+                    }
+                },
+                "images": [
+                    {
+                        "ebayImageUrl": "https://i.ebayimg.com/00/s/MTgwWDEyODA=/z/zxAAAeSw~INqJvLO/$_1.JPG?set_id=8800005007",
+                        "externalImageUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126.jpg",
+                        "order": 1
+                    },
+                    {
+                        "ebayImageUrl": "https://i.ebayimg.com/00/s/ODU1WDc4MQ==/z/t~sAAeSw-mxqJvLO/$_1.JPG?set_id=8800005007",
+                        "externalImageUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126-2.jpg",
+                        "order": 2
+                    }
+                ],
+                "includeStockPhotoURL": true,
+                "itemCondition": {
+                    "categoryId": "42320",
+                    "id": "1000",
+                    "itemConditionDescriptors": [],
+                    "conditionDescriptors": []
+                }
+            },
+            "applicationId": "32576",
+            "bestOfferEnabled": false,
+            "bestOfferTerms": {
+                "autoAcceptEnabled": false,
+                "acceptBestOffer": false,
+                "autoAcceptThresholdAmount": {
+                    "original": {
+                        "currency": "EUR",
+                        "value": "0.0"
+                    }
+                },
+                "autoAcceptThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "EUR"
+                    }
+                },
+                "autoDeclineEnabled": false,
+                "autoDeclineThresholdAmount": {
+                    "original": {
+                        "currency": "EUR",
+                        "value": "0.0"
+                    }
+                },
+                "autoDeclineThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "EUR"
+                    }
+                }
+            },
+            "category": {
+                "primaryCategory": {
+                    "id": "42320"
+                },
+                "storePrimaryCategory": {
+                    "id": "1",
+                    "user": {
+                        "legacyUserId": "1035860100"
+                    }
+                }
+            },
+            "coreListingVersionId": "1788886101641",
+            "creationDate": "2026-06-08T16:48:11.000Z",
+            "creationMode": "Add",
+            "ebayVault": false,
+            "fulfillmentTerms": {
+                "digitalDeliveryLogisticsPlanSupported": false,
+                "ebayManagedShipping": false,
+                "freeShippingAvailable": true,
+                "globalShippingLogisticsPlanSupported": false,
+                "inStorePickupLogisticsPlanSupported": false,
+                "managedFulfillmentSupported": false,
+                "managedShippingOptin": false,
+                "packageSpec": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "Metric",
+                    "listingUnitOfMeasure": "METRIC",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shippingTerms": {
+                    "buyerResponsibleForShipping": false,
+                    "excludeShipToLocations": [
+                        "MAR"
+                    ],
+                    "handlingTime": "Days_15",
+                    "shipToLocations": [
+                        "DEU",
+                        "_WW",
+                        "ITA",
+                        "POL",
+                        "AUT",
+                        "BEL",
+                        "FRA",
+                        "GBR"
+                    ],
+                    "shippingOptions": [
+                        {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "DEU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SparversandAusDemAusland",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SparversandAusDemAusland"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1035860100"
+                                }
+                            }
+                        },
+                        {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "1.47",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "ITA",
+                                        "POL",
+                                        "AUT",
+                                        "BEL",
+                                        "FRA",
+                                        "GBR"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "2.1",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SonstigeInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "1.47"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "IT"
+                                        },
+                                        {
+                                            "country": "PL"
+                                        },
+                                        {
+                                            "country": "AT"
+                                        },
+                                        {
+                                            "country": "BE"
+                                        },
+                                        {
+                                            "country": "FR"
+                                        },
+                                        {
+                                            "country": "GB"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "2.1"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SonstigeInternational"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "3.9",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 2,
+                                    "shipToLocations": [
+                                        "_WW"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "5.57",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SonstigeInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "3.9"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "sellerShippingRegion": "WORLDWIDE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "5.57"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SonstigeInternational"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                }
+                            ],
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1035860100"
+                                }
+                            }
+                        }
+                    ],
+                    "excludeShipToLocationsLastModifiedDateTime": "2026-09-07T23:00:11.801Z",
+                    "businessPolicy": {
+                        "id": "167447710013"
+                    },
+                    "businessPolicyIdentifier": {
+                        "policyId": "167447710013",
+                        "versionId": "270180158013"
+                    },
+                    "domesticShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "DEU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SparversandAusDemAusland",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SparversandAusDemAusland"
+                                },
+                                "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1035860100"
+                            }
+                        }
+                    },
+                    "excludedShipToLocations": [
+                        {
+                            "country": "MA"
+                        }
+                    ],
+                    "handlingTimeDuration": "DAYS_15",
+                    "includedShipToLocations": [
+                        {
+                            "country": "DE"
+                        },
+                        {
+                            "sellerShippingRegion": "WORLDWIDE"
+                        },
+                        {
+                            "country": "IT"
+                        },
+                        {
+                            "country": "PL"
+                        },
+                        {
+                            "country": "AT"
+                        },
+                        {
+                            "country": "BE"
+                        },
+                        {
+                            "country": "FR"
+                        },
+                        {
+                            "country": "GB"
+                        }
+                    ],
+                    "internationalShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "1.47",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "ITA",
+                                    "POL",
+                                    "AUT",
+                                    "BEL",
+                                    "FRA",
+                                    "GBR"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "2.1",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SonstigeInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "1.47"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "IT"
+                                    },
+                                    {
+                                        "country": "PL"
+                                    },
+                                    {
+                                        "country": "AT"
+                                    },
+                                    {
+                                        "country": "BE"
+                                    },
+                                    {
+                                        "country": "FR"
+                                    },
+                                    {
+                                        "country": "GB"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "2.1"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SonstigeInternational"
+                                },
+                                "shippingServiceOptionCode": "DE_SonstigeInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "3.9",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 2,
+                                "shipToLocations": [
+                                    "_WW"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "5.57",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SonstigeInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "3.9"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "sellerShippingRegion": "WORLDWIDE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "5.57"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SonstigeInternational"
+                                },
+                                "shippingServiceOptionCode": "DE_SonstigeInternational"
+                            }
+                        ],
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1035860100"
+                            }
+                        }
+                    },
+                    "marketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "DEU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SparversandAusDemAusland",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SparversandAusDemAusland"
+                                },
+                                "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1035860100"
+                            }
+                        }
+                    },
+                    "nonMarketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "1.47",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "ITA",
+                                    "POL",
+                                    "AUT",
+                                    "BEL",
+                                    "FRA",
+                                    "GBR"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "2.1",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SonstigeInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "1.47"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "IT"
+                                    },
+                                    {
+                                        "country": "PL"
+                                    },
+                                    {
+                                        "country": "AT"
+                                    },
+                                    {
+                                        "country": "BE"
+                                    },
+                                    {
+                                        "country": "FR"
+                                    },
+                                    {
+                                        "country": "GB"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "2.1"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SonstigeInternational"
+                                },
+                                "shippingServiceOptionCode": "DE_SonstigeInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "3.9",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 2,
+                                "shipToLocations": [
+                                    "_WW"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "5.57",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SonstigeInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "3.9"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "sellerShippingRegion": "WORLDWIDE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "5.57"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SonstigeInternational"
+                                },
+                                "shippingServiceOptionCode": "DE_SonstigeInternational"
+                            }
+                        ],
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1035860100"
+                            }
+                        }
+                    },
+                    "shippingBusinessPolicy": {
+                        "businessPolicy": {
+                            "id": "167447710013"
+                        }
+                    },
+                    "shippingServices": [
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "rank": 1,
+                            "shipToLocations": [
+                                "DEU"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "shippingServiceCode": "DE_SparversandAusDemAusland",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "0.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "DE"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "0.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "DE_SparversandAusDemAusland"
+                            },
+                            "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                        },
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "1.47",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "rank": 6,
+                            "shipToLocations": [
+                                "ITA",
+                                "POL",
+                                "AUT",
+                                "BEL",
+                                "FRA",
+                                "GBR"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "2.1",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "shippingServiceCode": "DE_SonstigeInternational",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "1.47"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "IT"
+                                },
+                                {
+                                    "country": "PL"
+                                },
+                                {
+                                    "country": "AT"
+                                },
+                                {
+                                    "country": "BE"
+                                },
+                                {
+                                    "country": "FR"
+                                },
+                                {
+                                    "country": "GB"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "2.1"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "DE_SonstigeInternational"
+                            },
+                            "shippingServiceOptionCode": "DE_SonstigeInternational"
+                        },
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "3.9",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "rank": 7,
+                            "shipToLocations": [
+                                "_WW"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "5.57",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "shippingServiceCode": "DE_SonstigeInternational",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "3.9"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "sellerShippingRegion": "WORLDWIDE"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "5.57"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "DE_SonstigeInternational"
+                            },
+                            "shippingServiceOptionCode": "DE_SonstigeInternational"
+                        }
+                    ]
+                },
+                "listingId": "206331794191",
+                "digitalDeliverySupported": false,
+                "globalShippingSupported": false,
+                "inStorePickupSupported": false,
+                "packageSpecifications": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "Metric",
+                    "listingUnitOfMeasure": "METRIC",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shipToHomeLogisticsPlanSupported": false
+            },
+            "itemCondition": {
+                "categoryId": "42320",
+                "id": "1000",
+                "itemConditionDescriptors": [],
+                "conditionDescriptors": []
+            },
+            "itemLocation": {
+                "countryCode": "ES",
+                "postalCode": "31500",
+                "streetAddress": "Tudela",
+                "country": "ES",
+                "location": "Tudela"
+            },
+            "itemRevisionDate": "2026-09-07T23:00:11.000Z",
+            "items": [
+                {
+                    "itemId": "206331794191",
+                    "creationDate": "2026-06-08T16:48:11.000Z",
+                    "itemSellerProduct": {
+                        "globalIdentifiers": [
+                            {
+                                "name": "EAN",
+                                "values": [
+                                    "4715575890197"
+                                ]
+                            },
+                            {
+                                "name": "MPN",
+                                "values": [
+                                    "BX12TI126"
+                                ]
+                            }
+                        ],
+                        "images": [
+                            {
+                                "ebayImageUrl": "https://i.ebayimg.com/00/s/MTgwWDEyODA=/z/zxAAAeSw~INqJvLO/$_1.JPG?set_id=8800005007",
+                                "externalImageUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126.jpg",
+                                "order": 1
+                            },
+                            {
+                                "ebayImageUrl": "https://i.ebayimg.com/00/s/ODU1WDc4MQ==/z/t~sAAeSw-mxqJvLO/$_1.JPG?set_id=8800005007",
+                                "externalImageUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126-2.jpg",
+                                "order": 2
+                            }
+                        ],
+                        "productIdentifiers": {
+                            "ebayProduct": {
+                                "id": "9026578968"
+                            },
+                            "globalIdentifiers": {
+                                "ean": "4715575890197"
+                            },
+                            "includeEbayProductDetails": true
+                        },
+                        "traits": []
+                    },
+                    "quantityAvailable": 0,
+                    "quantitySold": 0,
+                    "sellerPrice": {
+                        "fixedPrice": {
+                            "original": {
+                                "amount": "61.74",
+                                "currency": "EUR"
+                            }
+                        },
+                        "marketingPrice": {
+                            "pricingTreatment": "None"
+                        }
+                    },
+                    "sku": "KMC01BX12TI126/721",
+                    "variationAspects": [],
+                    "listing": {
+                        "listingId": "206331794191"
+                    },
+                    "photos": [
+                        {
+                            "ebayPictureUrl": "https://i.ebayimg.com/00/s/MTgwWDEyODA=/z/zxAAAeSw~INqJvLO/$_1.JPG?set_id=8800005007",
+                            "externalPictureUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126.jpg",
+                            "order": 1
+                        },
+                        {
+                            "ebayPictureUrl": "https://i.ebayimg.com/00/s/ODU1WDc4MQ==/z/t~sAAeSw-mxqJvLO/$_1.JPG?set_id=8800005007",
+                            "externalPictureUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126-2.jpg",
+                            "order": 2
+                        }
+                    ],
+                    "itemIdRestReference": "v1|206331794191|0",
+                    "itemIdVersioned": "206331794191",
+                    "itemTerms": {
+                        "availability": {
+                            "quantityAvailable": 0,
+                            "quantitySold": 0
+                        },
+                        "pricingTerms": {
+                            "auctionPrice": {},
+                            "fixedPrice": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "61.74"
+                                }
+                            },
+                            "marketingPrice": {}
+                        }
+                    },
+                    "terms": {
+                        "fulfillmentTerms": {
+                            "managedFulfillmentSupported": false
+                        }
+                    },
+                    "versionId": "4645744542010",
+                    "autoTagProduct": {
+                        "id": "9026578968"
+                    }
+                }
+            ],
+            "listingFormat": "BIN",
+            "listingLifecycle": {
+                "endDate": "2026-10-08T16:48:11.000Z",
+                "listingDuration": "GTC",
+                "listingStatus": "ACTIVE",
+                "onHold": false,
+                "scheduledEndDate": "2026-10-08T16:48:11.000Z",
+                "startDate": "2026-06-08T16:48:11.000Z",
+                "actualEndAt": "2026-10-08T16:48:11.000Z",
+                "createdAt": "2026-06-08T16:48:11.000Z",
+                "duplicateAuction": false,
+                "listedAsScheduled": false,
+                "listingDurationInDays": "GTC",
+                "scheduledEndAt": "2026-10-08T16:48:11.000Z",
+                "startAt": "2026-06-08T16:48:11.000Z"
+            },
+            "listingTerms": {
+                "regulatory": {
+                    "manufacturer": {
+                        "address": {
+                            "addressLine1": "Avenida del Barrio 86",
+                            "city": "Tudela",
+                            "country": "ES",
+                            "postalCode": "31500",
+                            "stateOrProvince": "Navarra"
+                        },
+                        "city": "Tudela",
+                        "companyName": "Tudetic - Javier",
+                        "contact": {
+                            "email": "info@tudetic.com",
+                            "phone": "948088505"
+                        },
+                        "country": "ES",
+                        "email": "info@tudetic.com",
+                        "phone": "948088505",
+                        "postalCode": "31500",
+                        "stateOrProvince": "Navarra",
+                        "street1": "Avenida del Barrio 86"
+                    },
+                    "repairIndexScore": "9.5"
+                },
+                "bestOfferTerms": {
+                    "autoAcceptEnabled": false,
+                    "acceptBestOffer": false,
+                    "autoAcceptThresholdAmount": {
+                        "original": {
+                            "currency": "EUR",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoAcceptThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "EUR"
+                        }
+                    },
+                    "autoDeclineEnabled": false,
+                    "autoDeclineThresholdAmount": {
+                        "original": {
+                            "currency": "EUR",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoDeclineThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "EUR"
+                        }
+                    }
+                },
+                "buyerRestrictions": {
+                    "buyerRestrictionModifiedDate": "2026-09-07T23:00:10.392Z",
+                    "disableBuyerRestrictions": true,
+                    "quantityLimitPerBuyer": 0
+                },
+                "hideParticipation": false,
+                "internationalSiteVisibility": [],
+                "itemLocation": {
+                    "countryCode": "ES",
+                    "postalCode": "31500",
+                    "streetAddress": "Tudela",
+                    "country": "ES",
+                    "location": "Tudela"
+                },
+                "lifecycleTerms": {
+                    "endDate": "2026-10-08T16:48:11.000Z",
+                    "listingDuration": "GTC",
+                    "listingStatus": "ACTIVE",
+                    "onHold": false,
+                    "scheduledEndDate": "2026-10-08T16:48:11.000Z",
+                    "startDate": "2026-06-08T16:48:11.000Z",
+                    "actualEndAt": "2026-10-08T16:48:11.000Z",
+                    "createdAt": "2026-06-08T16:48:11.000Z",
+                    "duplicateAuction": false,
+                    "listedAsScheduled": false,
+                    "listingDurationInDays": "GTC",
+                    "scheduledEndAt": "2026-10-08T16:48:11.000Z",
+                    "startAt": "2026-06-08T16:48:11.000Z"
+                },
+                "listingFormat": "FIXED_PRICE",
+                "listingFulfillmentTerms": {
+                    "digitalDeliveryLogisticsPlanSupported": false,
+                    "ebayManagedShipping": false,
+                    "freeShippingAvailable": true,
+                    "globalShippingLogisticsPlanSupported": false,
+                    "inStorePickupLogisticsPlanSupported": false,
+                    "managedFulfillmentSupported": false,
+                    "managedShippingOptin": false,
+                    "packageSpec": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "Metric",
+                        "listingUnitOfMeasure": "METRIC",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shippingTerms": {
+                        "buyerResponsibleForShipping": false,
+                        "excludeShipToLocations": [
+                            "MAR"
+                        ],
+                        "handlingTime": "Days_15",
+                        "shipToLocations": [
+                            "DEU",
+                            "_WW",
+                            "ITA",
+                            "POL",
+                            "AUT",
+                            "BEL",
+                            "FRA",
+                            "GBR"
+                        ],
+                        "shippingOptions": [
+                            {
+                                "costType": "FLAT",
+                                "isInternational": false,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "-1",
+                                "shippingServices": [
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "rank": 1,
+                                        "shipToLocations": [
+                                            "DEU"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "shippingServiceCode": "DE_SparversandAusDemAusland",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "DE"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "DE_SparversandAusDemAusland"
+                                        },
+                                        "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                                    }
+                                ],
+                                "internationalShippingOption": false,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "-1",
+                                "shippingPreference": {
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "1035860100"
+                                    }
+                                }
+                            },
+                            {
+                                "costType": "FLAT",
+                                "isInternational": true,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "-1",
+                                "shippingServices": [
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "1.47",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "rank": 1,
+                                        "shipToLocations": [
+                                            "ITA",
+                                            "POL",
+                                            "AUT",
+                                            "BEL",
+                                            "FRA",
+                                            "GBR"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "2.1",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "shippingServiceCode": "DE_SonstigeInternational",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "1.47"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "IT"
+                                            },
+                                            {
+                                                "country": "PL"
+                                            },
+                                            {
+                                                "country": "AT"
+                                            },
+                                            {
+                                                "country": "BE"
+                                            },
+                                            {
+                                                "country": "FR"
+                                            },
+                                            {
+                                                "country": "GB"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "2.1"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "DE_SonstigeInternational"
+                                        },
+                                        "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                    },
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "3.9",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "rank": 2,
+                                        "shipToLocations": [
+                                            "_WW"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "5.57",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "shippingServiceCode": "DE_SonstigeInternational",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "3.9"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "sellerShippingRegion": "WORLDWIDE"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "5.57"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "DE_SonstigeInternational"
+                                        },
+                                        "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                    }
+                                ],
+                                "internationalShippingOption": true,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "-1",
+                                "shippingPreference": {
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "1035860100"
+                                    }
+                                }
+                            }
+                        ],
+                        "excludeShipToLocationsLastModifiedDateTime": "2026-09-07T23:00:11.801Z",
+                        "businessPolicy": {
+                            "id": "167447710013"
+                        },
+                        "businessPolicyIdentifier": {
+                            "policyId": "167447710013",
+                            "versionId": "270180158013"
+                        },
+                        "domesticShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "DEU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SparversandAusDemAusland",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SparversandAusDemAusland"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1035860100"
+                                }
+                            }
+                        },
+                        "excludedShipToLocations": [
+                            {
+                                "country": "MA"
+                            }
+                        ],
+                        "handlingTimeDuration": "DAYS_15",
+                        "includedShipToLocations": [
+                            {
+                                "country": "DE"
+                            },
+                            {
+                                "sellerShippingRegion": "WORLDWIDE"
+                            },
+                            {
+                                "country": "IT"
+                            },
+                            {
+                                "country": "PL"
+                            },
+                            {
+                                "country": "AT"
+                            },
+                            {
+                                "country": "BE"
+                            },
+                            {
+                                "country": "FR"
+                            },
+                            {
+                                "country": "GB"
+                            }
+                        ],
+                        "internationalShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "1.47",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "ITA",
+                                        "POL",
+                                        "AUT",
+                                        "BEL",
+                                        "FRA",
+                                        "GBR"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "2.1",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SonstigeInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "1.47"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "IT"
+                                        },
+                                        {
+                                            "country": "PL"
+                                        },
+                                        {
+                                            "country": "AT"
+                                        },
+                                        {
+                                            "country": "BE"
+                                        },
+                                        {
+                                            "country": "FR"
+                                        },
+                                        {
+                                            "country": "GB"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "2.1"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SonstigeInternational"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "3.9",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 2,
+                                    "shipToLocations": [
+                                        "_WW"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "5.57",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SonstigeInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "3.9"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "sellerShippingRegion": "WORLDWIDE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "5.57"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SonstigeInternational"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                }
+                            ],
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1035860100"
+                                }
+                            }
+                        },
+                        "marketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "DEU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SparversandAusDemAusland",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SparversandAusDemAusland"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1035860100"
+                                }
+                            }
+                        },
+                        "nonMarketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "1.47",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "ITA",
+                                        "POL",
+                                        "AUT",
+                                        "BEL",
+                                        "FRA",
+                                        "GBR"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "2.1",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SonstigeInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "1.47"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "IT"
+                                        },
+                                        {
+                                            "country": "PL"
+                                        },
+                                        {
+                                            "country": "AT"
+                                        },
+                                        {
+                                            "country": "BE"
+                                        },
+                                        {
+                                            "country": "FR"
+                                        },
+                                        {
+                                            "country": "GB"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "2.1"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SonstigeInternational"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                },
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "3.9",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 2,
+                                    "shipToLocations": [
+                                        "_WW"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "5.57",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_SonstigeInternational",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "3.9"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "sellerShippingRegion": "WORLDWIDE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "5.57"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_SonstigeInternational"
+                                    },
+                                    "shippingServiceOptionCode": "DE_SonstigeInternational"
+                                }
+                            ],
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1035860100"
+                                }
+                            }
+                        },
+                        "shippingBusinessPolicy": {
+                            "businessPolicy": {
+                                "id": "167447710013"
+                            }
+                        },
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "DEU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SparversandAusDemAusland",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SparversandAusDemAusland"
+                                },
+                                "shippingServiceOptionCode": "DE_SparversandAusDemAusland"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "1.47",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 6,
+                                "shipToLocations": [
+                                    "ITA",
+                                    "POL",
+                                    "AUT",
+                                    "BEL",
+                                    "FRA",
+                                    "GBR"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "2.1",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SonstigeInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "1.47"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "IT"
+                                    },
+                                    {
+                                        "country": "PL"
+                                    },
+                                    {
+                                        "country": "AT"
+                                    },
+                                    {
+                                        "country": "BE"
+                                    },
+                                    {
+                                        "country": "FR"
+                                    },
+                                    {
+                                        "country": "GB"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "2.1"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SonstigeInternational"
+                                },
+                                "shippingServiceOptionCode": "DE_SonstigeInternational"
+                            },
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "3.9",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 7,
+                                "shipToLocations": [
+                                    "_WW"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "5.57",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_SonstigeInternational",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "3.9"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "sellerShippingRegion": "WORLDWIDE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "5.57"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_SonstigeInternational"
+                                },
+                                "shippingServiceOptionCode": "DE_SonstigeInternational"
+                            }
+                        ]
+                    },
+                    "listingId": "206331794191",
+                    "digitalDeliverySupported": false,
+                    "globalShippingSupported": false,
+                    "inStorePickupSupported": false,
+                    "packageSpecifications": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "Metric",
+                        "listingUnitOfMeasure": "METRIC",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shipToHomeLogisticsPlanSupported": false
+                },
+                "listingPaymentTerms": {
+                    "paymentMethods": [],
+                    "businessPolicy": {
+                        "id": "198839039013"
+                    },
+                    "businessPolicyIdentifier": {
+                        "policyId": "198839039013",
+                        "versionId": "235823542013"
+                    },
+                    "depositRequired": false,
+                    "hoursToDeposit": -1,
+                    "immediatePay": false,
+                    "listingPaymentMethods": [],
+                    "motorVehicleDeposit": {
+                        "depositRequired": false,
+                        "hoursToDeposit": -1
+                    }
+                },
+                "listingReturnTerms": {
+                    "domesticReturnTerms": {
+                        "returnAccepted": true,
+                        "returnPeriod": "Days_14",
+                        "returnShipmentPayee": "Buyer",
+                        "returnDuration": "DAYS_14",
+                        "returnShipmentInvoicee": "Buyer"
+                    },
+                    "internationalReturnTerms": {
+                        "returnAccepted": false
+                    },
+                    "businessPolicy": {
+                        "id": "260794419013"
+                    },
+                    "businessPolicyIdentifier": {
+                        "policyId": "260794419013",
+                        "versionId": "303638130013"
+                    },
+                    "returnInstructions": "You can return all the items with the original envelope."
+                },
+                "programsSupported": [],
+                "taxTerms": {
+                    "applicableToShipping": false,
+                    "recognizedAsBusinessSellerForVAT": false,
+                    "salesTaxApplicableToShipping": false,
+                    "salesTaxTableUsed": false,
+                    "vatRecognizedBusinessSeller": false
+                },
+                "totalQuantityAvailable": 0,
+                "visualEnhancements": {
+                    "boldTitle": false,
+                    "galleryPlus": false
+                }
+            },
+            "paymentTerms": {
+                "paymentMethods": [],
+                "businessPolicy": {
+                    "id": "198839039013"
+                },
+                "businessPolicyIdentifier": {
+                    "policyId": "198839039013",
+                    "versionId": "235823542013"
+                },
+                "depositRequired": false,
+                "hoursToDeposit": -1,
+                "immediatePay": false,
+                "listingPaymentMethods": [],
+                "motorVehicleDeposit": {
+                    "depositRequired": false,
+                    "hoursToDeposit": -1
+                }
+            },
+            "photos": [
+                {
+                    "ebayPictureUrl": "https://i.ebayimg.com/00/s/MTgwWDEyODA=/z/zxAAAeSw~INqJvLO/$_1.JPG?set_id=8800005007",
+                    "externalPictureUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126.jpg",
+                    "order": 1
+                },
+                {
+                    "ebayPictureUrl": "https://i.ebayimg.com/00/s/ODU1WDc4MQ==/z/t~sAAeSw-mxqJvLO/$_1.JPG?set_id=8800005007",
+                    "externalPictureUrl": "https://www.foottic.com/productos/kmc/5/8/588893_KMC01BX12TI126-2.jpg",
+                    "order": 2
+                }
+            ],
+            "programsSupported": [],
+            "returnTerms": {
+                "domesticReturnTerms": {
+                    "returnAccepted": true,
+                    "returnPeriod": "Days_14",
+                    "returnShipmentPayee": "Buyer",
+                    "returnDuration": "DAYS_14",
+                    "returnShipmentInvoicee": "Buyer"
+                },
+                "internationalReturnTerms": {
+                    "returnAccepted": false
+                },
+                "businessPolicy": {
+                    "id": "260794419013"
+                },
+                "businessPolicyIdentifier": {
+                    "policyId": "260794419013",
+                    "versionId": "303638130013"
+                },
+                "returnInstructions": "You can return all the items with the original envelope."
+            },
+            "seller": {
+                "legacyUserId": "1035860100"
+            },
+            "sellerListingVersionId": "4645744542010",
+            "significantRevisionCount": 9,
+            "totalQuantity": 0,
+            "autoRelistTerms": {
+                "autoRelist": false,
+                "canAutoRelist": false
+            },
+            "buyerRestrictions": {
+                "buyerRestrictionModifiedDate": "2026-09-07T23:00:10.392Z",
+                "disableBuyerRestrictions": true,
+                "quantityLimitPerBuyer": 0
+            },
+            "buyerRestrictionsDisabled": true,
+            "endReason": "NONE",
+            "enrolledInPriceGuarantee": false,
+            "hideParticipation": false,
+            "inventoryTrackingMethod": "Item",
+            "isItemOnSale": false,
+            "listingCreationClientIP": "10.98.167.235",
+            "listingHttpsCompliant": true,
+            "managedByInventory": false,
+            "marketplace": "EBAY_DE",
+            "outOfStockDate": "2026-07-31T14:46:16.000Z",
+            "partnerListedAutosDealerItem": false,
+            "promotionalDetails": {
+                "markdownItemPriceRevision": "NO_MARKDOWN_SALE",
+                "promotionalFreeShippingSale": false,
+                "standardFreeShippingPriorToPromotion": false
+            },
+            "regulatoryInfo": {
+                "manufacturer": {
+                    "address": {
+                        "addressLine1": "Avenida del Barrio 86",
+                        "city": "Tudela",
+                        "country": "ES",
+                        "postalCode": "31500",
+                        "stateOrProvince": "Navarra"
+                    },
+                    "city": "Tudela",
+                    "companyName": "Tudetic - Javier",
+                    "contact": {
+                        "email": "info@tudetic.com",
+                        "phone": "948088505"
+                    },
+                    "country": "ES",
+                    "email": "info@tudetic.com",
+                    "phone": "948088505",
+                    "postalCode": "31500",
+                    "stateOrProvince": "Navarra",
+                    "street1": "Avenida del Barrio 86"
+                },
+                "repairIndexScore": "9.5"
+            },
+            "secondChanceItem": false,
+            "semiPersistentBin": false,
+            "taxInfo": {
+                "applicableToShipping": false,
+                "recognizedAsBusinessSellerForVAT": false,
+                "salesTaxApplicableToShipping": false,
+                "salesTaxTableUsed": false,
+                "vatRecognizedBusinessSeller": false
+            },
+            "vehicleSubscriptionItem": false,
+            "visualEnhancements": {
+                "boldTitle": false,
+                "featuredPlus": false,
+                "galleryType": "Gallery",
+                "homePageFeatured": false,
+                "listingDesignerOptimalPictureSize": false
+            },
+            "__typename": "SingleSkuListing",
+            "eligibleForPudo": false,
+            "itemCountryOfOrigin": {
+                "confidenceScore": 0.824,
+                "countryOfOrigin": "TW"
+            },
+            "visibilitySummary": {
+                "defaultVisibleSites": [
+                    0,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    16,
+                    17,
+                    18,
+                    19,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    55,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    100,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118,
+                    120,
+                    121,
+                    122,
+                    123,
+                    124,
+                    125,
+                    126,
+                    128,
+                    129,
+                    130,
+                    131,
+                    132,
+                    133,
+                    134,
+                    135,
+                    136,
+                    137,
+                    138,
+                    139,
+                    140,
+                    142,
+                    143,
+                    144,
+                    145,
+                    147,
+                    148,
+                    150,
+                    151,
+                    152,
+                    153,
+                    155,
+                    156,
+                    157,
+                    158,
+                    159,
+                    160,
+                    166,
+                    167,
+                    169,
+                    170,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    176,
+                    177,
+                    178,
+                    179,
+                    181,
+                    182,
+                    183,
+                    184,
+                    187,
+                    189,
+                    190,
+                    191,
+                    193,
+                    196,
+                    197,
+                    198,
+                    199,
+                    200,
+                    201,
+                    202,
+                    204,
+                    205,
+                    206,
+                    208,
+                    209,
+                    212,
+                    213,
+                    214,
+                    215,
+                    217,
+                    218,
+                    219,
+                    220,
+                    223,
+                    224,
+                    225,
+                    226,
+                    227,
+                    228,
+                    229,
+                    231,
+                    232,
+                    233,
+                    234,
+                    235,
+                    236,
+                    237,
+                    238,
+                    239,
+                    240,
+                    241,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    257,
+                    258,
+                    259
+                ],
+                "explicitlySuppressedSites": [],
+                "packedVisibilityString": "0=159,2=141,3=133,4=159,5=159,6=159,7=159,8=159,9=159,10=159,11=159,12=159,13=159,14=159,15=133,16=159,17=159,18=159,19=159,20=133,21=159,22=159,23=159,24=159,25=159,26=159,27=159,28=159,29=159,30=159,31=159,32=159,33=159,34=159,35=159,37=159,38=159,39=159,40=159,41=159,42=159,43=159,44=159,46=159,47=159,48=159,49=159,50=159,51=159,52=159,53=159,55=159,58=159,59=159,60=159,61=159,62=159,63=159,64=159,65=159,66=159,67=159,68=159,69=159,71=133,72=159,73=159,74=159,75=159,76=159,77=159,78=159,79=159,81=159,82=159,83=159,84=159,85=159,86=159,87=159,88=159,89=159,90=159,91=159,100=135,101=133,102=159,103=159,104=159,105=159,106=159,107=159,108=159,109=159,112=159,113=159,114=159,115=159,116=159,117=159,118=159,120=159,121=159,122=159,123=159,124=159,125=159,126=159,128=159,129=159,130=159,131=159,132=159,133=159,134=159,135=159,136=159,137=159,138=159,139=159,140=159,141=128,142=159,143=159,144=159,145=159,146=133,147=159,148=159,150=159,151=159,152=159,153=159,155=159,156=159,157=159,158=159,159=159,160=159,166=159,167=159,169=159,170=159,171=159,172=159,173=159,174=159,175=159,176=159,177=159,178=159,179=159,181=159,182=159,183=159,184=159,186=133,187=159,189=159,190=159,191=159,193=159,196=159,197=159,198=159,199=159,200=159,201=159,202=159,203=128,204=159,205=159,206=159,207=133,208=159,209=159,210=141,211=133,212=159,213=159,214=159,215=159,216=133,217=159,218=159,219=159,220=159,223=159,224=159,225=159,226=159,227=159,228=159,229=159,231=159,232=159,233=159,234=159,235=159,236=159,237=159,238=159,239=159,240=159,241=159,242=159,243=159,244=159,245=159,246=159,247=159,248=159,249=159,250=159,251=159,252=159,253=159,254=159,255=159,256=159,257=159,258=159,259=159"
+            }
+        },
+        "__typename": "ListingEntry",
+        "schemaVersion": "2.1.0"
+    }
+}
