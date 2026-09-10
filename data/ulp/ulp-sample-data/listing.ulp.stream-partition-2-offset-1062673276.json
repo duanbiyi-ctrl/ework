@@ -1,0 +1,1090 @@
+{
+    "metadata": {
+        "id": "407154196519",
+        "operation": "Update",
+        "ulpListingVersionId": "33",
+        "customFields": {
+            "marketplaceId": "EBAY-FR",
+            "numberOfItems": 1,
+            "listingFormat": "BIN",
+            "primaryLeafCategoryId": "171228"
+        }
+    },
+    "beforeChangePatch": "[{\"op\":\"replace\",\"path\":\"/listing/coreListingVersionId\",\"value\":\"1788804460587\"},{\"op\":\"replace\",\"path\":\"/listing/itemRevisionDate\",\"value\":\"2026-09-07T18:07:40.806Z\"},{\"op\":\"replace\",\"path\":\"/listing/items/0/sellerPrice/fixedPrice/original/amount\",\"value\":\"13.32\"},{\"op\":\"replace\",\"path\":\"/listing/items/0/itemTerms/pricingTerms/fixedPrice/original/value\",\"value\":\"13.32\"},{\"op\":\"replace\",\"path\":\"/listing/significantRevisionCount\",\"value\":25}]",
+    "afterchangeDocument": "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",
+    "afterchangeDocumentPlain": {
+        "listing": {
+            "listingId": "407154196519",
+            "aspects": [
+                {
+                    "name": "Brand",
+                    "values": [
+                        "Matussek, Matthias"
+                    ]
+                },
+                {
+                    "name": "Type",
+                    "values": [
+                        "book"
+                    ]
+                },
+                {
+                    "name": "EAN",
+                    "values": [
+                        "9783100489241"
+                    ]
+                },
+                {
+                    "name": "ISBN",
+                    "values": [
+                        "9783100489241"
+                    ]
+                }
+            ],
+            "marketplaceId": "EBAY-FR",
+            "sellerProduct": {
+                "title": "Als wir jung und schön waren de Matussek, Matthias | Livre | état comme neuf",
+                "description": "<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"description\" content=\"medimops eBay Template\">\n<meta name=\"author\" content=\"medimops\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/ebay-template-fr-v3.css\"/>\n<div class=\"wrapper medimops\">\n<div class=\"col-lg-12 head-area\">\n<div class=\"row font-small\">\n<div class=\"col-lg-2 col-md-2 col-sm-3 col-xs-12\">\n<div class=\"row\">\n<img class=\"img-responsive logo-img\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/logo-momox.svg\">\n</div>\n</div>\n<div class=\"col-lg-10 col-md-10 col-sm-9 col-xs-12\">\n<ul class=\"tick-ul\">\n<li><b>Articles d’occasion contrôlés</b> <span class=\"englisch\">/ Certified second hand articles</span></li>\n<li><b>Plus de 4 millions d’articles sur le site en ligne</b> <span class=\"englisch\">/ More than 4 mio. articles in shop</span></li>\n<li><b>Achetez de manière simple, sûre et durable</b> <span class=\"englisch\">/ Easy, safe and sustainable shopping</span></li>\n</ul>\n</div>\n<div class=\"clr\"></div>\n</div>\n</div>\n<div class=\"col-lg-12 content shadow bottom-20\">\n<div class=\"versandkost\"></div>\n<h1>Als wir jung und schön waren de Matussek, Matthias  | Livre | état comme neuf</h1>\n<div class=\"row\">\n<div class=\"col-lg-4 col-md-3 col-sm-4\">\n<div class=\"listing-img-area\">\n<img class=\"listing-img\" src=\"https://images2.medimops.eu/product/2aa9b3/M03100489241-large.jpg\" alt=\"Als wir jung und schön waren de Matussek, Matthias  | Livre | état comme neuf\">\n</div>\n</div>\n<div class=\"col-lg-8 col-md-9 col-sm-8\">\n<div class=\"row\">\n<div class=\"col-lg-4 col-md-4 col-sm-4\">\n<p class=\"zustand-area\"><b>État</b><span class=\"englisch\"> / condition:</span></p>\n</div>\n<div class=\"col-lg-8 col-md-8 col-sm-8\">\n<p class=\"zustand-area\">d'occasion – comme neuf<span class=\"englisch\"> / second hand – like new</span></p>\n</div>\n<div class=\"clr\"></div>\n<div class=\"col-lg-4 col-md-4 col-sm-4\">\n<p class=\"zustand-area\"><b>Éditeur</b><span class=\"englisch\"> / publisher:</span></p>\n</div>\n<div class=\"col-lg-8 col-md-8 col-sm-8\">\n<p class=\"zustand-area\">Matthias Matussek</p>\n</div>\n<div class=\"clr\"></div>\n<div class=\"col-lg-4 col-md-4 col-sm-4\">\n<p class=\"zustand-area\"><b>Médium</b><span class=\"englisch\"> / medium:</span></p>\n</div>\n<div class=\"col-lg-8 col-md-8 col-sm-8\">\n<p class=\"zustand-area\">Gebundene Ausgabe</p>\n</div>\n<div class=\"clr\"></div>\n<div class=\"col-lg-4 col-md-4 col-sm-4\">\n<p class=\"zustand-area\"><b>Code-barres EAN</b><span class=\"englisch\"> / EAN:</span></p>\n</div>\n<div class=\"col-lg-8 col-md-8 col-sm-8\">\n<p class=\"zustand-area\">9783100489241</p>\n</div>\n<div class=\"clr\"></div>\n<div class=\"col-lg-12 top-20\">\n<img class=\"img-responsive flag-img\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/fr.svg\">\n</div>\n<div class=\"col-lg-4 col-md-4 top-5\">\n<p class=\"flags-area\"><b>Adresse d'expédition :</b></p>\n</div>\n<div class=\"col-lg-8 col-md-8 top-5-right\">\n<p class=\"flags-area\">Après paiement, plus de modification possible</p>\n</div>\n<div class=\"top-5\"></div>\n<div class=\"col-lg-4 col-md-4\">\n<p class=\"flags-area\"><b>Expédition :</b></p>\n</div>\n<div class=\"col-lg-8 col-md-8\">\n<p class=\"flags-area\"><b>Vers la France</b></p>\n</div>\n<div class=\"clr\"></div>\n<div class=\"col-lg-12 top-20\">\n<img class=\"img-responsive flag-img\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/eu.svg\">\n</div>\n<div class=\"col-lg-4 col-md-4 top-5\">\n<p class=\"flags-area\"><b>Delivery address:</b></p>\n</div>\n<div class=\"col-lg-8 col-md-8 top-5-right\">\n<p class=\"flags-area\">Change after payment is not possible.</p>\n</div>\n<div class=\"top-5\"></div>\n<div class=\"col-lg-4 col-md-4\">\n<p class=\"flags-area\"><b>Shipping:</b></p>\n</div>\n<div class=\"col-lg-8 col-md-8\">\n<p class=\"flags-area\"><b>To France</b></p>\n</div>\n<div class=\"clr\"></div>\n</div>\n</div>\n<div class=\"clr\"></div>\n</div>\n</div>\n<div class=\"clr\"></div>\n<div class=\"col-lg-2-point-4 col-md-2-point-4 col-sm-2-point-4 col-xs-2-point-4\">\n<div class=\"bottom-links shadow\">\n<h2><a href=\"https://www.ebay.fr/str/momoxfrance/Livres/_i.html?store_cat=12622669014\" class=\"font-big\"><img class=\"img-responsive\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/categories-books-fr.png\">Livres</a></h2>\n<p>Fiction</p>\n<p>Livre jeunesse</p>\n<p>Roman policier & thriller</p>\n<p><a href=\"https://www.ebay.fr/str/momoxfrance/Livres/_i.html?store_cat=12622669014\">... et plus encore</a></p>\n</div>\n</div>\n<div class=\"col-lg-2-point-4 col-md-2-point-4 col-sm-2-point-4 col-xs-2-point-4\">\n<div class=\"bottom-links shadow\">\n<h2><a href=\"https://www.ebay.fr/str/momoxfrance/Musique/_i.html?store_cat=12622670014\" class=\"font-big\"><img class=\"img-responsive\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/categories-cd-fr.png\">Musique</a></h2>\n<p>Pop</p>\n<p>Rock</p>\n<p>Chansons enfantine & jeux musicaux</p>\n<p><a href=\"https://www.ebay.fr/str/momoxfrance/Musique/_i.html?store_cat=12622670014\">... et plus encore</a></p>\n</div>\n</div>\n<div class=\"col-lg-2-point-4 col-md-2-point-4 col-sm-2-point-4 col-xs-2-point-4\">\n<div class=\"bottom-links shadow\">\n<h2><a href=\"https://www.ebay.fr/str/momoxfrance/Films/_i.html?store_cat=12622671014\" class=\"font-big\"><img class=\"img-responsive\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/categories-dvds-fr.png\">Films</a></h2>\n<p>Drame</p>\n<p>Action & aventure</p>\n<p>Comédie & divertissement</p>\n<p><a href=\"https://www.ebay.fr/str/momoxfrance/Films/_i.html?store_cat=12622671014\">... et plus encore</a></p>\n</div>\n</div>\n<div class=\"col-lg-2-point-4 col-md-2-point-4 col-sm-2-point-4 col-xs-2-point-4\">\n<div class=\"bottom-links shadow\">\n<h2><a href=\"https://www.ebay.fr/str/momoxfrance/Jeux-video/_i.html?store_cat=12622679014\" class=\"font-big\"><img class=\"img-responsive\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/categories-games-fr.png\">Jeux vidéo</a></h2>\n<p>PlayStation 3</p>\n<p>Nintendo DS</p>\n<p>PC</p>\n<p><a href=\"https://www.ebay.fr/str/momoxfrance/Jeux-video/_i.html?store_cat=12622679014\">... et plus encore</a></p>\n</div>\n</div>\n<div class=\"col-lg-2-point-4 col-md-2-point-4 col-sm-2-point-4-center col-xs-2-point-4\">\n<div class=\"bottom-links shadow\">\n<h2><a href=\"https://www.ebay.fr/str/momoxfrance/Logiciel/_i.html?store_cat=12622680014\" class=\"font-big\"><img class=\"img-responsive\" src=\"https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/categories-software-fr.png\">Logiciel</a></h2>\n<p>Enfant & famille</p>\n<p>Système d'exploitation</p>\n<p>Scolaire & études</p>\n<p><a href=\"https://www.ebay.fr/str/momoxfrance/Logiciel/_i.html?store_cat=12622680014\">... et plus encore</a></p>\n</div>\n</div>\n<div class=\"clr\"></div>\n<div class=\"col-lg-12 content shadow faq\">\n<h3>Description de l’état</h3>\n<p>Nous essayons de juger de l’état du produit de manière aussi objective que possible. Nous contrôlons chaque article à la main avant de le proposer à la vente et estimons son état en fonction des critères suivants. Si vous veniez à constater des différences par rapport à l’état indiqué, nous vous serions très reconnaissants de nous contacter avant de laisser une évaluation.</p>\n<h4>Livres et médias:</h4>\n<p><b>Neuf:</b></p>\n<ul class=\"tick-ul\">\n<li>Article jamais utilisé, en parfait état</li>\n</ul>\n<p><b>Comme Neuf:</b></p>\n<ul class=\"tick-ul\">\n<li>Article d'occasion en parfait état</li>\n<li>L'article ne présente aucun signe d'usure</li>\n<li>L'article n'est pas endommagé et ne porte pas de marques ou de notes</li>\n</ul>\n<p><b>Très bon:</b></p>\n<ul class=\"tick-ul\">\n<li>Article presque inutilisé, absence presque totale de traces d'utilisation</li>\n<li>Absence presque totale de pliures sur le dos / la jaquette des livres</li>\n<li>Pas de rayures, ou uniquement des rayures légères, sur les CD/DVD</li>\n</ul>\n<p><b>Bon:</b></p>\n<ul class=\"tick-ul\">\n<li>L'article présente des traces d'utilisation, mais est en bon état</li>\n<li>La présence de pliures ou de traces de lecture est possible</li>\n<li>La jaquette peut éventuellement manquer</li>\n<li>Il peut s'agir, le cas échéant, d'un exemplaire défectueux mais en bon état</li>\n<li>La présence de dédicaces, de quelques marquages de texte ou de petits marquages est possible</li>\n<li>Les CD/DVD peuvent présenter des rayures, mais ils doivent fonctionner correctement</li>\n</ul>\n<p><b>Acceptable:</b></p>\n<ul class=\"tick-ul\">\n<li>L'article présente des traces nettement perceptibles d'utilisation</li>\n<li>L'article doit fonctionner correctement</li>\n<li>Présence possible de notes, de marquages et de soulignements</li>\n<li>Les éléments joints à l'article montrent des traces d'utilisation ou sont manquants (p. ex. jaquette, couverture, livret, housse, boîte, instructions)</li>\n</ul>\n<h4>Éditions (pour les livres)</h4>\n<p>Dans certains cas isolés, il peut arriver qu’un livre soit livré dans une édition différente de celle indiquée. Si cela devait arriver, veuillez nous contacter avant de laisser une évaluation afin que nous puissions éventuellement trouver une solution.</p>\n<div class=\"top-20\"></div>\n<h3>Questions fréquemment posées</h3>\n<h6>Frais d'expédition & délais de livraison</h6>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>Quelles sont les différentes options d’expédition ?</h5>\n<p>Quel que soit le nombre d’articles achetés chez nous, les informations suivantes sont valables pour une expédition nationale.</p>\n<p>Les articles commandés sont uniquement envoyés par voie postale.</p>\n<p>Les frais d’expédition dépendent du nombre d’article.</p>\n<p>Le délai de livraison pour un envoi de marchandises / de livres est de 5 à 8 jours ouvrables, et peut exceptionnellement aller jusqu’à 20 jours ouvrables.</p>\n<p>Veuillez noter qu’il n’est pas possible de récupérer soi-même l’article acheté pour des raisons d’organisation.</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>Comment faire pour acheter plusieurs articles ?</h5>\n<p>Si plusieurs articles sont combinées dans une commande, veuillez noter que cette commande peut contenir au maximum 40 articles.</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>Est-il possible d’expédier ma commande vers un point relais ?</h5>\n<p>L’expédition vers un point relais est en principe possible et nous pouvons l’effectuer sans problème. Au moment de saisir l’adresse, veillez à indiquer le numéro de point relais correct, et vérifiez surtout que votre numéro de client pour le point relais est le bon, afin que nous puissions vous livrer sans problème.</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<h6>Retour</h6>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>Je souhaite retourner un article. Comment faire ?</h5>\n<p>Nous vous prions de faire la distinction entre réclamation et rétractation.</p>\n<p><b>En cas de rétractation, le retour fonctionne comme suit :</b></p>\n<p>Vous avez le droit de révoquer le présent contrat dans un délai d’un mois, sans en indiquer les raisons. Veuillez vous référer au point d’information sur le droit de rétractation dans nos CGV. Dans le cas d’une rétractation, nous vous demandons de nous renvoyer l’article.</p>\n<p>Veuillez noter que nous n’acceptons pas les envois non affranchis.</p>\n<p>Pour que votre retour soit correctement attribué, il suffit que nos étiquettes se trouvent encore sur la marchandise ou que vous joigniez au colis une lettre indiquant le numéro de commande.</p>\n<p><b>En cas de réclamation, le retour fonctionne comme suit :</b></p>\n<p>Veuillez notifier votre retour via eBay. Nous vous envoyons ensuite via eBay un lien qui vous permettra d’imprimer une étiquette de colis DHL préaffranchie. Dès que le retour est réceptionné, le montant d’achat vous est remboursé.</p>\n<p>Pour que votre retour soit correctement attribué, il suffit que nos étiquettes se trouvent encore sur la marchandise ou que vous joigniez au colis une lettre indiquant le numéro de commande.</p>\n<p>Veuillez noter que le processus de retour peut prendre jusqu’à 14 jours, car l’article ayant fait l’objet d’une réclamation doit être testé et enregistré.</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>Sous quelles conditions acceptez-vous un retour ?</h5>\n<p>Vous pouvez nous renvoyer une marchandise pendant 14 jours à compter de sa livraison, sans indication de motif.</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>Qui prend en charge les frais de retour ?</h5>\n<p>En cas de réclamation, nous prenons en charge les frais d’expédition. En cas de rétractation, c’est l’acheteur qui prend en charge les frais d’expédition pour le retour.</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<h6>Service client</h6>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>En cas de question, comment puis-je joindre momox shop ?</h5>\n<p>Nous sommes joignables aux horaires suivants :</p>\n<p>Du lundi au vendredi : 9 h 00 - 18 h 00<br/>\nSamedi et dimanche : uniquement par e-mail</p>\n<p>Nos coordonnées de contact sont indiquées dans l’espace « Informations juridiques relatives au vendeur ».</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<h6>Achat</h6>\n<hr class=\"acco\">\n<ul class=\"acco\">\n<li>\n<input type=\"checkbox\" checked>\n<i></i>\n<h5>J'ai lu que vous achetez également des articles ; est-ce exact ?</h5>\n<p>Sur le site Internet de momox, vous pouvez vendre des articles de façon pratique à un prix fixe.</p>\n<p>Vendre facilement en 3 étapes :<br/>\n&bull; Entrer le code-barres ou le scanner avec votre smartphone et déterminer la valeur <br/>\n&bull; Envoyer les articles gratuitement<br/>\n&bull; Recevoir l'argent !<br/>\n</p>\n<p>Si vous avez des questions à ce sujet, le service clientèle de momox est également à votre disposition par courriel.</p>\n</li>\n</ul>\n<hr class=\"acco\">\n<div class=\"clr\"></div>\n<p class=\"foot-info\">&copy; 2020 momox. Prix TTC plus frais de port. Il n'y a pas d'affichage de la TVA.<br/>\n    La TVA sur les livres est de 5.5%, tous les autres articles sont soumis au régime de la marge bénéficiaire conformément au paragraphe 25a de la UStG (loi allemande relative à la taxe sur le chiffre d'affaires).</p>\n</div>\n<div class=\"clr\"></div>\n</div>",
+                "includeeBayProductDetails": true,
+                "aspects": [
+                    {
+                        "name": "Brand",
+                        "values": [
+                            "Matussek, Matthias"
+                        ]
+                    },
+                    {
+                        "name": "Type",
+                        "values": [
+                            "book"
+                        ]
+                    },
+                    {
+                        "name": "EAN",
+                        "values": [
+                            "9783100489241"
+                        ]
+                    },
+                    {
+                        "name": "ISBN",
+                        "values": [
+                            "9783100489241"
+                        ]
+                    }
+                ],
+                "categories": {
+                    "primaryCategory": {
+                        "id": "171228"
+                    },
+                    "storePrimaryCategory": {
+                        "id": "12622669014",
+                        "user": {
+                            "legacyUserId": "1472532474"
+                        }
+                    }
+                },
+                "images": [
+                    {
+                        "ebayImageUrl": "https://i.ebayimg.com/00/s/MzU5WDIyMA==/z/JcwAAeSwC5xqhLV5/$_1.JPG?set_id=8800005007",
+                        "externalImageUrl": "https://images2.medimops.eu/product/2aa9b3/M03100489241-large.jpg",
+                        "order": 1
+                    },
+                    {
+                        "ebayImageUrl": "https://i.ebayimg.com/00/s/ODAwWDgwMA==/z/GXsAAeSwPdNqhLV5/$_1.PNG?set_id=8800005007",
+                        "externalImageUrl": "https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/ebay_banner_fr.png",
+                        "order": 2
+                    }
+                ],
+                "includeStockPhotoURL": false,
+                "itemCondition": {
+                    "categoryId": "171228",
+                    "id": "2750",
+                    "itemConditionDescriptors": [],
+                    "sellerConditionDescription": "Nous avons contrôlé avec soin cet article pour vous !",
+                    "conditionDescription": "Nous avons contrôlé avec soin cet article pour vous !",
+                    "conditionDescriptors": []
+                }
+            },
+            "applicationId": "32576",
+            "bestOfferEnabled": false,
+            "bestOfferTerms": {
+                "autoAcceptEnabled": false,
+                "acceptBestOffer": false,
+                "autoAcceptThresholdAmount": {
+                    "original": {
+                        "currency": "EUR",
+                        "value": "0.0"
+                    }
+                },
+                "autoAcceptThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "EUR"
+                    }
+                },
+                "autoDeclineEnabled": false,
+                "autoDeclineThresholdAmount": {
+                    "original": {
+                        "currency": "EUR",
+                        "value": "0.0"
+                    }
+                },
+                "autoDeclineThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "EUR"
+                    }
+                }
+            },
+            "category": {
+                "primaryCategory": {
+                    "id": "171228"
+                },
+                "storePrimaryCategory": {
+                    "id": "12622669014",
+                    "user": {
+                        "legacyUserId": "1472532474"
+                    }
+                }
+            },
+            "coreListingVersionId": "1788887166366",
+            "creationDate": "2026-08-18T19:38:42.000Z",
+            "creationMode": "Add",
+            "ebayVault": false,
+            "fulfillmentTerms": {
+                "digitalDeliveryLogisticsPlanSupported": false,
+                "ebayManagedShipping": false,
+                "freeShippingAvailable": false,
+                "globalShippingLogisticsPlanSupported": false,
+                "inStorePickupLogisticsPlanSupported": false,
+                "managedFulfillmentSupported": false,
+                "managedShippingOptin": false,
+                "packageSpec": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "Metric",
+                    "listingUnitOfMeasure": "METRIC",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shippingTerms": {
+                    "buyerResponsibleForShipping": false,
+                    "handlingTime": "Days_7",
+                    "shipToLocations": [
+                        "FRA"
+                    ],
+                    "shippingOptions": [
+                        {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "FRA"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "FR"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                                    },
+                                    "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1472532474"
+                                }
+                            }
+                        },
+                        {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1472532474"
+                                }
+                            }
+                        }
+                    ],
+                    "domesticShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "FRA"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "FR"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                                },
+                                "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1472532474"
+                            }
+                        }
+                    },
+                    "handlingTimeDuration": "DAYS_7",
+                    "includedShipToLocations": [
+                        {
+                            "country": "FR"
+                        }
+                    ],
+                    "internationalShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1472532474"
+                            }
+                        }
+                    },
+                    "marketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "FRA"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "FR"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                                },
+                                "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1472532474"
+                            }
+                        }
+                    },
+                    "nonMarketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "1472532474"
+                            }
+                        }
+                    },
+                    "shippingBusinessPolicy": {},
+                    "shippingServices": [
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "rank": 1,
+                            "shipToLocations": [
+                                "FRA"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "0.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "FR"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "0.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                            },
+                            "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                        }
+                    ]
+                },
+                "listingId": "407154196519",
+                "digitalDeliverySupported": false,
+                "globalShippingSupported": false,
+                "inStorePickupSupported": false,
+                "packageSpecifications": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "Metric",
+                    "listingUnitOfMeasure": "METRIC",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shipToHomeLogisticsPlanSupported": false
+            },
+            "itemCondition": {
+                "categoryId": "171228",
+                "id": "2750",
+                "itemConditionDescriptors": [],
+                "sellerConditionDescription": "Nous avons contrôlé avec soin cet article pour vous !",
+                "conditionDescription": "Nous avons contrôlé avec soin cet article pour vous !",
+                "conditionDescriptors": []
+            },
+            "itemLocation": {
+                "countryCode": "DE",
+                "postalCode": "10247",
+                "streetAddress": "Berlin, Berlin",
+                "country": "DE",
+                "location": "Berlin, Berlin"
+            },
+            "itemRevisionDate": "2026-09-08T17:06:06.715Z",
+            "items": [
+                {
+                    "itemId": "407154196519",
+                    "creationDate": "2026-08-18T19:38:42.000Z",
+                    "itemSellerProduct": {
+                        "images": [
+                            {
+                                "ebayImageUrl": "https://i.ebayimg.com/00/s/MzU5WDIyMA==/z/JcwAAeSwC5xqhLV5/$_1.JPG?set_id=8800005007",
+                                "externalImageUrl": "https://images2.medimops.eu/product/2aa9b3/M03100489241-large.jpg",
+                                "order": 1
+                            },
+                            {
+                                "ebayImageUrl": "https://i.ebayimg.com/00/s/ODAwWDgwMA==/z/GXsAAeSwPdNqhLV5/$_1.PNG?set_id=8800005007",
+                                "externalImageUrl": "https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/ebay_banner_fr.png",
+                                "order": 2
+                            }
+                        ],
+                        "productIdentifiers": {
+                            "includeEbayProductDetails": true
+                        },
+                        "traits": []
+                    },
+                    "quantityAvailable": 3,
+                    "quantitySold": 0,
+                    "sellerPrice": {
+                        "fixedPrice": {
+                            "original": {
+                                "amount": "13.51",
+                                "currency": "EUR"
+                            }
+                        },
+                        "marketingPrice": {
+                            "pricingTreatment": "None"
+                        }
+                    },
+                    "sku": "M03100489241-N",
+                    "variationAspects": [],
+                    "listing": {
+                        "listingId": "407154196519"
+                    },
+                    "photos": [
+                        {
+                            "ebayPictureUrl": "https://i.ebayimg.com/00/s/MzU5WDIyMA==/z/JcwAAeSwC5xqhLV5/$_1.JPG?set_id=8800005007",
+                            "externalPictureUrl": "https://images2.medimops.eu/product/2aa9b3/M03100489241-large.jpg",
+                            "order": 1
+                        },
+                        {
+                            "ebayPictureUrl": "https://i.ebayimg.com/00/s/ODAwWDgwMA==/z/GXsAAeSwPdNqhLV5/$_1.PNG?set_id=8800005007",
+                            "externalPictureUrl": "https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/ebay_banner_fr.png",
+                            "order": 2
+                        }
+                    ],
+                    "itemIdRestReference": "v1|407154196519|0",
+                    "itemIdVersioned": "407154196519",
+                    "itemTerms": {
+                        "availability": {
+                            "quantityAvailable": 3,
+                            "quantitySold": 0
+                        },
+                        "pricingTerms": {
+                            "auctionPrice": {},
+                            "fixedPrice": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "13.51"
+                                }
+                            },
+                            "marketingPrice": {}
+                        }
+                    },
+                    "terms": {
+                        "fulfillmentTerms": {
+                            "managedFulfillmentSupported": false
+                        }
+                    },
+                    "versionId": "5817818107027"
+                }
+            ],
+            "listingFormat": "BIN",
+            "listingLifecycle": {
+                "endDate": "2026-09-18T19:38:42.000Z",
+                "listingDuration": "GTC",
+                "listingStatus": "ACTIVE",
+                "onHold": false,
+                "scheduledEndDate": "2026-09-18T19:38:42.000Z",
+                "startDate": "2026-08-18T19:38:42.000Z",
+                "actualEndAt": "2026-09-18T19:38:42.000Z",
+                "createdAt": "2026-08-18T19:38:42.000Z",
+                "duplicateAuction": false,
+                "listedAsScheduled": false,
+                "listingDurationInDays": "GTC",
+                "scheduledEndAt": "2026-09-18T19:38:42.000Z",
+                "startAt": "2026-08-18T19:38:42.000Z"
+            },
+            "listingTerms": {
+                "bestOfferTerms": {
+                    "autoAcceptEnabled": false,
+                    "acceptBestOffer": false,
+                    "autoAcceptThresholdAmount": {
+                        "original": {
+                            "currency": "EUR",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoAcceptThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "EUR"
+                        }
+                    },
+                    "autoDeclineEnabled": false,
+                    "autoDeclineThresholdAmount": {
+                        "original": {
+                            "currency": "EUR",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoDeclineThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "EUR"
+                        }
+                    }
+                },
+                "buyerRestrictions": {
+                    "buyerRestrictionModifiedDate": "2026-08-18T19:38:42.855Z",
+                    "disableBuyerRestrictions": true,
+                    "quantityLimitPerBuyer": 0
+                },
+                "hideParticipation": false,
+                "internationalSiteVisibility": [],
+                "itemLocation": {
+                    "countryCode": "DE",
+                    "postalCode": "10247",
+                    "streetAddress": "Berlin, Berlin",
+                    "country": "DE",
+                    "location": "Berlin, Berlin"
+                },
+                "lifecycleTerms": {
+                    "endDate": "2026-09-18T19:38:42.000Z",
+                    "listingDuration": "GTC",
+                    "listingStatus": "ACTIVE",
+                    "onHold": false,
+                    "scheduledEndDate": "2026-09-18T19:38:42.000Z",
+                    "startDate": "2026-08-18T19:38:42.000Z",
+                    "actualEndAt": "2026-09-18T19:38:42.000Z",
+                    "createdAt": "2026-08-18T19:38:42.000Z",
+                    "duplicateAuction": false,
+                    "listedAsScheduled": false,
+                    "listingDurationInDays": "GTC",
+                    "scheduledEndAt": "2026-09-18T19:38:42.000Z",
+                    "startAt": "2026-08-18T19:38:42.000Z"
+                },
+                "listingFormat": "FIXED_PRICE",
+                "listingFulfillmentTerms": {
+                    "digitalDeliveryLogisticsPlanSupported": false,
+                    "ebayManagedShipping": false,
+                    "freeShippingAvailable": false,
+                    "globalShippingLogisticsPlanSupported": false,
+                    "inStorePickupLogisticsPlanSupported": false,
+                    "managedFulfillmentSupported": false,
+                    "managedShippingOptin": false,
+                    "packageSpec": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "Metric",
+                        "listingUnitOfMeasure": "METRIC",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shippingTerms": {
+                        "buyerResponsibleForShipping": false,
+                        "handlingTime": "Days_7",
+                        "shipToLocations": [
+                            "FRA"
+                        ],
+                        "shippingOptions": [
+                            {
+                                "costType": "FLAT",
+                                "isInternational": false,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "-1",
+                                "shippingServices": [
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "rank": 1,
+                                        "shipToLocations": [
+                                            "FRA"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "FR"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                                        },
+                                        "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                                    }
+                                ],
+                                "internationalShippingOption": false,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "-1",
+                                "shippingPreference": {
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "1472532474"
+                                    }
+                                }
+                            },
+                            {
+                                "costType": "FLAT",
+                                "isInternational": true,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "-1",
+                                "internationalShippingOption": true,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "-1",
+                                "shippingPreference": {
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "1472532474"
+                                    }
+                                }
+                            }
+                        ],
+                        "domesticShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "FRA"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "FR"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                                    },
+                                    "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1472532474"
+                                }
+                            }
+                        },
+                        "handlingTimeDuration": "DAYS_7",
+                        "includedShipToLocations": [
+                            {
+                                "country": "FR"
+                            }
+                        ],
+                        "internationalShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1472532474"
+                                }
+                            }
+                        },
+                        "marketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "FRA"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "FR"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                                    },
+                                    "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1472532474"
+                                }
+                            }
+                        },
+                        "nonMarketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "1472532474"
+                                }
+                            }
+                        },
+                        "shippingBusinessPolicy": {},
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "FRA"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "FR_EconomyDeliveryFromAbroad",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "FR"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "FR_EconomyDeliveryFromAbroad"
+                                },
+                                "shippingServiceOptionCode": "FR_EconomyDeliveryFromAbroad"
+                            }
+                        ]
+                    },
+                    "listingId": "407154196519",
+                    "digitalDeliverySupported": false,
+                    "globalShippingSupported": false,
+                    "inStorePickupSupported": false,
+                    "packageSpecifications": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "Metric",
+                        "listingUnitOfMeasure": "METRIC",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shipToHomeLogisticsPlanSupported": false
+                },
+                "listingPaymentTerms": {
+                    "paymentMethods": [],
+                    "depositRequired": false,
+                    "hoursToDeposit": -1,
+                    "immediatePay": false,
+                    "listingPaymentMethods": [],
+                    "motorVehicleDeposit": {
+                        "depositRequired": false,
+                        "hoursToDeposit": -1
+                    }
+                },
+                "listingReturnTerms": {
+                    "domesticReturnTerms": {
+                        "returnAccepted": true,
+                        "returnPeriod": "Days_14",
+                        "returnShipmentPayee": "Buyer",
+                        "returnDuration": "DAYS_14",
+                        "returnShipmentInvoicee": "Buyer"
+                    },
+                    "returnInstructions": "DROIT DE RÉTRACTATION\nVous disposez d’un délai de rétractation de 14 jours à compter de la réception du dernier article de votre commande, sans avoir à en justifier la raison.\nCe délai prend effet à compter de la date à laquelle vous, ou un tiers que vous avez désigné et qui n'est pas le transporteur, avez reçu les produits.\nExercice du droit de rétractation\nPour exercer ce droit, veuillez notifier clairement votre décision à :\nmomox SE, Schreiberhauer Straße 30, 10317 Berlin, Allemagne\nTél. : +33 1 85 14 99 72\nEmail : service@momox-shop.fr\nUn formulaire de rétractation type est fourni, mais son usage n’est pas obligatoire:\nIMPORTANT : pour être recevable, votre demande de rétractation doit être envoyée avant l'expiration du délai de quatorze jours.\n\nConséquences de la rétractation\nEn cas de rétractation du présent contrat de vente, nous vous rembourserons l'intégralité des sommes payées, y compris les frais de livraison (à l'exception des frais supplémentaires si vous aviez expressément choisi un mode de livraison plus coûteux que le mode de livraison standard proposé par momox), au plus tard quatorze jours à compter de la date à laquelle vous nous avez avisés de votre demande de rétractation.\nNous procèderons au remboursement par le même moyen de paiement que celui que vous avez utilisé lors de votre commande, à moins qu'il n'en ait été expressément convenu autrement avec vous. Ce remboursement ne vous sera en aucun cas facturé.\nNous pouvons différer ce remboursement jusqu'à la date de réception des marchandises ou de la preuve d'expédition que vous nous aurez fournie (par exemple, un bordereau).\n\nIMPORTANT : Les produits doivent être envoyés à l'adresse :\nSalesupply - momox\n87 rue de Fontenoy\n59100 Roubaix\nFrance\ndans un délai maximum de quatorze jours à compter de la date à laquelle vous nous avez avisé de votre demande rétractation du contrat de vente.\nNous nous réservons le droit de ne pas accepter tout retour de produit modifié par rapport à son état d'origine entraînant une perte de valeur, ou de réduire la somme à rembourser."
+                },
+                "programsSupported": [],
+                "taxTerms": {
+                    "applicableToShipping": false,
+                    "recognizedAsBusinessSellerForVAT": false,
+                    "salesTaxApplicableToShipping": false,
+                    "salesTaxPercentage": "5.5",
+                    "salesTaxTableUsed": false,
+                    "taxRate": "5.5",
+                    "vatPercentage": "5.5",
+                    "vatRecognizedBusinessSeller": false
+                },
+                "totalQuantityAvailable": 3,
+                "visualEnhancements": {
+                    "boldTitle": false,
+                    "galleryPlus": true,
+                    "subtitle": "Économisez tout en achetant durable !"
+                }
+            },
+            "paymentTerms": {
+                "paymentMethods": [],
+                "depositRequired": false,
+                "hoursToDeposit": -1,
+                "immediatePay": false,
+                "listingPaymentMethods": [],
+                "motorVehicleDeposit": {
+                    "depositRequired": false,
+                    "hoursToDeposit": -1
+                }
+            },
+            "photos": [
+                {
+                    "ebayPictureUrl": "https://i.ebayimg.com/00/s/MzU5WDIyMA==/z/JcwAAeSwC5xqhLV5/$_1.JPG?set_id=8800005007",
+                    "externalPictureUrl": "https://images2.medimops.eu/product/2aa9b3/M03100489241-large.jpg",
+                    "order": 1
+                },
+                {
+                    "ebayPictureUrl": "https://i.ebayimg.com/00/s/ODAwWDgwMA==/z/GXsAAeSwPdNqhLV5/$_1.PNG?set_id=8800005007",
+                    "externalPictureUrl": "https://storage.googleapis.com/momox-so-public-bm/ebay/ebay_fr/img/ebay_banner_fr.png",
+                    "order": 2
+                }
+            ],
+            "programsSupported": [],
+            "returnTerms": {
+                "domesticReturnTerms": {
+                    "returnAccepted": true,
+                    "returnPeriod": "Days_14",
+                    "returnShipmentPayee": "Buyer",
+                    "returnDuration": "DAYS_14",
+                    "returnShipmentInvoicee": "Buyer"
+                },
+                "returnInstructions": "DROIT DE RÉTRACTATION\nVous disposez d’un délai de rétractation de 14 jours à compter de la réception du dernier article de votre commande, sans avoir à en justifier la raison.\nCe délai prend effet à compter de la date à laquelle vous, ou un tiers que vous avez désigné et qui n'est pas le transporteur, avez reçu les produits.\nExercice du droit de rétractation\nPour exercer ce droit, veuillez notifier clairement votre décision à :\nmomox SE, Schreiberhauer Straße 30, 10317 Berlin, Allemagne\nTél. : +33 1 85 14 99 72\nEmail : service@momox-shop.fr\nUn formulaire de rétractation type est fourni, mais son usage n’est pas obligatoire:\nIMPORTANT : pour être recevable, votre demande de rétractation doit être envoyée avant l'expiration du délai de quatorze jours.\n\nConséquences de la rétractation\nEn cas de rétractation du présent contrat de vente, nous vous rembourserons l'intégralité des sommes payées, y compris les frais de livraison (à l'exception des frais supplémentaires si vous aviez expressément choisi un mode de livraison plus coûteux que le mode de livraison standard proposé par momox), au plus tard quatorze jours à compter de la date à laquelle vous nous avez avisés de votre demande de rétractation.\nNous procèderons au remboursement par le même moyen de paiement que celui que vous avez utilisé lors de votre commande, à moins qu'il n'en ait été expressément convenu autrement avec vous. Ce remboursement ne vous sera en aucun cas facturé.\nNous pouvons différer ce remboursement jusqu'à la date de réception des marchandises ou de la preuve d'expédition que vous nous aurez fournie (par exemple, un bordereau).\n\nIMPORTANT : Les produits doivent être envoyés à l'adresse :\nSalesupply - momox\n87 rue de Fontenoy\n59100 Roubaix\nFrance\ndans un délai maximum de quatorze jours à compter de la date à laquelle vous nous avez avisé de votre demande rétractation du contrat de vente.\nNous nous réservons le droit de ne pas accepter tout retour de produit modifié par rapport à son état d'origine entraînant une perte de valeur, ou de réduire la somme à rembourser."
+            },
+            "seller": {
+                "legacyUserId": "1472532474"
+            },
+            "sellerListingVersionId": "5817818107027",
+            "significantRevisionCount": 26,
+            "totalQuantity": 3,
+            "autoRelistTerms": {
+                "autoRelist": false,
+                "canAutoRelist": false
+            },
+            "buyerRestrictions": {
+                "buyerRestrictionModifiedDate": "2026-08-18T19:38:42.855Z",
+                "disableBuyerRestrictions": true,
+                "quantityLimitPerBuyer": 0
+            },
+            "buyerRestrictionsDisabled": true,
+            "endReason": "NONE",
+            "enrolledInPriceGuarantee": false,
+            "hideParticipation": false,
+            "inventoryTrackingMethod": "SKU",
+            "isItemOnSale": false,
+            "listingCreationClientIP": "10.10.121.180",
+            "listingHttpsCompliant": true,
+            "managedByInventory": false,
+            "marketplace": "EBAY_FR",
+            "partnerListedAutosDealerItem": false,
+            "promotionalDetails": {
+                "markdownItemPriceRevision": "NO_MARKDOWN_SALE",
+                "promotionalFreeShippingSale": false,
+                "standardFreeShippingPriorToPromotion": false
+            },
+            "secondChanceItem": false,
+            "semiPersistentBin": false,
+            "taxInfo": {
+                "applicableToShipping": false,
+                "recognizedAsBusinessSellerForVAT": false,
+                "salesTaxApplicableToShipping": false,
+                "salesTaxPercentage": "5.5",
+                "salesTaxTableUsed": false,
+                "taxRate": "5.5",
+                "vatPercentage": "5.5",
+                "vatRecognizedBusinessSeller": false
+            },
+            "vehicleSubscriptionItem": false,
+            "visualEnhancements": {
+                "boldTitle": false,
+                "featuredPlus": false,
+                "galleryType": "Plus",
+                "homePageFeatured": false,
+                "listingDesignerOptimalPictureSize": false,
+                "subtitle": "Économisez tout en achetant durable !"
+            },
+            "__typename": "SingleSkuListing",
+            "eligibleForPudo": false,
+            "visibilitySummary": {
+                "defaultVisibleSites": [
+                    71
+                ],
+                "explicitlySuppressedSites": [],
+                "packedVisibilityString": "0=133,2=133,3=133,4=133,5=133,6=133,7=133,8=133,9=133,10=133,11=133,12=133,13=133,14=133,15=133,16=133,17=133,18=133,19=133,20=133,21=133,22=133,23=133,24=133,25=133,26=133,27=133,28=133,29=133,30=133,31=133,32=133,33=133,34=133,35=133,37=133,38=133,39=133,40=133,41=133,42=133,43=133,44=133,46=133,47=133,48=133,49=133,50=133,51=133,52=133,53=133,55=133,58=133,59=133,60=133,61=133,62=133,63=133,64=133,65=133,66=133,67=133,68=133,69=133,71=159,72=133,73=133,74=133,75=133,76=133,77=133,78=133,79=133,81=133,82=133,83=133,84=133,85=133,86=133,87=133,88=133,89=133,90=133,91=133,100=133,101=133,102=133,103=133,104=133,105=133,106=133,107=133,108=133,109=133,112=133,113=133,114=133,115=133,116=133,117=133,118=133,120=133,121=133,122=133,123=133,124=133,125=133,126=133,128=133,129=133,130=133,131=133,132=133,133=133,134=133,135=133,136=133,137=133,138=133,139=133,140=133,141=133,142=133,143=133,144=133,145=133,146=133,147=133,148=133,150=133,151=133,152=133,153=133,155=133,156=133,157=133,158=133,159=133,160=133,166=133,167=133,169=133,170=133,171=133,172=133,173=133,174=133,175=133,176=133,177=133,178=133,179=133,181=133,182=133,183=133,184=133,186=133,187=133,189=133,190=133,191=133,193=133,196=133,197=133,198=133,199=133,200=133,201=133,202=133,203=128,204=133,205=133,206=133,207=133,208=133,209=133,210=133,211=133,212=133,213=133,214=133,215=133,216=133,217=133,218=133,219=133,220=133,223=133,224=133,225=133,226=133,227=133,228=133,229=133,231=133,232=133,233=133,234=133,235=133,236=133,237=133,238=133,239=133,240=133,241=133,242=133,243=133,244=133,245=133,246=133,247=133,248=133,249=133,250=133,251=133,252=133,253=133,254=133,255=133,256=133,257=133,258=133,259=133"
+            }
+        },
+        "__typename": "ListingEntry",
+        "schemaVersion": "2.1.0"
+    }
+}

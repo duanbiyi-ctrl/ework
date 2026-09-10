@@ -1,0 +1,1698 @@
+{
+    "metadata": {
+        "id": "178055817599",
+        "operation": "Update",
+        "ulpListingVersionId": "20",
+        "customFields": {
+            "marketplaceId": "EBAY-DE",
+            "numberOfItems": 1,
+            "listingFormat": "BIN",
+            "primaryLeafCategoryId": "57357"
+        }
+    },
+    "beforeChangePatch": "[{\"op\":\"replace\",\"path\":\"/listing/coreListingVersionId\",\"value\":\"1786987397010\"},{\"op\":\"replace\",\"path\":\"/listing/listingLifecycle/endDate\",\"value\":\"2026-09-17T09:29:03.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingLifecycle/listingStatus\",\"value\":\"ACTIVE\"},{\"op\":\"replace\",\"path\":\"/listing/listingLifecycle/actualEndAt\",\"value\":\"2026-09-17T09:29:03.000Z\"},{\"op\":\"remove\",\"path\":\"/listing/listingLifecycle/endListingReason\",\"value\":\"NOT_AVAILABLE\"},{\"op\":\"replace\",\"path\":\"/listing/listingTerms/lifecycleTerms/endDate\",\"value\":\"2026-09-17T09:29:03.000Z\"},{\"op\":\"replace\",\"path\":\"/listing/listingTerms/lifecycleTerms/listingStatus\",\"value\":\"ACTIVE\"},{\"op\":\"replace\",\"path\":\"/listing/listingTerms/lifecycleTerms/actualEndAt\",\"value\":\"2026-09-17T09:29:03.000Z\"},{\"op\":\"remove\",\"path\":\"/listing/listingTerms/lifecycleTerms/endListingReason\",\"value\":\"NOT_AVAILABLE\"},{\"op\":\"replace\",\"path\":\"/listing/endReason\",\"value\":\"NONE\"}]",
+    "afterchangeDocument": "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",
+    "afterchangeDocumentPlain": {
+        "listing": {
+            "listingId": "178055817599",
+            "aspects": [
+                {
+                    "name": "Hersteller",
+                    "values": [
+                        "Febi Bilstein"
+                    ]
+                },
+                {
+                    "name": "Herstellernummer",
+                    "values": [
+                        "24735767"
+                    ]
+                },
+                {
+                    "name": "MPN",
+                    "values": [
+                        "24735767"
+                    ]
+                },
+                {
+                    "name": "EAN",
+                    "values": [
+                        "Nicht zutreffend"
+                    ]
+                },
+                {
+                    "name": "Hinweis",
+                    "values": [
+                        "Fahrzeugauflagen in der Artikelbeschreibung beachten"
+                    ]
+                },
+                {
+                    "name": "Im Lieferumfang enthalten",
+                    "values": [
+                        "1x Zubehörsatz, Scheibenbremsbelag"
+                    ]
+                },
+                {
+                    "name": "Maßeinheit",
+                    "values": [
+                        "Einheit"
+                    ]
+                },
+                {
+                    "name": "Anzahl der Einheiten",
+                    "values": [
+                        "1"
+                    ]
+                },
+                {
+                    "name": "Produktgruppe",
+                    "values": [
+                        "Bremsanlage"
+                    ]
+                },
+                {
+                    "name": "Produktart",
+                    "values": [
+                        "Zubehörsatz, Scheibenbremsbelag"
+                    ]
+                },
+                {
+                    "name": "OE/OEM Referenznummer(n)",
+                    "values": [
+                        "reifenstore, Febi Bilstein, Original, Ersatzteil",
+                        "Scheibenbremsbelag, Satz, Set, Neuteil, Autoteil, Neu",
+                        "Neues Teil, Autoteile, Montagesatz, Bremsbeläge, Bremsscheibe",
+                        "Bremsbelag, Bremse, Zubehör, Bremsen, Set, Bremsscheiben",
+                        "mit und inkl +, Toyota, RAV, 4 2, A2, 2.0 D 4WD, 1.8, 2.0 4WD"
+                    ]
+                },
+                {
+                    "name": "Oberflächenbeschaffenheit",
+                    "values": [
+                        "NEU"
+                    ]
+                },
+                {
+                    "name": "Teilesegment",
+                    "values": [
+                        "Serie & Original"
+                    ]
+                }
+            ],
+            "marketplaceId": "EBAY-DE",
+            "sellerProduct": {
+                "globalIdentifiers": [
+                    {
+                        "name": "EAN",
+                        "values": [
+                            "Nicht zutreffend"
+                        ]
+                    },
+                    {
+                        "name": "MPN",
+                        "values": [
+                            "24735767"
+                        ]
+                    }
+                ],
+                "title": "Febi-Bilstein Zubehörsatz Bremsklötze 24735767 Bremsbeläge",
+                "description": "<link rel=\"dns-prefetch\" href=\"//www.goodtires.de\">\n<link rel=\"stylesheet\" href=\"https://www.goodtires.de/templates/ebay/style.css\" type=\"text/css\">\n\n<div class='div-sco' align='center' style='color:#000;background:#EFEFEF'>\n<div vocab='https://schema.org/' typeof='Product' style='display:none'>\n<span property='description'>Febi-Bilstein Zubehörsatz Bremsklötze 24735767 Bremsbeläge u.a. für Toyota. Bitte prüfen Sie vor dem Kauf, ob in der Artikelbeschreibung spezielle Hinweise für Ihr Fahrzeug hinterlegt sind.</span>\n</div>\n<span id='tecsearch'>c7e708850 c50594db2 c1af9e7c7 cac4f4659 ca50acdaa c46c0ca05 c96f4a7f5 ca8b01845 c7f5dcb32 c8f997d1d c7151182a c46938aef caf3cac5f cf6de2082 c46d2bc72 c58c89b6a c4c181964 cf8253853 cdf165785 cefdc99a7 cd752bbd4 cb47df267 c75df3a29 c42cbe6a6 c0c1c7b9e c481ac7f5 c67c40109 c3414ff74 c2cdfca2e c4c524c87 cd96ba77a c5eda12d1 cfaa4d960 c3827a682 caddef237 c0b21d993 c481f5f4d ce922a821 c4bdf2370 cc136ea14 c1e05ae55 c30bbfaba cd33b00b3 cb6e0d494 c3e26bb04 cf7563c61 cc4b07b83 c50ac6935 c5102283f c757a3656 cdbfcafb9 ca327f327 ce94e9900 c2699e027 c64af217d c41951086 c882001a1 c41f6b587 c8918da75 cf2d06fde c16929b6b ca36aa0ec ce8b51729 c36153f41 cbbe114d4 c8f6e5c9e c5c4e6fb8 c2ab93785 cce85f8f9 c5ce8ba2b ceabc4d99 cfb4ef216 c7d68b363 cfdb03912 c88916c36 c0cc7f354 c08e785d1 c52e8c0e6 c1b01ca65 cdfdcca55 ca48d3c3f cb206b1b2 c151106c5 c4f1a4115 c814c8105 c5d6e2e7f c45660530 ce5740b89 c17114cc6 cbff0c7bd cfc92ca64 cbace548b cc70e1851 cbd09cc51 c5edfe687 c931ec570 c4bb67c64 c978d984a c25db88ad cab18c861 c3aaa61f5 c1318643e c85e63a9a c3288b595 c5b0ade74 c88cbfe05 cb126d788 c265a4dca c468e3091 cc7c0a9d0 c6992328d cbd5ee65e c9bfb2399 cbc00f45a c70c59222 c3481c9f3</span>\n<h4><b>reifenstore</b></h4>\n\n<a href='https://www.ebay.de/sch/Autoteile-Zubehor/6030/i.html?_from=R40&_nkw=&_fcid=77&_udlo=&_udhi=&_ftrt=901&_ftrv=1&_sabdlo=&_sabdhi=&_samilow=&_samihi=&_sadis=10&_fpos=&LH_SALE_CURRENCY=0&_fss=1&_fsradio=%26LH_SpecificSeller%3D1&_saslop=1&_sasl=reifenstore&_sop=10&_dmd=7&_ipg=240&_fosrp=1' target='_blank' style='color:#000'>Reifen, Felgen und Autoteilehandel</a> \n<small>seit 1997</small>\n\n</div><div class='div-sco'>\n<h4><b>Lieferumfang</b></h4>\n<div class='product-sheet'>1x Zubehörsatz, Scheibenbremsbelag <br></div></div><div class='div-sco'>\n<h4><b>Technische Informationen</b></h4>\n<div class='product-sheet'><b>Zubehörsatz, Scheibenbremsbelag</b><br>Gewicht [kg]: 0,128<br>Einbauposition: Hinterachse<br></div></div><div class='div-sco'>\n<h4><b>Vergleichsnummern</b></h4>\n<div class='product-sheet'><i>Febi Bilstein</i> : 17790, <u>182461</u>, BRKFITTINGKIT011 <br></div></div><div class='div-sco'>\n<h4><b>Passt u.a. für folgende Fahrzeuge (Bitte beachten Sie die Hinweise)</b></h4>\n<div class='product-sheet'>\n<table class='table table-responsive table-striped borderless'>\n<tr style='background:#F5F5F5'>\n<td><b>Bezeichnung</b></td>\n<td><b>Motorisierung</b></td>\n<td><b>Bauform</b></td>\n<td><b>Baujahr</b></td>\n<td align='center'><b>KW</b></td>\n<td align='center'><b>PS</b></td>\n<td><b>Hinweise</b></td>\n<td><b>KBA</b></td>\n</tr>\n<tr title='Toyota RAV 4 2 (A2) 2.0 D 4WD 85 kW, 116 PS (05/01 - 11/05)'>\n<td><b>Toyota RAV 4 2</b> <small>(A2)</small></td>\n<td>2.0 D 4WD <small>(Diesel)</small></td>\n<td><small>SUV</small></td>\n<td nowrap>05/01 - 11/05</td>\n<td align='center'>85</td>\n<td align='center'><b>116</b></td>\n<td><font class='text-danger'></font></td>\n<td>5013-451, 5048-010</td>\n</tr><tr title='Toyota RAV 4 2 (A2) 1.8 92 kW, 125 PS (08/00 - 11/05)'>\n<td><b>Toyota RAV 4 2</b> <small>(A2)</small></td>\n<td>1.8 <small>(Benzin)</small></td>\n<td><small>SUV</small></td>\n<td nowrap>08/00 - 11/05</td>\n<td align='center'>92</td>\n<td align='center'><b>125</b></td>\n<td><font class='text-danger'></font></td>\n<td>5013-427, 5048-008</td>\n</tr><tr title='Toyota RAV 4 2 (A2) 2.0 4WD 110 kW, 150 PS (05/00 - 11/05)'>\n<td><b>Toyota RAV 4 2</b> <small>(A2)</small></td>\n<td>2.0 4WD <small>(Benzin)</small></td>\n<td><small>SUV</small></td>\n<td nowrap>05/00 - 11/05</td>\n<td align='center'>110</td>\n<td align='center'><b>150</b></td>\n<td><font class='text-danger'></font></td>\n<td>5013-428, 5048-009</td>\n</tr>\n</table>\n</div></div>\n\n<div class='div-sco'>\n<h4><b>Versandinformationen</b></h4>\nVersandkostenfreie Lieferung für das deutsche Festland. Für den Versand auf die deutschen Inseln berechnen wir einen Zuschlag von 16,- Euro pro Auftrag. Wir liefern nur nach Deutschland! (We only ship to Germany!)\n\n</div><br><div align=\"center\">\n<a target=\"_blank\" href=\"https://www.ebay.de/verkaeuferportal/angebote/verkaeufer-cockpit-pro/\">\n<img src=\"https://pics.ebay.com/aw/pics/de/sellingmanager/sellingmanagerPro/smPro_248x50.gif\" border=\"0\"></a>\n</div>",
+                "includeeBayProductDetails": false,
+                "aspects": [
+                    {
+                        "name": "Hersteller",
+                        "values": [
+                            "Febi Bilstein"
+                        ]
+                    },
+                    {
+                        "name": "Herstellernummer",
+                        "values": [
+                            "24735767"
+                        ]
+                    },
+                    {
+                        "name": "MPN",
+                        "values": [
+                            "24735767"
+                        ]
+                    },
+                    {
+                        "name": "EAN",
+                        "values": [
+                            "Nicht zutreffend"
+                        ]
+                    },
+                    {
+                        "name": "Hinweis",
+                        "values": [
+                            "Fahrzeugauflagen in der Artikelbeschreibung beachten"
+                        ]
+                    },
+                    {
+                        "name": "Im Lieferumfang enthalten",
+                        "values": [
+                            "1x Zubehörsatz, Scheibenbremsbelag"
+                        ]
+                    },
+                    {
+                        "name": "Maßeinheit",
+                        "values": [
+                            "Einheit"
+                        ]
+                    },
+                    {
+                        "name": "Anzahl der Einheiten",
+                        "values": [
+                            "1"
+                        ]
+                    },
+                    {
+                        "name": "Produktgruppe",
+                        "values": [
+                            "Bremsanlage"
+                        ]
+                    },
+                    {
+                        "name": "Produktart",
+                        "values": [
+                            "Zubehörsatz, Scheibenbremsbelag"
+                        ]
+                    },
+                    {
+                        "name": "OE/OEM Referenznummer(n)",
+                        "values": [
+                            "reifenstore, Febi Bilstein, Original, Ersatzteil",
+                            "Scheibenbremsbelag, Satz, Set, Neuteil, Autoteil, Neu",
+                            "Neues Teil, Autoteile, Montagesatz, Bremsbeläge, Bremsscheibe",
+                            "Bremsbelag, Bremse, Zubehör, Bremsen, Set, Bremsscheiben",
+                            "mit und inkl +, Toyota, RAV, 4 2, A2, 2.0 D 4WD, 1.8, 2.0 4WD"
+                        ]
+                    },
+                    {
+                        "name": "Oberflächenbeschaffenheit",
+                        "values": [
+                            "NEU"
+                        ]
+                    },
+                    {
+                        "name": "Teilesegment",
+                        "values": [
+                            "Serie & Original"
+                        ]
+                    }
+                ],
+                "categories": {
+                    "primaryCategory": {
+                        "id": "57357"
+                    },
+                    "storePrimaryCategory": {
+                        "id": "21440517015",
+                        "user": {
+                            "legacyUserId": "2185677965"
+                        }
+                    }
+                },
+                "images": [
+                    {
+                        "ebayImageUrl": "https://i.ebayimg.com/00/s/NTU4WDU1OA==/z/Xx4AAeSwZeRp4f57/$_1.JPG?set_id=8800005007",
+                        "externalImageUrl": "https://www.goodtires.de/media/229505bb514e9d6bfcac8842facd590e-1776418146_558.jpg",
+                        "order": 1
+                    }
+                ],
+                "includeStockPhotoURL": false,
+                "includesCompatibilities": true,
+                "itemCondition": {
+                    "categoryId": "57357",
+                    "id": "1000",
+                    "itemConditionDescriptors": [],
+                    "conditionDescriptors": []
+                },
+                "itemCompatibilities": [
+                    {
+                        "compatibilities": [
+                            {
+                                "name": "Make",
+                                "values": [
+                                    "Toyota"
+                                ]
+                            },
+                            {
+                                "name": "Model",
+                                "values": [
+                                    "RAV 4 II"
+                                ]
+                            },
+                            {
+                                "name": "Platform",
+                                "values": [
+                                    "A2"
+                                ]
+                            },
+                            {
+                                "name": "Type",
+                                "values": [
+                                    "2.0 D 4WD"
+                                ]
+                            },
+                            {
+                                "name": "Production Period",
+                                "values": [
+                                    "2001/05-2005/11"
+                                ]
+                            },
+                            {
+                                "name": "Year",
+                                "values": [
+                                    "2001",
+                                    "2002",
+                                    "2003",
+                                    "2004",
+                                    "2005"
+                                ]
+                            },
+                            {
+                                "name": "Engine",
+                                "values": [
+                                    "1995 ccm, 85 KW, 116 PS"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "compatibilities": [
+                            {
+                                "name": "Make",
+                                "values": [
+                                    "Toyota"
+                                ]
+                            },
+                            {
+                                "name": "Model",
+                                "values": [
+                                    "RAV 4 II"
+                                ]
+                            },
+                            {
+                                "name": "Platform",
+                                "values": [
+                                    "A2"
+                                ]
+                            },
+                            {
+                                "name": "Type",
+                                "values": [
+                                    "1.8"
+                                ]
+                            },
+                            {
+                                "name": "Production Period",
+                                "values": [
+                                    "2000/08-2005/11"
+                                ]
+                            },
+                            {
+                                "name": "Year",
+                                "values": [
+                                    "2000",
+                                    "2001",
+                                    "2002",
+                                    "2003",
+                                    "2004",
+                                    "2005"
+                                ]
+                            },
+                            {
+                                "name": "Engine",
+                                "values": [
+                                    "1794 ccm, 92 KW, 125 PS"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "compatibilities": [
+                            {
+                                "name": "Make",
+                                "values": [
+                                    "Toyota"
+                                ]
+                            },
+                            {
+                                "name": "Model",
+                                "values": [
+                                    "RAV 4 II"
+                                ]
+                            },
+                            {
+                                "name": "Platform",
+                                "values": [
+                                    "A2"
+                                ]
+                            },
+                            {
+                                "name": "Type",
+                                "values": [
+                                    "2.0 4WD"
+                                ]
+                            },
+                            {
+                                "name": "Production Period",
+                                "values": [
+                                    "2000/05-2005/11"
+                                ]
+                            },
+                            {
+                                "name": "Year",
+                                "values": [
+                                    "2000",
+                                    "2001",
+                                    "2002",
+                                    "2003",
+                                    "2004",
+                                    "2005"
+                                ]
+                            },
+                            {
+                                "name": "Engine",
+                                "values": [
+                                    "1998 ccm, 110 KW, 150 PS"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "applicationId": "69525",
+            "bestOfferEnabled": false,
+            "bestOfferTerms": {
+                "autoAcceptEnabled": false,
+                "acceptBestOffer": false,
+                "autoAcceptThresholdAmount": {
+                    "original": {
+                        "currency": "EUR",
+                        "value": "0.0"
+                    }
+                },
+                "autoAcceptThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "EUR"
+                    }
+                },
+                "autoDeclineEnabled": false,
+                "autoDeclineThresholdAmount": {
+                    "original": {
+                        "currency": "EUR",
+                        "value": "0.0"
+                    }
+                },
+                "autoDeclineThresholdPrice": {
+                    "original": {
+                        "amount": "0.0",
+                        "currency": "EUR"
+                    }
+                }
+            },
+            "category": {
+                "primaryCategory": {
+                    "id": "57357"
+                },
+                "storePrimaryCategory": {
+                    "id": "21440517015",
+                    "user": {
+                        "legacyUserId": "2185677965"
+                    }
+                }
+            },
+            "coreListingVersionId": "1788887164163",
+            "creationDate": "2026-04-17T09:29:02.000Z",
+            "creationMode": "Add",
+            "ebayVault": false,
+            "fulfillmentTerms": {
+                "digitalDeliveryLogisticsPlanSupported": false,
+                "ebayManagedShipping": false,
+                "freeShippingAvailable": true,
+                "globalShippingLogisticsPlanSupported": false,
+                "inStorePickupLogisticsPlanSupported": false,
+                "managedFulfillmentSupported": false,
+                "managedShippingOptin": false,
+                "packageSpec": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "Metric",
+                    "listingUnitOfMeasure": "METRIC",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shippingTerms": {
+                    "buyerResponsibleForShipping": false,
+                    "excludeShipToLocations": [
+                        "_OI",
+                        "_NI",
+                        "_OL",
+                        "_AF",
+                        "_AS",
+                        "_CA",
+                        "_EU",
+                        "_ME",
+                        "_NA",
+                        "_OC",
+                        "_SE",
+                        "_SA"
+                    ],
+                    "handlingTime": "Days_2",
+                    "shipToLocations": [
+                        "DEU"
+                    ],
+                    "shippingOptions": [
+                        {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "515556026",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "DEU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_Paket",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_Paket"
+                                    },
+                                    "shippingServiceOptionCode": "DE_Paket"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "515556026",
+                            "shippingPreference": {
+                                "combinedShippingRuleId": "515556026",
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "2185677965"
+                                }
+                            }
+                        },
+                        {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "2185677965"
+                                }
+                            }
+                        }
+                    ],
+                    "excludeShipToLocationsLastModifiedDateTime": "2026-04-17T09:29:04.129Z",
+                    "domesticShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "515556026",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "DEU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_Paket",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_Paket"
+                                },
+                                "shippingServiceOptionCode": "DE_Paket"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "515556026",
+                        "shippingPreference": {
+                            "combinedShippingRuleId": "515556026",
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "2185677965"
+                            }
+                        }
+                    },
+                    "excludedShipToLocations": [
+                        {
+                            "sellerShippingRegion": "OSTFRIESISCHE_INSELN"
+                        },
+                        {
+                            "sellerShippingRegion": "NORDFRIESISCHE_INSELN"
+                        },
+                        {
+                            "sellerShippingRegion": "HIDDENSEE"
+                        },
+                        {
+                            "continent": "AFRICA"
+                        },
+                        {
+                            "continent": "ASIA"
+                        },
+                        {
+                            "sellerShippingRegion": "CENTRAL_AMERICA_AND_CARIBBEAN"
+                        },
+                        {
+                            "continent": "EUROPE"
+                        },
+                        {
+                            "sellerShippingRegion": "MIDDLE_EAST"
+                        },
+                        {
+                            "continent": "NORTH_AMERICA"
+                        },
+                        {
+                            "sellerShippingRegion": "OCEANIA"
+                        },
+                        {
+                            "sellerShippingRegion": "SOUTHEAST_ASIA"
+                        },
+                        {
+                            "continent": "SOUTH_AMERICA"
+                        }
+                    ],
+                    "handlingTimeDuration": "DAYS_2",
+                    "includedShipToLocations": [
+                        {
+                            "country": "DE"
+                        }
+                    ],
+                    "internationalShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "2185677965"
+                            }
+                        }
+                    },
+                    "marketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": false,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "515556026",
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "DEU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_Paket",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_Paket"
+                                },
+                                "shippingServiceOptionCode": "DE_Paket"
+                            }
+                        ],
+                        "internationalShippingOption": false,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "515556026",
+                        "shippingPreference": {
+                            "combinedShippingRuleId": "515556026",
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "2185677965"
+                            }
+                        }
+                    },
+                    "nonMarketplaceShippingOptions": {
+                        "costType": "FLAT",
+                        "isInternational": true,
+                        "promotionalShipping": false,
+                        "shippingDiscountProfileId": "-1",
+                        "internationalShippingOption": true,
+                        "shippingCostType": "FLAT",
+                        "shippingDiscountRuleId": "-1",
+                        "shippingPreference": {
+                            "promotionalShipping": false,
+                            "seller": {
+                                "legacyUserId": "2185677965"
+                            }
+                        }
+                    },
+                    "shippingBusinessPolicy": {},
+                    "shippingServices": [
+                        {
+                            "additionalUnitShippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "rank": 1,
+                            "shipToLocations": [
+                                "DEU"
+                            ],
+                            "shippingCost": {
+                                "original": {
+                                    "amount": "0.0",
+                                    "currency": "EUR"
+                                }
+                            },
+                            "shippingServiceCode": "DE_Paket",
+                            "additionalUnitShippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "0.0"
+                                }
+                            },
+                            "includedShipToLocations": [
+                                {
+                                    "country": "DE"
+                                }
+                            ],
+                            "shippingCostAmount": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "0.0"
+                                }
+                            },
+                            "shippingService": {
+                                "shippingServiceCode": "DE_Paket"
+                            },
+                            "shippingServiceOptionCode": "DE_Paket"
+                        }
+                    ]
+                },
+                "listingId": "178055817599",
+                "digitalDeliverySupported": false,
+                "globalShippingSupported": false,
+                "inStorePickupSupported": false,
+                "packageSpecifications": {
+                    "irregularPackage": false,
+                    "majorWeight": "0.0",
+                    "minorWeight": "0.0",
+                    "packageType": "None",
+                    "unitOfMeasure": "Metric",
+                    "listingUnitOfMeasure": "METRIC",
+                    "packageDimensions": {},
+                    "packageWeight": {
+                        "majorUnit": 0,
+                        "minorUnit": 0
+                    }
+                },
+                "shipToHomeLogisticsPlanSupported": false
+            },
+            "itemCondition": {
+                "categoryId": "57357",
+                "id": "1000",
+                "itemConditionDescriptors": [],
+                "conditionDescriptors": []
+            },
+            "itemLocation": {
+                "countryCode": "DE",
+                "streetAddress": "DE",
+                "country": "DE",
+                "location": "DE"
+            },
+            "itemRevisionDate": "2026-08-17T17:23:18.000Z",
+            "items": [
+                {
+                    "itemId": "178055817599",
+                    "creationDate": "2026-04-17T09:29:02.000Z",
+                    "itemSellerProduct": {
+                        "globalIdentifiers": [
+                            {
+                                "name": "EAN",
+                                "values": [
+                                    "Nicht zutreffend"
+                                ]
+                            },
+                            {
+                                "name": "MPN",
+                                "values": [
+                                    "24735767"
+                                ]
+                            }
+                        ],
+                        "images": [
+                            {
+                                "ebayImageUrl": "https://i.ebayimg.com/00/s/NTU4WDU1OA==/z/Xx4AAeSwZeRp4f57/$_1.JPG?set_id=8800005007",
+                                "externalImageUrl": "https://www.goodtires.de/media/229505bb514e9d6bfcac8842facd590e-1776418146_558.jpg",
+                                "order": 1
+                            }
+                        ],
+                        "productIdentifiers": {
+                            "globalIdentifiers": {
+                                "ean": "Nicht zutreffend"
+                            },
+                            "includeEbayProductDetails": false
+                        },
+                        "traits": []
+                    },
+                    "quantityAvailable": 12,
+                    "quantitySold": 0,
+                    "sellerPrice": {
+                        "fixedPrice": {
+                            "original": {
+                                "amount": "23.1",
+                                "currency": "EUR"
+                            }
+                        }
+                    },
+                    "sku": "P24735767",
+                    "variationAspects": [],
+                    "listing": {
+                        "listingId": "178055817599"
+                    },
+                    "photos": [
+                        {
+                            "ebayPictureUrl": "https://i.ebayimg.com/00/s/NTU4WDU1OA==/z/Xx4AAeSwZeRp4f57/$_1.JPG?set_id=8800005007",
+                            "externalPictureUrl": "https://www.goodtires.de/media/229505bb514e9d6bfcac8842facd590e-1776418146_558.jpg",
+                            "order": 1
+                        }
+                    ],
+                    "itemIdRestReference": "v1|178055817599|0",
+                    "itemIdVersioned": "178055817599",
+                    "itemTerms": {
+                        "availability": {
+                            "quantityAvailable": 12,
+                            "quantitySold": 0
+                        },
+                        "pricingTerms": {
+                            "auctionPrice": {},
+                            "fixedPrice": {
+                                "original": {
+                                    "currency": "EUR",
+                                    "value": "23.1"
+                                }
+                            }
+                        }
+                    },
+                    "terms": {
+                        "fulfillmentTerms": {
+                            "managedFulfillmentSupported": false
+                        }
+                    },
+                    "versionId": "6856119893007"
+                }
+            ],
+            "listingFormat": "BIN",
+            "listingLifecycle": {
+                "endDate": "2026-09-08T17:05:26.000Z",
+                "listingDuration": "GTC",
+                "listingStatus": "ENDED",
+                "onHold": false,
+                "scheduledEndDate": "2026-09-17T09:29:03.000Z",
+                "startDate": "2026-04-17T09:29:03.000Z",
+                "actualEndAt": "2026-09-08T17:05:26.000Z",
+                "createdAt": "2026-04-17T09:29:02.000Z",
+                "duplicateAuction": false,
+                "endListingReason": "NOT_AVAILABLE",
+                "listedAsScheduled": false,
+                "listingDurationInDays": "GTC",
+                "scheduledEndAt": "2026-09-17T09:29:03.000Z",
+                "startAt": "2026-04-17T09:29:03.000Z"
+            },
+            "listingTerms": {
+                "regulatory": {
+                    "manufacturer": {
+                        "address": {
+                            "addressLine1": "Wilhelmstraße 47",
+                            "city": "Ennepetal",
+                            "country": "DE",
+                            "postalCode": "58256"
+                        },
+                        "city": "Ennepetal",
+                        "companyName": "febi",
+                        "contact": {
+                            "email": "info@febi.com",
+                            "phone": "+49-(0)2333-911-0"
+                        },
+                        "country": "DE",
+                        "email": "info@febi.com",
+                        "phone": "+49-(0)2333-911-0",
+                        "postalCode": "58256",
+                        "street1": "Wilhelmstraße 47"
+                    }
+                },
+                "bestOfferTerms": {
+                    "autoAcceptEnabled": false,
+                    "acceptBestOffer": false,
+                    "autoAcceptThresholdAmount": {
+                        "original": {
+                            "currency": "EUR",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoAcceptThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "EUR"
+                        }
+                    },
+                    "autoDeclineEnabled": false,
+                    "autoDeclineThresholdAmount": {
+                        "original": {
+                            "currency": "EUR",
+                            "value": "0.0"
+                        }
+                    },
+                    "autoDeclineThresholdPrice": {
+                        "original": {
+                            "amount": "0.0",
+                            "currency": "EUR"
+                        }
+                    }
+                },
+                "buyerRestrictions": {
+                    "buyerRestrictionModifiedDate": "2026-04-17T09:29:03.120Z",
+                    "disableBuyerRestrictions": false,
+                    "quantityLimitPerBuyer": 0,
+                    "residencyInShipToLocation": true,
+                    "unpaidTransactionStrikesThreshold": {
+                        "count": 2,
+                        "period": "Months_1"
+                    }
+                },
+                "hideParticipation": false,
+                "internationalSiteVisibility": [],
+                "itemLocation": {
+                    "countryCode": "DE",
+                    "streetAddress": "DE",
+                    "country": "DE",
+                    "location": "DE"
+                },
+                "lifecycleTerms": {
+                    "endDate": "2026-09-08T17:05:26.000Z",
+                    "listingDuration": "GTC",
+                    "listingStatus": "ENDED",
+                    "onHold": false,
+                    "scheduledEndDate": "2026-09-17T09:29:03.000Z",
+                    "startDate": "2026-04-17T09:29:03.000Z",
+                    "actualEndAt": "2026-09-08T17:05:26.000Z",
+                    "createdAt": "2026-04-17T09:29:02.000Z",
+                    "duplicateAuction": false,
+                    "endListingReason": "NOT_AVAILABLE",
+                    "listedAsScheduled": false,
+                    "listingDurationInDays": "GTC",
+                    "scheduledEndAt": "2026-09-17T09:29:03.000Z",
+                    "startAt": "2026-04-17T09:29:03.000Z"
+                },
+                "listingFormat": "FIXED_PRICE",
+                "listingFulfillmentTerms": {
+                    "digitalDeliveryLogisticsPlanSupported": false,
+                    "ebayManagedShipping": false,
+                    "freeShippingAvailable": true,
+                    "globalShippingLogisticsPlanSupported": false,
+                    "inStorePickupLogisticsPlanSupported": false,
+                    "managedFulfillmentSupported": false,
+                    "managedShippingOptin": false,
+                    "packageSpec": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "Metric",
+                        "listingUnitOfMeasure": "METRIC",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shippingTerms": {
+                        "buyerResponsibleForShipping": false,
+                        "excludeShipToLocations": [
+                            "_OI",
+                            "_NI",
+                            "_OL",
+                            "_AF",
+                            "_AS",
+                            "_CA",
+                            "_EU",
+                            "_ME",
+                            "_NA",
+                            "_OC",
+                            "_SE",
+                            "_SA"
+                        ],
+                        "handlingTime": "Days_2",
+                        "shipToLocations": [
+                            "DEU"
+                        ],
+                        "shippingOptions": [
+                            {
+                                "costType": "FLAT",
+                                "isInternational": false,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "515556026",
+                                "shippingServices": [
+                                    {
+                                        "additionalUnitShippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "rank": 1,
+                                        "shipToLocations": [
+                                            "DEU"
+                                        ],
+                                        "shippingCost": {
+                                            "original": {
+                                                "amount": "0.0",
+                                                "currency": "EUR"
+                                            }
+                                        },
+                                        "shippingServiceCode": "DE_Paket",
+                                        "additionalUnitShippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "includedShipToLocations": [
+                                            {
+                                                "country": "DE"
+                                            }
+                                        ],
+                                        "shippingCostAmount": {
+                                            "original": {
+                                                "currency": "EUR",
+                                                "value": "0.0"
+                                            }
+                                        },
+                                        "shippingService": {
+                                            "shippingServiceCode": "DE_Paket"
+                                        },
+                                        "shippingServiceOptionCode": "DE_Paket"
+                                    }
+                                ],
+                                "internationalShippingOption": false,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "515556026",
+                                "shippingPreference": {
+                                    "combinedShippingRuleId": "515556026",
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "2185677965"
+                                    }
+                                }
+                            },
+                            {
+                                "costType": "FLAT",
+                                "isInternational": true,
+                                "promotionalShipping": false,
+                                "shippingDiscountProfileId": "-1",
+                                "internationalShippingOption": true,
+                                "shippingCostType": "FLAT",
+                                "shippingDiscountRuleId": "-1",
+                                "shippingPreference": {
+                                    "promotionalShipping": false,
+                                    "seller": {
+                                        "legacyUserId": "2185677965"
+                                    }
+                                }
+                            }
+                        ],
+                        "excludeShipToLocationsLastModifiedDateTime": "2026-04-17T09:29:04.129Z",
+                        "domesticShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "515556026",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "DEU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_Paket",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_Paket"
+                                    },
+                                    "shippingServiceOptionCode": "DE_Paket"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "515556026",
+                            "shippingPreference": {
+                                "combinedShippingRuleId": "515556026",
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "2185677965"
+                                }
+                            }
+                        },
+                        "excludedShipToLocations": [
+                            {
+                                "sellerShippingRegion": "OSTFRIESISCHE_INSELN"
+                            },
+                            {
+                                "sellerShippingRegion": "NORDFRIESISCHE_INSELN"
+                            },
+                            {
+                                "sellerShippingRegion": "HIDDENSEE"
+                            },
+                            {
+                                "continent": "AFRICA"
+                            },
+                            {
+                                "continent": "ASIA"
+                            },
+                            {
+                                "sellerShippingRegion": "CENTRAL_AMERICA_AND_CARIBBEAN"
+                            },
+                            {
+                                "continent": "EUROPE"
+                            },
+                            {
+                                "sellerShippingRegion": "MIDDLE_EAST"
+                            },
+                            {
+                                "continent": "NORTH_AMERICA"
+                            },
+                            {
+                                "sellerShippingRegion": "OCEANIA"
+                            },
+                            {
+                                "sellerShippingRegion": "SOUTHEAST_ASIA"
+                            },
+                            {
+                                "continent": "SOUTH_AMERICA"
+                            }
+                        ],
+                        "handlingTimeDuration": "DAYS_2",
+                        "includedShipToLocations": [
+                            {
+                                "country": "DE"
+                            }
+                        ],
+                        "internationalShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "2185677965"
+                                }
+                            }
+                        },
+                        "marketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": false,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "515556026",
+                            "shippingServices": [
+                                {
+                                    "additionalUnitShippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "rank": 1,
+                                    "shipToLocations": [
+                                        "DEU"
+                                    ],
+                                    "shippingCost": {
+                                        "original": {
+                                            "amount": "0.0",
+                                            "currency": "EUR"
+                                        }
+                                    },
+                                    "shippingServiceCode": "DE_Paket",
+                                    "additionalUnitShippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "includedShipToLocations": [
+                                        {
+                                            "country": "DE"
+                                        }
+                                    ],
+                                    "shippingCostAmount": {
+                                        "original": {
+                                            "currency": "EUR",
+                                            "value": "0.0"
+                                        }
+                                    },
+                                    "shippingService": {
+                                        "shippingServiceCode": "DE_Paket"
+                                    },
+                                    "shippingServiceOptionCode": "DE_Paket"
+                                }
+                            ],
+                            "internationalShippingOption": false,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "515556026",
+                            "shippingPreference": {
+                                "combinedShippingRuleId": "515556026",
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "2185677965"
+                                }
+                            }
+                        },
+                        "nonMarketplaceShippingOptions": {
+                            "costType": "FLAT",
+                            "isInternational": true,
+                            "promotionalShipping": false,
+                            "shippingDiscountProfileId": "-1",
+                            "internationalShippingOption": true,
+                            "shippingCostType": "FLAT",
+                            "shippingDiscountRuleId": "-1",
+                            "shippingPreference": {
+                                "promotionalShipping": false,
+                                "seller": {
+                                    "legacyUserId": "2185677965"
+                                }
+                            }
+                        },
+                        "shippingBusinessPolicy": {},
+                        "shippingServices": [
+                            {
+                                "additionalUnitShippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "rank": 1,
+                                "shipToLocations": [
+                                    "DEU"
+                                ],
+                                "shippingCost": {
+                                    "original": {
+                                        "amount": "0.0",
+                                        "currency": "EUR"
+                                    }
+                                },
+                                "shippingServiceCode": "DE_Paket",
+                                "additionalUnitShippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "includedShipToLocations": [
+                                    {
+                                        "country": "DE"
+                                    }
+                                ],
+                                "shippingCostAmount": {
+                                    "original": {
+                                        "currency": "EUR",
+                                        "value": "0.0"
+                                    }
+                                },
+                                "shippingService": {
+                                    "shippingServiceCode": "DE_Paket"
+                                },
+                                "shippingServiceOptionCode": "DE_Paket"
+                            }
+                        ]
+                    },
+                    "listingId": "178055817599",
+                    "digitalDeliverySupported": false,
+                    "globalShippingSupported": false,
+                    "inStorePickupSupported": false,
+                    "packageSpecifications": {
+                        "irregularPackage": false,
+                        "majorWeight": "0.0",
+                        "minorWeight": "0.0",
+                        "packageType": "None",
+                        "unitOfMeasure": "Metric",
+                        "listingUnitOfMeasure": "METRIC",
+                        "packageDimensions": {},
+                        "packageWeight": {
+                            "majorUnit": 0,
+                            "minorUnit": 0
+                        }
+                    },
+                    "shipToHomeLogisticsPlanSupported": false
+                },
+                "listingPaymentTerms": {
+                    "paymentMethods": [],
+                    "depositRequired": false,
+                    "hoursToDeposit": -1,
+                    "immediatePay": false,
+                    "listingPaymentMethods": [],
+                    "motorVehicleDeposit": {
+                        "depositRequired": false,
+                        "hoursToDeposit": -1
+                    }
+                },
+                "listingReturnTerms": {
+                    "domesticReturnTerms": {
+                        "returnAccepted": true,
+                        "returnPeriod": "Days_30",
+                        "returnShipmentPayee": "Buyer",
+                        "returnDuration": "DAYS_30",
+                        "returnShipmentInvoicee": "Buyer"
+                    },
+                    "returnInstructions": "Verbrauchern steht ein Widerrufsrecht nach folgender Maßgabe zu, wobei Verbraucher jede natürliche Person ist, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können:\n\nWiderrufsbelehrung\n\nWiderrufsrecht\nSie haben das Recht, binnen einem Monat ohne Angabe von Gründen diesen Vertrag zu widerrufen.\n\nDie Widerrufsfrist beträgt einen Monat ab dem Tag, an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die letzte Ware in Besitz genommen haben bzw. hat.\n\nUm Ihr Widerrufsrecht auszuüben, müssen Sie uns (Scooter Autoservice GmbH, Friedrichstädter Straße 30-32, 24768 Rendsburg, Tel: 04331-33 833 15, Fax: 04331-33 833 38, E-Mail: info@scooterautoservice.de) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.\n\nZur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.\n\nFolgen des Widerrufs\nWenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen einem Monat ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. Wir können die Rückzahlung  verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist. \n\nSie haben die Waren unverzüglich und in jedem Fall spätestens binnen einem Monat ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von einem Monat absenden. Sie tragen die Kosten der Rücksendung der Waren. \n\nSie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.\n\nAusschluss bzw. vorzeitiges Erlöschen des Widerrufsrechts:\nDas Widerrufsrecht besteht nicht bei Verträgen zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind.\n\n\nMuster-Widerrufsformular\n \n(Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden Sie es zurück.)\nAn Scooter Autoservice GmbH, Friedrichstädter Straße 30-32, 24768 Rendsburg, Fax: 04331-33 833 38, E-Mail: info@scooterautoservice.de\n\n\nHiermit widerrufe(n) ich/wir(*) den von mir/uns abgeschlossenen Vertrag über den Kauf der folgenden Waren (*)/ die Erbringung der folgenden Dienstleistung (*)\n\nBestellt am (*) :\t\t\t/ erhalten am (*) :                                  \n\nName des/der Verbraucher(s) :                                                                                                            \n\nAnschrift des/der Verbraucher(s) :                                                                                                           \n\nUnterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier) :                                                               \n\nDatum:  \n                                  \n(*) Unzutreffendes streichen"
+                },
+                "programsSupported": [],
+                "sellerCustomData": "P24735767",
+                "taxTerms": {
+                    "applicableToShipping": false,
+                    "recognizedAsBusinessSellerForVAT": false,
+                    "salesTaxApplicableToShipping": false,
+                    "salesTaxPercentage": "19.0",
+                    "salesTaxTableUsed": false,
+                    "taxRate": "19.0",
+                    "vatPercentage": "19.0",
+                    "vatRecognizedBusinessSeller": false
+                },
+                "totalQuantityAvailable": 12,
+                "visualEnhancements": {
+                    "boldTitle": false,
+                    "galleryPlus": false
+                }
+            },
+            "paymentTerms": {
+                "paymentMethods": [],
+                "depositRequired": false,
+                "hoursToDeposit": -1,
+                "immediatePay": false,
+                "listingPaymentMethods": [],
+                "motorVehicleDeposit": {
+                    "depositRequired": false,
+                    "hoursToDeposit": -1
+                }
+            },
+            "photos": [
+                {
+                    "ebayPictureUrl": "https://i.ebayimg.com/00/s/NTU4WDU1OA==/z/Xx4AAeSwZeRp4f57/$_1.JPG?set_id=8800005007",
+                    "externalPictureUrl": "https://www.goodtires.de/media/229505bb514e9d6bfcac8842facd590e-1776418146_558.jpg",
+                    "order": 1
+                }
+            ],
+            "programsSupported": [],
+            "returnTerms": {
+                "domesticReturnTerms": {
+                    "returnAccepted": true,
+                    "returnPeriod": "Days_30",
+                    "returnShipmentPayee": "Buyer",
+                    "returnDuration": "DAYS_30",
+                    "returnShipmentInvoicee": "Buyer"
+                },
+                "returnInstructions": "Verbrauchern steht ein Widerrufsrecht nach folgender Maßgabe zu, wobei Verbraucher jede natürliche Person ist, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können:\n\nWiderrufsbelehrung\n\nWiderrufsrecht\nSie haben das Recht, binnen einem Monat ohne Angabe von Gründen diesen Vertrag zu widerrufen.\n\nDie Widerrufsfrist beträgt einen Monat ab dem Tag, an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die letzte Ware in Besitz genommen haben bzw. hat.\n\nUm Ihr Widerrufsrecht auszuüben, müssen Sie uns (Scooter Autoservice GmbH, Friedrichstädter Straße 30-32, 24768 Rendsburg, Tel: 04331-33 833 15, Fax: 04331-33 833 38, E-Mail: info@scooterautoservice.de) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.\n\nZur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.\n\nFolgen des Widerrufs\nWenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen einem Monat ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. Wir können die Rückzahlung  verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist. \n\nSie haben die Waren unverzüglich und in jedem Fall spätestens binnen einem Monat ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von einem Monat absenden. Sie tragen die Kosten der Rücksendung der Waren. \n\nSie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.\n\nAusschluss bzw. vorzeitiges Erlöschen des Widerrufsrechts:\nDas Widerrufsrecht besteht nicht bei Verträgen zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind.\n\n\nMuster-Widerrufsformular\n \n(Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden Sie es zurück.)\nAn Scooter Autoservice GmbH, Friedrichstädter Straße 30-32, 24768 Rendsburg, Fax: 04331-33 833 38, E-Mail: info@scooterautoservice.de\n\n\nHiermit widerrufe(n) ich/wir(*) den von mir/uns abgeschlossenen Vertrag über den Kauf der folgenden Waren (*)/ die Erbringung der folgenden Dienstleistung (*)\n\nBestellt am (*) :\t\t\t/ erhalten am (*) :                                  \n\nName des/der Verbraucher(s) :                                                                                                            \n\nAnschrift des/der Verbraucher(s) :                                                                                                           \n\nUnterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier) :                                                               \n\nDatum:  \n                                  \n(*) Unzutreffendes streichen"
+            },
+            "seller": {
+                "legacyUserId": "2185677965"
+            },
+            "sellerListingVersionId": "6856119893007",
+            "significantRevisionCount": 7,
+            "totalQuantity": 12,
+            "autoRelistTerms": {
+                "autoRelist": false,
+                "canAutoRelist": false
+            },
+            "buyerRestrictions": {
+                "buyerRestrictionModifiedDate": "2026-04-17T09:29:03.120Z",
+                "disableBuyerRestrictions": false,
+                "quantityLimitPerBuyer": 0,
+                "residencyInShipToLocation": true,
+                "unpaidTransactionStrikesThreshold": {
+                    "count": 2,
+                    "period": "Months_1"
+                }
+            },
+            "buyerRestrictionsDisabled": false,
+            "endReason": "NOT_AVAILABLE",
+            "enrolledInPriceGuarantee": false,
+            "hasCompatibilityInfo": true,
+            "hideParticipation": false,
+            "inventoryTrackingMethod": "Item",
+            "isItemOnSale": false,
+            "listingCreationClientIP": "85.214.87.19",
+            "listingHttpsCompliant": true,
+            "managedByInventory": false,
+            "marketplace": "EBAY_DE",
+            "partnerListedAutosDealerItem": false,
+            "promotionalDetails": {
+                "markdownItemPriceRevision": "NO_MARKDOWN_SALE",
+                "promotionalFreeShippingSale": false,
+                "standardFreeShippingPriorToPromotion": false
+            },
+            "regulatoryInfo": {
+                "manufacturer": {
+                    "address": {
+                        "addressLine1": "Wilhelmstraße 47",
+                        "city": "Ennepetal",
+                        "country": "DE",
+                        "postalCode": "58256"
+                    },
+                    "city": "Ennepetal",
+                    "companyName": "febi",
+                    "contact": {
+                        "email": "info@febi.com",
+                        "phone": "+49-(0)2333-911-0"
+                    },
+                    "country": "DE",
+                    "email": "info@febi.com",
+                    "phone": "+49-(0)2333-911-0",
+                    "postalCode": "58256",
+                    "street1": "Wilhelmstraße 47"
+                }
+            },
+            "secondChanceItem": false,
+            "sellerApplicationData": "P24735767",
+            "semiPersistentBin": false,
+            "taxInfo": {
+                "applicableToShipping": false,
+                "recognizedAsBusinessSellerForVAT": false,
+                "salesTaxApplicableToShipping": false,
+                "salesTaxPercentage": "19.0",
+                "salesTaxTableUsed": false,
+                "taxRate": "19.0",
+                "vatPercentage": "19.0",
+                "vatRecognizedBusinessSeller": false
+            },
+            "vehicleSubscriptionItem": false,
+            "visualEnhancements": {
+                "boldTitle": false,
+                "featuredPlus": false,
+                "galleryType": "Gallery",
+                "homePageFeatured": false,
+                "listingDesignerOptimalPictureSize": false,
+                "photoDisplayType": "PicturePack"
+            },
+            "__typename": "SingleSkuListing",
+            "listingCompatibilities": {
+                "computedCompatibilitiesByMarketplace": [
+                    {
+                        "compatibilityNotionalProfileGrouping": {
+                            "id": "144d80be-7755-4e9a-8599-1a68a65da4dc"
+                        },
+                        "marketplaceId": "EBAY-DE",
+                        "searchConfig": {
+                            "id": "SC_EBAY_MOTORS_FINDER_DE"
+                        }
+                    }
+                ],
+                "listingId": "178055817599"
+            },
+            "eligibleForPudo": false,
+            "visibilitySummary": {
+                "defaultVisibleSites": [
+                    77
+                ],
+                "explicitlySuppressedSites": [],
+                "packedVisibilityString": "0=128,2=128,3=128,4=128,5=128,6=128,7=128,8=128,9=128,10=128,11=128,12=128,13=128,14=128,15=128,16=128,17=128,18=128,19=128,20=133,21=128,22=128,23=128,24=128,25=128,26=128,27=128,28=128,29=128,30=128,31=128,32=128,33=128,34=128,35=128,37=128,38=128,39=128,40=128,41=128,42=128,43=128,44=128,46=128,47=128,48=128,49=128,50=128,51=128,52=128,53=128,55=128,58=128,59=128,60=128,61=128,62=128,63=128,64=128,65=128,66=128,67=128,68=128,69=128,71=128,72=128,73=128,74=128,75=128,76=128,77=159,78=128,79=128,81=128,82=128,83=128,84=128,85=128,86=128,87=128,88=128,89=128,90=128,91=128,100=128,101=128,102=128,103=128,104=133,105=128,106=128,107=128,108=128,109=128,112=128,113=128,114=128,115=128,116=128,117=128,118=128,120=128,121=128,122=128,123=128,124=128,125=128,126=128,128=128,129=128,130=128,131=128,132=128,133=128,134=128,135=128,136=128,137=128,138=128,139=128,140=128,141=128,142=128,143=128,144=128,145=128,146=128,147=128,148=128,150=128,151=128,152=128,153=128,155=128,156=128,157=128,158=128,159=128,160=128,166=128,167=128,169=128,170=128,171=128,172=128,173=128,174=128,175=128,176=128,177=128,178=128,179=128,181=128,182=128,183=128,184=128,186=128,187=128,189=128,190=128,191=128,193=128,196=128,197=128,198=128,199=128,200=128,201=128,202=128,203=128,204=128,205=128,206=128,207=128,208=128,209=128,210=128,211=128,212=128,213=128,214=128,215=128,216=128,217=128,218=128,219=128,220=128,223=128,224=128,225=128,226=128,227=128,228=128,229=128,231=128,232=128,233=128,234=128,235=128,236=128,237=128,238=128,239=128,240=128,241=128,242=128,243=128,244=128,245=128,246=128,247=128,248=128,249=128,250=128,251=128,252=128,253=128,254=128,255=128,256=128,257=128,258=128,259=128"
+            },
+            "itemCompatibilities": [
+                {
+                    "propertiesList": [
+                        {
+                            "name": "Make",
+                            "values": [
+                                "Toyota"
+                            ]
+                        },
+                        {
+                            "name": "Model",
+                            "values": [
+                                "RAV 4 II"
+                            ]
+                        },
+                        {
+                            "name": "Platform",
+                            "values": [
+                                "A2"
+                            ]
+                        },
+                        {
+                            "name": "Type",
+                            "values": [
+                                "2.0 D 4WD"
+                            ]
+                        },
+                        {
+                            "name": "Production Period",
+                            "values": [
+                                "2001/05-2005/11"
+                            ]
+                        },
+                        {
+                            "name": "Year",
+                            "values": [
+                                "2001",
+                                "2002",
+                                "2003",
+                                "2004",
+                                "2005"
+                            ]
+                        },
+                        {
+                            "name": "Engine",
+                            "values": [
+                                "1995 ccm, 85 KW, 116 PS"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "propertiesList": [
+                        {
+                            "name": "Make",
+                            "values": [
+                                "Toyota"
+                            ]
+                        },
+                        {
+                            "name": "Model",
+                            "values": [
+                                "RAV 4 II"
+                            ]
+                        },
+                        {
+                            "name": "Platform",
+                            "values": [
+                                "A2"
+                            ]
+                        },
+                        {
+                            "name": "Type",
+                            "values": [
+                                "1.8"
+                            ]
+                        },
+                        {
+                            "name": "Production Period",
+                            "values": [
+                                "2000/08-2005/11"
+                            ]
+                        },
+                        {
+                            "name": "Year",
+                            "values": [
+                                "2000",
+                                "2001",
+                                "2002",
+                                "2003",
+                                "2004",
+                                "2005"
+                            ]
+                        },
+                        {
+                            "name": "Engine",
+                            "values": [
+                                "1794 ccm, 92 KW, 125 PS"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "propertiesList": [
+                        {
+                            "name": "Make",
+                            "values": [
+                                "Toyota"
+                            ]
+                        },
+                        {
+                            "name": "Model",
+                            "values": [
+                                "RAV 4 II"
+                            ]
+                        },
+                        {
+                            "name": "Platform",
+                            "values": [
+                                "A2"
+                            ]
+                        },
+                        {
+                            "name": "Type",
+                            "values": [
+                                "2.0 4WD"
+                            ]
+                        },
+                        {
+                            "name": "Production Period",
+                            "values": [
+                                "2000/05-2005/11"
+                            ]
+                        },
+                        {
+                            "name": "Year",
+                            "values": [
+                                "2000",
+                                "2001",
+                                "2002",
+                                "2003",
+                                "2004",
+                                "2005"
+                            ]
+                        },
+                        {
+                            "name": "Engine",
+                            "values": [
+                                "1998 ccm, 110 KW, 150 PS"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "__typename": "ListingEntry",
+        "schemaVersion": "2.1.0"
+    }
+}
