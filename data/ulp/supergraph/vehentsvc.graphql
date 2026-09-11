@@ -1,0 +1,1673 @@
+schema @composeDirective(name : "@exclude") @composeDirective(name : "@ulp_shareable") @composeDirective(name : "@compress") @link(import : ["@composeDirective", "@key", "@extends", "@external", "@requires", "@shareable", "@provides", "@inaccessible", "@tag"], url : "https://specs.apollo.dev/federation/v2.3") @link(import : ["@svlsField", "@principleAuthorization", "@compress", "@ignoreForEventGeneration", "@fallbackToSource", "@fieldGroup", "@exclude", "@ulp_shareable", "@availableIn", "@ulp_inaccessible", "@tag_directive"], url : "https://ulppecs.dev/directives/v1.0"){
+  query: Query
+}
+
+directive @availableIn(env: String!) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @composeDirective(name: String!) repeatable on SCHEMA
+
+directive @compress on FIELD_DEFINITION
+
+directive @exclude(gateways: [String!]!) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @extends on OBJECT | INTERFACE
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @fallbackToSource(endDate: DateTime!, startDate: DateTime!) on FIELD_DEFINITION
+
+directive @federation__interfaceObject on OBJECT
+
+directive @federation__override(from: String!) on FIELD_DEFINITION
+
+directive @fieldGroup(name: String!) on FIELD_DEFINITION
+
+directive @ignoreForEventGeneration(eventName: String!) on FIELD_DEFINITION
+
+directive @inaccessible on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @key(fields: federation__FieldSet!, resolvable: Boolean = true) repeatable on OBJECT | INTERFACE
+
+directive @link(as: String, for: link__Purpose, import: [link__Import], url: String!) repeatable on SCHEMA
+
+directive @principleAuthorization(field: String!) on FIELD_DEFINITION
+
+directive @provides(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @requires(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @shareable repeatable on OBJECT | FIELD_DEFINITION
+
+directive @svlsField(description: String, fieldName: String!) repeatable on FIELD_DEFINITION
+
+directive @tag(name: String!) repeatable on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @tag_directive(add: String!, gateway: String!) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @ulp_inaccessible on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @ulp_shareable on OBJECT | FIELD_DEFINITION
+
+"""
+Extend ListingV2 to add vehicleListingDetails from this application.
+@key indicates that ListingV2 can be uniquely identified via listingId
+"""
+interface ListingV2 @key(fields : "listingId", resolvable : true) {
+  "ID of the listing"
+  listingId: ID!
+  """
+  If this is a vehicle listing, then this field has vehicle related details.
+  If this is not a vehicle listing, then this field is null.
+  This field will return the vehicle listing details if listing Id is provided
+  Maybe null if the listing is not a vehicle listing
+  This field cannot be used to identify if the listing is a vehicle listing
+  """
+  vehicleListingDetails: VehicleListingDetails @compress @exclude(gateways : ["publicapi"])
+}
+
+"Common surface shared by all message parts."
+union PIXFormattedParts = PIXIconPart | PIXTextPart
+
+union _Entity = SingleSkuListing | VariationListing | VehicleListingDetails
+
+"{inherit}"
+type Amount @shareable {
+  "The currency in which this amount is denominated."
+  currency: CurrencyAlpha3Code
+  "The numeric value of the monetary amount."
+  value: Decimal
+}
+
+"The action representing either a URL to be invoked or a named action that can be mapped to an action by the client."
+type PIXAction @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  "iOS / Android only, supports multiple inline links in parent message"
+  linkText: PIXFormattedText
+  "Name of the action to be performed. Names agreed on by consumer / producer."
+  name: String!
+  "Additional parameters to be sent along with the action."
+  params: [PIXActionParam!]
+  "URL to be invoked when the action is performed. Optional as there may be actions that may not have URLs."
+  url: String
+}
+
+"Action parameters."
+type PIXActionParam @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  "Name of the parameter."
+  name: String!
+  "Value of the parameter."
+  value: String!
+}
+
+"""
+A formatted text message that may include icons, styles, and actions that is shared across Product, Item and Transactions services.
+This variant supports only a single action within the formatted text and needs to be used where the clients cannot support multiple actions because of platform limitations.
+"""
+type PIXFormattedText @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  "Accessibility text for screen readers, providing a description of the entire text."
+  accessibilityText: String
+  "Details of actions that are part of the individual PIXFormattedParts"
+  action: PIXAction
+  "A list of texts that should be displayed without any separators"
+  formattedParts: [PIXFormattedParts!]!
+}
+
+"Individual icon part within a formatted message."
+type PIXIconPart @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  "Name of the icon to inline within the text. Names agreed on by consumer / producer."
+  name: String!
+}
+
+"Individual text part within a formatted message."
+type PIXTextPart @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  Text that should be used by screen readers when selecting this text. May be null when the accessibilityText is
+  handled at a higher level or when the screen reader should just read out the value
+  """
+  accessibilityText: String
+  "Name of the action to be performed. Names agreed on by consumer / producer. This is used to refer to the PIXAction defined."
+  actionName: String
+  "The hints (color, typography) to apply to the text part. Names agreed on by consumer / producer."
+  hints: [String!]
+  "The displayed value of this text"
+  text: String!
+}
+
+type Query {
+  _entities(representations: [_Any!]!): [_Entity]!
+  _service: _Service!
+}
+
+"{inherit}"
+type SingleSkuListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  "Id of a Listing."
+  listingId: ID!
+  """
+  If this is a vehicle listing, then this field has vehicle related details.
+  If this is not a vehicle listing, then this field is null.
+  This field will return the vehicle listing details if listing Id is provided
+  Maybe null if the listing is not a vehicle listing
+  """
+  vehicleListingDetails: VehicleListingDetails @compress @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable
+}
+
+"{inherit}"
+type VariationListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  "Id of a Listing."
+  listingId: ID!
+  """
+  If this is a vehicle listing, then this field has vehicle related details.
+  If this is not a vehicle listing, then this field is null.
+  This field will return the vehicle listing details if listing Id is provided
+  Maybe null if the listing is not a vehicle listing
+  """
+  vehicleListingDetails: VehicleListingDetails @compress @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable
+}
+
+"Summary of the report which includes details about the vehicle's history, ownership, and other relevant information."
+type VehicleHistoryReport @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  Full URL to the vehicle history report web page.
+  Provides direct access to the detailed report for further inspection.
+  Format: https://www.ebay.com/vmw/vhr?vin=abcd1234567890123
+  Maximum length can be 1000 characters.
+  May be null if the fullReportWebUrl is not provided.
+  """
+  fullReportWebUrl: String
+  """
+  Includes the ownership summary, title brand, accident damage, odometer status, and other details.
+  This field provides a comprehensive overview of the vehicle's past, which is crucial for buyers and sellers.
+  Can be null if the past history information is not available or not specified.
+  """
+  pastHistory: VehicleHistoryReportPastHistory
+  """
+  Details of the report's provider, including copyright, description, logo, and disclaimers.
+  This information is essential for understanding the source and credibility of the report.
+  Can be null if the provider information is not available or not specified.
+  """
+  reportProvider: VehicleHistoryReportProviderInformation
+  """
+  The purchase terms for the vehicle history report, including original price, discounted price, discount percentage, and bundle quantity.
+  May be null if the reportPurchaseTerms are not provided.
+  """
+  reportPurchaseTerms: [VehicleHistoryReportPurchaseTerms!]
+  """
+  Content needed for displaying the labels and other information of the report
+  Refer to the reference in: https://wiki.corp.ebay.com/display/MOTORS/Schema+Reference
+  """
+  scoreContent: VehicleListingScoreContent
+  """
+  The number of vehicle events available in the report.
+  0 indicates that there are no vehicle events.
+  May be null if the totalVehicleEvents is not provided.
+  """
+  totalVehicleEvents: Int
+  """
+  Returns VHR_NOT_AVAILABLE_FOR_FREE if the vehicle history report is not available for free.
+  Returns VHR_NOT_AVAILABLE if the vehicle history report is not available at all.
+  This field indicates the availability status of the report, guiding users on access options.
+  Alphanumeric string and maximum length can be 1000 characters.
+  Can be null if the availabilityStatus is not provided.
+  """
+  unavailabilityDetails: [String!]
+}
+
+"Content describing the advantages of purchasing a Vehicle History Report, number of records found for the vehicle, unavailability reason, purchase terms"
+type VehicleHistoryReportAdditionalInformation @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  "Link text for purchasing the AutoCheck Report in the paid report flow. Ex: Buy the AutoCheck Report. Can be null when free report is available or report is not available"
+  buyLinkText: String
+  "Title describing the number of records found in Vehicle History Report in the max view"
+  numberOfRecordsFoundMaxViewTitle: String
+  "Content describing the number of records found in Vehicle History Report in the min view"
+  numberOfRecordsFoundMinView: String
+  "Content for the report purchase terms. Ex - price and label for single/ multi reports"
+  reportPurchaseTermsContent: VehicleListingReportPurchaseTermsContent
+  "Content describing the advantages of purchasing a Vehicle History Report"
+  reportValueAdditionContent: String
+  "Label for the Style/Body of the vehicle. Returns labels with the : at the end. Ex - Style/Body: with no localization applied."
+  styleBodyLabel: String
+  "Content describing reasons for unavailability of the report. Can be null when free report is available or report is available for purchase"
+  vhrUnavailabilityContent: VhrUnavailabilityContent
+  "Label for the VIN of the vehicle. Returns labels with the : at the end. Ex - VIN: with no localization applied."
+  vinLabel: String
+}
+
+"VehicleHistoryReportGlossary entry"
+type VehicleHistoryReportGlossary @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  The name of the term used in the vehicle history report glossary.
+  Possible values can be definition/section/term
+  Maximum length can be 100 characters.
+  """
+  name: String!
+  """
+  The value of the term used in the vehicle history report glossary.
+  Maximum length can be 1000 characters.
+  """
+  value: String!
+}
+
+"""
+Includes the ownership summary, title brand, accident damage, odometer status, and other details.
+This field provides a comprehensive overview of the vehicle's past, which is crucial for buyers and sellers.
+Can be null if the past history information is not available or not specified.
+"""
+type VehicleHistoryReportPastHistory @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  Abandoned vehicle status
+  Can be null if abandonedStatus is not available
+  """
+  abandonedStatus: IssueLevel
+  """
+  Overall accident damage status.
+  Deprecated: This field was moved to scoreContent.summaryLabels.accidentStatus in PR #180.
+  It is restored here for backward compatibility and will be removed in a future coordinated release.
+  """
+  accidentStatus: String @deprecated(reason : "Moved to scoreContent.summaryLabels.accidentStatus. Update your query to use the new path.")
+  """
+  Accidents reported status
+  Can be null if accidentsReportedStatus is not available
+  """
+  accidentsReportedStatus: IssueLevel
+  """
+  Corrected title status
+  Can be null if correctedTitleStatus is not available
+  """
+  correctedTitleStatus: IssueLevel
+  """
+  Crash tested status
+  Can be null if crashTestedStatus is not available
+  """
+  crashTestedStatus: IssueLevel
+  """
+  Driver education service usage status
+  Can be null if driverEducationStatus is not available
+  """
+  driverEducationStatus: IssueLevel
+  """
+  Duplicate title status
+  Can be null if duplicateTitleStatus is not available
+  """
+  duplicateTitleStatus: IssueLevel
+  """
+  Fire damage incident status
+  Can be null if fireDamageIncidentStatus is not available
+  """
+  fireDamageIncidentStatus: IssueLevel
+  """
+  Fire damage title status
+  Can be null if fireDamageTitleStatus is not available
+  """
+  fireDamageTitleStatus: IssueLevel
+  """
+  Fleet service usage status
+  Can be null if fleetServiceStatus is not available
+  """
+  fleetServiceStatus: IssueLevel
+  """
+  Flood damage title status
+  Can be null if floodDamageTitleStatus is not available
+  """
+  floodDamageTitleStatus: IssueLevel
+  """
+  Government service usage status
+  Can be null if governmentServiceStatus is not available
+  """
+  governmentServiceStatus: IssueLevel
+  """
+  Grey market vehicle status
+  Can be null if greyMarketStatus is not available
+  """
+  greyMarketStatus: IssueLevel
+  """
+  Hail damage title status
+  Can be null if hailDamageTitleStatus is not available
+  """
+  hailDamageTitleStatus: IssueLevel
+  """
+  Insurance total loss status
+  Can be null if insuranceTotalLossStatus is not available
+  """
+  insuranceTotalLossStatus: IssueLevel
+  """
+  Junk title status
+  Can be null if junkTitleStatus is not available
+  """
+  junkTitleStatus: IssueLevel
+  """
+  Date when the odometer reading was recorded
+  Can be null if latestOdometerDate is not available
+  """
+  latestOdometerDate: DateTime
+  """
+  Latest reported odometer reading distance (numeric value only).
+  Represents the total distance traveled by the vehicle as recorded on the odometer.
+  Unit of measurement is specified in the latestOdometerUnit field (miles).
+  Valid range: 0 to 99,999,999.
+  May be null if odometer reading data is unavailable.
+  """
+  latestOdometerReading: Int
+  """
+  Unit of measure for odometer reading in miles
+  Alphanumeric format
+  Maximum length: 50
+  May be null if odometer reading data is unavailable.
+  """
+  latestOdometerUnit: String
+  """
+  Lemon/defective title status
+  Can be null if lemonDefectStatus is not available
+  """
+  lemonDefectStatus: IssueLevel
+  """
+  Livery service usage status
+  Can be null if liveryServiceStatus is not available
+  """
+  liveryServiceStatus: IssueLevel
+  """
+  Loan lien status
+  Can be null if loanLienStatus is not available
+  """
+  loanLienStatus: IssueLevel
+  """
+  Major damage incident status
+  Can be null if majorDamageIncidentStatus is not available
+  """
+  majorDamageIncidentStatus: IssueLevel
+  """
+  Odometer rollback detection status
+  Can be null if odometerRollbackStatus is not available
+  """
+  odometerRollbackStatus: IssueLevel
+  """
+  Overall odometer status.
+  Deprecated: This field was moved to scoreContent.summaryLabels.odometerStatus in PR #180.
+  It is restored here for backward compatibility and will be removed in a future coordinated release.
+  """
+  odometerStatus: String @deprecated(reason : "Moved to scoreContent.summaryLabels.odometerStatus. Update your query to use the new path.")
+  """
+  Number of different owners over the vehicle's lifetime.
+  Deprecated: This field was moved to scoreContent.summaryLabels.ownerCount in PR #180.
+  It is restored here for backward compatibility and will be removed in a future coordinated release.
+  """
+  ownerCount: Int @deprecated(reason : "Moved to scoreContent.summaryLabels.ownerCount. Update your query to use the new path.")
+  """
+  Police service usage status
+  Can be null if policeServiceStatus is not available
+  """
+  policeServiceStatus: IssueLevel
+  """
+  Rebuilt title status
+  Can be null if rebuiltTitleStatus is not available
+  """
+  rebuiltTitleStatus: IssueLevel
+  """
+  Recycled vehicle status
+  Can be null if recycledStatus is not available
+  """
+  recycledStatus: IssueLevel
+  """
+  Date when the report was run.
+  Deprecated: This field was moved to scoreContent.summaryLabels.reportRunDate in PR #180.
+  It is restored here for backward compatibility and will be removed in a future coordinated release.
+  """
+  reportRunDate: DateTime @deprecated(reason : "Moved to scoreContent.summaryLabels.reportRunDate. Update your query to use the new path.")
+  """
+  Repossessed vehicle status
+  Can be null if repossessedStatus is not available
+  """
+  repossessedStatus: IssueLevel
+  """
+  Salvage auction reported status
+  Can be null if salvageAuctionStatus is not available
+  """
+  salvageAuctionStatus: IssueLevel
+  """
+  Salvage title status
+  Can be null if salvageTitleStatus is not available
+  """
+  salvageTitleStatus: IssueLevel
+  """
+  Stolen vehicle status
+  Can be null if stolenStatus is not available
+  """
+  stolenStatus: IssueLevel
+  """
+  Storm area registration status
+  Can be null if stormAreaStatus is not available
+  """
+  stormAreaStatus: IssueLevel
+  """
+  Structural damage status
+  Can be null if structuralDamageStatus is not available
+  """
+  structuralDamageStatus: IssueLevel
+  """
+  Taxi service usage status
+  Can be null if taxiServiceStatus is not available
+  """
+  taxiServiceStatus: IssueLevel
+  """
+  Overall title status.
+  Deprecated: This field was moved to scoreContent.summaryLabels.titleStatus in PR #180.
+  It is restored here for backward compatibility and will be removed in a future coordinated release.
+  """
+  titleStatus: String @deprecated(reason : "Moved to scoreContent.summaryLabels.titleStatus. Update your query to use the new path.")
+}
+
+"""
+VehicleHistoryReportProviderDisclaimers type represents the disclaimers provided by the vehicle history report provider,
+including the name and statement of the disclaimer.
+"""
+type VehicleHistoryReportProviderDisclaimers @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  The name of the disclaimer, which may include legal statements or terms of use.
+  Maximum length can be 100 characters.
+  """
+  name: String!
+  """
+  The statement of the report where the disclaimer is provided, which may include legal or informational sections.
+  Alphanumeric string and Maximum length can be 1000 characters.
+  """
+  statement: String!
+}
+
+"""
+VehicleHistoryReportProviderInformation type represents the information about the provider of the vehicle history report,
+including copyright, description, disclaimers, glossary, logo, and name.
+Can be null if VehicleHistoryReportProviderInformation is not provided
+"""
+type VehicleHistoryReportProviderInformation @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  URL to the provider's web page for purchasing the report
+  May be null if the buyWebUrl is not specified or if the information is unavailable.
+  Format is alphanumeric string
+  Range is 0 to 500 characters
+  """
+  buyWebUrl: String
+  """
+  Copyright information of the provider of the vehicle history report.
+  Maximum length can be 1000 characters.
+  May be null if the provider information is not available or not specified.
+  """
+  copyright: String
+  """
+  The description of the provider, which may include details about their services and expertise.
+  Maximum length can be 1000 characters.
+  May be null if the provider has not provided a description or if the information is unavailable.
+  """
+  description: String
+  """
+  Disclaimers provided by the vehicle history report provider, which may include legal statements or terms of use.
+  May be null if there are no disclaimers provided or if the information is unavailable.
+  """
+  disclaimers: [VehicleHistoryReportProviderDisclaimers!]
+  """
+  Glossary of terms used by the provider, which may include definitions of specific terms related to vehicle history reports.
+  May be null if the glossary is not provided or if the information is unavailable.
+  """
+  glossary: [VehicleHistoryReportGlossary!]
+  """
+  Provider's logo Id, which can be used to display the provider's logo in the report.
+  Alphanumeric string with a length of 16 characters.
+  May be null if the logo ID is not provided or if the information is unavailable.
+  """
+  logo: String
+  """
+  Name of the provider, which may be used to identify the report provider in the report.
+  Maximum length can be 64 characters.
+  May be null if the provider name is not specified or if the information is unavailable.
+  """
+  name: String
+  """
+  Provider score indicating the vehicle's history quality
+  May be null if the provider score is not specified or if the information is unavailable.
+  """
+  providerScore: Float
+  """
+  Score range maximum value
+  May be null if the score range max is not specified or if the information is unavailable.
+  """
+  scoreRangeMax: Float
+  """
+  Score range minimum value
+  May be null if the score range min is not specified or if the information is unavailable.
+  """
+  scoreRangeMin: Float
+  """
+  Sign-in URL for the report provider.
+  Deprecated: This field is no longer populated and will be removed in a future release.
+  No replacement available — remove this field from your query.
+  """
+  signInWebUrl: String @deprecated(reason : "This field is no longer populated. Remove it from your query.")
+  """
+  Vehicle class as defined by the report provider (sedan, SUV, truck, etc.)
+  Maximum length of 64 characters.
+  May be null if the vehicleClass is not specified or if the information is unavailable.
+  """
+  vehicleClass: String
+}
+
+"VehicleHistoryReportPurchaseTerms type represents the terms of purchase for a vehicle history report"
+type VehicleHistoryReportPurchaseTerms @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  Bundle quantity indicates the number of vehicle history reports that can be purchased together at a discounted price.
+  May be null if bundle purchasing is not available.
+  """
+  bundleQuantity: Int
+  """
+  Discount percentage applied to the original price to arrive at the discounted price.
+  May be null if no discount is applied or if discount information is not available.
+  """
+  discountPercentage: Decimal
+  """
+  A quantity of money in a currency as specified in the request.
+  May be null if discounted pricing information is not available.
+  """
+  discountedPrice: Amount
+  """
+  The original price of the vehicle history report.
+  May be null if original pricing information is not available.
+  """
+  originalPrice: Amount
+}
+
+"""
+Labels and values of the report summary
+Ex: Trusted partner, Report run date, Accidents, Owners, Title check, Odometer check
+"""
+type VehicleHistoryReportSummaryLabels @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  """
+  Overall accident damage status indicating the severity of any accident-related issues.
+  Format: IssueLevel enum.
+  Possible values: OK, Major Issue, Minor Issue.
+  Maximum length: 50 characters.
+  May be null if accident status information is unavailable.
+  """
+  accidentStatus: IssueLevel
+  "Label for Accidents summary.Can be null when paid report is available or when report is not available"
+  accidentsLabel: String
+  "Label for Odometer check summary.Can be null when paid report is available or when report is not available"
+  odometerLabel: String
+  """
+  Overall odometer status indicating any odometer-related issues.
+  Format: IssueLevel enum.
+  Possible values: OK, Major Issue, Minor Issue.
+  Maximum length: 50 characters.
+  May be null if odometer status information is unavailable.
+  """
+  odometerStatus: IssueLevel
+  """
+  Number of different owners over the vehicle's lifetime
+  Can be null if ownerCount is not available
+  This is a numeric value
+  Range can be 1 to 999
+  """
+  ownerCount: Int
+  "Label for number of owners. Can be null when paid report is available or when report is not available"
+  owners: String
+  "Label for Report run date.Can be null when paid report is available or when report is not available"
+  reportDateLabel: String
+  "The date when the report was run "
+  reportRunDate: DateTime
+  "Label for Title check summary.Can be null when paid report is available or when report is not available"
+  titleCheckLabel: String
+  """
+  Overall title status indicating any title-related issues.
+  Format: IssueLevel enum
+  Possible values: OK, Major Issue, Minor Issue.
+  Maximum length: 50 characters.
+  May be null if title status information is unavailable.
+  """
+  titleStatus: IssueLevel
+  "Icon for Trusted Partner"
+  trustedPartnerIcon: String
+  "Accessibility text for the Trusted Partner icon, used by screen readers. Ex: AutoCheck logo"
+  trustedPartnerIconAccessibilityText: String
+  "Label for Report provider"
+  trustedPartnerLabel: String
+}
+
+"VehicleIdentifier type represents a specific identifier for a vehicle, such as VIN, including its type and value."
+type VehicleIdentifier @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  The identifier type.
+  Maximum length of 50.e.g. VIN
+  Format is alphanumeric string
+  """
+  type: String!
+  """
+  The value of the identifier.
+  Maximum length of 100.
+  Format is alphanumeric string
+  """
+  value: String!
+}
+
+"""
+Content below the score stating the score range for similar vehicles and link to the full report
+Can be null when a report is available for purchase or when report is not available
+"""
+type VehicleListingContentBelowScore @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  "Content below the score stating the score range for similar vehicles. Ex: Similar vehicles score 88 - 93, (2020 Car - Midsize Luxury)"
+  content: [String]!
+  "Link text of the report URL. Ex: View Full Report"
+  linkText: String!
+  "URL of the full report. Ex: https://www.ebay.com/"
+  linkToFullReport: String
+}
+
+"Details for a vehicle listing. Contains the Vehicle History Report"
+type VehicleListingDetails @exclude(gateways : ["publicapi"]) @key(fields : "listingId", resolvable : true) @shareable @ulp_shareable {
+  "Listing ID of the vehicle listing"
+  listingId: ID!
+  """
+  For vehicle listing, this is the vehicle history report such as title information, owner details,
+  odometer information, and other relevant information.
+  This is null if the vehicle history report is unavailable
+  """
+  vehicleHistoryReport: VehicleHistoryReport @shareable @ulp_shareable
+  """
+  Identifiers type represents a specific identifier for a vehicle, such as VIN, including its type and value
+  Can be null if vehicle identifier is not provided
+  """
+  vehicleIdentifiers: [VehicleIdentifier!] @shareable @ulp_shareable
+  """
+  Vehicle verification details for this listing.
+  Null if verification has not been initiated for this listing.
+  """
+  vehicleVerification: VehicleVerification @shareable @ulp_shareable
+}
+
+"Content for the report purchase terms. Ex - price and label for single/ multi reports"
+type VehicleListingReportPurchaseTermsContent @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  "Label of the section"
+  label: String!
+  "Label for multiple reports"
+  multiReportLabel: String!
+  "Price for multiple reports"
+  multiReportPrice: PIXFormattedText
+  "Label for single report"
+  singleReportLabel: String!
+  "Price of the single report"
+  singleReportPrice: PIXFormattedText
+}
+
+"""
+Content needed for displaying the labels and other information of the report
+Refer to the reference in: https://wiki.corp.ebay.com/display/MOTORS/Schema+Reference
+"""
+type VehicleListingScoreContent @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  """
+  Content below the score stating the score range for similar vehicles and link to the full report
+  Ex: Similar vehicles score 88 - 93, (2020 Car - Midsize Luxury)
+  Can be null when a report is available for purchase or when report is not available
+  """
+  contentBelowScore: VehicleListingContentBelowScore
+  "Content describing the advantages of purchasing a Vehicle History Report, number of records found for the vehicle, unavailability reason, purchase terms"
+  providerAdditionalInformation: VehicleHistoryReportAdditionalInformation
+  """
+  Message that appears below the score when a free report is available
+  Possible values: "Below range", "Within range", "Above range"
+  Can be null when report is available for purchase or report is not available
+  """
+  scoreMessage: String
+  """
+  Text that appears below the VHR title when a free report is available or when report is available for purchase
+  Ex: AutoCheck Score, Report is available for purchase
+  """
+  scoreTitle: VehicleListingScoreTitle
+  """
+  Text for the labels of the report summary
+  Ex: Trusted partner, Report run date, Accidents, Owners, Title check, Odometer check
+  """
+  summaryLabels: VehicleHistoryReportSummaryLabels
+}
+
+"""
+Text that appears below the VHR title when a free report is available or when report is available for purchase
+Includes a bubble help desc
+Ex: AutoCheck Score, Report is available for purchase
+"""
+type VehicleListingScoreTitle @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  "Text below the VHR Title"
+  title: String!
+  "Bubble help beside the title describing the report provider's rating system"
+  titleBubbleHelp: [String!]
+}
+
+"Verification status for a vehicle listing, as determined by Caramel."
+type VehicleVerification @exclude(gateways : ["publicapi"]) @shareable @ulp_shareable {
+  """
+  Verification status by Caramel for all documents uploaded by the seller for a vehicle listing.
+  true indicates all documents have been verified successfully.
+  false indicates verification was completed but one or more documents did not pass.
+  """
+  verified: Boolean! @shareable @ulp_shareable
+}
+
+"Content describing reasons for unavailability of the report. Can be null when free report is available or report is available for purchase"
+type VhrUnavailabilityContent @shareable @tag_directive(add : "inaccessible", gateway : "publicapi") @ulp_shareable {
+  "Reasons for unavailability of the report"
+  description: [String!]!
+  "Title of the section"
+  title: String!
+}
+
+type _Service {
+  sdl: String!
+}
+
+"This enumeration type list the three-letter codes that represent currency types used in countries and territories of the world."
+enum CurrencyAlpha3Code {
+  """
+  Zimbabwe Gold
+  Historical or non-standard codes
+  """
+  ADP
+  "United Arab Emirates dirham"
+  AED
+  "\tAndorran peseta"
+  AFA
+  "Afghan afghani"
+  AFN
+  "\tAfghan afghani"
+  ALK
+  "Albanian lek"
+  ALL
+  "Armenian dram"
+  AMD
+  "Netherlands Antillean guilder"
+  ANG
+  "Angolan kwanza"
+  AOA
+  "\tNetherlands Antillean guilder"
+  AOK
+  "\tAngolan kwanza"
+  AON
+  "\tAngolan novo kwanza"
+  AOR
+  "\tAngolan kwanza reajustado"
+  ARA
+  "\tArgentine austral"
+  ARP
+  "Argentine peso"
+  ARS
+  "\tArgentine peso argentino"
+  ARY
+  "\tArgentine peso ley"
+  ATS
+  "Australian dollar"
+  AUD
+  "Aruban florin"
+  AWG
+  "\tAustrian schilling"
+  AYM
+  "\tAzerbaijani manat"
+  AZM
+  "Azerbaijani manat"
+  AZN
+  "\tAzerbaijani manat"
+  BAD
+  "Bosnia and Herzegovina convertible mark"
+  BAM
+  "Barbadian dollar"
+  BBD
+  "Bangladeshi taka"
+  BDT
+  "\tBosnia and Herzegovina dinar"
+  BEC
+  "\tBelgian convertible franc (funds code)"
+  BEF
+  "\tBelgian franc"
+  BEL
+  "\tBelgian financial franc (funds code)"
+  BGJ
+  "\tBulgarian lev (first)"
+  BGK
+  "\tBulgarian lev (second)"
+  BGL
+  "Bulgarian lev"
+  BGN
+  "Bahraini dinar"
+  BHD
+  "Burundian franc"
+  BIF
+  "Bermudian dollar"
+  BMD
+  "Brunei dollar"
+  BND
+  "Bolivian boliviano"
+  BOB
+  "\tBulgarian lev (third)"
+  BOP
+  "\tBoliviano"
+  BOV
+  "\tBolivian peso"
+  BRB
+  "\tBrazilian cruzeiro"
+  BRC
+  "\tBrazilian cruzado"
+  BRE
+  "Brazilian real"
+  BRL
+  "\tBrazilian cruzeiro"
+  BRN
+  "\tBrazilian cruzado novo"
+  BRR
+  "Bahamian dollar"
+  BSD
+  "Bhutanese ngultrum"
+  BTN
+  "\tBrazilian cruzeiro real"
+  BUK
+  "Botswana pula"
+  BWP
+  "\tBurmese kyat"
+  BYB
+  "Belarusian ruble"
+  BYN
+  "\tBelarusian ruble"
+  BYR
+  "Belize dollar"
+  BZD
+  "Canadian dollar"
+  CAD
+  "Congolese franc"
+  CDF
+  "\tBelarusian ruble"
+  CHC
+  "\tCongolese franc"
+  CHE
+  "Swiss franc"
+  CHF
+  "\tSwiss franc"
+  CHW
+  "\tWIR franc (complementary currency)"
+  CLF
+  "Chilean peso"
+  CLP
+  "Chinese yuan (Renminbi)"
+  CNY
+  "Colombian peso"
+  COP
+  "\tColombian peso"
+  COU
+  "Costa Rican colón"
+  CRC
+  "\tWIR franc (for electronic currency)"
+  CSD
+  "\tSerbian dinar"
+  CSJ
+  "\tCzechoslovak koruna (second)"
+  CSK
+  "\tCzechoslovak koruna"
+  CUC
+  "Cuban peso"
+  CUP
+  "Cape Verdean escudo"
+  CVE
+  "This three-letter code represents the Cypriot pound, but is no longer valid since Cyprus uses the Euro."
+  CYP
+  "Czech koruna"
+  CZK
+  "\tCypriot pound"
+  DDM
+  "\tEast German mark"
+  DEM
+  "Djiboutian franc"
+  DJF
+  "Danish krone"
+  DKK
+  "Dominican peso"
+  DOP
+  "Algerian dinar"
+  DZD
+  "\tGerman mark"
+  ECS
+  "\tEcuadorian sucre"
+  ECV
+  "\tEcuador Unidad de Valor Constante (funds code)"
+  EEK
+  "Egyptian pound"
+  EGP
+  "Eritrean nakfa"
+  ERN
+  "\tEstonian kroon"
+  ESA
+  "\tSpanish peseta (account A)"
+  ESB
+  "\tSpanish peseta (account B)"
+  ESP
+  "Ethiopian birr"
+  ETB
+  "Euro"
+  EUR
+  "\tSpanish peseta"
+  FIM
+  "Fijian dollar"
+  FJD
+  "Falkland Islands pound"
+  FKP
+  "Faroese króna"
+  FOK
+  "\tFinnish markka"
+  FRF
+  "Pound sterling"
+  GBP
+  "\tFrench franc"
+  GEK
+  "Georgian lari"
+  GEL
+  "Guernsey pound"
+  GGP
+  "\tGeorgian kuponi"
+  GHC
+  "\tGhanaian cedi"
+  GHP
+  "Ghanaian cedi"
+  GHS
+  "Gibraltar pound"
+  GIP
+  "Gambian dalasi"
+  GMD
+  "\tGhanaian cedi"
+  GNE
+  "Guinean franc"
+  GNF
+  "\tGuinean syli"
+  GNS
+  "\tGuinean syli"
+  GQE
+  "\tEquatorial Guinean ekwele"
+  GRD
+  "Guatemalan quetzal"
+  GTQ
+  "\tGreek drachma"
+  GWE
+  "\tGuinean escudo"
+  GWP
+  "Guyanese dollar"
+  GYD
+  "Hong Kong dollar"
+  HKD
+  "Honduran lempira"
+  HNL
+  "\tGuinea-Bissau peso"
+  HRD
+  "Croatian kuna"
+  HRK
+  "Haitian gourde"
+  HTG
+  "Hungarian forint"
+  HUF
+  "Indonesian rupiah"
+  IDR
+  "\tCroatian kuna"
+  IEP
+  "\tIrish pound"
+  ILP
+  "\tIsraeli pound"
+  ILR
+  "Israeli new shekel"
+  ILS
+  "Isle of Man pound"
+  IMP
+  "Indian rupee"
+  INR
+  "Iraqi dinar"
+  IQD
+  "Iranian rial"
+  IRR
+  "\tIsraeli shekel"
+  ISJ
+  "Icelandic króna"
+  ISK
+  "\tIcelandic króna"
+  ITL
+  "\tCuban convertible peso"
+  JEP
+  "Jamaican dollar"
+  JMD
+  "Jordanian dinar"
+  JOD
+  "Japanese yen"
+  JPY
+  "Kenyan shilling"
+  KES
+  "Kyrgyzstani som"
+  KGS
+  "Cambodian riel"
+  KHR
+  "Kiribati dollar"
+  KID
+  "Comorian franc"
+  KMF
+  "\tComoro franc"
+  KPW
+  "South Korean won"
+  KRW
+  "Kuwaiti dinar"
+  KWD
+  "Cayman Islands dollar"
+  KYD
+  "Kazakhstani tenge"
+  KZT
+  "\tItalian lira"
+  LAJ
+  "Lao kip"
+  LAK
+  "Lebanese pound"
+  LBP
+  "Sri Lankan rupee"
+  LKR
+  "Liberian dollar"
+  LRD
+  "Lesotho loti"
+  LSL
+  "\tLao kip"
+  LSM
+  "\tLesotho loti"
+  LTL
+  "\tLithuanian litas"
+  LTT
+  "\tLithuanian talonas[37]"
+  LUC
+  "\tLuxembourg convertible franc (funds code)"
+  LUF
+  "\tLuxembourg franc"
+  LUL
+  "\tLuxembourg financial franc (funds code)"
+  LVL
+  "\tLatvian lats"
+  LVR
+  "Libyan dinar"
+  LYD
+  "Moroccan dirham"
+  MAD
+  "Moldovan leu"
+  MDL
+  "Malagasy ariary"
+  MGA
+  "\tLatvian rublis"
+  MGF
+  "Macedonian denar"
+  MKD
+  "\tMalagasy franc"
+  MLF
+  "Burmese kyat"
+  MMK
+  "Mongolian tögrög"
+  MNT
+  "Macanese pataca"
+  MOP
+  "\tMalian franc"
+  MRO
+  "Mauritanian ouguiya"
+  MRU
+  "\tMauritanian ouguiya"
+  MTL
+  "\tMaltese lira"
+  MTP
+  "Mauritian rupee"
+  MUR
+  "\tMaltese pound"
+  MVQ
+  "Maldivian rufiyaa"
+  MVR
+  "Malawian kwacha"
+  MWK
+  "Mexican peso"
+  MXN
+  "\tMaldivian rupee"
+  MXP
+  "\tMexican peso"
+  MXV
+  "Malaysian ringgit"
+  MYR
+  "\tMexican peso"
+  MZE
+  "\tMozambican escudo"
+  MZM
+  "Mozambican metical"
+  MZN
+  "Namibian dollar"
+  NAD
+  "Nigerian naira"
+  NGN
+  "\tMozambican metical"
+  NIC
+  "Nicaraguan córdoba"
+  NIO
+  "\tNicaraguan córdoba"
+  NLG
+  "Norwegian krone"
+  NOK
+  "Nepalese rupee"
+  NPR
+  "New Zealand dollar"
+  NZD
+  "Omani rial"
+  OMR
+  "Panamanian balboa"
+  PAB
+  "\tDutch guilder"
+  PEH
+  "\tPeruvian old sol"
+  PEI
+  "Peruvian sol"
+  PEN
+  "\tPeruvian inti"
+  PES
+  "Papua New Guinean kina"
+  PGK
+  "Philippine peso"
+  PHP
+  "Pakistani rupee"
+  PKR
+  "Polish złoty"
+  PLN
+  "\tPeruvian sol"
+  PLZ
+  "\tPolish zloty"
+  PTE
+  "Paraguayan guaraní"
+  PYG
+  "Qatari riyal"
+  QAR
+  "\tPortuguese escudo"
+  RHD
+  "\tRhodesian dollar"
+  ROK
+  "\tRomanian leu (second)"
+  ROL
+  "Romanian leu"
+  RON
+  "Serbian dinar"
+  RSD
+  "Russian ruble"
+  RUB
+  "\tRomanian leu (third)"
+  RUR
+  "Rwandan franc"
+  RWF
+  "Saudi riyal"
+  SAR
+  "Solomon Islands dollar"
+  SBD
+  "Seychellois rupee"
+  SCR
+  "\tRussian ruble"
+  SDD
+  "Sudanese pound"
+  SDG
+  "\tSudanese dinar"
+  SDP
+  "Swedish krona"
+  SEK
+  "Singapore dollar"
+  SGD
+  "Saint Helena pound"
+  SHP
+  "\tSudanese old pound"
+  SIT
+  "\tSlovenian tolar"
+  SKK
+  "Sierra Leonean leone (new)"
+  SLE
+  "\tSlovak koruna"
+  SLL
+  "Somali shilling"
+  SOS
+  "Surinamese dollar"
+  SRD
+  "\tSierra Leonean leone (old leone)[12][13][14][40]"
+  SRG
+  "South Sudanese pound"
+  SSP
+  "\tSurinamese guilder"
+  STD
+  "São Tomé and Príncipe dobra"
+  STN
+  "\tSão Tomé and Príncipe dobra"
+  SUR
+  "\tSão Tomé and Príncipe dobra"
+  SVC
+  "Syrian pound"
+  SYP
+  "Eswatini lilangeni"
+  SZL
+  "Thai baht"
+  THB
+  "\tSoviet Union ruble"
+  TJR
+  "Tajikistani somoni"
+  TJS
+  "\tTajikistani ruble"
+  TMM
+  "Turkmenistani manat"
+  TMT
+  "Tunisian dinar"
+  TND
+  "Tongan paʻanga"
+  TOP
+  "\tTurkmenistani manat"
+  TPE
+  "\tPortuguese Timorese escudo"
+  TRL
+  "Turkish lira"
+  TRY
+  "Trinidad and Tobago dollar"
+  TTD
+  "Tuvaluan dollar"
+  TVD
+  "New Taiwan dollar"
+  TWD
+  "Tanzanian shilling"
+  TZS
+  "Ukrainian hryvnia"
+  UAH
+  "\tTurkish lira"
+  UAK
+  "\tUkrainian karbovanets"
+  UGS
+  "\tUgandan shilling"
+  UGW
+  "Ugandan shilling"
+  UGX
+  "United States dollar"
+  USD
+  "\tUnited States dollar"
+  USN
+  "\tOld Shilling (Uganda)"
+  USS
+  "\tUnited States dollar (next day) (funds code)"
+  UYI
+  "\tUnited States dollar (same day) (funds code)[41]"
+  UYN
+  "\tUruguay peso"
+  UYP
+  "Uruguayan peso"
+  UYU
+  "\tUruguayan peso"
+  UYW
+  "Uzbekistani som"
+  UZS
+  "\tUruguay new peso"
+  VEB
+  "\tUzbekistani sum"
+  VED
+  "\tVenezuelan bolívar"
+  VEF
+  "Venezuelan bolívar soberano"
+  VES
+  "\tVenezuelan bolívar fuerte"
+  VNC
+  "Vietnamese đồng"
+  VND
+  "Vanuatu vatu"
+  VUV
+  "Samoan tālā"
+  WST
+  "\tSamoan tala"
+  XAD
+  "CFA franc BEAC (Central Africa)"
+  XAF
+  "\tCFA franc BEAC"
+  XAG
+  "\tSilver (one troy ounce)"
+  XAU
+  "\tGold (one troy ounce)"
+  XBA
+  "\tEuropean Composite Unit (EURCO) (bond market unit)"
+  XBB
+  "\tEuropean Monetary Unit (E.M.U.-6) (bond market unit)"
+  XBC
+  "\tEuropean Unit of Account 9 (E.U.A.-9) (bond market unit)"
+  XBD
+  "East Caribbean dollar"
+  XCD
+  "\tEast Caribbean dollar"
+  XCG
+  "\tCaribbean guilder"
+  XDR
+  "\tOld Vietnamese dong"
+  XEU
+  "\tEuropean Currency Unit"
+  XFO
+  "\tGold franc (special settlement currency)"
+  XFU
+  "CFA franc BCEAO (West Africa)"
+  XOF
+  "\tCFA franc BCEAO"
+  XPD
+  "CFP franc (French territories)"
+  XPF
+  "\tCFP franc (franc Pacifique)"
+  XPT
+  "\tUIC franc (special settlement currency)"
+  XRE
+  "\tPlatinum (one troy ounce)"
+  XSU
+  "\tSUCRE"
+  XTS
+  "\tCode reserved for testing"
+  XUA
+  "\tADB Unit of Account"
+  XXX
+  "\tRINET funds code[45]"
+  YDD
+  "Yemeni rial"
+  YER
+  "\tSouth Yemeni dinar"
+  YUD
+  "\tYugoslav dinar"
+  YUM
+  "\tYugoslav dinar"
+  YUN
+  "\tYugoslav dinar"
+  ZAL
+  "South African rand"
+  ZAR
+  "\tSouth African financial rand (funds code)"
+  ZMK
+  "Zambian kwacha"
+  ZMW
+  "\tZambian kwacha"
+  ZRN
+  "\tZairean new zaire"
+  ZRZ
+  "\tZairean zaire"
+  ZWC
+  "\tRhodesian dollar"
+  ZWD
+  "\tZambian kwacha"
+  ZWG
+  "Zimbabwean dollar"
+  ZWL
+  "\tZimbabwean dollar (fourth & fifth)[i]"
+  ZWN
+  "\tZimbabwean dollar (second)"
+  ZWR
+}
+
+enum ErrorDetail {
+  """
+  The deadline expired before the operation could complete.
+  
+  For operations that change the state of the system, this error
+  may be returned even if the operation has completed successfully.
+  For example, a successful response from a server could have been
+  delayed long enough for the deadline to expire.
+  
+  HTTP Mapping: 504 Gateway Timeout
+  Error Type: UNAVAILABLE
+  """
+  DEADLINE_EXCEEDED
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 420 Enhance Your Calm
+  Error Type: UNAVAILABLE
+  """
+  ENHANCE_YOUR_CALM
+  """
+  The requested field is not found in the schema.
+  
+  This differs from `NOT_FOUND` in that `NOT_FOUND` should be used when a
+  query is valid, but is unable to return a result (if, for example, a
+  specific video id doesn't exist). `FIELD_NOT_FOUND` is intended to be
+  returned by the server to signify that the requested field is not known to exist.
+  This may be returned in lieu of failing the entire query.
+  See also `PERMISSION_DENIED` for cases where the
+  requested field is invalid only for the given user or class of users.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: BAD_REQUEST
+  """
+  FIELD_NOT_FOUND
+  """
+  The client specified an invalid argument.
+  
+  Note that this differs from `FAILED_PRECONDITION`.
+  `INVALID_ARGUMENT` indicates arguments that are problematic
+  regardless of the state of the system (e.g., a malformed file name).
+  
+  HTTP Mapping: 400 Bad Request
+  Error Type: BAD_REQUEST
+  """
+  INVALID_ARGUMENT
+  """
+  The provided cursor is not valid.
+  
+  The most common usage for this error is when a client is paginating
+  through a list that uses stateful cursors. In that case, the provided
+  cursor may be expired.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: NOT_FOUND
+  """
+  INVALID_CURSOR
+  """
+  Unable to perform operation because a required resource is missing.
+  
+  Example: Client is attempting to refresh a list, but the specified
+  list is expired. This requires an action by the client to get a new list.
+  
+  If the user is simply trying GET a resource that is not found,
+  use the NOT_FOUND error type. FAILED_PRECONDITION.MISSING_RESOURCE
+  is to be used particularly when the user is performing an operation
+  that requires a particular resource to exist.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  Error Type: FAILED_PRECONDITION
+  """
+  MISSING_RESOURCE
+  """
+  Service Error.
+  
+  There is a problem with an upstream service.
+  
+  This may be returned if a gateway receives an unknown error from a service
+  or if a service is unreachable.
+  If a request times out which waiting on a response from a service,
+  `DEADLINE_EXCEEDED` may be returned instead.
+  If a service returns a more specific error Type, the specific error Type may
+  be returned instead.
+  
+  HTTP Mapping: 502 Bad Gateway
+  Error Type: UNAVAILABLE
+  """
+  SERVICE_ERROR
+  """
+  Request failed due to network errors.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  TCP_FAILURE
+  """
+  Request throttled based on server concurrency limits.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CONCURRENCY
+  """
+  Request throttled based on server CPU limits
+  
+  HTTP Mapping: 503 Unavailable.
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CPU
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 429 Too Many Requests
+  Error Type: UNAVAILABLE
+  """
+  TOO_MANY_REQUESTS
+  """
+  The operation is not implemented or is not currently supported/enabled.
+  
+  HTTP Mapping: 501 Not Implemented
+  Error Type: BAD_REQUEST
+  """
+  UNIMPLEMENTED
+  """
+  Unknown error.
+  
+  This error should only be returned when no other error detail applies.
+  If a client sees an unknown errorDetail, it will be interpreted as UNKNOWN.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  UNKNOWN
+}
+
+enum ErrorType {
+  """
+  Bad Request.
+  
+  There is a problem with the request.
+  Retrying the same request is not likely to succeed.
+  An example would be a query or argument that cannot be deserialized.
+  
+  HTTP Mapping: 400 Bad Request
+  """
+  BAD_REQUEST
+  """
+  The operation was rejected because the system is not in a state
+  required for the operation's execution.  For example, the directory
+  to be deleted is non-empty, an rmdir operation is applied to
+  a non-directory, etc.
+  
+  Service implementers can use the following guidelines to decide
+  between `FAILED_PRECONDITION` and `UNAVAILABLE`:
+  
+  - Use `UNAVAILABLE` if the client can retry just the failing call.
+  - Use `FAILED_PRECONDITION` if the client should not retry until
+  the system state has been explicitly fixed.  E.g., if an "rmdir"
+       fails because the directory is non-empty, `FAILED_PRECONDITION`
+  should be returned since the client should not retry unless
+  the files are deleted from the directory.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  """
+  FAILED_PRECONDITION
+  """
+  Internal error.
+  
+  An unexpected internal error was encountered. This means that some
+  invariants expected by the underlying system have been broken.
+  This error code is reserved for serious errors.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  INTERNAL
+  """
+  The requested entity was not found.
+  
+  This could apply to a resource that has never existed (e.g. bad resource id),
+  or a resource that no longer exists (e.g. cache expired.)
+  
+  Note to server developers: if a request is denied for an entire class
+  of users, such as gradual feature rollout or undocumented allowlist,
+  `NOT_FOUND` may be used. If a request is denied for some users within
+  a class of users, such as user-based access control, `PERMISSION_DENIED`
+  must be used.
+  
+  HTTP Mapping: 404 Not Found
+  """
+  NOT_FOUND
+  """
+  The caller does not have permission to execute the specified
+  operation.
+  
+  `PERMISSION_DENIED` must not be used for rejections
+  caused by exhausting some resource or quota.
+  `PERMISSION_DENIED` must not be used if the caller
+  cannot be identified (use `UNAUTHENTICATED`
+  instead for those errors).
+  
+  This error Type does not imply the
+  request is valid or the requested entity exists or satisfies
+  other pre-conditions.
+  
+  HTTP Mapping: 403 Forbidden
+  """
+  PERMISSION_DENIED
+  """
+  The request does not have valid authentication credentials.
+  
+  This is intended to be returned only for routes that require
+  authentication.
+  
+  HTTP Mapping: 401 Unauthorized
+  """
+  UNAUTHENTICATED
+  """
+  Currently Unavailable.
+  
+  The service is currently unavailable.  This is most likely a
+  transient condition, which can be corrected by retrying with
+  a backoff.
+  
+  HTTP Mapping: 503 Unavailable
+  """
+  UNAVAILABLE
+  """
+  Unknown error.
+  
+  For example, this error may be returned when
+  an error code received from another address space belongs to
+  an error space that is not known in this address space.  Also
+  errors raised by APIs that do not return enough error information
+  may be converted to this error.
+  
+  If a client sees an unknown errorType, it will be interpreted as UNKNOWN.
+  Unknown errors MUST NOT trigger any special behavior. These MAY be treated
+  by an implementation as being equivalent to INTERNAL.
+  
+  When possible, a more specific error should be provided.
+  
+  HTTP Mapping: 520 Unknown Error
+  """
+  UNKNOWN
+}
+
+"""
+Issue severity level for vehicle history checks
+New values may be added over time as reporting evolves. Consumers should handle
+unknown enum values gracefully (e.g. treat as UNKNOWN or fallback to NO_ISSUE).
+"""
+enum IssueLevel {
+  "Major issues detected"
+  MAJOR_ISSUE
+  "Minor issues detected"
+  MINOR_ISSUE
+  "Status when no issues are reported"
+  NONE
+  "No issues detected"
+  NO_ISSUE
+  "No issue status for overall status"
+  OK
+}
+
+enum link__Purpose {
+  EXECUTION
+  SECURITY
+}
+
+"A slightly refined version of RFC-3339 compliant DateTime Scalar"
+scalar DateTime
+
+"Price Amount BigDecimal string value as a Decimal scalar."
+scalar Decimal
+
+scalar _Any
+
+scalar federation__FieldSet
+
+scalar link__Import

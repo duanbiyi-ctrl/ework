@@ -1,0 +1,1231 @@
+schema @composeDirective(name : "@exclude") @link(import : ["@key", "@requires", "@shareable", "@external", "@composeDirective"], url : "https://specs.apollo.dev/federation/v2.3") @link(import : ["@exclude"], url : "https://ulppecs.dev/directives/v1.0"){
+  query: Query
+}
+
+directive @composeDirective(name: String!) repeatable on SCHEMA
+
+directive @exclude(gateways: [String!]!) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @federation__extends on OBJECT | INTERFACE
+
+directive @federation__interfaceObject on OBJECT
+
+directive @federation__override(from: String!) on FIELD_DEFINITION
+
+directive @federation__provides(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @inaccessible on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @key(fields: federation__FieldSet!, resolvable: Boolean = true) repeatable on OBJECT | INTERFACE
+
+directive @link(as: String, for: link__Purpose, import: [link__Import], url: String!) repeatable on SCHEMA
+
+directive @requires(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @shareable repeatable on OBJECT | FIELD_DEFINITION
+
+directive @tag(name: String!) repeatable on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+union _Entity = FulfillmentTerms | ShippingProgramEligibility
+
+" ${inherit} "
+type Amount @shareable {
+  " ${inherit} "
+  currency: CurrencyAlpha3Code
+  " ${inherit} "
+  value: Decimal!
+}
+
+" ${inherit} "
+type FulfillmentTerms @key(fields : "listingId", resolvable : true) @shareable {
+  " ${inherit} "
+  listingId: ID!
+  "This type serves as an entity for various shipping programs eligibility. Different shipping programs return distinct entity structures."
+  shippingProgramEligibility: ShippingProgramEligibility @exclude(gateways : ["publicapi"])
+}
+
+"""
+Consolidated Global Shipping Program (GSP) eligibility data used for cross-border fulfillment.
+This type captures data obtained from partner-provided estimates and seller-supplied information that determined eligibility of the item.
+Note: The GSP program is planned to be sunset by the end of 2026.
+"""
+type GlobalShippingProgramEligibility @exclude(gateways : ["publicapi"]) {
+  """
+  Source of the item dimensions used to determine eligibility. Indicates whether dimensions were provided by the seller or estimated by the partner.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: "SELLER_PROVIDED_SCALE"
+  """
+  dimensionSource: String
+  """
+  Domestic leg shipping cost to ship the item from seller to the partner's warehouse.
+  The Amount currency will always be GBP as this program is UK-specific.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  """
+  domesticLegCost: Amount
+  """
+  This identifier specifies UK domestic shipping service codes that needs to be used for combined eBay managed Shipping use cases.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: "UK_INTERNAL_ROYAL"
+  """
+  domesticShippingServiceId: String
+  "Indicates whether an item is eligible for Global Shipping Program."
+  eligible: Boolean!
+  """
+  Estimated Weight of the item in grams that was used to determine eligibility.
+  This value represents the actual weight considered during eligibility calculation.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: 1480.0
+  """
+  estimatedWeight: Float
+  """
+  Source who provided the estimatedWeight used to determine eligibility.
+  Indicates whether the weight came from the seller's input or was estimated by the partner.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: "SELLER_PROVIDED"
+  """
+  estimatedWeightSource: String
+  """
+  Harmonized System code (6-10 digits) used to determine eligibility.
+  This international tariff classification code was either predicted by the partner based on listing data or provided by the seller.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: "490199"
+  """
+  harmonizedSystemCode: String
+  """
+  Source of the hsCode - indicates who provided the Harmonized System code that was used to determine eligibility. Either provided by the seller or predicted by the partner.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: "SELLER_PROVIDED"
+  """
+  harmonizedSystemCodeSource: String
+  """
+  Version number of the partner's attribute estimation model.
+  This identifies which version of the model was used to estimate item attributes for eligibility determination.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: 5
+  """
+  itemAttributeEstimatorVersion: Int
+  """
+  Data version of the model used by the partner to determine eligibility.
+  This is an integer version number that tracks which dataset version the partner's models were trained on.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: 5314
+  """
+  itemEstimatorDataVersion: Int
+  """
+  Partner-specific tracking metadata.
+  Contains model version information used during eligibility determination:
+  "hmv": HS code model version used for classification.
+  "wmv": Weight model version used for estimation.
+  "ddbf": Data Determination Bit Field from partner.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  Example: {"hmv":5,"wmv":17,"ddbf":"000000"}
+  """
+  itemEstimatorModelMode: String
+  """
+  Postal code of the third-party partner's hub address.
+  This can be null when eligibility is false.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  """
+  partnerHubPostalCode: String
+  """
+  List of countries where the item cannot be shipped due to restrictions.
+  Contains country codes identified by the partner where the item cannot be shipped based on item details, eBay restrictions, and/or partner restrictions.
+  This can be null when eligibility is false or when the partner service does not return a value during evaluation.
+  Clients should treat null field values as unavailable data and handle accordingly based on their use case.
+  """
+  partnerRestrictedCountries: [CountryAlpha2Code!]
+}
+
+type Query {
+  _entities(representations: [_Any!]!): [_Entity]!
+  _service: _Service!
+}
+
+"This type serves as an entity for various shipping programs eligibility. Different shipping programs return distinct entity structures."
+type ShippingProgramEligibility @exclude(gateways : ["publicapi"]) @key(fields : "listingId", resolvable : true) {
+  """
+  Consolidated Global Shipping Program (GSP) eligibility data used for cross-border fulfillment.
+  This type captures data obtained from partner-provided estimates and seller-supplied information that determined eligibility of the item.
+  Note: The GSP program is planned to be sunset by the end of 2026.
+  Global Shipping Program is only available in the UK market. This object is null for non-UK listings.
+  When null, clients should infer that the listing is not eligible for the Global Shipping Program.
+  """
+  globalShippingProgram: GlobalShippingProgramEligibility @exclude(gateways : ["publicapi"])
+  "The unique identifier for the listing."
+  listingId: ID!
+}
+
+type _Service {
+  sdl: String!
+}
+
+" ${inherit} "
+enum CountryAlpha2Code {
+  " ${inherit} "
+  AD
+  " ${inherit} "
+  AE
+  " ${inherit} "
+  AF
+  " ${inherit} "
+  AG
+  " ${inherit} "
+  AI
+  " ${inherit} "
+  AL
+  " ${inherit} "
+  AM
+  " ${inherit} "
+  AO
+  " ${inherit} "
+  AQ
+  " ${inherit} "
+  AR
+  " ${inherit} "
+  AS
+  " ${inherit} "
+  AT
+  " ${inherit} "
+  AU
+  " ${inherit} "
+  AW
+  " ${inherit} "
+  AX
+  " ${inherit} "
+  AZ
+  " ${inherit} "
+  BA
+  " ${inherit} "
+  BB
+  " ${inherit} "
+  BD
+  " ${inherit} "
+  BE
+  " ${inherit} "
+  BF
+  " ${inherit} "
+  BG
+  " ${inherit} "
+  BH
+  " ${inherit} "
+  BI
+  " ${inherit} "
+  BJ
+  " ${inherit} "
+  BL
+  " ${inherit} "
+  BM
+  " ${inherit} "
+  BN
+  " ${inherit} "
+  BO
+  " ${inherit} "
+  BQ
+  " ${inherit} "
+  BR
+  " ${inherit} "
+  BS
+  " ${inherit} "
+  BT
+  " ${inherit} "
+  BV
+  " ${inherit} "
+  BW
+  " ${inherit} "
+  BY
+  " ${inherit} "
+  BZ
+  " ${inherit} "
+  CA
+  " ${inherit} "
+  CC
+  " ${inherit} "
+  CD
+  " ${inherit} "
+  CF
+  " ${inherit} "
+  CG
+  " ${inherit} "
+  CH
+  " ${inherit} "
+  CI
+  " ${inherit} "
+  CK
+  " ${inherit} "
+  CL
+  " ${inherit} "
+  CM
+  " ${inherit} "
+  CN
+  " ${inherit} "
+  CO
+  " ${inherit} "
+  CR
+  " ${inherit} "
+  CV
+  " ${inherit} "
+  CW
+  " ${inherit} "
+  CX
+  " ${inherit} "
+  CY
+  " ${inherit} "
+  CZ
+  " ${inherit} "
+  DE
+  " ${inherit} "
+  DJ
+  " ${inherit} "
+  DK
+  " ${inherit} "
+  DM
+  " ${inherit} "
+  DO
+  " ${inherit} "
+  DZ
+  " ${inherit} "
+  EC
+  " ${inherit} "
+  EE
+  " ${inherit} "
+  EG
+  " ${inherit} "
+  EH
+  " ${inherit} "
+  ER
+  " ${inherit} "
+  ES
+  " ${inherit} "
+  ET
+  " ${inherit} "
+  FI
+  " ${inherit} "
+  FJ
+  " ${inherit} "
+  FK
+  " ${inherit} "
+  FM
+  " ${inherit} "
+  FO
+  " ${inherit} "
+  FR
+  " ${inherit} "
+  GA
+  " ${inherit} "
+  GB
+  " ${inherit} "
+  GD
+  " ${inherit} "
+  GE
+  " ${inherit} "
+  GF
+  " ${inherit} "
+  GG
+  " ${inherit} "
+  GH
+  " ${inherit} "
+  GI
+  " ${inherit} "
+  GL
+  " ${inherit} "
+  GM
+  " ${inherit} "
+  GN
+  " ${inherit} "
+  GP
+  " ${inherit} "
+  GQ
+  " ${inherit} "
+  GR
+  " ${inherit} "
+  GS
+  " ${inherit} "
+  GT
+  " ${inherit} "
+  GU
+  " ${inherit} "
+  GW
+  " ${inherit} "
+  GY
+  " ${inherit} "
+  HK
+  " ${inherit} "
+  HM
+  " ${inherit} "
+  HN
+  " ${inherit} "
+  HR
+  " ${inherit} "
+  HT
+  " ${inherit} "
+  HU
+  " ${inherit} "
+  ID
+  " ${inherit} "
+  IE
+  " ${inherit} "
+  IL
+  " ${inherit} "
+  IM
+  " ${inherit} "
+  IN
+  " ${inherit} "
+  IO
+  " ${inherit} "
+  IQ
+  " ${inherit} "
+  IS
+  " ${inherit} "
+  IT
+  " ${inherit} "
+  JE
+  " ${inherit} "
+  JM
+  " ${inherit} "
+  JO
+  " ${inherit} "
+  JP
+  " ${inherit} "
+  KE
+  " ${inherit} "
+  KG
+  " ${inherit} "
+  KH
+  " ${inherit} "
+  KI
+  " ${inherit} "
+  KM
+  " ${inherit} "
+  KN
+  " ${inherit} "
+  KR
+  " ${inherit} "
+  KW
+  " ${inherit} "
+  KY
+  " ${inherit} "
+  KZ
+  " ${inherit} "
+  LA
+  " ${inherit} "
+  LB
+  " ${inherit} "
+  LC
+  " ${inherit} "
+  LI
+  " ${inherit} "
+  LK
+  " ${inherit} "
+  LR
+  " ${inherit} "
+  LS
+  " ${inherit} "
+  LT
+  " ${inherit} "
+  LU
+  " ${inherit} "
+  LV
+  " ${inherit} "
+  LY
+  " ${inherit} "
+  MA
+  " ${inherit} "
+  MC
+  " ${inherit} "
+  MD
+  " ${inherit} "
+  ME
+  " ${inherit} "
+  MF
+  " ${inherit} "
+  MG
+  " ${inherit} "
+  MH
+  " ${inherit} "
+  MK
+  " ${inherit} "
+  ML
+  " ${inherit} "
+  MM
+  " ${inherit} "
+  MN
+  " ${inherit} "
+  MO
+  " ${inherit} "
+  MP
+  " ${inherit} "
+  MQ
+  " ${inherit} "
+  MR
+  " ${inherit} "
+  MS
+  " ${inherit} "
+  MT
+  " ${inherit} "
+  MU
+  " ${inherit} "
+  MV
+  " ${inherit} "
+  MW
+  " ${inherit} "
+  MX
+  " ${inherit} "
+  MY
+  " ${inherit} "
+  MZ
+  " ${inherit} "
+  NA
+  " ${inherit} "
+  NC
+  " ${inherit} "
+  NE
+  " ${inherit} "
+  NF
+  " ${inherit} "
+  NG
+  " ${inherit} "
+  NI
+  " ${inherit} "
+  NL
+  " ${inherit} "
+  NO
+  " ${inherit} "
+  NP
+  " ${inherit} "
+  NR
+  " ${inherit} "
+  NU
+  " ${inherit} "
+  NZ
+  " ${inherit} "
+  OM
+  " ${inherit} "
+  PA
+  " ${inherit} "
+  PE
+  " ${inherit} "
+  PF
+  " ${inherit} "
+  PG
+  " ${inherit} "
+  PH
+  " ${inherit} "
+  PK
+  " ${inherit} "
+  PL
+  " ${inherit} "
+  PM
+  " ${inherit} "
+  PN
+  " ${inherit} "
+  PR
+  " ${inherit} "
+  PS
+  " ${inherit} "
+  PT
+  " ${inherit} "
+  PW
+  " ${inherit} "
+  PY
+  " ${inherit} "
+  QA
+  " ${inherit} "
+  RE
+  " ${inherit} "
+  RO
+  " ${inherit} "
+  RS
+  " ${inherit} "
+  RU
+  " ${inherit} "
+  RW
+  " ${inherit} "
+  SA
+  " ${inherit} "
+  SB
+  " ${inherit} "
+  SC
+  " ${inherit} "
+  SD
+  " ${inherit} "
+  SE
+  " ${inherit} "
+  SG
+  " ${inherit} "
+  SH
+  " ${inherit} "
+  SI
+  " ${inherit} "
+  SJ
+  " ${inherit} "
+  SK
+  " ${inherit} "
+  SL
+  " ${inherit} "
+  SM
+  " ${inherit} "
+  SN
+  " ${inherit} "
+  SO
+  " ${inherit} "
+  SR
+  " ${inherit} "
+  ST
+  " ${inherit} "
+  SV
+  " ${inherit} "
+  SX
+  " ${inherit} "
+  SZ
+  " ${inherit} "
+  TC
+  " ${inherit} "
+  TD
+  " ${inherit} "
+  TF
+  " ${inherit} "
+  TG
+  " ${inherit} "
+  TH
+  " ${inherit} "
+  TJ
+  " ${inherit} "
+  TK
+  " ${inherit} "
+  TL
+  " ${inherit} "
+  TM
+  " ${inherit} "
+  TN
+  " ${inherit} "
+  TO
+  " ${inherit} "
+  TR
+  " ${inherit} "
+  TT
+  " ${inherit} "
+  TV
+  " ${inherit} "
+  TW
+  " ${inherit} "
+  TZ
+  " ${inherit} "
+  UA
+  " ${inherit} "
+  UG
+  " ${inherit} "
+  UM
+  " ${inherit} "
+  US
+  " ${inherit} "
+  UY
+  " ${inherit} "
+  UZ
+  " ${inherit} "
+  VA
+  " ${inherit} "
+  VC
+  " ${inherit} "
+  VE
+  " ${inherit} "
+  VG
+  " ${inherit} "
+  VI
+  " ${inherit} "
+  VN
+  " ${inherit} "
+  VU
+  " ${inherit} "
+  WF
+  " ${inherit} "
+  WS
+  " ${inherit} "
+  YE
+  " ${inherit} "
+  YT
+  " ${inherit} "
+  ZA
+  " ${inherit} "
+  ZM
+  " ${inherit} "
+  ZW
+}
+
+" ${inherit} "
+enum CurrencyAlpha3Code {
+  " ${inherit} "
+  AED
+  " ${inherit} "
+  AFN
+  " ${inherit} "
+  ALL
+  " ${inherit} "
+  AMD
+  " ${inherit} "
+  AOA
+  " ${inherit} "
+  ARS
+  " ${inherit} "
+  AUD
+  " ${inherit} "
+  AWG
+  " ${inherit} "
+  AZN
+  " ${inherit} "
+  BAM
+  " ${inherit} "
+  BBD
+  " ${inherit} "
+  BDT
+  " ${inherit} "
+  BGN
+  " ${inherit} "
+  BHD
+  " ${inherit} "
+  BIF
+  " ${inherit} "
+  BMD
+  " ${inherit} "
+  BND
+  " ${inherit} "
+  BOB
+  " ${inherit} "
+  BRL
+  " ${inherit} "
+  BSD
+  " ${inherit} "
+  BTN
+  " ${inherit} "
+  BWP
+  " ${inherit} "
+  BYN
+  " ${inherit} "
+  BZD
+  " ${inherit} "
+  CAD
+  " ${inherit} "
+  CDF
+  " ${inherit} "
+  CHF
+  " ${inherit} "
+  CLP
+  " ${inherit} "
+  CNY
+  " ${inherit} "
+  COP
+  " ${inherit} "
+  CRC
+  " ${inherit} "
+  CUP
+  " ${inherit} "
+  CVE
+  " ${inherit} "
+  CZK
+  " ${inherit} "
+  DJF
+  " ${inherit} "
+  DKK
+  " ${inherit} "
+  DOP
+  " ${inherit} "
+  DZD
+  " ${inherit} "
+  EGP
+  " ${inherit} "
+  ERN
+  " ${inherit} "
+  ETB
+  " ${inherit} "
+  EUR
+  " ${inherit} "
+  FJD
+  " ${inherit} "
+  FKP
+  " ${inherit} "
+  GBP
+  " ${inherit} "
+  GEL
+  " ${inherit} "
+  GHS
+  " ${inherit} "
+  GIP
+  " ${inherit} "
+  GMD
+  " ${inherit} "
+  GNF
+  " ${inherit} "
+  GTQ
+  " ${inherit} "
+  GYD
+  " ${inherit} "
+  HKD
+  " ${inherit} "
+  HNL
+  " ${inherit} "
+  HTG
+  " ${inherit} "
+  HUF
+  " ${inherit} "
+  IDR
+  " ${inherit} "
+  ILS
+  " ${inherit} "
+  INR
+  " ${inherit} "
+  IQD
+  " ${inherit} "
+  IRR
+  " ${inherit} "
+  ISK
+  " ${inherit} "
+  JMD
+  " ${inherit} "
+  JOD
+  " ${inherit} "
+  JPY
+  " ${inherit} "
+  KES
+  " ${inherit} "
+  KGS
+  " ${inherit} "
+  KHR
+  " ${inherit} "
+  KMF
+  " ${inherit} "
+  KRW
+  " ${inherit} "
+  KWD
+  " ${inherit} "
+  KYD
+  " ${inherit} "
+  KZT
+  " ${inherit} "
+  LAK
+  " ${inherit} "
+  LBP
+  " ${inherit} "
+  LKR
+  " ${inherit} "
+  LRD
+  " ${inherit} "
+  LSL
+  " ${inherit} "
+  LYD
+  " ${inherit} "
+  MAD
+  " ${inherit} "
+  MDL
+  " ${inherit} "
+  MGA
+  " ${inherit} "
+  MKD
+  " ${inherit} "
+  MMK
+  " ${inherit} "
+  MNT
+  " ${inherit} "
+  MOP
+  " ${inherit} "
+  MRU
+  " ${inherit} "
+  MUR
+  " ${inherit} "
+  MVR
+  " ${inherit} "
+  MWK
+  " ${inherit} "
+  MXN
+  " ${inherit} "
+  MYR
+  " ${inherit} "
+  MZN
+  " ${inherit} "
+  NAD
+  " ${inherit} "
+  NGN
+  " ${inherit} "
+  NIO
+  " ${inherit} "
+  NOK
+  " ${inherit} "
+  NPR
+  " ${inherit} "
+  NZD
+  " ${inherit} "
+  OMR
+  " ${inherit} "
+  PAB
+  " ${inherit} "
+  PEN
+  " ${inherit} "
+  PGK
+  " ${inherit} "
+  PHP
+  " ${inherit} "
+  PKR
+  " ${inherit} "
+  PLN
+  " ${inherit} "
+  PYG
+  " ${inherit} "
+  QAR
+  " ${inherit} "
+  RON
+  " ${inherit} "
+  RSD
+  " ${inherit} "
+  RUB
+  " ${inherit} "
+  RWF
+  " ${inherit} "
+  SAR
+  " ${inherit} "
+  SBD
+  " ${inherit} "
+  SCR
+  " ${inherit} "
+  SDG
+  " ${inherit} "
+  SEK
+  " ${inherit} "
+  SGD
+  " ${inherit} "
+  SHP
+  " ${inherit} "
+  SLE
+  " ${inherit} "
+  SOS
+  " ${inherit} "
+  SRD
+  " ${inherit} "
+  SSP
+  " ${inherit} "
+  STN
+  " ${inherit} "
+  SYP
+  " ${inherit} "
+  SZL
+  " ${inherit} "
+  THB
+  " ${inherit} "
+  TJS
+  " ${inherit} "
+  TMT
+  " ${inherit} "
+  TND
+  " ${inherit} "
+  TOP
+  " ${inherit} "
+  TRY
+  " ${inherit} "
+  TTD
+  " ${inherit} "
+  TWD
+  " ${inherit} "
+  TZS
+  " ${inherit} "
+  UAH
+  " ${inherit} "
+  UGX
+  " ${inherit} "
+  USD
+  " ${inherit} "
+  UYU
+  " ${inherit} "
+  UZS
+  " ${inherit} "
+  VES
+  " ${inherit} "
+  VND
+  " ${inherit} "
+  VUV
+  " ${inherit} "
+  WST
+  " ${inherit} "
+  XAF
+  " ${inherit} "
+  XCD
+  " ${inherit} "
+  XOF
+  " ${inherit} "
+  XPF
+  " ${inherit} "
+  YER
+  " ${inherit} "
+  ZAR
+  " ${inherit} "
+  ZMW
+}
+
+enum ErrorDetail {
+  """
+  The deadline expired before the operation could complete.
+  
+  For operations that change the state of the system, this error
+  may be returned even if the operation has completed successfully.
+  For example, a successful response from a server could have been
+  delayed long enough for the deadline to expire.
+  
+  HTTP Mapping: 504 Gateway Timeout
+  Error Type: UNAVAILABLE
+  """
+  DEADLINE_EXCEEDED
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 420 Enhance Your Calm
+  Error Type: UNAVAILABLE
+  """
+  ENHANCE_YOUR_CALM
+  """
+  The requested field is not found in the schema.
+  
+  This differs from `NOT_FOUND` in that `NOT_FOUND` should be used when a
+  query is valid, but is unable to return a result (if, for example, a
+  specific video id doesn't exist). `FIELD_NOT_FOUND` is intended to be
+  returned by the server to signify that the requested field is not known to exist.
+  This may be returned in lieu of failing the entire query.
+  See also `PERMISSION_DENIED` for cases where the
+  requested field is invalid only for the given user or class of users.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: BAD_REQUEST
+  """
+  FIELD_NOT_FOUND
+  """
+  The client specified an invalid argument.
+  
+  Note that this differs from `FAILED_PRECONDITION`.
+  `INVALID_ARGUMENT` indicates arguments that are problematic
+  regardless of the state of the system (e.g., a malformed file name).
+  
+  HTTP Mapping: 400 Bad Request
+  Error Type: BAD_REQUEST
+  """
+  INVALID_ARGUMENT
+  """
+  The provided cursor is not valid.
+  
+  The most common usage for this error is when a client is paginating
+  through a list that uses stateful cursors. In that case, the provided
+  cursor may be expired.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: NOT_FOUND
+  """
+  INVALID_CURSOR
+  """
+  Unable to perform operation because a required resource is missing.
+  
+  Example: Client is attempting to refresh a list, but the specified
+  list is expired. This requires an action by the client to get a new list.
+  
+  If the user is simply trying GET a resource that is not found,
+  use the NOT_FOUND error type. FAILED_PRECONDITION.MISSING_RESOURCE
+  is to be used particularly when the user is performing an operation
+  that requires a particular resource to exist.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  Error Type: FAILED_PRECONDITION
+  """
+  MISSING_RESOURCE
+  """
+  Service Error.
+  
+  There is a problem with an upstream service.
+  
+  This may be returned if a gateway receives an unknown error from a service
+  or if a service is unreachable.
+  If a request times out which waiting on a response from a service,
+  `DEADLINE_EXCEEDED` may be returned instead.
+  If a service returns a more specific error Type, the specific error Type may
+  be returned instead.
+  
+  HTTP Mapping: 502 Bad Gateway
+  Error Type: UNAVAILABLE
+  """
+  SERVICE_ERROR
+  """
+  Request failed due to network errors.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  TCP_FAILURE
+  """
+  Request throttled based on server concurrency limits.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CONCURRENCY
+  """
+  Request throttled based on server CPU limits
+  
+  HTTP Mapping: 503 Unavailable.
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CPU
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 429 Too Many Requests
+  Error Type: UNAVAILABLE
+  """
+  TOO_MANY_REQUESTS
+  """
+  The operation is not implemented or is not currently supported/enabled.
+  
+  HTTP Mapping: 501 Not Implemented
+  Error Type: BAD_REQUEST
+  """
+  UNIMPLEMENTED
+  """
+  Unknown error.
+  
+  This error should only be returned when no other error detail applies.
+  If a client sees an unknown errorDetail, it will be interpreted as UNKNOWN.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  UNKNOWN
+}
+
+enum ErrorType {
+  """
+  Bad Request.
+  
+  There is a problem with the request.
+  Retrying the same request is not likely to succeed.
+  An example would be a query or argument that cannot be deserialized.
+  
+  HTTP Mapping: 400 Bad Request
+  """
+  BAD_REQUEST
+  """
+  The operation was rejected because the system is not in a state
+  required for the operation's execution.  For example, the directory
+  to be deleted is non-empty, an rmdir operation is applied to
+  a non-directory, etc.
+  
+  Service implementers can use the following guidelines to decide
+  between `FAILED_PRECONDITION` and `UNAVAILABLE`:
+  
+  - Use `UNAVAILABLE` if the client can retry just the failing call.
+  - Use `FAILED_PRECONDITION` if the client should not retry until
+  the system state has been explicitly fixed.  E.g., if an "rmdir"
+       fails because the directory is non-empty, `FAILED_PRECONDITION`
+  should be returned since the client should not retry unless
+  the files are deleted from the directory.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  """
+  FAILED_PRECONDITION
+  """
+  Internal error.
+  
+  An unexpected internal error was encountered. This means that some
+  invariants expected by the underlying system have been broken.
+  This error code is reserved for serious errors.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  INTERNAL
+  """
+  The requested entity was not found.
+  
+  This could apply to a resource that has never existed (e.g. bad resource id),
+  or a resource that no longer exists (e.g. cache expired.)
+  
+  Note to server developers: if a request is denied for an entire class
+  of users, such as gradual feature rollout or undocumented allowlist,
+  `NOT_FOUND` may be used. If a request is denied for some users within
+  a class of users, such as user-based access control, `PERMISSION_DENIED`
+  must be used.
+  
+  HTTP Mapping: 404 Not Found
+  """
+  NOT_FOUND
+  """
+  The caller does not have permission to execute the specified
+  operation.
+  
+  `PERMISSION_DENIED` must not be used for rejections
+  caused by exhausting some resource or quota.
+  `PERMISSION_DENIED` must not be used if the caller
+  cannot be identified (use `UNAUTHENTICATED`
+  instead for those errors).
+  
+  This error Type does not imply the
+  request is valid or the requested entity exists or satisfies
+  other pre-conditions.
+  
+  HTTP Mapping: 403 Forbidden
+  """
+  PERMISSION_DENIED
+  """
+  The request does not have valid authentication credentials.
+  
+  This is intended to be returned only for routes that require
+  authentication.
+  
+  HTTP Mapping: 401 Unauthorized
+  """
+  UNAUTHENTICATED
+  """
+  Currently Unavailable.
+  
+  The service is currently unavailable.  This is most likely a
+  transient condition, which can be corrected by retrying with
+  a backoff.
+  
+  HTTP Mapping: 503 Unavailable
+  """
+  UNAVAILABLE
+  """
+  Unknown error.
+  
+  For example, this error may be returned when
+  an error code received from another address space belongs to
+  an error space that is not known in this address space.  Also
+  errors raised by APIs that do not return enough error information
+  may be converted to this error.
+  
+  If a client sees an unknown errorType, it will be interpreted as UNKNOWN.
+  Unknown errors MUST NOT trigger any special behavior. These MAY be treated
+  by an implementation as being equivalent to INTERNAL.
+  
+  When possible, a more specific error should be provided.
+  
+  HTTP Mapping: 520 Unknown Error
+  """
+  UNKNOWN
+}
+
+enum link__Purpose {
+  EXECUTION
+  SECURITY
+}
+
+" ${inherit} "
+scalar Decimal
+
+scalar _Any
+
+scalar federation__FieldSet
+
+scalar link__Import

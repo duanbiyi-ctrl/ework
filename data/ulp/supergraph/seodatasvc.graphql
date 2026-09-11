@@ -1,0 +1,483 @@
+schema @link(import : ["@key", "@external", "@requires", "@shareable", "@inaccessible"], url : "https://specs.apollo.dev/federation/v2.3"){
+  query: Query
+  mutation: Mutation
+}
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @federation__composeDirective(name: String!) repeatable on SCHEMA
+
+directive @federation__extends on OBJECT | INTERFACE
+
+directive @federation__interfaceObject on OBJECT
+
+directive @federation__override(from: String!) on FIELD_DEFINITION
+
+directive @federation__provides(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @inaccessible on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @key(fields: federation__FieldSet!, resolvable: Boolean = true) repeatable on OBJECT | INTERFACE
+
+directive @link(as: String, for: link__Purpose, import: [link__Import], url: String!) repeatable on SCHEMA
+
+directive @requires(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @shareable repeatable on OBJECT | FIELD_DEFINITION
+
+"""
+ Declared locally, not @link-imported from the Apollo Federation spec — so Apollo's built-in @tag
+ composition rules (e.g. "cannot apply @tag to an @external field") don't apply to it here.
+"""
+directive @tag(name: String!) repeatable on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+"""
+ Dynamically adds another directive (inaccessible/requires/external) to an element only when
+ composing for the named gateway; every other gateway's composition is untouched. Declared locally,
+ not @link-imported, for the same reason as @tag above.
+"""
+directive @tag_directive(add: String!, gateway: String!) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+"{inherit}"
+interface ListingV2 @key(fields : "listingId", resolvable : false) {
+  "{inherit}"
+  category: ListingCategory
+  "{inherit}"
+  listingId: ID!
+  "{inherit}"
+  marketplaceId: ID
+  """
+  SEO meta description for this listing.
+  
+  The value is nullable because metadata may not have been generated or persisted
+  for every listing.
+  """
+  metaDescription: String @tag(name : "ulp")
+  "{inherit}"
+  sellerProduct: SellerProduct
+  "Ranked Wikidata associations for this listing's taxonomy aspect name/value pairs; internal (Public-gateway) only."
+  wikidataTaxonomyAspectValueAssociations: [WikidataTaxonomyAspectValueAssociation!]! @tag(name : "public")
+}
+
+union _Entity = SingleSkuListing | VariationListing
+
+"""
+Result of a bulk meta-description mutation (upsert or delete). Internal only. Best-effort:
+`results` carries one outcome per requested listing in request order, and `success` is true
+only when every outcome succeeded. Retry just the failed listings (writes are idempotent).
+"""
+type BulkListingMetaDescriptionResult @tag(name : "internal") {
+  "One outcome per requested listing, in request order."
+  results: [ListingMetaDescriptionOutcome!]!
+  "True when every listing in the request succeeded."
+  success: Boolean!
+}
+
+"{inherit}"
+type Category @tag(name : "public") {
+  "{inherit}"
+  id: ID! @shareable
+}
+
+"{inherit}"
+type ListingCategory @tag(name : "public") {
+  "{inherit}"
+  primaryCategory: Category! @shareable
+}
+
+"One listing's outcome within a bulk meta-description mutation. Internal only."
+type ListingMetaDescriptionOutcome @tag(name : "internal") {
+  "Why this listing did not fully succeed; null when success is true."
+  failureReason: MetaDescriptionFailureReason
+  "The listing ID this outcome refers to."
+  listingId: ID!
+  "True when the listing's write persisted."
+  success: Boolean!
+}
+
+"""
+The mutation root must remain present in every composed gateway variant, even
+when that variant excludes all real mutation fields by `@tag`. Keep this type
+untagged and retain `workaroundNoOp` as its composition-only sentinel. Tag each
+real mutation field for the gateway variants that should expose it; never tag
+the `Mutation` type itself.
+"""
+type Mutation {
+  """
+  Removes many listings' meta descriptions in one request. Internal only. Same best-effort
+  batching contract as the bulk upsert; per-listing idempotent (absent = success). Retry only
+  the failed listings. IDs are unique; at most the configured bulk maximum (default 1000) per request.
+  """
+  deleteListingMetaDescriptions(input: DeleteListingMetaDescriptionsInput!): BulkListingMetaDescriptionResult! @tag(name : "internal")
+  """
+  Persists many listings' meta descriptions in one request — the loader's primary path.
+  Internal only. Best-effort, not atomic: every listing is attempted and the result carries
+  one outcome per listing (`NOT_PERSISTED` when a write did not persist). Retry only the failed
+  listings (idempotent). Each description is non-blank and within the service's configured maximum
+  length (default 500); IDs are unique; at most the configured bulk maximum (default 1000) per request.
+  """
+  upsertListingMetaDescriptions(input: UpsertListingMetaDescriptionsInput!): BulkListingMetaDescriptionResult! @tag(name : "internal")
+  "{inherit}"
+  workaroundNoOp: Boolean @inaccessible @shareable
+}
+
+type Query {
+  _entities(representations: [_Any!]!): [_Entity]!
+  _service: _Service!
+}
+
+"{inherit}"
+type SellerProduct @tag(name : "public") {
+  "{inherit}"
+  ebayGeneratedTitle: String @shareable
+  "{inherit}"
+  title: String @shareable
+}
+
+"{inherit}"
+type SingleSkuListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  "{inherit}"
+  category: ListingCategory @external
+  "{inherit}"
+  listingId: ID!
+  "{inherit}"
+  marketplaceId: ID @external
+  "SEO meta description for this listing; null when none has been generated or persisted."
+  metaDescription: String @tag(name : "ulp")
+  "{inherit}"
+  sellerProduct: SellerProduct @external
+  "Ranked Wikidata associations for this listing's taxonomy aspect name/value pairs (see ListingV2)."
+  wikidataTaxonomyAspectValueAssociations: [WikidataTaxonomyAspectValueAssociation!]! @requires(fields : "marketplaceId sellerProduct { title ebayGeneratedTitle } category { primaryCategory { id } }") @tag_directive(add : "inaccessible", gateway : "publicapi") @tag_directive(add : "inaccessible", gateway : "ulp")
+}
+
+"{inherit}"
+type VariationListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  "{inherit}"
+  category: ListingCategory @external
+  "{inherit}"
+  listingId: ID!
+  "{inherit}"
+  marketplaceId: ID @external
+  "SEO meta description for this listing; null when none has been generated or persisted."
+  metaDescription: String @tag(name : "ulp")
+  "{inherit}"
+  sellerProduct: SellerProduct @external
+  "Ranked Wikidata associations for this listing's taxonomy aspect name/value pairs (see ListingV2)."
+  wikidataTaxonomyAspectValueAssociations: [WikidataTaxonomyAspectValueAssociation!]! @requires(fields : "marketplaceId sellerProduct { title ebayGeneratedTitle } category { primaryCategory { id } }") @tag_directive(add : "inaccessible", gateway : "publicapi") @tag_directive(add : "inaccessible", gateway : "ulp")
+}
+
+"""
+Association between a taxonomy aspect name/value pair and a Wikidata QID.
+Page-context neutral: reusable by listing, browse, product, or any page context
+that exposes taxonomy aspects. The parent object supplies the page context.
+"""
+type WikidataTaxonomyAspectValueAssociation @tag(name : "public") {
+  """
+  Taxonomy aspect name associated with the Wikidata QID, e.g. `model`, `brand`,
+  or `color`.
+  """
+  taxonomyAspectName: String!
+  """
+  Taxonomy aspect value associated with the Wikidata QID. For example, when
+  `taxonomyAspectName` is `model`, this may be `Apple iPhone 15 Pro Max`.
+  """
+  taxonomyAspectValue: String!
+  "Raw count of supported listings observed with this aspect value (not a normalized score); sort key, descending."
+  taxonomyAspectValueListingCount: Int!
+  """
+  Wikidata QID associated with the taxonomy aspect value.
+  
+  A QID (Q number) is the Wikidata identifier, formatted as `Q` followed by digits,
+  e.g. `Q125178718`. Typed `String`, not `ID`: it identifies a Wikidata item, not a
+  node resolvable in this graph.
+  """
+  wikidataQid: String!
+}
+
+type _Service {
+  sdl: String!
+}
+
+enum ErrorDetail {
+  """
+  The deadline expired before the operation could complete.
+  
+  For operations that change the state of the system, this error
+  may be returned even if the operation has completed successfully.
+  For example, a successful response from a server could have been
+  delayed long enough for the deadline to expire.
+  
+  HTTP Mapping: 504 Gateway Timeout
+  Error Type: UNAVAILABLE
+  """
+  DEADLINE_EXCEEDED
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 420 Enhance Your Calm
+  Error Type: UNAVAILABLE
+  """
+  ENHANCE_YOUR_CALM
+  """
+  The requested field is not found in the schema.
+  
+  This differs from `NOT_FOUND` in that `NOT_FOUND` should be used when a
+  query is valid, but is unable to return a result (if, for example, a
+  specific video id doesn't exist). `FIELD_NOT_FOUND` is intended to be
+  returned by the server to signify that the requested field is not known to exist.
+  This may be returned in lieu of failing the entire query.
+  See also `PERMISSION_DENIED` for cases where the
+  requested field is invalid only for the given user or class of users.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: BAD_REQUEST
+  """
+  FIELD_NOT_FOUND
+  """
+  The client specified an invalid argument.
+  
+  Note that this differs from `FAILED_PRECONDITION`.
+  `INVALID_ARGUMENT` indicates arguments that are problematic
+  regardless of the state of the system (e.g., a malformed file name).
+  
+  HTTP Mapping: 400 Bad Request
+  Error Type: BAD_REQUEST
+  """
+  INVALID_ARGUMENT
+  """
+  The provided cursor is not valid.
+  
+  The most common usage for this error is when a client is paginating
+  through a list that uses stateful cursors. In that case, the provided
+  cursor may be expired.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: NOT_FOUND
+  """
+  INVALID_CURSOR
+  """
+  Unable to perform operation because a required resource is missing.
+  
+  Example: Client is attempting to refresh a list, but the specified
+  list is expired. This requires an action by the client to get a new list.
+  
+  If the user is simply trying GET a resource that is not found,
+  use the NOT_FOUND error type. FAILED_PRECONDITION.MISSING_RESOURCE
+  is to be used particularly when the user is performing an operation
+  that requires a particular resource to exist.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  Error Type: FAILED_PRECONDITION
+  """
+  MISSING_RESOURCE
+  """
+  Service Error.
+  
+  There is a problem with an upstream service.
+  
+  This may be returned if a gateway receives an unknown error from a service
+  or if a service is unreachable.
+  If a request times out which waiting on a response from a service,
+  `DEADLINE_EXCEEDED` may be returned instead.
+  If a service returns a more specific error Type, the specific error Type may
+  be returned instead.
+  
+  HTTP Mapping: 502 Bad Gateway
+  Error Type: UNAVAILABLE
+  """
+  SERVICE_ERROR
+  """
+  Request failed due to network errors.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  TCP_FAILURE
+  """
+  Request throttled based on server concurrency limits.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CONCURRENCY
+  """
+  Request throttled based on server CPU limits
+  
+  HTTP Mapping: 503 Unavailable.
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CPU
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 429 Too Many Requests
+  Error Type: UNAVAILABLE
+  """
+  TOO_MANY_REQUESTS
+  """
+  The operation is not implemented or is not currently supported/enabled.
+  
+  HTTP Mapping: 501 Not Implemented
+  Error Type: BAD_REQUEST
+  """
+  UNIMPLEMENTED
+  """
+  Unknown error.
+  
+  This error should only be returned when no other error detail applies.
+  If a client sees an unknown errorDetail, it will be interpreted as UNKNOWN.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  UNKNOWN
+}
+
+enum ErrorType {
+  """
+  Bad Request.
+  
+  There is a problem with the request.
+  Retrying the same request is not likely to succeed.
+  An example would be a query or argument that cannot be deserialized.
+  
+  HTTP Mapping: 400 Bad Request
+  """
+  BAD_REQUEST
+  """
+  The operation was rejected because the system is not in a state
+  required for the operation's execution.  For example, the directory
+  to be deleted is non-empty, an rmdir operation is applied to
+  a non-directory, etc.
+  
+  Service implementers can use the following guidelines to decide
+  between `FAILED_PRECONDITION` and `UNAVAILABLE`:
+  
+  - Use `UNAVAILABLE` if the client can retry just the failing call.
+  - Use `FAILED_PRECONDITION` if the client should not retry until
+  the system state has been explicitly fixed.  E.g., if an "rmdir"
+       fails because the directory is non-empty, `FAILED_PRECONDITION`
+  should be returned since the client should not retry unless
+  the files are deleted from the directory.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  """
+  FAILED_PRECONDITION
+  """
+  Internal error.
+  
+  An unexpected internal error was encountered. This means that some
+  invariants expected by the underlying system have been broken.
+  This error code is reserved for serious errors.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  INTERNAL
+  """
+  The requested entity was not found.
+  
+  This could apply to a resource that has never existed (e.g. bad resource id),
+  or a resource that no longer exists (e.g. cache expired.)
+  
+  Note to server developers: if a request is denied for an entire class
+  of users, such as gradual feature rollout or undocumented allowlist,
+  `NOT_FOUND` may be used. If a request is denied for some users within
+  a class of users, such as user-based access control, `PERMISSION_DENIED`
+  must be used.
+  
+  HTTP Mapping: 404 Not Found
+  """
+  NOT_FOUND
+  """
+  The caller does not have permission to execute the specified
+  operation.
+  
+  `PERMISSION_DENIED` must not be used for rejections
+  caused by exhausting some resource or quota.
+  `PERMISSION_DENIED` must not be used if the caller
+  cannot be identified (use `UNAUTHENTICATED`
+  instead for those errors).
+  
+  This error Type does not imply the
+  request is valid or the requested entity exists or satisfies
+  other pre-conditions.
+  
+  HTTP Mapping: 403 Forbidden
+  """
+  PERMISSION_DENIED
+  """
+  The request does not have valid authentication credentials.
+  
+  This is intended to be returned only for routes that require
+  authentication.
+  
+  HTTP Mapping: 401 Unauthorized
+  """
+  UNAUTHENTICATED
+  """
+  Currently Unavailable.
+  
+  The service is currently unavailable.  This is most likely a
+  transient condition, which can be corrected by retrying with
+  a backoff.
+  
+  HTTP Mapping: 503 Unavailable
+  """
+  UNAVAILABLE
+  """
+  Unknown error.
+  
+  For example, this error may be returned when
+  an error code received from another address space belongs to
+  an error space that is not known in this address space.  Also
+  errors raised by APIs that do not return enough error information
+  may be converted to this error.
+  
+  If a client sees an unknown errorType, it will be interpreted as UNKNOWN.
+  Unknown errors MUST NOT trigger any special behavior. These MAY be treated
+  by an implementation as being equivalent to INTERNAL.
+  
+  When possible, a more specific error should be provided.
+  
+  HTTP Mapping: 520 Unknown Error
+  """
+  UNKNOWN
+}
+
+"Why a listing did not fully succeed in a meta-description mutation. Internal only."
+enum MetaDescriptionFailureReason @tag(name : "internal") {
+  "The write did not persist to storage; retry the whole (idempotent) mutation."
+  NOT_PERSISTED
+}
+
+enum link__Purpose {
+  EXECUTION
+  SECURITY
+}
+
+scalar _Any
+
+scalar federation__FieldSet
+
+scalar link__Import
+
+"Arguments for the bulk meta-description delete. Internal only."
+input DeleteListingMetaDescriptionsInput @tag(name : "internal") {
+  "The listing IDs whose meta descriptions to remove; unique, at least one entry."
+  listingIds: [ID!]!
+}
+
+"One listing's meta description for a bulk upsert. Internal only."
+input ListingMetaDescriptionInput @tag(name : "internal") {
+  "The listing ID to persist the description for."
+  listingId: ID!
+  "The meta description to persist; non-blank, within the configured maximum length."
+  metaDescription: String!
+}
+
+"Arguments for the bulk meta-description upsert. Internal only."
+input UpsertListingMetaDescriptionsInput @tag(name : "internal") {
+  "The listings whose meta descriptions to persist; IDs unique, at least one entry."
+  listingMetaDescriptions: [ListingMetaDescriptionInput!]!
+}

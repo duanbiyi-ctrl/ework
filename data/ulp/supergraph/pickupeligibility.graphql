@@ -1,0 +1,816 @@
+schema @link(import : ["@key", "@requires", "@shareable", "@external"], url : "https://specs.apollo.dev/federation/v2.3"){
+  query: Query
+}
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @federation__composeDirective(name: String!) repeatable on SCHEMA
+
+directive @federation__extends on OBJECT | INTERFACE
+
+directive @federation__interfaceObject on OBJECT
+
+directive @federation__override(from: String!) on FIELD_DEFINITION
+
+directive @federation__provides(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @inaccessible on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @key(fields: federation__FieldSet!, resolvable: Boolean = true) repeatable on OBJECT | INTERFACE
+
+directive @link(as: String, for: link__Purpose, import: [link__Import], url: String!) repeatable on SCHEMA
+
+directive @requires(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @shareable repeatable on OBJECT | FIELD_DEFINITION
+
+directive @tag(name: String!) repeatable on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @tag_directive(add: String!, gateway: String!) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+" ${inherit} "
+interface ListingV2 {
+  " ${inherit} "
+  category: ListingCategory
+  """
+   The eligibleForPudo field indicates whether the listed item is eligible for PUDO (Pick Up/Drop Off) service.
+  If the value is true, the listed item is eligible for pick-up or drop-off at a PUDO point.
+  If the value is false, the listed item is not eligible for PUDO service.
+  If the value is null, it means the service fails to return this field due to connection issue, etc. 
+  """
+  eligibleForPudo: Boolean
+  " ${inherit} "
+  fulfillmentTerms: FulfillmentTerms
+  " ${inherit} "
+  itemLocation: ItemLocation
+  " ${inherit} "
+  items: [Item!]!
+  " ${inherit} "
+  listingFormat: ListingFormat
+  " ${inherit} "
+  listingId: ID!
+  " ${inherit} "
+  marketplaceId: ID
+  " ${inherit} "
+  seller: User
+}
+
+union _Entity = Category | FulfillmentTerms | Item | SingleSkuListing | VariationListing
+
+" ${inherit} "
+type Category @key(fields : "id", resolvable : false) {
+  " ${inherit} "
+  id: ID!
+}
+
+" ${inherit} "
+type ConvertedPrice @shareable {
+  " ${inherit} "
+  original: Price
+}
+
+" ${inherit} "
+type FulfillmentTerms @key(fields : "listingId", resolvable : false) @shareable {
+  " ${inherit} "
+  inStorePickupLogisticsPlanSupported: Boolean
+  " ${inherit} "
+  listingId: ID!
+  " ${inherit} "
+  managedShippingOptin: Boolean
+  " ${inherit} "
+  packageSpec: ShippingPackageSpec
+  " ${inherit} "
+  shippingTerms: ShippingTerms
+}
+
+" ${inherit} "
+type Item @key(fields : "itemId", resolvable : false) {
+  " ${inherit} "
+  itemId: ID!
+  " ${inherit} "
+  sellerPrice: ListingItemPrice @external
+}
+
+" ${inherit} "
+type ItemLocation @external {
+  " ${inherit} "
+  countryCode: CountryCode
+}
+
+" ${inherit} "
+type ListingCategory @external {
+  " ${inherit} "
+  primaryCategory: Category!
+  " ${inherit} "
+  secondaryCategory: Category
+}
+
+" ${inherit} "
+type ListingItemPrice @external {
+  " ${inherit} "
+  fixedPrice: ConvertedPrice
+  " ${inherit} "
+  startingBidPrice: ConvertedPrice
+}
+
+" ${inherit} "
+type Price @shareable {
+  " ${inherit} "
+  amount: Decimal
+  " ${inherit} "
+  currency: CurrencyCode!
+}
+
+type Query {
+  _entities(representations: [_Any!]!): [_Entity]!
+  _service: _Service!
+}
+
+" ${inherit} "
+type ShippingOptionDetails @external {
+  " ${inherit} "
+  costType: ShippingCostPlanType
+  " ${inherit} "
+  shippingServices: [ShippingServiceDetails!]
+}
+
+" ${inherit} "
+type ShippingPackageSpec @external {
+  " ${inherit} "
+  depth: Decimal
+  " ${inherit} "
+  length: Decimal
+  " ${inherit} "
+  majorWeight: Decimal
+  " ${inherit} "
+  minorWeight: Decimal
+  " ${inherit} "
+  unitOfMeasure: UnitOfMeasure
+  " ${inherit} "
+  width: Decimal
+}
+
+" ${inherit} "
+type ShippingServiceDetails @external {
+  " ${inherit} "
+  rank: Int
+  " ${inherit} "
+  shippingCost: ConvertedPrice
+  " ${inherit} "
+  shippingServiceCode: String
+}
+
+" ${inherit} "
+type ShippingTerms @external {
+  " ${inherit} "
+  excludeShipToLocations: [RegionSet!]
+  " ${inherit} "
+  excludeShipToLocationsLastModifiedDateTime: DateTime
+  " ${inherit} "
+  shippingOptions: [ShippingOptionDetails!]
+}
+
+" ${inherit} "
+type SingleSkuListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  " ${inherit} "
+  category: ListingCategory @external
+  """
+   The eligibleForPudo field indicates whether the listed item is eligible for PUDO (Pick Up/Drop Off) service.
+  If the value is true, the listed item is eligible for pick-up or drop-off at a PUDO point.
+  If the value is false, the listed item is not eligible for PUDO service.
+  If the value is null, it means the service fails to return this field due to connection issue, etc. 
+  """
+  eligibleForPudo: Boolean @requires(fields : "marketplaceId\nlistingFormat\nitemLocation { countryCode }\nseller { legacyUserId }\ncategory { primaryCategory { id } secondaryCategory { id } }\nfulfillmentTerms {\n  inStorePickupLogisticsPlanSupported\n  shippingTerms {\n    shippingOptions { costType shippingServices { rank shippingCost { original { amount currency } } shippingServiceCode } }\n    excludeShipToLocations\n    excludeShipToLocationsLastModifiedDateTime\n  }\n  managedShippingOptin\n  packageSpec { depth length width majorWeight minorWeight unitOfMeasure }\n}\nitems {\n  itemId\n  sellerPrice {\n    fixedPrice { original { amount currency } }\n    startingBidPrice { original { amount currency } }\n  }\n}") @tag_directive(add : "inaccessible", gateway : "publicapi") @tag_directive(add : "inaccessible", gateway : "sandbox")
+  " ${inherit} "
+  fulfillmentTerms: FulfillmentTerms @external
+  " ${inherit} "
+  itemLocation: ItemLocation @external
+  " ${inherit} "
+  items: [Item!]! @external
+  " ${inherit} "
+  listingFormat: ListingFormat @external
+  " ${inherit} "
+  listingId: ID!
+  " ${inherit} "
+  marketplaceId: ID @external
+  " ${inherit} "
+  seller: User @external
+}
+
+" ${inherit} "
+type User {
+  " ${inherit} "
+  legacyUserId: String @external
+}
+
+" ${inherit} "
+type VariationListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  " ${inherit} "
+  category: ListingCategory @external
+  """
+   The eligibleForPudo field indicates whether the listed item is eligible for PUDO (Pick Up/Drop Off) service.
+  If the value is true, the listed item is eligible for pick-up or drop-off at a PUDO point.
+  If the value is false, the listed item is not eligible for PUDO service.
+  If the value is null, it means the service fails to return this field due to connection issue, etc. 
+  """
+  eligibleForPudo: Boolean @requires(fields : "marketplaceId\nlistingFormat\nitemLocation { countryCode }\nseller { legacyUserId }\ncategory { primaryCategory { id } secondaryCategory { id } }\nfulfillmentTerms {\n  inStorePickupLogisticsPlanSupported\n  shippingTerms {\n    shippingOptions { costType shippingServices { rank shippingCost { original { amount currency } } shippingServiceCode } }\n    excludeShipToLocations\n    excludeShipToLocationsLastModifiedDateTime\n  }\n  managedShippingOptin\n  packageSpec { depth length width majorWeight minorWeight unitOfMeasure }\n}\nitems {\n  itemId\n  sellerPrice {\n    fixedPrice { original { amount currency } }\n    startingBidPrice { original { amount currency } }\n  }\n}\nminPrice { original { amount currency } }") @tag_directive(add : "inaccessible", gateway : "publicapi") @tag_directive(add : "inaccessible", gateway : "sandbox")
+  " ${inherit} "
+  fulfillmentTerms: FulfillmentTerms @external
+  " ${inherit} "
+  itemLocation: ItemLocation @external
+  " ${inherit} "
+  items: [Item!]! @external
+  " ${inherit} "
+  listingFormat: ListingFormat @external
+  " ${inherit} "
+  listingId: ID!
+  " ${inherit} "
+  marketplaceId: ID @external
+  " ${inherit} "
+  minPrice: ConvertedPrice! @external
+  " ${inherit} "
+  seller: User @external
+}
+
+type _Service {
+  sdl: String!
+}
+
+enum ErrorDetail {
+  """
+  The deadline expired before the operation could complete.
+  
+  For operations that change the state of the system, this error
+  may be returned even if the operation has completed successfully.
+  For example, a successful response from a server could have been
+  delayed long enough for the deadline to expire.
+  
+  HTTP Mapping: 504 Gateway Timeout
+  Error Type: UNAVAILABLE
+  """
+  DEADLINE_EXCEEDED
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 420 Enhance Your Calm
+  Error Type: UNAVAILABLE
+  """
+  ENHANCE_YOUR_CALM
+  """
+  The requested field is not found in the schema.
+  
+  This differs from `NOT_FOUND` in that `NOT_FOUND` should be used when a
+  query is valid, but is unable to return a result (if, for example, a
+  specific video id doesn't exist). `FIELD_NOT_FOUND` is intended to be
+  returned by the server to signify that the requested field is not known to exist.
+  This may be returned in lieu of failing the entire query.
+  See also `PERMISSION_DENIED` for cases where the
+  requested field is invalid only for the given user or class of users.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: BAD_REQUEST
+  """
+  FIELD_NOT_FOUND
+  """
+  The client specified an invalid argument.
+  
+  Note that this differs from `FAILED_PRECONDITION`.
+  `INVALID_ARGUMENT` indicates arguments that are problematic
+  regardless of the state of the system (e.g., a malformed file name).
+  
+  HTTP Mapping: 400 Bad Request
+  Error Type: BAD_REQUEST
+  """
+  INVALID_ARGUMENT
+  """
+  The provided cursor is not valid.
+  
+  The most common usage for this error is when a client is paginating
+  through a list that uses stateful cursors. In that case, the provided
+  cursor may be expired.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: NOT_FOUND
+  """
+  INVALID_CURSOR
+  """
+  Unable to perform operation because a required resource is missing.
+  
+  Example: Client is attempting to refresh a list, but the specified
+  list is expired. This requires an action by the client to get a new list.
+  
+  If the user is simply trying GET a resource that is not found,
+  use the NOT_FOUND error type. FAILED_PRECONDITION.MISSING_RESOURCE
+  is to be used particularly when the user is performing an operation
+  that requires a particular resource to exist.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  Error Type: FAILED_PRECONDITION
+  """
+  MISSING_RESOURCE
+  """
+  Service Error.
+  
+  There is a problem with an upstream service.
+  
+  This may be returned if a gateway receives an unknown error from a service
+  or if a service is unreachable.
+  If a request times out which waiting on a response from a service,
+  `DEADLINE_EXCEEDED` may be returned instead.
+  If a service returns a more specific error Type, the specific error Type may
+  be returned instead.
+  
+  HTTP Mapping: 502 Bad Gateway
+  Error Type: UNAVAILABLE
+  """
+  SERVICE_ERROR
+  """
+  Request failed due to network errors.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  TCP_FAILURE
+  """
+  Request throttled based on server concurrency limits.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CONCURRENCY
+  """
+  Request throttled based on server CPU limits
+  
+  HTTP Mapping: 503 Unavailable.
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CPU
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 429 Too Many Requests
+  Error Type: UNAVAILABLE
+  """
+  TOO_MANY_REQUESTS
+  """
+  The operation is not implemented or is not currently supported/enabled.
+  
+  HTTP Mapping: 501 Not Implemented
+  Error Type: BAD_REQUEST
+  """
+  UNIMPLEMENTED
+  """
+  Unknown error.
+  
+  This error should only be returned when no other error detail applies.
+  If a client sees an unknown errorDetail, it will be interpreted as UNKNOWN.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  UNKNOWN
+}
+
+enum ErrorType {
+  """
+  Bad Request.
+  
+  There is a problem with the request.
+  Retrying the same request is not likely to succeed.
+  An example would be a query or argument that cannot be deserialized.
+  
+  HTTP Mapping: 400 Bad Request
+  """
+  BAD_REQUEST
+  """
+  The operation was rejected because the system is not in a state
+  required for the operation's execution.  For example, the directory
+  to be deleted is non-empty, an rmdir operation is applied to
+  a non-directory, etc.
+  
+  Service implementers can use the following guidelines to decide
+  between `FAILED_PRECONDITION` and `UNAVAILABLE`:
+  
+  - Use `UNAVAILABLE` if the client can retry just the failing call.
+  - Use `FAILED_PRECONDITION` if the client should not retry until
+  the system state has been explicitly fixed.  E.g., if an "rmdir"
+       fails because the directory is non-empty, `FAILED_PRECONDITION`
+  should be returned since the client should not retry unless
+  the files are deleted from the directory.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  """
+  FAILED_PRECONDITION
+  """
+  Internal error.
+  
+  An unexpected internal error was encountered. This means that some
+  invariants expected by the underlying system have been broken.
+  This error code is reserved for serious errors.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  INTERNAL
+  """
+  The requested entity was not found.
+  
+  This could apply to a resource that has never existed (e.g. bad resource id),
+  or a resource that no longer exists (e.g. cache expired.)
+  
+  Note to server developers: if a request is denied for an entire class
+  of users, such as gradual feature rollout or undocumented allowlist,
+  `NOT_FOUND` may be used. If a request is denied for some users within
+  a class of users, such as user-based access control, `PERMISSION_DENIED`
+  must be used.
+  
+  HTTP Mapping: 404 Not Found
+  """
+  NOT_FOUND
+  """
+  The caller does not have permission to execute the specified
+  operation.
+  
+  `PERMISSION_DENIED` must not be used for rejections
+  caused by exhausting some resource or quota.
+  `PERMISSION_DENIED` must not be used if the caller
+  cannot be identified (use `UNAUTHENTICATED`
+  instead for those errors).
+  
+  This error Type does not imply the
+  request is valid or the requested entity exists or satisfies
+  other pre-conditions.
+  
+  HTTP Mapping: 403 Forbidden
+  """
+  PERMISSION_DENIED
+  """
+  The request does not have valid authentication credentials.
+  
+  This is intended to be returned only for routes that require
+  authentication.
+  
+  HTTP Mapping: 401 Unauthorized
+  """
+  UNAUTHENTICATED
+  """
+  Currently Unavailable.
+  
+  The service is currently unavailable.  This is most likely a
+  transient condition, which can be corrected by retrying with
+  a backoff.
+  
+  HTTP Mapping: 503 Unavailable
+  """
+  UNAVAILABLE
+  """
+  Unknown error.
+  
+  For example, this error may be returned when
+  an error code received from another address space belongs to
+  an error space that is not known in this address space.  Also
+  errors raised by APIs that do not return enough error information
+  may be converted to this error.
+  
+  If a client sees an unknown errorType, it will be interpreted as UNKNOWN.
+  Unknown errors MUST NOT trigger any special behavior. These MAY be treated
+  by an implementation as being equivalent to INTERNAL.
+  
+  When possible, a more specific error should be provided.
+  
+  HTTP Mapping: 520 Unknown Error
+  """
+  UNKNOWN
+}
+
+" ${inherit} "
+enum ListingFormat {
+  AUCTION
+  BIN
+  CLASSIFIED_AD
+}
+
+" ${inherit} "
+enum RegionSet {
+  ABW
+  AFG
+  AGO
+  AIA
+  AKA
+  ALB
+  AND
+  ANT
+  ARE
+  ARG
+  ARM
+  ASM
+  ATG
+  AUS
+  AUT
+  AZE
+  BDI
+  BEL
+  BEN
+  BFA
+  BGD
+  BGR
+  BHR
+  BHS
+  BIH
+  BLR
+  BLZ
+  BMU
+  BOL
+  BRA
+  BRB
+  BRN
+  BTN
+  BWA
+  CAF
+  CAN
+  CHE
+  CHL
+  CHN
+  CIV
+  CMR
+  COD
+  COG
+  COK
+  COL
+  COM
+  CPV
+  CRI
+  CUB
+  CYM
+  CYP
+  CZE
+  DEU
+  DJI
+  DMA
+  DNK
+  DOM
+  DZA
+  ECU
+  EGY
+  ERI
+  ESH
+  ESP
+  EST
+  ETH
+  FIN
+  FJI
+  FLK
+  FRA
+  FSM
+  GAB
+  GBR
+  GEO
+  GGY
+  GHA
+  GIB
+  GIN
+  GLP
+  GMB
+  GNB
+  GNQ
+  GRC
+  GRD
+  GRL
+  GTM
+  GUF
+  GUM
+  GUY
+  HII
+  HKG
+  HND
+  HRV
+  HTI
+  HUN
+  IDN
+  IND
+  IRL
+  IRN
+  IRQ
+  ISL
+  ISR
+  ITA
+  JAM
+  JEY
+  JOR
+  JPN
+  KAZ
+  KEN
+  KGZ
+  KHM
+  KIR
+  KNA
+  KOR
+  KWT
+  LAO
+  LBN
+  LBR
+  LBY
+  LCA
+  LIE
+  LKA
+  LSO
+  LTU
+  LUX
+  LVA
+  MAC
+  MAR
+  MCO
+  MDA
+  MDG
+  MDV
+  MEX
+  MHL
+  MKD
+  MLI
+  MLT
+  MMR
+  MNE
+  MNG
+  MOZ
+  MRT
+  MSR
+  MTQ
+  MUS
+  MWI
+  MYS
+  MYT
+  NAM
+  NCL
+  NER
+  NGA
+  NIC
+  NIU
+  NLD
+  NOR
+  NPL
+  NRU
+  NZL
+  OMN
+  PAK
+  PAN
+  PER
+  PHL
+  PLW
+  PNG
+  POL
+  PRI
+  PRK
+  PRT
+  PRY
+  PYF
+  QAT
+  REU
+  ROU
+  RUS
+  RWA
+  SAU
+  SDN
+  SEN
+  SGP
+  SHN
+  SJM
+  SLB
+  SLE
+  SLV
+  SMR
+  SOM
+  SPM
+  SRB
+  SUR
+  SVK
+  SVN
+  SWE
+  SWZ
+  SYC
+  SYR
+  TCA
+  TCD
+  TGO
+  THA
+  TJK
+  TKM
+  TON
+  TTO
+  TUN
+  TUR
+  TUV
+  TWN
+  TZA
+  UGA
+  UKR
+  URY
+  USA
+  UZB
+  VAT
+  VCT
+  VEN
+  VGB
+  VIR
+  VNM
+  VUT
+  WLF
+  WSM
+  YEM
+  ZAF
+  ZMB
+  ZWE
+  _00
+  _AF
+  _AH
+  _AL
+  _AM
+  _AN
+  _AP
+  _AR
+  _AS
+  _AU
+  _CA
+  _CI
+  _DL
+  _EC
+  _EU
+  _GC
+  _IM
+  _IW
+  _ME
+  _N1
+  _N2
+  _NA
+  _NI
+  _NR
+  _NT
+  _OC
+  _OI
+  _OL
+  _PB
+  _PO
+  _PR
+  _PS
+  _Q1
+  _Q2
+  _Q3
+  _Q4
+  _RA
+  _S1
+  _S2
+  _SA
+  _SC
+  _SE
+  _SH
+  _SI
+  _SJ
+  _SV
+  _T1
+  _TA
+  _V1
+  _V2
+  _W1
+  _W2
+  _W3
+  _WW
+  _XX
+}
+
+" ${inherit} "
+enum ShippingCostPlanType {
+  CALCULATED
+  FLAT
+  FREIGHT
+  FREIGHT_FLAT
+  NOT_SPECIFIED
+}
+
+" ${inherit} "
+enum UnitOfMeasure {
+  English
+  Invalid
+  Metric
+}
+
+enum link__Purpose {
+  EXECUTION
+  SECURITY
+}
+
+" ${inherit} "
+scalar CountryCode
+
+" ${inherit} "
+scalar CurrencyCode
+
+" ${inherit} "
+scalar DateTime
+
+" ${inherit} "
+scalar Decimal
+
+scalar _Any
+
+scalar federation__FieldSet
+
+scalar link__Import

@@ -1,0 +1,892 @@
+schema @composeDirective(name : "@authorize") @link(import : ["@key", "@shareable", "@interfaceObject", "@extends", "@shareable", "@inaccessible", "@override", "@external", "@provides", "@requires", "@tag", "@composeDirective"], url : "https://specs.apollo.dev/federation/v2.3") @link(import : ["@authorize"], url : "https://pages.github.corp.ebay.com/fgql/directives/v1.0"){
+  query: Query
+  mutation: Mutation
+}
+
+directive @authorize(scopes: [String]) on OBJECT | FIELD_DEFINITION
+
+directive @composeDirective(name: String!) repeatable on SCHEMA
+
+directive @exclude(gateways: [String!]!) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @extends on OBJECT | INTERFACE
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @inaccessible on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @interfaceObject on OBJECT
+
+directive @key(fields: federation__FieldSet!, resolvable: Boolean = true) repeatable on OBJECT | INTERFACE
+
+directive @link(as: String, for: link__Purpose, import: [link__Import], url: String!) repeatable on SCHEMA
+
+directive @override(from: String!) on FIELD_DEFINITION
+
+directive @provides(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @requires(fields: federation__FieldSet!) on FIELD_DEFINITION
+
+directive @shareable repeatable on OBJECT | FIELD_DEFINITION
+
+directive @tag(name: String!) repeatable on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+"{inherit}"
+interface ListingV2 {
+  "{inherit}"
+  category: ListingCategory
+  """
+  Compatibility information of a listing, represented by Notional Profiles, as provided by the seller and enhanced by a domain-specific internal catalog or the eBay product catalog.
+  This is distinct from listingV2.itemCompatibility, which ONLY contains the listing fitment data supplied by the seller.
+  Item.compatibilities exposes computed compatibility information through individual item variations, while this field exposes it once at the listing level to avoid per-item fan-out for multiSKU listings.
+  Null in fitment-enabled category indicates that there is no listing compatibility data available.
+  """
+  listingCompatibilities: ListingCompatibilities @exclude(gateways : ["publicapi"])
+  "{inherit}"
+  listingId: ID!
+  "{inherit}"
+  marketplaceId: ID
+}
+
+"Output of the compatibilitiesEnhancedStatus query."
+union CompatibilitiesEnhancedStatusOutput @tag(name : "internal") = CompatibilitiesEnhancedStatusError | CompatibilitiesEnhancedStatusResult
+
+"Output union for the itemCompatibilities query."
+union ItemCompatibilitiesOutput @tag(name : "internal") = ItemCompatibilities | ItemCompatibilitiesNotFound | ItemCompatibilitiesQueryError
+
+"Output of the ItemCompatibilityAllData query."
+union ItemCompatibilityAllAugmentDataOutput @tag(name : "internal") = ItemCompatibilityAllAugmentDataError | ItemCompatibilityAllAugmentDataResult
+
+"Output of the ItemCompatibilityByProductId query."
+union ItemCompatibilityByProductIdOutput @tag(name : "internal") = ItemCompatibilityByProductIdError | ItemCompatibilityByProductIdResult
+
+"Output for the RefreshCompatibilitySource mutation."
+union RefreshCompatibilitySourceOutput @tag(name : "internal") = UpdateCompatibilitySourceResult | UpdateItemCompatibilityError
+
+"Output for the RemoveCompatibilitySource mutation."
+union RemoveCompatibilitySourceOutput @tag(name : "internal") = UpdateCompatibilitySourceResult | UpdateItemCompatibilityError
+
+"Output for the UpdateCompatibilitySource mutation."
+union UpdateCompatibilitySourceOutput @tag(name : "internal") = UpdateCompatibilitySourceResult | UpdateItemCompatibilityError
+
+"Output for the UpdateComputedCompatibilities mutation."
+union UpdateComputedCompatibilitiesOutput @tag(name : "internal") = UpdateComputedCompatibilitiesResult | UpdateItemCompatibilityError
+
+"Output for the UpdateSuggestedCompatibilityCatalogProductId mutation."
+union UpdateSuggestedCompatibilityCatalogProductIdOutput @tag(name : "internal") = UpdateItemCompatibilityError | UpdateSuggestedCompatibilityCatalogProductIdResult
+
+union _Entity = Category | CompatibilitiesSearchConfig | CompatibilityCatalogProduct | Item | ItemCompatibilities | ItemCompatibilitiesSearchConfig | ListingReference | NotionalProfileGrouping | SingleSkuListing | VariationListing
+
+"${inherit}"
+type Category @key(fields : "id", resolvable : false) {
+  "${inherit}"
+  id: ID!
+}
+
+"Provides a list of compatibilities for each marketplace, derived from seller-provided fitments and potentially enhanced by internal or eBay catalog data. These compatibilities are used for compatibility matches in the guaranteed fit feature."
+type CompatibilitiesByMarketplace @exclude(gateways : ["publicapi"]) {
+  "The final list of compatibilities for this item in the current marketplace, derived from seller-provided fitments and potentially supplemented by the eBay product catalog. These fitments are searchable, displayed on the item page, and used for compatibility checks in the guaranteed fit feature."
+  compatibilityNotionalProfileGrouping: NotionalProfileGrouping!
+  "The marketplace where this item's compatibilities are applicable (e.g. EBAY-US)"
+  marketplaceId: ID!
+  """
+  An identifier to an external configuration that helps search indexing on how to interpret the compatibility data.
+  This data is only available if fetched from ULP/FGQL gateway from a ListingV2 object.  Otherwise, it is null.
+  """
+  searchConfig: CompatibilitiesSearchConfig
+}
+
+"Error that occurred when querying compatibilities enhanced status."
+type CompatibilitiesEnhancedStatusError @tag(name : "internal") {
+  " item identifier in the query request "
+  itemId: ID!
+  """
+  error message
+  Maximum length: 500 characters, alphanumeric.
+  """
+  message: String!
+}
+
+"Successful result of the compatibilitiesEnhancedStatus query."
+type CompatibilitiesEnhancedStatusResult @tag(name : "internal") {
+  """
+  If true, then this listing's compatibilities were enhanced by the FitmentPlus Auto-Enhance Framework
+  where at least 1 fitment was added to the existing seller provided fitments.
+  If false, then there were no additional fitments added to the existing list of compatibilities.
+  """
+  enhanced: Boolean!
+}
+
+"The search configuration for a listing's compatibilities.  This information is used by search indexing."
+type CompatibilitiesSearchConfig @exclude(gateways : ["publicapi"]) @key(fields : "id", resolvable : false) {
+  "The id of the search configuration."
+  id: ID!
+}
+
+" Catalog product based on brand and MPNs and related compatibility information. "
+type CompatibilityCatalogProduct @key(fields : "productId", resolvable : false) {
+  " product id "
+  productId: ID!
+}
+
+"${inherit}"
+type Item @key(fields : "itemId", resolvable : true) {
+  "[DEPRECATED] Compatibility information of an item. The data is represented by Notional Profiles."
+  compatibilities: ItemCompatibilities @deprecated(reason : "Use ListingV2.listingCompatibilities. Migrate by 2026-09-30; this field may become inaccessible after that date.") @exclude(gateways : ["publicapi"]) @requires(fields : "listing { listingId listing{marketplaceId category{primaryCategory{id}}}}")
+  """
+  The catalog product that contains enhanced data and compatibilities associated with this item.  The product is assigned based on the item’s brand and manufacturer part number (MPN).
+  This value is nullable as not all items are guaranteed to have a catalog product match. A null value in this field indicates that there is no catalog product match for this item.
+  """
+  compatibilityCatalogProduct: CompatibilityCatalogProduct @requires(fields : "listing { listingId listing{marketplaceId category{primaryCategory{id}}}}") @tag(name : "internal")
+  "${inherit}"
+  itemId: ID!
+  "${inherit}"
+  listing: ListingReference! @external
+}
+
+"""
+[DEPRECATED] Use ListingV2.listingCompatibilities.
+
+Compatibility information for an item.
+Example: If the item is a brake pad, this field will contain a list of vehicles this brake pad fits into.
+Vehicle information is represented by tokens. Eg. Year, Make, Model, Trim, Engine which are all key-value pairs.
+Each of these token combinations is represented by a single notionalProfile.
+If this brake pad fits 10 cars, then there will be 10 notionalProfileIds listed in this field where each
+notionalProfileId represents a unique combination of Year+Make+Model+Trim+Engine.
+
+The field itemCompatibility contains fitment data supplied by the seller. The field itemCompatibilityV2 contains
+compatibility data such as fitment data supplied by seller, enhanced by a domain specific internal catalog, or from eBay product catalog.
+"""
+type ItemCompatibilities @exclude(gateways : ["publicapi"]) @key(fields : "itemId", resolvable : true) {
+  """
+  This is the final list of compatibilities for this item per marketplace. Only marketplaces with compatibilities are returned.
+  
+  For the motors use-case, these compatibilities are derived from seller provided fitments, possibly enhanced by internal catalog
+  or replaced by eBay product catalog.
+  These fitments are indexed by search, shown on view item page, and used for compatibility matches in guaranteed fit feature.
+  """
+  computedCompatibilitiesByMarketplace: [ItemCompatibilitiesByMarketplace!]!
+  " item identifier"
+  itemId: ID! @inaccessible
+}
+
+"""
+[DEPRECATED] Use CompatibilitiesByMarketplace through ListingV2.listingCompatibilities.
+
+Provides a list of compatibilities for each marketplace, derived from seller-provided fitments and potentially enhanced by internal or eBay catalog data. These compatibilities are used for compatibility matches in the guaranteed fit feature.
+"""
+type ItemCompatibilitiesByMarketplace @exclude(gateways : ["publicapi"]) {
+  "The final list of compatibilities for this item in the current marketplace, derived from seller-provided fitments and potentially supplemented by the eBay product catalog. These fitments are searchable, displayed on the item page, and used for compatibility checks in the guaranteed fit feature."
+  compatibilityNotionalProfileGrouping: NotionalProfileGrouping!
+  "The marketplace where this item's compatibilities are applicable (e.g. EBAY-US)"
+  marketplaceId: ID!
+  """
+  An identifier to an external configuration that helps search indexing on how to interpret the compatibility data.
+  This data is only available if fetched from the ULP/FGQL gateway from an Item object. Otherwise, it is null.
+  """
+  searchConfig: ItemCompatibilitiesSearchConfig
+}
+
+"Error type returned when an item is not found."
+type ItemCompatibilitiesNotFound @tag(name : "internal") {
+  " The itemId that was not found "
+  itemId: ID!
+}
+
+"Error type returned when there's an error querying item compatibilities."
+type ItemCompatibilitiesQueryError @tag(name : "internal") {
+  " The itemId in the request "
+  itemId: ID!
+  """
+  Error message describing what went wrong.
+  Maximum length: 500 characters, alphanumeric.
+  """
+  message: String!
+}
+
+"""
+[DEPRECATED] Use CompatibilitiesSearchConfig through ListingV2.listingCompatibilities.
+
+The search configuration for an item's compatibilities. This information is used by search indexing.
+"""
+type ItemCompatibilitiesSearchConfig @exclude(gateways : ["publicapi"]) @key(fields : "id", resolvable : true) {
+  "The id of the search configuration."
+  id: ID!
+}
+
+"Error that occurred when querying all compatibility data."
+type ItemCompatibilityAllAugmentDataError @tag(name : "internal") {
+  """
+  Error message if fetching compatibility data was unsuccessful.
+  Maximum length: 500 characters, alphanumeric.
+  """
+  message: String!
+}
+
+"Provides all detailed compatibility information paginated."
+type ItemCompatibilityAllAugmentDataResult @tag(name : "internal") {
+  "The list of all item compatibilities in the keyspace for the requested page."
+  itemCompatibilitiesV2: [ItemCompatibilityV2!]!
+  "Pagination output."
+  pagination: Pagination!
+}
+
+"Error that occurred when querying compatibility data by product ID."
+type ItemCompatibilityByProductIdError @tag(name : "internal") {
+  """
+  Error message if fetching compatibility data was unsuccessful.
+  Maximum length: 500 characters, alphanumeric.
+  """
+  message: String!
+}
+
+"Provides detailed compatibility information for items associated with a specific Compatibility Catalog product ID, paginated."
+type ItemCompatibilityByProductIdResult @tag(name : "internal") {
+  "The list of all item compatibilities for the requested eBay product ID."
+  itemCompatibilitiesV2: [ItemCompatibilityV2!]!
+  "Pagination output."
+  pagination: Pagination!
+}
+
+"This is a temporary type to avoid breaking changes in the schema.  This will soon be replaced."
+type ItemCompatibilityV2 @tag(name : "internal") {
+  """
+  This is the final list of compatibilities for this item per marketplace. Only marketplaces with compatibilities are returned.
+  
+  For the motors use case, these compatibilities are derived from seller provided fitments, possibly enhanced by internal catalog
+  or replaced by eBay product catalog.
+  These fitments are indexed by search, shown on VI page, and used for compatibility matches in guaranteed fit feature.
+  """
+  computedCompatibilitiesByMarketplace(filter: ItemCompatibilityV2ComputedCompatibilitiesFilterInput): [ItemCompatibilitiesByMarketplace!]!
+  " item identifier"
+  itemId: ID!
+  """
+  Given the item's brands and MPN (manufacturer part number),
+  eBay computes suggested compatibilities and is stored in the CompatibilityCatalog service.
+  """
+  suggestedCompatibilityCatalogProduct: CompatibilityCatalogProduct
+}
+
+"Provides detailed compatibility information for a specific item."
+type ItemCompatibilityV2Output @tag(name : "internal") {
+  "Compatibility information including fitment data provided by the seller, possibly enriched with domain-specific internal or eBay product catalog data."
+  itemCompatibilitiesV2: ItemCompatibilityV2!
+}
+
+"${inherit}"
+type ListingCategory @external {
+  "${inherit}"
+  primaryCategory: Category!
+}
+
+"""
+Compatibility information for a listing.
+Example: If the listing is a brake pad, this field will contain a list of vehicles this brake pad fits into.
+Vehicle information is represented by tokens. Eg. Year, Make, Model, Trim, Engine which are all key-value pairs.
+Each of these token combinations is represented by a single notionalProfile.
+If this brake pad fits 10 cars, then there will be 10 notionalProfileIds listed in this field where each
+notionalProfileId represents a unique combination of Year+Make+Model+Trim+Engine.
+
+The field itemCompatibility contains fitment data supplied by the seller. The field itemCompatibilityV2 contains
+compatibility data such as fitment data supplied by seller, enhanced by a domain specific internal catalog, or from eBay product catalog.
+"""
+type ListingCompatibilities @exclude(gateways : ["publicapi"]) {
+  """
+  This is the final list of compatibilities for this listing per marketplace. Only marketplaces with compatibilities are returned.
+  
+  For the motors use-case, these compatibilities are derived from seller provided fitments, possibly enhanced by internal catalog
+  or replaced by eBay product catalog.
+  These fitments are indexed by search, shown on view listing page, and used for compatibility matches in guaranteed fit feature.
+  """
+  computedCompatibilitiesByMarketplace: [CompatibilitiesByMarketplace!]!
+  " listing identifier"
+  listingId: ID!
+}
+
+"{inherit}"
+type ListingReference @key(fields : "listingId", resolvable : false) {
+  "{inherit}"
+  listing: ListingV2 @external
+  "{inherit}"
+  listingId: ID! @external
+}
+
+" ULP mutations "
+type Mutation {
+  """
+  Refresh compatibility source data for an item.  Depending on the source, this could trigger updates to the compatibility data.
+  If the source is "FIT", this will trigger a request to Fit Service to fetch the latest fitments, update the Notional Profile Group with latest fitments, internally update the source data stored, then trigger ULP cache refresh
+  """
+  refreshCompatibilitySource(input: RefreshCompatibilitySourceInput!): RefreshCompatibilitySourceOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @tag(name : "internal")
+  "Remove compatibility source data for an item"
+  removeCompatibilitySource(input: RemoveCompatibilitySourceInput!): RemoveCompatibilitySourceOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @tag(name : "internal")
+  "Sort vehicles in a Notional Profile Grouping based on configured sorting rules."
+  sortNotionalProfileGrouping(input: SortNotionalProfileGroupingInput!): SortNotionalProfileGroupingOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @tag(name : "internal")
+  "Upsert compatibility source data for an item"
+  updateCompatibilitySource(input: UpdateCompatibilitySourceInput!): UpdateCompatibilitySourceOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @tag(name : "internal")
+  "This is a temporary mutation to set computed compatibilities for an item by FitplusAugment. This mutation will soon be renamed."
+  updateComputedCompatibilities(input: UpdateComputedCompatibilitiesInput!): UpdateComputedCompatibilitiesOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @deprecated(reason : "This mutation will be removed soon.") @tag(name : "internal")
+  """
+  Updates the suggested compatibility catalog product ID for an item.
+  This mutation has public tag even though it should be internal.  At least one mutation must be visible for a valid schema.
+  """
+  updateSuggestedCompatibilityCatalogProductId(input: UpdateSuggestedCompatibilityCatalogProductIdInput!): UpdateSuggestedCompatibilityCatalogProductIdOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @inaccessible @tag(name : "internal")
+  """
+  Through the use of @tag, sometimes the Mutation type is left fieldless for one of the
+  federated Supergraphs it participates in (when all mutation fields are tagged for
+  other supergraphs).
+  
+  This field is a workaround to permit composition in such circumstances without
+  fouling the externally visible Supergraph API.
+  
+  This field must do nothing, and should not be used in any operation.
+  """
+  workaroundNoOp: Boolean @inaccessible @shareable
+}
+
+"""
+A group or collection of Notional Profiles with associated metadata for usage in it's own context.
+For example, one group of notional profiles could be used for an item's compatibility,
+another group for a product's compatibility, another group could be associated with the features offered by an installer.
+Each notional profile in the group can contain metadata for the use in a given context.
+For motors use case, a grouping could be used to represent a list of vehicles that a
+parts & accessories item is compatibility with.
+"""
+type NotionalProfileGrouping @key(fields : "id", resolvable : false) {
+  " The unique identifier for this notional profile grouping. "
+  id: ID!
+}
+
+"Represents the pagination info in the response."
+type Pagination @tag(name : "internal") {
+  "Represents the next cursor string in the pagination response."
+  nextCursor: String
+  "Represents the previous cursor string in the pagination response if one exists."
+  previousCursor: String
+}
+
+" ULP mutations "
+type Query {
+  _entities(representations: [_Any!]!): [_Entity]!
+  _service: _Service!
+  "Indicates whether an item's compatibility list was enhanced by the FitmentPlus Auto-Enhance Framework."
+  compatibilitiesEnhancedStatus(input: CompatibilitiesEnhancedStatusInput!): CompatibilitiesEnhancedStatusOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @tag(name : "internal")
+  "This query fetches compatibilities data for a specific item."
+  itemCompatibilities(input: ItemCompatibilitiesInput!): ItemCompatibilitiesOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @tag(name : "internal")
+  """
+  This query will fetch all compatibility data in the itemCompatibility keyspace sourced from FitplusAugment (AUGMENT1) to support listing enhancement verification.
+  This query is a one-time use for data cleanup and will be deprecated soon.
+  """
+  itemCompatibilityAllAugmentData(input: ItemCompatibilityAllAugmentDataInput!): ItemCompatibilityAllAugmentDataOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @deprecated(reason : "No longer supported") @tag(name : "internal")
+  "This query fetches compatibility data by Compatibility Catalog product ID."
+  itemCompatibilityByProductId(input: ItemCompatibilityByProductIdInput!): ItemCompatibilityByProductIdOutput! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @deprecated(reason : "This query will be removed soon.") @tag(name : "internal")
+  "This is a temporary query to fetch compatibility for FitplusAugment. This query will soon be replaced."
+  itemCompatibilityV2(input: ItemCompatibilityV2Input!): ItemCompatibilityV2Output! @authorize(scopes : ["https://api.ebay.com/oauth/scope/core@application"]) @deprecated(reason : "No longer supported") @tag(name : "internal")
+}
+
+"{inherit}"
+type SingleSkuListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  "{inherit}"
+  category: ListingCategory @external
+  """
+  Compatibility information of a listing, represented by Notional Profiles, as provided by the seller and enhanced by a domain-specific internal catalog or the eBay product catalog.
+  This is distinct from listingV2.itemCompatibility, which ONLY contains the listing fitment data supplied by the seller.
+  Item.compatibilities exposes computed compatibility information through individual item variations, while this field exposes it once at the listing level to avoid per-item fan-out for multiSKU listings.
+  Null in fitment-enabled category indicates that there is no listing compatibility data available.
+  """
+  listingCompatibilities: ListingCompatibilities @exclude(gateways : ["publicapi"]) @requires(fields : "marketplaceId category{primaryCategory{id}}")
+  "Id of a Listing."
+  listingId: ID!
+  "{inherit}"
+  marketplaceId: ID @external
+}
+
+"""
+Acknowledgment response for sortNotionalProfileGrouping mutation.
+The actual sorting happens asynchronously after this response is returned.
+"""
+type SortNotionalProfileGroupingOutput @tag(name : "internal") {
+  """
+  Status message confirming the sorting request was accepted.
+  Maximum length: 500 characters, alphanumeric.
+  """
+  message: String!
+  "The NPG ID that was accepted for sorting"
+  notionalProfileGroupingId: ID!
+}
+
+"Represents the result of the updateCompatibilitySource mutation upon successful execution."
+type UpdateCompatibilitySourceResult @tag(name : "internal") {
+  "If update was successful, then this is the item id that the source compatibility was assigned to."
+  itemId: ID!
+}
+
+"Represents the result of the updateComputedCompatibilities  mutation upon successful execution."
+type UpdateComputedCompatibilitiesResult @tag(name : "internal") {
+  "If update was successful, then this is the item id that the computed compatibilities was assigned to."
+  itemId: ID!
+}
+
+"Error that occurred when updating compatibility data."
+type UpdateItemCompatibilityError @tag(name : "internal") {
+  "The exception class name. This value is used for internal logging purposes and not to be read by client."
+  exceptionName: String!
+  "The ID of the item provided in the request."
+  itemId: ID!
+  "The error message if the mutation was unsuccessful."
+  message: String!
+}
+
+"Output of a successful updateSuggestedCompatibilityCatalogProductId mutation."
+type UpdateSuggestedCompatibilityCatalogProductIdResult @tag(name : "internal") {
+  "If update was successful, then this is the item id that the suggested compatibility product id was assigned to."
+  itemId: ID!
+}
+
+"{inherit}"
+type VariationListing implements ListingV2 @key(fields : "listingId", resolvable : true) {
+  "{inherit}"
+  category: ListingCategory @external
+  """
+  Compatibility information of a listing, represented by Notional Profiles, as provided by the seller and enhanced by a domain-specific internal catalog or the eBay product catalog.
+  This is distinct from listingV2.itemCompatibility, which ONLY contains the listing fitment data supplied by the seller.
+  Item.compatibilities exposes computed compatibility information through individual item variations, while this field exposes it once at the listing level to avoid per-item fan-out for multiSKU listings.
+  Null in fitment-enabled category indicates that there is no listing compatibility data available.
+  """
+  listingCompatibilities: ListingCompatibilities @exclude(gateways : ["publicapi"]) @requires(fields : "marketplaceId category{primaryCategory{id}}")
+  "Id of a Listing."
+  listingId: ID!
+  "{inherit}"
+  marketplaceId: ID @external
+}
+
+type _Service {
+  sdl: String!
+}
+
+enum ErrorDetail {
+  """
+  The deadline expired before the operation could complete.
+  
+  For operations that change the state of the system, this error
+  may be returned even if the operation has completed successfully.
+  For example, a successful response from a server could have been
+  delayed long enough for the deadline to expire.
+  
+  HTTP Mapping: 504 Gateway Timeout
+  Error Type: UNAVAILABLE
+  """
+  DEADLINE_EXCEEDED
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 420 Enhance Your Calm
+  Error Type: UNAVAILABLE
+  """
+  ENHANCE_YOUR_CALM
+  """
+  The requested field is not found in the schema.
+  
+  This differs from `NOT_FOUND` in that `NOT_FOUND` should be used when a
+  query is valid, but is unable to return a result (if, for example, a
+  specific video id doesn't exist). `FIELD_NOT_FOUND` is intended to be
+  returned by the server to signify that the requested field is not known to exist.
+  This may be returned in lieu of failing the entire query.
+  See also `PERMISSION_DENIED` for cases where the
+  requested field is invalid only for the given user or class of users.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: BAD_REQUEST
+  """
+  FIELD_NOT_FOUND
+  """
+  The client specified an invalid argument.
+  
+  Note that this differs from `FAILED_PRECONDITION`.
+  `INVALID_ARGUMENT` indicates arguments that are problematic
+  regardless of the state of the system (e.g., a malformed file name).
+  
+  HTTP Mapping: 400 Bad Request
+  Error Type: BAD_REQUEST
+  """
+  INVALID_ARGUMENT
+  """
+  The provided cursor is not valid.
+  
+  The most common usage for this error is when a client is paginating
+  through a list that uses stateful cursors. In that case, the provided
+  cursor may be expired.
+  
+  HTTP Mapping: 404 Not Found
+  Error Type: NOT_FOUND
+  """
+  INVALID_CURSOR
+  """
+  Unable to perform operation because a required resource is missing.
+  
+  Example: Client is attempting to refresh a list, but the specified
+  list is expired. This requires an action by the client to get a new list.
+  
+  If the user is simply trying GET a resource that is not found,
+  use the NOT_FOUND error type. FAILED_PRECONDITION.MISSING_RESOURCE
+  is to be used particularly when the user is performing an operation
+  that requires a particular resource to exist.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  Error Type: FAILED_PRECONDITION
+  """
+  MISSING_RESOURCE
+  """
+  Service Error.
+  
+  There is a problem with an upstream service.
+  
+  This may be returned if a gateway receives an unknown error from a service
+  or if a service is unreachable.
+  If a request times out which waiting on a response from a service,
+  `DEADLINE_EXCEEDED` may be returned instead.
+  If a service returns a more specific error Type, the specific error Type may
+  be returned instead.
+  
+  HTTP Mapping: 502 Bad Gateway
+  Error Type: UNAVAILABLE
+  """
+  SERVICE_ERROR
+  """
+  Request failed due to network errors.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  TCP_FAILURE
+  """
+  Request throttled based on server concurrency limits.
+  
+  HTTP Mapping: 503 Unavailable
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CONCURRENCY
+  """
+  Request throttled based on server CPU limits
+  
+  HTTP Mapping: 503 Unavailable.
+  Error Type: UNAVAILABLE
+  """
+  THROTTLED_CPU
+  """
+  The server detected that the client is exhibiting a behavior that
+  might be generating excessive load.
+  
+  HTTP Mapping: 429 Too Many Requests
+  Error Type: UNAVAILABLE
+  """
+  TOO_MANY_REQUESTS
+  """
+  The operation is not implemented or is not currently supported/enabled.
+  
+  HTTP Mapping: 501 Not Implemented
+  Error Type: BAD_REQUEST
+  """
+  UNIMPLEMENTED
+  """
+  Unknown error.
+  
+  This error should only be returned when no other error detail applies.
+  If a client sees an unknown errorDetail, it will be interpreted as UNKNOWN.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  UNKNOWN
+}
+
+enum ErrorType {
+  """
+  Bad Request.
+  
+  There is a problem with the request.
+  Retrying the same request is not likely to succeed.
+  An example would be a query or argument that cannot be deserialized.
+  
+  HTTP Mapping: 400 Bad Request
+  """
+  BAD_REQUEST
+  """
+  The operation was rejected because the system is not in a state
+  required for the operation's execution.  For example, the directory
+  to be deleted is non-empty, an rmdir operation is applied to
+  a non-directory, etc.
+  
+  Service implementers can use the following guidelines to decide
+  between `FAILED_PRECONDITION` and `UNAVAILABLE`:
+  
+  - Use `UNAVAILABLE` if the client can retry just the failing call.
+  - Use `FAILED_PRECONDITION` if the client should not retry until
+  the system state has been explicitly fixed.  E.g., if an "rmdir"
+       fails because the directory is non-empty, `FAILED_PRECONDITION`
+  should be returned since the client should not retry unless
+  the files are deleted from the directory.
+  
+  HTTP Mapping: 400 Bad Request or 500 Internal Server Error
+  """
+  FAILED_PRECONDITION
+  """
+  Internal error.
+  
+  An unexpected internal error was encountered. This means that some
+  invariants expected by the underlying system have been broken.
+  This error code is reserved for serious errors.
+  
+  HTTP Mapping: 500 Internal Server Error
+  """
+  INTERNAL
+  """
+  The requested entity was not found.
+  
+  This could apply to a resource that has never existed (e.g. bad resource id),
+  or a resource that no longer exists (e.g. cache expired.)
+  
+  Note to server developers: if a request is denied for an entire class
+  of users, such as gradual feature rollout or undocumented allowlist,
+  `NOT_FOUND` may be used. If a request is denied for some users within
+  a class of users, such as user-based access control, `PERMISSION_DENIED`
+  must be used.
+  
+  HTTP Mapping: 404 Not Found
+  """
+  NOT_FOUND
+  """
+  The caller does not have permission to execute the specified
+  operation.
+  
+  `PERMISSION_DENIED` must not be used for rejections
+  caused by exhausting some resource or quota.
+  `PERMISSION_DENIED` must not be used if the caller
+  cannot be identified (use `UNAUTHENTICATED`
+  instead for those errors).
+  
+  This error Type does not imply the
+  request is valid or the requested entity exists or satisfies
+  other pre-conditions.
+  
+  HTTP Mapping: 403 Forbidden
+  """
+  PERMISSION_DENIED
+  """
+  The request does not have valid authentication credentials.
+  
+  This is intended to be returned only for routes that require
+  authentication.
+  
+  HTTP Mapping: 401 Unauthorized
+  """
+  UNAUTHENTICATED
+  """
+  Currently Unavailable.
+  
+  The service is currently unavailable.  This is most likely a
+  transient condition, which can be corrected by retrying with
+  a backoff.
+  
+  HTTP Mapping: 503 Unavailable
+  """
+  UNAVAILABLE
+  """
+  Unknown error.
+  
+  For example, this error may be returned when
+  an error code received from another address space belongs to
+  an error space that is not known in this address space.  Also
+  errors raised by APIs that do not return enough error information
+  may be converted to this error.
+  
+  If a client sees an unknown errorType, it will be interpreted as UNKNOWN.
+  Unknown errors MUST NOT trigger any special behavior. These MAY be treated
+  by an implementation as being equivalent to INTERNAL.
+  
+  When possible, a more specific error should be provided.
+  
+  HTTP Mapping: 520 Unknown Error
+  """
+  UNKNOWN
+}
+
+enum link__Purpose {
+  EXECUTION
+  SECURITY
+}
+
+"A slightly refined version of RFC-3339 compliant DateTime Scalar"
+scalar DateTime
+
+scalar _Any
+
+scalar federation__FieldSet
+
+scalar link__Import
+
+"Input to CompatibilitiesEnhancedStatusInput query"
+input CompatibilitiesEnhancedStatusInput @tag(name : "internal") {
+  "Identifier of the item where item compatibility is assigned."
+  itemId: ID!
+  "Identifier of the marketplace where the item is listed."
+  marketplaceId: ID!
+  """
+  The time of the order.
+  If not specified, then defaults to the current time.
+  Note that returning past enhancements is currently not supported yet.
+  """
+  transactionDate: DateTime
+}
+
+"A fitment token captured for listing compatibility history."
+input FitmentTokenInput @tag(name : "internal") {
+  "Human-readable name for the fitment token, or null when no label is available."
+  name: String
+  "Identifier for the fitment token."
+  tokenId: String!
+}
+
+"Input to itemCompatibilities query"
+input ItemCompatibilitiesInput @tag(name : "internal") {
+  "Identifier of the item to fetch compatibilities."
+  itemId: ID!
+  """
+  If true, then listings that don't have any fitments will show notionalProfileGroupingId = "NO_COMPATIBILITIES" for that marketplace.  This allows consumers to distinguish between listings that have no fitments versus listings that haven't had its notional profile group assigned yet.
+  If false, then results will show no computedCompatibilities for that marketplace. It will be indistinguishable between listings that has no fitments versus haven't had its notional profile group assigned yet.
+  """
+  showNoCompatibilitiesNPGId: Boolean = false
+}
+
+"Input to ItemCompatibilityAllData query"
+input ItemCompatibilityAllAugmentDataInput @tag(name : "internal") {
+  """
+  Pagination input.
+  Sets page size and can accept a page cursor.
+  """
+  pagination: PageInfoInput!
+}
+
+"Input to ItemCompatibilityByProductId query"
+input ItemCompatibilityByProductIdInput @tag(name : "internal") {
+  """
+  Pagination input.
+  Sets page size and can accept a page cursor.
+  """
+  pagination: PageInfoInput!
+  "The eBay product ID to fetch compatibilities for."
+  productId: ID!
+}
+
+"This is a temporary type to avoid breaking changes in the schema. This will soon be replaced."
+input ItemCompatibilityV2ComputedCompatibilitiesFilterInput @tag(name : "internal") {
+  "Filter by marketplace IDs"
+  marketplaceIds: [ID!]!
+}
+
+"Input to itemCompatibilityV2 query"
+input ItemCompatibilityV2Input @tag(name : "internal") {
+  "Identifier of the item where item compatibility is assigned."
+  itemId: ID!
+}
+
+"Pagination input parameters for retrieving data sets."
+input PageInfoInput @tag(name : "internal") {
+  """
+  Max page size to fetch (pagination). maxPageSize must be between 1 and 100.
+  A default of 20 will be used if the user specified limit is absent or invalid.
+  """
+  maxPageSize: Int!
+  """
+  Cursor for Page
+  Minimum 1, maximum 500 characters. Base64.
+  """
+  pageCursor: String
+}
+
+"Input to the refreshComputedCompatibilities mutation"
+input RefreshCompatibilitySourceInput @tag(name : "internal") {
+  "The primary category id associated with the Listing"
+  categoryId: ID!
+  "Identifier for the item associated with this source compatibility."
+  itemId: ID!
+  "The marketplace id associated with the source compatibility to refresh (e.g. EBAY-US)"
+  marketplaceId: ID!
+  "The source of the compatibility data (e.g. AUGMENT1, SELLER, PK) to refresh."
+  source: String!
+}
+
+"Input to the removeComputedCompatibilities mutation"
+input RemoveCompatibilitySourceInput @tag(name : "internal") {
+  "Identifier for the item associated with this source compatibility."
+  itemId: ID!
+  "The marketplace id associated with the source compatibility to remove (e.g. EBAY-US)"
+  marketplaceId: ID!
+  "The source of the compatibility data (eg. AUGMENT1, SELLER, PK) to remove."
+  source: String!
+}
+
+"Input to the sortNotionalProfileGrouping mutation"
+input SortNotionalProfileGroupingInput @tag(name : "internal") {
+  "The category ID used to determine sorting rules"
+  categoryId: ID!
+  "The marketplace ID associated with the NPG (e.g. EBAY-US)"
+  marketplaceId: ID!
+  "The Notional Profile Grouping ID to sort"
+  notionalProfileGroupingId: ID!
+}
+
+"Input to the updateCompatibilitySource mutation"
+input UpdateCompatibilitySourceInput @tag(name : "internal") {
+  "Identifier for the item associated with this source compatibility."
+  itemId: ID!
+  "The marketplace id associated with this source compatibility (e.g. EBAY-US)"
+  marketplaceId: ID!
+  "The notional profile grouping that contains the compatibility data generated by this source."
+  notionalProfileGroupingId: ID!
+  "The priority of this data when determining the computed compatibilities.  The higher the number, the higher the priority."
+  priority: Int!
+  "The source application of the compatibility data (eg. AUGMENT1, SELLER, PK)"
+  source: String!
+}
+
+"Input to the updateComputedCompatibilities mutation per marketplace ID."
+input UpdateComputedCompatibilitiesByMarketplaceInput @tag(name : "internal") {
+  "The notional profile grouping id that contains the compatibility data.  If this value is null, then the computed compatibilities for this marketplace will be removed."
+  compatibilitiesNotionalProfileGroupingId: ID
+  "Input for updating computed compatibilities by marketplace (e.g. EBAY-US)"
+  marketplaceId: ID!
+}
+
+"Input for updating compatibility information that was computed by the system."
+input UpdateComputedCompatibilitiesInput @tag(name : "internal") {
+  """
+  The computed compatibilities to update.  The values in this array will upsert the existing computed compatibilities based on marketplaceId rather than a full replace.
+  Computed compatibilities is the final set of compatibilities used by search, VI, and check compatibility feature.
+  """
+  computedCompatibilities: [UpdateComputedCompatibilitiesByMarketplaceInput!]!
+  "Correlation identifier supplied by FitPlus for tracing this compatibility update."
+  fitplusCorrelationId: String
+  "Indicates whether the seller was automatically enrolled in compatibility enhancement."
+  isSellerAutoEnhanced: Boolean
+  "Identifier for the item associated with computed compatibilities."
+  itemId: ID!
+  """
+  Fitment tokens supplied before compatibility enhancement. Null means the token data was not supplied;
+  an empty list means it was supplied with no tokens.
+  """
+  originalFitments: [FitmentTokenInput!]
+  """
+  Fitment tokens representing the vehicle data captured when the update was requested. Null means the
+  snapshot was not supplied; an empty list means it was supplied with no tokens.
+  """
+  vehicleSnapshot: [FitmentTokenInput!]
+}
+
+"Input for updating suggested compatibility catalog product ID."
+input UpdateSuggestedCompatibilityCatalogProductIdInput @tag(name : "internal") {
+  "Item identifier that the suggested compatibility product id is assigned to."
+  itemId: ID!
+  "The suggested compatibility catalog product ID assigned to this item.  If this value is null, then the existing ID is removed."
+  suggestedCompatibilityCatalogProductId: ID
+}
