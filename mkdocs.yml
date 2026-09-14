@@ -95,6 +95,9 @@ nav:
       - LDM Design Principle: reference/ldm-modeling-principle.md
       - LDM Review Notes: reference/ldm-review-notes.md
       - Sample Data vs. Schema Alignment: reference/sample-data-schema-alignment.md
+      - ULP vs DW:
+          - Field Comparison (DW vs ULP): reference/ulp/dw-vs-ulp-field-comparison.md
+          - Architecture Analysis (Why They Differ): reference/ulp/ulp-vs-dw-architecture-analysis.md
   - FAQ: faq.md
 
 extra_css:
