@@ -1,0 +1,1306 @@
+Table Info
+tehermesTable Basics
+Platform: Hercules,Apollo
+DB_name: GDW_TABLES
+Table_name: DW_LSTG_ITEM
+View Name:
+ACCESS_VIEWS.DW_LSTG_ITEM
+BATCH_VIEWS.DW_LSTG_ITEM
+PRS_SECURE_V.DW_LSTG_ITEM
+PRS_CORE_EX_PII_V.DW_LSTG_ITEM
+Data_freq: daily
+Data_latency: T-1
+Primary_key:  ITEM_ID
+Partition: None
+Owner: Zhang, Minghua(AWF) 
+Latency_priority: P1
+Sla_time: 7:00 AM
+Quality_priority: P1
+Site_impact_yn:  No
+Site_impact_desc: Null
+Compliance_yn: No
+Compliance_desc: Null
+Table_type: 
+DR_enable: Y
+Source Table: EBAY_ITEMS, EBAY_ITEMS_ARC 
+Source team: DL-eBay-ListingRedesign@ebay.com DL-eBay-CSPlatform-PD@ebay.com Arora, Parikshit 
+Primary Index:  ITEM_ID (PI), SLR_ID (NUSI), AUCT_START_DT (NUSI)
+Related Business Process: Seller Listing
+
+
+Overview
+In Teradata, this is the hot listing table, containing the most frequently-used fields. Contrary to what this wiki says not all the columns listed here are in this table, for example the FLAGS columns are in DW_LSTG_ITEM_COLD.
+In Hadoop, this table has ALL listing items
+Related Tables / Assets
+Listing Attributes
+A bunch of tables primarily reflective of Item Specifics. Source from site ITEM_ATTR_INFO.
+Listing Descriptions
+Listing Description data is available on Hadoop. /sys/edw/ebay_item_desc_live/snapshot 
+Hive: ebay_item_desc_live
+Internal Data Flow Overview
+
+Column Descriptions
+• ITEM_ID
+This is the primary key on the table. Item ID uniquely identifies a listing. ITEM_ID is also be referred as LISTING_ID
+You can take an item ID and plug it into the end of a View Item link to see the listing (if it's still available on the site). For instance, if you want to look for item ID = 163273736324, just use the following URL:https://ebay.com/itm/163273736324.
+Alternatively, just type the item ID into the search box
+Apparently a long time ago (~2001?) we were re-using item IDs. Not sure where to look for data that old, but if you do need to go back that far, keep this in mind.
+• SLR_ID
+The Oracle ID of the seller.
+Joins toDW_USERS.USER_ID.
+This field is not updated by the DW after the item is created.
+• SLR_SITE_ID
+• SLR_CNTRY_ID
+• LEAF_CATEG_ID
+Contains the leaf category ID that the seller chose for the listing.
+To get below SAP or any other higher categories, L2, L3, etc. Join DW_CATEGORY_GROUPINGSon ITEM_SITE_ID and LEAF_CATEG_ID
+• LEAF_CATEG_ID2
+The category ID of the second category chosen by the seller when the seller chooses to list in two categories. The default value for the field (if no second category is chosen) is 0.
+• AUCT_START_DT
+Date the listing starts.
+Note that scheduled listings will exist in the listing table before they are live, so AUCT_START_DT should be used as the date when the listing becomes live.
+It would be tempting to assume that AUCT_START_DT <= AUCT_END_DT in all cases, but there are cases where this is not the case (albeit VERY rare cases).
+• AUCT_END_DT
+This is the date that the listing ended on or is scheduled to end on.
+For live eBay items, this date is usually within the next 150 days since the current max duration is SIF 120 days (+ scheduling 30 days in advance?).
+SIF GTC (Good 'till cancelled) listings have a revolving 30 day end date, and this field will reflect the end of the current 30 day period. At the end of each GTC period, the end date for a SIF GTC listings will be over-written with a new date 30 days out.
+Scheduled listings will have an end date, however be aware that their is no constraint on how far out a listing can be scheduled to start, and hence end.
+Half listings essentially "never end", which means that they have AUCT_END_DT values quite far in the future (25 years from the start date appears to be the value for live listings).
+This is the date you should use to constrain any queries on the DW tables. This date is used to partition the tables across disks, and so specifying a date will allow your query to run much faster, as well as consume less DW resources.
+• AUCT_END_DATE
+The timestamp of the listing end time. See AUCT_END_DT for details.
+Please note that Daylight Saving Time (DST) can cause time difference between the actual timestamp on the site and the timestamp in the Data warehouse, depending upon the site where the item is listed
+• ITEM_SITE_ID
+• Contains the site ID that the listing was listed on.
+• Lookup:DW_SITES
+• There is a known issue that ~5k items have different site_id between DW LSTG tables and DW_CHECKOUT_TRANS table.  
+Some of these issue items have 0 as site_id in lstg table but 100 as site_id in checkout table. 
+• The other issue items have 100 as site_id in lstg table but 0 as site_id in checkout table.
+PD is helping check the root cause in Jira XOSVC-7669. There's no clear understanding of why this is happening. 
+• AUCT_TYPE_CODE
+• The format of the listing. Common values include:
+1 = Chinese Auction (normal auction, auction with BIN), Live Auction
+2 = Dutch Auction
+3 = Auction Reverse (never implemented on Site)
+4 = Auction Yankee (never implemented on Site)
+ations
+5 = Old Live Auctions(deprecated)
+6 = AdFormat: Added by DW
+7 = Store Fixed Price
+8 = Auction Personal Offer/Second Chance Offer
+9 = Fixed Price
+10 = Want it Now (WIN)
+12 = Half.com Listings
+13 = Lead Generation, Classified Ads, AKA Best Offer Only
+14 = eBay Express Only format
+15 = Shopping.com Listing (SDC), SDC on DW_LSTG_ITEM was stopped by 2008/8/15
+100 = Review (never implemented as auction type)
+101 = Guide (never implemented as auction type)
+-888 = Site value caused DW overflow error
+-999 = Unknown, Added by DW
+0 = Unknown Auction
+-5 = Stubhub
+-4 = Half Instant Sale
+-3 = Instant Sale
+-2 = Group Auction
+-1 = Group Buying
+• Sellers can use the Buy It Now (BIN) feature in Online Auction, Fixed Price, and Store Inventory formats. 
+• CASE WHEN AUCT_TYPE_CODE IN (1,2) AND bin_price_usd > 0 THEN 'ABIN' WHEN AUCT_TYPE_CODE IN (1,2) THEN 'AUCTION' WHEN AUCT_TYPE_CODE IN (7,9)THEN 'FP' ELSE 'Other' END
+• TYPE 3, 10, 11,-1,-2,-3,-4,-5 will not flow into dw_lstg_item table.
+• Lookup table: DW_AUCTION_CODES. 
+• More details:DW_AUCTION_CODES.
+• WACKO_YN
+Flag that indicates whether the listing is considered a "wacko" listing. SeeListings/Wackofor more details on wacko processing.
+The listing-level wacko is flagged based on the following logic when a wacko transaction is processed:
+For Chinese auctions, if the transaction is wacko, both the transaction and the listing are marked as wacko.
+For Dutch auctions, if any of the transactions for the listing are marked as wacko, then all transactions are marked as wacko, and the listing is also marked as wacko.
+For other mulch-quantity listings, if one transaction is marked as wacko, then only that transaction will be marked wacko, and the listing will be marked wacko.
+This flag is set by the site at time of EOA.
+Because of the above, this flag is NOT the source of record for wacko information. The RPRTD_WACKO_YN field in DW_CHECKOUT_TRANS is the true source of record for wacko information.
+• SALE_SCHED_END_DT
+Date the listing is scheduled to end.
+For scheduled listing, SALE_SCHED_END_DT is set when seller list an item in SYI flow, which equals "sale_start + duration"
+For non-scheduled listing, SALE_SCHED_END_DT is set same as SALE_END in EBAY_ITEM table.
+This field will not get updated when the listing is ended or checked out
+This field is not able to be updated once there is a sale for multi-qty FP/SIF item
+This field will only get updated when seller modifies the listing duration or sale_start date in RYI flow when there is no sale.
+In DW, SALE_SCHED_END_DT of archived item are set to 1969-12-31. And many half listings will have SALE_SCHED_END_DT in the far future i.e. 2034-01-01
+• ITEM_CNTRY_ID
+The country that the seller says the item is located in
+• ITEM_LOC
+Gives the seller's item location
+• ITEM_ZIP
+Item Zip code
+• LSTG_STATUS_ID
+Indicates an item's activity status such as live, ended, deleted or archived etc. This column does not exist on the source table EBAY_ITEMS. DW determines a listing item's status based on various logics for different case scenarios.
+Potential values: 
+0 –Livelistings that are active and searchable on the site (Note: GTC listings which are out of stock are not searchable but still have status 0);
+Please note that you also need to consider whether the item is on hold. On-hold listings will still have lstg_status_id = 0, but are not live on site. Please use the ItemOnHold flag stored in FLAGS5 (logic: CASE WHEN CAST(flags5 AS BIGINT) & 1024 = 1024 THEN 'Y' ELSE 'N' END as on_hold);
+1 –Endedlistings that are not active on the site;
+2 –Admin endedlistings that were ended by CS on the site;
+3 –Deletedlistings that are physically removed from the site. Sellers can delete their listings at any time before their listing starts;
+4 –Scheduledlistings that are not active on the site yet.
+For more details about Admin Ended listings, please seeDataWarehouse/Listings/Archiving.
+Listings that end naturally and then are later admin ended (taken down by CS) will have LSTG_STATUS_ID = 1, since they ended naturally.
+The logic was adjusted on 2022-01-20 PST, please find details change in PRD
+• ICON_FLAGS
+This field is an enumeration of potential paid-for icon values associated with the listing. Note that this is a numeric field that is stored in a character data type.
+On the Motors site (the primary site for most of the icons), the Icons are shown on ViewItem and in Browse, but not in Search. For the Core Gift Icon, though, it appears in all placements (VI, Search, & Browse). The available icons for a given listing also appear to vary by category of the listing.
+Potential values are: ('-99' = None, '0' = None, '1' = 4x4 icon, '2' = Boat icon, '5' = Racing Flag icon, '6' = Hard Hat icon, '7' = Gift icon (Motors), '8' = V8 icon, '9' = Japanese Flag icon, '14' = U.S. Flag icon, '15' = Wrench icon, '16' = Tire icon, '32' = Gift icon (Core & Int'l).
+• HIGH_BDR_ID
+A value of -998 indicates a multi-quantity listing (excluding Dutch) where a single bidder cannot be determined; a value of -999 indicates the bidder is unknown.
+For Dutch Auctions the buyer who bids the lowest amount and wins the bid will be stored as the HIGH_BDR_ID in this table. To get a list of buyer ids for a given item id, join the DW_LSTG_ITEM table to DW_CHECKOUT_TRANS table or DW_BID with WINNING_QTY >= 1.
+• AUCT_START_EXCHNG_RATE
+• AUCT_END_EXCHNG_RATE
+• LSTG_CURNCY_ID
+The ID of the currency that the listing was listed in
+NOTE: You cannot assume a 1-1 mapping between ITEM_SITE_ID and LSTG_CURNCY_ID. Not only do Canadian listings have the option to choose either USD or CAD, but there are many listings (some live on .com right now) that use currencies that are not the currency of the site they were listed on.
+Joins to DW_CURRENCIES, DW_DAILY_EXCHANGE_RATES
+• START_PRICE_USD
+The start price of the listing, in US dollars. Use this for SIF/FP items (not BIN_PRICE_USD or CURNT_PRICE_USD). See below for format-specific details:
+Auctions & Dutch auctions: The start price of the listing.
+Live Auctions:
+SIF:
+Second Chance Offer:
+Fixed Price: The BIN price.
+Express-Only:
+Half:
+SDC:
+• START_PRICE_LSTG_CURNCY
+The start price of the listing, in listing currency. Use this for SIF/FP items (not BIN_PRICE_USD or CURNT_PRICE_USD). See below for format-specific details:
+Auctions & Dutch auctions: The start price of the listing.
+Live Auctions:
+SIF:
+Second Chance Offer:
+Fixed Price: The BIN price.
+Express-Only:
+Half:
+SDC:
+• RSRV_PRICE_USD
+The reserve price of the listing, in US dollars. See below for format-specific details:
+Auctions & Dutch auctions: The reserve price of the listing.
+Live Auctions:
+SIF:
+Second Chance Offer:
+Fixed Price: Mostly zero, but can be non-zero. Unclear what the meaning is when non-zero.
+Express-Only:
+Half:
+SDC:
+• RSRV_PRICE_LIST_CRNCY
+The reserve price of the listing, in listing currency. See below for format-specific details:
+Auctions & Dutch auctions: The reserve price of the listing.
+Live Auctions:
+SIF:
+Second Chance Offer:
+Fixed Price: Mostly zero, but can be non-zero. Unclear what the meaning is when non-zero.
+Express-Only:
+Half:
+SDC:
+• BIN_PRICE_USD
+The BIN price for the listing in US dollars. See below for format-specific details:
+Auctions & Dutch auctions: This will be > zero for Auction/BIN and Dutch/BIN listings.
+Live Auctions: Always zero.
+SIF: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+Second Chance Offer: The "offer price".
+Fixed Price: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+Express-Only: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+Half: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+SDC: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+• BIN_PRICE_LSTG_CURNCY
+The BIN price for the listing in the listing currency. See below for format-specific details:
+Auctions & Dutch auctions: This will be > zero for Auction/BIN and Dutch/BIN listings.
+Live Auctions: Always zero.
+SIF: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+Second Chance Offer: The "offer price".
+Fixed Price: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+Express-Only: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+Half: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+SDC: Always zero. To get the BIN price, look at the CURNT_PRICE fields.
+• CURNT_PRICE_USD
+The current price of the listing, in US dollars. Note: Current price doesn't always appear to have the correct BIN price (since it's sometimes zero for SIF/FP items). Should likely use start_price_usd for SIF/FP. See below for format-specific details:
+Auctions & Dutch auctions: This is the current price if a bid has been placed. If there have been no bids, the current price will be zero (not the start price).
+Live Auctions:
+SIF: The current BIN price, regardless of whether a sale has occurred.
+Second Chance Offer: Only non-zero if an actual purchase took place.
+Fixed Price: The current BIN price, regardless of whether a sale has occurred.
+Express-Only:
+Half:
+SDC:
+• CURNT_PRICE_LSTG_CURNCY
+The current price of the listing, in listing currency. Note: Current price doesn't always appear to have the correct BIN price (since it's sometimes zero for SIF/FP items). Should likely use start_price_usd for SIF/FP. See below for format-specific details:
+Auctions & Dutch auctions: This is the current price if a bid has been placed. If there have been no bids, the current price will be zero (not the start price).
+Live Auctions:
+SIF: The current BIN price, regardless of whether a sale has occurred.
+Second Chance Offer: Only non-zero if an actual purchase took place.
+Fixed Price: The current BIN price, regardless of whether a sale has occurred.
+Express-Only:
+Half:
+SDC:
+• GMS_USD
+This is a calculated field in the DW. It is based off of GMS_EST_LSTG_CURNCY, and is captured once at listing end (and converted based on that day's exchange rate, which is technically not 100% accurate for mulch-quantity listings, but certainly close enough).
+The important thing to know about this field is that it's a pretty accurate representation of GMV for alisting, but it makes no statements about thetimingof the GMV. For mulch-quantity purchases, some GMV could have happened in one week/month/year, while other purchases happened much later. That's why technically, accurate GMV calculations must be based onDW_CHECKOUT_TRANS.
+Not populated for Ad Format 1.0
+Quantity sold and GMV should come fromDW_CHECKOUT_TRANS, as the issue is that data for multi-quantity listings tend to be out of synch in DW_LSTG_ITEM (Updated on 03/07/2011)
+• GMS_LSTG_CURNCY
+For GTC and longer duration listings, the GMS will show up as zero until the listing ends, even if items have been sold.
+• GMS_USD_EST
+• GMS_LSTG_CURNCY_EST
+• QTY_SOLD
+The quantity sold from this listing.
+In order to get the quantity remaining on the listing (what some might call the "available quantity"), you must use (QTY_AVAIL - QTY_SOLD).
+WARNING: QTY_AVAIL - QTY_SOLD indicated "sale units" remaining, but not the available inventory remaining. To derive inventory counts you need to multiply the remainder by LOT_SIZE fromDW_LSTG_ITEM_COLD. You must use ((DW_LSTG_ITEM.QTY_AVAIL - DW_LSTG_ITEM.QTY_SOLD) * DW_LSTG_ITEM_COLD.LOT_SIZE). (Updated on 02/02/2012)
+Quantity sold and GMV should come fromDW_CHECKOUT_TRANS, as the issue is that data for multi-quantity listings tend to be out of synch in DW_LSTG_ITEM (Updated on 03/07/2011). In addition, reporting GMV from DW_CHECKOUT_TRANS avoids under- or over-reporting for MSKU listing where the variations are priced differently. Variations in SKU prices in a MSKU are not reflected in START_PRICE_USD and START_PRICE_LSTG_CURNCY in DW_LSTG_ITEM (Updated on 02/02/2012).
+The QTY_SOLD of 0.01% data is out of sync with quantity sold in DW_CHECKOUT_TRANS. There are following root causes:
+For BOPIS(Buy Online Pickup In Store) items, site populated another column QUANTITY_SOLD_BY_PICKUP_STORE in site table EBAY_ITEMS. But it is not in this DW table.
+RESERVED_QUANTITY is not cleared due to the BES consumer issue where locked items are not released.
+Unknown root cause.
+• QTY_AVAIL
+The number of this item that are initially available for sale. This is set at listing start time on the site and only updated when the seller adds or removes inventory. Specifically, it is NOT updated when a sale occurs.
+In order to get the quantity remaining on the listing (what shows up on ViewItem as "Quantity: X available"), you must use (QTY_AVAIL - QTY_SOLD).
+Item is ended when available qty becomes 0 but if the item is GTC and the seller has the OOS preference set then the item will not be ended. The item example below is a GTC item and the seller does have OOS preference set so item will show in VI as out of stock and will not end so the seller can replenish quantity when they have it.
+• BIDCOUNT
+Count of bids that the listing has received. This field is a direct pull from the site.
+This should NOT be used as the source of truth for the number of bids. This field handles several use cases differently, including BINs, Live Auctions, and Classified format.
+Note that this does NOT include BINs.
+• SUCCESS_YN
+This is a value calculated by the DW to indicate whether an item has been successful or not.
+The logic used to calculate is as follows (as of 3/20/2006):
+If the listing has AUCT_TYPE_CODE 2,7,9,12, or 13 (Dutch, SIF, Fixed Price, Half or Lead Generation), then if DUTCH_GMS > 0 and QUANTITY_SOLD > 0, then this flag is set to Y, otherwise it's N.
+It appears this flag is set to 'Y' for AUCT_TYPE_CODE 12 only if the listing sells an item on eBay via HalfonCore. While sales on Half.com don't appear to set this flag, more investigation is needed...
+If the listing has any other AUCT_TYPE_CODE, then if CURRENT_PRICE > 0 and CURRENT_PRICE >= RESERVE_PRICE and BIDCOUNT > 0 and HIGH_BIDDER <> -1 and QUANTITY_SOLD > 0, then this flag is set to Y, otherwise it's N.
+Because of the above logic, it won't be populated for Ad Format 1.0, since ad format items won't have bids.
+This is a known issue flag. if you wanna know the success YN, please use the Checkout table. A successful listing is a listing that has a checkout transaction.
+• STOR_LSTG_YN_FLAG_ID
+• MR_LISTER_FLAG
+• SLNG_MGR_SBSCRBR_FLAG
+• SLNG_MGR_PRO_SBSCRBR_FLAG
+• SLNG_MGR_PRO_USED_UP_FLAG
+• BIN_SOLD_UP_FLAG
+• This is an unpacked flag containing the output of the PASSWORDEX.0x00004000 flag. It is meant to indicate whether a listing was sold via a Buy It Now flow. Its primary purpose is to distinguish Auction/BIN listings.
+• This flag is unreliable for BIN-only formats like SIF, Fixed Price, Half, Express-Only, and SDC. Rely on the AUCT_TYPE_CODE instead. In addition, all successful Second Chance Offer are considered BIN according to this flag.
+• Potential values:
+0 = Not sold as BIN
+1 = Sold as BIN
+• This flag alone can not tell whether an item is sold by BIN or BID. You might need to check multiple flags to determine BIN/BID exactly, the table below tells you how to do that.
+DW_LSTG_ITEM
+DW_BID
+
+Auct_type_code
+Bin_sold_up_flag
+Bid_type_code
+Note
+Event type
+1
+1
+--
+Chinese auction + Bin
+BIN
+1
+0
+--
+Chinese auction (general bid)
+Bid
+2
+---
+9
+Dutch auction + Fixed Priced Item Purchase
+BIN
+2
+---
+---
+Dutch auction (general bid)
+Bid
+5 (deprecated)
+---
+---
+Old Live Auction
+Bid
+8
+---
+---
+Auction Personal Offer
+Bid
+7 , 9
+---
+---
+Store Fixed Price , Fixed Price
+BIN
+• GTC_UP_FLAG
+Indicates whether the listing is a GTC (Good Til Cancelled) listing. Currently only applicable to Store Inventory Format items. ( With Dynamo also available for Fixed Price Listings on the US site )
+Source: ebay_items visitcount 0x01000000 eItemGoodTillCancelled
+GTC automatic renewal could be expired or blocked due to different reasons. Refer toDynamo - GTC Listing Expiration StepsandBlock GTC Renewals
+• PAYPAL_ACCEPTED_UP_FLAG
+Important - this value is not true for all PI listings -> If you need PI metrics, you need to use 0x00040000 (262144) EbayIntermediatedPaymentMethod: Identifies the eBay intermediated payment method from DW_LSTG_ITEM_COLD
+• CK_FETR_UP_FLAG
+• MRCH_TOOL_UP_FLAG
+• SYI_2_UP_FLAG
+• EBX_ELGBL_ITEM_YN_ID
+This is the overall flag indicating whether this item is eligible for eBay Express (assuming it's live).
+This flag is calculated by the DW based on the 4 flags pulled from site intoDataWarehouse/Listings/DW_LSTG_ITEM_COLD. The logic used to rollup the flags is as follows: the CS force out bit must be 0, and both the batch Qualify and item opt-in flag must be set to 1.
+This flag will be automatically set to 0 for all Shopping.com items (despite the fact that the site will have the value as 1).
+• CHARITY_GIVING_TOOL_UP_FLAG
+CHARITY_GIVING_TOOL_UP_FLAG=1 means YES and CHARITY_GIVING_TOOL_UP_FLAG=0 means NO
+• B2B_UP_FLAG
+• SLR_PAYPAL_PREFD_UP_FLAG
+• CATEG_SLNG_GUIDE_USED_UP_FLAG
+• RELIST_UP_FLAG
+This flag indicates whether the item was created using relist functionality on site or set by 3rd party tool when listed via API
+Note, this flag DOES NOT mean a insertion relist credit was given (for credit see site rules and the RELIST_CRD_UP_FLAG below)
+Relisted listings will also have a row in the DW_LSTG_GEN table that identifies parent listing and heritage (for 2006 onwards)
+Note, this flag is not suppose to capture sell similar but does in ~1% of cases(verified as of Nov 2011 rdieckma). Unclear if this is a bug or intended.
+• RELIST_CRD_UP_FLAG
+• OFRD_SLNG_CHNL_ID
+• This represents on what selling channel the item is offered i.e whether it is ebay.com, ebay express, Artisan marketplaces and so on.
+• 1 = eBay
+• 2 = eBay Express
+• 3 = Shopping.com(SDC on DW_LSTG_ITEM was stopped by 2008/8/15)
+• 4 = Half.com - Items show up only on half.com
+• 5 = eBay, ebay Express
+• 6 = Half.com, eBay Express - Items show up in both half.com and express.com
+• 7 = eBay, Half.com - Items show up in both half.com and ebay.com
+• 8 = eBay, Artisan Market
+• 9 = eBay, Artisan Market, eBay Express
+
+-99 Unknown 0 0 0 0 0
+1 eBay 1 0 0 0 0
+2 eBay Express 0 1 0 0 0
+3 Shopping.com 0 0 1 0 0
+4 Half.com 0 0 0 1 0
+5 eBay, eBay Express 1 1 0 0 0
+6 Half.com, eBay Express 0 1 0 1 0
+7 eBay, Half.com 1 0 0 1 0
+8 eBay, Artisan Market 1 0 0 0 1
+9 eBay, Artisan Market, eBay Express 1 1 0 0 1
+10 Korea Auction.co.kr 0 0 0 0 0
+11 Bazee 0 0 0 0 0
+12 Tradera 0 0 0 0 0
+13 Gmarket 0 0 0 0 0
+14 Instant Sale 0 0 0 0 0
+• LISTED_WITH_AUTOPAY_UP_FLAG
+Indicates whether the listing is an Immediate Pay (/AutoPay) listing.
+From the selling flow perspective, when a listing is marked as IP, that means the seller wants the item to be sold only if payment received.
+Note that this flag can exist on Auction + BIN listings as well as Second Chance Offer listings, and in neither of those cases does the buyer HAVE to go through the Immediate Pay flow. Check the transaction flag (DataWarehouse/Transactions/DW_CHECKOUT_TRANS.CK_FLAGS2 0x20000000) to determine whether or not the buyer actually checked out via the Immediate Pay flow.
+• APPLICATION_ID
+• The Application which listed the item
+Joins toDataWarehouse/API/DW_APPLICATIONS. Be sure to use proper env_ind.
+• Some common applications: 
+APPLICATION_ID=0 AND DW_LSTG_ITEM_COLD.LSTG_MTHD_ID<>21: SYI
+APPLICATION_ID=0 AND DW_LSTG_ITEM_COLD.LSTG_MTHD_ID=21:Easylister
+564: Turbolister
+67161: Webnext
+1285:  Selling manager pro
+2549:  Blackthorne basic
+2557:  Blackthorne pro
+2828:   File exchange
+56507: Bear
+194048: CUB
+71596: MIP
+114100: Auto Relist
+219527: BOLT
+290356: BOLT B2C
+384352: HELIX
+APPLICATION_ID in DW_API_MBL_APP: Mobile
+• IMPORTANT: For On-site list flows which use Listing Drafts (CUB, Bolt, Native, Helix, BEAR, Bling, others):
+This is the APP_ID of the toolused to create the original listing draft
+If the seller created a draft from app #1 (384352: HELIX)and then published it from another (219527: BOLT) the resulting listing App ID will still be Helix
+Also, Item Revisions, from any app, never change a Listing's application_ID.  So even if a listing is revised/edited through 3pp API calls, other ebay internal apps, etc., APPLICATION_ID always keeps its original value.
+• PRODUCT_ID
+This column is to get mapping of listing and Product ID, please switch to attribute id = 173 inDW_ATTR_DETAIL_VALUESto get listing and Product Reference ID instead. (notification)
+Joins to PROD_ID in DW_CTLG_PROD_LKPto get PROD_REF_ID (it is called EPID on ebay site).
+Can be used to link ITEM_ID with the CTLG_ID in DW_CTLG_PROD_LKP.
+All those items with PRODUCT_ID = 0 are those NOT listed in the catalog.
+Only indicates if the seller associated the listing with a catalog item at time of listing. Does NOT include additional listings eBay autotags with low or high confidence. For auto-tagging, see the AT_CNFDNC field inSSA_PRODUCT_FACT(rdieckma nov 2011).
+For auto tagged data NOT in both the above tables, please tryhttps://wiki.vip.corp.ebay.com/pages/viewpage.action?spaceKey=DW&title=CTLG_PROD_VRTN_MAP (this variation map table applies to variation items only which are not the same as the regular listing items. Hence, for such variation items, see ctlg_prod_vrtn_map)
+SAE NOTES:
+PRODUCT_ID is not PROD_REF_ID, but it maps to PROD_REF_ID (with DW_CTLG_PROD_LKP table). PRODUCT_ID is a concept like product version and only available for the ePID in legacy Catalog system. Currently, most of the ePIDs don't have PRODUCT_ID.
+ Before SEPT 2016, item's active adoption is stored in PRODUCT_ID in DW_LSTG_ITEM table. After then, active adoption was changed to be stored n attribute 173 in DW_ATTR_DETAIL_VALUES table. Core Insights team integrated PROD_REF_ID (for active adoption) into DW_LSTG_ITEM table in SEPT 2017.
+Please note: if you are looking for EPID, please use PROD_REF_ID
+• ITEM_PRPTY_KEY_TXT
+Contains keys used for lookups into DW_LSTG_ITEM_PROP_LKP and DW_LSTG_ITEM_PROP_CONTENT_VAL which stores item properties specified by seller and available to a seller's items during VI and elsewhere
+• .PROD_REF_ID
+• Please note: this column is not available in ACCESS_VIEWS.DW_LSTG_ITEM on Hermes at least since 2024/Feb/16, join against DW_LSTG_ITEM_PROD_REF
+• Seller-tagged (active) Product Reference ID (column added 2017/SEP/03)
+• Joins to PROD_REF_ID in CTLG_PROD_FACT to get product (it is called EPID on ebay site) associated info.
+• It comes from attribute 173 in DW_ATTR_DETAIL_VALUES
+• when a seller selects an ePID (eBay Product ID) and assigns it to a listing in a selling flow.
+• Regarding how to access this column onApollo/Ares/Hercules: 
+you can directly access DW_LSTG_ITEM_PROD_REF table.
+you can also access DW_LSTG_ITEM_MERGE view which merges the table schema of DW_LSTG_ITEM and DW_LSTG_ITEM_PROD_REF but this way requires to add table dependency for DW_LSTG_ITEM and DW_LSTG_ITEM_PROD_REF.
+• AT_PROD_REF_ID
+• Please note: this column is not available in ACCESS_VIEWS.DW_LSTG_ITEM on Hermes at least since 2024/Feb/16, join against DW_LSTG_ITEM_PROD_REF
+• Auto-tagged (passive) Product Reference ID. A.k.a. ePID(column added 2017/SEP/03)
+• Joins to PROD_REF_ID in CTLG_PROD_FACT to get product (it is called EPID on ebay site) associated info.
+• It comes from FIND ITEM_ASPCT_CLSSFCTN where PRDCT_ASPCT_NM = 'AutotagProdRefId'
+• when the Structured Data Adoption team tags a listing with an ePID (eBay Product ID).
+• Regarding how to access this column on Apollo/Ares/Hercules: 
+you can directly access DW_LSTG_ITEM_PROD_REF table.
+you can also access DW_LSTG_ITEM_MERGE view which merges the table schema of DW_LSTG_ITEM and DW_LSTG_ITEM_PROD_REF but this way requires to add table dependency for DW_LSTG_ITEM and DW_LSTG_ITEM_PROD_REF.
+• SLR_ID
+• AUCT_TITL
+The item title (shows up in Search and at the top of ViewItem).
+• SUBTITLE
+Contains the full text of the subtitle for the listing (can be null if not supplied by the seller)
+• HIGH_BDR_CNTRY_ID
+High Bidder's Country of residence. Derived from DW USERS INFO based on high_bidder_id.
+• HIGH_BDR_SITE_ID
+High Bidder's registration site. Derived from DW USERS INFO based on high_bidder_id
+• CATEG_KEY
+Joins to DW_CATEGORY_HIERARCHY.CATEG_KEY by DW_LSTG_ITEM.LEAF_CATEG_ID and DW_LSTG_ITEM.ITEM_SITE_ID. 
+• CATEG_KEY2
+Joins to DW_CATEGORY_HIERARCHY.CATEG_KEY by DW_LSTG_ITEM.LEAF_CATEG_ID2 and DW_LSTG_ITEM.ITEM_SITE_ID.
+• PRIVATE_YN
+• RETURN_POLICY_YN
+This field is simply checking whether or not the Return Policy field in the EBAY_ITEMS table is NULL/blank or not. However, the RETURN_POLICY field on the site side is poorly named, and does NOT store return policy information. Return policy information is stored in the Attributes subject area. The RETURN_POLICY field on the site side stores the "Seller's Payment Instructions" text. So this field indicates whether or not the seller has entered specific payment instruction text.
+• BOLD_TITLE
+• FEATURED
+Indicates whether an item is a Featured Plus item (also called Category Featured, or just Featured).
+Potential values are: '1' = Featured Plus item, '0' = Not Featured Plus.
+This field is NULL prior to 12/10/2004.
+• SUPER_FEATURED
+• GLRY_STATE
+State of a Gallery image upload.
+Potential values are : (0 = NotProcessed, 1 = Success, 2 = BadURL, 3 = BadProtocol, 4 = PermanentBadImage, 5 = HostNameDoesNotExist, 6 = ServerNotAvailable, 7 = ItemNotFound, 8 = FailedDownload, 9 = ImageFormat, 10 = BadImage, 11 = InternalError, 12 = Removed, 13 = MailError, 14 = MaxResultCode, -999 is null value)
+Do not use this flag for gallery adoption. According to IMD this field is often incorrectly defaulted by auct_type. Instead use the glry_type_id field in dw_lstg_item_cold. Ryan Minson 8/2007.
+• STOREFRONT_FLAGS
+SeeDataWarehouse/Flags
+• UTF8_STATUS
+• PBP_ELIGIBILITY
+Paypal Buyer Protection eligible Y/N
+Source of record: /v3dal/DALItem/src/com/ebay/integ/item/common/PbpSaleEligibilityEnum.java in ClearCase
+Potential values:
+-9 = NULL
+0 = Ineligible
+1 = Eligible
+2 = Ineligible Manual
+3 = Eligible Manual
+4 = No Coverage
+• LSTG_MTHD_ID
+This is a field that delimits some of the on-site listing methods. This field is populated with the method of the most recent list or revise flow used on the listing. The lookup table for potential values is DW_LSTG_MTHD.
+Source of truth: /v3core/CoreDomain/CoreDomainCommon/src/com/ebay/domain/core/common/ListingMethodTypeEnum.java in ClearCase.
+As of 2023-09-07 values 2-8,11-16 are not found for active listings, the majority of active listings have 19 or 23, though there are other values present.
+-99 = Unknown
+1 = SYI2
+2 = Old SYI
+3 = SYI Express (not ebay Express)
+5 = API
+6 = BulkRelistUnsold
+7 = BulkRelistSold
+8 = Convert SIF to Auction
+9 = Convert SIF to FP
+10 = Relist as SIF
+11 = Sell Like Item (Sell similar???)
+12,14,15,16,17 = SYI 3 and its alapha/beta tests (Includes C2C Web Next)
+18 =Half.comsale
+19 = SYI 3 API (Includes C2C Web Next)
+20 = SYI 3 Bulk Sell Again
+21 = EasyLister
+22 = NGSYI (Next Generation SYI - used for vehicle listings on the motors site)
+23 = Listing Draft Service
+• RELISTID
+The item ID of the item got relisted from this item.
+• RELIST_PARENT_ITEM_ID
+The item ID of the parent item if the listing went through relist or sell-similar flow. See also the columnRELIST_UP_FLAG.
+• LOWER_RELIST_OPTION
+Indicates the option the user chose to indicate the listing price when relisting the item.
+Covers (which?) relist flows.
+Potential values (source of record: /v3core/CoreDomain/CoreDomainCommon/src/com/ebay/domain/core/common/RelistOptionEnum.java in ClearCase):
+0 = Not Defined
+1 = Original Start Price
+2 = 50% Off
+3 = Suggested Price
+NULL / -99 = Unknown
+• AUCTION_END_REASON_CODE
+The reason for the item ending.
+The AUCTION_END_REASON_CODE is based on the ENDCODE column in EBAY_ITEMS on site which defines the reason code for why the seller canceled their auction early and 0 = 'Not Ended Early'.
+There is no other column that indicates if an item was administratively ended by eBay. But if you want to know the administratively ended listings that never made it to site , then you would need to look in DW_ITEMS_BLOCKED which includes attempted listing records that were blocked by eLVIS and were never truly listings on the site.
+If you want to look at listings that made it to site, but got administratively ended, then you would find them inDataWarehouse/TnS/DW_ITEMS_ARC, and you can find the enote associated with the cancellation in DW_ITEMS_ARC_NOTE_MAP.
+It has both system generated values and user entered values.
+Potential values (source of record on site: /v3selling/SellingDomain/SellingDomainCommon/src/com/ebay/domain/selling/common/EndSaleReasonEnum.java in ClearCase):
+0 = Not Ended Early (Ended naturally)
+This value is set when an Auction ends at it's scheduled end time
+After 2019, Fixed Price listings no longer have fixed durations, they are all GTC, so they will not naturally end due to Scheduled End Date
+Fixed Price listings cannaturally end when they sell out of quantity (only if the seller does not use out-of-stock control)
+This value may also be set, somewhat confusingly, when GCX takes administrative actions on a listing and ends it (dprocter Nov 22: We are working on changing this with GCX team and introducing more granular codes)
+1 = Item was lost or broken (Item Ended Manually by Seller)
+2 = The item is no longer available for sale (Item Ended Manually by Seller)
+3 = There was an error in the minimum bid or Reserve amount (Item Ended Manually by Seller)
+4 = There was an error in the listing (Item Ended Manually by Seller)
+5 = EndAuctionAndSell (Seller ended an auction early and sold to the highest bidder)
+6 = EndReasonAVSTickets
+7 = EndReasonSIFBulkEnd (For items ended by Bulk Sif to Core or by Bulk End Items for Store Inventory Management)
+8 = EndReasonDBScriptManual (Indicate items that are ended manually via DBA script) 
+9 = SoldOnProStores (Deprecated)
+10 = SoldVehicle (Added for 21645-Motors Mass Market Local FSBO)
+11 = EndItemOnZeroQuantity (Added for MSKU enhancements 2012)
+99 = Ended during GTC Renewal for GTC policy failures/issues, such as account on hold
+When this value is set, see ACCESS_VIEWS.LSTG_ITEM_GTC_NON_RNWD for detailed reasons
+This process is owned by Pricing/Plutus/Monetization team, enforced by the EOA/Plutus App
+-99 exists before 2008/10/14
+• STOCK_PHOTO_USED_YN
+• This field indicates whether the GALLERY_IMAGE_SOURCE column in the site table is = 768 or not. If so, then this field will be 'Y', otherwise it will be 'N'. Also, the data (around ~2% of total site id 0 listings have a value of "Y") appears to indicate that this value is set to "Y" when a product catalog image is used.
+• The Gallery Photo is the photo shown in search results and wherever the listing might surface in merchandising, deals page, etc(Any non View Item case).
+• The Gallery photo is also generally the first photo when viewing the item in View Item, although, there are some cases where View Item now shows a Stock Photo even if the seller provided a photo (this is a Product Based Commerce project change)
+• This indicates if the Gallery URL is coming from the catalog product. It is the mostauthoritativerepresentation of whether the item 'holds' a stock photo.
+• Compare with the bit value of 0x00000040(Set if the listing has a stock photo) in FLAGS4 of 30 days' data. There are 5.5% unsync.
+• How that could happen: 
+Seller sets it true (say in API call)
+Seller adds their own pictures after
+The first of those pictures becomes the Gallery image
+GALLERY_IMAGE_SOURCE is set !=768
+• Later, say, seller removes all their images:
+StockPhotoUsed flag is still true
+Gallery URL is updated back to Stock URL
+GALLERY_IMAGE_SOURCE back = 768
+• However as you see below. There is no case where:
+GALLERY_IMAGE_SOURCE = 768
+But Flags4 bit X0000040 (StockPhotoUsed) = 0
+This is as expected
+FLAGS4 - 0x00000040
+STOCK_PHOTO_USED_YN
+Count(*)
+Share %
+0
+N
+304,453,553
+94.44%
+1
+N
+17,714,158
+5.50%
+1
+Y
+198,088
+0.06%
+Sum
+
+322,365,799
+
+• LOT_SIZE
+• THEME_ID - Listing Designer Theme ID - this is an old feature which adds a visual frame / border around your listing description. It is deprecated for CUB and all UX flows (it cannot be added or removed) but it can still be set via AddItem API family. Since it cannot be removed in UX, the fee is set to zero for it. We did not completely deprecate it due to the large number of B2C sellers who still have it and access it via API.  
+• LAYOUT_ID - Listing Designer Layout ID. See ^
+• LAYOUT_FLAG
+• PAYMENT_CASH
+• This corresponds to the 'Payment on Pickup' option in listing flows, it is known by various local names by site as well 
+• When this option is set, the buyer can check out with this selected, and must contact seller to meet them, there is no online payment and the transaction does not qualify for buyer protection
+
+• PAYMENT_CC
+Credit Card payment type is accepted by seller
+• PAYMENT_MONEYXFER
+Money transfer payment type is accepted by seller
+• SHIPPING_FEE
+Shipping fee as shown on the listing. Does not necessarily reflect the actual shipping fees paid. If shipping calculator was used fee shows as $0.
+Shipping Cost of first domestic shipping service
+It's local curreny
+• SHIPPING_XFEE
+Shipping fee as shown on the listing for "Each Additional Item." Does not necessarily reflect the actual shipping fees paid.
+• INSURANCE_FEE_LSTG_CURNCY
+The shipping insurance fee associated with the listing.
+• GMS_DUTCH_LSTG_CURNCY
+• SHIPPING_TYPE
+Indicates the type of shipping that was specified on the listing.
+Refer to this code url:https://github.corp.ebay.com/SellingDomain/svls/blob/master/svlsLib/src/main/java/com/ebay/selling/svls/mapper/v3enum/ShippingTypeEnum.java
+Potential values:
+0 = Not specified
+1 = Flat Rate
+2 = Calculated Rate
+3 = Freight
+4 = ? (Unknown)
+5 = Flat rate for domestic and calculated for international
+6 = Calculated rate for domestic and flat for international
+-999 = NULL
+• SHIP_OPTION_CODE
+Indicates the shipping options offered by the Seller.
+Potential values: (-99 = Unknown, -88 = Invalid, 0 = SiteOnly, 1 = SitePlusRegions, 2 = Worldwide, 3 = Will Not Ship, 4 = Terms And Conditions Only)
+Refer to this code url:https://github.corp.ebay.com/CorePurchaseService/TrustedBuyingService/blob/9726edcd29a7f1a853ed373fd096129faa7120aa/SharedBuyingDomain/SharedBuyingDomainCommon/src/main/java/com/ebay/domain/sharedbuying/common/ShippingOptionEnum.java
+Lookup table for potential values: DW_SHPMT_OPTN
+• SHIP_REGN_FLAGS
+0x00000001 NorthAmerica
+0x00000002 Europe
+0x00000004 Australasia
+0x00000008 Asia
+0x00000010 SouthAmerica
+0x00000020 Africa
+0x00000040 LatinAmerica
+0x00000080 MiddleEast
+0x00000100 Caribbean
+• WEIGHT_UNIT_TYPE
+Indicates the unit of weight used for the item. If WEIGHT_UNIT_TYPE=1 then 'Ounces' else if WEIGHT_UNIT_TYPE=2 then 'Grams'.
+• WEIGHT
+• PACKAGE_SIZE
+Enums which indicate different packages. Refer to this code: https://github.corp.ebay.com/SellingDomain/svls/blob/3144822d09ff736246dc0a102ab24d74c32b261e/svlsLib/src/main/java/com/ebay/selling/svls/mapper/v3enum/ShippingPackageEnum.java
+• PAYPAL_SELLER_EMAIL
+The seller's PayPal email address associated with the listing.
+This column is considered PII (Personally Identifiable Information), and hence isn't available in ACCESS_VIEWS, but is exposed for users who have PII access privileges in PRS_SECURE_V.
+PayPal is not mandatory in all categories. Certain categories in certain sites may not mandate PayPal.
+• PAYPAL_ICON_TYPE
+• TAX_NEW
+the SalesTaxPercent seller providered
+• MAXBID
+• LAST_MODFD_DT
+• CONTENT_MODIFIED
+• AUCT_START_DATE
+• SALE_SCHED_END_DATE
+• LAST_TRANSACTION_DATE
+Last purchase Date
+• SITE_CREATE_DATE
+• LAST_MODFD_DATE
+Date that this item is last modified
+• NOTICE_DATE
+Time that EOA is sent out
+• LSTG_STATUS_UPD_DATE
+This column only gets updated when a listing is changed from live (lstg_status_id =0) to ended (lstg_status_id = 1).
+• PASSWORDEX
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) itemPwExBlockBuyerShipTo (created by unknown on 01/01/2005) - not be used for this purpose any more. Please check DW_ATTR_LSTG_DTL_COLD for Buyer Requirements.
+0x00000002 (2) itemPwExBlockBuyerUPI (created by unknown on 01/01/2005) - not be used for this purpose any more
+0x00000004 (4) itemPwExBlockBuyerFeedBack (created by unknown on 01/01/2005) - not be used for this purpose any more
+0x00000008 (8) ItemCreditSlideShow (created by unknown on 01/01/2005)
+0x00000010 (16) eBoldListings (created by unknown on 01/01/2005)
+0x00000020 (32) eBoldSearch (created by unknown on 01/01/2005)
+0x00000040 (64) eHighlightListings (created by unknown on 01/01/2005)
+0x00000080 (128) eHighlightSearch (created by unknown on 01/01/2005)
+0x00000100 (256) ItemCreditHighlight (created by unknown on 01/01/2005)
+0x00000200 (512) realestatevirtualture (created by unknown on 01/01/2005)
+0x00000400 (1024) Honest Style Counter is on ViewItem (created by unknown on 01/01/2005)
+0x00000800 (2048) LED Style Counter is on ViewItem (created by unknown on 01/01/2005)
+0x00001000 (4096) Hidden Style Counter is on the ViewItem (created by unknown on 01/01/2005)
+0x00002000 (8192) CreditRealEstate30DaysAuction (created by unknown on 01/01/2005)
+0x00004000 (16384) ClosedAsBin (created by unknown on 01/01/2005)
+0x00008000 (32768) RestrictedBidding (created by unknown on 01/01/2005)
+0x00010000 (65536) UsedBidderAllow (created by unknown on 01/01/2005)
+0x00020000 (131072) HasPayCondition (created by unknown on 01/01/2005)
+0x00040000 (262144) ItemCreditPhoto (created by unknown on 01/01/2005)
+0x00080000 (524288) AuctionLengthFeeCharged (created by unknown on 01/01/2005)
+0x00100000 (1048576) ItemCreditAuctionLength (created by unknown on 01/01/2005)
+0x00200000 (2097152) ItemCreditLargePicture (created by unknown on 01/01/2005)
+0x00400000 (4194304) eNoRecoItems * (created by unknown on 01/01/2005)
+0x00800000 (8388608) eNoRecoEmail * (created by unknown on 01/01/2005)
+0x01000000 (16777216) PersonalOfferRNM (created by unknown on 01/01/2005)
+0x02000000 (33554432) ItemCreditBIN (created by unknown on 01/01/2005)
+0x04000000 (67108864) PaymentPaybox (created by unknown on 01/01/2005)
+0x08000000 (134217728) AllBiddersSentReminders (created by unknown on 01/01/2005)
+0x10000000 (268435456) PicturePackPlusCharged (created by unknown on 01/01/2005)
+0x20000000 (536870912) InsuranceRequired (created by unknown on 01/01/2005)
+0x40000000 (1073741824) ItemCreditPicturePackPartial (created by unknown on 01/01/2005)
+• FLAGS
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) eItemFlagsListedAfterCheckout (created by unknown on 01/01/2005)
+0x00000002 (2) eItemFlagsTotalAmountEditable (created by unknown on 01/01/2005)
+0x00000004 (4) eItemFlagsSaleTaxIncludeShippingFee (created by unknown on 01/01/2005)
+0x00000008 (8) eItemFlagsCheckoutDetailsSpecified (created by unknown on 01/01/2005)
+0x00000010 (16) eItemFlagsIsItemAuthenticated(created by unknown on 01/01/2005)
+0x00000020 (32) eItemFlagsIsDomainAttributeSearchable (created by unknown on 01/01/2005)
+0x00000040 (64) eItemFlagsIsHomesDirect (created by unknown on 01/01/2005)
+0x00000080 (128) eItemFlagsStartTimeInPdtPstSwitch (created by spandurangan on 07/06/2005)
+0x00000100 (256) Set if seller has disabled Checkout (created by unknown on 01/01/2005)
+0x00000200 (512) eItemFlagsIsSubsidiary (created by unknown on 01/01/2005)
+0x00000400 (1024) eItemFlagsHasDomainAttributes (created by unknown on 01/01/2005)
+0x00000800 (2048) eItemFlagsSYIWizard (created by unknown on 01/01/2005)
+0x00001000 (4096) eItemFlagsIsBINFeeCharged (created by unknown on 01/01/2005)
+0x00002000 (8192) eItemFlagsIsBindingAuction (created by unknown on 01/01/2005)
+0x00004000 (16384) eItemFlagsListingViolationDelay (created by unknown on 01/01/2005)
+0x00008000 (32768) eItemFlagsRYIWizard (created by unknown on 01/01/2005)
+0x00010000 (65536) eItemFlagsIs10DaysFeeCharged (created by unknown on 01/01/2005)
+0x00020000 (131072) eItemFlagsIsCIPEnabled (created by unknown on 01/01/2005) # this is the Payments flag for CIP a.k.a. Uberweisung in DE
+0x00040000 (262144) Set if listing is hidden from search by Stores Vacation Hold (note that this only applies while it's hidden) (created by unknown on 01/01/2005)  
+update by Sun, jiajie on 12/09/2022: confirmed from SitePD, Dw_lstg_item don't store the vacation hold flag any more,vacation hold is now available to all sellers. It is not required to have a store subscription to use vacation hold, and item vacation is glodbal, not tied to a site.
+0x00080000 (524288) eItemFlagsScheduledListingCharged (created by unknown on 01/01/2005)
+0x00100000 (1048576) eItemFlagsScheduledListing (created by unknown on 01/01/2005)
+0x00200000 (2097152) eItemFlagsIsBINFee2Charged (created by unknown on 01/01/2005)
+0x00400000 (4194304) eItemFlagsIs10DaysFee2Charged (created by unknown on 01/01/2005)
+0x00800000 (8388608) eItemFlagsScheduledListingCredit (created by unknown on 01/01/2005)
+0x01000000 (16777216) eItemFlagsListingMethod0 (created by unknown on 01/01/2005)
+0x02000000 (33554432) eItemFlagsListingMethod1 (created by unknown on 01/01/2005)
+0x04000000 (67108864) eItemFlagsListingMethod2 (created by unknown on 01/01/2005)
+0x08000000 (134217728) eItemFlagsSalesTaxCalculatedAtCheckout (created by unknown on 01/01/2005)
+0x10000000 (268435456) eItemFlagsMechanicalCheckAccepted (created by ksivakumaran on 19/09/2007)
+0x20000000 (536870912) Insurance is included in shipping & handling charges (created by unknown on 01/01/2005)
+0x40000000 (1073741824) eItemFlagsMerchandiseAssociated (created by unknown on 01/01/2005)
+• FLAGS2
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) eItemFlags2IsPayPalSellerEmailEncrypted (created by mfister on 3/11/2003)
+0x00000002 (2) eItemFlags2IsSuccessBonusCredited (created by ccchen on 3/22/2003)
+0x00000004 (4) eItemFlags2ShippingDiscountApplied (created by rdamani on 4/1/2003)
+0x00000008 (8) Set if the listing is a Checkout Redirect listing. When set, the target for the redirect is determined by the APPLICATION_ID. (created by akumar on 9/30/2003)
+0x00000010 (16) eItemFlags2SCOEligible (created by rtsow on 12/2/2004)
+0x00000020 (32) eItemFlags2IsVickeryAuctionFormat (created by rmandapati on 3/18/2005)
+0x00000040 (64) eItemFlags2IsDutchBINAvailable (created by rmandapati on 3/18/2005)
+0x00000080 (128) eItemFlags2IsCharityListing (created by sraman on 5/15/2003)
+0x00000100 (256) eItemFlags2IsAvailableToBusinessesOnly (created by gamuelle on 6/9/2003)
+0x00000200 (512) Set if the seller used Picture Manager (created by dsilver on 2/24/2004)
+0x00000400 (1024) eItemFlags2IsEPSBetaOptIn (created by ytang on 6/2/2003)
+0x00000800 (2048) eItemFlags2IsSubtitleCharged (created by dsilver on 8/18/2003)
+0x00001000 (4096) eItemFlags2IsSubtitleCredited (created by dsilver on 8/11/2003)
+0x00002000 (8192) eItemFlags2IsSyiRememberListingFeatures (created by mvaradan on 9/11/2003)
+0x00004000 (16384) eItemFlags2lsSuccessfulListingFeeCharged (created by zyang on 9/15/2003)
+0x00008000 (32768) eItemFlags2lsSuccessfulListingFeeCredited (created by zyang on 9/15/2003)
+0x00010000 (65536) eItemFlags2PYIWizard (created by steckcha on 10/17/2003)
+0x00020000 (131072) eItemFlags2Border (created by mvaradan on 10/17/2003)
+0x00040000 (262144) eItemFlags2CreatedBySellSimilar (created by jsang on 11/7/2003)
+0x00080000 (524288) Indicates whether the seller has indicated that PayPal is preferred (created by mfister on 7/1/2003)
+0x00100000 (1048576) eItemFlagsMinMax2ndCategory (created by ygeng on 10/26/2003)
+0x00200000 (2097152) eItemFlag2CSGUsedDuringListing (created by achacha on 10/24/2003)
+0x00400000 (4194304) eItemFlags2CreatedByRelist (created by jsang on 11/7/2003)
+0x00800000 (8388608) eItemFlags2MultipleShippingServices (created by fmirza on 12/9/2003)
+0x01000000 (16777216) eItemFlags2ShippingInsuranceOff (created by fmirza on 12/9/2003)
+0x02000000 (33554432) eItemFlags2NPBInsertionCreditQualify (created by rtsow on 1/6/2004)
+0x04000000 (67108864) eItemFlags2NPBInsertionCredit (created by yfeldman on 1/7/2004)
+0x08000000 (134217728) eItemFlags2NPBInsertionQualify (created by yfeldman on 1/8/2004)
+0x10000000 (268435456) eItemFlags2GALLERY_CHARGED (created by nhe on 1/20/2004)
+0x20000000 (536870912) eItemFlags2GALLERY_FEATURE_CHARGED (created by nhe on 1/20/2004)
+0x40000000 (1073741824) eItemFlags2StreamlinedSYIFlow (created by mvaradan on 1/28/2004)
+• FLAGS3
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) eItemFlags3ListedUseSPOT (created by unknown on 01/01/2005)
+0x00000002 (2) eItemFlags3IncludeSPOTSearch (created by unknown on 01/01/2005)
+0x00000004 (4) eItemFlags3SelectedAnyCustomInserts (created by unknown on 01/01/2005)
+0x00000008 (8) eItemFlags3SelectedQuickInsertSellerOtherItems (created by unknown on 01/01/2005)
+0x00000010 (16) eItemFlags3SelectedQuickInsertAddToFavoriteList (created by unknown on 01/01/2005)
+0x00000020 (32) eItemFlags3SelectedQuickInsertAskSellerQuestion (created by unknown on 01/01/2005)
+0x00000040 (64) eItemFlags3BlockBidderNoPayPalAccount (created by unknown on 01/01/2005)
+0x00000080 (128) eItemFlags3SelectedQuickInsertPayPalPromotion (created by unknown on 01/01/2005)
+0x00000100 (256) eItemFlags3SelectedQuickInsertEBayStoreIcon (created by unknown on 01/01/2005)
+0x00000200 (512) eItemFlags3ShowRatingOnVI (created by unknown on 02/14/2006)
+0x00000400 (1024) eItemFlags3SelectedQuickInsertMyEbayStoreLogo (created by unknown on 01/01/2005)
+0x00000800 (2048) mItemFlags3DeliveryAfterPaid (created by unknown on 01/01/2005)
+0x00001000 (4096) mItemFlags3CODDeliveryAfterPaid (created by unknown on 01/01/2005)
+0x00002000 (8192) mItemFlags3PostalTransfer (created by unknown on 01/01/2005)
+0x00004000 (16384) eItemFlags3NowAndNewEligible (created by unknown on 01/01/2005)
+0x00008000 (32768) eItemFlags3BorderFeeCharged (created by unknown on 01/01/2005)
+0x00010000 (65536) eItemFlags3BorderFeeCredited (created by unknown on 01/01/2005)
+0x00020000 (131072) eItemFlags3AttrInfoNewLocation (created by unknown on 01/01/2005)
+0x00040000 (262144) eItemFlags3ShowBSI (created by unknown on 06/22/2005)
+0x00080000 (524288) eItemFlagsEndTimeInPdtPstSwitch (created by spandurangan on 07/06/2005)
+0x00100000 (1048576) SellerIssuanceSearch for AnythingPoints (created by unknown on 01/01/2005)
+0x00200000 (2097152) TurboLister Relist Flag (created by unknown on 01/01/2005)
+0x00400000 (4194304) ShippingTermsInDescription (created by wklee on 07/22/2005)
+0x00800000 (8388608) eItemFlags3MobileDe (created by unknown on 01/01/2005)
+0x01000000 (16777216) eItemFlags3MobileDeFeeCharged (created by unknown on 01/01/2005)
+0x02000000 (33554432) eItemFlags3MobileDeFeeCredited (created by unknown on 01/01/2005)
+0x04000000 (67108864) eItemFlags3MultipleBIBO (created by unknown on 01/01/2005)
+0x08000000 (134217728) eItemFlags3MultipleBIBOFeeCharged (created by unknown on 01/01/2005)
+0x10000000 (268435456) eItemFlags3MultipleBIBOFeeCredited (created by unknown on 01/01/2005)
+0x20000000 (536870912) eItemFlags3NowAndNewChecked (created by unknown on 01/01/2005)
+0x40000000 (1073741824) eItemFlags3GroupingAvailable (created by unknown on 01/01/2005)
+• FLAGS4
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) PicturePackPlus2Charged (created by rwan on 01/01/2005)
+0x00000002 (2) Set if the seller used Self-Hosted images (Looks like this may be buggy). (created by rwan on 01/01/2005)
+0x00000004 (4) Set if the seller used Basic EPS images (usually free) (created by rwan on 01/01/2005)
+0x00000008 (8) Set if the seller used Full EPS images (usually a fee to use this) (created by rwan on 01/01/2005)
+0x00000010 (16) ItemListedOrRevisedByAPI (created by rwan on 01/01/2005)
+0x00000020 (32) ListedWithTaxTable (created by gming on 10/13/2004)
+0x00000040 (64) StockPhotoUsed - Set if the listing has a stock photo (regardless of whether other photos are also used) (created by rwan on 10/14/2004)
+0x00000080 (128) ProPackBundle (created by jsang on 10/15/2004)
+0x00000100 (256) ProPackBundle_Fee_Charged (created by jsang on 10/15/2004)
+0x00000200 (512) ProPacBundle_Fee_Credited (created by jsang on 10/15/2004)
+0x00000400 (1024) SpotItemLocationCustomDisplay (created by txian on 10/20/2004)
+0x00000800 (2048) ShippingServiceRequired (created by kakiyama on 11/9/2004)
+0x00001000 (4096) ItemEligibleForGetItFast (created by sguhan on 3/17/2005)
+0x00002000 (8192) hasLATipsGenerated (created by shchaudhari on 05/03/2005)
+0x00004000 (16384) FreightShippingSelected (created by steckcha on 05/12/2005)
+0x00008000 (32768) AdminEndedWantedItem (created by pmuppirala on 05/12/2005)
+0x00010000 (65536) RYIListingDurationChanged (created by mvaradan on 11/4/2004)
+0x00020000 (131072) Set if the listing has Best Offer enabled (created by sjha on 11/2/2004)
+0x00040000 (262144) InternationalListingFeeCharged (created by jyang on 11/3/2004). This bit map is not being populated correctly on site. Use actn_code 245 from dw_accounts to determine if an International listing fee was charged.
+0x00080000 (524288) InternationalListingFeeCredited (created by jyang on 11/3/2004). This bit map is not being populated correctly on site. Use actn_code 246 from dw_accounts to determine if an International listing credit was applied.
+0x00100000 (1048576) PaymentPaisaPayCreditCard (created by nkolekar on 11/4/2004)
+0x00200000 (2097152) SCOStatusIndicator (created by soumdas on 02/11/2006)
+0x00400000 (4194304) MotorBuyerResponsibleForShipping (created by rramamurthy on 11/13/2004)
+0x00800000 (8388608) FlexCatFreeL2c (created by cjerome on 11/23/2004)
+0x01000000 (16777216) FlexCatAddedL2c (created by cjerome on 11/23/2004)
+0x02000000 (33554432) IntegratedGivingWorksUsed (created by dsilver on 12/23/2004)
+0x04000000 (67108864) PaymentLoanCheck (created by sbanerjee on 1/11/2005)
+0x08000000 (134217728) SubtitleForListingUpgradePreview (created by sguhan on 1/15/2005)
+0x10000000 (268435456) CashInPerson (created by sbanerjee on 1/24/2005)
+0x20000000 (536870912) HalfSuspendedItem (created by lyuan on 2/24/2005)
+0x40000000 (1073741824) DisplayBEPPMessaging (created by manand on 03/10/2005)
+• FLAGS5
+• Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+• 0x00000001 (1) EligibleForPickupInStore(created by jling on 6/28/2013) Flag to determine if an item is eligible for pickup in store or not
+• 0x00000002 (2) AvailableForPickupInStore(created by jling on 6/28/2013) Flag to determine if an item is available to pickup in store or not.(Note: there are a few old half listings that they're not eligible but available for BOPIS. Root cause is unknown.)
+• 0x00000004 (4) EBXOptIn (created by dsilver on 10/07/2005)
+• 0x00000008 (8) EBAY_NOW_ELIGIBLE (created by diali on 12/26/2013) Flag to indicate whether item is listed with eBay NOW shipping method
+• 0x00000010 (16) WINMyeBayEmailSent (created by arkumar on 11/08/2005)
+• 0x00000020 (32) WINMyeBayViewResponse (created by arkumar on 11/08/2005)
+• 0x00000040 (64)
+Historically (pre-2008?), this flag indicated Digitally Delivered Goods (DDG) listings (created by achacha on 11/14/2005),Now please refer to sale_status.
+This has been re-purposed, and now this flag indicates Zero Insertion Fee (ZIF) Media listings.
+• 0x00000080 (128) UPSRateType (created by pmuppirala on 11/22/2005)
+• 0x00000100 (256) eItemFlags5BasicBundle (created by lhoang on 12/05/2005)
+• 0x00000200 (512) eItemFlags5BasicBundleFeeCharged (created by lhoang on 12/05/2005)
+• 0x00000400 (1024)ItemOnHold(created by kokulkarni on 02/06/2023)
+• 0x00000800 (2048) eItemFlags5ValuePack (created by lhoang on 12/05/2005)
+• 0x00001000 (4096) eItemFlags5ValuePackFeeCharged (created by lhoang on 12/05/2005)
+• 0x00002000 (8192) eItemFlags5ValuePackFeeCredited (created by lhoang on 12/05/2005)
+• 0x00004000 (16384) eItemFlags5ProPackPlus (created by lhoang on 12/05/2005)
+• 0x00008000 (32768) eItemFlags5ProPackPlusFeeCharged (created by lhoang on 12/05/2005)
+• 0x00010000 (65536) eItemFlags5ProPackPlusFeeCredited (created by lhoang on 12/05/2005)
+• 0x00020000 (131072) LOCAL_ITEM (created by wchan on 12/08/2005)
+• 0x00040000 (262144) IsPartnerListedAutosDealerItem (created by shamilton on 12/22/2005)
+• 0x00080000 (524288) SELLER_SKYPE_ID_PROVIDED (created by achacha on 12/27/2005)
+• 0x00100000 (1048576) IS_SECONDARY_DATA_ENABLED (created by pnatarajn on 12/28/2005)
+• 0x00200000 (2097152) SELLER_SKYPE_ALLOW_VOICE (created by achacha on 12/29/2005)
+• 0x00400000 (4194304) eItemFlags5CounterSelectionBit1 (created by ikourski on 01/05/2005)
+• 0x00800000 (8388608) IS_BUYER_BLOCK_ENABLED ,If you've had an issue with a buyer and don't want them to purchase or bid on your items, you can add them to your Blocked buyers list(created by vajoshi on 01/19/2006)
+• 0x01000000 (16777216) SHOW_AS_LISTED_BY_POWERSELLER (created by jacchen on 01/03/2006)
+• 0x02000000 (33554432) IS_AUTO_DECLINE_ENABLED (created by ncholavaram on 01/09/2006)
+• 0x04000000 (67108864) vehicleSubscriptionItem (created by shamilton on 01/18/2005)
+• 0x08000000 (134217728) IsEbayBillingExemptItem (created by shamilton on 01/18/2005)
+• 0x10000000 (268435456) IsEbaySlaveItem (created by shamilton on 01/18/2005)
+• 0x20000000 (536870912) IsClassifiedItem (created by shamilton on 01/18/2005)
+• 0x40000000 (1073741824) IsPartnerListedAutosFSBOItem (created by shamilton on 01/18/2005)
+• FLAGS6
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+Around 6/7/06, there was some issue with corruption of flags6 values on the site. Unclear on resolution or full impact.
+0x00000001 (1) CHECKOUT_REDIRECT_INTEGRATION (created by gmuthyala on 02/28/2006)
+0x00000002 (2) NO_EBAY_VIEW_ITEM (created by rtsow on 04/26/2006)
+0x00000004 (4) NO_EBX_VIEW_ITEM (created by rtsow on 04/26/2006)
+0x00000008 (8) NO_EBAY_SEARCH (created by rtsow on 04/26/2006)
+0x00000010 (16) NO_EBX_SEARCH (created by rtsow on 04/26/2006)
+0x00000020 (32) ItemPhoneOptIn (created by shamilton on 05/05/2005)
+0x00000040 (64) ItemPhone2OptIn (created by shamilton on 05/05/2005)
+0x00000080 (128) FSBOAutoExposeToMobileDe (created by shamilton on 05/05/2005)
+0x00000100 (256) DiscountedInsertionFee (created by blai on 5/12/2006)
+0x00000200 (512) GreaterChinaFeeCharged (created by agoel on 5/17/2006)
+0x00000400 (1024) CALC_RATE_INS_FLAT_COST (created by sguhan on 03/1/2006)
+0x00000800 (2048) FedExRateType (created by vkarakala on 09/04/2007)
+0x00001000 (4096) DEFAULT_DIMENSIONS_SET (created by pmuppirala on 03/1/2006)
+0x00002000 (8192) TRANSACTION_CONFIRMATION_REQUESTED_ITEM (created by jsudhakar on 03/06/2006)
+0x00004000 (16384) TRANSACTION_CONFIRMATION_REQUEST_ITEM (created by jsudhakar on 03/06/2006)
+0x00008000 (32768) EBX_CS_FORCE_CREDIT (created by avetushk on 03/13/2006)
+0x00010000 (65536) SIF_GALLERY_ON_CORE (created by sapillai on 03/17/2006)
+0x00020000 (131072) SIF_PAID_GALLERY_FEE_CHARGED (created by sapillai on 03/20/2006)
+0x00040000 (262144) PROSTORE_CHECKOUT_REDIRECT (created by msarasvathi on 03/21/2006)
+0x00080000 (524288) SIF_PAID_GALLERY_FEE_CREDITED (created by sapillai on 03/22/2006)
+0x00100000 (1048576) SKYPE_ME_ON_LISTINGS_CHAT (created by sapillai on 04/06/2006)
+0x00200000 (2097152) SKYPE_ME_ON_LISTINGS_VOICE (created by sapillai on 04/06/2006)
+0x00400000 (4194304) 140_GALLERY_IMAGE_GENERATED (created by msambhus on 04/10/2006)
+0x00800000 (8388608) eItemFlags6SuperGallery (created by rwan on 4/13/2006)
+0x01000000 (16777216) eItemFlags6SuperGalleryFeeCharged (created by rwan on 4/13/2006)
+0x02000000 (33554432) eItemFlags6SuperGalleryFeeCredited (created by rwan on 4/13/2006)
+0x04000000 (67108864) eItemFlagsHideFromEBXSearch (created by svikas on 4/14/2006)
+0x08000000 (134217728) GreaterChinaFeeCredited (created by agoel on 5/17/2006)
+0x40000000 (1073741824) CM_CAT_TREATMENT (created by soumdas on 04/10/2006)
+0x10000000 (268435456) EL_CAMINO_LOCAL_NATIONAL (created by soumdas on 05/30/2006)
+0x20000000 (536870912) PPD_SALE_FLAG (created by ssisthla on 05/30/2006)
+• FLAGS7
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) CN_VD_GIF_CHALLENGE (created by hbelliappa on 07/19/2006)
+0x00000002 (2) SD_APPLY_DOMESTIC_PROFILE (created by sramakrishna on 07/19/2006)
+0x00000004 (4) SD_APPLY_INTERNATIONAL_PROFILE (created by sramakrishna on 07/19/2006)
+0x00000008 (8) SD_APPLY_DOMESTIC_PROMOTION (created by sramakrishna on 07/19/2006)
+0x00000010 (16) SD_APPLY_INTERNATIONAL_PROMOTION (created by sramakrishna on 07/19/2006)
+0x00000020 (32) IS_ARTISAN_LISTING (created by vkrishnamurthy on 08/21/2007)
+0x00000040 (64) LAST_MINUTE_DEAL (created by avemuri on 07/19/2006)
+0x00000080 (128) WIRELESS_BIN (created by avemuri on 07/19/2006)
+0x00000100 (256) BEST_OF_EBAY (created by avemuri on 07/19/2006)
+0x00000200 (512) SOLD_AS_BIN_BY_EBX (created by edtang on 07/25/2006)
+0x00000400 (1024) IS_ON_PROMO_SALE (created by ssisthla on 08/07/2006)
+0x00000800 (2048) ListedWithStartPriceNotSupported (created by shamilton on 08/16/2006)
+0x00001000 (4096) ListedWithStartPriceOptional (created by shamilton on 08/16/2006)
+0x00002000 (8192) StartPriceNotApplicable (created by shamilton on 08/16/2006)
+0x00004000 (16384) ListedWithSupportPaymentMethod (created by shamilton on 08/16/2006)
+0x00008000 (32768) ListedWithSupportCheckout (created by shamilton on 08/16/2006)
+0x00010000 (65536) ListedWithSupportShipping (created by shamilton on 08/16/2006)
+0x00020000 (131072) ListedWithNoContactViaEmailSupport (created by shamilton on 08/16/2006)
+0x00040000 (262144) ListedWithBestOfferRequired (created by shamilton on 08/16/2006)
+0x00080000 (524288) PPLListing (created by yixia on 11/6/2006)
+0x00100000 (1048576) IsAdminEndedEligibleForRelist (created by kmohan on 08/29/2006)
+0x00200000 (2097152) RelistedFromAdminEndedItem (created by kmohan on 08/29/2006)
+0x00400000 (4194304) ListedWithOptInContactHours (created by shamilton on 09/05/2006)
+0x00800000 (8388608) RteHtml (created by yixia on 09/20/2006)
+0x01000000 (16777216) IS_AUTO_ACCEPT_ENABLED (created by nraghuram on 08/18/2007)
+0x02000000 (33554432) eItemFlags6PrivateListingFeeCharged (created by skasarabada on 11/07/2006)
+0x04000000 (67108864) eItemFlags6PrivateListingFeeCredited (created by skasarabada on 11/07/2006)
+0x08000000 (134217728) ExposeUSListingsonUK (created by ssharma on 12/05/2006)
+0x10000000 (268435456) IS_BID_MANAGER_GROUP_ITEM (created by edtang on 12/21/2006)
+0x20000000 (536870912) HAS_RETRACTED_BID (created by edtang on 12/21/2006)
+0x40000000 (1073741824) UseGlobalShippingDiscountForMQ (created by sramakrishna on 01/03/2007)
+• FLAGS8
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) AcceptSellerTerms (created by skasarabada on 02/28/2007)
+0x00000002 (2) ReadSellerTerms (created by skasarabada on 02/28/2007)
+0x00000004 (4) IS_SELLER_SP3_ELIGIBLE (created by nraghuram on 02/21/2007)
+0x00000008 (8) SEMI_PERSISTENT_BIN (created by avemuri on 03/09/2007)
+0x00000010 (16) IsBINAvailable (created by avemuri on 03/09/2007)
+0x00000020 (32) BIDS_ANONYMIZED_DUE_TO_ASP (created by knagarajan on 03/09/2007)
+0x00000040 (64) MOVED_HAS_ACCEPTED_SELLER_TAGS_PRIMARY_CATEGORY (created by shamilton on 03/16/2007)
+0x00000080 (128) HAS_ACCEPTED_SELLER_TAGS_SECONDARY_CATEGORY (created by shamilton on 03/16/2007)
+0x00000100 (256) IS_AUCTION_ARENA_ITEM (created by vlee on 03/27/2007)
+0x00000200 (512) BIDS_ANONYMIZED_DUE_TO_RESERVE (created by knagarajan on 04/02/2007)
+0x00000400 (1024) CORONA_PUBLIC_EVENT_RESERVE (created by dbao on 04/04/2007)
+0x00000800 (2048) BIDS_ANONYMIZED_DUE_TO_BIN (created by knagarajan on 04/15/2007)
+0x00001000 (4096) HAS_REJECTED_SELLER_TAGS_PRIMARY_CATEGORY (created by shamilton on 03/16/2007)
+0x00002000 (8192) HAS_REJECTED_SELLER_TAGS_SECONDARY_CATEGORY (created by shamilton on 03/16/2007)
+0x00004000 (16384) NO_EBAY_VIEW_ITEM (created by nraghuram on 05/30/2007)
+0x00008000 (32768) NO_EBX_VIEW_ITEM (created by nraghuram on 05/30/2007)
+0x00010000 (65536) NO_EBAY_SEARCH (created by nraghuram on 05/30/2007)
+0x00020000 (131072) NO_EBX_SEARCH (created by nraghuram on 05/30/2007)
+0x00040000 (262144) HAS_ACCEPTED_SELLER_TAGS_PRIMARY_CATEGORY (created by shamilton on 06/11/2007)
+0x00080000 (524288) EASY_LISTER_LISTING (created by lfernandes on 06/12/2007)
+0x00100000 (1048576) CHARITY_ENABLED_IN_REVISE (created by spandian on 06/15/2007)
+0x00200000 (2097152)AVAILABLE_FOR_EBAY_NOW (created bydiali on09/09/2013) Indicates whether an item is available to for ebay now shipping method.
+0x00400000 (4194304) IsPaymentPaisaPayEscrow (created by kmohan on 07/02/2007)
+0x00800000 (8388608) IsPaymentPaisaPayEscrowEMI (created by kmohan on 07/02/2007)
+0x01000000 (16777216) IsPaisaPayEscrowPrivilege (created by kmohan on 07/02/2007)
+0x02000000 (33554432) isImmoDealerItem (created by gramakrishnan on 07/05/2007)
+0x04000000 (67108864) isRealEstateItem (created by gramakrishnan on 07/05/2007)
+0x08000000 (134217728) HasPicturesInMediaAsset (created by ksankaranarayan on 07/17/2007)
+0x10000000 (268435456) LOCATION_OPT_IN (created by apandey on 07/19/2007)
+0x20000000 (536870912) HasValuePackPlus (created by ssharma on 07/24/2007)
+0x40000000 (1073741824) IS_LOCAL_ITEM (created by rvaradharajan on 07/25/2007)
+• FLAGS9
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) IsFreeShippingSale (created by soumdas on 11/08/2007)
+0x00000002 (2) valuePackPlus (created by skasarabada on 12/04/2007)
+0x00000004 (4) OnStdFreeShippingPriorToPromotionalSale (created by ssisthla on 14/02/2008)
+0x00000008 (8) REVISE_ITEM_FROM_PROSTORES (created by lchimmineni on 26/02/2008)
+0x00000010 (16) CPOListing (created by ssharma on 27/02/2008)
+0x00000020 (32) FixedPriceStoreTier1Treatment (created by shamilton on 03/04/2008)
+0x00000040 (64) FixedPriceStoreTier2Treatment (created by shamilton on 03/04/2008)
+0x00000080 (128) FixedPriceStoreTier3Treatment (created by shamilton on 03/04/2008)
+0x00000100 (256) FixedPriceBSREnabledTreatment (created by shamilton on 03/04/2008)
+0x00000200 (512) FixedPriceConsumerTreatment (created by shamilton on 03/04/2008)
+0x00000400 (1024) AdminEndedItemRelistedBySeller (created by gnanavelr on 03/26/2008)
+0x00000800 (2048) FixedPriceBSRDisabledTreatment (created by shamilton on 03/04/2008)
+0x00001000 (4096) FixedPriceStoreTier1TreatmentAtStartOfListing (created by shamilton on 04/28/2008)
+0x00002000 (8192) FixedPriceStoreTier2TreatmenAtStartOfListingt (created by shamilton on 04/28/2008)
+0x00004000 (16384) FixedPriceStoreTier3TreatmentAtStartOfListing (created by shamilton on 04/28/2008)
+0x00008000 (32768) FixedPriceBSREnabledTreatmentAtStartOfListing (created by shamilton on 04/28/2008)
+0x00010000 (65536) FixedPriceConsumerTreatmentAtStartOfListing (created by shamilton on 04/28/2008)
+0x00020000 (131072) NewListingByMerchantSeller (created by skhot on 05/23/2008)
+0x00040000 (262144) MassMarketFSBOLocalTest (created by dsundaram on 06/04/2008)
+0x00080000 (524288) EbayEligibleHalfItem (created by bparthasarathy on 06/06/2008)
+0x00100000 (1048576) EbayEverEligibleHalfItem (created by bparthasarathy on 06/09/2008)
+0x00200000 (2097152) ManageBySKU (created by apandey on 06/16/2008)
+0x00400000 (4194304) publishItemEndEvent (created by robijames on 06/16/2021)
+0x00800000 (8388608) ItemWillEndDueToInactivity (created by nchellam on 06/18/2008)
+0x01000000 (16777216) FixedPriceBSRDisabledTreatmentAtStartOfListing (created by shamilton on 03/04/2008)
+0x02000000 (33554432) MSKUFlag (created by skasarabada on 06/27/2008)
+0x04000000 (67108864) ShippingCostsRevise (created by vkarakala on 06/27/2008)
+0x08000000 (134217728) MoneyBookersPMAccepted (created by ktenneti on 07/02/2008)
+0x10000000 (268435456) PaymatePMAccepted (created by ktenneti on 07/02/2008)
+0x20000000 (536870912) PropayPMAccepted (created by ktenneti on 07/02/2008)
+0x40000000 (1073741824) DefaultMSKUPriceSet (created by skasarabada on 07/10/2008)
+• FLAGS10
+SeeDataWarehouse/Flagsfor decoding logic.
+Source of truth:entities/non-generatable/xml/flags/ebay_items-flags10.xmlin Github.
+0x00000001 (1) IntegratedMCCAccepted (created by vanp on 12/09/2008). This flag indicates that the listing accepts the Merchant Credit Card payment method.
+0x00000002 (2) PhotoEPSCopy: EPS Copy Web Files: item pictures copied from web server in web flow. (created by ssubbarayan on 11/07/2008)
+0x00000004 (4) PhotoEPSCopyMPU (created by ssubbarayan on 11/07/2008)
+0x00000008 (8) ItemDelayedByElvis (created by spilli on 11/13/2008)
+0x00000010 (16) ItemConditionDualWrittenForPrimaryCategory (created by bmopuri on 11/28/2008)
+0x00000020 (32) PartiallySoldMultiQuantityAdminArchived (created by sjois on 12/29/2008)
+0x00000040 (64) ItemCompatibilitySpecified - Fitment Specifiction (created by sjois on 12/29/2008)
+0x00000080 (128) ItemInCompatibilityEnabledCategory - Fitment Application (created by sjois on 12/29/2008)
+0x00000100 (256) MotorsPricing1 (created by bparthasarathy on 1/7/2008)
+0x00000200 (512) MotorsPricing2 (created by sjois on 1/7/2008)
+0x00000400 (1024) AttributesConvertedForPrimaryCategory (created by divg on 1/22/2009)
+0x00000800 (2048) AttributesConvertedForSecondaryCategory (created by divg on 1/22/2009)
+0x00001000 (4096) ItemConditionDualWrittenForSecondaryCategory (created by saumehta on 2/17/2009)
+0x00002000 (8192) ReturnsEligibility (created by amarathe on 2/19/2009)
+0x00004000 (16384) Bit to indicate if the item will be kept alive even when it is out of stock
+0x00008000 (32768) AvailableForShipToHome - Bit reserved for use by SKUBI - indicates items has quantity available for Ship2Home (created by diali on 4/22/2014)
+0x00010000 (65536) VisualSearchVendor3 (created by shamilton on 3/02/2009)
+0x00020000 (131072) ManagedByInventory sgumudavelli5/1/2014Bit reserved for use by SKUBI/MIP 2.0 - indicates listing is created and managed by SKUBI/Inventory system. When flagged, EBAY_ITEMS / DW_LSTG_ITEM quantities are not authoritative. 
+0x00040000 (262144) VisualSearchVendor5 (created by shamilton on 3/02/2009)
+0x00080000 (524288) VisualSearchVendor6 (created by shamilton on 3/02/2009)
+0x00100000 (1048576) dealitem (created by jjanardhanan on 3/23/2009)
+0x00200000 (2097152) deepsku (created by jjanardhanan on 3/23/2009)
+0x00400000 (4194304) ZeroInsertionFee (created by bgong on 5/4/2009)
+0x00800000 (8388608) SharePhotos (created by mumani on 03/06/2009)
+0x01000000 (16777216) ApplyExcludeShipToLocations (created by didamodharan on 07/14/2009)
+0x02000000 (33554432) APIGlobalExclusionListApplied (created by didamodharan on 08/12/2009)
+0x04000000 (67108864) ItemEndedPolicyViolation (created by bparthasarathy on 09/14/2009)
+0x20000000 (536870912) ended by CSR because it violates the duplicated listing policy.
+• FLAGS11
+SeeDataWarehouse/Flagsfor decoding logic.
+Source of truth:entities/non-generatable/xml/flags/ebay_items-flags11.xmlin Github.
+0x00000001 (1) BundleEnabledPrimary: Indicates this item is enabled for bundling, this is a primary bundlable item. (created by shameed on 07/01/2010)
+0x00000002 (2) IsUseDomesticRateTable: Indicates whether this item use domestic rate table or not. (created by maagrawal on 07/19/2010)
+0x00000004 (4) IsUseIntlRateTable: Indicates whether this item use intl rate table or not. (created by maagrawal on 07/19/2010)
+0x00000008 (8) FedExRateType1: Identifies the FedEx rate type used for this listing for Domestic. (created by rvaradharajan on 08/07/2010)
+0x00000010 (16) FedExRateType2: Identifies the FedEx rate type used for this listing for International. (created by rvaradharajan on 08/07/2010)
+0x00000020 (32) IsEasySyiItem: Indicates whether this item is listed under Motors Easy SyiFlow. (created by mhameed on 08/13/2010)
+0x00000040 (64) DinersClubAccepted: Indicates whether this item is listed with Diners card as payment. (created by rradhakrish on 08/16/2010)
+0x00000080 (128) ItemListedThroughLMS: Item was listed using LMS. (created by shalpatel on 8/23/2010)
+0x00000100 (256) ItemListedByExcelPlugin: Item was listed using eBay excel plugin. (created by shalpatel on 8/23/2010)
+0x00000200 (512) motorsCBTUSUK; Item eligible for motors CBT (created by sgumudavelli on 11/5/2010)
+0x00000400 (1024) IsRentalItem: Item eligible for Renting inhalf.com(created by svedagiri on 12/01/2010)
+0x00000800 (2048) IsPostCheckoutExpEnabled: Indicates if this item is listed by CP and will experience Post Checkout Exp (created by dhadesai on 2/23/2011)
+0x00001000 (4096) ViewedBySEO: Item viewed by external referer and marked as immortal. (created by rthirumalaion 03/01/2011)
+0x00002000 (8192) ItemListedWithSellerProfileRT: Item Listed with seller profile - rate table (created by didamodharan on 03/08/2011)
+0x00004000 (16384) ItemProfile2(created by didamodharan on 03/08/2011)
+0x00008000 (32768) ItemProfile3 (created by didamodharanon 03/08/2011)
+0x00010000 (65536) isLocalPickupFirstShippingService: Indicates if the first domestic shippingservice is local pickup service (created by didamodharan on 09/23/2011)
+0x00020000 (131072) ClickAndBuyPaymentMethod: Identifies the Click and Buy payment method (created by stecheng on 03/10/2011)
+0x00040000 (262144) EbayIntermediatedPaymentMethod: Identifies the eBay intermediated payment method (created by stecheng on 03/10/2011)
+0x00080000 (524288) CallThirdPartyForShipping: Indicates need to call third party to calculate shipping cost in checkout (created by rsavaliya on 03/17/2011)
+0x00100000 (1048576) BidIncrementVariant (created by skatti on 04/07/2011)
+0x00200000 (2097152) IsGroupBuyItem: Indicates that the item is a GroupBuy Item (created by tashah on 04/09/2011)
+0x00400000 (4194304) IsEasySYIRadiusTestItem: Indicates that the item is created by Easy SYI Radius Experiment (created by vanp on 4/30/2011)
+0x00800000 (8388608) DiscountAvailableForSKU: Indicates that the item has SME discount (created by bmopuri on 05/06/2011)
+0x01000000 (16777216) AdFormatReminderEmailSent: Indicates that the adFormat Reminder email has been sent (created by bpatra on 05/17/2011)
+0x02000000 (33554432) AdFormatSurveyEmailSent: Indicates that the survey email has been sent for the adformat item (created by bpatra on 05/17/2011)
+0x04000000 (67108864) FRAdFormatMigrated: Indicates that the item has been Migrated from troy(FR-Site) to eBay (created by saumehta on 05/22/2011)
+0x08000000 (134217728) IsItemFromEdmunds: Indicates that the item created is from Edmunds Appraise car flow (created by vanp on 06/03/2011)
+0x10000000 (268435456) IsItemFromEdmundsSpotLight: Indicates that the item listed is from Edmunds SpotLight (created by vanp on 07/12/2011) (Taken over by Live Auctions in 2014 - new live auction flag)
+0x20000000 (536870912) IsItemQualifiedForVehiclePurchaseProtection: Indicates that the item is qualified for Vehicle Purchase Protection (created by vanp on 07/13/2011)
+0x40000000 (1073741824) AdFormatSurveyCompleted: Indicates the Survey completed by the seller for his ebay items (created by bpatra on 08/15/2011)
+•  FLAGS12
+• SeeDataWarehouse/Flagsfor decoding logic.
+• Source of truth:entities/non-generatable/xml/flags/ebay_items-flags12.xmlin Github.
+• 0x00000001 (1) ScheduleECPItemOnSelectedDay: This flag would be set for ECP items only and if seller wish to schedule the item on specific date.. (created by gkodaganti on 07/29/2011
+• 0x00000002 (2) IsECPListing: Indicates that the item was listing under eCP program. (created by bvenkatarama on 08/09/2011
+• 0x00000004 (4) PUDORequestedItem: Indicates that PUDO Program is requested for the item. Seller's intent (desire) for item to be PUDO. (created by kmanekar on 03/10/2014)
+• 0x00000008 (8) PUDOEligibleItem. Indicates that it is PUDO Eligible Item. Item is flagged as PUDO (passed all pudo criteria) (created by kmanekar on 03/10/2014)
+• 0x00000010 (16) ItemAdminEndedForATO: Item is admin ended for ATO reason.This bit value is captured in the admin ended tableDW_ITEMS_ARCsince the items are admin ended(created by yonxu on 20/09/2012)
+• 0x00000020 (32) PUDOProhibitedItem: Indicates that it is PUDO prohibited Item. If item is tagged as blacklisted then will not appear as PUDO. (created by kmanekar 03/10/2014)
+• 0x00000040 (64) ECPRelistedItem: Ecp item is relisted for auction. (created by didamodharan on 10/25/2011)
+• 0x00000080 (128) ItemHasApplicationCustomInfo: Item has custom application info. (created by shamilton on 11/28/2011)
+• 0x00000100 (256) ETRS2_GL: eTRS2.0 Program (created by sgumudavelli on 02/08/2012)
+• 0x00000200 (512) ETRS2_US: eTRS2.0 Program (created by sgumudavelli on 02/08/2012)
+• 0x00000400 (1024) ETRS2_UK: eTRS2.0 Program (created by sgumudavelli on 02/08/2012)
+• 0x00000800 (2048) ETRS2_DE: eTRS2.0 Program (created by sgumudavelli on 02/08/2012)
+• 0x00001000 (4096) ETRS2_STATUS: eTRS2.0 Program (created by sgumudavelli on 02/08/2012)
+• 0x00002000 (8192) ExcludedCategoryItem: Flag to indicate if the item is in excluded category (created by vipyati on 01/31/2012)
+• 0x00004000 (16384) HasFreeVHR: Flag to indicate whether the item has a free VHR (created by sambikapathy on 02/23/2012)
+• 0x00008000 (32768) IsSwiftFlow: Flag to indicate whether the current flow is swift flow or not (created by vics on 02/23/2012)
+• 0x00010000 (65536) HVS: Flag to indicate whether the seller is a HVS (created by sambikapathy on 02/24/2012)
+• 0x00020000 (131072) DailyDealsPermanent: Flag to indicate that item is a Daily Deals Item. This flag is not reset (created by dnayak on 02/24/2012)
+• 0x00040000 (262144) SkipSearchIndexing: Flag to indicate whether the item must be hidden from search results. (created by spalil on 02/28/2012)
+• 0x00080000 (524288) DuplicateAuction: Flag to indicate whether the item is a duplicate pure auction item. (created by spalil on 02/28/2012)
+• 0x00100000 (1048576) VehicleHasGuaranteedOffer: Indicates if the Vehicle Item had received a guaranteed offer from a dealer (e.g. AutoNation) at least once. (created by saravamuthan on 02/23/2012)
+• 0x00200000 (2097152) IsPGAProSellerItem: Indicates that the item is a PGA Pro shop seller Item (created by saumehta on 03/05/2012)
+• 0x00400000 (4194304) IsCollectiblesSecialitySellerItem: Indicates that the item belongs to speciality seller for listed under Collectibles, Gold and Bullion categories. (created by saumehta on 03/05/2012)
+• 0x00800000 (8388608) IsIntermediatedShippingListing: Indicates whether the item supports GSP shipping service or not (created by vganesan on 03/16/2012)
+• 0x01000000 (16777216) Lifestyle1: Indicates whether the item is a lifestyle deal (created by dalvsingh on 03/23/2012)
+• 0x02000000 (33554432) Lifestyle2: Reserved for lifestyle deals (created by dalvsingh on 03/23/2012)
+• 0x04000000 (67108864) ValetPrintShippingEligible: Flag to indicate PrintShipping label is eligible for valet feature (created by bhars on 04/05/2012)
+• 0x08000000 (134217728) ItemEndedDueToOverlimit: This flag is introduced for the Seller Limits project. (created by mdhanaraj on 04/27/2012)
+• 0x10000000 (268435456) ItemListedWithIntermediatedShippingProfile: Flag to indicate if the item is listed using an Intermediated Shipping enabled business profile (created by rvenkitasubraman on 05/03/2012)
+• 0x20000000 (536870912) HasSocialSignals: Indicates whether or not item has any social signals. (created by akokarski on 05/18/2012)
+• 0x40000000 (1073741824) IS_ITEM_LOCATION_VALIDATED (created by wamjad on 6/11/2012)
+• Indicates if the item location has been validated against ZIP_LOCATION table
+Source: http://quicksearch.arch.ebay.com/codeview?codeArchives=E783_DEV_BASE&path=/entities/non-generatable/xml/flags/ebay_items-flags12.xml&query=FLAGS12.xml&so=0
+Flags 12 Column to reserve bit for Fulfillment Items
+For given ECP Item Seller has two options
+1. List item immediately after grading.
+2. Seller can schedule an Item for listing for a later date.
+
+The option will be captured in this flag. For more details look at FLAGS12.xml in Clearcase entities VOB
+• ITEM_FLAGS
+Source: EBAY_ITEMS.PASSWORD field.
+SeeDataWarehouse/Flagsto convert flags information to SQL.
+0x00000001 (1) - Item relisted
+0x00000002 (2) - Credit insertion
+0x00000004 (4) - Credit featured
+0x00000008 (8) - Credit category featured
+0x00000010 (16) - Credit bold
+0x00000020 (32) - Credit FVF
+0x00000040 (64) - Credit no sale
+0x00000080 (128) - Item relisting
+0x00000100 (256) - Item updated
+0x00000200 (512) - Money Orders accepted as payment method
+0x00000400 (1024) - Personal Checks accepted as payment method
+0x00000800 (2048) - Visa/MasterCard accepted as payment method
+0x00001000 (4096) - American Express accepted as payment method
+0x00002000 (8192) - Discover accepted as payment method
+0x00004000 (16384) - Other accepted as payment method
+0x00008000 (32768) - Escrow by Buyer
+0x00010000 (65536) - COD
+0x00020000 (131072) - See Description
+0x00040000 (262144) - Seller pays shipping
+0x00080000 (524288) - Buyer pays fixed shipping
+0x00100000 (1048576) - Buyer pays actual shipping
+0x00200000 (2097152) - Shipping See Description
+0x00400000 (4194304) - Ships to Canada  – deprecated (confirmed by Don Wei)  For shipping to locations, please check SHPMT_ATTR_ID 221 inDW_ATTR_SHPMT_DTL table
+0x00800000 (8388608) - Ships internationally  – deprecated (confirmed by Don Wei)  For shipping to locations, please check SHPMT_ATTR_ID 221 inDW_ATTR_SHPMT_DTL table
+0x01000000 (16777216) - Credit gallery
+0x02000000 (33554432) - Credit gallery featured
+0x04000000 (67108864) - Credit gift icon
+0x08000000 (134217728) - Credit reserve
+0x80000000 (sign bit) - Escrow by Seller
+• VISITCOUNT
+Definitive sourcehere. SeeDataWarehouse/Flagsfor decoding logic.
+0x00000001 (1) eItemVisitCountFlagsShowRelistCheckinMyeBay (created by unknown on 01/01/2005)
+0x00000002 (2) eItemVisitCountFlagsBinPriceLowered (created by unknown on 01/01/2005)
+0x00000004 (4) eItemVisitCountFlagsReservePriceLowered (created by unknown on 01/01/2005)
+0x00000008 (8) eItemVisitCountFlagsReserveLoweredtoAboveHighBid (created by unknown on 01/01/2005)
+0x00000010 (16) eItemVisitCountFlagsBinAdded (created by unknown on 01/01/2005)
+0x00000020 (32) eItemVisitCountFlagsMotorsLowerPrice2 (created by unknown on 01/01/2005)
+0x00000040 (64) eItemVisitCountFlagsSYIPrevCategory1 (created by unknown on 01/01/2005)
+0x00000080 (128) eItemVisitCountFlagsSYIPrevCategory2 (created by unknown on 01/01/2005)
+0x00000100 (256) eItemVisitCountFlagsMotorsMonthlyPayment (created by unknown on 01/01/2005)
+0x00000200 (512) eItemVisitCountFlagsMotorsMonthlyPaymen1 (created by unknown on 01/01/2005)
+0x00000400 (1024) eItemVisitCountFlagsHasV3AttributesForSearch (created by unknown on 01/01/2005)
+0x00000800 (2048) eItemVisitCountFlagsInsuranceNotOffered (created by unknown on 01/01/2005)
+0x00001000 (4096) eItemVisitCountFlagsInsuranceOptional (created by unknown on 01/01/2005)
+0x00002000 (8192) eItemVisitCountFlagsOddShapedItem (created by unknown on 01/01/2005)
+0x00004000 (16384) eItemVisitCountFlagsSYISuggestedMainCategory (created by unknown on 01/01/2005)
+0x00008000 (32768) eItemVisitCountFlagsSMProductListingEnabled (created by unknown on 01/01/2005)
+0x00010000 (65536) eItemVisitCountFlagsSYISuggestedSecondCategory (created by unknown on 01/01/2005)
+0x00020000 (131072) eItemVisitCountFlagsGiftWrapper (created by unknown on 01/01/2005)
+0x00040000 (262144)IsItemEMSEligible (as of Sep, 2022) - Item is eligible for eBay Managed Shipping for some buyer locations (eBay provides a free label to the seller, while buyers pay pre-defined shipping rate to eBay)
+Was repurposed from eItemVisitCountFlagsGiftExpressShipping (created by unknown on 01/01/2005)
+0x00080000 (524288) eItemVisitCountFlagsGiftShipToRecipient (created by unknown on 01/01/2005)
+0x00100000 (1048576) eItemVisitCountFlagsListingDesignerFeeCredit (created by unknown on 01/01/2005)
+0x00200000 (2097152) eItemVisitCountFlagsPayPalAccepted (created by unknown on 01/01/2005)
+0x00400000 (4194304) eItemVisitCountFlagsNoV3AttributesSelected (created by unknown on 01/01/2005)
+0x00800000 (8388608) eItemVisitCountFlagsHasV3AttributesSelected (created by unknown on 01/01/2005)
+0x01000000 (16777216) eItemGoodTillCancelled (created by unknown on 01/01/2005)
+0x02000000 (33554432) eItemVisitCountFlagsGoodTillCancelledCredit (created by unknown on 01/01/2005)
+0x04000000 (67108864) eItemVisitCountFlagsGoodTillCancelledCharged (created by unknown on 01/01/2005)
+0x08000000 (134217728) eItemVisitCountFlagsIsSothebyDurationCharged (created by unknown on 01/01/2005)
+0x10000000 (268435456) eItemVisitCountFlagsSYIAutoPaySelected (created by txian on 01/01/2005)
+0x20000000 (536870912) eItemVisitCountFlagsIsListingDesignerFeeWaived (created by sbhalla on 02/07/2003)
+0x40000000 (1073741824) eItemVisitCountFlagsV3SYI (created by jsang on 02/10/2003)
+• SALE_STATUS
+SeeDataWarehouse/Flagsfor full details.
+0x00000001 (1) ITEM_SALE_STATUS_NO_FINAL_VALUE_FEE (created by unknown on 01/01/2005)
+0x00000002 (2) ITEM_BID_BY_SELLER_FLAG (created by unknown on 01/01/2005)
+0x00000004 (4) ITEM_BIDS_FINALIZED_FLAG (created by unknown on 01/01/2005)
+0x00000008 (8) ITEM_WACKO_FLAG (created by unknown on 01/01/2005)
+0x00000010 (16) ITEM_RESERVE_FLAG (created by unknown on 01/01/2005)
+0x00000040 (64) EBAYPLUS_REQUESTED_ITEM - Flag to determine if the item has requested for eBayPlus (created on 5/25/2015)
+0x00000080 (128) EBAYPLUS_ELIGIBLE_ITEM - Flag to determine if the item is eligible for eBayPlus (created on 5/25/2015)
+0x00000100 (256)THIS FLAG DETERMINES IF THIS ITEM IS DIGITALLY DELIVERED GOODS.
+eBay have many add-on providers who are selling digital items – not all of which are guaranteed to be marked for digital delivery. The safest way to handle this is to use the seller whitelist. The whitelist is the DIGITAL_DELIVERY_WHITELISTED_SELLERS site parameter in the ebay_site_parameters table on LookupHost. This is the flag that indicates an item is a digital good. Only whitelisted sellers are able to set this flag via the Trading API on one of their listings.
+0x00001000 (4096) ITEM_FINALIZED_ISAPI_FLAG (created by unknown on 01/01/2005)
+0x00002000 (8192) ITEM_FINALIZED_UNIX_FLAG (created by unknown on 01/01/2005)
+0x00004000 (16384) ITEM_FINALIZED_V3_FLAG (created by kcooney on 7/23/2003)
+0x00008000 (32768) ITEM_EOA_V3_FLAG (created by yfeldman on 7/23/2003)
+0x00020000 (131072) ITEM_BSI_V3_FLAG (created by sanna on 8/14/2004)
+0x00040000 (262144) SYI_ALPHA1_ITEM (created by blai on 1/31/2005)
+0x00100000 (1048576) ItemEligibleForGetItFast (created by sguhan on 3/17/2005)
+0x00200000 (2097152) ITEM_ATTRIBUTE_MIGRATION (created by gannable on 3/28/2005)
+0x00400000 (4194304) DISABLE OUTBIDDER VIEWER STATUS (created by sru on 5/23/2005)
+0x08000000 (134217728) ITEM_HAS_AUTO_RELIST This captures whether the item had the auto-relist checkbox enabled (created by thunguyen on 2/21/2013)
+0x00010000(65536) AUTO_RELIST_MAXED_OUT This Flag determines if the item has reached the maximum number of auto relist (creatd by thunguyen on 04/02/2013)
+• TAX_NEW_STATE
+• SKU_NUM
+• HOST_IP_ADDR
+Populated from site column 'HOST'
+The ip address from which this item is listed
+• PP_FIN_OFFR_ID
+PayPal Buyer Credit offer ID
+• USER_DSGNTN_ID
+Indicates whether user is a Business or Individual registered user. Note, however, that this field is not necessarily universally applicable to all Business registration flows, so do not assume that you can just use this field. See the site data model for the decode.
+• EBX_QLFD_ITEM_YN_ID
+Indicates whether this item was qualified via the batch job.
+This unpacked flag will be set to 0 for allShopping.comitems (despite the fact that the site flag will be 1).
+• EBX_CS_FRC_OUT_ITEM_YN_ID
+Indicates whether CS forced this item out of eBay Express.
+This unpacked flag will be set to 0 for allShopping.comitems.
+• EBX_OPT_IN_ITEM_YN_ID
+Indicates whether this item is opted-in to eBay Express. In the initial release, this will always be set to 1 for US & Germany.
+This unpacked flag will be set to 0 for allShopping.comitems.
+• EBX_STICKY_ITEM_YN_ID
+Indicates whether this item was EVER eligible for eBay Express over the lifetime of the item.
+This unpacked flag will be set to 0 for allShopping.comitems.
+• CUST_REF_CODE
+From the site DM: This field is populated from the UUID tag in AddItem API. The API code validates to see if the UUID element is present, exactly 32 characters in length, has only hex characters. This is not a mandatory tag, but when callers do specify this, they have to pass a 32-character hex string.
+• STOR_CATEG_ID
+Indicates the primary Store category ID for the seller's Store.
+Joins toDataWarehouse/Stores/DW_STOR_CATEG.STORE_CATEG_ID (must combine with DW_STOREFRONTS)
+As of 4/24/2012 this field appears in access_views as dw_lstg_item_cold.stor_categ_id on mozart (someone in APD probably dropped the 'e' when creating the view)
+• STOR_CATEG2_ID
+Indicates the secondary Store category ID for the seller's Store.
+Joins toDataWarehouse/Stores/DW_STOR_CATEG.STORE_CATEG_ID (must combine with DW_STOREFRONTS)
+As of 4/24/2012 this field appears in access_views as dw_lstg_item_cold.stor_categ2_id on mozart (someone in APD probably dropped the 'e' when creating the view)
+• ITEM_VRSN_ID
+Indicates the version ID of this listing. Versions are created according to some pretty complex rules, so do not assume that there is a new version ID created every time a listing is revised... it's definitely not that simple.
+• SGNFCNT_RVSN_CNT
+The number of significant revisions for this listing. A significant revision is a revision which would create a new ITEM_VRSN_ID.
+Only has meaningful values for AUCT_TYPE_CODE 7 & 9. Zero for all other formats.
+• WATCH_CNT
+Number of ebay users watching this item. This is the number of unique users who have added this item to their watch lists
+This indicates the current actual watcher count when it is live; but we don't update this column after the auction is ended or admin ended.
+If item is ended, users cannot add the item into their watch list any more, meaning WATCH_CNT in EBAY_ITEM cannot be increased.
+When user removed the listings from their watch list, the number will be decreased.
+The project team backfilled all the live listings on 2010/07/25. So for all the listings with 'DW Update Date < 2010/07/25', the Watch Counts are set to -999, because the snapshot watch count as a listing ends is not able to be captured for the time DW did the historical update.)
+• SLR_PRDCT_ID_TXT
+Captures the "custom label" or "custom SKU" that sellers can set for an item, often to indicate their internal SKU identifier (not necessarily the eBay SKU).
+• LIVE_AUCTN_IND
+'Y' - Live Auction Listing
+'N' - Non-Live Auction Listing
+• ORGNL_PRICE_AMT
+• During the promotion, the actual BIN Price will be the BIN Price - the discount and after the sale has ended the BIN Price will be reverted to its original value. This Column will maintain the Orginal BIN Price before the Sale so that the BIN_Price column can be updated with its Orginal Value after the Sale has ended.
+• Price is in the listing currency
+• This column holds data for Mark Down Manager (MDM):
+• For data on promotions set through Strike-Through Pricing (STP) or Minimum Advertised Price (MAP), see:
+DW_ATTR_LSTG_DTL(where LSTG_ATTR_ID in (4126, 4127, 4128))
+• For data on promotions set through Promotions Manager, see:
+• SME
+
+• PRMTN_SALE_START_DT
+Starting date of the Promotion Sale
+• PRMTN_SALE_START_TM
+Starting time of the Promotion Sale
+• PRMTN_SALE_END_DT
+Ending date of the Promotion Sale
+• PRMTN_SALE_END_TM
+Ending time of the Promotion Sale
+• PHOTO_YN
+This field indicates whether the PICTURE_URL field in the site table is blank or not.
+If not, then this will be 'Y', otherwise, it will be 'N'.
+The PICTURE_URL field on the site contains URLs of all the pictures (hosted, self-hosted but not stock) that are associated with the listing.
+• PHOTO_COUNT
+The number of images for the listing.
+This includes self-hosted and EPS images, but does NOT include stock photos or image links that are embedded directly in the description.
+For counts of description-embedded images, check the DW_LSTG_SLR_TRACKING table.
+For MSKU item, this only includes the main image and does not include each variation images for per MSKU. The value might be 1 even if more than 1 variation image is shown on the view item page. 
+• PHOTO_DISPLAY_TYPE
+Direct pull from site table.
+Potential values:
+0 = Standard Show
+1 = Slide Show
+2 = Large Photo Show
+3 = Picture Pack
+4 = EPS Picture Show
+5 = Self Hosted Picture Show
+6 = SuperSize Picture Show
+-99999999 = Invalid
+Source of record: /v3core/CoreDomain/CoreDomainCommon/src/com/ebay/domain/core/common/PhotoDisplayEnum.java.
+• GLRY_TYPE_ID
+Indicates the type of Gallery image GALLERY_URL.
+-99999999 = Invalid
+0 = None
+1 = Gallery (Will also be set if Picture Pack, Motors Propack, or Valuepak used)
+2 = Featured (Will also be set if ProPack Plus is used) (Featured First)
+3 = Ungallery
+4 = Unfeatured
+5 = HomePage Featured
+6 = Stock Photo
+7 = Gallery Plus
+8 = UnGallery Plus
+Most values are not often used. Most listings are 0,1,2, or 7.
+This field is reliable for auctions that ended after 1/1/2004.
+• GALLERY_URL
+The gallery image is the image that is shown on the SRP page
+A single URL of the gallery image for this listing which is usually the first image from the picture URL.
+Can be eBay-Hosted or externally hosted.
+If the seller doesn't provide their own images but adopts a product then it will have the stock photo URL. Only 1 picture from the product is shown which is considered to be the stock photo.
+•  PICTURE_URL
+A semi-colon delimited list of image URLs for this listing.
+This field is limited to 4000 characters on the DW side for storage reasons.
+If the item adopts a product and there are no seller-provided images, PICTURE_URL will be empty.
+Code github link
+
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.stg_items_freq_i_adpo.spark.sql
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.stg_items_freq_i_merge_arc_adpo.spark.sql
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.stg_items_freq_i_merge_recon_adpo.spark.sql
+main logic
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.dw_items_w_sle_adpo_proc.spark.sql
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.dw_lstg_item_w_combine_adpo_proc.spark.sql
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.dw_lstg_combine_merge_target_adpo.merge.sp.sql
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.dw_lstg_combine_merge_target_adpo_final.merge.sp.sql
+https://github.ebay.com/APD/DINT-CORE/blob/master/etl/sql/dw_lstg/dw_lstg.dw_items_w_i_adpo.spark.sql
+Questions concerning this wiki page/space? For support please use the following channels:
+Jira:  http://go/velvet-support
+Slack: #hadoop-support, #zeta-support, #selfserviceanalytics, #tableau-support
+eNotify: http://go/hermes-subscribe, http://go/zeta-subscribe, http://go/Analytics-platforms-subscribe 
+more eNotify: subscribe to domain specific updates in eNotify that correspond to the data you care most about
+Like
+6 people like this
