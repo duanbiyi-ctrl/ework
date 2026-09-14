@@ -1,0 +1,181 @@
+Table Basics
+
+Platform: Hercules,Apollo
+
+DB_name: GDW_TABLES
+
+Table_name: LSTG_ITEM_VRTN
+
+View Name:
+
+ACCESS_VIEWS.LSTG_ITEM_VRTN
+BATCH_VIEWS.LSTG_ITEM_VRTN
+Data_freq: daily
+
+Data_latency: T-1
+
+Primary_key:  ITEM_ID, ITEM_VRTN_ID
+
+Partition: None
+
+Owner: Ding, Shan(AWF)(CCC)
+
+Latency_priority: P1
+
+Sla_time: 17:00 PST
+
+Quality_priority: P1
+
+Site_impact_yn:  No
+
+Site_impact_desc: Null
+
+Compliance_yn: No
+
+Compliance_desc: Null
+
+Table_type:
+
+DR_enable: Y
+
+Source team:
+
+Related Business Process: Seller Listing
+
+
+
+Overview
+
+This table contains all information about the variations in the listing.
+The purpose of the table is to capture data relevant to items which have Multi SKU information. There will be a record inserted in this table for each sku/variation on the parent item.
+Use DLT_STS_YN_IND to get the current live variations
+Business Value
+         DECO team:
+
+Public Feed API will be impacted . Feed API serves Item feed to third party partners. If the data is not available we will miss the SLA to provide eBay listings to partners.
+
+GMB impact when data is delayed for 1 day: $1M/day
+
+
+
+Column Descriptions
+
+ITEM_VRTN_ID
+Unique SKU identifier.
+ITEM_ID
+Listing identifier. Joins to DataWarehouse/Listings/DW_LSTG_ITEM.ITEM_ID.
+SLR_PRDCT_ID_TXT
+The SKU (stock-keeping unit) data defined by a seller.
+PRICE_AMT
+Item price for a given SKU. Price in listing currency.
+Important note: Individual SKUs CAN have different prices from the listing price.
+ORGNL_PRICE_AMT
+For Markdown Manager, when a sale happens.
+QTY
+Number of quantity available for the SKU.
+SOLD_QTY
+The quantity sold for this SKU.
+RSRVD_QTY
+The quantity that is in the reserved state. Unlikely that this is particularly important to report on, given that it will change frequently.
+VRTN_ORDER_NUM
+The order of this SKU within the SKU list.
+DLT_STS_YN_IND
+Flag indicating whether this SKU has been deleted. Always apply 'N' filter to get current set of SKUs.
+FLGS01_BMAP
+Flags column to store SKU level flag data.
+GLRY_VRSN_NUM
+Revision number of the Gallery image.
+GLRY_STATE_CD
+This is an Enum specifying the state of Gallery.
+0 = NotProcessed
+1 = Success
+2 = BadURL
+3 = BadProtocol
+4 = PermanentBadImage
+5 = HostNameDoesNotExist
+6 = ServerNotAvailable
+7 = ItemNotFound
+8 = FailedDownload
+9 = ImageFormat
+10 = BadImage
+11 = InternalError
+12 = Removed
+13 = MailError
+14 = MaxResultCo
+GLRY_URL_TXT
+URL to produce the gallery image.
+GLRY_IMAGE_SRC_TXT
+The Column Gallery_Image_Source in EBAY_ITEMS will be used to store the source of the Gallery Image.
+VRTN_END_DT
+End date for a SKU. Note: This field is always NULL at least since 2020-01-01.
+VRTN_END_RSN_CD
+The reason code as to why the SKU has been ended. Note: This field is always equal to 0 at least since 2020-01-01.
+LAST_RSTCK_DT
+Date when the SKU was restocked(Quantity changed) by the seller.
+WATCH_CNT
+Number of ebay users watching this item.
+GLRY_OFST_TXT
+Identifies the gallery url that will be used to generate the gallery image.
+VRTN_END_TM
+End timestamp for a SKU. Note: This field is always NULL at least since 2020-01-01.
+LAST_RSTCK_TM
+Timestamp when the SKU was restocked(Quantity changed) by the seller.
+AUCT_END_DT
+This is the PPI, which enables fast joins to listing tables.
+MFO_PRICE_LC_AMT
+The discount price for "made for outlet" items
+MAP_PRICE_LC_AMT
+The discount price for "minimum advised price" items
+STP_PRICE_LC_AMT
+The discount price for "strike thru price" items
+PRICE_TRTMNT_CD
+The discount price treatment type (1-STP, 2-MAP, 3-MFO, 0-None)
+UPC_NUM
+UPC number of the item.  Column UPC_NUM, ISBN_NUM, EAN_NUM and GTIN_NUM are added by Project Landing New Column in LSTG_ITEM_VRTN.
+ISBN_NUM
+ISBN number of the item.
+EAN_NUM
+EAN number of the item.
+GTIN_NUM
+GTIN number of the item.
+SRC_CRTN_DT
+Date row was created.
+LAST_MDFD_DT
+Date row was last updated.
+SRC_CRTN_TM
+Time row was created.
+LAST_MDFD_TM
+Time row was last updated.
+Sample SQL
+
+Sample Query
+
+
+SELECT
+  l.auct_type_code,
+  l.item_site_id,
+  CASE WHEN item_rollups.available_quantity > 0 THEN 'Y' ELSE 'N' END AS multi_sku,
+  COUNT(*) AS listings,
+  SUM(COALESCE(item_rollups.available_quantity, l.qty_avail)) AS total_qty_available,
+  SUM(COALESCE(item_rollups.variations, 1)) AS variations_plus_items,
+  SUM(COALESCE(item_rollups.sold_quantity,0)) AS sold_from_live_lists
+FROM
+  access_views.dw_lstg_item l
+  LEFT JOIN (
+  SELECT
+    v.item_id
+    ,COUNT(*) AS variations
+    ,SUM(qty - sold_qty) AS available_quantity
+    ,SUM(sold_qty) AS sold_quantity
+  FROM
+    access_views.lstg_item_vrtn v
+  WHERE
+    v.auct_end_dt >= '2011-10-11'
+    AND v.dlt_sts_yn_ind = 'N' /* Not deleted variations */
+  GROUP BY
+    1
+  ) item_rollups ON (l.item_id = item_rollups.item_id)
+WHERE
+  l.auct_end_dt >= '2011-10-11'
+GROUP BY
+  1,2,3
