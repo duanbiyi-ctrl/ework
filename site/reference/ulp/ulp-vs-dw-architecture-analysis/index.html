@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://yeqli.github.io/gds-item-docs/reference/ulp/ulp-vs-dw-architecture-analysis/">
+        <link rel="canonical" href="https://duanbiyi-ctrl.github.io/ework/reference/ulp/ulp-vs-dw-architecture-analysis/">
       
       
         <link rel="prev" href="../dw-vs-ulp-field-comparison/">
@@ -198,13 +198,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/GDS/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/duanbiyi-ctrl/ework" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    gds-item-docs
+    duanbiyi-ctrl/ework
   </div>
 </a>
       </div>
@@ -244,13 +244,13 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/GDS/gds-item-docs" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/duanbiyi-ctrl/ework" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    gds-item-docs
+    duanbiyi-ctrl/ework
   </div>
 </a>
     </div>
@@ -2343,10 +2343,10 @@ of a state change event:</p>
 <a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    ▼
 <a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>ULP stream event emitted to Kafka:
 <a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    {
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>      &quot;metadata&quot;: { id, operation, ulpListingVersionId, ... }
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>      &quot;beforeChangePatch&quot;: [RFC 6902 JSON Patch — exactly what changed]
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>      &quot;afterchangeDocument&quot;: &quot;&lt;gzip+base64 of new state&gt;&quot;
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>      &quot;afterchangeDocumentPlain&quot;: { &quot;listing&quot;: { ... } }
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>      "metadata": { id, operation, ulpListingVersionId, ... }
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>      "beforeChangePatch": [RFC 6902 JSON Patch — exactly what changed]
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>      "afterchangeDocument": "&lt;gzip+base64 of new state&gt;"
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>      "afterchangeDocumentPlain": { "listing": { ... } }
 <a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    }
 </code></pre></div>
 <h3 id="12-graphql-schema-controls-stream-field-shape">1.2 GraphQL Schema Controls Stream Field Shape</h3>
@@ -2459,12 +2459,12 @@ values in the stream:</p>
 <h3 id="cause-1-utc-vs-pstpdt-the-datetime-scalar">Cause 1 — UTC vs PST/PDT: The DateTime Scalar</h3>
 <p><strong>GraphQL evidence</strong> (repeated in every schema using DateTime):
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">scalar</span><span class="w"> </span><span class="err">DateTime</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c"># &quot;A slightly refined version of RFC-3339 compliant DateTime Scalar&quot;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c"># "A slightly refined version of RFC-3339 compliant DateTime Scalar"</span>
 </code></pre></div></p>
 <p><strong>Sample data confirmation:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&quot;startAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-09-08T15:55:06.000Z&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">&quot;endDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-08&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">&quot;actualEndAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-08T15:55:06.000Z&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">"startAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-09-08T15:55:06.000Z"</span><span class="p">,</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">"endDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-08"</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">"actualEndAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-08T15:55:06.000Z"</span>
 </code></pre></div></p>
 <p>The <code>Z</code> suffix means UTC. <code>endDate</code> is the date portion of the UTC timestamp.
 DW stores dates in <strong>PST/PDT</strong> (eBay's operational timezone) and truncates
@@ -2620,7 +2620,7 @@ SYI3. Use DW if tool-level analysis is required.</p>
 <h3 id="cause-4-schema-separates-scheduled-vs-actual-end-date">Cause 4 — Schema Separates Scheduled vs Actual End Date</h3>
 <p><strong>GraphQL evidence</strong> (<code>ListingLifecycle</code> type in <code>svls.graphql</code>):
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">type</span><span class="w"> </span><span class="err">ListingLifecycle</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nl">scheduledEndDate</span><span class="p">:</span><span class="w"> </span><span class="n">DateTime</span><span class="w">   </span><span class="c"># @deprecated(&quot;Use scheduledEndAt&quot;) — scheduled end</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nl">scheduledEndDate</span><span class="p">:</span><span class="w"> </span><span class="n">DateTime</span><span class="w">   </span><span class="c"># @deprecated("Use scheduledEndAt") — scheduled end</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nl">scheduledEndAt</span><span class="p">:</span><span class="w"> </span><span class="n">DateTime</span><span class="w">     </span><span class="c"># @fallbackToSource — canonical scheduled end</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nl">actualEndAt</span><span class="p">:</span><span class="w"> </span><span class="n">DateTime</span><span class="w">        </span><span class="c"># Actual termination timestamp (separate field)</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nl">endDate</span><span class="p">:</span><span class="w"> </span><span class="n">DateTime</span><span class="w">            </span><span class="c"># @deprecated — was scheduled end</span>
@@ -2652,8 +2652,8 @@ These measure different things for GTC listings.</p>
 <h3 id="cause-5-itemrevisiondate-is-set-only-on-cls-core-revisions">Cause 5 — <code>itemRevisionDate</code> Is Set Only on CLS Core Revisions</h3>
 <p><strong>GraphQL evidence:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c"># svls.graphql</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="err">&quot;Date</span><span class="w"> </span><span class="err">when</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">item</span><span class="w"> </span><span class="err">was</span><span class="w"> </span><span class="err">revised.&quot;</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="err">itemRevisionDate:</span><span class="w"> </span><span class="err">DateTime</span><span class="w"> </span><span class="err">@tag_</span><span class="k">directive</span><span class="err">(add:</span><span class="w"> </span><span class="err">&quot;inaccessible&quot;</span><span class="p">,</span><span class="w"> </span><span class="err">gateway:</span><span class="w"> </span><span class="err">&quot;publicapi&quot;)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="err">"Date</span><span class="w"> </span><span class="err">when</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">item</span><span class="w"> </span><span class="err">was</span><span class="w"> </span><span class="err">revised."</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="err">itemRevisionDate:</span><span class="w"> </span><span class="err">DateTime</span><span class="w"> </span><span class="err">@tag_</span><span class="k">directive</span><span class="err">(add:</span><span class="w"> </span><span class="err">"inaccessible"</span><span class="p">,</span><span class="w"> </span><span class="err">gateway:</span><span class="w"> </span><span class="err">"publicapi")</span>
 </code></pre></div></p>
 <p>This field is populated only when the ULP event was triggered by a
 <strong>CLS core revision</strong> — i.e., <code>coreListingVersionId</code> changed.</p>
@@ -2724,10 +2724,10 @@ semantic scope.</p>
 <a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>  → dw_lstg_item = state at end of business day
 </code></pre></div></p>
 <p><strong>Real example</strong> (item <code>257569090674</code>, qty change):
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Yesterday&#39;s DW T-1:       qty_avail = 16
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Yesterday's DW T-1:       qty_avail = 16
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Today: ULP event fires    qty drops to 6  (patch: replace quantityAvailable)
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>                          afterchangeDocumentPlain.quantityAvailable = 6
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>Tonight&#39;s DW T-1:         qty_avail = 6  (will be updated in tonight&#39;s batch)
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>Tonight's DW T-1:         qty_avail = 6  (will be updated in tonight's batch)
 </code></pre></div></p>
 <p>This is why DW can show HIGHER values than ULP for the same day:
 DW = yesterday's EOD snapshot; ULP = the event that just happened today.
@@ -2736,15 +2736,15 @@ earliest record of the change; DW will catch up at the next batch run.</p>
 <hr />
 <h2 id="part-3-the-marketplaceid-issue-schema-documented-incompatibility">Part 3 — The <code>marketplaceId</code> Issue: Schema-Documented Incompatibility</h2>
 <p>The schema explicitly documents this as a known problem (verbatim from <code>svls.graphql</code>):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="err">&quot;&quot;&quot;</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="err">@deprecated(reason:</span><span class="w"> </span><span class="err">&quot;use</span><span class="w"> </span><span class="err">marketplace&quot;)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="err">"""</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="err">@deprecated(reason:</span><span class="w"> </span><span class="err">"use</span><span class="w"> </span><span class="err">marketplace")</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
 <a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="err">CRITICAL</span><span class="w"> </span><span class="err">COMPATIBILITY</span><span class="w"> </span><span class="err">WARNING</span>
 <a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="err">This</span><span class="w"> </span><span class="err">field</span><span class="w"> </span><span class="err">returns</span><span class="w"> </span><span class="err">custom</span><span class="w"> </span><span class="err">SVLS-specific</span><span class="w"> </span><span class="err">values</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">DO</span><span class="w"> </span><span class="err">NOT</span><span class="w"> </span><span class="err">align</span><span class="w"> </span><span class="err">with</span>
 <a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="err">standard</span><span class="w"> </span><span class="err">eBay</span><span class="w"> </span><span class="err">marketplace</span><span class="w"> </span><span class="err">identifier</span><span class="w"> </span><span class="err">formats.</span><span class="w"> </span><span class="err">There</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="err">known</span><span class="w"> </span><span class="err">incompatibilities</span>
 <a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="err">with</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">GlobalIdConverter</span><span class="w"> </span><span class="err">library</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">potentially</span><span class="w"> </span><span class="err">other</span><span class="w"> </span><span class="err">marketplace</span><span class="w"> </span><span class="err">conversion</span>
 <a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="err">utilities.</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="err">&quot;&quot;&quot;</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="err">"""</span>
 <a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="err">marketplaceId:</span><span class="w"> </span><span class="err">ID</span>
 </code></pre></div>
 <p>Three representations exist simultaneously:</p>
@@ -2779,8 +2779,8 @@ earliest record of the change; DW will catch up at the next batch run.</p>
 </tbody>
 </table>
 <p>The sample data shows both <code>marketplaceId</code> and <code>marketplace</code> coexisting:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">&quot;marketplaceId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EBAY-US&quot;</span><span class="p">,</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nt">&quot;marketplace&quot;</span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;EBAY_US&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">"marketplaceId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EBAY-US"</span><span class="p">,</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nt">"marketplace"</span><span class="p">:</span><span class="w">   </span><span class="s2">"EBAY_US"</span>
 </code></pre></div></p>
 <p>To join DW to ULP: <code>DW.item_site_id → DW_SITES → GlobalId string → ULP.marketplace enum</code>.</p>
 <hr />
@@ -2788,11 +2788,11 @@ earliest record of the change; DW will catch up at the next batch run.</p>
 <p>Fields with this directive read from CLS live during a migration window
 instead of the NuDoc cache. From <code>defaultulpprovider.graphql</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">directive</span><span class="w"> </span><span class="err">@fallbackToSource(endDate:</span><span class="w"> </span><span class="err">DateTime!</span><span class="p">,</span><span class="w"> </span><span class="err">startDate:</span><span class="w"> </span><span class="err">DateTime!)</span><span class="w"> </span><span class="err">on</span><span class="w"> </span><span class="k">FIELD_DEFINITION</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="err">&quot;&quot;&quot;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="err">"""</span>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="err">Directive</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">decide</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">fields</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">fallback</span><span class="w"> </span><span class="err">retrieving.</span>
 <a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="err">If</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">record</span><span class="w"> </span><span class="err">modification</span><span class="w"> </span><span class="err">date</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">less</span><span class="w"> </span><span class="err">than</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">start</span><span class="w"> </span><span class="err">date</span><span class="p">,</span><span class="w"> </span><span class="err">retrieve</span><span class="w"> </span><span class="err">from</span><span class="w"> </span><span class="err">gateway.</span>
 <a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="err">Note:</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">time</span><span class="w"> </span><span class="err">zone</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">startDate</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">endDate</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">UTC.</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="err">&quot;&quot;&quot;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="err">"""</span>
 </code></pre></div>
 <p>Active windows in <code>svls.graphql</code>:</p>
 <table>
@@ -3056,7 +3056,7 @@ the same NuDoc source.</p>
       
       
     
-    <a href="https://github.com/yeqli/gds-item-docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/duanbiyi-ctrl/ework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   

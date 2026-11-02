@@ -1,9 +1,9 @@
 site_name: Item Domain LDM Documentation
 site_description: Comprehensive guide to Item Domain Logical Data Model in GDS
-site_url: https://yeqli.github.io/gds-item-docs/
+site_url: https://duanbiyi-ctrl.github.io/ework/
 
-repo_url: https://github.com/GDS/gds-item-docs
-repo_name: gds-item-docs
+repo_url: https://github.com/duanbiyi-ctrl/ework
+repo_name: duanbiyi-ctrl/ework
 
 theme:
   name: material
@@ -106,4 +106,4 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yeqli/gds-item-docs
+      link: https://github.com/duanbiyi-ctrl/ework
