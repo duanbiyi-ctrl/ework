@@ -1,0 +1,7 @@
+Field Name	Description	Sample Value
+leaf_categ_id	Leaf-level category ID for the primary listing category chosen by the seller. Join to DW_CATEGORY_GROUPINGS on (item_site_id, leaf_categ_id) to get full category hierarchy (L1/L2/SAP/meta).	9355
+leaf_categ_id2	Category ID of the optional secondary listing category. Default 0 when no second category is chosen.	0
+categ_key	Alias for leaf_categ_id. Used interchangeably in some physical source tables.	9355
+categ_key2	Alias for leaf_categ_id2. Used interchangeably in some physical source tables.	0
+stor_categ_id	Primary custom Store category ID — a seller-defined category within their eBay Store (eBay Store sellers only).	12345
+stor_categ2_id	Secondary custom Store category ID (eBay Store sellers only). 0 if not set.	0

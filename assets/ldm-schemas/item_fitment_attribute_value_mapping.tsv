@@ -1,0 +1,8 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	Unique identifier of a listed item for auction	DW_LSTG_ITEM_FTMNT	item_id
+auct_end_dt	Y	Auction end date - PPI for partitioning	DW_LSTG_ITEM_FTMNT	auct_end_dt
+ftmnt_grp_id	Y	Fitment group ID - Unique group of Year Make and Model	DW_LSTG_ITEM_FTMNT	ftmnt_grp_id
+ftmnt_name	Y	Fitment name (Year, Make, Model, Trim, Engine)	DW_LSTG_ITEM_FTMNT	ftmnt_name
+ftmnt_value_text	Y	Fitment value text	DW_LSTG_ITEM_FTMNT	ftmnt_value_text
+src_ind	Y	Source indicator: 0=missing Trim/Engine, 1=complete seller entry, 3=DW matched	DW_LSTG_ITEM_FTMNT	src_ind
+cmbntn_grp_id	Y	Combination group ID - Sub group of Trim and Engine under fitment group	DW_LSTG_ITEM_FTMNT	cmbntn_grp_id

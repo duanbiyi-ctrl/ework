@@ -1,0 +1,10 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	Listing identifier	VRTN_ASPCT_CLSSFCTN_SAP	item_id
+item_vrtn_id	Y	Unique SKU identifier	VRTN_ASPCT_CLSSFCTN_SAP	item_vrtn_id
+prdct_aspct_nm	Y	Product aspect name	VRTN_ASPCT_CLSSFCTN_SAP	prdct_aspct_nm
+aspct_vlu_nm	Y	Aspect value name	VRTN_ASPCT_CLSSFCTN_SAP	aspct_vlu_nm
+ns_type_cd	Y	Namespace type code (nf, vnf, df, vdf, etc.)	VRTN_ASPCT_CLSSFCTN_SAP	ns_type_cd
+aspct_src	Y	Aspect source - indicates which classifier generated the aspect	VRTN_ASPCT_CLSSFCTN_SAP	aspct_src
+key_type	Y	Key type: 1=SAP_INTERNAL (sync), 2=SAP_ASYNC_PASS_INTERNAL (async)	VRTN_ASPCT_CLSSFCTN_SAP	key_type
+auct_end_dt		Auction end date - PPI for partitioning	VRTN_ASPCT_CLSSFCTN_SAP	auct_end_dt
+load_ts		Last modified timestamp	VRTN_ASPCT_CLSSFCTN_SAP	load_ts

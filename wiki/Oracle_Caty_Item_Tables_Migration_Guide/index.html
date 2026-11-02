@@ -1,0 +1,2155 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive guide to Item Domain Logical Data Model in GDS">
+      
+      
+      
+        <link rel="canonical" href="https://duanbiyi-ctrl.github.io/ework/wiki/Oracle_Caty_Item_Tables_Migration_Guide/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Oracle Caty Item Tables Migration Guide - Item Domain LDM Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#oracle-caty-item-tables-migration-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Item Domain LDM Documentation" class="md-header__button md-logo" aria-label="Item Domain LDM Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Item Domain LDM Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Oracle Caty Item Tables Migration Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/duanbiyi-ctrl/ework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    duanbiyi-ctrl/ework
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Item Domain LDM Documentation" class="md-nav__button md-logo" aria-label="Item Domain LDM Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Item Domain LDM Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/duanbiyi-ctrl/ework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    duanbiyi-ctrl/ework
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Catalog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LDM Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Govern
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Govern
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/variation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Raw
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Raw
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemCompatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemDescription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-qty-price/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemPriceAndQuantity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemDetails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-business-policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemBusinessPolicies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-uuid-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemUUIDMapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-lock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemLock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemgroupkeyspace-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemGroupRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemgroupkeyspace-group-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemGroupDescription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemgroupkeyspace-group-business-policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemGroupBusinessPolicies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-draft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftItem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-draft-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftItemCompatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-group-draft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftGroup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-group-draft-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftGroupCompatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-group-draft-desc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftGroupDescription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/userlistingdraft-user-item-draft-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UserListingDraftMap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingRevisionRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-listing-revision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingRevision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-listing-revision-detail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingRevisionDetail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-variation-revision-detail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingVariationRevisionDetail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relationship
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Relationship
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relationships/item_common_attribute_value_mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item Common Attribute Value Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Process
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Process
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/item-business-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/migration-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/query-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Query Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ldm-modeling-principle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Design Principle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ldm-review-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Review Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/sample-data-schema-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample Data vs. Schema Alignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ULP vs DW
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ULP vs DW
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ulp/dw-vs-ulp-field-comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Field Comparison (DW vs ULP)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ulp/ulp-vs-dw-architecture-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Analysis (Why They Differ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-current-migration-strategy-for-the-selling-listing-platform-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is the current migration strategy for the Selling Listing Platform team?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-current-migration-strategy-for-domain-teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is the current migration strategy for domain teams?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-determine-which-tablescolumns-my-application-is-using" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How can I determine which tables/columns my application is using?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-migrate-my-application-that-is-using-salebof-saleaggregator-to-fetch-item-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How can I migrate my application that is using SaleBOF / SaleAggregator to fetch item information?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-of-salebo-fields-to-ulpsvls-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping of SaleBo fields to ULP/SVLS fields
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-integrate-with-ulp-as-a-data-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Integrate with ULP as a Data Reader?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-integrate-with-ulp-as-a-data-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Integrate with ULP as a Data Provider?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-application-needs-item-data-in-realtime-how-can-i-get-the-real-time-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My application needs item data in realtime. How can I get the real time data ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-application-listens-to-item-bes-events-and-fetches-item-data-can-i-get-the-data-from-ulp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Application listens to Item BES events and fetches item data, can I get the data from ULP?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-currently-use-oracle-goldengate-events-to-capture-item-changes-how-can-i-migrate-this-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        We currently use Oracle GoldenGate events to capture item changes. How can I migrate this process??
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-use-item-dw-tables-to-access-the-item-data-what-is-the-migration-plan-for-dw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        We use item DW tables to access the item data, what is the migration plan for DW?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-recommended-migration-paths-for-consumers-of-legacy-listing-bes-1-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are recommended migration paths for consumers of legacy listing BES 1 events?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are recommended migration paths for consumers of legacy listing BES 1 events?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-listing-platform-currently-generates-the-following-events-using-the-legacy-bes-1-framework-which-relies-on-oracle-transactional-plsql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Listing Platform currently generates the following events using the legacy BES 1 framework, which relies on Oracle transactional PL/SQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unified-listing-platform-is-generating-following-bes-2-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unified listing platform is generating following BES 2 events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-1-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 1( Recommended )
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="oracle-caty-item-tables-migration-guide">Oracle Caty Item Tables Migration Guide</h1>
+<h2 id="summary">Summary</h2>
+<p>The Selling team is phasing out / decommissioning the Oracle UserItemHost (CatyHost) item family due to scalability challenges, high Oracle licensing costs, performance bottlenecks, and complex maintenance requirements.</p>
+<p>The migration to a NuDocument-based solution will be executed in phases.</p>
+<p>In the initial phase, the primary data reads/writes for <strong>all selling listing applications</strong> from the following <a href="https://docs.google.com/spreadsheets/d/1FkEFBrqDFMNY2EHeOTDUkn69pNT9pAzNmTWlWUtN8d4/edit#gid=0">Oracle tables</a> will be migrated to NuDocument. This includes migrating Selling View Listing Service(SVLS) to read data from NuDocument instead of Oracle.</p>
+<ul>
+<li><strong>EBAY_ITEMS</strong></li>
+<li><strong>EBAY_SECONDARY_DATA</strong></li>
+<li><strong>ITEM_ATTR_INFO</strong></li>
+<li><strong>ITEM_VARIATION</strong></li>
+<li><strong>EBAY_ITEM_DESC</strong></li>
+<li><strong>EBAY_ITEM_SHIPPING</strong></li>
+<li><strong>EBAY_ITEM_REV_DETAIL</strong></li>
+<li><strong>EBAY_ITEM_REVISIONS</strong></li>
+<li><strong>ITEM_VARIATION_REV</strong></li>
+<li><strong>ITEM_ATTR_INFO_VERSION</strong></li>
+<li><strong>ITEM_DESC_VERSION</strong></li>
+<li><strong>ITEM_DESC_VERSION_NEW</strong></li>
+<li><strong>ITEM_FEATURES_VERSION</strong></li>
+<li><strong>ITEM_SECONDARY_DATA_VERSION</strong></li>
+<li><strong>ITEM_SHIPPING_VERSION</strong></li>
+<li><strong>ITEM_VARIATION_VERSION</strong></li>
+<li><strong>ITEM_VERSION</strong></li>
+<li><strong>ITEM_SHIPPING_VERSION</strong></li>
+<li><strong>ITEM_VARIATION_VERSION</strong></li>
+<li><strong>ITEM_VERSION</strong></li>
+<li><strong>EBAY_SCHEDULED_ITEM</strong></li>
+<li><strong>ITEM_LOCK</strong></li>
+<li><strong>ENTITY_PROFILE_LOCK</strong></li>
+</ul>
+<p>In the initial phase, Domain teams have been asked to identify their usage of data from these tables. <a href="https://docs.google.com/spreadsheets/u/3/d/1RBsEJWmwUX72ejx9RM110RyEETy3faucgDNeeAVnVjc/edit">This sheet</a> gives insights into how different applications are using data in these tables.</p>
+<p>In the next phase, domain teams will need to migrate their data reads and writes out of these Oracle tables completely. They can leverage ULP to phase out these Oracle tables. Also, consumers of the item life cycle BES1 events needs to be migrated</p>
+<h2 id="background">Background</h2>
+<p>Historically, these item tables were established long ago, and over time, numerous fields have been added without clear data ownership.</p>
+<p>The Selling team conducted a thorough analysis of all data stored within these tables and devised a strategy to segregate seller-provided data as part of the listing flow (<strong>Core Selling data</strong>) from derived or computed data or data provided post Listing(<strong>Domain Data</strong>), which is managed by various domain teams such as Shipping, Trust, and Seller standards. A summary of the various fields and classifications of core selling and computed data can be found in <a href="https://docs.google.com/spreadsheets/d/1h_fS7jZM61xCHyrI7UKVluDelTB_-ZGwBkx_R2KD8FQ/edit?gid=1664882354#gid=1664882354">this sheet</a></p>
+<p>The earlier strategy for this Oracle migration involves the Selling Team owning only over core selling data or seller-provided data in listing flows, while domain teams take responsibility for domain data (derived or computed or post listing data).</p>
+<p>The core selling data, identified and modeled as Listing documents in NuData, are concurrently dual written into both NuData and Oracle. This core selling data is then made accessible through SVLS for client applications, with over 200 clients currently retrieving core selling data via SVLS.</p>
+<p>Domain teams were similarly tasked with establishing their own data stores to manage their respective data and transitioning client applications away from Oracle.</p>
+<p>Despite these efforts, the transition has not significantly reduced Oracle data access. Applications such as Search and View Item (VI), Search, Checkout require access to more than just core selling data. They have adopted a model that involves accessing core selling data via SVLS and directly accessing the database for all other domain or derived data.</p>
+<p>Key learnings from this initial migration strategy include:</p>
+<ul>
+<li>Many applications require access to more than just Core Selling data.</li>
+<li>Domain teams need a simplified method to manage their data with minimal effort.</li>
+<li>It is challenging for each domain team to coordinate with every consumer of their data, especially large consumers like Search and View Item, to access data from different sources.</li>
+</ul>
+<p>To address these challenges, the Selling team has developed a new platform, <a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/">Unified Listing Platform (ULP)</a>.</p>
+<p>Unified Listing Platform (ULP) is designed to serve all consumers of buyer-context independent listing data, including both core listing data as well as extended listing information. ULP provides data with low latency, high throughput, supporting both single and bulk listing data retrieval, single and multi-sku via GraphQL endpoint. ULP also broadcasts different kinds of listing change events, including CDC event stream for caller convenience. For more information about ULP, visit <a href="https://go/ulp">https://go/ulp</a></p>
+<p>In H1 2024, the Selling Listing team did an exercise with all the domain teams to find the data usage of different applications from these tables. <a href="https://docs.google.com/spreadsheets/u/3/d/1RBsEJWmwUX72ejx9RM110RyEETy3faucgDNeeAVnVjc/edit">This sheet</a> gives insights into how different applications are using data in these tables.</p>
+<h2 id="what-is-the-current-migration-strategy-for-the-selling-listing-platform-team">What is the current migration strategy for the Selling Listing Platform team?</h2>
+<p>The Selling team is currently dual-writing core selling data into both NuData and Oracle, with Oracle still serving as the primary data source for read and write operations. Our goal is to make NuData the primary source for all selling read use cases. Currently, SVLS, our service for data retrieval, reads data from Oracle, but we are transitioning all data reads from Oracle to NuData, making NuData the primary source for all SVLS use cases. This change will alleviate significant pressure on Oracle..</p>
+<p>We have identified certain domains, such as checkout, that still directly write data to Oracle (e.g., quantity updates during checkout) for the Core Selling data. We are collaborating with these teams to migrate their data writing to use our service, CAS (Central Availability Service). This migration is a prerequisite for making NuData the primary source for SVLS for Core Selling data.</p>
+<p>The Selling team will continue dual-writing until all domains have fully migrated away from Oracle. Additionally, we are actively enhancing the ULP to provide the necessary support for readers and writers to easily transition their use cases to ULP.</p>
+<h2 id="what-is-the-current-migration-strategy-for-domain-teams">What is the current migration strategy for domain teams?</h2>
+<p>Domain teams responsible for writing data to Oracle should manage their data and make it accessible through services. These teams can integrate with ULP as data providers, allowing their data to be available to all ULP clients. ULP also provides support for Domain teams that store few data points like flags, counts etc for easier migration.</p>
+<p>Domain teams that retrieve data directly from Oracle should transition away from using Oracle. They can integrate with ULP to meet most of their data requirements. If their data has not yet been migrated to ULP, temporary adapters may be available to retrieve data from Oracle(Only flags from ebay_items and variation_item are targeted). These adapters will be phased out once the domain teams have migrated their data and registered with ULP as providers. Please refer to ULP documentation for more information.</p>
+<h2 id="how-can-i-determine-which-tablescolumns-my-application-is-using">How can I determine which tables/columns my application is using?</h2>
+<p><strong>Option 1:</strong> Visit the Sherlock Pool page (of your production pool) under the DAL tab to find the list of oracle queries used in your application. You can refer to the following sample link: <a href="https://appmon.vip.ebay.com/reports/environment/prod/pool/r1api5io/DAL?startTime=2024/09/03%2000:00&amp;endTime=2024/09/04%2000:00&amp;colo=ALL">Sherlock Pool Page - DAL Tab</a>.</p>
+<p><strong>Option 2:</strong> Use the DBinaBox tool to retrieve the list of queries used in your application or pool. You can refer to the following link: <a href="https://dbinabox.vip.ebay.com/cal_db_pool_sql.html?pool=r1api5io&amp;db=apiusagehost&amp;day=2023-06-06">DBinaBox Tool</a>.</p>
+<h2 id="how-can-i-migrate-my-application-that-is-using-salebof-saleaggregator-to-fetch-item-information">How can I migrate my application that is using SaleBOF / SaleAggregator to fetch item information?</h2>
+<p>The V3 DAL libraries, such as <strong>SaleAggregator and SaleBOF</strong>, consolidate data from multiple tables, including those beyond item tables, and retrieve most columns entirely from these sources. For instance, over 400 item attributes are consolidated into a single XML CLOB within the item item attributes table, requiring applications to fetch and parse this column to read/write specific attributes. Additionally, a single flag column in these item tables may contain up to 32 flags, with more than 500 such flags in total.</p>
+<p>The existing DAL libraries, like SaleBOF, load all these columns completely, which complicates pinpointing the precise data needed for specific applications. Out of approximately 1200 data points stored in these 6 tables, only about 300 are provided by the seller, with the remainder often going unused. Our goal is to migrate only the necessary data and phase out what is not used.</p>
+<p>Given these complexities, updating these libraries to automatically fetch the required data is not feasible. To facilitate a smoother transition for applications, we have introduced the <a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/">Unified Listing Platform (ULP)</a>. This service provides centralized access to all Listing/Item-related information, streamlining the data retrieval process for applications transitioning from older DAL libraries.</p>
+<h2 id="mapping-of-salebo-fields-to-ulpsvls-fields">Mapping of SaleBo fields to ULP/SVLS fields</h2>
+<p>We are currently working on this mapping. In the meantime, you can refer to the following wiki for more information: <a href="https://wiki.corp.ebay.com/pages/viewpage.action?pageId=1382773750">Mapping Wiki</a>.</p>
+<h2 id="how-to-integrate-with-ulp-as-a-data-reader">How to Integrate with ULP as a Data Reader?</h2>
+<p>To learn more about integrating with the Unified Listing Platform (ULP) as a data reader, please refer to the <a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/docs/category/query-listing-data">ULP documentation</a>.</p>
+<p>For quick integration assistance, you can also check out the available <a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/docs/Client/Samples">sample implementations</a>.</p>
+<p><a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/docs/Client/Samples">https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/docs/Client/Samples</a></p>
+<h2 id="how-to-integrate-with-ulp-as-a-data-provider">How to Integrate with ULP as a Data Provider?</h2>
+<p>To integrate with the Unified Listing Platform (ULP) as a data provider, please see the <a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/docs/category/listing-providers">ULP documentation</a> for detailed instructions.</p>
+<p><a href="https://github.corp.ebay.com/unified-listing-platform/Reference-Applications/tree/main/DealItem-reference-provider">Reference application</a></p>
+<h2 id="my-application-needs-item-data-in-realtime-how-can-i-get-the-real-time-data">My application needs item data in realtime. How can I get the real time data ?</h2>
+<p>ULP currently uses cached data and is eventually consistent. We are working on enabling real-time retrieval of item data based on specific needs. Please share your use case with us so we can assess how ULP can support it.</p>
+<h2 id="my-application-listens-to-item-bes-events-and-fetches-item-data-can-i-get-the-data-from-ulp">My Application listens to Item BES events and fetches item data, can I get the data from ULP?</h2>
+<p>We recommend migrating to the ULP events from the legacy BES item events. For more details, please refer to this <a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/docs/ExternalEvents">link.</a></p>
+<p>Please note that ULP currently uses cached data and is eventually consistent.</p>
+<h2 id="we-currently-use-oracle-goldengate-events-to-capture-item-changes-how-can-i-migrate-this-process">We currently use Oracle GoldenGate events to capture item changes. How can I migrate this process??</h2>
+<p>ULP generates NuData CDC streams(WIP/POC), which are equivalent to Oracle GoldenGate events and can be utilized in your application.</p>
+<h2 id="we-use-item-dw-tables-to-access-the-item-data-what-is-the-migration-plan-for-dw">We use item DW tables to access the item data, what is the migration plan for DW?</h2>
+<p>We are working on creating DW tables, will be available soon</p>
+<h2 id="what-are-recommended-migration-paths-for-consumers-of-legacy-listing-bes-1-events">What are recommended migration paths for consumers of legacy listing BES 1 events?</h2>
+<p><strong>List of all Caty BES events:</strong> <a href="https://docs.google.com/spreadsheets/d/1FrvVsiH2D_3JV7zguvEqdxPiWz0q9BUcnMgi2_5sIcI/edit?gid=0#gid=0">https://docs.google.com/spreadsheets/d/1FrvVsiH2D_3JV7zguvEqdxPiWz0q9BUcnMgi2_5sIcI/edit?gid=0#gid=0</a> ( <strong>For non ULP BES, if you have more questions reach out to</strong> <a href="mailto:smoalla@ebay.com">Souhaila Moalla</a><strong>- NuData</strong>)</p>
+<h3 id="the-listing-platform-currently-generates-the-following-events-using-the-legacy-bes-1-framework-which-relies-on-oracle-transactional-plsql">The Listing Platform currently generates the following events using the legacy BES 1 framework, which relies on Oracle transactional PL/SQL</h3>
+<ul>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM">ITEM</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.NEW">ITEM.NEW</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.REVISED">ITEM.REVISED</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.EXTENDED">ITEM.EXTENDED</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.CLOSURE">ITEM.CLOSURE</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.SOLD">ITEM.SOLD</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.SCHED.TOACTIVE">ITEM.SCHED.TOACTIVE</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.CATEGORY.UPDATED">ITEM.CATEGORY.UPDATED</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-ITEM.HOLDSTATUS.UPDATED">ITEM.HOLDSTATUS.UPDATED</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-DRAFT">DRAFT</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-DRAFT.CREATE">DRAFT.CREATE</a></li>
+<li><a href="https://wiki.corp.ebay.com/display/LS/BES+Events+generated+by+CLS#BESEventsgeneratedbyCLS-DRAFT.UPDATE">DRAFT.UPDATE</a></li>
+</ul>
+<p><strong>These events are accessible to BES 2 consumers through the BES 2 event bridge or</strong> <a href="https://pages.github.corp.ebay.com/Near-Real-Time/rheos-documentation/docs/bes2/EventType-BES2-Replication/">Event Type BES2 Replication</a></p>
+<h3 id="unified-listing-platform-is-generating-following-bes-2-events">Unified listing platform is generating following <a href="https://pages.github.corp.ebay.com/unified-listing-platform/ulp-docs/docs/ExternalEvents">BES 2 events</a></h3>
+<ul>
+<li><strong>ULP.LISTING.NEW</strong></li>
+<li><strong>ULP.LISTING.UPDATED</strong></li>
+<li><strong>ULP.LISTING.ENDED</strong></li>
+<li><strong>ULP.LISTING.HOLDSTATUS.UPDATED</strong></li>
+<li><strong>ULP.LISTING.CATEGORY.UPDATED</strong></li>
+</ul>
+<p>With the ongoing deprecation of the corresponding Oracle tables, it is necessary for consumers of these BES 1 events to transition to alternative solutions.</p>
+<p>There are three options:</p>
+<h3 id="option-1-recommended">Option 1( Recommended )</h3>
+<p><strong>Consumers of the legacy Listing BES1 events are advised to migrate to the corresponding ULP BES2 events. This migration requires integrating with the ULP to access item details as needed, involving changes to the consumer to accommodate the new BES2 event format. Please note that while Listing BES1 and ULP BES2 are distinct events with different payloads, they are generated for the same use cases.</strong> <strong>Consumers must manage the transition carefully to ensure a smooth switch and avoid any data duplication or loss during the process.</strong></p>
+<h3 id="option-2">Option 2</h3>
+<p>For consumers where the transition demands minimal changes, the BES platform offers support that facilitates a straightforward <a href="https://pages.github.corp.ebay.com/Near-Real-Time/rheos-documentation/docs/bes2/Consumer-Migration/">migration</a> to BES 2. However, once the underlying Oracle tables and BES 1 events are phased out, our application will generate these events in a non-transactional manner, which may lead to potential availability issues. This option should be chosen only if your application can tolerate such availability concerns.</p>
+<h3 id="option-3">Option 3</h3>
+<p>For consumers requiring more real-time event handling of item updates where no direct BES 2 equivalent exists, the Listing Platform will create new events leveraging NuData's Transactional BES capabilities. These will be new BES 2 events, and consumers will need to migrate to consume these new events.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/duanbiyi-ctrl/ework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

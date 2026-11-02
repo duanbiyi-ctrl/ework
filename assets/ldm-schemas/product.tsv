@@ -1,0 +1,23 @@
+field_name	pk	field_description	physical_table	physical_table_column
+prod_ref_id	Y	Product Reference ID (ePID)	CTLG_PROD_FACT	prod_ref_id
+prod_vrsn_id		Product Version ID	CTLG_PROD_FACT	prod_vrsn_id
+leaf_categ_id		The primary leaf category ID of the product	CTLG_PROD_FACT	leaf_categ_id
+prod_title		Product Title	CTLG_PROD_FACT	prod_title
+site_id		The product's site id	CTLG_PROD_FACT	site_id
+site_name		Site Name	CTLG_PROD_FACT	site_name
+sgstd_categ_id		Suggested Leaf Category ID	CTLG_PROD_FACT	sgstd_categ_id
+dmnt_site_id		Dominate Site ID - the site that a given product has most # of items associated with	CTLG_PROD_FACT	dmnt_site_id
+dmnt_vrtcl_name		Dominate Vertical Name	CTLG_PROD_FACT	dmnt_vrtcl_name
+dmnt_leaf_categ_id		Dominate Leaf Category ID	CTLG_PROD_FACT	dmnt_leaf_categ_id
+stk_photo_yn_ind		Indicates whether the Product has stock photo	CTLG_PROD_FACT	stk_photo_yn_ind
+prod_image_url_txt		The URL for the 1st image of the product from PGS	CTLG_PROD_FACT	prod_image_url_txt
+prod_image_cnt		Number of images for the product from PGS	CTLG_PROD_FACT	prod_image_cnt
+image_ind		Indicates if the product has image	CTLG_PROD_FACT	image_ind
+cpid		Core Product ID	CTLG_PROD_FACT	cpid
+latest_prod_id		The most updated version of this Product	CTLG_PROD_FACT	latest_prod_id
+grnlrty_lvl_cd		Product Granularity Level Code	CTLG_PROD_FACT	grnlrty_lvl_cd
+ftmnt_cnt		The number of fitment groups for the product	CTLG_PROD_FACT	ftmnt_cnt
+prod_type_cd		Product type code	CTLG_PROD_FACT	prod_type_cd
+pe_agg_type_desc		PE product aggregation type (GTIN, BMPN, etc.)	CTLG_PROD_FACT	pe_agg_type_desc
+prod_merge_ind		Indicates whether the Product has been merged to another Product	CTLG_PROD_FACT	prod_merge_ind
+prod_dlt_ind		Indicates whether the Product has been deleted	CTLG_PROD_FACT	prod_dlt_ind

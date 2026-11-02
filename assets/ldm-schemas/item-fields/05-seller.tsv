@@ -1,0 +1,12 @@
+Field Name	Description	Sample Value
+slr_id	Seller's internal DW user ID (Oracle ID). Not updated after item creation. Join to DW_USERS on USER_ID.	456789012
+slr_site_id	Site ID where the seller's account is registered.	0
+slr_cntry_id	Country ID where the seller's account is registered.	0
+slr_prdct_id_txt	Seller's custom label or internal SKU identifier for this item. Stored by eBay but not used in eBay systems (seller's own inventory reference).	SELLER-SKU-001
+sku_num	Seller's custom application-specific data tag. Stored by eBay but not interpreted.	[placeholder]
+paypal_seller_email	Seller's PayPal email address for this listing. PII field — prefer hash_paypal_seller_email for analysis.	seller@example.com
+hash_paypal_seller_email	Privacy-safe hashed version of paypal_seller_email. Use this field instead of paypal_seller_email for any analytical workloads.	5f4dcc3b5aa765d61d8327de...
+high_bdr_cntry_id	Country of residence of the highest bidder. -998 = multi-quantity listing (no single bidder determinable), -999 = unknown.	0
+high_bdr_site_id	Registration site ID of the highest bidder.	0
+slng_mgr_sbscrbr_flag	True if the seller was a Selling Manager subscriber at the time this listing was created.	false
+slng_mgr_pro_sbscrbr_flag	True if the seller was a Selling Manager Pro subscriber at the time this listing was created.	false

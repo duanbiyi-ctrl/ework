@@ -1,0 +1,13 @@
+field_name	pk	field_description	physical_table	physical_table_column
+item_id	Y	ITEM_ID field	DW_ATTR_DETAIL_VALUES	item_id
+auct_end_dt		AUCT_END_DT field	DW_ATTR_DETAIL_VALUES	auct_end_dt
+period_id		PERIOD_ID field	DW_ATTR_DETAIL_VALUES	period_id
+leaf_categ_id		LEAF_CATEG_ID field	DW_ATTR_DETAIL_VALUES	leaf_categ_id
+leaf_categ2_yn		LEAF_CATEG2_YN field	DW_ATTR_DETAIL_VALUES	leaf_categ2_yn
+attr_id	Y	ATTR_ID field	DW_ATTR_DETAIL_VALUES	attr_id
+attr_desc		ATTR_DESC field	DW_ATTR_DETAIL_VALUES	attr_desc
+value_id	Y	VALUE_ID field	DW_ATTR_DETAIL_VALUES	value_id
+value_desc		VALUE_DESC field	DW_ATTR_DETAIL_VALUES	value_desc
+uom_id		UOM_ID field	DW_ATTR_DETAIL_VALUES	uom_id
+gcs_id		GCS_ID field	DW_ATTR_DETAIL_VALUES	gcs_id
+gcs_type_id		GCS_TYPE_ID field	DW_ATTR_DETAIL_VALUES	gcs_type_id

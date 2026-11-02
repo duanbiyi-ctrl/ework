@@ -1,0 +1,2505 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive guide to Item Domain Logical Data Model in GDS">
+      
+      
+      
+        <link rel="canonical" href="https://duanbiyi-ctrl.github.io/ework/spike/nudata-schema-analysis/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Why Selling's NuData Schema Is a Producer Model - Item Domain LDM Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#why-sellings-nudata-schema-is-a-producer-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Item Domain LDM Documentation" class="md-header__button md-logo" aria-label="Item Domain LDM Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Item Domain LDM Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Why Selling's NuData Schema Is a Producer Model
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/duanbiyi-ctrl/ework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    duanbiyi-ctrl/ework
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Item Domain LDM Documentation" class="md-nav__button md-logo" aria-label="Item Domain LDM Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Item Domain LDM Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/duanbiyi-ctrl/ework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    duanbiyi-ctrl/ework
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Catalog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LDM Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Govern
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Govern
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/variation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Raw
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Raw
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemCompatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemDescription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-qty-price/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemPriceAndQuantity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemDetails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-business-policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemBusinessPolicies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-uuid-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemUUIDMapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemkeyspace-item-lock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemLock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemgroupkeyspace-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemGroupRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemgroupkeyspace-group-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemGroupDescription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/itemgroupkeyspace-group-business-policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ItemGroupBusinessPolicies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-draft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftItem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-draft-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftItemCompatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-group-draft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftGroup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-group-draft-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftGroupCompatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingdraft-item-group-draft-desc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingDraftGroupDescription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/userlistingdraft-user-item-draft-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UserListingDraftMap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingRevisionRoot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-listing-revision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingRevision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-listing-revision-detail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingRevisionDetail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/listingrevisionkeyspace-variation-revision-detail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListingVariationRevisionDetail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relationship
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Relationship
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relationships/item_common_attribute_value_mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item Common Attribute Value Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Process
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Process
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/item-business-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/migration-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/query-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Query Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ldm-modeling-principle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Design Principle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ldm-review-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDM Review Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/sample-data-schema-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample Data vs. Schema Alignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ULP vs DW
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ULP vs DW
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ulp/dw-vs-ulp-field-comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Field Comparison (DW vs ULP)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ulp/ulp-vs-dw-architecture-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Analysis (Why They Differ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executive-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Executive conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-and-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope and terminology
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-selling-uses-five-keyspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Selling uses five keyspaces
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Selling uses five keyspaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-five-families-and-22-declared-logical-docsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The five families and 22 declared logical docsets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-item-and-item-group-are-separate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Item and Item Group are separate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Item and Item Group are separate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssku-one-sellable-item" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSKU: one sellable item
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msku-one-shared-group-and-many-sellable-variations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSKU: one shared group and many sellable variations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-itemkeyspace-has-many-docsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why ItemKeyspace has many docsets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why ItemKeyspace has many docsets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-principle-partition-by-producer-access-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design principle: partition by producer access pattern
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-hierarchy-is-a-storage-and-mutation-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item hierarchy is a storage and mutation hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-pricequantity-and-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples: price/quantity and description
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchical-pojos-are-different-from-docset-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hierarchical POJOs are different from docset hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-evidence-crlstngsv-pojos-to-nudocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code evidence: crlstngsv POJOs to NuDocs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-downstream-consumers-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What downstream consumers need
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evidence-and-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidence and limits
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="why-sellings-nudata-schema-is-a-producer-model">Why Selling's NuData Schema Is a Producer Model</h1>
+<h2 id="executive-conclusion">Executive conclusion</h2>
+<p>Core Listing Service stores listing data in NuData to operate the Selling
+workflow: create and revise listings, update price and quantity, manage
+variation groups, find active drafts, reserve inventory, and retain revision
+history. It is a <strong>producer-side operational model</strong>, not a consumer-ready
+record for analytics, reporting, or general self-service use.</p>
+<p>The five live logical keyspaces and 22 declared docsets preserve the
+producer's identity, lifecycle, ownership, payload, and mutation boundaries.
+As a result, a downstream consumer does not receive one complete, flat
+<code>listing</code> record. To create an easy-to-read data product, downstream
+processing must assemble the necessary documents, choose the intended
+lifecycle state, decode alternative representations, normalize nested or
+repeated values, and publish governed consumer entities.</p>
+<p>This is not a criticism of the NuData design. The design is appropriate for
+the service that owns and changes listing state. The conclusion is that its
+storage shape should not be exposed as the default consumption shape.</p>
+<h2 id="scope-and-terminology">Scope and terminology</h2>
+<p>This analysis covers the five active logical keyspace families:</p>
+<ol>
+<li><code>ItemKeyspace</code></li>
+<li><code>ItemGroupKeyspace</code></li>
+<li><code>ListingDraft</code></li>
+<li><code>UserListingDraft</code></li>
+<li><code>ListingRevisionKeyspace</code></li>
+</ol>
+<p>A <strong>keyspace</strong> is an operational storage family. A <strong>docset</strong> is a named
+stored-document type within that family. Neither is automatically a
+consumer-facing entity or relational table.</p>
+<p><code>ItemKeyspaceArchive</code> and <code>ItemGroupKeyspaceArchive</code> are physical archive
+write targets that reuse live item or group root schemas. They are not
+additional live logical families and are out of scope here.</p>
+<h2 id="why-selling-uses-five-keyspaces">Why Selling uses five keyspaces</h2>
+<p>The split is primarily about <strong>business identity and lifecycle</strong>, not about
+creating five alternative copies of the same listing.</p>
+<table>
+<thead>
+<tr>
+<th>Keyspace</th>
+<th>Identity and lifecycle</th>
+<th>Producer-side purpose</th>
+<th>Consumer implication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ItemKeyspace</code></td>
+<td>One current sellable item: an SSKU listing or one MSKU variation, keyed by item ID.</td>
+<td>Holds state that is changed and read at an individual sellable-item level.</td>
+<td>It is not always the complete customer-visible listing; an MSKU item needs group context.</td>
+</tr>
+<tr>
+<td><code>ItemGroupKeyspace</code></td>
+<td>One current MSKU group, keyed by group ID.</td>
+<td>Holds state shared by a variation set and the links to its member items.</td>
+<td>Consumers must assemble group and variation records deliberately.</td>
+</tr>
+<tr>
+<td><code>ListingDraft</code></td>
+<td>One working draft, keyed by draft ID, before or during publication.</td>
+<td>Separates editable, incomplete work from published state.</td>
+<td>Draft data is not proof that a live item or group exists.</td>
+</tr>
+<tr>
+<td><code>UserListingDraft</code></td>
+<td>A user-and-draft active-draft index.</td>
+<td>Finds a user's active draft summaries without reading complete draft content.</td>
+<td>It is a discovery index, not a duplicate of the draft payload.</td>
+</tr>
+<tr>
+<td><code>ListingRevisionKeyspace</code></td>
+<td>History for an item or group listing, keyed by listing ID.</td>
+<td>Retains revision summaries and changed-property details separately from latest state.</td>
+<td>It must not be mixed with current-state fields when producing a current listing view.</td>
+</tr>
+</tbody>
+</table>
+<p>The lifecycle is therefore:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>UserListingDraft (find active draft)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>          |
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>          v
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>ListingDraft (working state) ---- publish ----&gt; ItemKeyspace (current item state)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                                                     ^
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                                                     |
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                                   ItemGroupKeyspace (shared MSKU state)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>ItemKeyspace and ItemGroupKeyspace changes ----&gt; ListingRevisionKeyspace (history)
+</code></pre></div>
+<p>The arrows describe business relationships and service flows. They are not
+relational joins supplied by NuData.</p>
+<h3 id="the-five-families-and-22-declared-logical-docsets">The five families and 22 declared logical docsets</h3>
+<table>
+<thead>
+<tr>
+<th>Keyspace</th>
+<th>Logical docsets</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ItemKeyspace</code></td>
+<td><code>__ROOT__</code>, <code>ItemCompatibility</code>, <code>ItemDescription</code>, <code>ItemQtyPrice</code>, <code>ItemDetails</code>, <code>BusinessPolicies</code>, <code>UuidMap</code>, <code>ItemLock</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>ItemGroupKeyspace</code></td>
+<td><code>__ROOT__</code>, <code>GroupDescription</code>, <code>GroupBusinessPolicies</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>ListingDraft</code></td>
+<td><code>__ROOT__</code>, <code>ItemDraft</code>, <code>ItemDraftCompatibility</code>, <code>ItemGroupDraft</code>, <code>ItemGroupDraftCompatibility</code>, <code>ItemGroupDraftDesc</code></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><code>UserListingDraft</code></td>
+<td><code>UserItemDraftMap</code></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><code>ListingRevisionKeyspace</code></td>
+<td><code>__ROOT__</code>, <code>ListingRevision</code>, <code>ListingRevisionDetail</code>, <code>VariationRevisionDetail</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>22</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This is a schema-declaration count. A single producer operation writes only
+the docsets needed for that operation; it does not write all 22 documents.</p>
+<h2 id="why-item-and-item-group-are-separate">Why Item and Item Group are separate</h2>
+<p>The distinction is clearest for SSKU and MSKU listings.</p>
+<h3 id="ssku-one-sellable-item">SSKU: one sellable item</h3>
+<p>An SSKU has no variation parent. Its current state is held in one
+<code>ItemKeyspace</code> document family.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ItemKeyspace / itemId
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── __ROOT__                 broad current item state
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├── ItemQtyPrice             sellable price and quantity
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>├── ItemDescription          seller description
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>└── other optional or operational item docsets
+</code></pre></div>
+<h3 id="msku-one-shared-group-and-many-sellable-variations">MSKU: one shared group and many sellable variations</h3>
+<p>An MSKU has data with two different ownership boundaries:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ItemGroupKeyspace / groupId
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── __ROOT__                 group title, itemIds, variation dimensions, shared images
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── GroupDescription         shared description
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>└── GroupBusinessPolicies    shared policies
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>ItemKeyspace / itemId-1      first sellable variation
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>ItemKeyspace / itemId-2      second sellable variation
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>...
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>ItemKeyspace / itemId-N      Nth sellable variation
+</code></pre></div>
+<p>The <code>ItemGroupKeyspace.__ROOT__.itemIds</code> value identifies the member
+variations. Each member item has <code>isVariation=true</code>, but it remains its own
+sellable item with an item-level lifecycle and price/quantity state.</p>
+<table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>MSKU group owns it once</th>
+<th>Variation item owns it per sellable SKU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Listing structure</td>
+<td>Group identity, member item IDs, variation traits, trait-driven images</td>
+<td>The variation's selected trait values</td>
+</tr>
+<tr>
+<td>Shared seller content</td>
+<td>Group title, description, business policies, shared images</td>
+<td>Item-specific content when applicable</td>
+</tr>
+<tr>
+<td>Commercial operations</td>
+<td>Not the price or inventory counter for every variation</td>
+<td>Price, available quantity, sold quantity, locks, and item lifecycle</td>
+</tr>
+</tbody>
+</table>
+<p>Storing shared data once avoids copying group-owned content to every
+variation. Storing commercial state per variation allows a price or inventory
+change to address only the sellable SKU that changed. This is a producer
+ownership and mutation design, not a ready-made parent/child reporting table.</p>
+<h2 id="why-itemkeyspace-has-many-docsets">Why ItemKeyspace has many docsets</h2>
+<p><code>ItemKeyspace</code> is the current-state family with the broadest set of Selling
+operations. Its docsets split state by update behavior, payload character,
+specialization, and lookup or reservation purpose.</p>
+<table>
+<thead>
+<tr>
+<th>Docset</th>
+<th>Producer boundary</th>
+<th>Why it is separate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__ROOT__</code></td>
+<td>Broad item identity, seller/location, category, lifecycle, flags, media references, and other item state.</td>
+<td>A price update or description-only read should not require rebuilding or fetching the broad item payload.</td>
+</tr>
+<tr>
+<td><code>ItemQtyPrice</code></td>
+<td>Available quantity, quantity sold, remnant rules, and price variants.</td>
+<td>This is the focused commercial state used by price and inventory operations.</td>
+</tr>
+<tr>
+<td><code>ItemDescription</code></td>
+<td>Seller description and description revision time.</td>
+<td>Description can be large, has its own revision, and can be stored expanded or compressed.</td>
+</tr>
+<tr>
+<td><code>ItemCompatibility</code></td>
+<td>Parts fitment or compatibility content.</td>
+<td>This is specialized, potentially large content that common item reads need not carry.</td>
+</tr>
+<tr>
+<td><code>BusinessPolicies</code></td>
+<td>Return, payment, and shipping policy content.</td>
+<td>Policies are a cohesive policy payload with a different access and update boundary from core item identity.</td>
+</tr>
+<tr>
+<td><code>ItemDetails</code></td>
+<td>High-precision prices, relaxed-rule state, and supporting seller documents.</td>
+<td>Specialized details do not belong on every common item path.</td>
+</tr>
+<tr>
+<td><code>ItemLock</code></td>
+<td>Inventory reservation and lock-summary state.</td>
+<td>Lock flows have a dedicated operational lifecycle and should not rewrite broad item state.</td>
+</tr>
+<tr>
+<td><code>UuidMap</code></td>
+<td>Seller-and-UUID lookup to listing and application identifiers.</td>
+<td>UUID-specific lookup avoids treating a broad item document as a lookup index.</td>
+</tr>
+</tbody>
+</table>
+<p>The first six are the normal current-item document family. <code>ItemLock</code> and
+<code>UuidMap</code> are auxiliary operational branches in the same keyspace, not fields
+that every item create or full-item read must use.</p>
+<h3 id="design-principle-partition-by-producer-access-pattern">Design principle: partition by producer access pattern</h3>
+<p>Selling does not start with the question, “What fields should a consumer see
+in one listing record?” It starts with, “Which part of listing state does this
+service own, change, or need for this operation?” A docset is created when
+that part of the item has a meaningfully different mutation, retrieval,
+payload, or operational-identity boundary.</p>
+<table>
+<thead>
+<tr>
+<th>Producer question</th>
+<th>Docset design response</th>
+<th>ItemKeyspace example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Does this state change on a focused commercial operation?</td>
+<td>Keep it independently addressable from broad listing state.</td>
+<td>Purchases and price updates address hot <code>ItemQtyPrice</code>, rather than rewriting category, media, lifecycle, and other root fields.</td>
+</tr>
+<tr>
+<td>Is this content large, irregular, or unnecessary for many reads?</td>
+<td>Put it in an optional payload that readers request only when needed.</td>
+<td><code>ItemDescription</code> and <code>ItemCompatibility</code> hold seller text and fitment; each can use an expanded or compressed representation.</td>
+</tr>
+<tr>
+<td>Does the operation have specialized or infrequent behavior?</td>
+<td>Keep its data out of the common item path.</td>
+<td><code>ItemDetails</code> holds high-precision prices and seller documents; <code>ItemCompatibility</code> supports fitment-specific behavior.</td>
+</tr>
+<tr>
+<td>Does the operation need its own key and lifecycle?</td>
+<td>Use a purpose-specific document shape instead of overloading the item root.</td>
+<td><code>ItemLock</code> manages reservations and a lock summary; <code>UuidMap</code> supports seller-and-UUID lookup.</td>
+</tr>
+</tbody>
+</table>
+<p>This principle makes docsets <strong>selective retrieval and targeted-update
+boundaries</strong>. The performance consequence is that a known operation can avoid
+unrelated payload and a consumer-like full-item assembly when it is not
+needed. It does not, by itself, guarantee a particular latency, throughput,
+storage, or concurrency result; those depend on the NuData implementation,
+payload sizes, request composition, caching, and service behavior.</p>
+<h3 id="item-hierarchy-is-a-storage-and-mutation-hierarchy">Item hierarchy is a storage and mutation hierarchy</h3>
+<p>The conceptual key layout is:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ItemKeyspace
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── itemId
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>│   ├── __ROOT__ / itemId
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>│   ├── ItemQtyPrice / QTY_PRICE_&lt;itemId&gt;
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>│   ├── ItemDescription / DESC_&lt;itemId&gt;
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>│   ├── ItemCompatibility / COMPAT_&lt;itemId&gt;
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>│   ├── BusinessPolicies / BIZ_POL_&lt;itemId&gt;
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>│   ├── ItemDetails / ITEM_DETAILS_&lt;itemId&gt;
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>│   └── ItemLock / LOCK_&lt;lockId&gt; or lock-summary key
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>└── sellerId + uuid
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    └── UuidMap
+</code></pre></div>
+<p>The hierarchy tells the service which document it can read, update, or create
+for an item operation. It does <strong>not</strong> mean every item reader must traverse
+every branch, nor that every child is a relational row to join without
+business rules.</p>
+<h3 id="examples-pricequantity-and-description">Examples: price/quantity and description</h3>
+<p><code>ItemQtyPrice</code> is intentionally narrower than the item root. It groups
+available and sold quantity with the listing's price variants. A price update
+can address this commercial branch rather than rebuilding category, media,
+seller, lifecycle, and policy-reference fields in <code>__ROOT__</code>.</p>
+<p><code>ItemDescription</code> is intentionally separated because seller-authored content
+can be large and irregular. The service writes either <code>desc</code> or compressed
+<code>compDesc</code>, together with <code>descRevsnDt</code>, and can read the description without
+requesting the full item. A downstream consumer must therefore decide whether
+to decompress content and must not treat the two representations as two
+independent descriptions.</p>
+<h2 id="hierarchical-pojos-are-different-from-docset-hierarchy">Hierarchical POJOs are different from docset hierarchy</h2>
+<p>Two kinds of hierarchy exist in this design, and they solve different
+problems.</p>
+<table>
+<thead>
+<tr>
+<th>Hierarchy</th>
+<th>Example</th>
+<th>What it preserves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Document hierarchy</strong></td>
+<td><code>itemId</code> ancestor with <code>ItemQtyPrice</code> and <code>ItemDescription</code> child docsets.</td>
+<td>Separate producer access, mutation, payload, and lifecycle boundaries.</td>
+</tr>
+<tr>
+<td><strong>Embedded object hierarchy</strong></td>
+<td><code>price.fixedPrice.currency</code>, <code>lifecycle.startDate</code>, <code>category.primaryCategoryId</code>, <code>aspects[]</code>.</td>
+<td>Cohesive Selling concepts and their internal cardinality.</td>
+</tr>
+</tbody>
+</table>
+<p>The producer POJOs are composed objects, not a single flat bag of fields.
+For example, <code>BaseItem</code> uses <code>Amount</code> for price values, lists for aspects,
+images, identifiers, and compatibility, and objects such as
+<code>BusinessPolicies</code>, <code>Lifecycle</code>, <code>Format</code>, and <code>TermsAndPolicies</code>.</p>
+<p>The document converter preserves that cohesion while deciding which document
+owns each producer concern:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Item / BaseItem POJO
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── broad identity, lifecycle, category, images  -&gt; ItemKeyspace.__ROOT__
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├── available quantity and Amount price variants -&gt; ItemQtyPrice
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>├── seller description                            -&gt; ItemDescription
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>├── compatibility list                            -&gt; ItemCompatibility
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>├── return, payment, and shipping policies        -&gt; BusinessPolicies
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>└── precision prices and seller documents         -&gt; ItemDetails
+</code></pre></div>
+<p>Within a docset, nesting prevents related values from being separated. For
+example, each price amount keeps its <code>value</code> and <code>currency</code> together, and
+<code>price</code> groups fixed-price, auction, marketing, and reference-price concepts.
+Not every listing format uses every price variant.</p>
+<p>A flat raw schema would instead create many nullable, format-specific fields,
+such as <code>fixed_price_value</code>, <code>fixed_price_currency</code>,
+<code>auction_reserve_value</code>, and <code>auction_reserve_currency</code>. It would also force
+the schema to grow when a producer object gains another optional nested
+concept. Flattening may be appropriate in a downstream model, but it is a
+consumer transformation decision, not evidence that the producer document
+shape is incorrect.</p>
+<h2 id="code-evidence-crlstngsv-pojos-to-nudocs">Code evidence: <code>crlstngsv</code> POJOs to NuDocs</h2>
+<p>The source code makes the producer orientation explicit. The Selling-domain
+objects in <code>crlstngsvLib</code> are converted into NuData-specific classes in the
+service layer; the mapping is not a direct persistence of a universal
+consumer record.</p>
+<table>
+<thead>
+<tr>
+<th>Producer aggregate or payload</th>
+<th>Write-side mapper</th>
+<th>NuData target</th>
+<th>Read-side reconstruction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Item</code> and its <code>BaseItem</code> composition</td>
+<td><code>DocumentConverter.getRoot</code>, <code>getQtyPrice</code>, <code>getDescription</code>, <code>getItemCompatibility</code>, <code>getBusinessPolicies</code>, and <code>getItemDetails</code></td>
+<td><code>ItemKeyspace.__ROOT__</code> and the corresponding item child docsets</td>
+<td><code>GetItemDocumentConverter</code> offers status, summary, description-only, full-without-description, and full assembly methods.</td>
+</tr>
+<tr>
+<td><code>NormalizedLockRequest</code> and UUID-specific lookup flows</td>
+<td><code>DocumentConverter.getItemLock</code> and dedicated lookup processing</td>
+<td><code>ItemLock</code> and <code>UuidMap</code> in <code>ItemKeyspace</code></td>
+<td>Locks and UUID mappings are operational lookups, not a projection of every <code>Item</code> field.</td>
+</tr>
+<tr>
+<td><code>ItemGroup</code> with member item IDs and variation attributes</td>
+<td><code>ItemGroupDocumentConverter.getRoot</code> and <code>getDescription</code>; shared policies use <code>DocumentConverter.getBusinessPolicies</code></td>
+<td><code>ItemGroupKeyspace.__ROOT__</code>, <code>GroupDescription</code>, and <code>GroupBusinessPolicies</code></td>
+<td><code>ItemGroupDocumentConverter</code> reconstructs status, summary, full-without-description, full, and description-only group payloads.</td>
+</tr>
+<tr>
+<td><code>ListingDraft</code>, <code>DraftSession</code>, <code>ItemDraft</code>, and <code>GroupDraft</code></td>
+<td><code>DraftDocumentConverter.getRoot</code>, <code>getGroup</code>, <code>getGroupDescription</code>, compatibility creation, and <code>getItems</code></td>
+<td><code>ListingDraft.__ROOT__</code>, item-draft, group-draft, compatibility, and group-description docsets</td>
+<td><code>GetDraftDocumentConverter.getListingDraft</code> combines root, group, description, compatibility, and item documents into a <code>ListingDraft</code>.</td>
+</tr>
+<tr>
+<td><code>ActiveListingDraft</code> plus user ID</td>
+<td><code>UserListingDraftDocumentConverter.getUserListingDraftDoc</code></td>
+<td><code>UserListingDraft.UserItemDraftMap</code></td>
+<td><code>getActiveListingDraft</code> recreates the active-draft summary, not the full <code>ListingDraft</code>.</td>
+</tr>
+<tr>
+<td><code>RevisionHistoryDataContainer</code> and derived revision records</td>
+<td><code>RevisionHistoryProcessor</code> delegates to listing, property-detail, and variation-detail processors before the NuData client insert</td>
+<td><code>ListingRevisionKeyspace.ListingRevision</code>, <code>ListingRevisionDetail</code>, and <code>VariationRevisionDetail</code>; <code>__ROOT__</code> is conditional retention state</td>
+<td>Revision records are generated history payloads, intentionally separate from reconstruction of the latest <code>Item</code> or <code>ItemGroup</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Two concrete examples demonstrate why this matters:</p>
+<ul>
+<li><code>DocumentConverter.getQtyPrice(Item, ...)</code> creates a NuData <code>Price</code> object
+  from several <code>Item</code> <code>Amount</code> values, while description and compatibility
+  converters choose a compressed representation only when compression
+  produces a value.</li>
+<li><code>CoreItemProcessor</code> explicitly creates root, description, quantity/price,
+  details, policies, and compatibility documents for item writes. Conversely,
+  <code>GetItemDocumentConverter</code> selects and assembles only the documents needed
+  by the requested status, summary, description-only, or full read.</li>
+</ul>
+<p>The converter layer is therefore a producer-owned persistence mapping layer.
+It encodes how Core Listing Service operates on NuData; it does not remove the
+need for a consumer-oriented contract.</p>
+<h2 id="what-downstream-consumers-need">What downstream consumers need</h2>
+<p>A consumer-ready listing model should be produced from NuData rather than
+using raw docsets as if they were complete business tables.</p>
+<table>
+<thead>
+<tr>
+<th>Downstream responsibility</th>
+<th>Why the raw producer model does not do it automatically</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select the intended state</td>
+<td>Current item/group state, draft state, user draft index, and revision history have different business meanings.</td>
+</tr>
+<tr>
+<td>Discover and assemble source documents</td>
+<td>An MSKU requires a group plus selected member items; an item can require selected child docsets.</td>
+</tr>
+<tr>
+<td>Decode and canonicalize content</td>
+<td>Description and compatibility may be expanded or compressed; optional variants and abbreviated fields need common rules.</td>
+</tr>
+<tr>
+<td>Normalize nested and repeated data</td>
+<td>Price envelopes, aspects, images, compatibility, policies, and variation traits need a deliberate entity, column, or child-record design.</td>
+</tr>
+<tr>
+<td>Define consumer business keys and grain</td>
+<td>Storage keys and generated child keys do not by themselves define a reporting, analytical, or ML entity grain.</td>
+</tr>
+<tr>
+<td>Apply quality rules and retain lineage</td>
+<td>Consumers need rules for nulls, duplicates, lifecycle filters, type conversion, and traceability back to keyspace/docset/field.</td>
+</tr>
+</tbody>
+</table>
+<p>For the Item domain, the existing governed <code>item</code> and <code>variation</code> LDMs are
+the right direction: they provide a consumer-facing logical interface above
+the raw document families. The required ETL or rearrangement is the boundary
+that turns producer-operational data into readable, stable downstream data.</p>
+<h2 id="evidence-and-limits">Evidence and limits</h2>
+<ul>
+<li><a href="../item-nudata-write-flow/">NuData write-flow research</a> documents the five
+  live keyspaces, all 22 declared docsets, their key shapes, and observed
+  write behavior.</li>
+<li><a href="../../wiki/Listing_NuData_Design/">Listing NuData Design</a> documents live,
+  draft, revision, and archive storage categories and the SSKU/MSKU split.</li>
+<li><a href="../../wiki/Core_Listing_Service-NuData_V2_Database_Schema/">Core Listing Service NuData V2 database schema</a>
+  documents docset roles and frequency tiers.</li>
+<li>The <code>crlstngsv</code> source evidence comes from the V2 entity POJOs and the
+  service converter and processor classes named in the mapping table. Those
+  classes show the producer-to-NuDoc transformation and selected read
+  reconstruction paths.</li>
+</ul>
+<p>The original schema-design ADR is not present in this documentation set.
+Accordingly, this page explains the design from observed key hierarchy,
+payload shape, and service conversion/read-write behavior. It does not assert
+undocumented latency targets, cross-document transaction guarantees, or
+historical intent.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/duanbiyi-ctrl/ework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
